@@ -1,0 +1,27 @@
+.popup-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333; 
+    color: #fff; 
+    padding: 20px; 
+    box-sizing: border-box; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+  }
+  
+  .popup-content {
+    width: 100%; 
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+  @media only screen and (max-width: 600px) {
+    .popup-content {
+      display: block;
+    }
+  }
+  

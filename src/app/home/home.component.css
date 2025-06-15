@@ -1,0 +1,443 @@
+:host {
+  display: block;
+  margin: 0;
+}
+.slider-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  scroll-snap-type: x mandatory;
+  margin-top: 85px;
+}
+.bullets {
+  text-align: center;
+  margin-top: 10px;
+  position: absolute;
+  left: 41%;
+  right: 41%;
+  bottom: 50px;
+}
+
+.bullets span {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin: 0 5px;
+  background-color: #ddd;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.bullets span.active {
+  background-color: #204880;
+}
+
+.slider {
+  display: flex;
+  scroll-snap-points-x: repeat(100%);
+  scroll-snap-type: x mandatory;
+  transition: transform 0.5s ease-in-out;
+}
+/* .slide-text-overlay {
+  width: 750px;
+  height: 240px;
+  background-color: rgb(0 0 0 / 35%);
+  position: absolute;
+  top: 35%;
+  left: 25%;
+  border-radius: 20px;
+  z-index: 10;
+} */
+.logo-in-slide {
+  position: absolute;
+  top: 35%;
+  left: 35%;
+  z-index: 10;
+  width: 470px;
+  height: auto;
+}
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+/* .centered_main {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4.5vw; 
+  color: white;
+  z-index: 1000;
+} */
+.centered_secondary {
+   position: absolute;
+   top: 55% !important;
+   left: 62% !important;
+  transform: translate(-50%, -50%); 
+  font-size: 30px; 
+  color: white; 
+  z-index: 1000;
+  left: 30%;
+  width: 50%;
+  top: 50%;
+}
+/* .button-overlay {
+  position: relative;
+  display: inline-block;
+}
+.button-overlay button {
+  z-index: 1000;
+  position: absolute;
+  top: 65%;
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  outline: none;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 0.5;
+  border-radius: 500px;
+  transition-property: background-color,border-color,color,box-shadow,filter;
+  transition-duration: .3s;
+  border: 1px solid transparent;
+  letter-spacing: 2px;
+  min-width: 10vw;
+  text-transform: uppercase;
+  white-space: normal;
+  font-weight: 700;
+  text-align: center;
+  padding: 16px 14px 18px;
+  color: rgb(255, 255, 255);
+  box-shadow: inset 0 0 0 1px #ffffff;
+  background-color: transparent;
+  height: 2.5vw;
+}
+.button-overlay button:hover {
+  color: #fff;
+  background-color: #616467;
+  box-shadow: inset 0 0 0 1px #ffffff00;
+} */
+.arrow {
+  position: absolute;
+  top: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  user-select: none;
+  color: white;
+}
+.left-arrow {
+  left: 10px;
+}
+.right-arrow {
+  right: 10px;
+}
+.container {
+  display: block;
+  margin: auto;
+  width: 90%;
+}
+.card {
+  display: flex;
+  background-color: #f5f5f5;
+  margin: 5px 0 30px;
+}
+.card > div > img {
+  width: 600px;
+  height: auto;
+}
+.card:nth-child(2) {
+  flex-direction: row-reverse;
+}
+.card-text {
+  vertical-align: middle;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+.card-text > h1 {
+  font-size: 28px;
+  font-weight: 600;
+}
+.card-text p {
+  text-align: center;
+}
+iframe {
+  display: block;
+  margin: 0 auto;
+  padding: 4vw;
+}
+.cards {
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: auto auto 30px auto;
+}
+.category:hover {
+  transform: scale(1.1);
+  z-index: 9999;
+}
+.category {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 5px;
+  width: calc(34% - 40px);
+  height: 250px;
+  box-sizing: border-box;
+  position: relative;
+  transition: transform 0.3s ease
+}
+.category-image {
+  width: 100%;
+  height: 250px;
+  display: block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.category:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.199), rgba(0, 0, 0, 0.199));
+}
+.category-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 109px 15px;
+  text-align: center;
+  color: #fff;
+  font-size: 24px !important;
+  width: 85%;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 30px;
+  background-color: #00000021;
+}
+.cards > h1 {
+  padding: 20px 0px;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+.card > p {
+  font-size: 18px;
+}
+.product-cards > h1 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+}
+.product-cards > p {
+  text-align: center;
+  font-size: 18px;
+}
+.logo-text {
+  width: 220px;
+  height: auto;
+}
+.text-logo {
+  display: flex;
+  justify-content: center;
+  display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+}
+.text-logo > p {
+  margin: 0px;
+}
+@media only screen and (max-width: 800px) {
+  .slider-container {
+    height: 45vh;
+    margin-top: 70px;
+  }
+  .slide-img {
+    height: 45vh;
+    object-fit: cover;
+  }
+  .centered_main {
+    font-size: 2rem;
+  }
+  .centered_secondary  {
+    font-size: 1rem;
+    text-align: center;
+    transform: translate(-68%, -50%); 
+    top: 70% !important;
+  }
+  .container {
+  width: 100%;
+  }
+  .card {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0px;
+    margin: 0px;
+    background: transparent;
+  }
+  .card > div > img {
+    width: 100%;
+    height: auto;
+    padding: 0px;
+  }
+  .card-text {
+    padding: 30px;
+  }
+  .card-text > h1{
+    text-align: center;
+    font-weight: 500;
+  }
+  .card-text > p {
+    text-align: center;
+    font-size: 16px;
+  }
+  .container {
+    background-color: #F4F5F7;
+  }
+  .card:nth-child(2) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .cards {
+    width: 100%;
+    padding: 0px;
+  }
+  .category {
+    width: 47%;
+    margin: 0px;
+  }
+  .card-bg > h1 {
+    text-align: center;
+    margin-bottom: 0px;
+    padding: 20px;
+    font-size: 25px;
+    font-weight: 600;
+  }
+  .card-bg {
+    display: block;
+  }
+  .centered_secondary {
+    top: 50% !important;
+    transform: translate(-57%, -50%);
+    width: max-content;
+  }
+  .logo-in-slide {
+    position: absolute;
+    top: 30%;
+    left: 38%;
+    z-index: 10;
+    width: 200px;
+    height: auto;
+  }
+  .slide-text-overlay {
+    width: 250px;
+    height: 180px;
+    background-color: rgb(0 0 0 / 35%);
+    position: absolute;
+    top: 25%;
+    left: 35%;
+    border-radius: 20px;
+    z-index: 10;
+  }
+  .button-overlay button  {
+    font-size: 1.7vw;
+    margin-top: 10px;
+    top: 65%;
+    left: 53%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .logo-in-slide {
+    position: absolute;
+    top: 25%;
+    left: 35%;
+    z-index: 10;
+    width: 200px;
+    height: auto;
+  }
+  .slide-text-overlay {
+    width: 250px;
+    height: 180px;
+    background-color: rgb(0 0 0 / 35%);
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    border-radius: 20px;
+    z-index: 10;
+  }
+  .button-overlay button  {
+    font-size: 1.7vw;
+    margin-top: 10px;
+    top: 65%;
+    left: 51%;
+  }  
+  .centered_secondary {
+    top: 50% !important;
+    transform: translate(-61%, -50%);
+    width: max-content;
+  }
+  .bullets {
+    text-align: center;
+    margin-top: 10px;
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    left: auto;
+    right: auto;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .slide-text-overlay {
+    top: 20%;
+    left: 25%;
+  }
+  .logo-in-slide {
+    top: 25%;
+    left: 30%;
+  }
+  .centered_secondary {
+    top: 50% !important;
+    transform: translate(-57%, -50%);
+    width: max-content;
+  }
+  .button-overlay button {
+    top: 65%;
+    left: 50%;
+  }
+  
+}
+@media only screen and (max-width: 350px) {
+  .slide-text-overlay {
+    top: 20%;
+    left: 11%;
+  }
+  .logo-in-slide {
+    top: 25%;
+    left: 19%;
+  }
+  .centered_secondary {
+    top: 50% !important;
+    transform: translate(-75%, -50%);
+    width: max-content;
+  }
+  .button-overlay button {
+    top: 65%;
+    left: 48%;
+  }
+  
+}

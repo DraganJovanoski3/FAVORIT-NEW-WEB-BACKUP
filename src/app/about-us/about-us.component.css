@@ -1,0 +1,103 @@
+.header-container {
+  background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("/assets/about-us-photo-1.png");
+  text-align: center;
+  width: 100%;
+  height: 70vh !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.header {
+  padding-top: 40.5vh !important;
+  font-size: 30px;
+  color: white;
+  font-weight: 600;
+}
+
+.header-container > p {
+  font-size: 24px;
+  color: white;
+}
+
+.container {
+  margin: 20px auto;
+  width: 80%;
+}
+
+.container > article {
+  text-align: center;
+}
+.container > article > p {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.container > article > img {
+  width: 100%;
+  height: auto;
+}
+
+.container > article:nth-child(2),
+.container > article:nth-child(3) {
+  text-align: start;
+}
+
+.container > article > ul {
+  padding: 0;
+}
+
+.container > article > ul > li {
+  padding: 5px 0;
+  font-size: 18px;
+}
+
+.container > article > h2,
+.container > article > figcaption > h2 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.container > article > figure {
+  display: flex;
+  flex-direction: row;
+  margin: 30px;
+}
+
+.container > article > figure > img {
+  width: 500px;
+  height: auto;
+  padding: 0 30px;
+}
+
+.container > article > figure > figcaption {
+  text-align: start;
+}
+figcaption > h2 {
+    font-size: 24px;
+    font-weight: 600;
+}
+@media only screen and (max-width: 600px) {
+  .container {
+    margin: auto;
+  }
+
+  .container > article > figure {
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+
+  .container > article > figure > img {
+    width: 100%;
+    padding: 0;
+  }
+  .header-container {
+    background-position: center !important;
+    height: 50vh !important;
+  }
+  .header {
+      padding-top: 27.5vh !important;
+  }
+
+}

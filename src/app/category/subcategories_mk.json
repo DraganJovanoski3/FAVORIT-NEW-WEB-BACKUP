@@ -1,0 +1,52 @@
+{
+    "categoryNamesTranslations": {
+      "hoods": "Аспиратори",
+      "home-appliances": "Бела Техника",
+      "built-in-appliances": "Вградна Техника",
+      "air-conditioners": "Клими",
+      "small-domestic-appliances": "Мали апарати за домаќинство",
+      "televisions": "Телевизори"
+    },
+    "televisions": {},
+    "small-domestic-appliances": {
+      "air-fryers": "Air fryer",
+      "blenders": "Блендери",
+      "microwaves": "Mикробранови печки",
+      "mixers": "Миксери",
+      "irons": "Пегли",
+      "vacuum-cleaners": "Правосмукалки",
+      "chop": "Сецко",
+      "grills": "Скари",
+      "thermal-jugs": "Термо бокали",
+      "toasters": "Тостери",
+      "colanders": "Цедалки"
+    },
+    "air-conditioners": {
+      "inverter": "Инвертер",
+      "inverter-wifi": "Инвертер/Wi-Fi",
+      "inverter-15C": "Инвертер (-15 °C)",
+      "inverter-25C": "Инвертер (-25 °C)",
+      "inverter-35C": "Инвертер (-35 °C)"
+    },
+    "built-in-appliances": {
+      "built-in-dishwashers": "Вградни машини за садови",
+      "built-in-microwaves": "Вградни микробранови печки",
+      "built-in-stove-tops": "Вградни Плочи",
+      "built-in-cooking-appliences": "Вградни Апарати за Готвење",
+      "built-in-fridges": "Вградни Фрижидери",
+      "built-in-stoves": "Вградни Шпорети"
+    },
+    "home-appliances": {
+      "boilers": "Бојлери",
+      "dishwashers": "Машини за миење садови",
+      "washing-and-drying-machines": "Машини за Перење и Сушење",
+      "fridges-and-freezers": "Фрижидери и Замрзнувачи",
+      "stoves-and-mini-stoves": "Шпорети и Мини Шпорети",
+      "freezers": "Замрзнувачи"
+    },
+    "hoods": {
+      "decorative-hoods": "Декоративни Аспиратори",
+      "telescopic-hoods": "Телескопски Аспиратори"
+    }
+  }
+  

@@ -1,0 +1,32 @@
+<div class="img-container-bg" [ngStyle]="{'background-image': 'url(' + categoryImage + ')'}">
+  <div class="category-overlay">
+    <h1 class="category-title">{{ getTranslatedNameBread(category) }}</h1>
+  </div>
+</div>
+
+<nav class="breadcrumbs">
+  <ng-container *ngFor="let breadcrumb of breadcrumbs; let last = last">
+    <a [routerLink]="breadcrumb.url" [queryParams]="{lang: currentLang}" *ngIf="!last">{{ breadcrumb.label }}</a>
+    <span *ngIf="last" class="current">{{ breadcrumb.label }}</span>
+    <span class="separator" *ngIf="!last">/</span>
+  </ng-container>
+</nav>
+
+<div class="container">
+  <!-- Categories List -->
+  <div class="categories">
+    <div class="category-card" *ngFor="let subcategory of displayedSubcategories" (click)="onNavigateSubcategory(subcategory.id)">
+      <div class="card-image">
+        <img [src]="subcategory.image" [alt]="subcategory.name">
+      </div>
+      <div class="card-content">
+        <h3>{{ subcategory.name }}</h3>
+        <p>{{ getTranslatedDescription(subcategory.id) }}</p>
+      </div>
+      <div class="card-action">
+        <button class="see-more-btn">{{larnmoreTranslations['SeeList']}}</button>
+      </div>
+    </div>
+  </div>
+</div>
+

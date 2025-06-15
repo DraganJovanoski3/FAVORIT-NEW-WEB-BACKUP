@@ -1,0 +1,126 @@
+ case 'dryers':
+        this.subcategories = Object.values(this.subcategoriesComponentConstant.hoods).concat('all') as string[];
+        this.backgroundStyle = 'linear-gradient(rgba(0, 0, 0, 0.27), rgba(0, 0, 0, 0.27)), url("assets/boilers.jpg")';
+        this.subcategoryName = this.subcategoriesComponentConstant.homeAppliances.dryers;
+        this.products = [
+          // // DRYERS
+          // {
+          //   // KEEP
+          //   id: 19,
+          //   name: this.productTranslations['19'] ||'Dryer L – 71 C',
+          //   picture: 'assets/Home appliances/Dryer L – 71 C/FAVORIT-L-71-C-13-1024x576.png',  
+          //   pictureHover: 'assets/Home appliances/Dryer L – 71 C/FAVORIT-L-71-C-14-1024x576.png',
+          //   subcategory: dryerLabel,
+          //   backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
+          // },
+          // {
+          //   // KEEP
+          //   id: 21,
+          //   name: this.productTranslations['21'] ||'Dryer W – 72 C',
+          //   picture: 'assets/Home appliances/Dryer W – 72 C/3.W-72-C-nova-ispraven-izgled-10-1024x576.png',  
+          //   pictureHover: 'assets/Home appliances/Dryer W – 72 C/3.W-72-C-nova-ispraven-izgled-22-1024x576.png',
+          //   subcategory: dryerLabel,
+          //   backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
+
+          // },
+          // {
+          //   // KEEP
+          //   id: 20,
+          //   name: this.productTranslations['20'] ||'Dryer L – 81 C',
+          //   picture: 'assets/Home appliances/Dryer L – 81 C/FAVORIT-L-81-C-16-1024x576.png',  
+          //   pictureHover: 'assets/Home appliances/Dryer L – 81 C/FAVORIT-L-81-C-17.png',
+          //   subcategory: dryerLabel,
+          //   backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
+
+          // },
+          // {
+          //   // KEEP
+          //   id: 22,
+          //   name: this.productTranslations['22'] ||'Dryer W – 82 HP',
+          //   picture: 'assets/Home appliances/Dryer W – 82 HP (with HEAT PUMP)/4.-FAVORIT-W-82-HP-13-1024x576.png',  
+          //   pictureHover: 'assets/Home appliances/Dryer W – 82 HP (with HEAT PUMP)/4.-FAVORIT-W-82-HP-15-1024x576.png',
+          //   subcategory: dryerLabel,
+          //   backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
+          // },
+        ];
+        break;
+        case 'built-in-microwaves':
+        this.subcategories = [ this.subcategoriesComponentConstant.builtInAppliances.builtInMicrowaves, 'All'];
+        this.backgroundStyle = '';
+        this.subcategoryName = this.subcategoriesComponentConstant.builtInAppliances.builtInMicrowaves;
+        this.products = [
+          // {
+          //   // KEEP
+          //   id: 68,
+          //   name: this.productTranslations['68'] ||'BUILT-IN MICROWAVE OVEN BIMW-20 BLACK',
+          //   picture: 'assets/Built In Appliances/BUILT-IN MICROWAVE OVEN BIMW-20 BLACK/FAVORIT-BIMW-20-BLACK-1-scaled-1-1024x576.png',  pictureHover: 'assets/',
+          //   subcategory: this.subcategoriesComponentConstant.builtInAppliances.builtInMicrowaves,
+          //   backgroundColorproduct: 'linear-gradient(#9f9f9f 0%, #ffffff 90%, #ffffff 100%)'
+
+          // },
+          //   // KEEP
+          // {
+          //   id: 69,
+          //   name: this.productTranslations['69'] ||'BUILT-IN MICROWAVE OVEN BIMW-20 INOX',
+          //   picture: 'assets/Built In Appliances/BUILT-IN MICROWAVE OVEN BIMW-20 INOX/FAVORIT-BIMW-20-INOX-1024x576.png',  pictureHover: 'assets/',
+          //   subcategory: this.subcategoriesComponentConstant.builtInAppliances.builtInMicrowaves,
+          //   backgroundColorproduct: 'linear-gradient(#9f9f9f 0%, #ffffff 90%, #ffffff 100%)'
+
+          // },
+        ]; 
+        break;
+         case 'built-in-stove-tops':
+        this.subcategories = [ this.subcategoriesComponentConstant.builtInAppliances.builtInStoveTops, 'All'];
+        this.backgroundStyle = '';
+        this.subcategoryName = this.subcategoriesComponentConstant.builtInAppliances.builtInStoveTops;
+        this.products = [
+          // {
+          //   // KEEP
+          //   id: 77,
+          //   name: this.productTranslations['77'] ||'Vitro ceramic hob FAVORIT BIH-40',
+          //   picture: 'assets/Built In Appliances/Vitro ceramic hob FAVORIT BIH-40/BIH-40-PHOTO-1-1024x576.png',  pictureHover: 'assets/',
+          //   subcategory: this.subcategoriesComponentConstant.builtInAppliances.builtInStoveTops,
+          //   backgroundColorproduct: 'linear-gradient(#9f9f9f 0%, #ffffff 90%, #ffffff 100%)'
+
+          // },
+          // {
+          //   // KEEP
+          //   id: 78,
+          //   name: this.productTranslations['78'] ||'Vitro ceramic hob FAVORIT BIH-210X',
+          //   picture: 'assets/Built In Appliances/Vitro ceramic hob FAVORIT BIH-210X/BIH-210X-PHOTO-1-1024x576.png',  pictureHover: 'assets/',
+          //   subcategory: this.subcategoriesComponentConstant.builtInAppliances.builtInStoveTops,
+          //   backgroundColorproduct: 'linear-gradient(#9f9f9f 0%, #ffffff 90%, #ffffff 100%)'
+          // },
+          // {
+          //   // KEEP
+          //   id: 67,
+          //   name: this.productTranslations['67'] ||'Built-in domino plate D2',
+          //   picture: 'assets/Built In Appliances/Built-in domino plate D2/FAVORIT-DOMINO-D2-07-1024x576.png',  pictureHover: 'assets/',
+          //   subcategory: this.subcategoriesComponentConstant.builtInAppliances.builtInStoveTops,
+          //   backgroundColorproduct: 'linear-gradient(#9f9f9f 0%, #ffffff 90%, #ffffff 100%)'
+          // },
+        ]; 
+        break;
+              case 'built-in-stoves':
+        this.subcategories = [ this.subcategoriesComponentConstant.builtInAppliances.builtInStoves, 'All'];
+        this.backgroundStyle = '';
+        this.subcategoryName = this.subcategoriesComponentConstant.builtInAppliances.builtInStoves;
+        this.products = [
+          // {
+          //   id: 61,
+          //   name: this.productTranslations['61'] ||'BUILT-IN COOKER 4 – J BLACK',
+          //   picture: 'assets/Built In Appliances/BUILT-IN COOKER 4 – J BLACK/FAVORIT-4-J-BLACK-01-1024x576.png',  pictureHover: 'assets/',
+          //   subcategory: this.subcategoriesComponentConstant.builtInAppliances.builtInStoves,
+          //   backgroundColorproduct: 'linear-gradient(#9f9f9f 0%, #ffffff 90%, #ffffff 100%)'
+          //   // #ADADAD 0%, #ffffff 50%, #ffffff 100%
+          // },
+          // {
+          //   id: 62,
+          //   name: this.productTranslations['62'] ||'BUILT-IN COOKER 4 – J INOX-B',
+          //   picture: 'assets/Built In Appliances/BUILT-IN COOKER 4 – J INOX-B/FAVORIT-4-J-INOX-B-05-1024x576.png',  pictureHover: 'assets/',
+          //   subcategory: this.subcategoriesComponentConstant.builtInAppliances.builtInStoves,
+          //   backgroundColorproduct: 'linear-gradient(#9f9f9f 0%, #ffffff 90%, #ffffff 100%)'
+
+          // },
+        ];
+        break;

@@ -1,0 +1,58 @@
+{
+    "categoryNamesTranslations": {
+        "hoods": "Kapuç",
+        "homeAppliances": "Elektroshtëpiaket",
+        "builtInAppliances": "Pajisje të integruara",
+        "airConditioners": "Kondicionerë",
+        "smallDomesticAppliances": "Pajisje të vogla shtëpiake",
+        "televisions": "Televizorë"
+      },
+    "televisions":{},
+    "smallDomesticAppliances":{
+        "airFryer":"Fritezë ajri",
+        "blenders":"Blenderë",
+        "microwaves":"Mikrovalë",
+        "mixers":"Mikserë",
+        "irons":"Heqëse",
+        "vacuumCleaners":"Pastrues me vakum",
+        "chop":"Grirës",
+        "grills":"Skara",
+        "thermalJugs":"Kana termike",
+        "toasters":"Tostiera",
+        "colanders":"Sitë"
+    },
+    "airConditioners":{
+        "inverter":"Inverter",
+        "inverterWifi":"Inverter/Wi-Fi",
+        "inverter15C": "Inverter (-15 °C)",
+        "inverter25C": "Inverter (-25 °C)",
+        "inverter35C": "Inverter (-35 °C)"
+    },
+    "builtInAppliances":{
+        "builtInDishwashers":"Lavastovilje të ndërtuara",
+        "builtInOvens":"Pajisje të integruara për gatim",
+        "builtInMicrowaves":"Mikrovala të ndërtuara",
+        "builtInStoveTops":"Pjesë të sipërme të sobave të ndërtuara",
+        "builtInStoves":"Soba të ndërtuara",
+        "builtInFridges":"Frigoriferë të ndërtuar"
+    },
+    "homeAppliances":{
+        "boilers":"Bojlerë",
+        "dishwashers":"Lavastovilje",
+        "washingMachines":"Lavatriçe",
+        "dryers":"Tharëse",
+        "fridges":"Frigoriferë",
+        "stovesAndMiniStoves":"Soba",
+        "freezers":"Ngrirës",
+        "miniStoves": "Mini Soba",
+        "stovesGlassLabel": "Soba me qelq",
+        "horizontalFreezers": "Ngrirës horizontal",
+        "verticalFreezers": "Ngrirës vertikal"
+    },
+    "hoods":{
+        "decorativeHoods":"Kapuç dekorativ",
+        "telescopicHoods":"Kapuç teleskopik"
+    },
+    "all": "Të gjitha"
+}
+  

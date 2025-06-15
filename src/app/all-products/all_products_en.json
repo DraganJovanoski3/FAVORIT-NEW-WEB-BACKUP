@@ -1,0 +1,14 @@
+{
+    "header": "All Products",
+    "learnMore": "Learn More",
+    "filter": "Filter Products",
+    "category": {
+        "hoods": "Hoods",
+        "homeAppliances": "Home Appliances",
+        "buildInAppliances": "Built-in Appliances",
+        "airConditioners": "Air Conditioners",
+        "smallDomesticAppliances": "Small Domestic Appliances",
+        "televisions": "Televisions"
+      }
+}
+  

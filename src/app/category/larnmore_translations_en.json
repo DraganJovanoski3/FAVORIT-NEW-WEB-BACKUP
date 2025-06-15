@@ -1,0 +1,29 @@
+{
+    "learnmore": "Learn More",
+    "filterproducts": "Filter Products",
+    "productDisplayed": "Products Displayed",
+    "of": "of",
+    "Home": "Home",
+    "SeeList": "See List",
+    "SerchByName": "Traži po imenu",
+    "SearchByName": "Search by name",
+    "home-appliances": {
+    "washing-machines": "Efficient washing machines for all your laundry needs.",
+    "fridges": "Keep your food fresh with our energy-efficient refrigerators.",
+    "boilers": "Reliable water heating solutions for your home.",
+    "dishwashers": "Save time and water with modern dishwashers.",
+    "mini-stoves": "Compact stoves perfect for small kitchens.",
+    "dryers": "Fast and efficient drying for your clothes.",
+    "stoves": "High-quality stoves for professional cooking.",
+    "freezers": "Spacious freezers to store your food for longer."
+  },
+  "built-in-appliances": {
+    "built-in-dishwashers": "Seamless integration with built-in dishwashers.",
+    "built-in-microwaves": "Modern microwaves for a sleek kitchen look.",
+    "built-in-stove-tops": "Precision cooking with built-in stove tops.",
+    "built-in-ovens": "Perfectly baked dishes with our built-in ovens.",
+    "built-in-fridges": "Built-in refrigerators for a custom kitchen design.",
+    "built-in-stoves": "Elegant and efficient built-in stoves."
+  }
+
+}

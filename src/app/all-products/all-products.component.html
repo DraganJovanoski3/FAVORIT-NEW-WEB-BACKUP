@@ -1,0 +1,17 @@
+  <!-- <div class="header-container">
+      <h2 class="header">{{allProductsComponentConstant.header}}</h2>
+  </div> -->
+   
+<!-- Main container for all products -->
+<div class="main-cointainer">
+  <!-- Category cards -->
+  <div class="category" *ngFor="let category of categories" (click)="onNavigateCategories('category', category.category)">
+    <div class="category-image" 
+         [style.backgroundImage]="'url(' + category.image + ')'" 
+         [attr.alt]="category.name"
+         role="img"
+         [attr.aria-label]="category.name">
+    </div>
+    <h2 class="category-title">{{ category.name }}</h2>
+  </div>
+</div>

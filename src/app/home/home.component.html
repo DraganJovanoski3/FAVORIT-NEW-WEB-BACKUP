@@ -1,0 +1,63 @@
+<!-- slider.component.html -->
+<div class="slider-container">
+  <div class="slider" [style.transform]="'translateX(' + translateValue + 'px)'">
+    <div class="slide button-overlay" *ngFor="let slide of slides; let i = index">
+      <img class="slide-img" [src]="slide" alt="Slide">
+      <div class="slide-text">
+        <button *ngIf="slide === 'assets/slider-photos/web-slider-1.jpg'" (click)="onNavigate('about-us')"></button>
+        <button *ngIf="slide === 'assets/slider-photos/web-slider-2.jpg'" (click)="onNavigate('all-products')"></button>
+        <div *ngIf="slide === 'assets/slider-photos/web-slider-1.jpg'" class="centered_main"></div>
+        <div *ngIf="slide === 'assets/slider-photos/web-slider-1.jpg'" class="centered_secondary"></div>
+        <div *ngIf="slide === 'assets/slider-photos/web-slider-2.jpg'" class="centered_secondary"></div>
+      </div>
+    </div>
+  </div>
+  <div class="arrow left-arrow" (click)="prevSlide()">&#9665;</div>
+  <div class="arrow right-arrow" (click)="nextSlide()">&#9655;</div>
+  <div class="bullets">
+    <span *ngFor="let slide of slides; let i = index" 
+          [class.active]="i === currentIndex" 
+          (click)="goToSlide(i)">
+    </span>
+  </div>
+</div>
+
+<div class="container">
+  <!--<div class="card"> 
+     <div>
+      <img src="assets/klima-uredi.jpg" alt="banner1">
+    </div> 
+    <div class="card-text">
+      <h1>{{homeComponentConstant.favoritAirConditionersAndInverters}}</h1>
+      <p>{{homeComponentConstant.ourAirConditioningSystems}}</p>
+    </div>
+  </div>-->
+
+  <div class="product-cards">
+    <h1>{{homeComponentConstant.browseOurProducts}}</h1>
+    <div class="text-logo">
+      <p>{{homeComponentConstant.LearnMoreAboutOurOffer}}</p>
+      <img class="logo-text" src="/assets/MicrosoftTeams-image.png" alt="">
+    </div>
+    <!-- ADD LOGO -->
+    <div class="cards">
+      <div class="category" *ngFor="let category of categories" (click)="onNavigateCategories('category', category.category)">
+        <div class="category-image" [style.backgroundImage]="'url(' + category.image + ')'" [attr.alt]="category.name">
+        </div>
+        <div class="category-title">{{ category.name }}</div>
+      </div>
+    </div>  
+  </div>
+
+  <!-- <div class="card">
+   <div>
+      <img src="assets/televizori.jpg" alt="banner1">
+    </div>
+    <div class="card-text">
+      <h1>{{homeComponentConstant.favoritSmart4kUhdTvs}}</h1>
+      <p>{{homeComponentConstant.excellentSelectionOfTvs}}</p>
+    </div>
+  </div> -->
+</div>
+
+<iframe src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Центро Унион Фаворит електроникс&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"  width="90%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>

@@ -1,0 +1,40 @@
+
+<div class="blog-container">
+  <button class="back-btn" (click)="goBack()">← {{ translations.back }}</button>
+
+  <article *ngIf="blog">
+    <header>
+      <h1 style="text-align: center;" class="blog-title">{{ blog.title }}</h1>
+      <p class="blog-introduction">{{ blog.introduction }}</p>
+      <img style="display: flex; margin: auto;" *ngIf="blog.image" [src]="blog.image" [alt]="blog.title" class="blog-image">
+    </header>
+
+    <section class="blog-sections">
+      <div *ngFor="let section of blog.sections" class="blog-section">
+        <h2 class="section-title">{{ section.title }}</h2>
+        <p class="section-content">{{ section.content }}</p>
+      </div>
+    </section>
+
+    <section class="blog-other-causes" *ngIf="blog.other_causes?.length">
+      <h3>{{ translations.other_causes }}</h3>
+      <ul>
+        <li *ngFor="let cause of blog.other_causes">{{ cause }}</li>
+      </ul>
+    </section>
+
+    <section class="blog-action-steps" *ngIf="blog.action_steps">
+      <h3>{{ translations.action_steps }}</h3>
+      <p>{{ blog.action_steps }}</p>
+    </section>
+
+    <footer class="blog-conclusion">
+      <h3>{{ translations.conclusion }}</h3>
+      <p>{{ blog.conclusion }}</p>
+    </footer>
+  </article>
+
+  <div *ngIf="!blog">
+    <p class="not-found">{{ translations.not_found }}</p>
+  </div>
+</div>

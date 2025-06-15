@@ -1,0 +1,14 @@
+{
+    "header": "Сите Производи",
+    "learnMore": "Дознај повеќе",
+    "filter": "Филтер за Производи",
+    "category":{
+        "hoods":"Аспиратори",
+        "homeAppliances":"Бела техника",
+        "buildInAppliances":"Вградна техника",
+        "airConditioners":"Клима уреди",
+        "smallDomesticAppliances":"Мали апарати за домаќинство",
+        "televisions":"Телевизори"
+      }
+}
+  

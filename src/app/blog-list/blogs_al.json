@@ -1,0 +1,93 @@
+{
+    "blogs": [
+        {
+            "id": "Pse-kondicionerët-ngrihen-më-së-shumti-në-temperaturë-të-jashtme-rreth-zero-gradë-Celsius",
+            "title": "Pse kondicionerët ngrihen më së shumti në temperaturë të jashtme rreth zero gradë Celsius?",
+            "excerpt": "Zbuloni trendet më të fundit në teknologjinë e shtëpisë...",
+            "sections": [
+              {
+                "title": "Procesi i Transferimit të Nxehtësisë",
+                "content": "Kondicionerët që funksionojnë në modalitetin e ngrohjes (pumpat termike) funksionojnë duke transferuar nxehtësinë nga ajri jashtë në ambientin e brendshëm. Për këtë, temperatura e rešetave të avulluesit duhet të jetë më e ulët se temperatura e ajrit të jashtëm, rreth 7-8 gradë Celsius, në mënyrë që të mund të marrë nxehtësinë nga ajri jashtë. Në atë moment, lagështia e ajrit kondensohet dhe, për shkak të temperaturës së ulët të rešetave, menjëherë kthehet në akull.",
+                "image": "assets/blogs/home-appliances.jpg"
+              },
+              {
+                "title": "Grumbullimi i Lagështirës dhe Ngrirja",
+                "content": "Për shkak se ajri ka përmbajtjen më të madhe të lagështirës rreth 0°C, një shtresë akulli formohet shpejt në avullues, duke u trashur gradualisht dhe duke bllokuar qarkullimin e ajrit. Kjo ul efikasitetin e sistemit, duke bërë që kondicioneri të mos ngrohet siç duhet për shkak të cikleve të shpeshta të zbrazjes së akullit për të shkrirë akullin.",
+                "image": "assets/blogs/home-appliances.jpg"
+              },
+              {
+                "title": "Rreziku Më i Madh në 0°C dhe Mjegull",
+                "content": "Siç është përmendur, rreziku më i madh për ngrirjen e avulluesit ndodh kur temperatura e ajrit është rreth 0°C, sidomos kur ka lagështi të lartë ose mjegull. Në këto kushte, ajri ka një përqindje më të lartë të lagështirës, që do të thotë se një film akulli do të formohet shpejt në njësinë e jashtme. Kushtet më të pafavorshme për funksionimin e kondicionerit janë temperaturat rreth 0°C dhe kushtet me mjegull, gjë që mund të çojë në bllokim të plotë të avulluesit me akull.",
+                "image": "assets/blogs/home-appliances.jpg"
+              },
+              {
+                "title": "Zbrazja e Akullit dhe Efikasiteti i Ulet",
+                "content": "Për të parandaluar mbingarkesën nga akulli, kondicionerët kanë një proces të integruar të zbrazjes së akullit, por kjo nuk është gjithmonë e mjaftueshme nëse kushtet mbeten vazhdimisht të pafavorshme. Kur shfaqet akulli, sistemi duhet të ndalojë funksionimin për ta zbrazur, gjë që mund të çojë në ndërprerje të shkurtra dhe efikasitet të ulët të ngrohjes.",
+                "image": "assets/blogs/home-appliances.jpg"
+              },
+              {
+                "title": "Defekti vs. Kushtet e Jashtme",
+                "content": "Ky fenomen nuk duhet të konsiderohet si një defekt i kondicionerit, por më tepër si pasojë e kushteve të motit të jashtëm. Kondicionerët janë projektuar të funksionojnë brenda një game të caktuar temperaturash, dhe kur temperatura dhe lagështia e ajrit të jashtëm tejkalojnë ato kufij, sidomos rreth 0°C, këto probleme mund të ndodhin.",
+                "image": "assets/blogs/home-appliances.jpg"
+              }
+            ],
+            "other_causes": [
+              "Mungesa e shpejtësisë së mjaftueshme të qarkullimit të ajrit",
+              "Probleme me freonin (gaz)",
+              "Instalim apo përdorim i pasaktë"
+            ],
+            "action_steps": "Kontrolloni temperaturën e ajrit të jashtëm. Pastroni filtrat dhe kontrolloni nëse ka ndonjë pengesë në ventilator. Kryeni zbrazje manuale të akullit nëse kondicioneri ka shumë akull në njësinë e jashtme, duke kaluar në modalitetin e ftohjes për vetëm 5–10 minuta. Kontaktoni shërbimin nëse problemet vazhdojnë. Kontrolli dhe mirëmbajtja e rregullt e kondicionerit mund të parandalojnë këto probleme dhe të mbajnë njësinë në gjendje optimale.",
+            "conclusion": "Efikasiteti i kondicionerëve në ngrohje varet në mënyrë të konsiderueshme nga kushtet e motit të jashtëm, dhe në kushtet e temperaturave të ulëta dhe lagështirës së lartë, mund të ndodhë ngrirja e avulluesit, duke reduktuar kapacitetin e ngrohjes. Kjo nuk është rezultat i një defekti të pajisjes, por një problem normal teknologjik i lidhur me kushtet specifike të funksionimit, që do të thotë se funksionimi efikas i kondicionerit varet kryesisht nga moti i jashtëm.",
+            "date": "2025-02-24",
+            "image": "assets/blog-images/AC-outdoor-unit.jpg"
+          },
+          {
+            "id": "Centro-Union-ka-dhuruar-pajisje-të-shtëpisë-nga-Favorit-Electronics-për-vajzën-e-re-nga-Shtip",
+            "title": "Nga humaniteti kurrë nuk mjafton – Centro Union ka dhuruar pajisje të shtëpisë nga Favorit Electronics për vajzën e re nga Shtip",
+            "excerpt": "Humaniteti dhe ndihma: Centro Union ka dhuruar pajisje të shtëpisë për vajzën e re nga Shtip.",
+            "sections": [
+              {
+                "title": "Konteksti",
+                "content": "Në kohë vështirësish, sinqeriteti dhe mirësia shfaqen, dhe këtë herë kjo e ka dëshmuar edhe kompania maqedonase Centro Union. Thirrja për ndihmë nga vajza e re nga Shtip, e cila u sulmua fizikisht nga dy bashkëqytetarë, u dëgjua nga Shoqata për Zhvillim Human dhe Shoqëror – Projekti Sreka.",
+                "image": "assets/blogs/humanity1.jpg"
+              },
+              {
+                "title": "Gjendja e vajzës",
+                "content": "Kohët e fundit, ajo humbi babain e saj dhe ra vetëm me borxhe dhe me një shtëpi të rrënuar, pa kushte themelore për jetesë. Me një borxh prej 200,000 denarësh dhe ndihmë sociale prej 4,000 denarësh, vajza e re dhe e papunë gjendet në një situatë nga ku, pa ndihmë, do të ishte e vështirë të stabilizohet.",
+                "image": "assets/blogs/humanity2.jpg"
+              },
+              {
+                "title": "Dhurata dhe mbështetja",
+                "content": "Pas shpërndarjes së thirrjes për ndihmë në rrjetin social Facebook nga Projekti Sreka, kompania maqedonase Centro Union vendosi të kontribuojë. Kompania ka dhuruar pajisje të reja të shtëpisë nga Favorit Electronics për banesën e vajzës, e cila do të pajiset me një makinë larëse, një sobë elektrike, një LED TV 32” dhe një aspirator. Këto produkte do të lehtësojnë jetën e vështirë të vajzës së re, e cila përpiqet të ngrihet në këmbë dhe të vazhdojë të jetojë normalisht.",
+                "image": "assets/blogs/humanity3.jpg"
+              }
+            ],
+            "conclusion": "Çdo ndihmë për këtë vajzë është e mirëpritur nga njerëzit me zemër dhe nga kompanitë, dhe ndihma e Centro Union shërben si një shembull dhe thirrje për çdo kompani tjetër në vend që të bashkohet në dhurimin humanitar. Centro Union është një shembull i një kompanie maqedonase me përgjegjësi sociale, e cila, përveç kujdesit për cilësinë e produkteve dhe kënaqësinë e konsumatorëve, gjithmonë gjen mënyra për të ndihmuar ata që kanë më shumë nevojë për ndihmë.",
+            "date": "2020-07-29",
+            "image": "assets/blog-images/Од-хуманост-никогаш-доста-Центро-Унион-донираше-Favorit-Electronics-апарати-за-бела-техника-на-младата-девојка-од-Штип.png"
+          },
+          {
+            "id": "Receta Unike të Pashkëve për Kuzhinën Moderne",
+            "title": "Receta Unike të Pashkëve për Kuzhinën Moderne",
+            "excerpt": "Zbuloni receta unike të Pashkëve që do të freskojnë kuzhinat tuaja me pajisje shtëpiake Favorit.",
+            "reading_time": "1 min read",
+            "sections": [
+              {
+                "title": "Hyrje",
+                "content": "Vajzat e kuqe, gëzimi fëmijëror dhe besimi në Zot janë simbolët që shënojnë çdo vit madhanë fetare të Pashkëve. Është dita kur çdo familje përgatit një tryezë të madhe për të pritur të dashurit dhe për të festuar ringjalljen e Krishtit."
+              },
+              {
+                "title": "Gnezdet e Pashkëve me Patate",
+                "content": "Ky recetë ofron një pjatë të kripur me një prekje unike. Për të përgatitur gnezdet e shijshme të Pashkëve me patate, ju nevojiten: 2 feta të trasha proshute, patate të grira, kripë dhe piper të freskët të grirë, krem djathi, lëvore të imët të grirë të një limoni, 2 lugë qumësht dhe 1/4 filxhan mezhin të ngrirë. Përzieni patatet e grira me proshutën, kripën dhe piperin, vendosini në një enë silikon për pjekje dhe piqeni në furën Favorit për 20 minuta në 200°C. Më pas, shtoni krem djathin, lëvoren e limonit, qumështin, kripën dhe piperin, dhe përziejini me mikserin Favorit derisa të merrni një teksturë të përsosur. Pas pjekjes, mbushini gnezdet me një tasë me krem djath dhe pjekini përsëri për rreth 7 minuta në furën Favorit. Në fund, zbukuruani me fara të mëzheut dhe copa proshute."
+              },
+              {
+                "title": "Çokollata për Ëmbëlsirë",
+                "content": "Për ëmbëlsirë, çokollata gjithmonë sjell gëzim në familje. Për një ëmbëlsirë unike çokollate me shije të pasur, merrni disa balona të vogla, lavdëroni, tharini mirë dhe frymëzoni ato. Shkrini çokollatën në furën tuaj modern Favorit, e cila siguron temperaturën ideale për shkrirje pa grumza. Zhyteni secilin balon deri në gjysmën e tij në çokollatën e dendur, renditini mbi letër pjekjeje dhe lini të ftohen në frigoriferin Favorit. Pas stërvitjes, hiqni me kujdes balonat, bëni një vrimë të vogël dhe mbushni 'përkuljen' çokollate me akullore ose me frutat tuaja të preferuara."
+              }
+            ],
+            "conclusion": "Pashkët janë gjithmonë të veçanta, edhe në izolim. Më e rëndësishme është të jemi së bashku në shtëpi, të shijojmë ushqime të shijshme dhe të përdorim mjete kualitative kuzhine për të përgatitur këto receta. Gëzuar Pashkët për shumë vite!",
+            "date": "2020-06-22",
+            "image": "assets/blog-images/Уникатни-велигденски-рецепти-за-модерната-кујна.png"
+          }                    
+    ]
+}

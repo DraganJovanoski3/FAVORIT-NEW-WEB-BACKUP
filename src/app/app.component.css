@@ -1,0 +1,10 @@
+body > h1, h2, h3, h4, h4, p, span, ol, ul, a, blockquote, pre, em, strong {
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    overflow-y: auto;
+    height: 100%;
+}
+.mat-mdc-icon-button[disabled] .mat-mdc-paginator-icon {
+    fill: black !important;
+}

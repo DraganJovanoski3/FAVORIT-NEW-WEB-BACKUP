@@ -1,0 +1,147 @@
+   footer {
+    width: 100%;
+   }
+   .main-footer {
+    display: flex;
+    background-color: #204880;
+    color: white;
+    height: max-content;
+   }
+   .main-footer > div > img {
+    width: 60%;
+    height: auto;
+    margin: auto;
+   }
+   .main-footer > div {
+    width: calc(100% / 3);
+   }
+   .logo {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+   }
+   .logo > p {
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+   }
+   .second-footer {
+    display: block;
+    text-align: center;
+    background-color: #12305b;
+    color: white;
+   }
+   .second-footer > p {
+    padding: 20px;
+   }
+   .info-company {
+    margin: 20px;
+  }
+  /* Company INFO */
+  .info-company > div > h1 {
+    font-weight: 500;
+  }
+  .info-company > p > a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+  .social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .social-item > img {
+    width: 25px;
+    height: 25px;
+    color: #2B2B2B;
+  }
+  .ss-item, .social-item {
+    font-size: 0;
+    width: 30px;
+    background: #fff;
+    height: 30px;
+    border: 1px solid #eaeaf4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .social > a {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .social > a {
+    width: 52px;
+    height: 52px;
+    background-color: rgba(255, 255, 255, 0);
+    border: solid rgb(255, 255, 255) 0.5px;
+    border-radius: 5px;
+    margin: 2.5px;
+    display: flex;
+  }
+  .social > a > svg {
+    color: white;
+  }
+  .copy {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+  .copy > p {
+    margin: 10px 10px 0px 10px;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+  @media only screen and (max-width: 600px) {
+    footer {
+      width: 100%;
+      height: max-content;
+     }
+     .main-footer {
+      display: block;
+      background-color: #204880;
+      color: white;
+      height: max-content;
+     }
+     .main-footer > div > img {
+      width: 40%;
+      height: auto;
+      margin: auto;
+     }
+     .main-footer > div {
+      width: 100%;
+     }
+     .info-company {
+      margin: 10px;
+     }
+     .info-company > div > h1 {
+      display: none;
+     }
+     .info-company > div > p {
+      margin-bottom: 5px !important;
+     }
+     .logo > p {
+      padding-top: 10px;
+     }
+    .mobile {
+      display: flex;
+    }
+    .social {
+      padding-bottom: 20px;
+    }
+    h1 {
+      font-size: 16px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    .info-company {
+      width: 60%;
+    }
+    .info-company > p  > strong {
+      font-weight: 500;
+    }
+    .logo {
+      padding-top: 20px;
+    }
+  }

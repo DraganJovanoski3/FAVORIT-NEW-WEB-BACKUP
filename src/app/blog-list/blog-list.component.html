@@ -1,0 +1,19 @@
+<div class="blog-list-container">
+    <h2 class="blog-title">{{ translations.blogs }}</h2>
+    <div class="blog-grid">
+      <div *ngFor="let blog of blogs" class="blog-card" (click)="navigateToBlog(blog.id)">
+        <div class="blog-image-container">
+          <img [src]="blog.image" [alt]="blog.title" class="blog-image">
+        </div>
+        <div class="blog-content">
+          <h3 class="blog-card-title">{{ blog.title }}</h3>
+          <p class="blog-excerpt">{{ blog.excerpt }}</p>
+          <div class="blog-footer">
+            <span class="blog-date">{{ blog.date }}</span>
+            <span class="read-more">{{ translations.read_more }}...</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

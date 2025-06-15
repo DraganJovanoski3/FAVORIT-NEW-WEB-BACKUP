@@ -1,0 +1,52 @@
+{
+    "categoryNamesTranslations": {
+      "hoods": "kuhinjske nape",
+      "home-appliances": "Bela tehnika",
+      "built-in-appliances": "Ugrađena tehnika",
+      "air-conditioners": "Klime",
+      "small-domestic-appliances": "Mali kućni aparati",
+      "televisions": "Televizori"
+    },
+    "televisions": {},
+    "small-domestic-appliances": {
+      "air-fryer": "Friteza na vazduh",
+      "blenders": "Blenderi",
+      "microwaves": "Mikrotalasne",
+      "mixers": "Mikseri",
+      "irons": "Pegle",
+      "vacuum-cleaners": "Usisivači",
+      "chop": "Seckalica",
+      "grills": "Roštilj",
+      "thermal-jugs": "Termosi",
+      "toasters": "Tosteri",
+      "colanders": "Cediljke"
+    },
+    "air-conditioners": {
+      "inverter": "Inverter",
+      "inverter-wifi": "Inverter/Wi-Fi",
+      "inverter-15C": "Inverter (-15 °C)",
+      "inverter-25C": "Inverter (-25 °C)",
+      "inverter-35C": "Inverter (-35 °C)"
+    },
+    "built-in-appliances": {
+      "built-in-dishwashers": "Ugrađene mašine za sudove",
+      "built-in-microwaves": "Ugrađene mikrotalasne",
+      "built-in-stove-tops": "Ugrađene ploče za kuvanje",
+      "built-in-cooking-appliences": "Ugrađeni aparati za kuvanje",
+      "built-in-fridges": "Ugrađeni frižideri",
+      "built-in-stoves": "Ugrađeni šporeti"
+    },
+    "home-appliances": {
+      "boilers": "Kotlovi",
+      "dishwashers": "Mašine za pranje sudova",
+      "washing-drying-machines": "Mašine za pranje i sušenje",
+      "fridges-and-freezers": "Frižideri i zamrzivači",
+      "stoves-and-mini-stoves": "Kuhinjske peći и Mini peći",
+      "freezers": "Zamrzivači"
+    },
+    "hoods": {
+      "decorative-hoods": "Cekorativne kuhinjske nape",
+      "telescopic-hoods": "Teleskopske kuhinjske nape"
+    }
+  }
+  

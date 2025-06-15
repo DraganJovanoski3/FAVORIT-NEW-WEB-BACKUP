@@ -1,0 +1,52 @@
+{
+  "categoryNamesTranslations": {
+      "hoods": "Аспиратори",
+      "homeAppliances": "Бела техника",
+      "builtInAppliances": "Уграђена техника",
+      "airConditioners": "Климе",
+      "smallDomesticAppliances": "Мали кућni апарати",
+      "televisions": "Телевизори"
+    },
+  "televisions":{},
+  "smallDomesticAppliances":{
+      "airFryer":"Ер фрајер",
+      "blenders":"Блендери",
+      "microwaves":"Микроталасне",
+      "mixers":"Миксери",
+      "irons":"Пегле",
+      "vacuumCleaners":"Усисивачи",
+      "chop":"Сецкалица",
+      "grills":"Роштиљи",
+      "thermalJugs":"Термоси",
+      "toasters":"Тостери",
+      "colanders":"Цедиљке"
+  },
+  "airConditioners":{
+      "inverter":"Инвертер",
+      "inverterWifi":"Инвертер/Wi-Fi",
+      "inverter15C": "Инвертер (-15 °C)",
+      "inverter25C": "Инвертер (-25 °C)",
+      "inverter35C": "Инвертер (-35 °C)"
+  },
+  "builtInAppliances":{
+      "builtInDishwashers":"Уграђене машине за судове",
+      "builtInMicrowaves":"Уграђене микроталасне",
+      "builtInStoveTops":"Уграђене плоче за кување",
+      "builtInCookingAppliences":"Уграђени апарати за кување",
+      "builtInFridges":"Уграђени фрижидери",
+      "builtInStoves":"Уграђени шпорети"
+  },
+  "homeAppliances":{
+      "boilers":"Бојлери",
+      "dishwashers":"Машине за прање судова",
+      "washingMachines":"Машине за прање веша",
+      "dryers":"Сушаре",
+      "fridgesAndFreezers":"Фрижидери и Замрзивачи",
+      "stovesAndMiniStoves":"Шпорети",
+      "freezers":"Замрзивачи"
+  },
+  "hoods":{
+      "decorativeHoods":"Декоративни аспиратори",
+      "telescopicHoods":"Телескопски аспиратори"
+  }
+}

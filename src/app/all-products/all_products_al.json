@@ -1,0 +1,14 @@
+{
+    "header": "Të gjitha Produktet",
+    "learnMore": "Mëso më shumë",
+    "filter": "Produktet e filtrit",
+    "category": {
+        "hoods": "Kapuçet",
+        "homeAppliances": "Elektroshtëpiake",
+        "buildInAppliances": "Pajisje të integruara",
+        "airConditioners": "Kondicionerë",
+        "smallDomesticAppliances": "Pajisje të vogla shtëpiake",
+        "televisions": "Televizorë"
+      }
+}
+  

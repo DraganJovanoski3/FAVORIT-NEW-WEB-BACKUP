@@ -1,0 +1,104 @@
+<nav class="breadcrumbs">
+  <ng-container *ngFor="let breadcrumb of breadcrumbs; let last = last; let i = index">
+    <a [routerLink]="breadcrumb.url" *ngIf="!last">{{ breadcrumb.label }}</a>
+    <span *ngIf="last" class="current">{{ breadcrumb.label }}</span>
+    <span class="separator" *ngIf="!last">/</span>
+  </ng-container>
+</nav>
+
+<div class="product-page" *ngIf="product">
+  <div class="product-main">
+    <div class="product-photo">
+      <img 
+        [src]="(product.pictures || [])[currentImageIndex]" 
+        alt="Product Image" 
+        class="main-photo" 
+        (click)="turnModalOn()" />
+      <div class="thumbnails">
+        <ng-container *ngFor="let pic of (product?.pictures || []); let i = index">
+          <img
+            [src]="pic"
+            alt="Thumbnail {{ i + 1 }}"
+            (click)="handleClickThumbnail($event, i)"
+            [ngClass]="{'selected': i === currentImageIndex}" />
+        </ng-container>
+      </div>
+    </div>
+    <div class="product-details">
+      <div class="company-name">{{ companyName }}</div>
+      <h1 class="product-title">{{ product.name }}</h1>
+      <p class="product-description">{{ product.description[0] }}</p>
+      <div class="specifications-doc">
+        <a *ngIf="product.specificationsDoc" 
+           [href]="product.specificationsDoc" 
+           [attr.download]="getEnglishName() + '-Specifications.pdf'" 
+           class="btn">
+          {{ specificationTranslations.specificationsPdf }}
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="spec-table">
+    <table>
+      <thead>
+        <tr>
+          <th>{{ specificationTranslations.specifications }}</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <ng-container *ngFor="let spec of displayedSpecifications">
+          <tr>
+            <td>{{ spec.label }}</td>
+            <td>{{ spec.value }}</td>
+          </tr>
+        </ng-container>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="related-products">
+    <h2>{{ specificationTranslations.similarProducts }}</h2>
+    <div class="related-list">
+      <div class="related-product" 
+           *ngFor="let related of relatedProducts" 
+           (click)="goToProduct(related.id)">
+        <img *ngIf="related.pictures && related.pictures.length > 0" 
+             [src]="related.pictures[0]" 
+             alt="Related Product" />
+        <h3>{{ related.name }}</h3>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="product-modal" #modal>
+  <div class="product-modal-content">
+    <button class="close-btn" (click)="closeModal()" aria-label="Close Modal">&times;</button>
+    <div class="product-modal-content-image">
+      <img 
+        #modalImage
+        [src]="(product?.pictures || [])[currentImageIndex]" 
+        alt="Product Modal Image" 
+        loading="lazy"
+        class="active"
+        (mousedown)="onImageMouseDown($event)" 
+        (mousemove)="onImageMouseMove($event)" 
+        (mouseup)="onImageMouseUp($event)"
+        (click)="onImageClick()"
+        (touchstart)="onImageTouchStart($event)"
+        (touchmove)="onImageTouchMove($event)"
+        (touchend)="onImageTouchEnd($event)" />
+    </div>
+    <div class="product-modal-content-thumbnails">
+      <ng-container *ngFor="let pic of (product?.pictures || []); let i = index">
+        <img (click)="handleClickModalThumbnail($event, i)" 
+             [src]="pic" 
+             alt="Modal Thumbnail {{ i + 1 }}" 
+             loading="lazy"
+             [ngClass]="{'selected': i === currentImageIndex}" />
+      </ng-container>
+    </div>
+  </div>
+</section>

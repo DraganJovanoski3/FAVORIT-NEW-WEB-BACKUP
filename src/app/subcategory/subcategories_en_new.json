@@ -1,0 +1,52 @@
+{
+  "categoryNamesTranslations": {
+      "hoods": "Hoods",
+      "homeAppliances": "Home Appliances",
+      "builtInAppliances": "Built-In Appliances",
+      "airConditioners": "Air Conditioners",
+      "smallDomesticAppliances": "Small Domestic Appliances",
+      "televisions": "Televisions"
+    },
+  "televisions":{},
+  "smallDomesticAppliances":{
+      "airFryer":"Air Fryer",
+      "blenders":"Blenders",
+      "microwaves":"Microwaves",
+      "mixers":"Mixers",
+      "irons":"Irons",
+      "vacuumCleaners":"Vacuum Cleaners",
+      "chop":"Chopper",
+      "grills":"Grills",
+      "thermalJugs":"Thermal Jugs",
+      "toasters":"Toasters",
+      "colanders":"Colanders"
+  },
+  "airConditioners":{
+      "inverter":"Inverter",
+      "inverterWifi":"Inverter/Wi-Fi",
+      "inverter15C": "Invertetr (-15 °C)",
+      "inverter25C": "Invertetr (-25 °C)",
+      "inverter35C": "Invertetr (-35 °C)"
+  },
+  "builtInAppliances":{
+      "builtInDishwashers":"Built-In Dishwashers",
+      "builtInMicrowaves":"Built-In Microwaves",
+      "builtInStoveTops":"Built-In Stove Tops",
+      "builtInCookingAppliences":"Built-In Cooking Appliances",
+      "builtInFridges":"Built-In Fridges",
+      "builtInStoves":"Built-In Stoves"
+  },
+  "homeAppliances":{
+      "boilers":"Boilers",
+      "dishwashers":"Dishwashers",
+      "washingAndDryingMachines":"Washing and drying machines",
+      "dryers":"Dryers",
+      "fridgesAndFreezers":"Fridges and Freezers",
+      "stovesAndMiniStoves":"Stoves",
+      "freezers":"Freezers"
+  },
+  "hoods":{
+      "decorativeHoods":"Decorative Hoods",
+      "telescopicHoods":"Telescopic Hoods"
+  }
+}

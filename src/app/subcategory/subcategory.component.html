@@ -1,0 +1,79 @@
+<nav class="breadcrumbs">
+  <ng-container *ngFor="let breadcrumb of breadcrumbs; let last = last">
+    <a [routerLink]="breadcrumb.url" *ngIf="!last">{{ breadcrumb.label }}</a>
+    <span *ngIf="last" class="current">{{ breadcrumb.label }}</span>
+    <span class="separator" *ngIf="!last">/</span>
+  </ng-container>
+</nav>
+
+<div class="container">
+  <div class="container-body">
+    <!-- Header Section -->
+    <div class="header-section">
+      <h2 class="subcategory-title">{{ subcategoryName }}</h2>
+      <div class="products-count">
+        {{ larnmoreTranslations.productDisplayed }}: {{ displayedProducts.length }}
+        {{ larnmoreTranslations.of }} {{ products.length }}
+      </div>
+    </div>
+
+    <!-- Filter Section -->
+    <div class="filter-section">
+      <div class="filters" [ngClass]="{'active': isMobileView && showFilters}">
+        <div class="close-icon" (click)="toggleFilters()">
+          <mat-icon class="mat-icon-close" fontSize="large">close</mat-icon>
+        </div>
+        <div class="search">
+          <div class="subcategories-container">
+            <input
+              type="text"
+              class="input-styled"
+              placeholder="{{ larnmoreTranslations['SearchByName'] }}"
+              (input)="onEnter($event)"
+            />
+            <div class="subcategories" *ngFor="let sub of subcategories" (click)="onChooseSubcategory(sub)">
+              {{ sub }}
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        class="filter-toggle-btn"
+        *ngIf="isMobileView"
+        (click)="toggleFilters()">
+        <mat-icon>filter_list</mat-icon>
+      </button>
+    </div>
+
+    <!-- Products Grid -->
+    <div class="product-grid">
+      <mat-card
+        *ngFor="let product of displayedProducts"
+        class="product-card"
+        [ngStyle]="{'--hover-bg-color': product.backgroundColorproduct}"
+        (click)="onNavigate(category, subcategory, product.id); $event.stopPropagation();"
+        (mouseover)="onHover(product, true)"
+        (mouseout)="onHover(product, false)"
+      >
+        <div class="product-image-container">
+          <img
+            class="product-image"
+            [src]="product.currentPicture || product.picture"
+            alt="Product Image"
+          />
+        </div>
+        <mat-card-content>
+          <h2 class="product-name">{{ product.name }}</h2>
+          <mat-card-footer class="mat-card-footer">
+            <a
+              (click)="onNavigate(category, subcategory, product.id); $event.stopPropagation();"
+              class="learn-more-btn"
+            >
+              {{ larnmoreTranslations.learnmore }}
+            </a>
+          </mat-card-footer>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</div>
