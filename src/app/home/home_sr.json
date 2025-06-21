@@ -1,22 +1,23 @@
 {
-    "readMore": "Прочитај више",
-    "allProducts": "Сви производи",
+    "readMore": "Pročitaj više",
+    "allProducts": "Svi proizvodi",
     "favorit": "FAVORIT",
-    "everythingForYourHousehold": "Све за ваше домаћинство",
-    "largeNumberOfTopProducts": "Велики број врхунских производа",
-    "favoritAirConditionersAndInverters": "FAVORIT клима уређаји и инвертери",
-    "ourAirConditioningSystems": "Наши системи за климатизацију и инвертери нуде врхунска решења за ладење и грејање. Дизајнирани са елегантним естетикама, енергетски ефикасним функцијама и пуљастим гаранцијама, они осигуравају супериоран комфор и мир у уму. Поверите нам своје резиденцијалне или комерцијалне потребе за ладење и грејање.",
-    "browseOurProducts": "Погледајте наше Производе",
-    "favoritSmart4kUhdTvs": "FAVORIT SMART 4k UHD телевизори",
-    "excellentSelectionOfTvs": "Имамо одличан избор телевизора који ће вас одушевити својом прекрасном сликом и омогућити вам изузетно искуство гледања ваших омиљених филмова, серија или спортских догађаја.",
+    "everythingForYourHousehold": "Sve za vaše domaćinstvo",
+    "largeNumberOfTopProducts": "Veliki broj vrhunskih proizvoda",
+    "favoritAirConditionersAndInverters": "FAVORIT klima uređaji i inverteri",
+    "ourAirConditioningSystems": "Naši sistemi za klimatizaciju i inverteri nude vrhunska rešenja za hlađenje i grejanje. Dizajnirani sa elegantnim estetikama, energetski efikasnim funkcijama i pouzdanim garancijama, oni obezbeđuju superioran komfor i mir u umu. Poverite nam vaše rezidencijalne ili komercijalne potrebe za hlađenje i grejanje.",
+    "browseOurProducts": "Pogledajte naše proizvode",
+    "favoritSmart4kUhdTvs": "FAVORIT SMART 4k UHD televizori",
+    "excellentSelectionOfTvs": "Imamo odličan izbor televizora koji će vas oduševiti svojom prelepom slikom i omogućiti vam izuzetno iskustvo gledanja vaših omiljenih filmova, serija ili sportskih događaja.",
       "category": {
-        "hoods": "Аспиратори",
-        "homeAppliances": "Бела техника",
-        "buildInAppliances": "Уграђени уређаји",
-        "airConditioners": "Клима уређаји",
-        "smallDomesticAppliances": "Мали кућни апарати",
-        "televisions": "Телевизори"
+        "hoods": "Aspiratori",
+        "homeAppliances": "Bela tehnika",
+        "buildInAppliances": "Ugradni uređaji",
+        "airConditioners": "Klima uređaji",
+        "smallDomesticAppliances": "Mali kućni aparati",
+        "televisions": "Televizori"
       },
-      "LearnMoreAboutOurOffer": "Истражите богату понуду"
+      "LearnMoreAboutOurOffer": "Istražite bogatu ponudu",
+      "view": "Pogledaj"
   }
   

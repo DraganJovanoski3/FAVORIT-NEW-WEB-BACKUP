@@ -34,7 +34,9 @@
         "builtInMicrowaves":"Built-In Microwaves",
         "builtInStoveTops":"Built-In Stove Tops",
         "builtInStoves":"Built-In Stoves",
-        "builtInFridges":"Built-In Fridges"
+        "builtInFridges":"Built-In Fridges",
+        "fullyBuiltInDishwashersLabel": "Fully Built-in Dishwashers",
+        "semiBuiltInDishwashersLabel": "Semi Built-in Dishwashers"
     },
     "homeAppliances":{
         "boilers":"Boilers",

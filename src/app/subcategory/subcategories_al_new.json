@@ -26,7 +26,8 @@
       "inverterWifi":"Inverter/Wi-Fi",
       "inverter15C": "Inverter (-15 °C)",
       "inverter25C": "Inverter (-25 °C)",
-      "inverter35C": "Inverter (-35 °C)"
+      "inverter35C": "Inverter (-35 °C)",
+      "airConditioners": "Kondicionerët"
   },
   "builtInAppliances":{
       "builtInDishwashers":"Lavastovilje të ndërtuara",

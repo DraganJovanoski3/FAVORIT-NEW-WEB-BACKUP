@@ -10,5 +10,7 @@
     "addressLine": "St. Partizanski Odredi 154 1000 Skopje, Republic of Macedonia",
     "phone": "Телефон",
     "service": "Сервисен оддел",
-    "email": "Е-пошта"
+    "email": "Е-пошта",
+    "searchPlaceholder": "Пребарај производи...",
+    "searchNoResults": "Нема резултати."
 }

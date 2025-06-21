@@ -43,6 +43,7 @@
     <div class="cards">
       <div class="category" *ngFor="let category of categories" (click)="onNavigateCategories('category', category.category)">
         <div class="category-image" [style.backgroundImage]="'url(' + category.image + ')'" [attr.alt]="category.name">
+          <span class="category-badge">{{ homeComponentConstant.view }}</span>
         </div>
         <div class="category-title">{{ category.name }}</div>
       </div>

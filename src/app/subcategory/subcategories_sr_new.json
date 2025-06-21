@@ -26,7 +26,8 @@
       "inverterWifi":"Инвертер/Wi-Fi",
       "inverter15C": "Инвертер (-15 °C)",
       "inverter25C": "Инвертер (-25 °C)",
-      "inverter35C": "Инвертер (-35 °C)"
+      "inverter35C": "Инвертер (-35 °C)",
+      "airConditioners": "Klima Uređaji"
   },
   "builtInAppliances":{
       "builtInDishwashers":"Уграђене машине за судове",

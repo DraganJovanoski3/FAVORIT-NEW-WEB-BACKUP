@@ -196,10 +196,17 @@ export class HomeComponent implements OnInit, OnDestroy {
   }
 
   onNavigateCategories(navigateParam: string, category: string) {
-    this._router.navigate([navigateParam, category], { queryParamsHandling: 'merge' })
-      .then(() => {
-        window.scrollTo(0, 0);
-      });
+    if (category === 'air-conditioners') {
+      this._router.navigate([navigateParam, category, 'subcategory', 'air-conditioners'], { queryParamsHandling: 'merge' })
+        .then(() => {
+          window.scrollTo(0, 0);
+        });
+    } else {
+      this._router.navigate([navigateParam, category], { queryParamsHandling: 'merge' })
+        .then(() => {
+          window.scrollTo(0, 0);
+        });
+    }
   }
 }
 

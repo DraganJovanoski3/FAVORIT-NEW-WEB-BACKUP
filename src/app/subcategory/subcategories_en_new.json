@@ -26,7 +26,8 @@
       "inverterWifi":"Inverter/Wi-Fi",
       "inverter15C": "Invertetr (-15 °C)",
       "inverter25C": "Invertetr (-25 °C)",
-      "inverter35C": "Invertetr (-35 °C)"
+      "inverter35C": "Invertetr (-35 °C)",
+      "airConditioners": "Air Conditioners"
   },
   "builtInAppliances":{
       "builtInDishwashers":"Built-In Dishwashers",

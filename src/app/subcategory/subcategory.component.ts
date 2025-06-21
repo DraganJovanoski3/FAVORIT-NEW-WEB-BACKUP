@@ -181,11 +181,19 @@ export class SubcategoryComponent implements OnInit {
   }
 
   private setupBreadcrumbs() {
-    this.breadcrumbs = [
-      { label: this.getTranslatedNameBread('Home'), url: '/' },
-      { label: this.getTranslatedNameBread(this.category, true), url: `/category/${this.category}` },
-      { label: this.getTranslatedNameBread(this.subcategory), url: `/category/${this.category}/subcategory/${this.subcategory}` }
-    ];
+    // If subcategory is 'air-conditioners', do not show the last breadcrumb
+    if (this.subcategory === 'air-conditioners') {
+      this.breadcrumbs = [
+        { label: this.getTranslatedNameBread('Home'), url: '/' },
+        { label: this.getTranslatedNameBread(this.category, true), url: `/category/${this.category}` }
+      ];
+    } else {
+      this.breadcrumbs = [
+        { label: this.getTranslatedNameBread('Home'), url: '/' },
+        { label: this.getTranslatedNameBread(this.category, true), url: `/category/${this.category}` },
+        { label: this.getTranslatedNameBread(this.subcategory), url: `/category/${this.category}/subcategory/${this.subcategory}` }
+      ];
+    }
   }
 
   private updateProducts() {
@@ -743,16 +751,18 @@ export class SubcategoryComponent implements OnInit {
           break;
       case 'built-in-dishwashers':
         const builtInDishwashersLabel = this.filterSubcategory.builtInAppliances.builtInDishwashers;
-        this.subcategories = [builtInDishwashersLabel, allLabel];
-        this.backgroundStyle = 'linear-gradient(rgba(0, 0, 0, 0.27), rgba(0, 0, 0, 0.27)), url("assets/subcategories/built-in-dishwashers.jpg")';
+        const fullyBuiltInDishwashersLabel = this.filterSubcategory.builtInAppliances.fullyBuiltInDishwashersLabel;
+        const semiBuiltInDishwashersLabel = this.filterSubcategory.builtInAppliances.semiBuiltInDishwashersLabel;
+        this.subcategories = [fullyBuiltInDishwashersLabel, semiBuiltInDishwashersLabel, allLabel];
+        this.backgroundStyle = 'linear-gradient(rgba(0, 0, 0, 0.27), rgba(0, 0, 0, 0.27)), #f5f5f5';
         this.subcategoryName = builtInDishwashersLabel;
         this.products = [
           {
             id: 63,
-            name: this.productTranslations['63'] ||'Built-in dishwasher BI45-I1E (fully integrated)',
+            name: this.productTranslations['63'] ||'Built-in dishwasher BI45-I1E',
             picture: 'assets/Built In Appliances/Built-in dishwasher BI45-I1E (fully integrated)/BI-45-I1E-08-1024x576.png',
             pictureHover: 'assets/',
-            subcategory: builtInDishwashersLabel,
+            subcategory: fullyBuiltInDishwashersLabel,
             backgroundColorproduct: 'linear-gradient(#9f9f9f 0%, #ffffff 90%, #ffffff 100%)'
           },
           {
@@ -760,23 +770,15 @@ export class SubcategoryComponent implements OnInit {
             name: this.productTranslations['64'] ||'Built-in dishwasher SI60 – I14N',
             picture: 'assets/Built In Appliances/Built-in dishwasher BI60 – I14 (fully integrated)/SI60-I14-11-1024x576.png',
             pictureHover: 'assets/',
-            subcategory: builtInDishwashersLabel,
-            backgroundColorproduct: 'linear-gradient(#9f9f9f 0%, #ffffff 90%, #ffffff 100%)'
-          },
-          {
-            id: 143,
-            name: this.productTranslations['64'] ||'Built-in dishwasher BI60 – I14N',
-            picture: 'assets/Built In Appliances/Built-in dishwasher BI60 – I14 (fully integrated)/SI60-I14-11-1024x576.png',
-            pictureHover: 'assets/',
-            subcategory: builtInDishwashersLabel,
+            subcategory: semiBuiltInDishwashersLabel,
             backgroundColorproduct: 'linear-gradient(#9f9f9f 0%, #ffffff 90%, #ffffff 100%)'
           },
           {
             id: 65,
-            name: this.productTranslations['65'] ||'Built-in dishwasher BI60-I1FN',
+            name: this.productTranslations['65'] ||'Built-in dishwasher BI60 – I14N',
             picture: 'assets/Built In Appliances/Built-in dishwasher FAVORIT BI60-I1FN/RABOTEN-16.9-29-2-1024x576.png',
             pictureHover: 'assets/',
-            subcategory: builtInDishwashersLabel,
+            subcategory: fullyBuiltInDishwashersLabel,
             backgroundColorproduct: 'linear-gradient(#9f9f9f 0%, #ffffff 90%, #ffffff 100%)'
           },
           {
@@ -784,7 +786,7 @@ export class SubcategoryComponent implements OnInit {
             name: this.productTranslations['66'] ||'Built-in dishwasher SI60 – I14',
             picture: 'assets/Built In Appliances/Built-in dishwasher SI60 – I14/BI60-I14-02-1024x576.png',
             pictureHover: 'assets/',
-            subcategory: builtInDishwashersLabel,
+            subcategory: semiBuiltInDishwashersLabel,
             backgroundColorproduct: 'linear-gradient(#9f9f9f 0%, #ffffff 90%, #ffffff 100%)'
           }
         ];
@@ -907,92 +909,137 @@ export class SubcategoryComponent implements OnInit {
         this.products = [
           {
             id: 74,
-            name: this.productTranslations['74'] ||'Built-in refrigerator BIR 1001N',
-            picture: 'assets/Built In Appliances/Built-in refrigerator BIR 1001N/FAVORIT-BIR-1001-01-1024x576.png',
-            pictureHover: 'assets/',
+            name: this.productTranslations['74'] ||'Built-in refrigerator UCF 2764N',
+            picture: 'assets/Built In Appliances/Built-in refrigerator UCF 2764N/FAVORIT-UCF-2760-01-1024x576.png',
+            pictureHover: 'assets/Built In Appliances/Built-in refrigerator UCF 2764N/FAVORIT-UCF-2760-02-1024x576.png',
+            subcategory: builtInFridgesLabel,
+            backgroundColorproduct: 'linear-gradient(#9f9f9f 0%, #ffffff 90%, #ffffff 100%)'
+          },
+          {
+            id: 150,
+            name: this.productTranslations['150'] ||'Built-in refrigerator UF2795N',
+            picture: 'assets/Built In Appliances/Built-in refrigerator UF2795N/Built-in refrigerator UF2795N.png',
+            pictureHover: 'assets/Built In Appliances/Built-in refrigerator UF2795N/Built-in refrigerator UF2795N-opend.png',
             subcategory: builtInFridgesLabel,
             backgroundColorproduct: 'linear-gradient(#9f9f9f 0%, #ffffff 90%, #ffffff 100%)'
           },
           {
             id: 75,
-            name: this.productTranslations['75'] ||'Built-in refrigerator BIR 1002N',
-            picture: 'assets/Built In Appliances/Built-in refrigerator BIR 1002N/FAVORIT-BIR-1002-01-1024x576.png',
-            pictureHover: 'assets/',
+            name: this.productTranslations['75'] ||'Built-in refrigerator URF 263N',
+            picture: 'assets/Built In Appliances/Built-in refrigerator URF 263N/Vgraden-frizider-URF-263N-43-1024x576.png',
+            pictureHover: 'assets/Built In Appliances/Built-in refrigerator URF 263N/Vgraden-frizider-URF-263N-44-1024x576.png',
             subcategory: builtInFridgesLabel,
             backgroundColorproduct: 'linear-gradient(#9f9f9f 0%, #ffffff 90%, #ffffff 100%)'
           },
           {
             id: 76,
-            name: this.productTranslations['76'] ||'Built-in refrigerator BIR 2653N',
-            picture: 'assets/Built In Appliances/Built-in refrigerator BIR 2653N/FAVORIT-BIR-2653-01-1024x576.png',
-            pictureHover: 'assets/',
+            name: this.productTranslations['76'] ||'Built-in refrigerator URF 1600N',
+            picture: 'assets/Built In Appliances/Built-in refrigerator URF 1600N/Vgraden-frizider-URF-1600N-43-1024x576.png',
+            pictureHover: 'assets/Built In Appliances/Built-in refrigerator URF 1600N/Vgraden-frizider-URF-1600N-44-1024x576.png',
             subcategory: builtInFridgesLabel,
             backgroundColorproduct: 'linear-gradient(#9f9f9f 0%, #ffffff 90%, #ffffff 100%)'
           }
         ];
         break;
-      case 'inverter':
-        this.subcategories = Object.values(this.subcategoriesComponentConstant.hoods).concat('all') as string[];
+      case 'air-conditioners':
+        const inverter15CLabel = this.filterSubcategory.airConditioners.inverter15C;
+        const inverter25CLabel = this.filterSubcategory.airConditioners.inverter25C;
+        const inverter35CLabel = this.filterSubcategory.airConditioners.inverter35C;
         this.backgroundStyle = '';
-        this.subcategoryName = this.subcategoriesComponentConstant.airConditioners.inverter;
+        this.subcategoryName = this.subcategoriesComponentConstant.airConditioners.airConitioners;
         this.products = [
           {
             // KEEP
             id: 84,
-            name: this.productTranslations['84'] ||'AIR CONDITIONER INVERTER 12000BTU FF (-15 °C)',
-            picture: 'assets/Ait Conditioners/AIR CONDITIONER INVERTER 12000BTU FF/12000BTU-FF-18000BTU-FF-1.png',  pictureHover: 'assets/',
-            subcategory: this.subcategoriesComponentConstant.airConditioners.inverter,
+            name: this.productTranslations['84'] || 'AIR CONDITIONER INVERTER 12000BTU FF (-15 °C)',
+            picture: 'assets/Ait Conditioners/AIR CONDITIONER INVERTER 12000BTU FF/12000BTU-FF-18000BTU-FF-1.png',
+            pictureHover: 'assets/',
+            subcategory: inverter15CLabel,
             backgroundColorproduct: 'linear-gradient(#33BBC6 0%, #ffffff 90%, #ffffff 100%)'
           },
           {
             // KEEP
             id: 88,
-            name: this.productTranslations['88'] ||'AIR CONDITIONER INVERTER 18000BTU FF (-15 °C)',
-            picture: 'assets/Ait Conditioners/AIR CONDITIONER INVERTER 18000BTU FF/12000BTU-FF-18000BTU-FF-1.png',  pictureHover: 'assets/',
-            subcategory: this.subcategoriesComponentConstant.airConditioners.inverter,
+            name: this.productTranslations['88'] || 'AIR CONDITIONER INVERTER 18000BTU FF (-15 °C)',
+            picture: 'assets/Ait Conditioners/AIR CONDITIONER INVERTER 18000BTU FF/12000BTU-FF-18000BTU-FF-1.png',
+            pictureHover: 'assets/',
+            subcategory: inverter15CLabel,
             backgroundColorproduct: 'linear-gradient(#33BBC6 0%, #ffffff 90%, #ffffff 100%)'
-
           },
           {
-            // KEEP
+            id: 125,
+            name: this.productTranslations['125'] || 'AIR CONDITIONER 24000BTU FF (-15 °C)',
+            picture: 'assets/Ait Conditioners/AIR CONDITIONER 24000BTU FF (-15 °C)/12000BTU-QB-HE-HB-18000BTU-QB-HE-HB-vnatresna-edinica-800x335.png',
+            pictureHover: 'assets/',
+            subcategory: inverter15CLabel,
+            backgroundColorproduct: 'linear-gradient(#33BBC6 0%, #ffffff 90%, #ffffff 100%)'
+          },
+          {
             id: 85,
-            name: this.productTranslations['85'] ||'AIR CONDITIONER INVERTER 12000BTU JD HB (-25°C)',
-            picture: 'assets/Ait Conditioners/AIR CONDITIONER INVERTER 12000BTU JD HB/12000BTU-JD-HB-18000BTU-JD-HB.png',  pictureHover: 'assets/',
-            subcategory: this.subcategoriesComponentConstant.airConditioners.inverter,
+            name: this.productTranslations['85'] || 'AIR CONDITIONER INVERTER 12000BTU JD HB (-25°C)',
+            picture: 'assets/Ait Conditioners/AIR CONDITIONER INVERTER 12000BTU JD HB/12000BTU-JD-HB-18000BTU-JD-HB.png',
+            pictureHover: 'assets/',
+            subcategory: inverter25CLabel,
             backgroundColorproduct: 'linear-gradient(#33BBC6 0%, #ffffff 90%, #ffffff 100%)'
           },
           {
-            // KEEP
             id: 89,
-            name: this.productTranslations['89'] ||'AIR CONDITIONER INVERTER 18000BTU JD HB (-25°C)',
-            picture: 'assets/Ait Conditioners/AIR CONDITIONER INVERTER 18000BTU JD HB/12000BTU-JD-HB-18000BTU-JD-HB.png',  pictureHover: 'assets/',
-            subcategory: this.subcategoriesComponentConstant.airConditioners.inverter,
+            name: this.productTranslations['89'] || 'AIR CONDITIONER INVERTER 18000BTU JD HB (-25°C)',
+            picture: 'assets/Ait Conditioners/AIR CONDITIONER INVERTER 18000BTU JD HB/12000BTU-JD-HB-18000BTU-JD-HB.png',
+            pictureHover: 'assets/',
+            subcategory: inverter25CLabel,
             backgroundColorproduct: 'linear-gradient(#33BBC6 0%, #ffffff 90%, #ffffff 100%)'
           },
-           // {
-          //   id: 79,
-          //   name: this.productTranslations['79'] ||'AIR CONDITIONER FAVORIT 12K SUPER INVERTER NORDIC',
-          //   picture: 'assets/Ait Conditioners/AIR CONDITIONER FAVORIT 12K SUPER INVERTER NORDIC/KLIMA-21-1024x576-1.png',  pictureHover: 'assets/',
-          //   subcategory: this.subcategoriesComponentConstant.airConditioners.inverter,
-          //   backgroundColorproduct: 'linear-gradient(#33BBC6 0%, #ffffff 90%, #ffffff 100%)'
+          {
+            id: 127,
+            name: this.productTranslations['127'] || 'AIR CONDITIONER INVERTER 24000BTU JD HB (-25°C)',
+            picture: 'assets/Ait Conditioners/AIR CONDITIONER INVERTER 24000BTU JD HB/12000BTU-QB-HE-HB-18000BTU-QB-HE-HB-vnatresna-edinica-1024x429 (1).png',
+            pictureHover: 'assets/',
+            subcategory: inverter25CLabel,
+            backgroundColorproduct: 'linear-gradient(#33BBC6 0%, #ffffff 90%, #ffffff 100%)'
+          },
+          {
+            id: 128,
+            name: this.productTranslations['128'] || 'AIR CONDITIONER 12000 BTU QB HE HB (-35°C)',
+            picture: 'assets/Ait Conditioners/AIR CONDITIONER 12000 BTU QB HE HB/12000BTU-QB-HE-HB-18000BTU-QB-HE-HB-vnatresna-edinica-1024x429.png',
+            pictureHover: 'assets/',
+            subcategory: inverter35CLabel,
+            backgroundColorproduct: 'linear-gradient(#33BBC6 0%, #ffffff 90%, #ffffff 100%)'
+          },
+          {
+            id: 129,
+            name: this.productTranslations['129'] || 'AIR CONDITIONER 18000 BTU QB HE HB (-35°C)',
+            picture: 'assets/Ait Conditioners/AIR CONDITIONER 18000 BTU QB HE HB/12000BTU-QB-HE-HB-18000BTU-QB-HE-HB-vnatresna-edinica-1024x429.png',
+            pictureHover: 'assets/',
+            subcategory: inverter35CLabel,
+            backgroundColorproduct: 'linear-gradient(#33BBC6 0%, #ffffff 90%, #ffffff 100%)'
+          },
 
+          // INVERTER
+          // {
+          //   id: 79,
+          //   name: this.productTranslations['79'] || 'AIR CONDITIONER FAVORIT 12K SUPER INVERTER NORDIC',
+          //   picture: 'assets/Ait Conditioners/AIR CONDITIONER FAVORIT 12K SUPER INVERTER NORDIC/KLIMA-21-1024x576-1.png',
+          //   pictureHover: 'assets/',
+          //   subcategory: inverterLabel,
+          //   backgroundColorproduct: 'linear-gradient(#33BBC6 0%, #ffffff 90%, #ffffff 100%)'
           // },
           // {
           //   id: 80,
-          //   name: this.productTranslations['80'] ||'AIR CONDITIONER FAVORIT 18K SUPER INVERTER NORDIC',
-          //   picture: 'assets/Ait Conditioners/AIR CONDITIONER FAVORIT 18K SUPER INVERTER NORDIC/18K-Nordic-1024x576.png',  pictureHover: 'assets/',
-          //   subcategory: this.subcategoriesComponentConstant.airConditioners.inverter,
+          //   name: this.productTranslations['80'] || 'AIR CONDITIONER FAVORIT 18K SUPER INVERTER NORDIC',
+          //   picture: 'assets/Ait Conditioners/AIR CONDITIONER FAVORIT 18K SUPER INVERTER NORDIC/18K-Nordic-1024x576.png',
+          //   pictureHover: 'assets/',
+          //   subcategory: inverterLabel,
           //   backgroundColorproduct: 'linear-gradient(#33BBC6 0%, #ffffff 90%, #ffffff 100%)'
-
           // },
           // {
           //   id: 81,
-          //   name: this.productTranslations['81'] ||'AIR CONDITIONER FAVORIT 24K SUPER INVERTER NORDIC',
-          //   picture: 'assets/Ait Conditioners/AIR CONDITIONER FAVORIT 24K SUPER INVERTER NORDIC/24K-Nordic-1024x576.png',  pictureHover: 'assets/',
-          //   subcategory: this.subcategoriesComponentConstant.airConditioners.inverter,
+          //   name: this.productTranslations['81'] || 'AIR CONDITIONER FAVORIT 24K SUPER INVERTER NORDIC',
+          //   picture: 'assets/Ait Conditioners/AIR CONDITIONER FAVORIT 24K SUPER INVERTER NORDIC/24K-Nordic-1024x576.png',
+          //   pictureHover: 'assets/',
+          //   subcategory: inverterLabel,
           //   backgroundColorproduct: 'linear-gradient(#33BBC6 0%, #ffffff 90%, #ffffff 100%)'
-
-          // },
+          // }
           // {
           //   id: 82,
           //   name: this.productTranslations['82'] ||'AIR CONDITIONER INVERTER 12000 BTU',
@@ -1009,12 +1056,6 @@ export class SubcategoryComponent implements OnInit {
           //   backgroundColorproduct: 'linear-gradient(#33BBC6 0%, #ffffff 90%, #ffffff 100%)'
 
           // },
-          // {
-          //   id: 89,
-          //   name: this.productTranslations['89'] ||'AIR CONDITIONER INVERTER 18000BTU JD HB',
-          //   picture: 'assets/Ait Conditioners/AIR CONDITIONER INVERTER 18000BTU JD HB/12000BTU-JD-HB-18000BTU-JD-HB.png',  pictureHover: 'assets/',
-          //   subcategory: this.subcategoriesComponentConstant.airConditioners.inverter,
-          //   backgroundColorproduct: 'linear-gradient(#33BBC6 0%, #ffffff 90%, #ffffff 100%)'
 
           // },
           // {
@@ -1024,109 +1065,51 @@ export class SubcategoryComponent implements OnInit {
           //   subcategory: this.subcategoriesComponentConstant.airConditioners.inverter,
           //   backgroundColorproduct: 'linear-gradient(#33BBC6 0%, #ffffff 90%, #ffffff 100%)'
           // },
-        ]; 
-        break;
-      case 'inverter-wifi':
-          this.subcategories = Object.values(this.subcategoriesComponentConstant.hoods).concat('all') as string[];
-          this.backgroundStyle = '';
-          this.subcategoryName = this.subcategoriesComponentConstant.airConditioners.inverterWifi;
-          this.products = [
+
+          // // INVERTER WI-FI
           // {
           //   id: 83,
-          //   name: this.productTranslations['83'] ||'AIR CONDITIONER INVERTER 12000 BTU WI-FI',
-          //   picture: 'assets/Ait Conditioners/AIR CONDITIONER INVERTER 12000 BTU WI-FI/FAVORIT-KLIMA-12000-BTU-INVERTER-WI-FI-01-1024x576.png',  pictureHover: 'assets/',
-          //   subcategory: this.subcategoriesComponentConstant.airConditioners.inverterWifi,
+          //   name: this.productTranslations['83'] || 'AIR CONDITIONER INVERTER 12000 BTU WI-FI',
+          //   picture: 'assets/Ait Conditioners/AIR CONDITIONER INVERTER 12000 BTU WI-FI/FAVORIT-KLIMA-12000-BTU-INVERTER-WI-FI-01-1024x576.png',
+          //   pictureHover: 'assets/',
+          //   subcategory: inverterWifiLabel,
           //   backgroundColorproduct: 'linear-gradient(#33BBC6 0%, #ffffff 90%, #ffffff 100%)'
-
           // },
           // {
           //   id: 87,
-          //   name: this.productTranslations['87'] ||'AIR CONDITIONER INVERTER 18000 BTU WI-FI',
-          //   picture: 'assets/Ait Conditioners/AIR CONDITIONER INVERTER 18000 BTU WI-FI/FAVORIT-KLIMA-18000-BTU-INVERTER-WI-FI-01-1024x576.png',  pictureHover: 'assets/',
-          //   subcategory: this.subcategoriesComponentConstant.airConditioners.inverterWifi,
+          //   name: this.productTranslations['87'] || 'AIR CONDITIONER INVERTER 18000 BTU WI-FI',
+          //   picture: 'assets/Ait Conditioners/AIR CONDITIONER INVERTER 18000 BTU WI-FI/FAVORIT-KLIMA-18000-BTU-INVERTER-WI-FI-01-1024x576.png',
+          //   pictureHover: 'assets/',
+          //   subcategory: inverterWifiLabel,
           //   backgroundColorproduct: 'linear-gradient(#33BBC6 0%, #ffffff 90%, #ffffff 100%)'
-
           // },
           // {
           //   id: 91,
-          //   name: this.productTranslations['91'] ||'AIR CONDITIONER INVERTER 24000 BTU WI-FI',
-          //   picture: 'assets/Ait Conditioners/КЛИМА УРЕД ИНВЕРТЕР 24000 BTU WI-FI/FAVORIT-KLIMA-24000-BTU-INVERTER-WI-FI-01-500x375.png',  pictureHover: 'assets/',
-          //   subcategory: this.subcategoriesComponentConstant.airConditioners.inverterWifi
-          // },
-        ]; 
-        break;
-      case 'inverter-15C':
-          this.subcategories = Object.values(this.subcategoriesComponentConstant.hoods).concat('all') as string[];
-          this.backgroundStyle = '';
-          this.subcategoryName = this.subcategoriesComponentConstant.airConditioners.inverter15C;
-          this.products = [
-          // {
-          //   id: 125,
-          //   name: this.productTranslations['125'] ||'AIR CONDITIONER 24000BTU FF (-15 °C)',
-          //   picture: 'assets/Ait Conditioners/AIR CONDITIONER 24000BTU FF (-15 °C)/12000BTU-QB-HE-HB-18000BTU-QB-HE-HB-vnatresna-edinica-800x335.png',  pictureHover: 'assets/',
-          //   subcategory: this.subcategoriesComponentConstant.airConditioners.inverter15C,
+          //   name: this.productTranslations['91'] || 'AIR CONDITIONER INVERTER 24000 BTU WI-FI',
+          //   picture: 'assets/Ait Conditioners/КЛИМА УРЕД ИНВЕРТЕР 24000 BTU WI-FI/FAVORIT-KLIMA-24000-BTU-INVERTER-WI-FI-01-500x375.png',
+          //   pictureHover: 'assets/',
+          //   subcategory: inverterWifiLabel,
           //   backgroundColorproduct: 'linear-gradient(#33BBC6 0%, #ffffff 90%, #ffffff 100%)'
-
-            // da se smeni koa ke se dobie slika
           // },
+          // // INVERTER -15C
           // {
           //   id: 126,
-          //   name: this.productTranslations['126'] ||'AIR CONDITIONER INVERTER 24000BTU FF (-15 °C)',
-          //   picture: 'assets/Ait Conditioners/AIR CONDITIONER INVERTER 24000BTU FF (-15°C)/12000BTU-QB-HE-HB-18000BTU-QB-HE-HB-vnatresna-edinica-1024x429.png',  pictureHover: 'assets/',
-          //   subcategory: this.subcategoriesComponentConstant.airConditioners.inverter15C,
+          //   name: this.productTranslations['126'] || 'AIR CONDITIONER INVERTER 24000BTU FF (-15 °C)',
+          //   picture: 'assets/Ait Conditioners/AIR CONDITIONER INVERTER 24000BTU FF (-15°C)/12000BTU-QB-HE-HB-18000BTU-QB-HE-HB-vnatresna-edinica-1024x429.png',
+          //   pictureHover: 'assets/',
+          //   subcategory: inverter15CLabel,
           //   backgroundColorproduct: 'linear-gradient(#33BBC6 0%, #ffffff 90%, #ffffff 100%)'
-
           // },
-          {
-            // KEEP
-            id: 125,
-            name: this.productTranslations['125'] ||'AIR CONDITIONER 24000BTU FF (-15 °C)',
-            picture: 'assets/Ait Conditioners/AIR CONDITIONER 24000BTU FF (-15 °C)/12000BTU-QB-HE-HB-18000BTU-QB-HE-HB-vnatresna-edinica-800x335.png',  pictureHover: 'assets/',
-            subcategory: this.subcategoriesComponentConstant.airConditioners.inverter15C,
-            backgroundColorproduct: 'linear-gradient(#33BBC6 0%, #ffffff 90%, #ffffff 100%)'
+          // INVERTER -25C
+          // INVERTER -35C
+          // KEEP COMMENTED PRODUCTS
 
-            // da se smeni koa ke se dobie slika
-          },  
         ]; 
-        break;
-      case 'inverter-25C':
-        this.subcategories = Object.values(this.subcategoriesComponentConstant.hoods).concat('all') as string[];
-        this.backgroundStyle = '';
-        this.subcategoryName = this.subcategoriesComponentConstant.airConditioners.inverter25C;
-        this.products = [
-                    {
-            // KEEP
-            id: 127,
-            name: this.productTranslations['127'] ||'AIR CONDITIONER INVERTER 24000BTU JD HB (-25°C)',
-            picture: 'assets/Ait Conditioners/AIR CONDITIONER INVERTER 24000BTU JD HB/12000BTU-QB-HE-HB-18000BTU-QB-HE-HB-vnatresna-edinica-1024x429 (1).png',  pictureHover: 'assets/',
-            subcategory: this.subcategoriesComponentConstant.airConditioners.inverter25C,
-            backgroundColorproduct: 'linear-gradient(#33BBC6 0%, #ffffff 90%, #ffffff 100%)'
-          },
-        ]; 
-        break;
-      case 'inverter-35C':
-        this.subcategories = Object.values(this.subcategoriesComponentConstant.hoods).concat('all') as string[];
-        this.backgroundStyle = '';
-        this.subcategoryName = this.subcategoriesComponentConstant.airConditioners.inverter35C;
-        this.products = [
-          {
-            // KEEP
-            id: 128,
-            name: this.productTranslations['128'] ||'AIR CONDITIONER 12000 BTU QB HE HB (-35°C)',
-            picture: 'assets/Ait Conditioners/AIR CONDITIONER 12000 BTU QB HE HB/12000BTU-QB-HE-HB-18000BTU-QB-HE-HB-vnatresna-edinica-1024x429.png',  pictureHover: 'assets/',
-            subcategory: this.subcategoriesComponentConstant.airConditioners.inverter35C,
-            backgroundColorproduct: 'linear-gradient(#33BBC6 0%, #ffffff 90%, #ffffff 100%)'
-          },
-          {
-            // KEEP
-            id: 129,
-            name: this.productTranslations['129'] ||'AIR CONDITIONER 18000 BTU QB HE HB (-35°C)',
-            picture: 'assets/Ait Conditioners/AIR CONDITIONER 18000 BTU QB HE HB/12000BTU-QB-HE-HB-18000BTU-QB-HE-HB-vnatresna-edinica-1024x429.png',  pictureHover: 'assets/',
-            subcategory: this.subcategoriesComponentConstant.airConditioners.inverter35C,
-            backgroundColorproduct: 'linear-gradient(#33BBC6 0%, #ffffff 90%, #ffffff 100%)'
-          },
-          
-        ]; 
+        // Only show subcategories (filters) that have at least one product
+        const filterLabels = [inverter15CLabel, inverter25CLabel, inverter35CLabel];
+        this.subcategories = filterLabels.filter(label => this.products.some(p => p.subcategory === label));
+        this.subcategories.push(allLabel);
+        this.displayedProducts = this.products;
         break;
       case 'air-fryers':
         this.subcategories = Object.values(this.subcategoriesComponentConstant.hoods).concat('all') as string[];

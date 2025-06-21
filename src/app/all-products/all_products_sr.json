@@ -1,14 +1,14 @@
 {
-    "header": "Сви Производи",
-    "learnMore": "Сазнај више",
-    "filter": "Филтер Производи",
+    "header": "Svi Proizvodi",
+    "learnMore": "Saznaj više",
+    "filter": "Filter Proizvodi",
     "category": {
-        "hoods": "Аспиратори",
-        "homeAppliances": "Бела техника",
-        "buildInAppliances": "Уграђени уређаји",
-        "airConditioners": "Клима уређаји",
-        "smallDomesticAppliances": "Мали кућни апарати",
-        "televisions": "Телевизори"
+        "hoods": "Aspiratori",
+        "homeAppliances": "Bela tehnika",
+        "buildInAppliances": "Ugradni uređaji",
+        "airConditioners": "Klima uređaji",
+        "smallDomesticAppliances": "Mali kućni aparati",
+        "televisions": "Televizori"
       }
 }
   

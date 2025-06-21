@@ -154,10 +154,20 @@ export class ProductComponent implements OnInit, AfterViewInit {
   private setupBreadcrumbs(): void {
     this.breadcrumbs = [
       { label: this.getTranslatedNameBread('Home'), url: '/' },
-      { label: this.getTranslatedNameBread(this.category, true), url: `/category/${this.category}` },
-      { label: this.getTranslatedNameBread(this.subcategory), url: `/category/${this.category}/subcategory/${this.subcategory}` },
-      { label: this.product?.name || '', url: '' } // Product name (no link)
     ];
+    // If category and subcategory are both 'air-conditioners', only show subcategory
+    if (
+      this.category === 'air-conditioners' &&
+      this.subcategory === 'air-conditioners'
+    ) {
+      this.breadcrumbs.push({ label: this.getTranslatedNameBread(this.subcategory), url: `/category/${this.category}/subcategory/${this.subcategory}` });
+    } else {
+      this.breadcrumbs.push({ label: this.getTranslatedNameBread(this.category, true), url: `/category/${this.category}` });
+      if (this.subcategory && this.subcategory !== 'other') {
+        this.breadcrumbs.push({ label: this.getTranslatedNameBread(this.subcategory), url: `/category/${this.category}/subcategory/${this.subcategory}` });
+      }
+    }
+    this.breadcrumbs.push({ label: this.product?.name || '', url: '' }); // Product name (no link)
   }
 
   /**

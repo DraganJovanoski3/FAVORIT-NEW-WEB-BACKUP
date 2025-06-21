@@ -1,4 +1,3 @@
-
 <nav #navbarElement>
   <a class="navbar-brand" (click)="onNavigate('')">
     <img src="/assets/favorit-logo.png" alt="Logo">
@@ -20,6 +19,11 @@
     <li class="nav-item"><a class="nav-link" (click)="onNavigate('contact')">{{navbarConstant.contact}}</a></li>
     <li class="nav-item"><a class="nav-link" (click)="onNavigate('blogs')">{{navbarConstant.blogList}}</a></li>
 
+    <li class="nav-item">
+      <a class="nav-link search-icon" (click)="toggleSearch()">
+        <mat-icon>search</mat-icon>
+      </a>
+    </li>
 
     <li class="nav-item dropdown">
       <a class="nav-link dropdown-toggle dropbtn" (click)="toggleDropdown()" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -36,6 +40,39 @@
       </div>
     </li>
   </ul>
+
+  <!-- Desktop Search Area (expandable) -->
+  <div class="navbar-search-area" *ngIf="isSearchOpen">
+    <div class="search-panel">
+      <div style="position: relative; width: 100%;">
+        <input
+          type="text"
+          class="search-input"
+          placeholder="{{navbarConstant.searchPlaceholder}}"
+          [(ngModel)]="searchText"
+          (input)="onSearchInput()"
+          autofocus
+        />
+        <button *ngIf="searchText" (click)="searchText=''; onSearchInput();" class="search-clear-btn" type="button" aria-label="Clear search" style="position: absolute; right: 12px; top: 50%; transform: translateY(-50%); background: none; border: none; cursor: pointer; padding: 0;">
+          <mat-icon>close</mat-icon>
+        </button>
+      </div>
+      <div class="search-categories">
+        <span class="category-item" *ngFor="let category of categories" (click)="onCategoryClick(category)">
+          {{ category.name }}
+        </span>
+      </div>
+      <div class="search-results" *ngIf="searchText && filteredProducts.length">
+        <div class="search-result-item" *ngFor="let product of filteredProducts" (click)="onProductClick(product)">
+          <img [src]="product.pictures[0]" alt="{{product.name}}" class="search-result-img" />
+          <span class="search-result-name">{{ product.name }}</span>
+        </div>
+      </div>
+      <div class="search-no-results" *ngIf="searchText && !filteredProducts.length">
+        {{navbarConstant.searchNoResults}}
+      </div>
+    </div>
+  </div>
 </nav>
 <nav class="mobile-menu" [class.open]="isOpen">
   <ul class="nav-mobile">

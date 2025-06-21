@@ -35,7 +35,9 @@
         "builtInMicrowaves":"Вградни микробранови печки",
         "builtInStoveTops":"Вградни Плочи",
         "builtInStoves":"Вградни Шпорети",
-        "builtInFridges":"Вградни Фрижидери"
+        "builtInFridges":"Вградни Фрижидери",
+        "fullyBuiltInDishwashersLabel": "Целосно вградни машини за садови",
+        "semiBuiltInDishwashersLabel": "Полувградни машини за садови"
     },
     "homeAppliances":{
         "boilers":"Бојлери",
@@ -46,7 +48,7 @@
         "stoves":"Шпорети",
         "freezers":"Замрзнувачи",
         "miniStoves": "Мини Шпорети",
-        "stovesGlassLabel": "Стаклени Шпорети",
+        "stovesGlassLabel": "Керамички Шпорети",
         "horizontalFreezers": "Хоризонтални Замрзнувачи",
         "verticalFreezers": "Вертикални Замрзнувачи"
     },

@@ -49,6 +49,7 @@ export class CategoryComponent implements OnInit {
     this._activatedRoute.paramMap.subscribe(params => {
       this.category = params.get('category') || ''; // Fetch the clicked category from route
       this.categoryImage = this.getCategoryImage(this.category);
+      this.loadSubcategories(); // Ensure subcategories update on category change
       this.setupBreadcrumbs(); // Call to update breadcrumbs
     });
 
@@ -62,6 +63,7 @@ export class CategoryComponent implements OnInit {
   getCategoryImage(category: string): string {
     const images: { [key: string]: string } = {
       'home-appliances': 'assets/bela-tehnika-1.jpg',
+      'built-in-appliances': 'assets/VGRADENI-ELEMENTI-scaled.jpg',
     }
     return images[category] || 'assets/'
   }
