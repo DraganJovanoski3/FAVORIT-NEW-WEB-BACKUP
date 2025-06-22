@@ -152,9 +152,7 @@ export class ProductComponent implements OnInit, AfterViewInit {
    * while the product name is displayed as-is.
    */
   private setupBreadcrumbs(): void {
-    this.breadcrumbs = [
-      { label: this.getTranslatedNameBread('Home'), url: '/' },
-    ];
+    this.breadcrumbs = [];
     // If category and subcategory are both 'air-conditioners', only show subcategory
     if (
       this.category === 'air-conditioners' &&
@@ -162,7 +160,6 @@ export class ProductComponent implements OnInit, AfterViewInit {
     ) {
       this.breadcrumbs.push({ label: this.getTranslatedNameBread(this.subcategory), url: `/category/${this.category}/subcategory/${this.subcategory}` });
     } else {
-      this.breadcrumbs.push({ label: this.getTranslatedNameBread(this.category, true), url: `/category/${this.category}` });
       if (this.subcategory && this.subcategory !== 'other') {
         this.breadcrumbs.push({ label: this.getTranslatedNameBread(this.subcategory), url: `/category/${this.category}/subcategory/${this.subcategory}` });
       }

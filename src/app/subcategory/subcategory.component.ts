@@ -1,5 +1,5 @@
 import { CommonModule } from "@angular/common";
-import { Component, OnInit, ViewChild } from "@angular/core";
+import { Component, OnInit, ViewChild, ElementRef, OnDestroy } from "@angular/core";
 import { ActivatedRoute, Router, RouterModule } from "@angular/router";
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginator, MatPaginatorModule, PageEvent } from '@angular/material/paginator';
@@ -51,7 +51,7 @@ interface Product {
   templateUrl: './subcategory.component.html',
   styleUrls: ['./subcategory.component.css']
 })
-export class SubcategoryComponent implements OnInit {
+export class SubcategoryComponent implements OnInit, OnDestroy {
   productTranslations: any;
   subcategoriesComponentConstant: any;
   larnmoreTranslations: any;
@@ -62,7 +62,7 @@ export class SubcategoryComponent implements OnInit {
   showButton: boolean = false;
   subcategories: string[] = [];
   filterSubcategory: any;
-  constructor(private _route: ActivatedRoute, private _router: Router) {}
+  constructor(private _route: ActivatedRoute, private _router: Router, private elementRef: ElementRef) {}
 
   category!: string;
   subcategory!: string;
@@ -75,6 +75,15 @@ export class SubcategoryComponent implements OnInit {
   pageSize = 122;
   pageSizeOptions: number[] = [12, 24, 36, 48];
 
+  ngOnDestroy(): void {
+    document.body.removeEventListener('click', this.onBodyClick.bind(this));
+  }
+
+  onBodyClick(event: MouseEvent) {
+    if (!this.elementRef.nativeElement.contains(event.target)) {
+      this.showFilters = false;
+    }
+  }
 
   onResize(event: any) {
     this.checkIsMobileView();
@@ -116,6 +125,8 @@ export class SubcategoryComponent implements OnInit {
       this.checkIsMobileView();
       this.checkShowButton();
     });
+    
+    document.body.addEventListener('click', this.onBodyClick.bind(this));
   }
 
   private updateTranslations(lang: string) {

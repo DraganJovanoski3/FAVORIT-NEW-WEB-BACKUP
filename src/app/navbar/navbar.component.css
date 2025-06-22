@@ -46,7 +46,7 @@ nav {
   left: 0;
   width: 0;
   height: 3px;
-  background-color: #a7a9ac;
+  background-color: #204880;
   transition: width 0.4s ease; 
 }
 .nav-link:hover::after,
@@ -225,7 +225,7 @@ nav {
   }
   .mat-icon {
     width: 100%;
-    font-size: 40px;
+    font-size: 25px;
     height: 100%;
     text-align: center;
     display: flex;
@@ -442,17 +442,303 @@ nav {
 
 @media (max-width: 900px) {
   .navbar-search-area {
-    max-width: 98vw;
-    padding: 12px 2vw 18px 2vw;
-    border-radius: 0 0 12px 12px;
+    width: 94%;
+    left: 0;
+    padding: 10px;
   }
   .search-result-img {
-    width: 32px;
-    height: 32px;
+    width: 40px;
+    height: 40px;
   }
   .navbar-search-close {
-    top: 8px;
-    right: 8px;
-    font-size: 1.3rem;
+    right: 10px;
+  }
+}
+
+/* Mobile Search Styles */
+.mobile-search-area {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 2000;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 20px;
+  backdrop-filter: blur(4px);
+}
+
+.mobile-search-panel {
+  background: white;
+  width: 90%;
+  max-width: 350px;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+  max-height: 70vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+/* Close Button */
+.mobile-search-close-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: #f8f9fa;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.mobile-search-close-btn:hover {
+  background: #e9ecef;
+  transform: scale(1.1);
+}
+
+.mobile-search-close-btn mat-icon {
+  font-size: 18px;
+  width: 18px;
+  height: 18px;
+  color: #6c757d;
+}
+
+.mobile-search-input {
+  width: 100%;
+  padding: 12px 40px 12px 12px;
+  border: 2px solid #e8e8e8;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+  background: #fafafa;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.mobile-search-input:focus {
+  border-color: #204880;
+  background: white;
+  box-shadow: 0 0 0 3px rgba(32, 72, 128, 0.1);
+}
+
+.mobile-search-clear-btn {
+  color: #999;
+  transition: all 0.3s ease;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile-search-clear-btn:hover {
+  color: #666;
+  background: #f0f0f0;
+}
+
+.mobile-search-clear-btn mat-icon {
+  font-size: 16px;
+  width: 16px;
+  height: 16px;
+}
+
+.mobile-search-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 16px 0;
+}
+
+.mobile-category-item {
+  background: #f8f9fa;
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid #e9ecef;
+  color: #495057;
+  white-space: nowrap;
+}
+
+.mobile-category-item:hover {
+  background: #e9ecef;
+  border-color: #204880;
+  color: #204880;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(32, 72, 128, 0.15);
+}
+
+.mobile-search-results {
+  margin-top: 16px;
+  max-height: 250px;
+  overflow-y: auto;
+  border-radius: 8px;
+  background: #fafafa;
+  padding: 6px;
+}
+
+.mobile-search-result-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 3px;
+  background: white;
+  border: 1px solid transparent;
+}
+
+.mobile-search-result-item:hover {
+  background: #f8f9fa;
+  border-color: #e9ecef;
+  transform: translateX(2px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.mobile-search-result-item:last-child {
+  margin-bottom: 0;
+}
+
+.mobile-search-result-img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-right: 12px;
+  border: 1px solid #e9ecef;
+  background: #f8f9fa;
+}
+
+.mobile-search-result-name {
+  flex: 1;
+  font-size: 14px;
+  color: #212529;
+  line-height: 1.3;
+  font-weight: 500;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.mobile-search-no-results {
+  text-align: center;
+  padding: 24px 16px;
+  color: #6c757d;
+  font-style: italic;
+  font-size: 14px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  margin-top: 16px;
+}
+
+/* Mobile search icon styles */
+.mobile-menu .search-icon {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  font-weight: 500;
+  color: #204880;
+}
+
+.mobile-menu .search-icon mat-icon {
+  font-size: 22px;
+  width: 22px;
+  height: 22px;
+  color: #204880;
+}
+
+.mobile-menu .search-icon span {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 480px) {
+  .search-input {
+    width: 92%;
+    font-size: 0.90rem;
+    padding: 13px 15px;
+  }
+  .mobile-search-area {
+    padding-top: 15px;
+  }
+  
+  .mobile-search-panel {
+    width: 95%;
+    padding: 16px;
+    border-radius: 10px;
+    max-height: 65vh;
+  }
+  
+  .mobile-search-close-btn {
+    top: 10px;
+    right: 10px;
+    width: 28px;
+    height: 28px;
+  }
+  
+  .mobile-search-close-btn mat-icon {
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+  }
+  
+  .mobile-search-input {
+    padding: 10px 36px 10px 10px;
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+  
+  .mobile-search-categories {
+    gap: 6px;
+    margin: 12px 0;
+  }
+  
+  .mobile-category-item {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+  
+  .mobile-search-results {
+    max-height: 200px;
+    margin-top: 12px;
+  }
+  
+  .mobile-search-result-item {
+    padding: 8px;
+  }
+  
+  .mobile-search-result-img {
+    width: 36px;
+    height: 36px;
+    margin-right: 10px;
+  }
+  
+  .mobile-search-result-name {
+    font-size: 13px;
+  }
+  
+  .mobile-search-no-results {
+    padding: 20px 12px;
+    font-size: 13px;
+    margin-top: 12px;
   }
 }

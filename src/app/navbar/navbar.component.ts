@@ -51,6 +51,11 @@ export class NavbarComponent implements OnInit, OnDestroy {
     if (!this.isSearchOpen) {
       this.searchText = '';
       this.filteredProducts = [];
+    } else {
+      // Close mobile menu when search is opened
+      this.isOpen = false;
+      const hamburgerMenu = document.querySelector('.hamburger-menu');
+      hamburgerMenu?.classList.remove('open');
     }
   }
 
@@ -80,11 +85,14 @@ export class NavbarComponent implements OnInit, OnDestroy {
     // If not present, try to infer from product (if you have mapping logic, add here)
     // Fallback: just go to product page by id
     if (category && subcategory) {
-      this._router.navigate([`/category/${category}/subcategory/${subcategory}/product/${product.id}`], { queryParamsHandling: 'merge' });
+      this._router.navigate([`/category/${category}/subcategory/${subcategory}/product/${product.id}`], { queryParamsHandling: 'merge' })
+        .then(() => window.scrollTo(0, 0));
     } else if (category) {
-      this._router.navigate([`/category/${category}/product/${product.id}`], { queryParamsHandling: 'merge' });
+      this._router.navigate([`/category/${category}/product/${product.id}`], { queryParamsHandling: 'merge' })
+        .then(() => window.scrollTo(0, 0));
     } else {
-      this._router.navigate([`/product/${product.id}`], { queryParamsHandling: 'merge' });
+      this._router.navigate([`/product/${product.id}`], { queryParamsHandling: 'merge' })
+        .then(() => window.scrollTo(0, 0));
     }
     this.isSearchOpen = false;
   }
@@ -97,9 +105,7 @@ export class NavbarComponent implements OnInit, OnDestroy {
 
   }
   ngOnDestroy(): void {
-    throw new Error('Method not implemented.');
     document.body.removeEventListener('click', this.onBodyClick.bind(this));
-
   }
   ngOnInit(): void {
     this._activatedRoute.queryParamMap.subscribe(params => {
@@ -182,6 +188,7 @@ export class NavbarComponent implements OnInit, OnDestroy {
   onBodyClick(event: MouseEvent) {
     if (!this.elementRef.nativeElement.contains(event.target)) {
       this.isOpen = false;
+      this.isSearchOpen = false; // Close search area when clicking outside
 
       const hamburgerMenu = document.querySelector('.hamburger-menu');
       hamburgerMenu?.classList.remove('open');

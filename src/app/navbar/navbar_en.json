@@ -11,6 +11,7 @@
     "phone": "Phone",
     "service": "Service department",
     "email": "Email",
+    "search": "Search",
     "searchPlaceholder": "Search products...",
     "searchNoResults": "No results found."
 }

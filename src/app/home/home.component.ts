@@ -7,6 +7,18 @@ import home_en from './home_en.json';
 import home_sr from './home_sr.json';
 import home_al from './home_al.json';
 
+// Import blog data
+import blogs_mk from '../blog-list/blogs_mk.json';
+import blogs_en from '../blog-list/blogs_en.json';
+import blogs_sr from '../blog-list/blogs_sr.json';
+import blogs_al from '../blog-list/blogs_al.json';
+
+// Import blog translations
+import translations_mk from '../blog/translations_mk.json';
+import translations_en from '../blog/translations_en.json';
+import translations_sr from '../blog/translations_sr.json';
+import translations_al from '../blog/translations_al.json';
+
 interface Product {
   id: number;
   name: string;
@@ -25,6 +37,8 @@ interface Product {
 export class HomeComponent implements OnInit, OnDestroy {
   homeComponentConstant: any;
   categories: any;
+  latestBlogs: any[] = [];
+  blogTranslations: any = {};
   slides: string[] = [
     'assets/slider-photos/web-slider (10).jpg', 
     'assets/slider-photos/web-slider (7).jpg', 
@@ -50,6 +64,8 @@ export class HomeComponent implements OnInit, OnDestroy {
       switch(lang) {
         case 'mk' :
           this.homeComponentConstant = home_mk;
+          this.loadBlogs('mk');
+          this.loadBlogTranslations('mk');
           this.categories = [
             { name: this.homeComponentConstant.category.hoods, 
               image: 'assets/category-for-products/kategorija-apiratori.jpg',
@@ -73,6 +89,8 @@ export class HomeComponent implements OnInit, OnDestroy {
           break;
         case 'en' :
           this.homeComponentConstant = home_en;
+          this.loadBlogs('en');
+          this.loadBlogTranslations('en');
           this.categories = [
             { name: this.homeComponentConstant.category.hoods, 
               image: 'assets/category-for-products/kategorija-apiratori.jpg',
@@ -96,6 +114,8 @@ export class HomeComponent implements OnInit, OnDestroy {
           break;
         case 'sr' :
           this.homeComponentConstant = home_sr;
+          this.loadBlogs('sr');
+          this.loadBlogTranslations('sr');
           this.categories = [
             { name: this.homeComponentConstant.category.hoods, 
               image: 'assets/category-for-products/kategorija-apiratori.jpg',
@@ -119,6 +139,8 @@ export class HomeComponent implements OnInit, OnDestroy {
           break;
         case 'al' :
           this.homeComponentConstant = home_al;
+          this.loadBlogs('al');
+          this.loadBlogTranslations('al');
           this.categories = [
             { name: this.homeComponentConstant.category.hoods, 
               image: 'assets/category-for-products/kategorija-apiratori.jpg',
@@ -144,6 +166,50 @@ export class HomeComponent implements OnInit, OnDestroy {
     });
 
     this.startAutoSlide();
+  }
+
+  private loadBlogs(lang: string) {
+    let blogsData: any;
+    switch (lang) {
+      case 'mk':
+        blogsData = blogs_mk;
+        break;
+      case 'sr':
+        blogsData = blogs_sr;
+        break;
+      case 'al':
+        blogsData = blogs_al;
+        break;
+      default:
+        blogsData = blogs_en;
+    }
+    
+    // Get the latest 3 blogs
+    this.latestBlogs = blogsData.blogs.slice(0, 3);
+  }
+
+  private loadBlogTranslations(lang: string) {
+    switch (lang) {
+      case 'mk':
+        this.blogTranslations = translations_mk;
+        break;
+      case 'sr':
+        this.blogTranslations = translations_sr;
+        break;
+      case 'al':
+        this.blogTranslations = translations_al;
+        break;
+      default:
+        this.blogTranslations = translations_en;
+    }
+  }
+
+  navigateToBlog(blogId: string) {
+    this._router.navigate([`/blog/${blogId}`], { queryParamsHandling: 'merge' });
+  }
+
+  navigateToBlogs() {
+    this._router.navigate(['/blogs'], { queryParamsHandling: 'merge' });
   }
 
   ngOnDestroy() {

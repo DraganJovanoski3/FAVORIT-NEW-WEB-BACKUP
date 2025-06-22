@@ -12,8 +12,8 @@
       </div>
     </div>
   </div>
-  <div class="arrow left-arrow" (click)="prevSlide()">&#9665;</div>
-  <div class="arrow right-arrow" (click)="nextSlide()">&#9655;</div>
+  <div class="arrow left-arrow" (click)="prevSlide()"><span class="arrow-icon-left">&#9665;</span></div>
+  <div class="arrow right-arrow" (click)="nextSlide()"><span class="arrow-icon-right">&#9655;</span></div>
   <div class="bullets">
     <span *ngFor="let slide of slides; let i = index" 
           [class.active]="i === currentIndex" 
@@ -48,6 +48,31 @@
         <div class="category-title">{{ category.name }}</div>
       </div>
     </div>  
+  </div>
+
+  <!-- Latest Blogs Section -->
+  <div class="blog-section" *ngIf="latestBlogs.length > 0">
+    <div class="blog-header">
+      <h2>{{ blogTranslations.latest_blogs || 'Latest Blogs' }}</h2>
+      <button class="view-all-btn" (click)="navigateToBlogs()">
+        {{ blogTranslations.view_all || 'View All' }}
+      </button>
+    </div>
+    <div class="blog-grid">
+      <div *ngFor="let blog of latestBlogs" class="blog-card" (click)="navigateToBlog(blog.id)">
+        <div class="blog-image-container">
+          <img [src]="blog.image" [alt]="blog.title" class="blog-image">
+        </div>
+        <div class="blog-content">
+          <h3 class="blog-card-title">{{ blog.title }}</h3>
+          <p class="blog-excerpt">{{ blog.excerpt }}</p>
+          <div class="blog-footer">
+            <span class="blog-date">{{ blog.date }}</span>
+            <span class="read-more">{{ blogTranslations.read_more || 'Read More' }}...</span>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- <div class="card">

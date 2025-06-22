@@ -87,6 +87,13 @@
     <li class="nav-item"><a class="nav-link" (click)="toggleMenu(); onNavigate('contact')">{{navbarConstant.contact}}</a></li>
     <li class="nav-item"><a class="nav-link" (click)="toggleMenu(); onNavigate('blogs')">{{navbarConstant.blogList}}</a></li>
 
+    <!-- Mobile Search -->
+    <li class="nav-item">
+      <a class="nav-link search-icon" (click)="toggleSearch()">
+        <mat-icon>search</mat-icon>
+        <span>{{navbarConstant.search || 'Search'}}</span>
+      </a>
+    </li>
 
     <!-- Country Selector Dropdown -->
     <li class="nav-item dropdown" [ngClass]="{ 'open': isDropdownOpen }">
@@ -103,6 +110,44 @@
         <a class="dropdown-item" (click)="toggleMenu(); changeLanguage('sr')" (click)="handleDropdownItemClick()"><img src="/assets/serbia.png" alt="Serbian Flag"> Serbian</a>
       </div>
     </li>
+    
+    <!-- Mobile Search Area -->
+    <div class="mobile-search-area" *ngIf="isSearchOpen">
+      <div class="mobile-search-panel">
+        <!-- Close Button -->
+        <button class="mobile-search-close-btn" (click)="toggleSearch()" type="button" aria-label="Close search">
+          <mat-icon>close</mat-icon>
+        </button>
+        
+        <div>
+          <input
+            type="text"
+            class="mobile-search-input"
+            placeholder="{{navbarConstant.searchPlaceholder}}"
+            [(ngModel)]="searchText"
+            (input)="onSearchInput()"
+            autofocus
+          />
+          <button *ngIf="searchText" (click)="searchText=''; onSearchInput();" class="mobile-search-clear-btn" type="button" aria-label="Clear search" style="position: absolute; right: 12px; top: 50%; transform: translateY(-50%); background: none; border: none; cursor: pointer; padding: 0;">
+            <mat-icon>close</mat-icon>
+          </button>
+        </div>
+        <div class="mobile-search-categories">
+          <span class="mobile-category-item" *ngFor="let category of categories" (click)="onCategoryClick(category)">
+            {{ category.name }}
+          </span>
+        </div>
+        <div class="mobile-search-results" *ngIf="searchText && filteredProducts.length">
+          <div class="mobile-search-result-item" *ngFor="let product of filteredProducts" (click)="onProductClick(product)">
+            <img [src]="product.pictures[0]" alt="{{product.name}}" class="mobile-search-result-img" />
+            <span class="mobile-search-result-name">{{ product.name }}</span>
+          </div>
+        </div>
+        <div class="mobile-search-no-results" *ngIf="searchText && !filteredProducts.length">
+          {{navbarConstant.searchNoResults}}
+        </div>
+      </div>
+    </div>
     
     <div class="info-company">
       <div><h1>{{navbarConstant.contact}}</h1></div>

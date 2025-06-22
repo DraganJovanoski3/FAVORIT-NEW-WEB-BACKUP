@@ -272,6 +272,40 @@ body {
   .related-product {
     width: calc(50% - 20px);
   }
+
+  /* Mobile Breadcrumbs */
+  .breadcrumbs {
+    padding: 10px 15px !important;
+    margin: 0 0 15px 0;
+    font-size: 14px;
+    min-height: 30px;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    margin-top: 75px !important;
+  }
+
+  .breadcrumbs a {
+    margin-right: 4px;
+    font-size: 14px;
+    max-width: 80px !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex-shrink: 1;
+  }
+
+  .breadcrumbs .separator {
+    margin: 0 4px !important;
+    font-size: 10px;
+    flex-shrink: 0;
+  }
+
+  .breadcrumbs .current {
+    max-width: 300px;
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex-shrink: 1;
+  }
 }
 
 @media (max-width: 480px) {
@@ -305,6 +339,31 @@ body {
   .product-modal-content-image > img {
     height: 100%;
   }
+
+  /* Small Mobile Breadcrumbs */
+  .breadcrumbs {
+    padding: 8px 14px;
+    font-size: 11px;
+    flex-wrap: nowrap;
+    overflow: hidden;
+  }
+
+  .breadcrumbs a {
+    font-size: 12px;
+    max-width: 80px;
+    margin-right: 4px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex-shrink: 1;
+  }
+
+  .breadcrumbs .current {
+    max-width: 120px;
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex-shrink: 1;
+  }
 }
 .specifications-doc {
   display: flex;
@@ -332,25 +391,27 @@ body {
 .breadcrumbs {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     font-size: 14px;
     background: #204880;
     padding: 12px 60px;
-    margin: 90px 0 20px 0;
+    margin: 95px 0 20px 0;
     color: white;
     min-height: 60px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
 
 .breadcrumbs a {
     color: #ffffff;
     text-decoration: none;
-    margin-right: 8px;
     transition: opacity 0.2s;
     font-weight: 500;
     white-space: nowrap;
+    overflow: hidden;
     text-overflow: ellipsis;
-    width: fit-content;
+    max-width: 300px;
+    flex-shrink: 1;
 }
 
 .breadcrumbs a:hover {
@@ -365,6 +426,12 @@ body {
 }
 
 .breadcrumbs .current {
-  font-weight: 500;
+  font-weight: 600;
   color: white;
+  opacity: 0.9;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: fit-content;
+  flex-shrink: 1;
 }
