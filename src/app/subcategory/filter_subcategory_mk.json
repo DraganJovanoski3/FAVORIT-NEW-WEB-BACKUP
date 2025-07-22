@@ -7,7 +7,14 @@
         "smallDomesticAppliances":"Мали апарати за домаќинство",
         "televisions":"Телевизори"
       },
-    "televisions":{},
+    "televisions":{
+        "size32": "32\"",
+        "size43": "43\"",
+        "size50": "50\"",
+        "size55": "55\"",
+        "size65": "65\"",
+        "size75": "75\""
+    },
     "FilterProducts": "Филтрирај Продукти",
     "smallDomesticAppliances":{
         "airFryer":"Air fryer",

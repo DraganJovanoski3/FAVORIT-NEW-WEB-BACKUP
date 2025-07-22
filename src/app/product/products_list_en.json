@@ -323,7 +323,7 @@
       "assets/Home appliances/COMBINED REFRIGERATOR CF 374N/FAVORIT-CF-374-01-1024x576.png",
       "assets/Home appliances/COMBINED REFRIGERATOR CF 374N/FAVORIT-CF-374-02-1024x576.png"
     ],
-    "specificationsDoc": "assets/PDF-Specifications/CF-278-upatstvo.pdf",
+    "specificationsDoc": "assets/PDF-Specifications/CF-374-upatstvo.pdf",
     "specifications": {
       "dimensions": "186/60/65 cm",
       "gross volume": "341 L",
@@ -1335,7 +1335,7 @@
       "assets/Home appliances/VERTICAL FREEZER F 2451N/FAVORIT-F-2451-02-1024x576.png"
 
     ],
-    "specificationsDoc": "assets/PDF-Specifications/F-1005-upatstvo.pdf",
+    "specificationsDoc": "assets/PDF-Specifications/F-2451-upatstvo.pdf",
     "specifications": {
       "dimensions": "144/54/60 cm",
       "gross volume": "210 L",
@@ -2077,7 +2077,7 @@
   },
   {
     "id": 63,
-    "name": "Built-in dishwasher BI45-I1E (fully integrated)",
+    "name": "Built-in dishwasher BI45-I1EN (fully integrated)",
     "description": [
       "This dishwasher has dimensions of H/W/L 82.00cm/44.80cm/55.00cm and a maximum capacity of 10 sets of dishes. It features a hidden LED display and offers 6 programs with a temperature range of 4 levels. The energy class is A++, and the drying class is A. The water consumption of the eco-program is 11 liters, with a duration of 222 minutes.",
       "It has heater protection and flood protection, and it's fully integrated with an On/Off button. It also includes a delayed start function ranging from 1 to 19 hours, supports half-filling, and has indicators for salt and rinse aid. The noise level is 54 dB, and it includes a fast program of 30 minutes at 40°C."
@@ -2113,7 +2113,7 @@
   },
   {
     "id": 64,
-    "name": "Built-in dishwasher BI60 – I14 (fully integrated)",
+    "name": "Built-in dishwasher BI60 – I14N (fully integrated)",
     "description": [
       "This dishwasher has dimensions of H/W/L 82cm/59.8cm/55cm and a maximum capacity of 12 sets of dishes. It features 5 programs with a temperature range of 3 levels. The energy class is A++, and the drying class is A. The water consumption of the eco-program is 12 liters, with an energy consumption ranging from 0.90 KWh to 1.55 KWh depending on the program. It has a duration of the ECO program of 222 minutes.",
       "Additionally, it has heater protection, flood protection, and is fully integrated with On/Off button, program selection button, wash time delay button (3, 6, and 9 hours), half-filling, salt indicator, rinse aid indicator, end indicator, and a noise level of 54 dB. It also includes a fast program of 30 minutes at 40°C."
@@ -2182,7 +2182,7 @@
       "Noise Level": "54 dB",
       "Quick Program": "30 min. / 40 °C"
     }
-  },  
+  },
   {
     "id": 66,
     "name": "Built-in dishwasher SI60 – I14",
@@ -4230,7 +4230,7 @@
       "assets/Home appliances/TWO CHAMBER REFRIGERATOR RF 263N/FAVORIT-RF-263-S-01-1-1024x576.png",
       "assets/Home appliances/TWO CHAMBER REFRIGERATOR RF 263N/FAVORIT-RF-263-S-02-1024x576.png"
     ],
-    "specificationsDoc": "assets/PDF-Specifications/CF-278-upatstvo.pdf",
+    "specificationsDoc": "assets/PDF-Specifications/CF-374-upatstvo.pdf",
     "specifications": {
       "dimensions": "180cm (H) x 60cm (W) x 62cm (D)",
       "gross volume": "341 L",
@@ -4341,7 +4341,7 @@
       "Response Time": "8 ms",
       "SMART": "√",
       "Wireless": "Built-in",
-      "Connectivity": "HEAD PHONE 1; COAX AUDIO-1; RF IN 2; HDMI, 2 USB ports, CI 1, WI-FI",
+      "Connectivity": "LAN-1, HEAD PHONE 1; COAX AUDIO-1; RF IN 2; HDMI, 2 USB ports, CI 1, WI-FI",
       "Operating System": "ANDROID 14",
       "Frame Color": "Black",
       "Memory": "ROM 8 GB, RAM 1 GB",
@@ -4382,7 +4382,7 @@
         "Response Time": "8 ms",
         "SMART": "√",
         "Wireless": "Built-in",
-        "Connectivity": "HEADPHONE 1; COAX AUDIO-1; RF IN 2; HDMI, 2 USB Ports, CI 1, WI-FI",
+        "Connectivity": "LAN-1, HEADPHONE 1; COAX AUDIO-1; RF IN 2; HDMI, 2 USB Ports, CI 1, WI-FI",
         "Android Operating System": "ANDROID 14",
         "Frame Color": "Black",
         "Memory": "Memory ROM 8 GB, RAM 1.5 GB",
@@ -4423,7 +4423,7 @@
           "Response Time": "8 ms",
           "SMART": "√",
           "Wireless": "Built-in",
-          "Connectivity": "HEAD PHONE 1; COAX AUDIO-1; RF IN 2; HDMI, 2 USB Ports, CI 1, WI-FI",
+          "Connectivity": "LAN-1, HEAD PHONE 1; COAX AUDIO-1; RF IN 2; HDMI, 2 USB Ports, CI 1, WI-FI",
           "Android OS": "ANDROID 14",
           "Frame Color": "Black",
           "Memory": "Memory ROM 8 GB, RAM 1.5 GB",
@@ -4464,7 +4464,7 @@
             "Response Time": "8 ms",
             "SMART": "√",
             "WIRELESS": "BUILT-IN",
-            "Connectivity": "HEAD PHONE 1; COAX AUDIO-1; RF IN 2; HDMI, 2 USB INPUTS, CI 1, WI-FI",
+            "Connectivity": "LAN-1, HEAD PHONE 1; COAX AUDIO-1; RF IN 2; HDMI, 2 USB INPUTS, CI 1, WI-FI",
             "Android Operating System": "ANDROID 14",
             "Frame Color": "BLACK",
             "Memory": "MEMORY ROM 8 GB, RAM 1.5 GB",
@@ -4505,7 +4505,7 @@
           "Response Time": "8 ms",
           "SMART": "√",
           "Wireless": "BUILT-IN",
-          "Connectivity": "HEAD PHONE 1; COAX AUDIO-1; RF IN 2; HDMI, 2 USB INPUTS, CI 1, WI-FI",
+          "Connectivity": "Lan-1, HEAD PHONE 1; COAX AUDIO-1; RF IN 2; HDMI, 2 USB INPUTS, CI 1, WI-FI",
           "Android Operating System": "ANDROID 14",
           "Frame Color": "BLACK",
           "Memory": "MEMORY ROM 8 GB, RAM 1 GB",
@@ -4545,7 +4545,7 @@
           "Response Time": "8 ms",
           "Smart": "√",
           "Wireless": "Built-in",
-          "Connectivity": "HEAD PHONE 1; COAX AUDIO-1; RF IN 2; HDMI, 2 USB inputs, CI 1, WI-FI",
+          "Connectivity": "LAN-1, HEAD PHONE 1; COAX AUDIO-1; RF IN 2; HDMI, 2 USB inputs, CI 1, WI-FI",
           "Android Operating System": "ANDROID 14",
           "Frame Color": "Black",
           "Memory": "MEMORY ROM 8 GB, RAM 1 GB",
@@ -4601,5 +4601,148 @@
           "Handle": "Integrated",
           "Winter Security": "(-15°C)"
         }
+      },
+      {
+        "id": 152,
+        "name": "Washing Machine A – 5100",
+        "description": [
+          "Introducing our advanced Washing Machine designed to optimize your laundry routine. With a spacious 42 L drum and 15 programs, it provides thorough cleaning for up to 5 kg of clothes. Features like electronic programming, eco-energy saving, and anti-leak protection ensure efficiency and peace of mind. Plus, its compact design and convenient functions like half-load sensor and quick program make laundry day effortless."
+        ],
+        "pictures": [
+          "assets/Home appliances/WASHING MACHINE A – 5100/MASINA-ZA-ALISTA-5100.png"
+        ],
+        "specificationsDoc": "assets/Product Spec/Upatstvo-A-5101.pdf",
+        "specifications": {
+          "Dimensions": "84.50/59.70/49.70 CM",
+          "Spin Speed (RPM)": "1000",
+          "Capacity": "5 KG",
+          "Stainless Steel Drum": "42 L",
+          "Programs": "15",
+          "Electronic Programmer": "√",
+          "Energy Class (New Regulation)": "D",
+          "Eco Logic Energy Saving System": "√",
+          "Anti-Leak Protection": "√",
+          "Anti-Foam Protection": "√",
+          "Automatic Balance System": "√",
+          "Adjustable Feet": "√",
+          "Removable Top Cover": "√",
+          "Energy Consumption (kWh/100 Cycles)": "60",
+          "Water Consumption (L/Cycle)": "41 L/CYCLE",
+          "Noise Level Washing": "58 DB",
+          "Noise Level Spinning": "76 DB",
+          "Super Fast Program": "15 MINUTES AT 30 °C",
+          "Quick Program": "60 MINUTES AT 60 °C",
+          "Half Load Sensor": "√",
+          "Delayed Start": "√",
+          "Extra Rinse Button": "√"
+        }
+      },
+      {
+      "id": 153,
+      "name": "Built-in Oven BIO-65M B",
+      "description": [
+        "This black oven stands out with its spacious interior measuring 59.5mm / 59.5mm / 57.5mm and is energy class A. It has a capacity of 65 L, 8 oven functions, and mechanical controls.",
+        "The oven is equipped with a fan, oven light, and removable inner glass for easy cleaning. Includes a deep tray and chrome rack. Heating elements include a top heater of 1200W, bottom heater of 1100W, grill heater of 1400W, and double grill of 2600W."
+      ],
+      "pictures": [
+        "assets/Built In Appliances/Built-in oven FAVORIT BIO-65M B/BIO-65-X-PHOTO-1-1024x576.png"
+      ],
+      "specificationsDoc": "assets/Built In Appliances/Built-in oven FAVORIT BIO-65M B/UPATSTVO ZA UPOTREBA.pdf",
+      "specifications": {
+        "Dimensions": "59.5mm / 59.5mm / 57.5mm",
+        "Energy Class": "A",
+        "Oven Volume": "65 L",
+        "Black Glass Panel": "√",
+        "Oven Functions": "8",
+        "Timer": "Mechanical",
+        "Thermostat": "Mechanical",
+        "Side Guides in Oven": "√",
+        "Fan": "√",
+        "Oven Light": "√",
+        "Removable Inner Glass": "√",
+        "Deep Tray": "1",
+        "Chrome Rack": "1",
+        "Top Heating": "1200W",
+        "Bottom Heating": "1100W",
+        "Grill Heating": "1400W",
+        "Double Grill": "2600W",
+        "Color": "Black"
       }
+    },
+    {
+      "id": 154,
+      "name": "Washing Machine N-7122T BLDC",
+      "description": [],
+      "pictures": [
+        "assets/Home appliances/WASHING MACHINE L – 8101N/FAVORIT-L-8101-1024x576.png"
+      ],
+      "specificationsDoc": "assets/Home appliances/WASHING MACHINE L – 8101N/upatstvo.pdf",
+      "specifications": {
+        "Dimensions (H/W/D)": "84.5 / 59.7 / 52.70 CM",
+        "Max spin speed (RPM)": "1200",
+        "Max capacity": "7 KG",
+        "Stainless steel drum": "50 L",
+        "Inverter motor": "√ (10 YEARS WARRANTY)",
+        "Digital LCD touch screen": "√",
+        "Delayed start": "√",
+        "Programs": "15",
+        "STEAM ASSIST option (steam wash)": "√",
+        "Electronic programmer": "√",
+        "Water temperature control button": "√",
+        "Energy class": "A",
+        "Overflow protection system": "√",
+        "Foam protection": "√",
+        "Automatic balancing system": "√",
+        "Error detection system": "√",
+        "Child lock": "√",
+        "Removable top cover": "√",
+        "Energy consumption": "45 KWH/CYCLE",
+        "Water consumption": "45 L/CYCLE",
+        "Noise level while washing": "50 DB",
+        "Noise level while spinning": "75 DB",
+        "Super quick program": "15 MIN AT 30°",
+        "Quick program": "60 MIN AT 60°",
+        "Spin speed control button": "√",
+        "Half load sensor": "√",
+        "Cotton prewash program": "√"
+      }
+    },
+    {
+      "id": 155,
+      "name": "Washing Machine C-8143 BLDC",
+      "description": [],
+      "pictures": [
+        "assets/Home appliances/WASHING MACHINE C-8143 BLDC/8. FAVORIT C-8143 BLDC.png"
+      ],
+      "specificationsDoc": "assets/Home appliances/WASHING MACHINE C-8143 BLDC/C-8143 BLDC -user manual OK.pdf",
+      "specifications": {
+        "Dimensions (H/W/D)": "84.5 / 60.5 / 57.40 CM",
+        "Max spin speed (RPM)": "1200",
+        "Max capacity": "8 KG",
+        "Stainless steel drum": "55 L",
+        "Inverter motor": "√ (10 YEARS WARRANTY)",
+        "Digital LCD touch display": "√",
+        "STEAM ASSIST option (steam wash)": "√",
+        "Delayed start": "√",
+        "Programs": "15",
+        "Electronic programmer": "√",
+        "Water temperature control button": "√",
+        "Energy class": "A",
+        "Overflow protection system": "√",
+        "Foam protection": "√",
+        "Automatic balancing system": "√",
+        "Error detection system": "√",
+        "Child lock": "√",
+        "Removable top cover": "√",
+        "Energy consumption": "47 KWH/CYCLE",
+        "Water consumption": "48 L/CYCLE",
+        "Noise level while washing": "50 DB",
+        "Noise level while spinning": "75 DB",
+        "Super quick program": "15 MIN AT 30°",
+        "Quick program": "60 MIN AT 60°",
+        "Spin speed control button": "√",
+        "Half load sensor": "√",
+        "Cotton prewash program": "√"
+      }
+    }
 ]

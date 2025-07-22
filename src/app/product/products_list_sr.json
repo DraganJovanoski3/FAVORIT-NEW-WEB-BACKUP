@@ -326,7 +326,7 @@
       "assets/Home appliances/COMBINED REFRIGERATOR CF 374N/FAVORIT-CF-374-02-1024x576.png",
       "assets/Home appliances/COMBINED REFRIGERATOR CF 374N/FAVORIT-CF-374-I-01-1024x576.png"
     ],
-    "specificationsDoc": "assets/PDF-Specifications/CF-278-upatstvo.pdf",
+    "specificationsDoc": "assets/PDF-Specifications/CF-374-upatstvo.pdf",
     "specifications": {
       "dimenzije": "180/60/65",
       "bruto zapremina": "341 L",
@@ -1183,7 +1183,7 @@
       "assets/Home appliances/REFRIGERATOR WITH CHAMBER R1001N/FAVORIT-R-1001-02-1024x576.png",
       "assets/Home appliances/REFRIGERATOR WITH CHAMBER R1001N/2-10.png"
     ],
-    "specificationsDoc": "assets/PDF-Specifications/UPATSTVO-MK-GB-AL-SR-FAVORIT.pdf",
+    "specificationsDoc": "assets/PDF-Specifications/R-1001-upatstvo.pdf",
     "specifications": {
       "dimenzije": "82.1/48/50 cm",
       "bruto zapremina": "91L",
@@ -1317,7 +1317,7 @@
       "assets/Home appliances/VERTICAL FREEZER F 2451N/FAVORIT-F-2451-01-1024x576.png",
       "assets/Home appliances/VERTICAL FREEZER F 2451N/FAVORIT-F-2451-02-1024x576.png"
     ],
-    "specificationsDoc": "assets/PDF-Specifications/F-1005-upatstvo.pdf",
+    "specificationsDoc": "assets/PDF-Specifications/F-2451-upatstvo.pdf",
     "specifications": {
       "dimensions": "144/54/60 cm",
       "bruto zapremina": "210 L",
@@ -2058,7 +2058,7 @@
   },
   {
     "id": 63,
-    "name": "Ugradna mašina za sudove BI45-I1E (potpuno integrisana)",
+    "name": "Ugradna mašina za sudove BI45-I1EN (potpuno integrisana)",
     "description": [
       "Ova mašina za pranje sudova ima dimenzije V/Š/D 82,00cm/44,80cm/55,00cm i maksimalni kapacitet od 10 setova sudova. Ima skriveni LED ekran i nudi 6 programa sa rasponom temperature od 4 nivoa. Energetska klasa je A++, a klasa sušenja je A. Potrošnja vode u eco-programu je 11 litara, sa trajanjem od 222 minuta.",
       "Ima zaštitu od grejača i zaštitu od poplava, i potpuno je integrisana sa dugmetom za uključivanje/isključivanje. Takođe uključuje funkciju odloženog starta u rasponu od 1 do 19 sati, podržava pola punjenja i ima indikatore za so i sredstvo za ispiranje. Nivo buke je 54 dB, a takođe uključuje brzi program od 30 minuta na 40°C."
@@ -2094,7 +2094,7 @@
   },
   {
     "id": 64,
-    "name": "Ugradna mašina za sudove BI60 – I14 (potpuno integrisana)",
+    "name": "Ugradna mašina za sudove SI60 – I14N (potpuno integrisana)",
     "description": [
       "Ova mašina za pranje sudova ima dimenzije V/Š/D 82cm/59.8cm/55cm i maksimalni kapacitet od 12 setova sudova. Ima 5 programa sa rasponom temperature od 3 nivoa. Energetska klasa je A++, a klasa sušenja je A. Potrošnja vode u eco-programu je 12 litara, sa potrošnjom energije u rasponu od 0.90 KWh do 1.55 KWh u zavisnosti od programa. Trajanje eco programa je 222 minuta.",
       "Dodatno, ima zaštitu od grejača, zaštitu od poplava i potpuno je integrisana sa dugmetom za uključivanje/isključivanje, dugmetom za izbor programa, dugmetom za odloženi start (3, 6 i 9 sati), podržava pola punjenja, indikatorima za so, sredstvo za ispiranje, indikatorom za završetak, i nivoom buke od 54 dB. Takođe uključuje brzi program od 30 minuta na 40°C."
@@ -2163,7 +2163,7 @@
       "Nivo buke": "54 dB",
       "Brzi program": "30 min. / 40 °C"
     }
-  },  
+  },
   {
     "id": 66,
     "name": "Ugradni mašina za sudove SI60 - I14",
@@ -4189,7 +4189,7 @@
       "assets/Home appliances/TWO CHAMBER REFRIGERATOR RF 263N/FAVORIT-RF-263-S-01-1-1024x576.png",
       "assets/Home appliances/TWO CHAMBER REFRIGERATOR RF 263N/FAVORIT-RF-263-S-02-1024x576.png"
     ],
-    "specificationsDoc": "assets/PDF-Specifications/CF-278-upatstvo.pdf",
+    "specificationsDoc": "assets/PDF-Specifications/CF-374-upatstvo.pdf",
     "specifications": {
       "DIMENZIJE": "180 cm (V) x 60 cm (Š) x 62 cm (D)",
       "BRUTO VOLUMEN": "341 L",
@@ -4293,7 +4293,7 @@
       "Vreme odziva": "8 ms",
       "SMART": "√",
       "Bežično povezivanje": "Ugrađeno",
-      "Povezivanje": "HEAD PHONE 1; COAX AUDIO-1; RF IN 2; HDMI, 2 USB ulaza, CI 1, WI-FI",
+      "Povezivanje": "LAN-1, HEAD PHONE 1; COAX AUDIO-1; RF IN 2; HDMI, 2 USB ulaza, CI 1, WI-FI",
       "Operativni sistem": "ANDROID 14",
       "Boja okvira": "Crna",
       "Memorija": "ROM 8 GB, RAM 1 GB",
@@ -4334,7 +4334,7 @@
         "Vreme odziva": "8 ms",
         "SMART": "√",
         "Wireless": "Ugrađen",
-        "Povezivanje": "HEADPHONE 1; COAX AUDIO-1; RF IN 2; HDMI, 2 USB ulaza, CI 1, WI-FI",
+        "Povezivanje": "LAN-1, HEADPHONE 1; COAX AUDIO-1; RF IN 2; HDMI, 2 USB ulaza, CI 1, WI-FI",
         "Android operativni sistem": "ANDROID 14",
         "Boja rama": "Crna",
         "Memorija": "Memorija ROM 8 GB, RAM 1.5 GB",
@@ -4375,7 +4375,7 @@
           "Vreme odziva": "8 ms",
           "SMART": "√",
           "Bežično": "Ugrađeno",
-          "Povezivost": "Slušalice 1; Koaks audio-1; RF ulaz 2; HDMI, 2 USB porta, CI 1, WI-FI",
+          "Povezivost": "LAN-1, Slušalice 1; Koaks audio-1; RF ulaz 2; HDMI, 2 USB porta, CI 1, WI-FI",
           "Android OS": "ANDROID 14",
           "Boja okvira": "Crna",
           "Memorija": "ROM 8 GB, RAM 1.5 GB",
@@ -4416,7 +4416,7 @@
             "Vreme odgovora": "8 ms",
             "SMART": "√",
             "Bežično": "Ugrađen",
-            "Povezivanje": "HEAD PHONE 1; COAX AUDIO-1; RF IN 2; HDMI, 2 USB ulaza, CI 1, WI-FI",
+            "Povezivanje": "LAN-1, HEAD PHONE 1; COAX AUDIO-1; RF IN 2; HDMI, 2 USB ulaza, CI 1, WI-FI",
             "Android operativni sistem": "ANDROID 14",
             "Boja na ramki": "Crna",
             "Memorija": "MEMORY ROM 8 GB, RAM 1,5 GB",
@@ -4457,7 +4457,7 @@
             "Vreme odgovora": "8 ms",
             "SMART": "√",
             "Wireless": "UGRAĐEN",
-            "Povezivanje": "HEAD PHONE 1; COAX AUDIO-1; RF IN 2; HDMI, 2 USB ulaza, CI 1, WI-FI",
+            "Povezivanje": "LAN-1, HEAD PHONE 1; COAX AUDIO-1; RF IN 2; HDMI, 2 USB ulaza, CI 1, WI-FI",
             "Android operativni sistem": "ANDROID 14",
             "Boja na ramki": "CRNA",
             "Memorija": "MEMORY ROM 8 GB, RAM 1 GB",
@@ -4497,7 +4497,7 @@
             "Vreme odgovora": "8 ms",
             "Smart": "√",
             "Bezdrotiца": "Ugrađen",
-            "Povezivanje": "HEAD PHONE 1; COAX AUDIO-1; RF IN 2; HDMI, 2 USB ulaza, CI 1, WI-FI",
+            "Povezivanje": "LAN-1, HEAD PHONE 1; COAX AUDIO-1; RF IN 2; HDMI, 2 USB ulaza, CI 1, WI-FI",
             "Android operativni sistem": "ANDROID 14",
             "Boja okvira": "Crna",
             "Memorija": "MEMORY ROM 8 GB, RAM 1 GB",
@@ -4553,5 +4553,72 @@
             "Ručka": "Integrisana",
             "Zimska zaštita": "(-15°C)"
           }
-        }  
+        },
+        {
+          "id": 152,
+          "name": "Mašina za pranje veša A – 5100",
+          "description": [
+            "Predstavljamo vam našu naprednu mašinu za pranje veša, dizajniranu da optimizuje vašu rutinu pranja. Sa prostranim bubnjem kapaciteta 42 L i 15 programa, obezbeđuje temeljno pranje do 5 kg veša. Funkcije kao što su elektronsko programiranje, ušteda energije sa Eco sistemom i zaštita od curenja pružaju efikasnost i mir. Kompaktan dizajn i praktične funkcije poput senzora za pola punjenja i brzog programa čine dan za pranje bez napora."
+          ],
+          "pictures": [
+            "assets/Home appliances/WASHING MACHINE A – 5100/MASINA-ZA-ALISTA-5100.png"
+          ],
+          "specificationsDoc": "assets/Product Spec/Upatstvo-A-5101.pdf",
+          "specifications": {
+            "Dimenzije": "84.50/59.70/49.70 CM",
+            "Obrtaji u minutu (RPM)": "1000",
+            "Kapacitet": "5 KG",
+            "Inoks bubanj": "42 L",
+            "Programi": "15",
+            "Elektronski programator": "√",
+            "Energetska klasa (Nova regulativa)": "D",
+            "Eco Logic sistem za uštedu energije": "√",
+            "Zaštita od curenja": "√",
+            "Zaštita od pene": "√",
+            "Automatski balans sistem": "√",
+            "Podesive nožice": "√",
+            "Uklonjiv gornji poklopac": "√",
+            "Potrošnja energije (kWh/100 ciklusa)": "60",
+            "Potrošnja vode (L/ciklus)": "41 L/CYCLE",
+            "Buka pri pranju": "58 DB",
+            "Buka pri centrifugiranju": "76 DB",
+            "Super brzi program": "15 MINUTA NA 30 °C",
+            "Brzi program": "60 MINUTA NA 60 °C",
+            "Senzor za pola punjenja": "√",
+            "Odložen start": "√",
+            "Dugme za dodatno ispiranje": "√"
+          }
+        },
+        {
+        "id": 153,
+        "name": "Ugradna Rerna BIO-65M B",
+        "description": [
+          "Ova crna rerna se ističe prostranom unutrašnjošću dimenzija 59,5mm / 59,5mm / 57,5mm i energetskom klasom A. Ima kapacitet od 65 L, 8 funkcija rerne i mehaničke kontrole.",
+          "Rerna je opremljena ventilatorom, svetlom za rernu i uklonjivim unutrašnjim staklom za lako čišćenje. U paketu je duboka posuda i hromirana rešetka. Grejni elementi uključuju gornji grejač od 1200W, donji grejač od 1100W, grejač roštilja od 1400W i dupli roštilj od 2600W."
+        ],
+        "pictures": [
+          "assets/Built In Appliances/Built-in oven FAVORIT BIO-65M B/BIO-65-X-PHOTO-1-1024x576.png"
+        ],
+        "specificationsDoc": "assets/Built In Appliances/Built-in oven FAVORIT BIO-65M B/UPATSTVO ZA UPOTREBA.pdf",
+        "specifications": {
+          "Dimenzije": "59,5mm / 59,5mm / 57,5mm",
+          "Energetska Klasa": "A",
+          "Zapremina Rerne": "65 L",
+          "Crna Staklena Ploča": "√",
+          "Funkcije Rerne": "8",
+          "Tajmer": "Mehanički",
+          "Termostat": "Mehanički",
+          "Bočne Vodilice u Rerni": "√",
+          "Ventilator": "√",
+          "Svetlo za Rernu": "√",
+          "Uklonjivo Unutrašnje Staklo": "√",
+          "Duboka Posuda": "1",
+          "Hromirana Rešetka": "1",
+          "Gornje Grejanje": "1200W",
+          "Donje Grejanje": "1100W",
+          "Grejanje Roštilja": "1400W",
+          "Dupli Roštilj": "2600W",
+          "Boja": "Crna"
+        }
+      }  
 ]

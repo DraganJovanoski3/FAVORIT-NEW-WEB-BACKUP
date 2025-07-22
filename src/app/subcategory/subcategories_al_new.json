@@ -7,7 +7,10 @@
       "smallDomesticAppliances": "Pajisje të vogla shtëpiake",
       "televisions": "Televizorë"
     },
-  "televisions":{},
+    
+  "televisions":{
+    "televisions": "Televizorë"
+  },
   "smallDomesticAppliances":{
       "airFryer":"Fritezë ajri",
       "blenders":"Blenderë",
@@ -19,7 +22,10 @@
       "grills":"Skara",
       "thermalJugs":"Kana termike",
       "toasters":"Tostiera",
-      "colanders":"Sitë"
+      "colanders":"Sitë",
+      "cookingHeatingAppliances": "Pajisje për gatim dhe ngrohje",
+      "foodBeveragePreparation": "Përgatitja e ushqimit dhe pijeve",
+      "homeCareCleaning": "Kujdesi për shtëpinë dhe pastrimi"
   },
   "airConditioners":{
       "inverter":"Inverter",
@@ -48,6 +54,7 @@
   },
   "hoods":{
       "decorativeHoods":"Kapuç dekorativ",
+      "hoods": "Kapuç",
       "telescopicHoods":"Kapuç teleskopik"
   }
 }

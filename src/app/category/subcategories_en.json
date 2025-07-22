@@ -19,7 +19,10 @@
   "grills": "Grills",
   "thermal-jugs": "Thermal Jugs",
   "toasters": "Toasters",
-  "colanders": "Colanders"
+  "colanders": "Colanders",
+  "cooking-heating-appliances": "Cooking & Heating Appliances",
+  "food-beverage-preparation": "Food & Beverage Preparation",
+  "home-care-cleaning": "Home Care & Cleaning"
 },
 "air-conditioners": {
   "inverter": "Inverter",

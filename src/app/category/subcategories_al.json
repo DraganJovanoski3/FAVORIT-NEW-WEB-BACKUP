@@ -19,7 +19,10 @@
       "grills": "Skara",
       "thermal-jugs": "Kana termike",
       "toasters": "Tostiera",
-      "colanders": "Sitë"
+      "colanders": "Sitë",
+      "cooking-heating-appliances": "Pajisje për gatim dhe ngrohje",
+      "food-beverage-preparation": "Përgatitja e ushqimit dhe pijeve",
+      "home-care-cleaning": "Kujdesi për shtëpinë dhe pastrimi"
     },
     "air-conditioners": {
       "inverter": "Inverter",

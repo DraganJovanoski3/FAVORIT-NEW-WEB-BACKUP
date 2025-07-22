@@ -43,7 +43,7 @@
 
   <!-- Desktop Search Area (expandable) -->
   <div class="navbar-search-area" *ngIf="isSearchOpen">
-    <div class="search-panel">
+    <div class="search-panel" #searchPanel>
       <div style="position: relative; width: 100%;">
         <input
           type="text"
@@ -64,7 +64,7 @@
       </div>
       <div class="search-results" *ngIf="searchText && filteredProducts.length">
         <div class="search-result-item" *ngFor="let product of filteredProducts" (click)="onProductClick(product)">
-          <img [src]="product.pictures[0]" alt="{{product.name}}" class="search-result-img" />
+          <img [src]="product.picture" alt="{{product.name}}" class="search-result-img" />
           <span class="search-result-name">{{ product.name }}</span>
         </div>
       </div>
@@ -113,7 +113,7 @@
     
     <!-- Mobile Search Area -->
     <div class="mobile-search-area" *ngIf="isSearchOpen">
-      <div class="mobile-search-panel">
+      <div class="mobile-search-panel" #mobileSearchPanel>
         <!-- Close Button -->
         <button class="mobile-search-close-btn" (click)="toggleSearch()" type="button" aria-label="Close search">
           <mat-icon>close</mat-icon>
@@ -139,7 +139,7 @@
         </div>
         <div class="mobile-search-results" *ngIf="searchText && filteredProducts.length">
           <div class="mobile-search-result-item" *ngFor="let product of filteredProducts" (click)="onProductClick(product)">
-            <img [src]="product.pictures[0]" alt="{{product.name}}" class="mobile-search-result-img" />
+            <img [src]="product.picture" alt="{{product.name}}" class="mobile-search-result-img" />
             <span class="mobile-search-result-name">{{ product.name }}</span>
           </div>
         </div>

@@ -1,58 +1,67 @@
 {
     "categoryNamesTranslations": {
-        "hoods": "Аспиратори",
-        "homeAppliances": "Бела Техника",
-        "builtInAppliances": "Уграђени Апарати",
-        "airConditioners": "Клима Уређаји",
-        "smallDomesticAppliances": "Мали Кућни Апарати",
-        "televisions": "Телевизори"
+        "hoods": "Aspiratori",
+        "homeAppliances": "Bela Tehnika",
+        "builtInAppliances": "Ugrađeni Aparati",
+        "airConditioners": "Klima Uređaji",
+        "smallDomesticAppliances": "Mali Kućni Aparati",
+        "televisions": "Televizori"
       },
-    "televisions":{},
+    "televisions":{
+        "size32": "32\"",
+        "size43": "43\"",
+        "size50": "50\"",
+        "size55": "55\"",
+        "size65": "65\"",
+        "size75": "75\""
+    },
     "smallDomesticAppliances":{
-        "airFryer":"Фризер за ваздух",
-        "blenders":"Блендери",
-        "microwaves":"Микроталасне",
-        "mixers":"Миксери",
-        "irons":"Пегла",
-        "vacuumCleaners":"Усисивачи",
-        "chop":"Секачи",
-        "grills":"Роштиљи",
-        "thermalJugs":"Термо Бокали",
-        "toasters":"Тостери",
-        "colanders":"Цедила"
+        "airFryer":"Frizer za vazduh",
+        "blenders":"Blenderi",
+        "microwaves":"Mikrotalasne",
+        "mixers":"Mikseri",
+        "irons":"Pegla",
+        "vacuumCleaners":"Usisivači",
+        "chop":"Sekači",
+        "grills":"Roštilji",
+        "thermalJugs":"Termo Bokali",
+        "toasters":"Tosteri",
+        "colanders":"Cedila"
     },
     "airConditioners":{
-        "inverter":"Инвертер",
-        "inverterWifi":"Инвертер/Вај-фај",
-        "inverter15C": "Инвертер (-15 °C)",
-        "inverter25C": "Инвертер (-25 °C)",
-        "inverter35C": "Инвертер (-35 °C)"
+        "inverter":"Inverter",
+        "inverterWifi":"Inverter/Vaj-faj",
+        "inverter15C": "Inverter (-15 °C)",
+        "inverter25C": "Inverter (-25 °C)",
+        "inverter35C": "Inverter (-35 °C)"
     },
     "builtInAppliances":{
-        "builtInDishwashers":"Уграђене Машине за Прање Суда",
-        "builtInOvens":"Уграђени Апарати за Кување",
-        "builtInMicrowaves":"Уграђене Микроталасне",
-        "builtInStoveTops":"Уграђене Ринге",
-        "builtInStoves":"Уграђени Шпорети",
-        "builtInFridges":"Уграђени Фрижидери"
+        "builtInDishwashers":"Ugrađene Mašine za Pranje Suda",
+        "builtInOvens":"Ugrađeni Aparati za Kuvanje",
+        "builtInMicrowaves":"Ugrađene Mikrotalasne",
+        "builtInStoveTops":"Ugrađene Ringe",
+        "builtInStoves":"Ugrađeni Šporeti",
+        "builtInFridges":"Ugrađeni Frižideri",
+        "fullyBuiltInDishwashersLabel": "Potpuno ugradne mašine za pranje sudova",
+        "semiBuiltInDishwashersLabel": "Delimično ugradne mašine za pranje sudova"
     },
     "homeAppliances":{
-        "boilers":"Бојлери",
-        "dishwashers":"Машине за Прање Суда",
-        "washingMachines":"Машине за Веш",
-        "dryers":"Сушилице",
-        "fridges":"Фрижидери",
-        "stovesAndMiniStoves":"Шпорети и мини Шпорети",
-        "freezers":"Замрзивачи",
-        "miniStoves": "Мини Шпорети",
-        "stovesGlassLabel": "Керамички Шпорети",
-        "horizontalFreezers": "Хоризонтални Замрзивачи",
-        "verticalFreezers": "Вертикални Замрзивачи"
+        "boilers":"Bojleri",
+        "dishwashers":"Mašine za Pranje Suda",
+        "washingMachines":"Mašine za Veš",
+        "dryers":"Sušilice",
+        "fridges":"Frižideri",
+        "stovesAndMiniStoves":"Šporeti i mini Šporeti",
+        "freezers":"Zamrzivači",
+        "miniStoves": "Mini Šporeti",
+        "stovesGlassLabel": "Keramički Šporeti",
+        "horizontalFreezers": "Horizontalni Zamrzivači",
+        "verticalFreezers": "Vertikalni Zamrzivači"
     },
     "hoods":{
-        "decorativeHoods":"Декоративни Аспиратори",
-        "telescopicHoods":"Телескопски Аспиратори"
+        "decorativeHoods":"Dekorativni Aspiratori",
+        "telescopicHoods":"Teleskopski Aspiratori"
     },
-    "all": "Све"
+    "all": "Sve"
   }
   

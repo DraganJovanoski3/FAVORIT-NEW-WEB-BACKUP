@@ -46,6 +46,9 @@ export class CategoryComponent implements OnInit {
   constructor(private _router: Router, private _activatedRoute: ActivatedRoute) {}
 
   ngOnInit(): void {
+    // Initialize with default translations first
+    this.updateTranslations('en');
+    
     this._activatedRoute.paramMap.subscribe(params => {
       this.category = params.get('category') || ''; // Fetch the clicked category from route
       this.categoryImage = this.getCategoryImage(this.category);
@@ -64,6 +67,7 @@ export class CategoryComponent implements OnInit {
     const images: { [key: string]: string } = {
       'home-appliances': 'assets/bela-tehnika-1.jpg',
       'built-in-appliances': 'assets/VGRADENI-ELEMENTI-scaled.jpg',
+      'small-domestic-appliances': 'assets/mali-kujnski-aparaturi.jpg'
     }
     return images[category] || 'assets/'
   }
@@ -163,38 +167,30 @@ export class CategoryComponent implements OnInit {
         { id: 'boilers', image: 'assets/subcategorys/boilers.png' },
         { id: 'dishwashers', image: 'assets/subcategorys/dishwashers.png' },
         // { id: 'mini-stoves', image: 'assets/subcategorys/mini-stoves.png' },
-        // { id: 'dryers', image: 'assets/subcategories/dryers.jpg' },
+        // { id: 'dryers', image: 'assets/subcategorys/dryers.jpg' },
         { id: 'stoves-and-mini-stoves', image: 'assets/subcategorys/stoves.png' },
-        // { id: 'freezers', image: 'assets/subcategories/freezers.jpg' }
+        // { id: 'freezers', image: 'assets/subcategorys/freezers.jpg' }
       ],
       'built-in-appliances': [
-        { id: 'built-in-dishwashers', image: 'assets/subcategories/built-in-dishwashers.jpg' },
-        { id: 'built-in-cooking-appliences', image: 'assets/subcategories/built-in-ovens.jpg' },
-        { id: 'built-in-fridges', image: 'assets/subcategories/built-in-fridges.jpg' }
+        { id: 'built-in-dishwashers', image: 'assets/subcategorys/built-in-dishwashers.png' },
+        { id: 'built-in-cooking-appliences', image: 'assets/subcategorys/built-in-cooking-appliences.png' },
+        { id: 'built-in-fridges', image: 'assets/subcategorys/built-in-fridges.png' }
       ],
       'air-conditioners': [
-        { id: 'inverter', image: 'assets/subcategories/inverter.jpg' },
-        { id: 'inverter-wifi', image: 'assets/subcategories/inverter-wifi.jpg' },
-        { id: 'inverter-15C', image: 'assets/subcategories/inverter-15C.jpg' },
-        { id: 'inverter-25C', image: 'assets/subcategories/inverter-25C.jpg' },
-        { id: 'inverter-35C', image: 'assets/subcategories/inverter-35C.jpg' }
+        { id: 'inverter', image: 'assets/subcategorys/inverter.jpg' },
+        { id: 'inverter-wifi', image: 'assets/subcategorys/inverter-wifi.jpg' },
+        { id: 'inverter-15C', image: 'assets/subcategorys/inverter-15C.jpg' },
+        { id: 'inverter-25C', image: 'assets/subcategorys/inverter-25C.jpg' },
+        { id: 'inverter-35C', image: 'assets/subcategorys/inverter-35C.jpg' }
       ],
       'small-domestic-appliances': [
-        { id: 'air-fryers', image: 'assets/subcategories/air-fryers.jpg' },
-        { id: 'blenders', image: 'assets/subcategories/blenders.jpg' },
-        { id: 'microwaves', image: 'assets/subcategories/microwaves.jpg' },
-        { id: 'mixers', image: 'assets/subcategories/mixers.jpg' },
-        { id: 'irons', image: 'assets/subcategories/irons.jpg' },
-        { id: 'vacuum-cleaners', image: 'assets/subcategories/vacuum-cleaners.jpg' },
-        { id: 'chop', image: 'assets/subcategories/chop.jpg' },
-        { id: 'grills', image: 'assets/subcategories/grills.jpg' },
-        { id: 'thermal-jugs', image: 'assets/subcategories/thermal-jugs.jpg' },
-        { id: 'toasters', image: 'assets/subcategories/toasters.jpg' },
-        { id: 'colanders', image: 'assets/subcategories/colanders.jpg' }
+        { id: 'cooking-heating-appliances', image: 'assets/subcategorys/cooking-heating-appliances.png', name: 'Cooking & Heating Appliances' },
+        { id: 'food-beverage-preparation', image: 'assets/subcategorys/food-beverage-preparation.png', name: 'Food & Beverage Preparation' },
+        { id: 'home-care-cleaning', image: 'assets/subcategorys/home-care-cleaning.png', name: 'Home Care & Cleaning' }
       ],
       'hoods': [
-        { id: 'decorative-hoods', image: 'assets/subcategories/decorative-hoods.jpg' },
-        { id: 'telescopic-hoods', image: 'assets/subcategories/telescopic-hoods.jpg' }
+        { id: 'decorative-hoods', image: 'assets/subcategorys/decorative-hoods.jpg' },
+        { id: 'telescopic-hoods', image: 'assets/subcategorys/telescopic-hoods.jpg' }
       ],
       'televisions': [
         // Add televisions subcategories if needed

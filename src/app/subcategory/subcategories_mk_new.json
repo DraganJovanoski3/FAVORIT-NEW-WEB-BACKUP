@@ -7,7 +7,9 @@
       "smallDomesticAppliances":"Мали апарати за домаќинство",
       "televisions":"Телевизори"
     },
-  "televisions":{},
+  "televisions":{
+    "televisions": "Телевизори"
+  },
   "FilterProducts": "Филтрирај Продукти",
   "smallDomesticAppliances":{
       "airFryer":"Air fryer",
@@ -20,7 +22,10 @@
       "grills":"Скари",
       "thermalJugs":"Термо бокали",
       "toasters":"Тостери",
-      "colanders":"Цедалки"
+      "colanders":"Цедалки",
+      "cookingHeatingAppliances": "Готвење и загревање",
+      "foodBeveragePreparation": "Подготовка на храна и пијалоци",
+      "homeCareCleaning": "Домашна нега и чистење"
   },
   "airConditioners":{
       "inverter":"Инвертер",
@@ -49,6 +54,7 @@
   },
   "hoods":{
       "deкоративниHoods":"Декоративни Аспиратори",
+      "hoods": "Аспиратори",
       "telescopicHoods":"Телескопски Аспиратори"
   }
 }

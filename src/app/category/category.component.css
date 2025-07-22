@@ -267,7 +267,7 @@
 
   /* Mobile Card Action */
   .card-action {
-    width: 100%;
+    width: auto;
     padding: 0 16px 16px 16px;
     order: 3;
     justify-content: flex-start;

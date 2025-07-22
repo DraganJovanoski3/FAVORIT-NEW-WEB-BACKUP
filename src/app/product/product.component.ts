@@ -19,6 +19,11 @@ import subcategories_en from '../subcategory/subcategories_en_new.json';
 import subcategories_al from '../subcategory/subcategories_al_new.json';
 import subcategories_sr from '../subcategory/subcategories_sr_new.json';
 
+// Product names for subcategory products
+import product_names_mk from '../subcategory/product_names_mk.json';
+import product_names_sr from '../subcategory/product_names_sr.json';
+import product_names_al from '../subcategory/product_names_al.json';
+
 interface ProductListInterface {
   id: number;
   name: string;
@@ -411,7 +416,7 @@ export class ProductComponent implements OnInit, AfterViewInit {
 
   goToProduct(productId: number): void {
     window.scrollTo(0, 0);
-    this._router.navigate(['/product', productId]);
+    this._router.navigate([`/category/${this.category}/subcategory/${this.subcategory}/product/${productId}`], { queryParamsHandling: 'merge' });
   }
 
   extractFirstFiveSpecifications(specs: { [key: string]: string }): { label: string; value: string }[] {
@@ -429,37 +434,191 @@ export class ProductComponent implements OnInit, AfterViewInit {
 
   findRelatedProducts(): void {
     if (this.product && this.product.specifications) {
-      const excludedProductIds = [1, 3, 4];
-      const relatedProductsWithCount = this.productList
-        .filter(otherProduct => {
-          if (
-            excludedProductIds.includes(otherProduct.id) ||
-            otherProduct.id === this.product!.id ||
-            !otherProduct.specifications
-          ) {
-            return false;
-          }
-          return true;
-        })
-        .map(otherProduct => {
-          const currentSpecs = this.product!.specifications;
-          const otherSpecs = otherProduct.specifications || {};
-          let matchingSpecCount = 0;
-          for (const key in currentSpecs) {
-            if (
-              currentSpecs.hasOwnProperty(key) &&
-              otherSpecs.hasOwnProperty(key) &&
-              currentSpecs[key] === otherSpecs[key]
-            ) {
-              matchingSpecCount++;
+      // Get products from the same subcategory
+      const subcategoryProducts = this.getSubcategoryProducts();
+      
+      if (subcategoryProducts.length > 0) {
+        // Filter out the current product and products without specifications
+        const availableProducts = subcategoryProducts.filter(otherProduct => 
+          otherProduct.id !== this.product!.id && otherProduct.specifications
+        );
+        
+        if (availableProducts.length > 0) {
+          // Find products with similar specifications
+          const relatedProductsWithCount = availableProducts.map(otherProduct => {
+            const currentSpecs = this.product!.specifications;
+            const otherSpecs = otherProduct.specifications || {};
+            let matchingSpecCount = 0;
+            for (const key in currentSpecs) {
+              if (
+                currentSpecs.hasOwnProperty(key) &&
+                otherSpecs.hasOwnProperty(key) &&
+                currentSpecs[key] === otherSpecs[key]
+              ) {
+                matchingSpecCount++;
+              }
             }
-          }
-          return { product: otherProduct, matchingSpecCount };
-        })
-        .filter(item => item.matchingSpecCount > 0);
-      relatedProductsWithCount.sort((a, b) => b.matchingSpecCount - a.matchingSpecCount);
-      this.relatedProducts = relatedProductsWithCount.slice(0, 3).map(item => item.product);
+            return { product: otherProduct, matchingSpecCount };
+          })
+          .filter(item => item.matchingSpecCount > 0);
+          
+          relatedProductsWithCount.sort((a, b) => b.matchingSpecCount - a.matchingSpecCount);
+          this.relatedProducts = relatedProductsWithCount.slice(0, 3).map(item => item.product);
+        } else {
+          // If no products with specifications, just show other products from the same subcategory
+          this.relatedProducts = availableProducts.slice(0, 3);
+        }
+      } else {
+        // Fallback to original method if no subcategory products found
+        const excludedProductIds = [1, 3, 4];
+        const relatedProductsWithCount = this.productList
+          .filter(otherProduct => {
+            if (
+              excludedProductIds.includes(otherProduct.id) ||
+              otherProduct.id === this.product!.id ||
+              !otherProduct.specifications
+            ) {
+              return false;
+            }
+            return true;
+          })
+          .map(otherProduct => {
+            const currentSpecs = this.product!.specifications;
+            const otherSpecs = otherProduct.specifications || {};
+            let matchingSpecCount = 0;
+            for (const key in currentSpecs) {
+              if (
+                currentSpecs.hasOwnProperty(key) &&
+                otherSpecs.hasOwnProperty(key) &&
+                currentSpecs[key] === otherSpecs[key]
+              ) {
+                matchingSpecCount++;
+              }
+            }
+            return { product: otherProduct, matchingSpecCount };
+          })
+          .filter(item => item.matchingSpecCount > 0);
+        relatedProductsWithCount.sort((a, b) => b.matchingSpecCount - a.matchingSpecCount);
+        this.relatedProducts = relatedProductsWithCount.slice(0, 3).map(item => item.product);
+      }
     }
+  }
+
+  private getSubcategoryProducts(): ProductListInterface[] {
+    // Get the appropriate translation files based on language
+    let productTranslations: any;
+    
+    switch (this.currentLang) {
+      case 'mk':
+        productTranslations = product_names_mk;
+        break;
+      case 'en':
+        productTranslations = product_names_mk; // Use Macedonian as fallback for English
+        break;
+      case 'sr':
+        productTranslations = product_names_sr;
+        break;
+      case 'al':
+        productTranslations = product_names_al;
+        break;
+      default:
+        productTranslations = product_names_mk;
+        break;
+    }
+
+    // Get products based on subcategory (similar to subcategory component logic)
+    const products: ProductListInterface[] = [];
+    
+    switch (this.subcategory) {
+      case 'boilers':
+        products.push(
+          { id: 60, name: productTranslations['60'] || 'WATER HEATER TE80B20', pictures: ['assets/Home appliances/WATER HEATER TE80B20/1-BOLJER-01-800x450-1-500x375-1.png'], description: ['Water heater'], specifications: {} },
+          { id: 58, name: productTranslations['58'] || 'WATER HEATER TE50B20', pictures: ['assets/Home appliances/WATER HEATER TE50B20/TE50B20-1024x576.png'], description: ['Water heater'], specifications: {} },
+          { id: 59, name: productTranslations['59'] || 'WATER HEATER TE80A20', pictures: ['assets/Home appliances/WATER HEATER TE80A20/1-BOLJER-04-scaled-1-1024x576.png'], description: ['Water heater'], specifications: {} },
+          { id: 57, name: productTranslations['57'] || 'WATER HEATER TE50A20', pictures: ['assets/Home appliances/WATER HEATER TE50A20/TE50A20-1024x576.png'], description: ['Water heater'], specifications: {} }
+        );
+        break;
+      case 'washing-and-drying-machines':
+        products.push(
+          { id: 152, name: productTranslations['152'] || 'WASHING MACHINE A – 5100', pictures: ['assets/Home appliances/WASHING MACHINE A – 5100/MASINA-ZA-ALISTA-5100.png'], description: ['Washing machine'], specifications: {} },
+          { id: 45, name: productTranslations['45'] || 'WASHING MACHINE L – 6100N', pictures: ['assets/Home appliances/WASHING MACHINE L – 6100N/L-6100-02-1-1024x576.png'], description: ['Washing machine'], specifications: {} },
+          { id: 49, name: productTranslations['49'] || 'WASHING MACHINE W – 6101N', pictures: ['assets/Home appliances/WASHING MACHINE W – 6101N/W-6101-06-1024x576.png'], description: ['Washing machine'], specifications: {} },
+          { id: 46, name: productTranslations['46'] || 'WASHING MACHINE L – 7101N', pictures: ['assets/Home appliances/WASHING MACHINE L – 7101N/W-7101-05-1024x576.png'], description: ['Washing machine'], specifications: {} },
+          { id: 50, name: productTranslations['50'] || 'WASHING MACHINE W – 7122N', pictures: ['assets/Home appliances/WASHING MACHINE W – 7122N/W-7122-06-1024x576.png'], description: ['Washing machine'], specifications: {} },
+          { id: 47, name: productTranslations['47'] || 'WASHING MACHINE L – 8101', pictures: ['assets/Home appliances/WASHING MACHINE L – 8101/W-8101-05-1024x576.png'], description: ['Washing machine'], specifications: {} },
+          { id: 48, name: productTranslations['48'] || 'WASHING MACHINE L – 9101N', pictures: ['assets/Home appliances/WASHING MACHINE L – 9101N/W-9101-05-1024x576.png'], description: ['Washing machine'], specifications: {} },
+          { id: 51, name: productTranslations['51'] || 'WASHING MACHINE W – 7122N BLDC', pictures: ['assets/Home appliances/WASHING MACHINE W – 7122N BLDC/W-7122-BLDC-06-1024x576.png'], description: ['Washing machine'], specifications: {} },
+          { id: 53, name: productTranslations['53'] || 'WASHING MACHINE W – 8122N BLDC', pictures: ['assets/Home appliances/WASHING MACHINE W – 8122N BLDC/W-8122-BLDC-06-1024x576.png'], description: ['Washing machine'], specifications: {} },
+          { id: 56, name: productTranslations['56'] || 'WASHING MACHINE W-9122N BLDC', pictures: ['assets/Home appliances/WASHING MACHINE W-9122N BLDC/W-9122-BLDC-06-1024x576.png'], description: ['Washing machine'], specifications: {} },
+          { id: 55, name: productTranslations['55'] || 'WASHING MACHINE W – 9142ТN BLDC', pictures: ['assets/Home appliances/WASHING MACHINE W – 9142ТN BLDC/W-9142-BLDC-06-1024x576.png'], description: ['Washing machine'], specifications: {} },
+          { id: 19, name: productTranslations['19'] || 'Dryer L – 71 C', pictures: ['assets/Home appliances/Dryer L – 71 C/DRYER-L-71-C-01-1024x576.png'], description: ['Dryer'], specifications: {} },
+          { id: 21, name: productTranslations['21'] || 'Dryer W – 72 C', pictures: ['assets/Home appliances/Dryer W – 72 C/DRYER-W-72-C-01-1024x576.png'], description: ['Dryer'], specifications: {} },
+          { id: 20, name: productTranslations['20'] || 'Dryer L – 81 C', pictures: ['assets/Home appliances/Dryer L – 81 C/DRYER-L-81-C-01-1024x576.png'], description: ['Dryer'], specifications: {} },
+          { id: 22, name: productTranslations['22'] || 'Dryer W – 82 HP', pictures: ['assets/Home appliances/Dryer W – 82 HP/DRYER-W-82-HP-01-1024x576.png'], description: ['Dryer'], specifications: {} }
+        );
+        break;
+      case 'built-in-dishwashers':
+        products.push(
+          { id: 63, name: productTranslations['63'] || 'Built-in dishwasher BI45-I1E', pictures: ['assets/Built In Appliances/Built-in dishwasher BI45-I1E (fully integrated)/BI-45-I1E-08-1024x576.png'], description: ['Built-in dishwasher'], specifications: {} },
+          { id: 64, name: productTranslations['64'] || 'Built-in dishwasher SI60 – I14N', pictures: ['assets/Built In Appliances/Built-in dishwasher BI60 – I14 (fully integrated)/SI60-I14-11-1024x576.png'], description: ['Built-in dishwasher'], specifications: {} },
+          { id: 65, name: productTranslations['65'] || 'Built-in dishwasher BI60 – I14N', pictures: ['assets/Built In Appliances/Built-in dishwasher FAVORIT BI60-I1FN/RABOTEN-16.9-29-2-1024x576.png'], description: ['Built-in dishwasher'], specifications: {} },
+          { id: 66, name: productTranslations['66'] || 'Built-in dishwasher SI60 – I14', pictures: ['assets/Built In Appliances/Built-in dishwasher SI60 – I14/BI60-I14-02-1024x576.png'], description: ['Built-in dishwasher'], specifications: {} }
+        );
+        break;
+      case 'stoves-and-mini-stoves':
+        products.push(
+          { id: 24, name: productTranslations['24'] || 'Electric Cooker EC 640 WWFT', pictures: ['assets/Home appliances/Electric Freestanding Cooker EC 640 WWFT/FAVORIT-EC-640-WWFT-10-scaled (1).png'], description: ['Electric cooker'], specifications: {} },
+          { id: 7, name: productTranslations['7'] || 'Combined Cooker К 622 WWFT', pictures: ['assets/Home appliances/COMBINED FREESTANDING COOKERS К 622 WWFT/FAVORIT-K-622-WWFT-10-1-1024x576.png'], description: ['Combined cooker'], specifications: {} },
+          { id: 23, name: productTranslations['23'] || 'Electric Cooker EC 640 WWF', pictures: ['assets/Home appliances/Electric Freestanding Cooker EC 640 WWF/FAVORIT-EC-640-WWF-10-1024x576.png'], description: ['Electric cooker'], specifications: {} },
+          { id: 27, name: productTranslations['27'] || 'ELECTRIC COOKER EC 640 SF', pictures: ['assets/Home appliances/ELECTRIC INDEPENDENT COOKER EC 640 SF/FAVORIT-EC-640-SF-10-1024x576.png'], description: ['Electric cooker'], specifications: {} },
+          { id: 9, name: productTranslations['9'] || 'COMBINED COOKER K 622 SF', pictures: ['assets/Home appliances/COMBINED INDEPENDENT COOKER К 622 SF/FAVORIT-K-622-SF-10-1-1024x576.png'], description: ['Combined cooker'], specifications: {} },
+          { id: 10, name: productTranslations['10'] || 'COMBINED COOKER К 622 WWF', pictures: ['assets/Home appliances/COMBINED INDEPENDENT COOKER К 622 WWF/FAVORIT-K-622-WWF-10-1-1024x576.png'], description: ['Combined cooker'], specifications: {} },
+          { id: 26, name: productTranslations['26'] || 'Electric Independent Cooker EC 540 WWFT', pictures: ['assets/Home appliances/Electric Independent Cooker EC 540 WWFT/FAVORIT-EC-540-WWFT-10-1024x576.png'], description: ['Electric cooker'], specifications: {} },
+          { id: 25, name: productTranslations['25'] || 'Electric Independent Cooker EC 540 SF', pictures: ['assets/Home appliances/Electric Independent Cooker EC 540 SF/FAVORIT-EC-540-SF-10-1024x576.png'], description: ['Electric cooker'], specifications: {} },
+          { id: 32, name: productTranslations['32'] || 'GLASS-CERAMIC COOKER CC 600 WWF', pictures: ['assets/Home appliances/GLASS-CERAMIC INDEPENDENT COOKER CC 600 WWF/FAVORIT-CC-600-WWF-10-1-1024x576.png'], description: ['Glass-ceramic cooker'], specifications: {} },
+          { id: 31, name: productTranslations['31'] || 'GLASS-CERAMIC COOKER CC 600 SF', pictures: ['assets/Home appliances/GLASS-CERAMIC INDEPENDENT COOKER CC 600 SF/FAVORIT-CC-600-SF-10-1-1024x576.png'], description: ['Glass-ceramic cooker'], specifications: {} },
+          { id: 30, name: productTranslations['30'] || 'GLASS-CERAMIC COOKER CC 600 IF', pictures: ['assets/Home appliances/GLASS-CERAMIC INDEPENDENT COOKER CC 600 IF/FAVORIT-CC-600-IF-10-1-1024x576.png'], description: ['Glass-ceramic cooker'], specifications: {} },
+          { id: 29, name: productTranslations['29'] || 'GLASS-CERAMIC COOKER CC 500 WWF', pictures: ['assets/Home appliances/GLASS-CERAMIC INDEPENDENT COOKER CC 500 WWF/FAVORIT-CC-500-WWF-10-1-1024x576.png'], description: ['Glass-ceramic cooker'], specifications: {} },
+          { id: 28, name: productTranslations['28'] || 'GLASS-CERAMIC COOKER CC 500 SF', pictures: ['assets/Home appliances/GLASS-CERAMIC INDEPENDENT COOKER CC 500 SF/FAVORIT-CC-500-SF-10-1-1024x576.png'], description: ['Glass-ceramic cooker'], specifications: {} },
+          { id: 8, name: productTranslations['8'] || 'MINI STOVE MO-42W', pictures: ['assets/Home appliances/MINI STOVE MO-42W/FAVORIT-MO-42W-10-1-1024x576.png'], description: ['Mini stove'], specifications: {} },
+          { id: 37, name: productTranslations['37'] || 'MINI STOVE MO-42B', pictures: ['assets/Home appliances/MINI STOVE MO-42B/FAVORIT-MO-42B-10-1-1024x576.png'], description: ['Mini stove'], specifications: {} }
+        );
+        break;
+      case 'dishwashers':
+        products.push(
+          { id: 17, name: productTranslations['17'] || 'Dishwasher F45 – Y15N S', pictures: ['assets/Home appliances/Dishwasher F45 – Y15N S/F45-Y15 S-04.png'], description: ['Dishwasher'], specifications: {} },
+          { id: 18, name: productTranslations['18'] || 'Dishwasher F60 – Y14N', pictures: ['assets/Home appliances/Dishwasher F60 – Y14N/F60-Y14-04-1024x576.png'], description: ['Dishwasher'], specifications: {} },
+          { id: 135, name: productTranslations['135'] || 'Dishwasher F60 – Y14N S', pictures: ['assets/Home appliances/Dishwasher F60 – Y14N S/F60-Y14_S-04.png'], description: ['Dishwasher'], specifications: {} },
+          { id: 15, name: productTranslations['15'] || 'Dishwasher E60-A1FN', pictures: ['assets/Home appliances/Dishwasher E60-A1FN/E60-A1FN-04-1024x576.png'], description: ['Dishwasher'], specifications: {} },
+          { id: 136, name: productTranslations['136'] || 'Dishwasher E60-A1FN X', pictures: ['assets/Home appliances/Dishwasher E60-A1FN X/E60-A1FN-X-04.png'], description: ['Dishwasher'], specifications: {} },
+          { id: 14, name: productTranslations['14'] || 'Dishwasher E60 – A22', pictures: ['assets/Home appliances/Dishwasher E60 – A22/E60-A22-04-1024x576.png'], description: ['Dishwasher'], specifications: {} },
+          { id: 16, name: productTranslations['16'] || 'DISHWASHER E60-A24N BLDC', pictures: ['assets/Home appliances/DISHWASHER E60-A24N BLDC/E60-A24N-BLDC-04-1024x576.png'], description: ['Dishwasher'], specifications: {} }
+        );
+        break;
+      case 'fridges-and-freezers':
+        products.push(
+          { id: 38, name: productTranslations['38'] || 'REFRIGERATOR WITH CHAMBER R1001N', pictures: ['assets/Home appliances/REFRIGERATOR WITH CHAMBER R1001N/FAVORIT-R-1001-01-1024x576.png'], description: ['Refrigerator'], specifications: {} },
+          { id: 39, name: productTranslations['39'] || 'REFRIGERATOR WITHOUT CHAMBER L1002E', pictures: ['assets/Home appliances/REFRIGERATOR WITHOUT CHAMBER L1002N/FAVORIT-L-1002-01-1024x576.png'], description: ['Refrigerator'], specifications: {} },
+          { id: 40, name: productTranslations['40'] || 'REFRIGERATOR WITHOUT CHAMBER L2653E', pictures: ['assets/Home appliances/REFRIGERATOR WITHOUT CHAMBER L2653E/FAVORIT-L-2653-01-1024x576.png'], description: ['Refrigerator'], specifications: {} },
+          { id: 41, name: productTranslations['41'] || 'VERTICAL FREEZER F2451E', pictures: ['assets/Home appliances/VERTICAL FREEZER F2451E/FAVORIT-F-2451-01-1024x576.png'], description: ['Freezer'], specifications: {} },
+          { id: 42, name: productTranslations['42'] || 'VERTICAL FREEZER F1005E', pictures: ['assets/Home appliances/VERTICAL FREEZER F1005E/FAVORIT-F-1005-01-1024x576.png'], description: ['Freezer'], specifications: {} },
+          { id: 43, name: productTranslations['43'] || 'VERTICAL FREEZER F2451N', pictures: ['assets/Home appliances/VERTICAL FREEZER F2451N/FAVORIT-F-2451-01-1024x576.png'], description: ['Freezer'], specifications: {} },
+          { id: 11, name: productTranslations['11'] || 'COMBINED REFRIGERATOR CF 278E', pictures: ['assets/Home appliances/COMBINED REFRIGERATOR CF 278N/FAVORIT-CF-278-01-1024x576.png'], description: ['Combined refrigerator'], specifications: {} },
+          { id: 12, name: productTranslations['12'] || 'COMBINED REFRIGERATOR CF 374E', pictures: ['assets/Home appliances/COMBINED REFRIGERATOR CF 374N/FAVORIT-CF-374-01-1024x576.png'], description: ['Combined refrigerator'], specifications: {} },
+          { id: 13, name: productTranslations['13'] || 'COMBINED REFRIGERATOR NF 379E', pictures: ['assets/Home appliances/COMBINED REFRIGERATOR NF 379N – NO FROST without dispensary/FAVORIT-NF-379-01-1024x576.png'], description: ['Combined refrigerator'], specifications: {} },
+          { id: 33, name: productTranslations['33'] || 'HCF 150', pictures: ['assets/Home appliances/HCF 150/HCF-150-01-1024x576.png'], description: ['Horizontal freezer'], specifications: {} },
+          { id: 34, name: productTranslations['34'] || 'HCF 200', pictures: ['assets/Home appliances/HCF 200/HCF-200-01-1024x576.png'], description: ['Horizontal freezer'], specifications: {} },
+          { id: 35, name: productTranslations['35'] || 'HCF 300', pictures: ['assets/Home appliances/HCF 300/HCF-300-01-1024x576.png'], description: ['Horizontal freezer'], specifications: {} },
+          { id: 36, name: productTranslations['36'] || 'HCF 400', pictures: ['assets/Home appliances/HCF 400/HCF-400-01-1024x576.png'], description: ['Horizontal freezer'], specifications: {} }
+        );
+        break;
+      // Add more cases for other subcategories as needed
+      default:
+        // Return empty array if subcategory not found
+        break;
+    }
+    
+    return products;
   }
 
   getEnglishName(): string {

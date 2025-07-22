@@ -7,8 +7,10 @@
       "smallDomesticAppliances": "Small Domestic Appliances",
       "televisions": "Televisions"
     },
-  "televisions":{},
-  "smallDomesticAppliances":{
+    "televisions":{
+        "televisions": "Televisions"
+      },  
+    "smallDomesticAppliances":{
       "airFryer":"Air Fryer",
       "blenders":"Blenders",
       "microwaves":"Microwaves",
@@ -19,7 +21,10 @@
       "grills":"Grills",
       "thermalJugs":"Thermal Jugs",
       "toasters":"Toasters",
-      "colanders":"Colanders"
+      "colanders":"Colanders",
+      "cookingHeatingAppliances": "Cooking & Heating Appliances",
+      "foodBeveragePreparation": "Food & Beverage Preparation",
+      "homeCareCleaning": "Home Care & Cleaning"
   },
   "airConditioners":{
       "inverter":"Inverter",
@@ -48,6 +53,7 @@
   },
   "hoods":{
       "decorativeHoods":"Decorative Hoods",
+      "hoods": "Hoods",
       "telescopicHoods":"Telescopic Hoods"
   }
 }

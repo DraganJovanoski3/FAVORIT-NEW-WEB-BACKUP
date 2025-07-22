@@ -7,7 +7,14 @@
         "smallDomesticAppliances": "Pajisje të vogla shtëpiake",
         "televisions": "Televizorë"
       },
-    "televisions":{},
+    "televisions":{
+        "size32": "32\"",
+        "size43": "43\"",
+        "size50": "50\"",
+        "size55": "55\"",
+        "size65": "65\"",
+        "size75": "75\""
+    },
     "smallDomesticAppliances":{
         "airFryer":"Fritezë ajri",
         "blenders":"Blenderë",

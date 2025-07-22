@@ -92,6 +92,32 @@
             ],
             "scripts": []
           }
+        },
+        "server": {
+          "builder": "@angular-devkit/build-angular:server",
+          "options": {
+            "outputPath": "dist/favorit-app/server",
+            "main": "src/main.server.ts",
+            "tsConfig": "tsconfig.server.json"
+          },
+          "configurations": {
+            "production": {
+              "outputHashing": "media"
+            }
+          }
+        },
+        "prerender": {
+          "builder": "@angular-devkit/build-angular:prerender",
+          "options": {
+            "browserTarget": "favorit-app:build:production",
+            "serverTarget": "favorit-app:server:production",
+            "routes": [
+              "/",
+              "/about-us",
+              "/contact",
+              "/all-products"
+            ]
+          }
         }
       }
     }

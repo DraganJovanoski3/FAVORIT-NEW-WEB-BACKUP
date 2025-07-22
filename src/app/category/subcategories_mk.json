@@ -19,7 +19,10 @@
       "grills": "Скари",
       "thermal-jugs": "Термо бокали",
       "toasters": "Тостери",
-      "colanders": "Цедалки"
+      "colanders": "Цедалки",
+      "cooking-heating-appliances": "Готвење и загревање",
+      "food-beverage-preparation": "Подготовка на храна и пијалоци",
+      "home-care-cleaning": "Домашна нега и чистење"
     },
     "air-conditioners": {
       "inverter": "Инвертер",

@@ -177,10 +177,12 @@
 /* Subtitle and Logo Section */
 .text-logo {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   margin-bottom: 80px;
-  flex-wrap: wrap;
+  gap: 40px;
+  flex-wrap: nowrap;
 }
 
 .text-logo > p {
@@ -194,7 +196,7 @@
 }
 
 .logo-text {
-  width: 270px;
+  width: 350px;
   height: auto;
   opacity: 0.9;
   transition: all 0.3s ease;
@@ -351,7 +353,7 @@ iframe {
   }
   
   .logo-text {
-    width: 180px;
+    width: 250px;
   }
 }
 
@@ -376,7 +378,7 @@ iframe {
   }
   
   .logo-text {
-    width: 160px;
+    width: 180px;
   }
   
   .cards {
@@ -407,10 +409,11 @@ iframe {
   }
   
   .text-logo {
-    flex-direction: column;
-    text-align: center;
-    gap: 30px;
-    margin-bottom: 50px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 20px;
+    text-align: left;
+    margin-bottom: 40px;
   }
   
   .text-logo > p {
@@ -418,7 +421,7 @@ iframe {
   }
   
   .logo-text {
-    width: 140px;
+    width: 180px;
   }
   
   .cards {
@@ -439,24 +442,26 @@ iframe {
   .category::before {
     border-width: 0 30px 30px 0;
   }
+  
+  .slider-container {
+    height: 35vh;
+  }
+  
+  .arrow {
+    width: 32px;
+    height: 32px;
+    font-size: 1rem;
+  }
+  .arrow-icon-left, .arrow-icon-right {
+    width: 18px;
+    height: 18px;
+    font-size: 1rem;
+  }
 }
 
-@media only screen and (max-width: 400px) {
-  .arrow-icon-left {
-    width: 24px;
-    height: 20px;
-  }
-  .arrow-icon-right {
-    width: 16px;
-    height: 18px;
-  }
-  .arrow { 
-    height: 30px;
-    width: 30px;
-  }
+@media only screen and (max-width: 480px) {
   .slider-container {
-    height: 45vh;
-    object-fit: cover;
+    height: 30vh;
   }
   .product-cards {
     width: 100vw;
@@ -482,6 +487,60 @@ iframe {
   
   .category::before {
     border-width: 0 25px 25px 0;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .arrow {
+    width: 24px;
+    height: 24px;
+    font-size: 0.8rem;
+  }
+  .arrow-icon-left {
+    width: 14px;
+    height: 14px;
+    font-size: 0.8rem;
+  }
+  .arrow-icon-right {
+    width: 12px;
+    height: 12px;
+    font-size: 0.8rem;
+  }
+  .slider-container {
+    height: 25vh;
+    object-fit: cover;
+  }
+  .product-cards {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+  }
+  
+  .product-cards > h1 {
+    font-size: 1.75rem;
+  }
+  
+  .logo-text {
+    width: 140px;
+  }
+  
+  .category {
+    height: 200px;
+  }
+  
+  .category-title {
+    font-size: 0.9rem;
+    padding: 12px;
+  }
+  
+  .category::before {
+    border-width: 0 25px 25px 0;
+  }
+  
+  .text-logo {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 10px;
+    margin-bottom: 20px;
   }
 }
 

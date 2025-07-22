@@ -55,6 +55,16 @@ export class AllProductsComponent implements OnInit {
         .then(() => {
           window.scrollTo(0, 0);
         });
+    } else if (category === 'televisions') {
+      this._router.navigate([navigateParam, category, 'subcategory', 'televisions'], { queryParamsHandling: 'merge' })
+        .then(() => {
+          window.scrollTo(0, 0);
+        });
+    } else if (category === 'hoods') {
+      this._router.navigate([navigateParam, category, 'subcategory', 'hoods'], { queryParamsHandling: 'merge' })
+        .then(() => {
+          window.scrollTo(0, 0);
+        });
     } else {
       this._router.navigate([navigateParam, category], { queryParamsHandling: 'merge' })
         .then(() => {

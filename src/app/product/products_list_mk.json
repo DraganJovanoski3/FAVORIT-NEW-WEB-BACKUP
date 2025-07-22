@@ -336,7 +336,7 @@
       "assets/Home appliances/COMBINED REFRIGERATOR CF 374N/FAVORIT-CF-374-02-1024x576.png",
       "assets/Home appliances/COMBINED REFRIGERATOR CF 374N/FAVORIT-CF-374-I-01-1024x576.png"
     ],
-    "specificationsDoc": "assets/PDF-Specifications/CF-278-upatstvo.pdf",
+    "specificationsDoc": "assets/PDF-Specifications/CF-374-upatstvo.pdf",
     "specifications": {
       "Димензии": "186/60/65 cm",
       "бруто волумен": "341 L",
@@ -1204,7 +1204,7 @@
       "assets/Home appliances/REFRIGERATOR WITH CHAMBER R1001N/FAVORIT-R-1001-02-1024x576.png",
       "assets/Home appliances/REFRIGERATOR WITH CHAMBER R1001N/2-10.png"
     ],
-    "specificationsDoc": "assets/PDF-Specifications/UPATSTVO-MK-GB-AL-SR-FAVORIT.pdf",
+    "specificationsDoc": "assets/PDF-Specifications/R-1001-upatstvo.pdf",
     "specifications": {
       "Димензии (B/Ш/Д)": "82.1/48/50 цм",
       "Бруто Волумен": "91L",
@@ -1337,7 +1337,7 @@
       "assets/Home appliances/VERTICAL FREEZER F 2451N/FAVORIT-F-2451-01-1024x576.png",
       "assets/Home appliances/VERTICAL FREEZER F 2451N/FAVORIT-F-2451-02-1024x576.png"
     ],
-    "specificationsDoc": "assets/PDF-Specifications/F-1005-upatstvo.pdf",
+    "specificationsDoc": "assets/PDF-Specifications/F-2451-upatstvo.pdf",
     "specifications": {
       "Димензии (B/Ш/Д)": "144/54/60 цм",
       "бруто волумен": "210 L",
@@ -2111,7 +2111,7 @@
   },
   {
     "id": 63,
-    "name": "Вградена машина за садови BI45-I1E (целосно интегрирана)",
+    "name": "Вградена машина за садови BI45-I1EN (целосно интегрирана)",
     "description": [
       "Оваа машина за садови има димензии од В/Ш/Д 82,00cm/44,80cm/55,00cm и максимален капацитет од 10 сета садови. Располага со скриено LED екран и нуди 6 програми со температурен опсег од 4 нивоа. Енергетскиот клас е A++, а класата на сушење е A. Потрошувањето на вода за еко-програмата е 11 литри, со траење од 222 минути.",
       "Располага со заштита на грејачот и заштита од поплава, целосно е интегрирана со копче за вклучување/исклучување. Исто така, вклучува одложен почеток со траење од 1 до 19 часа, поддржува полово полнење, и има индикатори за сол и заштитно средство за испирање. Нивото на бучава е 54 dB, а вклучува и брза програма од 30 минути на 40°C."
@@ -2147,7 +2147,7 @@
   },
   {
     "id": 64,
-    "name": "Вградена машина за садови BI60 – I14 (целосно интегрирана)",
+    "name": "Вградена машина за садови SI60 – I14N (целосно интегрирана)",
     "description": [
       "Оваа машина за садови има димензии од В/Ш/Д 82cm/59.8cm/55cm и максимален капацитет од 12 сета садови. Располага со 5 програми со температурен опсег од 3 нивоа. Енергетскиот клас е A++, а класата на сушење е A. Потрошувањето на вода за еко-програмата е 12 литри, со потрошувачка на енергија што варира од 0.90 KWh до 1.55 KWh во зависност од програмата. Траењето на еко-програмата е 222 минути.",
       "Дополнително, има заштита на грејачот, заштита од поплава, целосно е интегрирана со копче за вклучување/исклучување, копче за избор на програма, копче за одложен почеток на перење (3, 6 и 9 часа), полово полнење, индикатор за сол, индикатор за заштитно средство за испирање, индикатор за завршено перење, и ниво на бучава од 54 dB. Исто така, вклучува и брза програма од 30 минути на 40°C."
@@ -2195,28 +2195,28 @@
     ],
     "specificationsDoc": "assets/Built In Appliances/Built-in dishwasher BI60 – I14 (fully integrated)/3.-BI60-Y14-upatstva-EN-SIR-MAK-AL.pdf",
     "specifications": {
-      "Димензии В/Ш/Д": "82cm/59,8cm/55cm",
-      "Максимален капацитет": "12 сета садови",
-      "Програми": 5,
-      "Температура": "3",
-      "Енергетска класа": "A ++",
-      "Потрошувачка на вода на ECO програма": "12 литри вода",
-      "Енергетска потрошувачка (зависно од програмата)": "0,90 KWh – 1,55 KWh",
-      "Времетраење на ECO програма": "222 мин.",
-      "Заштита на грејач": "√",
-      "Заштита од поплава": "√",
-      "Целосно вградна": "√",
+      "Димензии В/Ш/Д ": "82cm/59,8cm/55cm",
+      "максимален капацитет": "12 сета садови",
+      "програми": 5,
+      "температура": "3",
+      "енергетска класа": "A ++",
+      "потрошувачка на вода на ECO - програма": "12 литри вода",
+      "енергетска потрошувачка (завосно од програма)": "0,90 KWh – 1,55 KWh",
+      "времетраење на ECO програма": "222 МИН.",
+      "заштита на грејач": "√",
+      "заштита од поплава": "√",
+      "целосно вградна": "√",
       "On/Off копче": "√",
-      "Копче за селектирање на програмите": "√",
-      "Копче за одложување на миење": "3, 6 и 9 часа",
-      "Пола полнење": "√",
-      "Индикатор за недостиг на сол": "√",
-      "Индикатор за недостиг на сјај": "√",
-      "Индикатор за завршување на програмата": "√",
-      "Бучавост при работа": "54 dB",
-      "Брз програм": "30 мин. / 40 °C"
+      "копче за селектирање на програмите": "√",
+      "копче за одложување на времето за миење": "3, 6 и 9 часа",
+      "пола полнење": "√ ",
+      "ИНДИКАТОР ЗА НЕДОСТАТОК НА СОЛ": "√ ",
+      "ИНДИКАТОР ЗА НЕДОСТАТОК НА СЈАЈ": "√ ",
+      "индикатор за завршување на работата": "√ ",
+      "бучавост при работа": "54 dB",
+      "брз програм": "30 мин. / 40 °C"
     }
-  },  
+  },
   {
     "id": 66,
     "name": "Вградена машина за садови SI60 - I14",
@@ -4250,7 +4250,7 @@
       "assets/Home appliances/TWO CHAMBER REFRIGERATOR RF 263N/FAVORIT-RF-263-S-01-1-1024x576.png",
       "assets/Home appliances/TWO CHAMBER REFRIGERATOR RF 263N/FAVORIT-RF-263-S-02-1024x576.png"
     ],
-    "specificationsDoc": "assets/PDF-Specifications/CF-278-upatstvo.pdf",
+    "specificationsDoc": "assets/PDF-Specifications/CF-374-upatstvo.pdf",
     "specifications": {
       "Димензии": "180 cm (В) x 60 cm (Ш) x 62 cm (Д)",
       "брутен обем": "341 L",
@@ -4358,7 +4358,7 @@
       "ВРЕМЕ НА ОДГОВОР": "8 ms",
       "SMART": "√",
       "WIRELESS": "ВГРАДЕН",
-      "ПОВРЗУВАЊЕ": "HEAD PHONE 1; COAX AUDIO-1; RF IN 2; HDMI, 2 USB ВЛЕЗА, CI 1, WI-FI",
+      "ПОВРЗУВАЊЕ": "LAN-1, HEAD PHONE 1; COAX AUDIO-1; RF IN 2; HDMI, 2 USB ВЛЕЗА, CI 1, WI-FI",
       "АНДРОИД ОПЕРАТИВЕН СИСТЕМ": "ANDROID 14",
       "БОЈА НА РАМКА": "ЦРНА",
       "МЕМОРИЈА": "MEMORY ROM 8 GB, RAM 1 GB",
@@ -4399,7 +4399,7 @@
         "ВРЕМЕ НА ОДГОВОР": "8 ms",
         "SMART": "√",
         "WIRELESS": "ВГРАДЕН",
-        "ПОВРЗУВАЊЕ": "HEAD PHONE 1; COAX AUDIO-1; RF IN 2; HDMI, 2 USB ВЛЕЗА, CI 1, WI-FI",
+        "ПОВРЗУВАЊЕ": "LAN-1, HEAD PHONE 1; COAX AUDIO-1; RF IN 2; HDMI, 2 USB ВЛЕЗА, CI 1, WI-FI",
         "АНДРОИД ОПЕРАТИВЕН СИСТЕМ": "ANDROID 14",
         "БОЈА НА РАМКА": "ЦРНА",
         "МЕМОРИЈА": "MEMORY ROM 8 GB, RAM 1.5 GB",
@@ -4440,7 +4440,7 @@
           "ВРЕМЕ НА ОДГОВОР": "8 ms",
           "SMART": "√",
           "WIRELESS": "ВГРАДЕН",
-          "ПОВРЗУВАЊЕ": "HEAD PHONE 1; COAX AUDIO-1; RF IN 2; HDMI, 2 USB ВЛЕЗА, CI 1, WI-FI",
+          "ПОВРЗУВАЊЕ": "LAN-1, HEAD PHONE 1; COAX AUDIO-1; RF IN 2; HDMI, 2 USB ВЛЕЗА, CI 1, WI-FI",
           "АНДРОИД ОПЕРАТИВЕН СИСТЕМ": "ANDROID 14",
           "БОЈА НА РАМКА": "ЦРНА",
           "МЕМОРИЈА": "MEMORY ROM 8 GB, RAM 1.5 GB",
@@ -4481,7 +4481,7 @@
             "ВРЕМЕ НА ОДГОВОР": "8 ms",
             "SMART": "√",
             "WIRELESS": "ВГРАДЕН",
-            "ПОВРЗУВАЊЕ": "HEAD PHONE 1; COAX AUDIO-1; RF IN 2;  HDMI , 2 USB ВЛЕЗА, CI 1,  WI-FI",
+            "ПОВРЗУВАЊЕ": "LAN-1, HEAD PHONE 1; COAX AUDIO-1; RF IN 2;  HDMI , 2 USB ВЛЕЗА, CI 1,  WI-FI",
             "АНДРОИД ОПЕРАТИВЕН СИСТЕМ": "ANDROID 14",
             "БОЈА НА РАМКА": "ЦРНА",
             "МЕМОРИЈА": "MEMORY ROM 8 GB, RAM 1,5 GB",
@@ -4522,7 +4522,7 @@
             "ВРЕМЕ НА ОДГОВОР": "8 ms",
             "SMART": "√",
             "WIRELESS": "ВГРАДЕН",
-            "ПОВРЗУВАЊЕ": " (HEAD PHONE 1; COAX AUDIO-1; RF IN 2;  HDMI , 2 USB ВЛЕЗА, CI 1,  WI-FI",
+            "ПОВРЗУВАЊЕ": "LAN-1, (HEAD PHONE 1; COAX AUDIO-1; RF IN 2;  HDMI , 2 USB ВЛЕЗА, CI 1,  WI-FI",
             "АНДРОИД ОПЕРАТИВЕН СИСТЕМ": "ANDROID 14",
             "БОЈА НА РАМКА": "ЦРНА",
             "МЕМОРИЈА": "MEMORY ROM 8 GB, RAM 1 GB",
@@ -4562,7 +4562,7 @@
             "ВРЕМЕ НА ОДГОВОР": "8 ms",
             "SMART": "√",
             "WIRELESS": "ВГРАДЕН",
-            "ПОВРЗУВАЊЕ": "HEAD PHONE 1; COAX AUDIO-1; RF IN 2;  HDMI , 2 USB ВЛЕЗА, CI 1,  WI-FI",
+            "ПОВРЗУВАЊЕ": "LAN-1, HEAD PHONE 1; COAX AUDIO-1; RF IN 2;  HDMI , 2 USB ВЛЕЗА, CI 1,  WI-FI",
             "АНДРОИД ОПЕРАТИВЕН СИСТЕМ": "ANDROID 14",
             "БОЈА НА РАМКА": "ЦРНА",
             "МЕМОРИЈА": "MEMORY ROM 8 GB, RAM 1 GB",
@@ -4619,6 +4619,225 @@
             "Менлива Врата Лево/Деснно":  "√",
             "рачка":  "Интегрирана ",
             "Winter security ":  "(-15C)"
+          }
+        },
+        {
+          "id": 152,
+          "name": "Машина за перење алишта A – 5100",
+          "description": [
+            "Ви го претставуваме нашата напредна Машина за перење алишта, дизајнирана за оптимизирање на вашата рутина за перење. Со просторна барабан со капацитет од 42 L и 15 програми, обезбедува темелно чистење за до 5 кг роба. Функции како електронско програмирање, еко-енергетска заштита и заштита од изливање обезбедуваат ефикасност и мир на умот. Плус, неговиот компактен дизајн и удобни функции како сензор за половина терет и брз програм го прават денот за перење безнапорен."
+          ],
+          "pictures": [
+            "assets/Home appliances/WASHING MACHINE A – 5100/MASINA-ZA-ALISTA-5100.png"
+          ],
+          "specificationsDoc": "assets/Product Spec/Upatstvo-A-5101.pdf",
+          "specifications": {
+              "Димензии": "84,50/59,70/49,70 CM",
+              "ВРТЕЖИ ВО МИНУТА (RPM)": "1000 ",
+              "КАПАЦИТЕТ": "5 КГ",
+              "ИНОКСЕН БАРАБАН": "42 Л.",
+              "ПРОГРАМИ": "15",
+              "ЕЛЕКТРОНСКИ ПРОГРАМАТОР": "√",
+              "ЕНЕРГЕТСКА КЛАСА (НОВА РЕГУЛАТИВА)": "D",
+              "ЕCO LOGIC СИСТЕМ ЗА ЗАШТЕДА НА ЕНЕРГИЈА": "√",
+              "ЗАШТИТА ПРОТИВ ПРОТЕКУВАЊЕ": "√",
+              "ЗАШТИТА ПРОТИВ ПЕНА": "√",
+              "СИСТЕМ ЗА АВТОМАТСКИ БАЛАНС": "√",
+              "ПРИЛАГОДУВАЧКИ НОГАРКИ": "√",
+              "ОТСТРАНУВАЧКИ ГОРЕН КАПАК": "√",
+              "ПОТРОШУВАЧКА НА ЕНЕРГИЈА (KWH/100 CYCLE) НОВА РЕГУЛАТИВА": "60",
+              "ПОТРОШУВАЧКА НА ВОДА (Л/ЦИКЛУС)": "41 L/CYCLE",
+              "БУЧАВА ПРИ ПЕРЕЊЕ": "58 DB",
+              "БУЧАВА ПРИ ЦЕНТРИФУГИРАЊЕ": "76 DB",
+              "СУПЕР БРЗА ПРОГРАМА": "15 МИНУТИ НА 30 °C ",
+              "БРЗА ПРОГРАМА": "60 МИНУТИ НА 60 °C",
+              "СЕНЗОР ЗА ПОЛОВИЧНО ПОЛНЕЊЕ": "√",
+              "ОДЛОЖЕН СТАРТ": "√",
+              "КОПЧЕ ЗА ДОПОЛНИТЕЛНО ИСПИРАЊЕ": "√"
+            }
+          },
+        {
+          "id": 153,
+          "name": "Вградена Рерна BIO-65M B",
+          "description": [
+            "Овој црн печ се истакнува со просторен интериор со Димензии на 59,5mm / 59,5 mm/ 57,5mm и е со енергетска класа A. Има обем на печката од 65 L, 8 функции на печка, и механички контроли.",
+            "Печката е опремена со вентилатор, светилка за печка и отстранлива внатрешна стакло за лесно чистење. Вклучува длабок тава и хромирана решетка. Елементите за греење вклучуваат горен греач од 1200W, долен греач од 1100W, грил греач од 1400W, и дупли грил од 2600W."
+          ],
+          "pictures": [
+            "assets/Built In Appliances/Built-in oven FAVORIT BIO-65M B/BIO-65-X-PHOTO-1-1024x576.png"
+          ],
+          "specificationsDoc": "assets/Built In Appliances/Built-in oven FAVORIT BIO-65M B/UPATSTVO ZA UPOTREBA.pdf",
+          "specifications": {
+            "Димензии": "59,5mm / 59,5 mm/ 57,5mm",
+            "енергетска класа": "A",
+            "волумен на фурната": "65 L",
+            "Стаклен црн панел": "√",
+            "функции на рерната": "8",
+            "тајмер": "механички",
+            "термостат": "механички",
+            "Странични водилки во рерна": "√",
+            "вентилатор": "√",
+            "светло за фурна": "√",
+            "одстранливо внатрешно стакло": "√",
+            "длабок таван": "1",
+            "хромирана решетка": "1",
+            "горно греење": "1200W",
+            "долно греење": "1100W",
+            "грил греење": "1400W",
+            "двоен грил": "2600W",
+            "боја": "црна"
+          }
+        },
+        {
+          "id": 154,
+          "name": "Машина за перење алишта N-7122T BLDC",
+          "description": [],
+          "pictures":[
+            "assets/Home appliances/WASHING MACHINE N-7122T BLDC/5. FAVORIT N-7122T BLDC.png"
+          ],
+          "specificationsDoc": "assets/Home appliances/WASHING MACHINE N-7122T BLDC/upatstvo.pdf",
+          "specifications":{
+            "Димензии (В/Ш/Д)": "84,5 / 59,7 / 52,70 CM",
+            "максимални оброти во минута": "1200",
+            "максимален капацитет": "7 КГ",
+            "иноксен барабан": "50 Л",
+            "инвертер мотор": "√ (10 ГОДИНИ ГАРАНЦИЈА)",
+            "дигитален lcd  екран на допир": "√",
+            "одложен почеток": "√",
+            "програми": "15",
+            "опција STEAM ASSIST (перење со пареа)": "√",
+            "електронски програматор": "√",
+            "копче за контрола на температура на водата": "√",
+            "енергетска класа": "А",
+            "систем за заштита од изливање": "√",
+            "заштита од пена": "√",
+            "автоматски балансен систем": "√",
+            "систем за откривање на грешки": "√",
+            "детска заштита": "√",
+            "одстранлив горен покривач": "√",
+            "потрошувачка на енергија": "45 KWH/ЦИКЛУС",
+            "потрошувачка на вода": "45 L/ЦИКЛУС",
+            "ниво на бучава при перење": "50 DB",
+            "ниво на бучава при цедење": "75 DB",
+            "супер брза програма": "15 МИНУТИ НА 30°",
+            "брза програма": "60 МИН. НА 60°",
+            "копче за контрола на брзина": "√",
+            "сензор за половина терет": "√",
+            "програм со предперење на памук": "√"
+          }
+        },
+        {
+          "id": 155,
+          "name": "Машина за перење алишта C-8143 BLDC",
+          "description": [],
+          "pictures":[
+            "assets/Home appliances/WASHING MACHINE C-8143 BLDC/8. FAVORIT C-8143 BLDC.png"
+          ],
+          "specificationsDoc":"assets/Home appliances/WASHING MACHINE C-8143 BLDC/C-8143 BLDC -user manual OK.pdf",
+          "specifications": {
+            "Димензии (В/Ш/Д)": "84,5 / 60,5 / 57,40 CM",
+            "максимални оброти во минута": "1200",
+            "максимален капацитет": "8 КГ",
+            "иноксен барабан": "55 Л",
+            "инвертер мотор": "√ (10 ГОДИНИ ГАРАНЦИЈА)",
+            "дигитален lcd display на допир": "√",
+            "опција STEAM ASSIST (перење со пареа)": "√",
+            "одложен почеток": "√",
+            "програми": "15",
+            "електронски програматор": "√",
+            "копче за контрола на температура на водата": "√",
+            "енергетска класа": "A",
+            "систем за заштита од изливање": "√",
+            "заштита од пена": "√",
+            "автоматски балансен систем": "√",
+            "систем за откривање на грешки": "√",
+            "детска заштита": "√",
+            "одстранлив горен покривач": "√",
+            "потрошувачка на енергија": "47 KWH/ЦИКЛУС",
+            "потрошувачка на вода": "48 L/ЦИКЛУС",
+            "ниво на бучава при перење": "50 DB",
+            "ниво на бучава при цедење": "75 DB",
+            "супер брза програма": "15 МИНУТИ НА 30°",
+            "брза програма": "60 МИН. НА 60°",
+            "копче за контрола на брзина": "√",
+            "сензор за половина терет": "√",
+            "програм со предперење на памук": "√"
+          }
+        },
+        {
+          "id": 154,
+          "name": "Mašina za pranje veša N-7122T BLDC",
+          "description": [],
+          "pictures": [
+            "assets/Home appliances/WASHING MACHINE L – 8101N/FAVORIT-L-8101-1024x576.png"
+          ],
+          "specificationsDoc": "assets/Home appliances/WASHING MACHINE L – 8101N/upatstvo.pdf",
+          "specifications": {
+            "Dimenzije (V/Š/D)": "84.5 / 59.7 / 52.70 CM",
+            "Maksimalni obrtaji u minutu": "1200",
+            "Maksimalni kapacitet": "7 KG",
+            "Inoks bubanj": "50 L",
+            "Inverter motor": "√ (10 GODINA GARANCIJE)",
+            "Digitalni LCD ekran na dodir": "√",
+            "Odloženi početak": "√",
+            "Programi": "15",
+            "Opcija STEAM ASSIST (pranje parom)": "√",
+            "Elektronski programator": "√",
+            "Dugme za kontrolu temperature vode": "√",
+            "Energetska klasa": "A",
+            "Sistem za zaštitu od izlivanja": "√",
+            "Zaštita od pene": "√",
+            "Automatski balans sistem": "√",
+            "Sistem za otkrivanje grešaka": "√",
+            "Dečija zaštita": "√",
+            "Uklonjivi gornji poklopac": "√",
+            "Potrošnja energije": "45 KWH/CIKLUS",
+            "Potrošnja vode": "45 L/CIKLUS",
+            "Nivo buke pri pranju": "50 DB",
+            "Nivo buke pri centrifugiranju": "75 DB",
+            "Super brzi program": "15 MIN NA 30°",
+            "Brzi program": "60 MIN NA 60°",
+            "Dugme za kontrolu brzine": "√",
+            "Senzor za pola punjenja": "√",
+            "Program sa predpranjem pamuka": "√"
+          }
+        },
+        {
+          "id": 155,
+          "name": "Mašina za pranje veša C-8143 BLDC",
+          "description": [],
+          "pictures": [
+            "assets/Home appliances/WASHING MACHINE C-8143 BLDC/8. FAVORIT C-8143 BLDC.png"
+          ],
+          "specificationsDoc": "assets/Home appliances/WASHING MACHINE C-8143 BLDC/C-8143 BLDC -user manual OK.pdf",
+          "specifications": {
+            "Dimenzije (V/Š/D)": "84.5 / 60.5 / 57.40 CM",
+            "Maksimalni obrtaji u minutu": "1200",
+            "Maksimalni kapacitet": "8 KG",
+            "Inoks bubanj": "55 L",
+            "Inverter motor": "√ (10 GODINA GARANCIJE)",
+            "Digitalni LCD ekran na dodir": "√",
+            "Opcija STEAM ASSIST (pranje parom)": "√",
+            "Odloženi početak": "√",
+            "Programi": "15",
+            "Elektronski programator": "√",
+            "Dugme za kontrolu temperature vode": "√",
+            "Energetska klasa": "A",
+            "Sistem za zaštitu od izlivanja": "√",
+            "Zaštita od pene": "√",
+            "Automatski balans sistem": "√",
+            "Sistem za otkrivanje grešaka": "√",
+            "Dečija zaštita": "√",
+            "Uklonjivi gornji poklopac": "√",
+            "Potrošnja energije": "47 KWH/CIKLUS",
+            "Potrošnja vode": "48 L/CIKLUS",
+            "Nivo buke pri pranju": "50 DB",
+            "Nivo buke pri centrifugiranju": "75 DB",
+            "Super brzi program": "15 MIN NA 30°",
+            "Brzi program": "60 MIN NA 60°",
+            "Dugme za kontrolu brzine": "√",
+            "Senzor za pola punjenja": "√",
+            "Program sa predpranjem pamuka": "√"
           }
         }
 ]

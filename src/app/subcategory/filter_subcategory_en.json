@@ -7,7 +7,14 @@
         "smallDomesticAppliances": "Small Domestic Appliances",
         "televisions": "Televisions"
       },
-    "televisions":{},
+    "televisions":{
+        "size32": "32\"",
+        "size43": "43\"",
+        "size50": "50\"",
+        "size55": "55\"",
+        "size65": "65\"",
+        "size75": "75\""
+    },
     "smallDomesticAppliances":{
         "airFryer":"Air Fryer",
         "blenders":"Blenders",

@@ -209,7 +209,10 @@ export class HomeComponent implements OnInit, OnDestroy {
   }
 
   navigateToBlogs() {
-    this._router.navigate(['/blogs'], { queryParamsHandling: 'merge' });
+    this._router.navigate(['/blogs'], { queryParamsHandling: 'merge' })
+      .then(() => {
+        window.scrollTo(0, 0);
+      });
   }
 
   ngOnDestroy() {
@@ -264,6 +267,16 @@ export class HomeComponent implements OnInit, OnDestroy {
   onNavigateCategories(navigateParam: string, category: string) {
     if (category === 'air-conditioners') {
       this._router.navigate([navigateParam, category, 'subcategory', 'air-conditioners'], { queryParamsHandling: 'merge' })
+        .then(() => {
+          window.scrollTo(0, 0);
+        });
+    } else if (category === 'televisions') {
+      this._router.navigate([navigateParam, category, 'subcategory', 'televisions'], { queryParamsHandling: 'merge' })
+        .then(() => {
+          window.scrollTo(0, 0);
+        });
+    } else if (category === 'hoods') {
+      this._router.navigate([navigateParam, category, 'subcategory', 'hoods'], { queryParamsHandling: 'merge' })
         .then(() => {
           window.scrollTo(0, 0);
         });

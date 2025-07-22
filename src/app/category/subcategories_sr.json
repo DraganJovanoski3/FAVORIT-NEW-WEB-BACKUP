@@ -19,7 +19,10 @@
       "grills": "Roštilj",
       "thermal-jugs": "Termosi",
       "toasters": "Tosteri",
-      "colanders": "Cediljke"
+      "colanders": "Cediljke",
+      "cooking-heating-appliances": "Aparati za kuvanje i grejanje",
+      "food-beverage-preparation": "Priprema hrane i pića",
+      "home-care-cleaning": "Nega doma i čišćenje"
     },
     "air-conditioners": {
       "inverter": "Inverter",

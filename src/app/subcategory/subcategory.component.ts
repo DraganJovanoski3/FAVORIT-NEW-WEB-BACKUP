@@ -9,7 +9,6 @@ import { combineLatest } from "rxjs";
 
 // Translation JSON imports
 import product_names_mk from './product_names_mk.json';
-import product_names_en from './product_names_en.json';
 import product_names_al from './product_names_al.json';
 import product_names_sr from './product_names_sr.json';
 
@@ -42,6 +41,7 @@ interface Product {
   backgroundColorproduct?: string;
   currentPicture?: string;
   isHovered?: boolean;
+  group?: string;
 }
 
 @Component({
@@ -113,6 +113,9 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit(): void {
+    // Initialize with default translations first
+    this.updateTranslations('en');
+    
     combineLatest([this._route.params, this._route.queryParams]).subscribe(([params, queryParams]) => {
       this.category = params['category'];
       this.subcategory = params['subcategory'];
@@ -142,7 +145,7 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
       case 'en':
         this.filterSubcategory = filter_subcategory_en;
         this.subcategoriesComponentConstant = subcategories_en;
-        this.productTranslations = product_names_en;
+        this.productTranslations = product_names_mk; // Use Macedonian as fallback for English
         this.larnmoreTranslations = larnmore_translations_en;
         this.cookieTranslations = all_products_en;
         break;
@@ -159,6 +162,14 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
         this.productTranslations = product_names_al;
         this.larnmoreTranslations = larnmore_translations_al;
         this.cookieTranslations = all_products_al;
+        break;
+      default:
+        // Default to English if language is not recognized
+        this.filterSubcategory = filter_subcategory_en;
+        this.subcategoriesComponentConstant = subcategories_en;
+        this.productTranslations = product_names_mk; // Use Macedonian as fallback
+        this.larnmoreTranslations = larnmore_translations_en;
+        this.cookieTranslations = all_products_en;
         break;
     }
   }
@@ -191,9 +202,13 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
     return key.replace(/-([a-z])/g, (_, char) => char.toUpperCase());
   }
 
+  private getProductTranslation(id: string): string {
+    return (this.productTranslations && this.productTranslations[id]) || '';
+  }
+
   private setupBreadcrumbs() {
-    // If subcategory is 'air-conditioners', do not show the last breadcrumb
-    if (this.subcategory === 'air-conditioners') {
+    // If subcategory is 'air-conditioners', 'televisions', or 'hoods', do not show the last breadcrumb
+    if (this.subcategory === 'air-conditioners' || this.subcategory === 'televisions' || this.subcategory === 'hoods') {
       this.breadcrumbs = [
         { label: this.getTranslatedNameBread('Home'), url: '/' },
         { label: this.getTranslatedNameBread(this.category, true), url: `/category/${this.category}` }
@@ -265,13 +280,21 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
             this.subcategoryName = this.subcategoriesComponentConstant.homeAppliances.washingMachines;
             this.products = [
             // WASHING MACHINES
+          // {
+          //   // KEEP
+          //   id: 44,
+          //   name: this.productTranslations['44'] ||'WASHING MACHINE A – 5101N',
+          //   picture: 'assets/Home appliances/WASHING MACHINE A – 5101N/MASINA-ZA-ALISTA-01-1-1024x576.png',  
+          //   pictureHover: 'assets/Home appliances/WASHING MACHINE A – 5101N/FAVORIT-A-5101-1-1024x576.png',
+          //   subcategory: washingLabel, 
+          //   backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
+          // },
           {
-            // KEEP
-            id: 44,
-            name: this.productTranslations['44'] ||'WASHING MACHINE A – 5101N',
-            picture: 'assets/Home appliances/WASHING MACHINE A – 5101N/MASINA-ZA-ALISTA-01-1-1024x576.png',  
-            pictureHover: 'assets/Home appliances/WASHING MACHINE A – 5101N/FAVORIT-A-5101-1-1024x576.png',
-            subcategory: washingLabel, 
+            id: 152,
+            name: this.productTranslations['152'] ||'WASHING MACHINE A – 5100',
+            picture: 'assets/Home appliances/WASHING MACHINE A – 5100/MASINA-ZA-ALISTA-5100.png',  
+            pictureHover: 'assets/Home appliances/WASHING MACHINE A – 5100/MASINA-ZA-ALISTA-5100.png',
+            subcategory: washingLabel,
             backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
           },
           {
@@ -313,7 +336,7 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
           {
             // KEEP
             id: 47,
-            name: this.productTranslations['47'] ||'WASHING MACHINE L – 8101N',
+            name: this.productTranslations['47'] ||'WASHING MACHINE L – 8101',
             picture: 'assets/Home appliances/WASHING MACHINE L – 8101N/L-8101-04-1024x576.png',  
             pictureHover: 'assets/Home appliances/WASHING MACHINE L – 8101N/FAVORIT-L-8101-1024x576.png',
             subcategory: washingLabel, 
@@ -338,11 +361,27 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
             backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
           },
           {
+            id: 154,
+            name: this.productTranslations['154'] ||'WASHING MACHINE N-7122T BLDC',
+            picture: 'assets/Home appliances/WASHING MACHINE N-7122T BLDC/5. FAVORIT N-7122T BLDC.png',
+            pictureHover: 'assets/Home appliances/WASHING MACHINE N-7122T BLDC/5. FAVORIT N-7122T BLDC.png',
+            subcategory: washingLabel, 
+            backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
+          },
+          {
             // KEEP
             id: 53,
             name: this.productTranslations['53'] ||'WASHING MACHINE W – 8122N BLDC',
             picture: 'assets/Home appliances/WASHING MACHINE W – 8122N BLDC/W-8122-BLDC-11-1024x576.png',  
             pictureHover: 'assets/Home appliances/WASHING MACHINE W – 8122N BLDC/FAVORIT-W-8122-BLDC-1024x576.png',
+            subcategory: washingLabel, 
+            backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
+          },
+          {
+            id: 155,
+            name: this.productTranslations['155'] ||'WASHING MACHINE C-8143 BLDC',
+            picture: 'assets/Home appliances/WASHING MACHINE C-8143 BLDC/8. FAVORIT C-8143 BLDC.png',
+            pictureHover: 'assets/Home appliances/WASHING MACHINE C-8143 BLDC/8. FAVORIT C-8143 BLDC.png',
             subcategory: washingLabel, 
             backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
           },
@@ -365,7 +404,7 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
             backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
           },
 
-                     // DRYERS
+           // DRYERS
           {
             // KEEP
             id: 19,
@@ -456,14 +495,6 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
             backgroundColorproduct: 'linear-gradient(#ffa87d 0%,#ffffff 90%,#ffffff 100%)'
           },
           {
-            id: 10,
-            name: this.productTranslations['10'] ||'COMBINED COOKER К 622 WWF',
-            picture: 'assets/Home appliances/COMBINED INDEPENDENT COOKER К 622 WWF/FAVORIT-K-622-WWF-10-1024x576.png',  
-            pictureHover: 'assets/Home appliances/COMBINED INDEPENDENT COOKER К 622 WWF/FAVORIT-K-622-WWF-10-1024x576.png',
-            subcategory: stovesLabel,
-            backgroundColorproduct: 'linear-gradient(#ffa87d 0%,#ffffff 90%,#ffffff 100%)'
-          },
-          {
             id: 26,
             name: this.productTranslations['26'] ||'Electric Independent Cooker EC 540 WWFT',
             picture: 'assets/Home appliances/Electric Independent Cooker EC 540 WWFT/Elektricen-sporet-EC-540-WWFT-44-1024x576.png',  pictureHover: 'assets/',
@@ -475,6 +506,14 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
             id: 25,
             name: this.productTranslations['25'] ||'Electric Independent Cooker EC 540 SF',
             picture: 'assets/Home appliances/Electric Independent Cooker EC 540 SF/Elektricen-sporet-EC-540-SF-43-1024x576.png',  pictureHover: 'assets/',
+            subcategory: stovesLabel,
+            backgroundColorproduct: 'linear-gradient(#ffa87d 0%,#ffffff 90%,#ffffff 100%)'
+          },
+          {
+            id: 10,
+            name: this.productTranslations['10'] ||'COMBINED COOKER К 622 WWF',
+            picture: 'assets/Home appliances/COMBINED INDEPENDENT COOKER К 622 WWF/FAVORIT-K-622-WWF-10-1024x576.png',  
+            pictureHover: 'assets/Home appliances/COMBINED INDEPENDENT COOKER К 622 WWF/FAVORIT-K-622-WWF-10-1024x576.png',
             subcategory: stovesLabel,
             backgroundColorproduct: 'linear-gradient(#ffa87d 0%,#ffffff 90%,#ffffff 100%)'
           },
@@ -656,7 +695,7 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
             name: this.productTranslations['39'] ||'REFRIGERATOR WITHOUT CHAMBER L1002E',
             picture: 'assets/Home appliances/REFRIGERATOR WITHOUT CHAMBER L1002N/FAVORIT-L-1002-01-1024x576.png',  
             pictureHover: 'assets/Home appliances/REFRIGERATOR WITHOUT CHAMBER L1002N/FAVORIT-L-1002-02-1024x576.png',
-                subcategory: fridgeLabel, 
+            subcategory: fridgeLabel, 
             backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
           },
           {
@@ -670,11 +709,11 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
           },
           {
             // KEEP
-                id: 41,
-                name: this.productTranslations['41'] ||'VERTICAL FREEZER F2451E',
-                picture: 'assets/Home appliances/VERTICAL FREEZER F 2451N/FAVORIT-F-2451-01-1024x576.png',  
-                pictureHover: 'assets/Home appliances/VERTICAL FREEZER F 2451N/FAVORIT-F-2451-02-1024x576.png',
-                subcategory: verticalFreezerLabel, 
+            id: 137,
+            name: this.productTranslations['137'] ||'REFRIGERATOR WITHOUT CHAMBER L2653E S',
+            picture: 'assets/Home appliances/REFRIGERATOR WITHOUT CHAMBER L2653N/FAVORIT-L-2653-S-01-1024x576.png',  
+            pictureHover: 'assets/Home appliances/REFRIGERATOR WITHOUT CHAMBER L2653N/FAVORIT-L-2653-S-02-1024x576.png',
+            subcategory: fridgeLabel, 
             backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
           },
           {
@@ -697,6 +736,24 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
           },
           {
             // KEEP
+            id: 41,
+            name: this.productTranslations['41'] ||'VERTICAL FREEZER F2451E',
+            picture: 'assets/Home appliances/VERTICAL FREEZER F 2451N/FAVORIT-F-2451-01-1024x576.png',  
+            pictureHover: 'assets/Home appliances/VERTICAL FREEZER F 2451N/FAVORIT-F-2451-02-1024x576.png',
+            subcategory: verticalFreezerLabel, 
+            backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
+          },
+          {
+            // KEEP
+            id: 138,
+            name: this.productTranslations['138'] ||'TWO CHAMBER REFRIGERATOR RF 263E S',
+            picture: 'assets/Home appliances/TWO CHAMBER REFRIGERATOR RF 263N/FAVORIT-RF-263-S-01-1-1024x576.png',  
+            pictureHover: 'assets/Home appliances/TWO CHAMBER REFRIGERATOR RF 263N/FAVORIT-RF-263-S-02-1024x576.png',
+            subcategory: verticalFreezerLabel,  
+            backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
+          },
+          {
+            // KEEP
             id: 11,
             name: this.productTranslations['11'] ||'COMBINED REFRIGERATOR CF 278E',
             picture: 'assets/Home appliances/COMBINED REFRIGERATOR CF 278N/FAVORIT-CF-278-01-1024x576.png',  
@@ -705,21 +762,48 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
            backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'            
          },
           {
+              // KEEP
+            id: 139,
+            name: this.productTranslations['139'] ||'COMBINED REFRIGERATOR CF 278E S',
+            picture: 'assets/Home appliances/COMBINED REFRIGERATOR CF 278N/FAVORIT-CF-278-S-01-1024x576.png',  
+            pictureHover: 'assets/Home appliances/COMBINED REFRIGERATOR CF 278N/FAVORIT-CF-278-S-02-1024x576.png',
+            subcategory: this.subcategoriesComponentConstant.homeAppliances.Fridges, 
+            backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'            
+          },
+          {
              // KEEP
             id: 12,
             name: this.productTranslations['12'] ||'COMBINED REFRIGERATOR CF 374E',
             picture: 'assets/Home appliances/COMBINED REFRIGERATOR CF 374N/FAVORIT-CF-374-01-1024x576.png',  
             pictureHover: 'assets/Home appliances/COMBINED REFRIGERATOR CF 374N/FAVORIT-CF-374-02-1024x576.png',
-                subcategory: fridgeLabel, 
+            subcategory: fridgeLabel, 
             backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
           },
+          {
+            // KEEP
+           id: 140,
+           name: this.productTranslations['140'] ||'COMBINED REFRIGERATOR CF 374E I',
+           picture: 'assets/Home appliances/COMBINED REFRIGERATOR CF 374N/FAVORIT-CF-374-I-01-1024x576.png',  
+           pictureHover: 'assets/Home appliances/COMBINED REFRIGERATOR CF 374N/FAVORIT-CF-374-I-02-1024x576.png',
+           subcategory: fridgeLabel, 
+           backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
+         },
           {
             // KEEP
             id: 13,
             name: this.productTranslations['13'] ||'COMBINED REFRIGERATOR NF 379E',
             picture: 'assets/Home appliances/COMBINED REFRIGERATOR NF 379N – NO FROST without dispensary/FAVORIT-NF-373-01-1024x576.png',  
             pictureHover: 'assets/Home appliances/COMBINED REFRIGERATOR NF 379N – NO FROST without dispensary/FAVORIT-NF-373-02-1024x576.png',
-                subcategory: fridgeLabel, 
+            subcategory: fridgeLabel, 
+            backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
+          },
+          {
+            // KEEP
+            id: 141,
+            name: this.productTranslations['141'] ||'COMBINED REFRIGERATOR NF 379E I',
+            picture: 'assets/Home appliances/COMBINED REFRIGERATOR NF 379N – NO FROST without dispensary/FAVORIT-NF-373-I-01-1024x576.png',  
+            pictureHover: 'assets/Home appliances/COMBINED REFRIGERATOR NF 379N – NO FROST without dispensary/FAVORIT-NF-373-I-02-1024x576.png',
+            subcategory: fridgeLabel,  
             backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
           },
           {
@@ -728,8 +812,8 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
             name: this.productTranslations['33'] ||'HCF 150',
             picture: 'assets/Home appliances/HCF 150/150-ZATVOREN-1024x576.png',  
             pictureHover: 'assets/Home appliances/HCF 150/150-OTVOREN-1024x576.png',
-                subcategory: horizontalFreezerLabel, 
-                backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
+            subcategory: horizontalFreezerLabel, 
+            backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
           },
           {
             // KEEP
@@ -737,7 +821,16 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
             name: this.productTranslations['34'] ||'HCF 200',
             picture: 'assets/Home appliances/HCF 200/200-ZATVOREN-1024x576.png',  
             pictureHover: 'assets/Home appliances/HCF 200/200-OTVOREN-1024x576.png',
-                subcategory: horizontalFreezerLabel, 
+            subcategory: horizontalFreezerLabel, 
+            backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
+          },
+          {
+            // KEEP
+            id: 151,
+            name: this.productTranslations['151'] ||'HCF 250',
+            picture: 'assets/Home appliances/HCF 250/250-ZATVOREN-1024x576.png',  
+            pictureHover: 'assets/Home appliances/HCF 250/250-OTVOREN-1024x576.png',
+            subcategory: horizontalFreezerLabel,
             backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
           },
           {
@@ -746,7 +839,7 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
             name: this.productTranslations['35'] ||'HCF 300',
             picture: 'assets/Home appliances/HCF 300/300-ZATVOREN-1024x576.png',  
             pictureHover: 'assets/Home appliances/HCF 300/300-OTVOREN-1024x576.png',
-                subcategory: horizontalFreezerLabel, 
+            subcategory: horizontalFreezerLabel, 
             backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
           },
           {
@@ -770,7 +863,7 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
         this.products = [
           {
             id: 63,
-            name: this.productTranslations['63'] ||'Built-in dishwasher BI45-I1E',
+            name: (this.productTranslations && this.productTranslations['63']) || 'Built-in dishwasher BI45-I1E',
             picture: 'assets/Built In Appliances/Built-in dishwasher BI45-I1E (fully integrated)/BI-45-I1E-08-1024x576.png',
             pictureHover: 'assets/',
             subcategory: fullyBuiltInDishwashersLabel,
@@ -783,6 +876,14 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
             pictureHover: 'assets/',
             subcategory: semiBuiltInDishwashersLabel,
             backgroundColorproduct: 'linear-gradient(#9f9f9f 0%, #ffffff 90%, #ffffff 100%)'
+          },
+          {
+            id: 143,
+            name: this.productTranslations['64'] ||'Built-in dishwasher BI60 – I14N',
+            picture: 'assets/Built In Appliances/Built-in dishwasher BI60 – I14 (fully integrated)/SI60-I14-11-1024x576.png',  pictureHover: 'assets/',
+            subcategory: fullyBuiltInDishwashersLabel,
+            backgroundColorproduct: 'linear-gradient(#9f9f9f 0%, #ffffff 90%, #ffffff 100%)'
+
           },
           {
             id: 65,
@@ -816,6 +917,14 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
             id: 70,
             name: this.productTranslations['70'] ||'Built-in oven FAVORIT BIO 65-B',
             picture: 'assets/Built In Appliances/Built-in oven FAVORIT BIO 65-B/BIO-65-B-PHOTO-1-1024x576.png',  
+            pictureHover: 'assets/',
+            subcategory: cookingBuiltInStovesLabel,
+            backgroundColorproduct: 'linear-gradient(#9f9f9f 0%, #ffffff 90%, #ffffff 100%)'
+          },
+          {
+            id: 153,
+            name: this.productTranslations['153'] ||'Built-in oven BIO-65M B',
+            picture: 'assets/Built In Appliances/Built-in oven FAVORIT BIO-65M B/BIO-65-X-PHOTO-1-1024x576.png',
             pictureHover: 'assets/',
             subcategory: cookingBuiltInStovesLabel,
             backgroundColorproduct: 'linear-gradient(#9f9f9f 0%, #ffffff 90%, #ffffff 100%)'
@@ -1122,340 +1231,166 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
         this.subcategories.push(allLabel);
         this.displayedProducts = this.products;
         break;
-      case 'air-fryers':
-        this.subcategories = Object.values(this.subcategoriesComponentConstant.hoods).concat('all') as string[];
-        this.backgroundStyle = '';
-        this.subcategoryName = this.subcategoriesComponentConstant.smallDomesticAppliances.airFryer;
-        this.products = [
-          {
-            // KEEP
-            id: 92,
-            name: this.productTranslations['92'] ||'Air fryer AF9001',
-            picture: 'assets/Small domestic appliances/Air fryer AF9001/Air-fryer-AF9001-45-1-1024x576.png',  pictureHover: 'assets/',
-            subcategory: this.subcategoriesComponentConstant.smallDomesticAppliances.airFryer,
-            backgroundColorproduct: 'linear-gradient(#ffa87d 0%,#ffffff 90%,#ffffff 100%)'
-            // linear-gradient(#9f9f9f 0%, #ffffff 90%, #ffffff 100%) hot stuff
-          },
-        ]; 
-        break;
-      case 'blenders':
-        this.subcategories = Object.values(this.subcategoriesComponentConstant.hoods).concat('all') as string[];
-        this.backgroundStyle = '';
-        this.subcategoryName = this.subcategoriesComponentConstant.smallDomesticAppliances.blenders;
-        this.products = [
-          // {
-          //   id: 94,
-          //   name: this.productTranslations['94'] ||'Blender BL9702X',
-          //   picture: 'assets/Small domestic appliances/Blender BL9702X/Blender-BL9702X-45-1024x576.png',  pictureHover: 'assets/',
-          //   subcategory: this.subcategoriesComponentConstant.smallDomesticAppliances.blenders,
-          //   backgroundColorproduct: 'linear-gradient(#5FC261 0%, #ffffff 90%, #ffffff 100%)'
-
-          // },
-          {
-            // KEEP
-            id: 97,
-            name: this.productTranslations['97'] ||'Hand blender HB5006',
-            picture: 'assets/Small domestic appliances/Hand blender HB5006/Racen-blender-HB5006-45-1024x576.png',  pictureHover: 'assets/',
-            subcategory: this.subcategoriesComponentConstant.smallDomesticAppliances.blenders,
-            backgroundColorproduct: 'linear-gradient(#5FC261 0%, #ffffff 90%, #ffffff 100%)'
-          },
-          {
-            // KEEP
-            id: 93,
-            name: this.productTranslations['93'] ||'Blender BL9006',
-            picture: 'assets/Small domestic appliances/Blender BL9006/Blender-BL9006-45-1024x576.png',  pictureHover: 'assets/',
-            subcategory: this.subcategoriesComponentConstant.smallDomesticAppliances.blenders,
-            backgroundColorproduct: 'linear-gradient(#5FC261 0%, #ffffff 90%, #ffffff 100%)'
-            // linear-gradient(#5FC261 0%, #ffffff 90%, #ffffff 100%) blenders mixers
-          },
-          {
-            // KEEP
-            id: 94,
-            name: this.productTranslations['94'] ||'Blender BL9702X',
-            picture: 'assets/Small domestic appliances/Blender BL9702X/Blender-BL9702X-45-1024x576.png',  pictureHover: 'assets/',
-            subcategory: this.subcategoriesComponentConstant.smallDomesticAppliances.blenders,
-            backgroundColorproduct: 'linear-gradient(#5FC261 0%, #ffffff 90%, #ffffff 100%)'
+        
+        case 'televisions':
+          const tvFilters = this.filterSubcategory.televisions;
+          this.subcategories = [tvFilters.size32, tvFilters.size43, tvFilters.size50, tvFilters.size55, tvFilters.size65, tvFilters.size75, this.filterSubcategory.all];
+          this.backgroundStyle = 'linear-gradient(rgba(0, 0, 0, 0.27), rgba(0, 0, 0, 0.27)), url("assets/category-photos/kategorija-tv.jpg")';
+          this.subcategoryName = this.subcategoriesComponentConstant.categoryNamesTranslations.televisions;
+          this.products = [
+            {
+              // KEEP
+              id: 146,
+              name: this.productTranslations['146'] ||'LED TV 75U20B-G1',
+              picture: 'assets/TV/LED TV 75U20B-G1/7. FAVORIT TV 75U20B-G1-1.png',  
+              pictureHover: 'assets/TV/LED TV 75U20B-G1/7. FAVORIT TV 75U20B-G1-2.png',
+              subcategory: tvFilters.size75,
+              backgroundColorproduct: 'linear-gradient(#928EE1 0%, #ffffff 50%, #ffffff 100%)'
+            },
+            {
+              // KEEP
+              id: 145,
+              name: this.productTranslations['145'] ||'LED TV 65U20B-G1',
+              picture: 'assets/TV/LED TV 65U20B-G1/6.-FAVORIT-TV-50F135R-F-1.png',  
+              pictureHover: 'assets/TV/LED TV 65U20B-G1/6.-FAVORIT-TV-50F135R-F-2.png',
+              subcategory: tvFilters.size65,
+              backgroundColorproduct: 'linear-gradient(#928EE1 0%, #ffffff 50%, #ffffff 100%)'
+            },
+            {
+              // KEEP
+              id: 147,
+              name: this.productTranslations['147'] ||'LED TV 55U20B-G1',
+              picture: 'assets/TV/LED TV 55U20B-G1/5. FAVORIT TV 55U20B-G1-1.png',  
+              pictureHover: 'assets/TV/LED TV 55U20B-G1/5. FAVORIT TV 55U20B-G1-2.png',
+              subcategory: tvFilters.size55,
+              backgroundColorproduct: 'linear-gradient(#928EE1 0%, #ffffff 50%, #ffffff 100%)'
+            },
+            {
+              // KEEP
+              id: 123,
+              name: this.productTranslations['123'] ||'LED TV 55DK5JM2T2S2A -11UHD 4K ANDROI',
+              picture: 'assets/TV/LED ТЕЛЕВИЗОР 55DK5JM2T2S2A-11UHD 4K ANDROID(11)/11.-FAVORIT-LED-TV-55DK5JM2T2S2A-90UHD-ANDROID-55-SMART-Android-tv-01-1024x576.png',  
+              pictureHover: 'assets/TV/LED ТЕЛЕВИЗОР 55DK5JM2T2S2A-11UHD 4K ANDROID(11)/7.-FAVORIT-LED-TV-55DK5JM2T2S2A-90UHD-ANDROID-55-SMART-Android-tv-1024x645.png',
+              subcategory: tvFilters.size55,
+              backgroundColorproduct: 'linear-gradient(#928EE1 0%, #ffffff 50%, #ffffff 100%)'
+            },
+            {
+              // KEEP
+              id: 124,
+              name: this.productTranslations['124'] ||'LED TV 55DЕ2М1T2S2A-13UHD 4K ANDROID',
+              picture: 'assets/TV/LED ТЕЛЕВИЗОР 55DЕ2М1T2S2A-13UHD 4K ANDROID/TV-55DEM1T2S2A-13UHD-44-1024x576.png',  pictureHover: 'assets/',
+              subcategory: tvFilters.size55,
+              backgroundColorproduct: 'linear-gradient(#928EE1 0%, #ffffff 50%, #ffffff 100%)'
+            },
+            {
+              // KEEP
+              id: 144,
+              name: this.productTranslations['144'] ||'LED TV D50F135R-F (FHD ANDROID 14)',
+              picture: 'assets/TV/LED TV D50F135R FHD/6.-FAVORIT-TV-50F135R-F.png',  pictureHover: 'assets/',
+              subcategory: tvFilters.size50,
+              backgroundColorproduct: 'linear-gradient(#928EE1 0%, #ffffff 50%, #ffffff 100%)'
+            },
+            {
+              // KEEP
+              id: 121,
+              name: this.productTranslations['121'] ||'LED TV 43DF3PHT2S2A-13FHD ANDROID',
+              picture: 'assets/TV/LED ТЕЛЕВИЗОР 43DF3PHT2S2A-13FHD ANDROID/TV-43DF3PHT2S2A-13FHD-44-1024x576.png', 
+              pictureHover: 'assets/',
+              subcategory: tvFilters.size43,
+              backgroundColorproduct: 'linear-gradient(#928EE1 0%, #ffffff 50%, #ffffff 100%)'
+            },
+            {
+              id: 148,
+              name: this.productTranslations['148'] ||'LED TV 43U20B-20D',
+              picture: 'assets/TV/LED TV 43U20B-20D/2. FAVORIT TV 43U20B-20D-1.png',  
+              pictureHover: 'assets/TV/LED TV 43U20B-20D/2. FAVORIT TV 43U20B-20D-2.png',
+              subcategory: tvFilters.size43,
+              backgroundColorproduct: 'linear-gradient(#928EE1 0%, #ffffff 50%, #ffffff 100%)'
+            },
+            {
+              id: 149,
+              name: this.productTranslations['149'] ||'LED TV 32U20B-20D',
+              picture: 'assets/TV/LED TV 32U20B-20D/1. FAVORIT TV 32U20B-20D-1.png',  
+              pictureHover: 'assets/TV/LED TV 32U20B-20D/1. FAVORIT TV 32U20B-20D-5.png',
+              subcategory: tvFilters.size32,
+              backgroundColorproduct: 'linear-gradient(#928EE1 0%, #ffffff 50%, #ffffff 100%)'
+            },
+            {
+              // KEEP
+              id: 117,
+              name: this.productTranslations['117'] ||'LED TV 32DF1P4T2HD',
+              picture: 'assets/TV/LED ТЕЛЕВИЗОР 32DF1P4T2HD/32DF1P4T2HD-44-1024x576.png',  pictureHover: 'assets/',
+              subcategory: tvFilters.size32,
+              backgroundColorproduct: 'linear-gradient(#928EE1 0%, #ffffff 50%, #ffffff 100%)'
+            },
+            {
+              // KEEP
+              id: 116,
+              name: this.productTranslations['116'] ||'LED TV 32DF1M1T2S2A-13HD ANDROID',
+              picture: 'assets/TV/LED ТЕЛЕВИЗОР 32DF1M1T2S2A-13HD ANDROID/TV-32DF1M1T2S2A-13HD-44-1024x576.png',  pictureHover: 'assets/',
+              subcategory: tvFilters.size32,
+              backgroundColorproduct: 'linear-gradient(#928EE1 0%, #ffffff 50%, #ffffff 100%)'
+              // #4900E4 0%, #D681C6 100%
+            },
   
-          },
-        ];
-         
-        break;
-      case 'microwaves':
-        this.subcategories = Object.values(this.subcategoriesComponentConstant.hoods).concat('all') as string[];
-        this.backgroundStyle = '';
-        this.subcategoryName = this.subcategoriesComponentConstant.smallDomesticAppliances.microwaves;
-        this.products = [
-          {
-            id: 101,
-            name: this.productTranslations['101'] ||'MICROWAVE OVEN MW-20 S',
-            picture: 'assets/Small domestic appliances/MICROWAVE OVEN MW-20 S/MW-20-S-min-1024x630.png',  pictureHover: 'assets/',
-            subcategory: this.subcategoriesComponentConstant.smallDomesticAppliances.microwaves,
-            backgroundColorproduct: 'linear-gradient(#ffa87d 0%,#ffffff 90%,#ffffff 100%)'
-
-          },
-          {
-            id: 102,
-            name: this.productTranslations['102'] ||'MICROWAVE OVEN MW-20 W',
-            picture: 'assets/Small domestic appliances/MICROWAVE OVEN MW-20 W/MW-20-White-min-1024x630.png',  pictureHover: 'assets/',
-            subcategory: this.subcategoriesComponentConstant.smallDomesticAppliances.microwaves,
-            backgroundColorproduct: 'linear-gradient(#ffa87d 0%,#ffffff 90%,#ffffff 100%)'
-
-          },
-        ]; 
-        break;
-      case 'mixers':
-        this.subcategories = Object.values(this.subcategoriesComponentConstant.hoods).concat('all') as string[];
-        this.backgroundStyle = '';
-        this.subcategoryName = this.subcategoriesComponentConstant.smallDomesticAppliances.mixers;
-        this.products = [
-          {
-            // KEEP
-            id: 98,
-            name: this.productTranslations['98'] ||'Hand mixer HM 9105',
-            picture: 'assets/Small domestic appliances/Hand mixer HM 9105/Racen-mikser-HM9105-45-1024x576.png',  pictureHover: 'assets/',
-            subcategory: this.subcategoriesComponentConstant.smallDomesticAppliances.mixers,
-            backgroundColorproduct: 'linear-gradient(#5FC261 0%, #ffffff 90%, #ffffff 100%)'
-          },
-          {
-            // KEEP
-            id: 103,
-            name: this.productTranslations['103'] ||'Stand mixer HM9109',
-            picture: 'assets/Small domestic appliances/Stand mixer HM9109/Mikser-so-postolje-HM9109-45-1024x576.png',  pictureHover: 'assets/',
-            subcategory: this.subcategoriesComponentConstant.smallDomesticAppliances.mixers,
-            backgroundColorproduct: 'linear-gradient(#5FC261 0%, #ffffff 90%, #ffffff 100%)'
+            // {
+            //   id: 119,
+            //   name: this.productTranslations['119'] ||'LED TV 32DN4P4T2HD',
+            //   picture: 'assets/TV/LED ТЕЛЕВИЗОР 32DN4P4T2HD/1.-FAVORIT-LED-TV-32DN4P4T2HD-32-Digital-tv-01-1-1024x576.png',  pictureHover: 'assets/',
+            //   subcategory: '32"',
+            //   backgroundColorproduct: 'linear-gradient(#928EE1 0%, #ffffff 50%, #ffffff 100%)'
   
-          },
-        ]; 
-        break;
-      case 'irons':
-        this.subcategories = Object.values(this.subcategoriesComponentConstant.hoods).concat('all') as string[];
-        this.backgroundStyle = '';
-        this.subcategoryName = this.subcategoriesComponentConstant.smallDomesticAppliances.irons;
+            // },
+            // {
+            //   id: 118,
+            //   name: this.productTranslations['118'] ||'LED ТЕЛЕВИЗОР 32DN4M3T2S2A – 11HD ANDROID',
+            //   picture: 'assets/TV/LED ТЕЛЕВИЗОР 32DN4M3T2S2A – 11HD ANDROID/FAVORIT-LED-TV-32DN4M3T2A-70HD-ANDROID-32-SMART-Android (1).png',  pictureHover: 'assets/',
+            //   subcategory: '32"',
+            //   backgroundColorproduct: 'linear-gradient(#928EE1 0%, #ffffff 50%, #ffffff 100%)'
+  
+            // },
+            // {
+            //   id: 120,
+            //   name: this.productTranslations['120'] ||'LED TV 40DN4JM3T2A – ANDROID (7.0)',
+            //   picture: 'assets/TV/LED ТЕЛЕВИЗОР 40DN4JM3T2A – ANDROID (7.0)/6.-FAVORIT-LED-TV-40DN4JM3T2A-70FHD-ANDROID-40-SMART-Android-tv-01-1024x576.png',  pictureHover: 'assets/',
+            //   subcategory: '40"',
+            //   backgroundColorproduct: 'linear-gradient(#928EE1 0%, #ffffff 50%, #ffffff 100%)'
+  
+            // },
+            // {
+            //   id: 122,
+            //   name: this.productTranslations['122'] ||'LED TV 43DN4JM2T2S2A 11FHD ANDROID (11)',
+            //   picture: 'assets/TV/LED ТЕЛЕВИЗОР 43DN4JM2T2S2A – 11FHD ANDROID (11)/123456-1024x576.png',  pictureHover: 'assets/',
+            //   subcategory: '43"',
+            //   backgroundColorproduct: 'linear-gradient(#928EE1 0%, #ffffff 50%, #ffffff 100%)'
+  
+            // },
+          ]; //tuka kje idat televizori
+          break;
+        case 'hoods': {
+        const hoodsFilters = this.filterSubcategory.hoods;
+        const allLabel = this.filterSubcategory.all;
+        this.subcategories = [hoodsFilters.decorativeHoods, hoodsFilters.telescopicHoods, allLabel];
+        this.backgroundStyle = 'linear-gradient(rgba(0, 0, 0, 0.27), rgba(0, 0, 0, 0.27)), url("assets/category-photos/kategorija-apiratori.jpg")';
+        this.subcategoryName = this.subcategoriesComponentConstant.categoryNamesTranslations.hoods;
         this.products = [
-            // IRONS   
-          {
-            // KEEP
-            id: 99,
-            name: this.productTranslations['99'] ||'IRON PL-501',
-            picture: 'assets/Small domestic appliances/IRON PL-501/PEGLA-PL-501-01-1024x576.png',  pictureHover: 'assets/',
-            subcategory: this.subcategoriesComponentConstant.smallDomesticAppliances.irons,
-            backgroundColorproduct: 'linear-gradient(#ffa87d 0%,#ffffff 90%,#ffffff 100%)'
-
-            //linear-gradient(#4900E4 0%, #D681C6 100%) beauty
-          },
-
-          // PL-607 FALI DA SE DODADI
-
-          {
-            // KEEP
-            id: 100,
-            name: this.productTranslations['100'] ||'IRON PL-619',
-            picture: 'assets/Small domestic appliances/IRON PL-619/PEGLA-PL-619-01-1024x576.png',  pictureHover: 'assets/',
-            subcategory: this.subcategoriesComponentConstant.smallDomesticAppliances.irons,
-            backgroundColorproduct: 'linear-gradient(#ffa87d 0%,#ffffff 90%,#ffffff 100%)'
-          },
-        ]; 
-        break;
-      case 'vacuum-cleaners':
-        this.subcategories = Object.values(this.subcategoriesComponentConstant.hoods).concat('all') as string[];
-        this.backgroundStyle = '';
-        this.subcategoryName = this.subcategoriesComponentConstant.smallDomesticAppliances.vacuumCleaners;
-        this.products = [
-           // VACUUM 
-          {
-            // KEEP
-            id: 110,
-            name: this.productTranslations['110'] ||'VACUUM CLEANER FVC 123 RED',
-            picture: 'assets/Small domestic appliances/VACUUM CLEANER FVC 123/FVC123-HD-01-1024x576.png',  pictureHover: 'assets/',
-            subcategory: this.subcategoriesComponentConstant.smallDomesticAppliances.vacuumCleaners,
-            backgroundColorproduct: 'linear-gradient(#5FC261 0%, #ffffff 90%, #ffffff 100%)',
-          },
-          {
-            // KEEP
-            id: 110,
-            name: this.productTranslations['110'] ||'VACUUM CLEANER FVC 123 BLUE',
-            picture: 'assets/Small domestic appliances/VACUUM CLEANER FVC 123/FVC123-HD-01-1024x576.png',  pictureHover: 'assets/',
-            subcategory: this.subcategoriesComponentConstant.smallDomesticAppliances.vacuumCleaners,
-            backgroundColorproduct: 'linear-gradient(#5FC261 0%, #ffffff 90%, #ffffff 100%)',
-          },
-          {
-            // KEEP
-            id: 114,
-            name: this.productTranslations['114'] ||'VACUUM CLEANER FVC 306 GREY/ORANGE',
-            picture: 'assets/Small domestic appliances/VACUUM CLEANER FVC 306/FVC306-HD-10-1024x577.png',  pictureHover: 'assets/',
-            subcategory: this.subcategoriesComponentConstant.smallDomesticAppliances.vacuumCleaners,
-            backgroundColorproduct: 'linear-gradient(#5FC261 0%, #ffffff 90%, #ffffff 100%)'
-
-          },
-          {
-            // KEEP
-            id: 113,
-            name: this.productTranslations['113'] ||'VACUUM CLEANER FVC 245 RED',
-            picture: 'assets/Small domestic appliances/VACUUM CLEANER FVC 245/FVC245-HD-01-1024x576.png',  pictureHover: 'assets/',
-            subcategory: this.subcategoriesComponentConstant.smallDomesticAppliances.vacuumCleaners,
-            backgroundColorproduct: 'linear-gradient(#5FC261 0%, #ffffff 90%, #ffffff 100%)'
-          },
-          {
-            // KEEP
-            id: 111,
-            name: this.productTranslations['111'] ||'VACUUM CLEANER FVC 156',
-            picture: 'assets/Small domestic appliances/VACUUM CLEANER FVC 156/FVC156-HD-01-1024x576.png',  pictureHover: 'assets/',
-            subcategory: this.subcategoriesComponentConstant.smallDomesticAppliances.vacuumCleaners,
-            backgroundColorproduct: 'linear-gradient(#5FC261 0%, #ffffff 90%, #ffffff 100%)'
-
-          },
-          {
-            id: 112,
-            name: this.productTranslations['112'] ||'VACUUM CLEANER FVC 160',
-            picture: 'assets/Small domestic appliances/VACUUM CLEANER FVC 160/2-FAVORIT-pravosmukalka-FVC-160-01-1024x576.png',  pictureHover: 'assets/',
-            subcategory: this.subcategoriesComponentConstant.smallDomesticAppliances.vacuumCleaners,
-            backgroundColorproduct: 'linear-gradient(#5FC261 0%, #ffffff 90%, #ffffff 100%)'
-
-          },
-          {
-            id: 115,
-            name: this.productTranslations['115'] ||'VACUUM CLEANER FVC 585',
-            picture: 'assets/Small domestic appliances/VACUUM CLEANER FVC 585/7.1-FAVORIT-pravosmukalka-FVC-585-CELOSNA-01-1024x576.png',  pictureHover: 'assets/',
-            subcategory: this.subcategoriesComponentConstant.smallDomesticAppliances.vacuumCleaners,
-            backgroundColorproduct: 'linear-gradient(#5FC261 0%, #ffffff 90%, #ffffff 100%)'
-
-          }
-        ]; 
-        break;
-      case 'chop':
-        this.subcategories = Object.values(this.subcategoriesComponentConstant.hoods).concat('all') as string[];
-        this.backgroundStyle = '';
-        this.subcategoryName = this.subcategoriesComponentConstant.smallDomesticAppliances.chop;
-        this.products = [
-          {
-            id: 95,
-            name: this.productTranslations['95'] ||'Chopper CH-363',
-            picture: 'assets/Small domestic appliances/Chopper CH-363/SECKO-CH-363-01-1024x576.png',  pictureHover: 'assets/',
-            subcategory: this.subcategoriesComponentConstant.smallDomesticAppliances.chop,
-            backgroundColorproduct: 'linear-gradient(#5FC261 0%, #ffffff 90%, #ffffff 100%)'
-
-          },
-        ]; 
-        break;
-      case 'grills':
-        this.subcategories = Object.values(this.subcategoriesComponentConstant.hoods).concat('all') as string[];
-        this.backgroundStyle = '';
-        this.subcategoryName = this.subcategoriesComponentConstant.smallDomesticAppliances.grills;
-        this.products = [
-          {
-            id: 96,
-            name: this.productTranslations['96'] ||'ELECTRIC GRILL GR-573',
-            picture: 'assets/Small domestic appliances/ELECTRIC GRILL GR-573/GR-573-1024x791-1.png',  pictureHover: 'assets/',
-            subcategory: this.subcategoriesComponentConstant.smallDomesticAppliances.grills,
-            backgroundColorproduct: 'linear-gradient(#ffa87d 0%,#ffffff 90%,#ffffff 100%)'
-          },
-        ]; 
-        break;
-      case 'thermal-jugs':
-        this.subcategories = Object.values(this.subcategoriesComponentConstant.hoods).concat('all') as string[];
-        this.backgroundStyle = '';
-        this.subcategoryName = this.subcategoriesComponentConstant.smallDomesticAppliances.thermalJugs;
-        this.products = [
-          {
-            id: 105,
-            name: this.productTranslations['105'] ||'THERMAL KETTLE Т-1798 White',
-            picture: 'assets/Small domestic appliances/THERMAL KETTLE Т-1798 БЕЛ/TERMO-BOKAL-T-1798-01-1024x576.png',  pictureHover: 'assets/',
-            subcategory: this.subcategoriesComponentConstant.smallDomesticAppliances.thermalJugs,
-            
-          },
-          {
-            id: 106,
-            name: this.productTranslations['106'] ||'THERMAL KETTLE Т-4028A INOX',
-            picture: 'assets/Small domestic appliances/THERMAL KETTLE Т-4028A INOX/TERMO-BOKAL-INOX-01-1-1024x576.png',  pictureHover: 'assets/',
-            subcategory: this.subcategoriesComponentConstant.smallDomesticAppliances.thermalJugs,
-            backgroundColorproduct: 'linear-gradient(#5FC261 0%, #ffffff 90%, #ffffff 100%)'
-
-          },
-        ]; 
-        break;
-      case 'toasters':
-        this.subcategories = Object.values(this.subcategoriesComponentConstant.hoods).concat('all') as string[];
-        this.backgroundStyle = '';
-        this.subcategoryName = this.subcategoriesComponentConstant.smallDomesticAppliances.toasters;
-        this.products = [
-          {
-            // KEEP
-            id: 107,
-            name: this.productTranslations['107'] ||'Toaster S1604',
-            picture: 'assets/Small domestic appliances/Toaster S1604/thumbnail_TOSTER-NOV-44-1-1024x575.png',  pictureHover: 'assets/',
-            subcategory: this.subcategoriesComponentConstant.smallDomesticAppliances.toasters,
-            backgroundColorproduct: 'linear-gradient(#ffa87d 0%,#ffffff 90%,#ffffff 100%)'
-          },
-          {
-            // KEEP
-            id: 109,
-            name: this.productTranslations['109'] ||'Toster TA01101',
-            picture: 'assets/Small domestic appliances/Toster TA01101/toster-za-dvopek-TA01101-45-1024x576.png',  pictureHover: 'assets/',
-            subcategory: this.subcategoriesComponentConstant.smallDomesticAppliances.toasters,
-            backgroundColorproduct: 'linear-gradient(#ffa87d 0%,#ffffff 90%,#ffffff 100%)'
-          },
-          {
-            id: 108,
-            name: this.productTranslations['108'] ||'Toaster TR-1800',
-            picture: 'assets/Small domestic appliances/Toaster TR-1800/toster-TR1800-01-1-1024x576.png',  pictureHover: 'assets/',
-            subcategory: this.subcategoriesComponentConstant.smallDomesticAppliances.toasters,
-            backgroundColorproduct: 'linear-gradient(#ffa87d 0%,#ffffff 90%,#ffffff 100%)'
-
-          },
-          // {
-          //   id: 109,
-          //   name: this.productTranslations['109'] ||'Toster TA01101',
-          //   picture: 'assets/Small domestic appliances/Toster TA01101/toster-za-dvopek-TA01101-45-1024x576.png',  pictureHover: 'assets/',
-          //   subcategory: this.subcategoriesComponentConstant.smallDomesticAppliances.toasters,
-          //   backgroundColorproduct: 'linear-gradient(#ffa87d 0%,#ffffff 90%,#ffffff 100%)'
-          // },
-        ]; 
-        break;
-      case 'colanders':
-        this.subcategories = Object.values(this.subcategoriesComponentConstant.hoods).concat('all') as string[];
-        this.backgroundStyle = '';
-        this.subcategoryName = this.subcategoriesComponentConstant.smallDomesticAppliances.colanders;
-        this.products = [
-          {
-            id: 104,
-            name: this.productTranslations['104'] ||'Strainer J-3000',
-            picture: 'assets/Small domestic appliances/Strainer J-3000/CEDALKA-J-3000-01-1024x576.png',  pictureHover: 'assets/',
-            subcategory: this.subcategoriesComponentConstant.smallDomesticAppliances.colanders,
-            backgroundColorproduct: 'linear-gradient(#5FC261 0%, #ffffff 90%, #ffffff 100%)'
-
-          },
-        ]; 
-        break;
-      case 'decorative-hoods':
-        this.subcategories = Object.values(this.subcategoriesComponentConstant.hoods).concat('all') as string[];
-        console.log('Updating products for decorative-hoods');
-        this.backgroundStyle = 'linear-gradient(rgba(0, 0, 0, 0.27), rgba(0, 0, 0, 0.27)), url("assets/decorative-hoods.jpg")';
-        this.subcategoryName = this.subcategoriesComponentConstant.hoods.decorativeHoods;
-        this.products = [
+          // Decorative Hoods
           {
             id: 133,
             name: this.productTranslations['133'] || 'Decorative Cooker Hood LD46BB-60',
             picture: 'assets/Hoods/Decorative Cooker Hood LD46BB-60/Dekorativen-aspirator-LD46BB-60-1024x1024.png',
             pictureHover: '',
             backgroundColorproduct: 'linear-gradient(#ffa87d 0%,#ffffff 90%,#ffffff 100%)',
-            subcategory: this.subcategoriesComponentConstant.hoods.decorativeHoods
-          }
-        ];
-        break;
-        
-      case 'telescopic-hoods':
-        this.subcategories = Object.values(this.subcategoriesComponentConstant.hoods).concat('all') as string[];
-        console.log('Updating products for telescopic-hoods');
-        this.backgroundStyle = 'linear-gradient(rgba(0, 0, 0, 0.27), rgba(0, 0, 0, 0.27)), url("assets/telescopic-hoods.jpg")';
-        this.subcategoryName = this.subcategoriesComponentConstant.hoods.telescopicHoods;
-        this.products = [
+            subcategory: hoodsFilters.decorativeHoods
+          },
+          // Telescopic Hoods
           {
             id: 130,
             name: this.productTranslations['130'] || 'Telescopic Cooker Hood 7062 W',
             picture: 'assets/Hoods/Telescopic Cooker Hood 7062 W/Teleskopski-aspirator-7062-W-2-1024x1024.png',
             pictureHover: 'assets/Hoods/Telescopic Cooker Hood 7062 W/Teleskopski-aspirator-7062-W-2-1024x1024.png',
             backgroundColorproduct: 'linear-gradient(#ffa87d 0%,#ffffff 90%,#ffffff 100%)',
-            subcategory: this.subcategoriesComponentConstant.hoods.telescopicHoods
+            subcategory: hoodsFilters.telescopicHoods
           },
           {
             id: 131,
@@ -1463,7 +1398,7 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
             picture: 'assets/Hoods/Telescopic Cooker Hood 7062 B/Teleskopski-aspirator-7062-B-1024x1024.png',
             pictureHover: 'assets/Hoods/Telescopic Cooker Hood 7062 B/Teleskopski-aspirator-7062-B-1024x1024.png',
             backgroundColorproduct: 'linear-gradient(#ffa87d 0%,#ffffff 90%,#ffffff 100%)',
-            subcategory: this.subcategoriesComponentConstant.hoods.telescopicHoods
+            subcategory: hoodsFilters.telescopicHoods
           },
           {
             id: 132,
@@ -1471,62 +1406,254 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
             picture: 'assets/Hoods/Telescopic Cooker Hood 7062 X/ASPIRATORI-03-1536x864-2.png',
             pictureHover: 'assets/Hoods/Telescopic Cooker Hood 7062 X/ASPIRATORI-03-1536x864-2.png',
             backgroundColorproduct: 'linear-gradient(#ffa87d 0%,#ffffff 90%,#ffffff 100%)',
-            subcategory: this.subcategoriesComponentConstant.hoods.telescopicHoods
-          },
-        ];
-        this.subcategories = Array.from(
-          new Set(this.products.map(p => p.subcategory))
-        );
-        // stick "All" at the end (or front if you prefer)
-        this.subcategories.push('All');
-        break;                                    
-      case 'ovens':
-        const ovensLabel = this.filterSubcategory.builtInAppliances.ovens;
-        const microwavesLabel = this.filterSubcategory.builtInAppliances.builtInMicrowaves;
-        const stoveTopsLabel = this.filterSubcategory.builtInAppliances.builtInStoveTops;
-        const builtInStovesLabel = this.filterSubcategory.builtInAppliances.builtInStoves;
-        this.subcategories = [ovensLabel, microwavesLabel, stoveTopsLabel, builtInStovesLabel, allLabel];
-        this.backgroundStyle = 'linear-gradient(rgba(0, 0, 0, 0.27), rgba(0, 0, 0, 0.27)), url("assets/subcategories/built-in-ovens.jpg")';
-        this.subcategoryName = ovensLabel;
-        this.products = [
-          // Built-in Ovens
-          {
-            id: 67,
-            name: this.productTranslations['67'] || 'Built-in Oven BO-60',
-            picture: 'assets/Built In Appliances/Built-in Oven BO-60/BO-60-01-1024x576.png',
-            pictureHover: 'assets/Built In Appliances/Built-in Oven BO-60/BO-60-02-1024x576.png',
-            subcategory: ovensLabel,
-            backgroundColorproduct: 'linear-gradient(#9f9f9f 0%, #ffffff 90%, #ffffff 100%)'
-          },
-          // Built-in Microwaves
-          {
-            id: 68,
-            name: this.productTranslations['68'] || 'BUILT-IN MICROWAVE OVEN BIMW-20 BLACK',
-            picture: 'assets/Built In Appliances/BUILT-IN MICROWAVE OVEN BIMW-20 BLACK/FAVORIT-BIMW-20-BLACK-1-scaled-1-1024x576.png',
-            pictureHover: 'assets/Built In Appliances/BUILT-IN MICROWAVE OVEN BIMW-20 BLACK/FAVORIT-BIMW-20-BLACK-1-scaled-1-1024x576.png',
-            subcategory: microwavesLabel,
-            backgroundColorproduct: 'linear-gradient(#9f9f9f 0%, #ffffff 90%, #ffffff 100%)'
-          },
-          // Built-in Stove Tops
-          {
-            id: 69,
-            name: this.productTranslations['69'] || 'Built-in Stove Top BT-60',
-            picture: 'assets/Built In Appliances/Built-in Stove Top BT-60/BT-60-01-1024x576.png',
-            pictureHover: 'assets/Built In Appliances/Built-in Stove Top BT-60/BT-60-02-1024x576.png',
-            subcategory: stoveTopsLabel,
-            backgroundColorproduct: 'linear-gradient(#9f9f9f 0%, #ffffff 90%, #ffffff 100%)'
-          },
-          // Built-in Stoves
-          {
-            id: 70,
-            name: this.productTranslations['70'] || 'Built-in Stove BS-60',
-            picture: 'assets/Built In Appliances/Built-in Stove BS-60/BS-60-01-1024x576.png',
-            pictureHover: 'assets/Built In Appliances/Built-in Stove BS-60/BS-60-02-1024x576.png',
-            subcategory: builtInStovesLabel,
-            backgroundColorproduct: 'linear-gradient(#9f9f9f 0%, #ffffff 90%, #ffffff 100%)'
+            subcategory: hoodsFilters.telescopicHoods
           }
         ];
+        }
         break;
+        case 'cooking-heating-appliances': {
+          const filters = this.filterSubcategory.smallDomesticAppliances;
+          const constants = this.subcategoriesComponentConstant.smallDomesticAppliances;
+          this.subcategories = [filters.airFryer, filters.microwaves,filters.grills, filters.toasters, allLabel];
+          this.backgroundStyle = 'linear-gradient(rgba(0, 0, 0, 0.27), rgba(0, 0, 0, 0.27)), url("assets/category-photos/kategorija-mali-aparati.jpg")';
+          this.subcategoryName = this.subcategoriesComponentConstant.smallDomesticAppliances.cookingHeatingAppliances || 'Cooking & Heating Appliances';
+          this.products = [
+            // Air Fryer
+            {
+              id: 92,
+              name: this.productTranslations['92'] || 'Air fryer AF9001',
+              picture: 'assets/Small domestic appliances/Air fryer AF9001/Air-fryer-AF9001-45-1-1024x576.png',
+              pictureHover: 'assets/',
+              subcategory: filters.airFryer,
+              backgroundColorproduct: 'linear-gradient(#ffa87d 0%,#ffffff 90%,#ffffff 100%)'
+            },
+            // Microwaves
+            {
+              id: 101,
+              name: this.productTranslations['101'] || 'MICROWAVE OVEN MW-20 S',
+              picture: 'assets/Small domestic appliances/MICROWAVE OVEN MW-20 S/MW-20-S-min-1024x630.png',
+              pictureHover: 'assets/',
+              subcategory: filters.microwaves,
+              backgroundColorproduct: 'linear-gradient(#ffa87d 0%,#ffffff 90%,#ffffff 100%)'
+            },
+            {
+              id: 102,
+              name: this.productTranslations['102'] || 'MICROWAVE OVEN MW-20 W',
+              picture: 'assets/Small domestic appliances/MICROWAVE OVEN MW-20 W/MW-20-White-min-1024x630.png',
+              pictureHover: 'assets/',
+              subcategory: filters.microwaves,
+              backgroundColorproduct: 'linear-gradient(#ffa87d 0%,#ffffff 90%,#ffffff 100%)'
+            },
+            // Grills
+            {
+              id: 96,
+              name: this.productTranslations['96'] || 'ELECTRIC GRILL GR-573',
+              picture: 'assets/Small domestic appliances/ELECTRIC GRILL GR-573/GR-573-1024x791-1.png',
+              pictureHover: 'assets/',
+              subcategory: filters.grills,
+              backgroundColorproduct: 'linear-gradient(#ffa87d 0%,#ffffff 90%,#ffffff 100%)'
+            },
+            // Toasters
+            {
+              id: 107,
+              name: this.productTranslations['107'] || 'Toaster S1604',
+              picture: 'assets/Small domestic appliances/Toaster S1604/thumbnail_TOSTER-NOV-44-1-1024x575.png',
+              pictureHover: 'assets/',
+              subcategory: filters.toasters,
+              backgroundColorproduct: 'linear-gradient(#ffa87d 0%,#ffffff 90%,#ffffff 100%)'
+            },
+            // {
+            //   id: 109,
+            //   name: this.productTranslations['109'] || 'Toster TA01101',
+            //   picture: 'assets/Small domestic appliances/Toster TA01101/toster-za-dvopek-TA01101-45-1024x576.png',
+            //   pictureHover: 'assets/',
+            //   subcategory: filters.toasters,
+            //   backgroundColorproduct: 'linear-gradient(#ffa87d 0%,#ffffff 90%,#ffffff 100%)'
+            // },
+            {
+              id: 108,
+              name: this.productTranslations['108'] || 'Toaster TR-1800',
+              picture: 'assets/Small domestic appliances/Toaster TR-1800/toster-TR1800-01-1-1024x576.png',
+              pictureHover: 'assets/',
+              subcategory: filters.toasters,
+              backgroundColorproduct: 'linear-gradient(#ffa87d 0%,#ffffff 90%,#ffffff 100%)'
+            }
+          ];
+          break;
+        }
+        case 'food-beverage-preparation': {
+          const filters = this.filterSubcategory.smallDomesticAppliances;
+          const constants = this.subcategoriesComponentConstant.smallDomesticAppliances;
+          const allLabel = this.filterSubcategory.all;
+          this.subcategories = [filters.blenders, filters.mixers, filters.chop, filters.thermalJugs, filters.colanders, allLabel];
+          this.backgroundStyle = 'linear-gradient(rgba(0, 0, 0, 0.27), rgba(0, 0, 0, 0.27)), url("assets/category-photos/kategorija-mali-aparati.jpg")';
+          this.subcategoryName = this.subcategoriesComponentConstant.smallDomesticAppliances.foodBeveragePreparation || 'Food & Beverage Preparation';
+          this.products = [
+            // Blenders
+            {
+              id: 97,
+              name: this.productTranslations['97'] || 'Hand blender HB5006',
+              picture: 'assets/Small domestic appliances/Hand blender HB5006/Racen-blender-HB5006-45-1024x576.png',
+              pictureHover: 'assets/',
+              subcategory: filters.blenders,
+              backgroundColorproduct: 'linear-gradient(#5FC261 0%, #ffffff 90%, #ffffff 100%)'
+            },
+            {
+              id: 93,
+              name: this.productTranslations['93'] || 'Blender BL9006',
+              picture: 'assets/Small domestic appliances/Blender BL9006/Blender-BL9006-45-1024x576.png',
+              pictureHover: 'assets/',
+              subcategory: filters.blenders,
+              backgroundColorproduct: 'linear-gradient(#5FC261 0%, #ffffff 90%, #ffffff 100%)'
+            },
+            {
+              id: 94,
+              name: this.productTranslations['94'] || 'Blender BL9702X',
+              picture: 'assets/Small domestic appliances/Blender BL9702X/Blender-BL9702X-45-1024x576.png',
+              pictureHover: 'assets/',
+              subcategory: filters.blenders,
+              backgroundColorproduct: 'linear-gradient(#5FC261 0%, #ffffff 90%, #ffffff 100%)'
+            },
+            // Mixers
+            {
+              id: 98,
+              name: this.productTranslations['98'] || 'Hand mixer HM 9105',
+              picture: 'assets/Small domestic appliances/Hand mixer HM 9105/Racen-mikser-HM9105-45-1024x576.png',
+              pictureHover: 'assets/',
+              subcategory: filters.mixers,
+              backgroundColorproduct: 'linear-gradient(#5FC261 0%, #ffffff 90%, #ffffff 100%)'
+            },
+            {
+              id: 103,
+              name: this.productTranslations['103'] || 'Stand mixer HM9109',
+              picture: 'assets/Small domestic appliances/Stand mixer HM9109/Mikser-so-postolje-HM9109-45-1024x576.png',
+              pictureHover: 'assets/',
+              subcategory: filters.mixers,
+              backgroundColorproduct: 'linear-gradient(#5FC261 0%, #ffffff 90%, #ffffff 100%)'
+            },
+            // Chopper
+            {
+              id: 95,
+              name: this.productTranslations['95'] || 'Chopper CH-363',
+              picture: 'assets/Small domestic appliances/Chopper CH-363/SECKO-CH-363-01-1024x576.png',
+              pictureHover: 'assets/',
+              subcategory: filters.chop,
+              backgroundColorproduct: 'linear-gradient(#5FC261 0%, #ffffff 90%, #ffffff 100%)'
+            },
+            // Thermal Jugs
+            {
+              id: 105,
+              name: this.productTranslations['105'] || 'THERMAL KETTLE Т-1798 White',
+              picture: 'assets/Small domestic appliances/THERMAL KETTLE Т-1798 БЕЛ/TERMO-BOKAL-T-1798-01-1024x576.png',
+              pictureHover: 'assets/',
+              subcategory: filters.thermalJugs,
+              backgroundColorproduct: 'linear-gradient(#5FC261 0%, #ffffff 90%, #ffffff 100%)'
+            },
+            {
+              id: 106,
+              name: this.productTranslations['106'] || 'THERMAL KETTLE Т-4028A INOX',
+              picture: 'assets/Small domestic appliances/THERMAL KETTLE Т-4028A INOX/TERMO-BOKAL-INOX-01-1-1024x576.png',
+              pictureHover: 'assets/',
+              subcategory: filters.thermalJugs,
+              backgroundColorproduct: 'linear-gradient(#5FC261 0%, #ffffff 90%, #ffffff 100%)'
+            },
+            // Colanders
+            {
+              id: 104,
+              name: this.productTranslations['104'] || 'Strainer J-3000',
+              picture: 'assets/Small domestic appliances/Strainer J-3000/CEDALKA-J-3000-01-1024x576.png',
+              pictureHover: 'assets/',
+              subcategory: filters.colanders,
+              backgroundColorproduct: 'linear-gradient(#5FC261 0%, #ffffff 90%, #ffffff 100%)'
+            },
+          ];
+          break;
+        }
+        case 'home-care-cleaning': {
+          const filters = this.filterSubcategory.smallDomesticAppliances;
+          const constants = this.subcategoriesComponentConstant.smallDomesticAppliances;
+          const allLabel = this.filterSubcategory.all;
+          this.subcategories = [filters.irons, filters.vacuumCleaners, allLabel];
+          this.backgroundStyle = 'linear-gradient(rgba(0, 0, 0, 0.27), rgba(0, 0, 0, 0.27)), url("assets/category-photos/kategorija-mali-aparati.jpg")';
+          this.subcategoryName = this.subcategoriesComponentConstant.smallDomesticAppliances.homeCareCleaning || 'Home Care & Cleaning';
+          this.products = [
+            // Irons
+            {
+              id: 99,
+              name: this.productTranslations['99'] || 'IRON PL-501',
+              picture: 'assets/Small domestic appliances/IRON PL-501/PEGLA-PL-501-01-1024x576.png',
+              pictureHover: 'assets/',
+              subcategory: filters.irons,
+              backgroundColorproduct: 'linear-gradient(#ffa87d 0%,#ffffff 90%,#ffffff 100%)'
+            },
+            {
+              id: 100,
+              name: this.productTranslations['100'] || 'IRON PL-619',
+              picture: 'assets/Small domestic appliances/IRON PL-619/PEGLA-PL-619-01-1024x576.png',
+              pictureHover: 'assets/',
+              subcategory: filters.irons,
+              backgroundColorproduct: 'linear-gradient(#ffa87d 0%,#ffffff 90%,#ffffff 100%)'
+            },
+            // Vacuum Cleaners
+            {
+              id: 110,
+              name: this.productTranslations['110'] || 'VACUUM CLEANER FVC 123 RED',
+              picture: 'assets/Small domestic appliances/VACUUM CLEANER FVC 123/FVC123-HD-01-1024x576.png',
+              pictureHover: 'assets/',
+              subcategory: filters.vacuumCleaners,
+              backgroundColorproduct: 'linear-gradient(#5FC261 0%, #ffffff 90%, #ffffff 100%)'
+            },
+            {
+              id: 110,
+              name: this.productTranslations['110'] || 'VACUUM CLEANER FVC 123 BLUE',
+              picture: 'assets/Small domestic appliances/VACUUM CLEANER FVC 123/FVC123-HD-01-1024x576.png',
+              pictureHover: 'assets/',
+              subcategory: filters.vacuumCleaners,
+              backgroundColorproduct: 'linear-gradient(#5FC261 0%, #ffffff 90%, #ffffff 100%)'
+            },
+            {
+              id: 114,
+              name: this.productTranslations['114'] || 'VACUUM CLEANER FVC 306 GREY/ORANGE',
+              picture: 'assets/Small domestic appliances/VACUUM CLEANER FVC 306/FVC306-HD-10-1024x577.png',
+              pictureHover: 'assets/',
+              subcategory: filters.vacuumCleaners,
+              backgroundColorproduct: 'linear-gradient(#5FC261 0%, #ffffff 90%, #ffffff 100%)'
+            },
+            {
+              id: 113,
+              name: this.productTranslations['113'] || 'VACUUM CLEANER FVC 245 RED',
+              picture: 'assets/Small domestic appliances/VACUUM CLEANER FVC 245/FVC245-HD-01-1024x576.png',
+              pictureHover: 'assets/',
+              subcategory: filters.vacuumCleaners,
+              backgroundColorproduct: 'linear-gradient(#5FC261 0%, #ffffff 90%, #ffffff 100%)'
+            },
+            {
+              id: 111,
+              name: this.productTranslations['111'] || 'VACUUM CLEANER FVC 156',
+              picture: 'assets/Small domestic appliances/VACUUM CLEANER FVC 156/FVC156-HD-01-1024x576.png',
+              pictureHover: 'assets/',
+              subcategory: filters.vacuumCleaners,
+              backgroundColorproduct: 'linear-gradient(#5FC261 0%, #ffffff 90%, #ffffff 100%)'
+            },
+            {
+              id: 112,
+              name: this.productTranslations['112'] || 'VACUUM CLEANER FVC 160',
+              picture: 'assets/Small domestic appliances/VACUUM CLEANER FVC 160/2-FAVORIT-pravosmukalka-FVC-160-01-1024x576.png',
+              pictureHover: 'assets/',
+              subcategory: filters.vacuumCleaners,
+              backgroundColorproduct: 'linear-gradient(#5FC261 0%, #ffffff 90%, #ffffff 100%)'
+            },
+            {
+              id: 115,
+              name: this.productTranslations['115'] || 'VACUUM CLEANER FVC 585',
+              picture: 'assets/Small domestic appliances/VACUUM CLEANER FVC 585/7.1-FAVORIT-pravosmukalka-FVC-585-CELOSNA-01-1024x576.png',
+              pictureHover: 'assets/',
+              subcategory: filters.vacuumCleaners,
+              backgroundColorproduct: 'linear-gradient(#5FC261 0%, #ffffff 90%, #ffffff 100%)'
+            }
+          ];
+          break;
+        }
   }
 }
 
@@ -1569,11 +1696,18 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
       this.displayedProducts = this.products;
     } else {
       this.displayedProducts = this.products.filter(
-        p => p.subcategory.toLowerCase().trim() === selected.toLowerCase().trim()
+        p => p.subcategory && p.subcategory.toLowerCase().trim() === selected.toLowerCase().trim()
       );
     }
     console.log('Selected subcategory:', selected);
     console.log('Filtered products:', this.displayedProducts);
+    // Close filter menu and scroll to top on mobile
+    if (this.isMobileView) {
+      this.showFilters = false;
+      setTimeout(() => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }, 0);
+    }
   }
   
 }

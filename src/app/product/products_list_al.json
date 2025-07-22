@@ -1180,7 +1180,7 @@
           "assets/Home appliances/REFRIGERATOR WITH CHAMBER R1001N/FAVORIT-R-1001-02-1024x576.png",
           "assets/Home appliances/REFRIGERATOR WITH CHAMBER R1001N/2-10.png"
         ],
-        "specificationsDoc": "assets/PDF-Specifications/UPATSTVO-MK-GB-AL-SR-FAVORIT.pdf",
+    "specificationsDoc": "assets/PDF-Specifications/R-1001-upatstvo.pdf",
         "specifications": {
           "dimensione": "82.1/48/50 cm",
           "volumi bruto": "91L",
@@ -1209,7 +1209,7 @@
             "assets/Home appliances/REFRIGERATOR WITHOUT CHAMBER L1002N/2-12.png",
             "assets/Home appliances/REFRIGERATOR WITHOUT CHAMBER L1002N/FAVORIT-L-1002-02-1024x576.png"
         ],
-        "specificationsDoc": "assets/PDF-Specifications/L-1002-upatstvo.pdf",
+        "specificationsDoc": "assets/PDF-Specifications/CF-374-upatstvo.pdf",
         "specifications": {
           "dimensione": "82.1/48/50 cm",
           "volumi bruto": "91L",
@@ -1314,7 +1314,7 @@
           "assets/Home appliances/VERTICAL FREEZER F 2451N/FAVORIT-F-2451-01-1024x576.png",
           "assets/Home appliances/VERTICAL FREEZER F 2451N/FAVORIT-F-2451-02-1024x576.png"
         ],
-        "specificationsDoc": "assets/PDF-Specifications/F-1005-upatstvo.pdf",
+        "specificationsDoc": "assets/PDF-Specifications/F-2451-upatstvo.pdf",
         "specifications": {
           "dimensions": "144/54/60 cm",
           "volumi bruto": "210 L",
@@ -2051,7 +2051,7 @@
       },
     {
         "id": 63,
-        "name": "Built-in dishwasher BI45-I1E (fully integrated)",
+        "name": "Built-in dishwasher BI45-I1EN (fully integrated)",
         "description": [
             "This dishwasher has dimensions of H/W/L 82.00cm/44.80cm/55.00cm and a maximum capacity of 10 sets of dishes. It features a hidden LED display and offers 6 programs with a temperature range of 4 levels. The energy class is A++, and the drying class is A. The water consumption of the eco-program is 11 liters, with a duration of 222 minutes.",
             "It has heater protection and flood protection, and it's fully integrated with an On/Off button. It also includes a delayed start function ranging from 1 to 19 hours, supports half-filling, and has indicators for salt and rinse aid. The noise level is 54 dB, and it includes a fast program of 30 minutes at 40°C."
@@ -2087,7 +2087,7 @@
     },
     {
         "id": 64,
-        "name": "Lavastoviglie incorporata BI60 – I14 (completamente integrata)",
+        "name": "Lavastoviglie incorporata SI60 – I14N (completamente integrata)",
         "description": [
           "Kjo lavastoviglie ka dimensione V/L/P 82cm/59.8cm/55cm dhe një kapacitet maksimal prej 12 seteve pjatash. Ajo ofron 5 programe me një gamë temperature prej 3 nivelesh. Klasa e energjisë është A++, dhe klasa e tharjes është A. Konsumi i ujit në programin ekologjik është 12 litra, me një konsum energjie që varion nga 0.90 KWh deri në 1.55 KWh në varësi të programit. Ka një kohë të programit ekologjik prej 222 minutash.",
           "Përveç kësaj, ka mbrojtje nga ngrohësi, mbrojtje nga përmbytja, dhe është plotësisht e integruar me butonin On/Off, butonin e zgjedhjes së programit, butonin e vonimit të larjes (3, 6, dhe 9 orë), mbushje të pjesshme, indikator për kripë, indikator për lëng për shkumë, indikator për përfundim, dhe një nivel zhurme prej 54 dB. Përmban gjithashtu një program të shpejtë prej 30 minutash në 40°C."
@@ -2156,7 +2156,7 @@
           "Zhurma gjatë punës": "54 dB",
           "Program i shpejtë": "30 min. / 40 °C"
         }
-      },      
+      },
     {
         "id": 66,
         "name": "Larëse enësh e ndërtuar SI60 - I14",
@@ -4187,7 +4187,7 @@
           "assets/Home appliances/TWO CHAMBER REFRIGERATOR RF 263N/FAVORIT-RF-263-S-01-1-1024x576.png",
           "assets/Home appliances/TWO CHAMBER REFRIGERATOR RF 263N/FAVORIT-RF-263-S-02-1024x576.png"
         ],
-        "specificationsDoc": "assets/Specifikacionet PDF/CF-278-upatstvo.pdf",
+        "specificationsDoc": "assets/Specifikacionet PDF/CF-374-upatstvo.pdf",
         "specifications": {
           "dimensione": "180cm (L) x 60cm (G) x 62cm (D)",
           "volumi bruto": "341 L",
@@ -4291,7 +4291,7 @@
           "Koha e përgjigjes": "8 ms",
           "SMART": "√",
           "Lidhja Wireless": "E integruar",
-          "Lidhjet": "HEAD PHONE 1; COAX AUDIO-1; RF IN 2; HDMI, 2 porta USB, CI 1, WI-FI",
+          "Lidhjet": "LAN-1, HEAD PHONE 1; COAX AUDIO-1; RF IN 2; HDMI, 2 porta USB, CI 1, WI-FI",
           "Sistemi Operativ": "ANDROID 14",
           "Ngjyra e Kornizës": "E zezë",
           "Memoria": "ROM 8 GB, RAM 1 GB",
@@ -4332,7 +4332,7 @@
             "Koha e përgjigjes": "8 ms",
             "SMART": "√",
             "Wireless": "I integruar",
-            "Lidhja": "HEADPHONE 1; COAX AUDIO-1; RF IN 2; HDMI, 2 porte USB, CI 1, WI-FI",
+            "Lidhja": "LAN-1, HEADPHONE 1; COAX AUDIO-1; RF IN 2; HDMI, 2 porte USB, CI 1, WI-FI",
             "Sistemi operativ Android": "ANDROID 14",
             "Ngjyra e kornizës": "E zezë",
             "Memoria": "Memorie ROM 8 GB, RAM 1.5 GB",
@@ -4373,7 +4373,7 @@
               "Koha e përgjigjes": "8 ms",
               "SMART": "√",
               "Pa tela": "I integruar",
-              "Lidhshmëria": "Kufje 1; Audio koaks-1; RF hyrje 2; HDMI, 2 USB porta, CI 1, WI-FI",
+              "Lidhshmëria": "LAN-1, Kufje 1; Audio koaks-1; RF hyrje 2; HDMI, 2 USB porta, CI 1, WI-FI",
               "Android OS": "ANDROID 14",
               "Ngjyra e kornizës": "E zezë",
               "Memorja": "ROM 8 GB, RAM 1.5 GB",
@@ -4414,7 +4414,7 @@
               "Koha e përgjigjes": "8 ms",
               "SMART": "√",
               "Pa tela": "I integruar",
-              "Lidhshmëria": "HEAD PHONE 1; COAX AUDIO-1; RF IN 2; HDMI, 2 USB porta, CI 1, WI-FI",
+              "Lidhshmëria": "LAN-1, HEAD PHONE 1; COAX AUDIO-1; RF IN 2; HDMI, 2 USB porta, CI 1, WI-FI",
               "Sistemi Operativ Android": "ANDROID 14",
               "Ngjyra e kornizës": "E zezë",
               "Memorja": "MEMORY ROM 8 GB, RAM 1,5 GB",
@@ -4455,7 +4455,7 @@
             "Koha e përgjigjes": "8 ms",
             "SMART": "√",
             "Pa tela": "I integruar",
-            "Lidhshmëria": "HEAD PHONE 1; COAX AUDIO-1; RF IN 2; HDMI, 2 USB porta, CI 1, WI-FI",
+            "Lidhshmëria": "LAN-1, HEAD PHONE 1; COAX AUDIO-1; RF IN 2; HDMI, 2 USB porta, CI 1, WI-FI",
             "Sistemi operativ Android": "ANDROID 14",
             "Ngjyra e kornizës": "E zezë",
             "Memorja": "MEMORY ROM 8 GB, RAM 1 GB",
@@ -4495,7 +4495,7 @@
             "Koha e përgjigjes": "8 ms",
             "Smart": "√",
             "Wireless": "I integruar",
-            "Lidhja": "HEAD PHONE 1; COAX AUDIO-1; RF IN 2; HDMI, 2 USB Hyrje, CI 1, WI-FI",
+            "Lidhja": "LAN-1, HEAD PHONE 1; COAX AUDIO-1; RF IN 2; HDMI, 2 USB Hyrje, CI 1, WI-FI",
             "Sistemi operativ Android": "ANDROID 14",
             "Ngjyra e kornizës": "E zezë",
             "Memoria": "MEMORY ROM 8 GB, RAM 1 GB",
@@ -4551,6 +4551,149 @@
             "Doreza": "E integruar",
             "Siguria e dimrit": "(-15°C)"
           }
-        }    
+        },
+        {
+          "id": 152,
+          "name": "Makina larëse A – 5100",
+          "description": [
+            "Ju prezantojmë makinën tonë të avancuar larëse, e dizajnuar për të optimizuar rutinën tuaj të larjes. Me një tambur të gjerë prej 42 L dhe 15 programe, ofron pastrim të thellë për deri në 5 kg rroba. Funksione si programimi elektronik, kursimi i energjisë me sistemin eko dhe mbrojtja kundër rrjedhjes ofrojnë efikasitet dhe qetësi mendore. Për më tepër, dizajni kompakt dhe veçoritë praktike si sensori për gjysmë ngarkesë dhe programi i shpejtë e bëjnë ditën e larjes të lehtë."
+          ],
+          "pictures": [
+            "assets/Home appliances/WASHING MACHINE A – 5100/MASINA-ZA-ALISTA-5100.png"
+          ],
+          "specificationsDoc": "assets/Product Spec/Upatstvo-A-5101.pdf",
+          "specifications": {
+            "Përmasat": "84.50/59.70/49.70 CM",
+            "Shpejtësia e rrotullimit (RPM)": "1000",
+            "Kapaciteti": "5 KG",
+            "Tambur inox": "42 L",
+            "Programet": "15",
+            "Programues elektronik": "√",
+            "Klasa e energjisë (Rregullore e re)": "D",
+            "Sistem Eco Logic për kursim energjie": "√",
+            "Mbrojtje kundër rrjedhjeve": "√",
+            "Mbrojtje kundër shkumës": "√",
+            "Sistem automatik balancimi": "√",
+            "Këmbë të rregullueshme": "√",
+            "Kapak i sipërm i heqshëm": "√",
+            "Konsumi i energjisë (kWh/100 cikle)": "60",
+            "Konsumi i ujit (L/cikël)": "41 L/CYCLE",
+            "Zhurma gjatë larjes": "58 DB",
+            "Zhurma gjatë centrifugimit": "76 DB",
+            "Program shumë i shpejtë": "15 MINUTA NË 30 °C",
+            "Program i shpejtë": "60 MINUTA NË 60 °C",
+            "Sensor për gjysmë ngarkesë": "√",
+            "Fillesë e vonuar": "√",
+            "Buton për shpëlarje shtesë": "√"
+          }
+        },
+        {
+        "id": 153,
+        "name": "Furrë e Ndërtuar BIO-65M B",
+        "description": [
+          "Kjo furrë e zezë dallohet me një hapësirë të brendshme të bollshme me përmasa 59.5mm / 59.5mm / 57.5mm dhe klasë energjie A. Ka kapacitet prej 65 L, 8 funksione furre dhe kontrolle mekanike.",
+          "Furra është e pajisur me ventilator, dritë furre dhe xham të brendshëm të heqshëm për pastrim të lehtë. Përfshin një tepsi të thellë dhe një rrjetë të kromuar. Elementët ngrohës përfshijnë ngrohje të sipërme prej 1200W, ngrohje të poshtme prej 1100W, ngrohje grilli prej 1400W dhe grilë të dyfishtë prej 2600W."
+        ],
+        "pictures": [
+          "assets/Built In Appliances/Built-in oven FAVORIT BIO-65M B/BIO-65-X-PHOTO-1-1024x576.png"
+        ],
+        "specificationsDoc": "assets/Built In Appliances/Built-in oven FAVORIT BIO-65M B/UPATSTVO ZA UPOTREBA.pdf",
+        "specifications": {
+          "Përmasat": "59.5mm / 59.5mm / 57.5mm",
+          "Klasa e Energjisë": "A",
+          "Vëllimi i Furrës": "65 L",
+          "Paneli i Zi prej Xhami": "√",
+          "Funksionet e Furrës": "8",
+          "Tajmeri": "Mekanik",
+          "Termostati": "Mekanik",
+          "Udhëzuesit Anësorë në Furrë": "√",
+          "Ventilator": "√",
+          "Dritë për Furrë": "√",
+          "Xhami i Brendshëm i Heqshëm": "√",
+          "Tepsi e Thellë": "1",
+          "Rrjetë Kromi": "1",
+          "Ngrohje e Sipërme": "1200W",
+          "Ngrohje e Poshtme": "1100W",
+          "Ngrohje Grilli": "1400W",
+          "Grill i Dyfishtë": "2600W",
+          "Ngjyra": "E zezë"
+        }
+      },
+      {
+        "id": 154,
+        "name": "Makineri për larje rrobash N-7122T BLDC",
+        "description": [],
+        "pictures": [
+          "assets/Home appliances/WASHING MACHINE L – 8101N/FAVORIT-L-8101-1024x576.png"
+        ],
+        "specificationsDoc": "assets/Home appliances/WASHING MACHINE L – 8101N/upatstvo.pdf",
+        "specifications": {
+          "Përmasat (L/G/T)": "84.5 / 59.7 / 52.70 CM",
+          "Rrotullime maksimale në minutë": "1200",
+          "Kapacitet maksimal": "7 KG",
+          "Kazani inoks": "50 L",
+          "Motor inverter": "√ (10 VITE GARANCI)",
+          "Ekran LCD me prekje": "√",
+          "Shtyrje e nisjes": "√",
+          "Programet": "15",
+          "Opsioni STEAM ASSIST (larje me avull)": "√",
+          "Programues elektronik": "√",
+          "Buton për kontrollin e temperaturës së ujit": "√",
+          "Klasa e energjisë": "A",
+          "Sistem mbrojtjeje nga derdhja": "√",
+          "Mbrojtje nga shkuma": "√",
+          "Sistem automatik për balancim": "√",
+          "Sistem për zbulimin e gabimeve": "√",
+          "Mbrojtje për fëmijë": "√",
+          "Kapak i sipërm i heqshëm": "√",
+          "Konsumi i energjisë": "45 KWH/CIKËL",
+          "Konsumi i ujit": "45 L/CIKËL",
+          "Niveli i zhurmës gjatë larjes": "50 DB",
+          "Niveli i zhurmës gjatë shtrydhjes": "75 DB",
+          "Program shumë i shpejtë": "15 MIN NË 30°",
+          "Program i shpejtë": "60 MIN NË 60°",
+          "Buton për kontrollin e shpejtësisë": "√",
+          "Sensor për ngarkesë të gjysmë": "√",
+          "Program paraprak për pambuk": "√"
+        }
+      },
+      {
+        "id": 155,
+        "name": "Makineri për larje rrobash C-8143 BLDC",
+        "description": [],
+        "pictures": [
+          "assets/Home appliances/WASHING MACHINE C-8143 BLDC/8. FAVORIT C-8143 BLDC.png"
+        ],
+        "specificationsDoc": "assets/Home appliances/WASHING MACHINE C-8143 BLDC/C-8143 BLDC -user manual OK.pdf",
+        "specifications": {
+          "Përmasat (L/G/T)": "84.5 / 60.5 / 57.40 CM",
+          "Rrotullime maksimale në minutë": "1200",
+          "Kapacitet maksimal": "8 KG",
+          "Kazani inoks": "55 L",
+          "Motor inverter": "√ (10 VITE GARANCI)",
+          "Ekran LCD me prekje": "√",
+          "Opsioni STEAM ASSIST (larje me avull)": "√",
+          "Shtyrje e nisjes": "√",
+          "Programet": "15",
+          "Programues elektronik": "√",
+          "Buton për kontrollin e temperaturës së ujit": "√",
+          "Klasa e energjisë": "A",
+          "Sistem mbrojtjeje nga derdhja": "√",
+          "Mbrojtje nga shkuma": "√",
+          "Sistem automatik për balancim": "√",
+          "Sistem për zbulimin e gabimeve": "√",
+          "Mbrojtje për fëmijë": "√",
+          "Kapak i sipërm i heqshëm": "√",
+          "Konsumi i energjisë": "47 KWH/CIKËL",
+          "Konsumi i ujit": "48 L/CIKËL",
+          "Niveli i zhurmës gjatë larjes": "50 DB",
+          "Niveli i zhurmës gjatë shtrydhjes": "75 DB",
+          "Program shumë i shpejtë": "15 MIN NË 30°",
+          "Program i shpejtë": "60 MIN NË 60°",
+          "Buton për kontrollin e shpejtësisë": "√",
+          "Sensor për ngarkesë të gjysmë": "√",
+          "Program paraprak për pambuk": "√"
+        }
+      }                    
       
 ]
