@@ -1,32 +1,265 @@
-<!-- <div class="header-container">
-  <h1 class="header">{{contactConstant.contact}}</h1>
-</div> -->
-<div id="logo">
-  <img class="logo" src="assets/favorit-logo.png" alt="">
-
-</div>
-  <div class="info-company">
-      <div><h1>{{contactConstant.contact}}:</h1></div>
-      <p><strong>{{contactConstant.address}}:</strong><a href=""> Ул. Партизански одреди 154 1000 Скопје, Р. С. Макeдoнија</a> </p>
-      <p><strong>{{contactConstant.phone}}:</strong><a href="tel:+385(0)16401111"> +389 2 2440 110</a></p>
-      <p><strong>{{contactConstant.email}}:</strong><a href="centrounion@centrounion.com.mk"> centrounion&#64;centrounion.com.mk</a></p>
-      <p><strong>{{contactConstant.service}}:</strong></p>
-      <p><strong>{{contactConstant.phone}}:</strong><a href="mailto:prodaja@mrservis.hr"> 02 2 440 070</a></p>
-      <p><strong>{{contactConstant.email}}:</strong><a href="servis@centrounion.com.mk"> servis&#64;centrounion.com.mk</a></p>
+<!-- Hero Section -->
+<div class="hero-section">
+  <div class="hero-background">
+    <div class="hero-pattern"></div>
   </div>
-<div class="container">
-  <!-- <form action="" method="post" enctype="text/plain">
-    <label for="name">{{contactConstant.name}}</label>
-    <input type="text" id="name" name="name" required><br><br>
-    
-    <label for="email">{{contactConstant.youEmail}}:</label>
-    <input type="email" id="email" name="email" required><br><br>
-    
-    <label for="message">{{contactConstant.message}}:</label><br>
-    <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+  <div class="hero-content">
+    <div class="logo-container">
+      <img class="logo" src="assets/favorit-logo.png" alt="Favorit Electronics">
+    </div>
+    <h1 class="hero-title">{{contactConstant.contact}}</h1>
+    <p class="hero-subtitle">{{contactConstant.heroSubtitle}}</p>
+  </div>
+</div>
 
-    <button type="submit">{{contactConstant.submit}}</button>
-  </form> -->
+<!-- Main Contact Section -->
+<div class="main-contact-section">
+  <div class="contact-container">
+    <!-- Contact Information Cards -->
+    <div class="contact-info-section">
+              <div class="section-header">
+          <h2 class="section-title">{{contactConstant.contactInformation}}</h2>
+          <p class="section-subtitle">{{contactConstant.contactInfoSubtitle}}</p>
+        </div>
+      
+      <div class="contact-cards">
+        <!-- Main Office Card -->
+        <div class="contact-card">
+          <div class="card-icon">
+            <i class="fas fa-building"></i>
+          </div>
+          <div class="card-content">
+            <h3>{{contactConstant.mainOffice}}</h3>
+            <div class="contact-details">
+              <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                  <strong>{{contactConstant.address}}:</strong>
+                  <p>Ул. Партизански одреди 154<br>1000 Скопје, Р. С. Македонија</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <div>
+                  <strong>{{contactConstant.phone}}:</strong>
+                  <a href="tel:+38922440110">+389 2 2440 110</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <div>
+                  <strong>{{contactConstant.email}}:</strong>
+                  <a href="mailto:favoritelectro@favoritelectronics.com">favoritelectro&#64;favoritelectronics.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-  <iframe src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Центро Унион Фаворит електроникс&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"  width="90%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <!-- Service Center Card -->
+        <div class="contact-card">
+          <div class="card-icon">
+            <i class="fas fa-tools"></i>
+          </div>
+          <div class="card-content">
+            <h3>{{contactConstant.service}}</h3>
+            <div class="contact-details">
+              <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <div>
+                  <strong>{{contactConstant.phone}}:</strong>
+                  <a href="tel:022440070">02 2 440 070</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <div>
+                  <strong>{{contactConstant.email}}:</strong>
+                  <a href="mailto:favoritelectro@favoritelectronics.com">favoritelectro&#64;favoritelectronics.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Business Hours Card -->
+        <div class="contact-card">
+          <div class="card-icon">
+            <i class="fas fa-clock"></i>
+          </div>
+          <div class="card-content">
+            <h3>{{contactConstant.businessHours}}</h3>
+            <div class="contact-details">
+              <div class="contact-item">
+                <i class="fas fa-calendar-day"></i>
+                <div>
+                  <strong>{{contactConstant.mondayFriday}}:</strong>
+                  <p>{{contactConstant.workingHours}}</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-calendar-day"></i>
+                <div>
+                  <strong>{{contactConstant.saturday}}:</strong>
+                  <p>{{contactConstant.saturdayHours}}</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-calendar-day"></i>
+                <div>
+                  <strong>{{contactConstant.sunday}}:</strong>
+                  <p>{{contactConstant.closed}}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Form Section -->
+    <div class="contact-form-section">
+      <div class="form-container">
+        <div class="section-header">
+          <h2 class="section-title">{{contactConstant.sendUsMessage}}</h2>
+          <p class="section-subtitle">{{contactConstant.formSubtitle}}</p>
+        </div>
+        
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">
+                <i class="fas fa-user"></i>
+                {{contactConstant.name}} *
+              </label>
+              <input 
+                type="text" 
+                id="name" 
+                formControlName="name"
+                [placeholder]="contactConstant.namePlaceholder"
+                [class.error]="contactForm.get('name')?.invalid && contactForm.get('name')?.touched">
+              <div class="error-message" [class.show]="contactForm.get('name')?.invalid && contactForm.get('name')?.touched">
+                <i class="fas fa-exclamation-circle"></i>
+                {{ getErrorMessage('name') }}
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">
+                <i class="fas fa-envelope"></i>
+                {{contactConstant.youEmail}} *
+              </label>
+              <input 
+                type="email" 
+                id="email" 
+                formControlName="email"
+                [placeholder]="contactConstant.emailPlaceholder"
+                [class.error]="contactForm.get('email')?.invalid && contactForm.get('email')?.touched">
+              <div class="error-message" [class.show]="contactForm.get('email')?.invalid && contactForm.get('email')?.touched">
+                <i class="fas fa-exclamation-circle"></i>
+                {{ getErrorMessage('email') }}
+              </div>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">
+                <i class="fas fa-phone"></i>
+                {{contactConstant.phone}} *
+              </label>
+              <input 
+                type="tel" 
+                id="phone" 
+                formControlName="phone"
+                [placeholder]="contactConstant.phonePlaceholder"
+                [class.error]="contactForm.get('phone')?.invalid && contactForm.get('phone')?.touched">
+              <div class="error-message" [class.show]="contactForm.get('phone')?.invalid && contactForm.get('phone')?.touched">
+                <i class="fas fa-exclamation-circle"></i>
+                {{ getErrorMessage('phone') }}
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">
+                <i class="fas fa-tag"></i>
+                {{contactConstant.subject}} *
+              </label>
+              <input 
+                type="text" 
+                id="subject" 
+                formControlName="subject"
+                [placeholder]="contactConstant.subjectPlaceholder"
+                [class.error]="contactForm.get('subject')?.invalid && contactForm.get('subject')?.touched">
+              <div class="error-message" [class.show]="contactForm.get('subject')?.invalid && contactForm.get('subject')?.touched">
+                <i class="fas fa-exclamation-circle"></i>
+                {{ getErrorMessage('subject') }}
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group full-width">
+            <label for="message">
+              <i class="fas fa-comment"></i>
+              {{contactConstant.message}} *
+            </label>
+            <textarea 
+              id="message" 
+              formControlName="message"
+              rows="6" 
+              [placeholder]="contactConstant.messagePlaceholder"
+              [class.error]="contactForm.get('message')?.invalid && contactForm.get('message')?.touched"></textarea>
+            <div class="error-message" [class.show]="contactForm.get('message')?.invalid && contactForm.get('message')?.touched">
+              <i class="fas fa-exclamation-circle"></i>
+              {{ getErrorMessage('message') }}
+            </div>
+          </div>
+
+          <div class="form-group">
+            <button 
+              type="submit" 
+              [disabled]="isSubmitting || contactForm.invalid"
+              class="submit-btn">
+              <span *ngIf="!isSubmitting">
+                <i class="fas fa-paper-plane"></i>
+                {{contactConstant.submit}}
+              </span>
+              <span *ngIf="isSubmitting">
+                <i class="fas fa-spinner fa-spin"></i>
+                {{contactConstant.sending}}
+              </span>
+            </button>
+          </div>
+
+          <div class="submit-message" [class.has-message]="submitMessage">
+            <div [class]="submitSuccess ? 'success' : 'error'" [class.show]="submitMessage">
+              <i [class]="submitSuccess ? 'fas fa-check-circle' : 'fas fa-exclamation-circle'"></i>
+              {{ submitMessage }}
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Map Section -->
+<div class="map-section">
+  <div class="map-container">
+    <div class="section-header">
+      <h2 class="section-title">{{contactConstant.location}}</h2>
+      <p class="section-subtitle">{{contactConstant.locationSubtitle}}</p>
+    </div>
+    <div class="map-wrapper">
+      <iframe 
+        src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Центро Унион Фаворит електроникс&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"  
+        width="100%" 
+        height="500" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
 </div>

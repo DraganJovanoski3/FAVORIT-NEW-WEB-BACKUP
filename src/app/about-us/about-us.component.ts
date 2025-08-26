@@ -15,7 +15,7 @@ import about_us_al from './about_us_al.json'
   standalone: true,
   imports: [],
   templateUrl: './about-us.component.html',
-  styleUrl: './about-us.component.css'
+  styleUrls: ['./about-us.component.css']
 })
 export class AboutUsComponent implements OnInit {
   aboutUsConstant: any;

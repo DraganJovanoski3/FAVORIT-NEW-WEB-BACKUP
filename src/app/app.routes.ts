@@ -22,14 +22,18 @@ export const routes: Routes = [
   { path: 'blogs', component: BlogListComponent },
   { path: 'blog/:id', component: BlogComponent },
 
-  // Route for Category and Subcategory Navigation
-  { path: 'category/:category', component: CategoryComponent },  // Shows all subcategories in a category
-  { path: 'category/:category/subcategory/:subcategory', component: SubcategoryComponent },  // Shows products in a subcategory
+  // Shorter route structure
+  { path: 'c/:category', component: CategoryComponent },  // /c/built-in-appliances
+  { path: 'c/:category/:subcategory', component: SubcategoryComponent },  // /c/built-in-appliances/dishwashers
+  { path: 'p/:productId', component: ProductComponent },  // /p/64 - direct product access
   
-  { path: 'category/:category/subcategory/:subcategory/product/:productId', component: ProductComponent },  // Product details
+  // Legacy routes for backward compatibility
+  { path: 'category/:category', component: CategoryComponent },
+  { path: 'category/:category/subcategory/:subcategory', component: SubcategoryComponent },
+  { path: 'category/:category/subcategory/:subcategory/product/:productId', component: ProductComponent },
   
-  { path: '', redirectTo: '/home', pathMatch: 'full' },  // Default redirect to home
-  { path: '**', redirectTo: '/home' }  // Wildcard route for 404
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: '**', redirectTo: '/home' }
 ];
 
 @NgModule({

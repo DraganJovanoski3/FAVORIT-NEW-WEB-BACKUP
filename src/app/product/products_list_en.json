@@ -1352,43 +1352,10 @@
       "noise level": "41 dB"
     }
   },
-  {
-    "id": 44,
-    "name": "WASHING MACHINE A – 5101N",
-    "description": [
-      "Introducing our advanced washing machine, designed to streamline your laundry routine. With a spacious 42 L drum and 15 programs, it ensures thorough cleaning for up to 5 kg of laundry. Features like electronic programming, eco-energy saving, and leakage protection offer efficiency and peace of mind. Plus, its compact design and convenient features like half load sensor and fast program make laundry day effortless."
-    ],
-    "pictures": [
-      "assets/Home appliances/WASHING MACHINE A – 5101N/MASINA-ZA-ALISTA-01-1-1024x576.png",
-      "assets/Home appliances/WASHING MACHINE A – 5101N/FAVORIT-A-5101-1-1024x576.png"
-    ],
-    "specificationsDoc": "assets/Product Spec/Upatstvo-A-5101.pdf",
-    "specifications": {
-      "dimensions hwl": "84,50/59,70/51 CM",
-      "maximum revolutions per minute rpm": "1000",
-      "maximum capacity": "5 KG",
-      "inox drum": "42 L",
-      "programs": "15",
-      "electronic programmer": "√",
-      "energy class": "D",
-      "eco energy saving system": "√",
-      "leakage protection": "√",
-      "foam protection": "√",
-      "automatic balance system": "√",
-      "childrens lock": "√",
-      "removable top cover": "√",
-      "energy consumption": "147 KWH/ANNUM",
-      "water consumption lyear": "9240 L/ANNUM",
-      "noise level during washing": "58 DB",
-      "spin noise level": "76 DB",
-      "fast program": "15 MIN. 30 °C",
-      "half load sensor": "√",
-      "delay start button": "√"
-    }
-  },
+
   {
     "id": 45,
-    "name": "WASHING MACHINE L – 6100N",
+    "name": "WASHING MACHINE N - 6100",
     "description": [
       "Introducing our advanced washing machine, combining efficiency and convenience. With a 6 kg capacity and 44 L stainless steel drum, it handles larger loads effortlessly. Featuring 15 programs and a maximum RPM of 1000, it ensures thorough cleaning for all garments."
     ],
@@ -1396,36 +1363,35 @@
       "assets/Home appliances/WASHING MACHINE L – 6100N/L-6100-02-1-1024x576.png",
       "assets/Home appliances/WASHING MACHINE L – 6100N/FAVORIT-L-6100-1024x576.png"
     ],
-    "specificationsDoc": "assets/Product Spec/Upatstvo-L-6100.pdf",
+    "specificationsDoc": "assets/Home appliances/WASHING MACHINE L – 6100N/N-6100 user manual.pdf",
     "specifications": {
-      "dimensions hwl": "84.50 / 59.70 / 49.70 CM",
-      "maximum revolutions per minute": "1000",
-      "capacity": "6 KG",
-      "stainless steel drum": "44 L",
-      "programs": "15",
-      "electronic programmer": "√",
-      "water temperature control knob": "√",
-      "energy class": "D",
-      "eco energy saving system": "√",
-      "leakage protection": "√",
-      "foam protection": "√",
-      "automatic balance system": "√",
-      "error detection system": "√",
-      "childrens lock": "√",
-      "removable top cover": "√",
-      "energy consumption": "151 KWH/ANNUM",
-      "water consumption": "9900 L/ANNUM",
-      "noise level during washing": "58 DB",
-      "spin noise level": "77 DB",
-      "fast program": "15 MIN. 30 °C",
-      "spin control": "√",
-      "delayed start button": "√",
-      "half load sensor": "√"
+      "Dimensions (H/W/D)": "84.50 / 59.70 / 49.70 CM",
+      "Spins per minute (RPM)": "1000",
+      "Capacity": "6 KG",
+      "Stainless steel drum": "44 L",
+      "Programs": "15",
+      "Electronic programmer": "√",
+      "Energy class (new regulation)": "D",
+      "Eco Logic energy saving system": "√",
+      "Anti-leak protection": "√",
+      "Foam protection": "√",
+      "Automatic balance system": "√",
+      "Adjustable feet": "√",
+      "Removable top cover": "√",
+      "Energy consumption": "65 KWh/100 cycles",
+      "Water consumption": "43 L/cycle",
+      "Noise level during washing": "58 DB",
+      "Noise level during spinning": "76 DB",
+      "Quick program": "15 MIN. 30 °C",
+      "Fast program": "60 MIN. 60 °C",
+      "Half-load sensor": "√",
+      "Delayed start button": "√",
+      "Extra rinse button": "√"
     }
   },
   {
     "id": 46,
-    "name": "WASHING MACHINE L – 7101N",
+    "name": "WASHING MACHINE W-7101",
     "description": [
       "Discover a compact and efficient washing machine with a 7 kg capacity and 15 versatile programs, including a quick 15-minute cycle. This washer boasts a maximum RPM of 1000 for powerful cleaning. Enjoy modern features like an electronic programmer, energy-saving Eco system, and safety enhancements such as leakage and foam protection. Operates quietly with noise levels of 58 dB during washing and 76 dB spin noise. Perfect for efficient and effective laundry care."
     ],
@@ -1433,33 +1399,33 @@
       "assets/Home appliances/WASHING MACHINE L – 7101N/W-7101-05-1024x576.png",
       "assets/Home appliances/WASHING MACHINE L – 7101N/FAVORIT-L-7101-1024x576.png"
     ],
-    "specificationsDoc": "assets/Product Spec/Upatstvo-L-7101.pdf",
+    "specificationsDoc": "assets/Home appliances/WASHING MACHINE L – 7101N/W-7101 user manual OK.pdf",
     "specifications": {
-      "Dimensions": "84,5/59,7/54,0 cm",
-      "Maximum revolutions per minute (rpm)": "1000",
-      "capacity": "7 kg",
-      "inox drum": "45 L.",
-      "programs": "15",
+      "Dimensions (H/W/D)": "84.5 / 59.7 / 54 CM",
+      "Maximum spins per minute": "1000",
+      "Maximum capacity": "7 KG",
+      "Stainless steel drum": "45 L",
+      "Digital LCD display": "√",
+      "Delayed start": "√",
+      "Programs": "15",
       "Electronic programmer": "√",
-      "Water temperature control knob": "√",
+      "Water temperature control button": "√",
       "Energy class": "D",
-      "Eco energy saving system": "√",
-      "Leakage protection": "√",
-      "foam protection": "√",
-      "AUTOMATIC BALANCE SYSTEM": "√",
+      "Overflow protection system": "√",
+      "Foam protection": "√",
+      "Automatic balancing system": "√",
       "Error detection system": "√",
-      "Children's lock": "√",
-      "removable top cover": "√",
-      "energy consumption": "171 Kwh/annum",
-      "Water consumption (l/year)": "10337 L/annum",
-      "Noise level during washing": "58 dB",
-      "Spin noise level": "76 dB",
-      "Fast program": "15 min. 30 °C",
-      "БЕЗБЕДНА ПРОГРАМА ЗА АЛЕРГИЈА": "",
-      "speed control knob": "√",
-      "half load sensor": "√",
-      "delay start button": "√",
-      "temperature control knob": "√"
+      "Child lock": "√",
+      "Removable top cover": "√",
+      "Energy consumption": "69 KWH/CYCLE",
+      "69 KWH/CYCLE": "45 L/CYCLE",
+      "Noise level during washing": "50 DB",
+      "Noise level during spinning": "75 DB",
+      "Super quick program": "15 MINUTES AT 30°",
+      "Quick program": "60 MIN. AT 60°",
+      "Speed control button": "√",
+      "Half-load sensor": "√",
+      "Cotton pre-wash program": "√"
     }
   },
   {
@@ -1503,7 +1469,7 @@
   },
   {
     "id": 48,
-    "name": "WASHING MACHINE L – 9101N",
+    "name": "WASHING MACHINE C - 9102",
     "description": [
       "Introducing our advanced washing machine with a spacious capacity of 9 kg and 15 customizable programs, including a quick 15-minute wash. With features like electronic programmer, water temperature control, and energy-saving system, it offers convenience and efficiency. Safety measures like leakage protection and child lock ensure peace of mind. Upgrade to our reliable washing machine for effortless laundry days."
     ],
@@ -1511,35 +1477,34 @@
       "assets/Home appliances/WASHING MACHINE L – 9101N/L-9101-03-1024x576.png",
       "assets/Home appliances/WASHING MACHINE L – 9101N/FAVORIT-L-9101-1-1024x576.png"
     ],
-    "specificationsDoc": "assets/Product Spec/L-9101-Upatstvo.pdf",
+    "specificationsDoc": "assets/Home appliances/WASHING MACHINE L – 9101N/C-9102 - user manual OK.pdf",
     "specifications": {
-      "dimensions hwd": "84.5/59.7/60.5 CM",
-      "maximum rotations per minute": "1000",
-      "capacity": "9 KG",
-      "stainless steel drum": "59 L",
-      "programs": "15",
-      "electronic programmer": "√",
-      "water temperature control knob": "√",
-      "energy class": "D",
-      "energy saving system": "√",
-      "leakage protection": "√",
-      "bedding and blanket washing program": "√",
-      "foam protection": "√",
-      "automatic balance system": "√",
-      "error detection system": "√",
-      "childrens lock": "√",
-      "removable top cover": "√",
-      "energy consumption": "215 KWH/YEAR",
-      "water consumption": "12100 L/YEAR",
-      "noise level during washing": "58 DB",
-      "noise level during spin": "78 DB",
-      "fast program": "15 MIN. 30 °C",
-      "spin control": "√",
-      "half load sensor": "√",
-      "delay start button": "√",
-      "quick wash button": "√",
-      "temperature control button": "√"
-    }
+    "Dimensions (H/W/D)": "84.5 / 59.7 / 60.50 CM",
+    "Maximum spins per minute": "1000",
+    "Maximum capacity": "9 KG",
+    "Stainless steel drum": "59 L",
+    "Digital LCD display": "√",
+    "Delayed start": "√",
+    "Programs": "15",
+    "Electronic programmer": "√",
+    "Water temperature control button": "√",
+    "Energy class": "D",
+    "Overflow protection system": "√",
+    "Foam protection": "√",
+    "Automatic balancing system": "√",
+    "Error detection system": "√",
+    "Child lock": "√",
+    "Removable top cover": "√",
+    "Energy consumption": "76 KWH/CYCLE",
+    "Water consumption": "50 L/CYCLE",
+    "Noise level during washing": "58 DB",
+    "Noise level during spinning": "78 DB",
+    "Super quick program": "15 MINUTES AT 30°",
+    "Quick program": "60 MIN. AT 60°",
+    "Speed control button": "√",
+    "Half-load sensor": "√",
+    "Cotton pre-wash program": "√"
+  }
   },
   {
     "id": 49,
@@ -1619,7 +1584,7 @@
   },
   {
     "id": 51,
-    "name": "Washing Machine W – 7122N BLDC",
+    "name": "Washing Machine L-7121 BLDC",
     "description": [
       "Introducing the latest model of washing machines with a capacity of 7 kg and 15 programs, including options for sensitive/hand wash. Featuring an inverter motor with a 10-year warranty and a digital LCD screen, it offers durability and ease of use. With energy-efficient functions and safety features such as overflow protection and child lock, doing laundry becomes effortless."
     ],
@@ -1627,34 +1592,34 @@
       "assets/Home appliances/WASHING MACHINE W – 7122N BLDC/W7122BLDC-1024x576.png",
       "assets/Home appliances/WASHING MACHINE W – 7122N BLDC/FAVORIT-W-7122-BLDC-1024x576.png"
     ],
-    "specificationsDoc": "assets/Product Spec/Upatstvo-W-7122-BLDC.pdf",
+    "specificationsDoc": "assets/Home appliances/WASHING MACHINE W – 8122N BLDC/WNTCZR~1_1.PDF",
     "specifications": {
-      "dimensions (H/W/D)": "84.5 / 59.7 / 52.70 CM",
-      "maximum spin speed": "1200",
-      "maximum capacity": "7 KG",
-      "stainless steel drum": "49 L",
-      "inverter motor": "√ (10 YEARS WARRANTY)",
-      "digital lcd screen": "√",
-      "delayed start": "√",
-      "programs": "15",
-      "electronic programmer": "√",
-      "water temperature control button": "√",
-      "energy class": "B",
-      "overflow protection system": "√",
-      "foam protection": "√",
-      "automatic balance system": "√",
-      "error detection system": "√",
-      "child lock": "√",
-      "removable top cover": "√",
-      "energy consumption": "52 KWH/Cycle",
-      "water consumption": "45 L/Cycle",
-      "noise level during washing": "50 DB",
-      "noise level during spinning": "74 DB",
-      "super quick program": "15 MINUTES AT 30°",
-      "quick program": "60 MIN. AT 60°",
-      "speed control button": "√",
-      "half load sensor": "√",
-      "pre-wash button": "√"
+      "Dimensions (H/W/D)": "84.5 / 59.7 / 52.70 CM",
+      "Maximum spins per minute": "1200",
+      "Maximum capacity": "7 KG",
+      "Stainless steel drum": "50 L",
+      "Inverter motor": "√ (10 YEARS WARRANTY)",
+      "Digital LCD display": "√",
+      "Delayed start": "√",
+      "Programs": "15",
+      "Electronic programmer": "√",
+      "Water temperature control button": "√",
+      "Energy class": "A",
+      "Overflow protection system": "√",
+      "Foam protection": "√",
+      "Automatic balancing system": "√",
+      "Error detection system": "√",
+      "Child lock": "√",
+      "Removable top cover": "√",
+      "Energy consumption": "45 KWH/CYCLE",
+      "Water consumption": "45 L/CYCLE",
+      "Noise level during washing": "50 DB",
+      "Noise level during spinning": "75 DB",
+      "Super quick program": "15 MINUTES AT 30°",
+      "Quick program": "60 MIN. AT 60°",
+      "Speed control button": "√",
+      "Half-load sensor": "√",
+      "Pre-wash button": "√"
     }
   },  
   {
@@ -1698,7 +1663,7 @@
   },
   {
     "id": 53,
-    "name": "WASHING MACHINE W – 8122N BLDC",
+    "name": "WASHING MACHINE W-8121 BLDC",
     "description": [
       "Introducing our advanced washing machine with a spacious 8KG capacity and a stainless steel drum of 54L. Enjoy precise control with the inverter motor and digital LCD screen, along with 15 programs catering to different fabric types. Benefit from energy-saving features and safety measures like leakage protection and child lock."
     ],
@@ -1706,37 +1671,35 @@
       "assets/Home appliances/WASHING MACHINE W – 8122N BLDC/W-8122-BLDC-11-1024x576.png",
       "assets/Home appliances/WASHING MACHINE W – 8122N BLDC/FAVORIT-W-8122-BLDC-1024x576.png"
     ],
-    "specificationsDoc": "assets/Product Spec/Upatstvo-W-8122.pdf",
+    "specificationsDoc": "assets/Home appliances/WASHING MACHINE W – 8122N BLDC/WNTCZR~1_1.PDF",
     "specifications": {
-      "dimensions hwd": "84.5 / 60.5 / 57.4 CM",
-      "maximum revolutions per minute": 1200,
-      "maximum capacity": "8 KG",
-      "inox drum": "54 L",
-      "inverter motor": "√",
-      "digital lcd screen": "√",
-      "delayed start": "√",
-      "programs": 15,
-      "electronic programmer": "√",
-      "water temperature control knob": "√",
-      "duvet and blanket washing program": "√",
-      "energy class": "B",
-      "eco energy saving system": "√",
-      "leakage protection": "√",
-      "foam protection": "√",
-      "automatic balance system": "√",
-      "error detection system": "√",
-      "childrens lock": "√",
-      "removable top cover": "√",
-      "antiallergic program": "√",
-      "sensitive hand washing": "√",
-      "energy consumption": "194KWH/ANNUM",
-      "water consumption": "10224 L/ANNUM",
-      "noise level during washing": "50 DB",
-      "spin noise level": "74 DB",
-      "fast program": "15 MIN. 30°",
-      "speed regulation": "√",
-      "half load sensor": "√",
-      "prewash button": "√"
+      "Dimensions (H/W/D)": "84.5 / 60.5 / 57.40 CM",
+      "Maximum spins per minute": 1200,
+      "Maximum capacity": "8 KG",
+      "Stainless steel drum": "51 L",
+      "Inverter motor": "√ (10 YEARS WARRANTY)",
+      "Digital LCD display": "√",
+      "Delayed start": "√",
+      "Programs": 15,
+      "Electronic programmer": "√",
+      "Water temperature control button": "√",
+      "Energy class": "A",
+      "Program for washing blankets and covers": "√",
+      "Overflow protection system": "√",
+      "Foam protection": "√",
+      "Automatic balancing system": "√",
+      "Error detection system": "√",
+      "Child lock": "√",
+      "Removable top cover": "√",
+      "Energy consumption": "47 KWH/CYCLE",
+      "Water consumption": "48 L/CYCLE",
+      "Noise level during washing": "50 DB",
+      "Noise level during spinning": "75 DB",
+      "Super quick program": "15 MIN. 30°",
+      "Quick program": "60 MIN. AT 60°",
+      "Speed control button": "√",
+      "Half-load sensor": "√",
+      "Cotton pre-wash program": "√"
     }
   },
   
@@ -4744,5 +4707,95 @@
         "Half load sensor": "√",
         "Cotton prewash program": "√"
       }
+    },
+    {
+    "id": 156,
+    "name": "Vacuum Cleaner VC-09 (1600W)",
+    "description": [],
+    "pictures": [
+      "assets/Small domestic appliances/VACUUM CLEANER VC-09 (1600W)/1. FAVORIT VC-09 -ispravena.png",
+      "assets/Small domestic appliances/VACUUM CLEANER VC-09 (1600W)/2. FAVORIT VC-09-komplet so crevo i papuca.png",
+      "assets/Small domestic appliances/VACUUM CLEANER VC-09 (1600W)/3. FAVORIT VC-09-legnata.png"
+    ],
+    "specificationsDoc": "assets/Product Spec/Upatstvo za upotreba VC-09 VC-17 VC-19 VC-33.pdf",
+    "specifications": {
+      "POWER": "2600 W",
+      "2 plastic tubes": "√",
+      "Full dust bag indicator": "√",
+      "2L reusable textile bag": "√",
+      "4-meter cable": "√",
+      "Easy-carry handle": "√",
+      "Accessories": "plastic floor brush, 2-in-1 narrow dust adapter, upholstery cleaning adapter, accessory holder"
     }
+  },
+  {
+    "id": 157,
+    "name": "Vacuum Cleaner VC-17 (1800W)",
+    "description": [],
+    "pictures": [
+      "assets/Small domestic appliances/VACUUM CLEANER VC-17 (1800W)/6. FAVORIT VC-17- ispravena.png",
+      "assets/Small domestic appliances/VACUUM CLEANER VC-17 (1800W)/5. FAVORIT VC-17 - legnata.png",
+      "assets/Small domestic appliances/VACUUM CLEANER VC-17 (1800W)/4. FAVORIT VC-17 - so crevo i papuca.png"
+    ],
+    "specificationsDoc": "assets/Product Spec/Upatstvo za upotreba VC-09 VC-17 VC-19 VC-33.pdf",
+    "specifications": {
+      "POWER": "1800 W",
+      "Metal telescopic tube": "√",
+      "Speed control": "√",
+      "Full dust bag indicator": "√",
+      "2.5L reusable textile bag": "√",
+      "4-meter cable": "√",
+      "Easy-carry handle": "√",
+      "Accessories": "plastic floor brush, 2-in-1 narrow dust adapter, upholstery cleaning adapter, accessory holder"
+    }
+  },
+  {
+    "id": 158,
+    "name": "Vacuum Cleaner VC-19 (2200W)",
+    "description": [],
+    "pictures": [
+      "assets/Small domestic appliances/VACUUM CLEANER VC-19 (2200W)/8. FAVORIT VC-19-ispravena.png",
+      "assets/Small domestic appliances/VACUUM CLEANER VC-19 (2200W)/8. FAVORIT VC-19-legnata.png",
+      "assets/Small domestic appliances/VACUUM CLEANER VC-19 (2200W)/7. FAVORIT VC-19-so crevo i papuca.png"
+    ],
+    "specificationsDoc": "assets/Product Spec/Upatstvo za upotreba VC-09 VC-17 VC-19 VC-33.pdf",
+    "specifications": {
+      "POWER": "2200 W",
+      "Multi-cyclone technology": "√",
+      "Metal telescopic tube": "√",
+      "Speed control": "√",
+      "Full dust bag indicator": "√",
+      "Washable HEPA filter": "√",
+      "2.5L dust container": "√",
+      "Easy-empty dust container": "√",
+      "5-meter cable": "√",
+      "Easy-carry handle": "√",
+      "Accessories": "plastic floor brush, 2-in-1 narrow dust adapter, upholstery cleaning adapter, accessory holder"
+    }
+  },
+  {
+    "id": 159,
+    "name": "Vacuum Cleaner VC-33 (2400W)",
+    "description": [],
+    "pictures": [
+      "assets/Small domestic appliances/VACUUM CLEANER VC-33 (2400W)/10. FAVORIT VC-33- ispravena.png",
+      "assets/Small domestic appliances/VACUUM CLEANER VC-33 (2400W)/9. FAVORIT VC-33-legnata.png",
+      "assets/Small domestic appliances/VACUUM CLEANER VC-33 (2400W)/11. FAVORIT VC-33-so crevo i papuca.png"
+    ],
+    "specificationsDoc": "assets/Product Spec/Upatstvo za upotreba VC-09 VC-17 VC-19 VC-33.pdf",
+    "specifications": {
+      "POWER": "2400 W",
+      "Multi-cyclone technology": "√",
+      "Metal telescopic tube": "√",
+      "Speed control": "√",
+      "Full dust bag indicator": "√",
+      "Washable HEPA filter": "√",
+      "2.5L dust container": "√",
+      "Easy-empty dust container": "√",
+      "5-meter cable": "√",
+      "Easy-carry handle": "√",
+      "Accessories": "plastic floor brush, 2-in-1 narrow dust adapter, upholstery cleaning adapter, accessory holder"
+    }
+  }
+        
 ]

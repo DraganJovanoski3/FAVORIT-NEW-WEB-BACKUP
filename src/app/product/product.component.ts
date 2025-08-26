@@ -2,6 +2,7 @@ import { Component, OnInit, AfterViewInit, Renderer2, ViewChild, ElementRef } fr
 import { ActivatedRoute, Router, RouterModule } from "@angular/router";
 import { combineLatest } from "rxjs";
 import { CommonModule } from "@angular/common";
+import { Location } from '@angular/common';
 
 // Product lists and specification translations
 import productList_en from './products_list_en.json';
@@ -27,12 +28,14 @@ import product_names_al from '../subcategory/product_names_al.json';
 interface ProductListInterface {
   id: number;
   name: string;
-  pictures: string[];
-  description: string[];
-  specifications?: { [key: string]: string };
+  pictures?: string[];
+  description: string | string[];
+  specifications?: { [key: string]: string | number | string[] | undefined };
   specificationsDoc?: string;
   discount?: string;
   originalPrice?: number;
+  category?: string; // Added for breadcrumbs
+  subcategory?: string; // Added for breadcrumbs
 }
 
 @Component({
@@ -88,18 +91,17 @@ export class ProductComponent implements OnInit, AfterViewInit {
   constructor(
     private _route: ActivatedRoute,
     private _router: Router,
-    private renderer: Renderer2
+    private renderer: Renderer2,
+    private _location: Location
   ) {}
 
   ngOnInit(): void {
     combineLatest([this._route.params, this._route.queryParams]).subscribe(([params, queryParams]) => {
-      // Extract category and subcategory from route parameters
       this.category = params['category'] || '';
       this.subcategory = params['subcategory'] || '';
       this.productId = +params['productId'];
       this.currentLang = queryParams['lang'] || 'en';
 
-      // Set product list and specification translations based on language
       switch (this.currentLang) {
         case 'mk':
           this.productList = productList_mk;
@@ -130,10 +132,8 @@ export class ProductComponent implements OnInit, AfterViewInit {
 
       this.product = this.productList.find(p => p.id === this.productId);
 
-      // Setup breadcrumbs only if the product exists.
-      if (this.product) {
-        this.setupBreadcrumbs();
-      }
+      // Only show product name in breadcrumbs
+      this.breadcrumbs = [{ label: this.product?.name || '', url: '' }];
 
       if (this.product && this.product.specifications) {
         this.allSpecifications = Object.entries(this.product.specifications).map(
@@ -158,18 +158,29 @@ export class ProductComponent implements OnInit, AfterViewInit {
    */
   private setupBreadcrumbs(): void {
     this.breadcrumbs = [];
-    // If category and subcategory are both 'air-conditioners', only show subcategory
+    
+    // Add Home breadcrumb
+    this.breadcrumbs.push({ label: this.getTranslatedNameBread('Home'), url: '/' });
+    
+    // Add Category breadcrumb
+    this.breadcrumbs.push({ label: this.getTranslatedNameBread(this.category, true), url: `/c/${this.category}` });
+    
+    // If category and subcategory are both 'air-conditioners', 'televisions', or 'hoods', skip subcategory
     if (
-      this.category === 'air-conditioners' &&
-      this.subcategory === 'air-conditioners'
+      (this.category === 'air-conditioners' && this.subcategory === 'air-conditioners') ||
+      (this.category === 'televisions' && this.subcategory === 'televisions') ||
+      (this.category === 'hoods' && this.subcategory === 'hoods')
     ) {
-      this.breadcrumbs.push({ label: this.getTranslatedNameBread(this.subcategory), url: `/category/${this.category}/subcategory/${this.subcategory}` });
+      // Skip subcategory breadcrumb for these special cases
     } else {
+      // Add Subcategory breadcrumb
       if (this.subcategory && this.subcategory !== 'other') {
-        this.breadcrumbs.push({ label: this.getTranslatedNameBread(this.subcategory), url: `/category/${this.category}/subcategory/${this.subcategory}` });
+        this.breadcrumbs.push({ label: this.getTranslatedNameBread(this.subcategory), url: `/c/${this.category}/${this.subcategory}` });
       }
     }
-    this.breadcrumbs.push({ label: this.product?.name || '', url: '' }); // Product name (no link)
+    
+    // Add Product name (no link)
+    this.breadcrumbs.push({ label: this.product?.name || '', url: '' });
   }
 
   /**
@@ -416,17 +427,20 @@ export class ProductComponent implements OnInit, AfterViewInit {
 
   goToProduct(productId: number): void {
     window.scrollTo(0, 0);
-    this._router.navigate([`/category/${this.category}/subcategory/${this.subcategory}/product/${productId}`], { queryParamsHandling: 'merge' });
+    this._router.navigate([`/p/${productId}`], { queryParamsHandling: 'merge' });
   }
 
-  extractFirstFiveSpecifications(specs: { [key: string]: string }): { label: string; value: string }[] {
+  extractFirstFiveSpecifications(specs: { [key: string]: string | number | string[] | undefined }): { label: string; value: string }[] {
     const firstFive: { label: string; value: string }[] = [];
     let count = 0;
     for (const key in specs) {
       if (count >= 5) break;
       if (specs.hasOwnProperty(key)) {
-        firstFive.push({ label: key, value: specs[key] });
-        count++;
+        const value = specs[key];
+        if (value !== undefined && value !== null && value !== '') {
+          firstFive.push({ label: key, value: String(value) });
+          count++;
+        }
       }
     }
     return firstFive;
@@ -632,5 +646,9 @@ export class ProductComponent implements OnInit, AfterViewInit {
 
   onImageClickHandler(): void {
     this.onImageClick();
+  }
+
+  goBack(): void {
+    this._location.back();
   }
 }

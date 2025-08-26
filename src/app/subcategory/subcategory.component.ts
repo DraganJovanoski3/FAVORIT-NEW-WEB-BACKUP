@@ -5,10 +5,11 @@ import { MatTableModule } from '@angular/material/table';
 import { MatPaginator, MatPaginatorModule, PageEvent } from '@angular/material/paginator';
 import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
-import { combineLatest } from "rxjs";
+import { combineLatest, filter } from "rxjs";
 
 // Translation JSON imports
 import product_names_mk from './product_names_mk.json';
+import product_names_en from './product_names_en.json';
 import product_names_al from './product_names_al.json';
 import product_names_sr from './product_names_sr.json';
 
@@ -145,7 +146,7 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
       case 'en':
         this.filterSubcategory = filter_subcategory_en;
         this.subcategoriesComponentConstant = subcategories_en;
-        this.productTranslations = product_names_mk; // Use Macedonian as fallback for English
+        this.productTranslations = product_names_en; // Use English product names
         this.larnmoreTranslations = larnmore_translations_en;
         this.cookieTranslations = all_products_en;
         break;
@@ -167,7 +168,7 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
         // Default to English if language is not recognized
         this.filterSubcategory = filter_subcategory_en;
         this.subcategoriesComponentConstant = subcategories_en;
-        this.productTranslations = product_names_mk; // Use Macedonian as fallback
+        this.productTranslations = product_names_en; // Use English as default
         this.larnmoreTranslations = larnmore_translations_en;
         this.cookieTranslations = all_products_en;
         break;
@@ -211,13 +212,13 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
     if (this.subcategory === 'air-conditioners' || this.subcategory === 'televisions' || this.subcategory === 'hoods') {
       this.breadcrumbs = [
         { label: this.getTranslatedNameBread('Home'), url: '/' },
-        { label: this.getTranslatedNameBread(this.category, true), url: `/category/${this.category}` }
+        { label: this.getTranslatedNameBread(this.category, true), url: `/c/${this.category}` }
       ];
     } else {
       this.breadcrumbs = [
         { label: this.getTranslatedNameBread('Home'), url: '/' },
-        { label: this.getTranslatedNameBread(this.category, true), url: `/category/${this.category}` },
-        { label: this.getTranslatedNameBread(this.subcategory), url: `/category/${this.category}/subcategory/${this.subcategory}` }
+        { label: this.getTranslatedNameBread(this.category, true), url: `/c/${this.category}` },
+        { label: this.getTranslatedNameBread(this.subcategory), url: `/c/${this.category}/${this.subcategory}` }
       ];
     }
   }
@@ -1596,6 +1597,38 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
             },
             // Vacuum Cleaners
             {
+              id: 156,
+              name: this.productTranslations['156'] ||'VACUUM CLEANER VC-09 (1600W)',
+              picture: 'assets/Small domestic appliances/VACUUM CLEANER VC-09 (1600W)/1. FAVORIT VC-09 -ispravena.png',
+              pictureHover: "assets/Small domestic appliances/VACUUM CLEANER VC-09 (1600W)/2. FAVORIT VC-09-komplet so crevo i papuca.png",
+              subcategory: filters.vacuumCleaners,
+              backgroundColorproduct: 'linear-gradient(#5FC261 0%, #ffffff 90%, #ffffff 100%)',
+            },
+            {
+              id: 157,
+              name: this.productTranslations['157'] ||'VACUUM CLEANER VC-17 (1800W)',
+              picture: 'assets/Small domestic appliances/VACUUM CLEANER VC-17 (1800W)/6. FAVORIT VC-17- ispravena.png',
+              pictureHover: "assets/Small domestic appliances/VACUUM CLEANER VC-17 (1800W)/4. FAVORIT VC-17 - so crevo i papuca.png",
+              subcategory: filters.vacuumCleaners,
+              backgroundColorproduct: 'linear-gradient(#5FC261 0%, #ffffff 90%, #ffffff 100%)',
+            },
+            {
+              id: 158,
+              name: this.productTranslations['158'] ||'VACUUM CLEANER VC-19 (2200W)',
+              picture: 'assets/Small domestic appliances/VACUUM CLEANER VC-19 (2200W)/8. FAVORIT VC-19-legnata.png',
+              pictureHover: "assets/Small domestic appliances/VACUUM CLEANER VC-19 (2200W)/7. FAVORIT VC-19-so crevo i papuca.png",
+              subcategory: filters.vacuumCleaners,
+              backgroundColorproduct: 'linear-gradient(#5FC261 0%, #ffffff 90%, #ffffff 100%)',
+            },
+            {
+              id: 159,
+              name: this.productTranslations['159'] ||'VACUUM CLEANER VC-33 (2400W)',
+              picture: 'assets/Small domestic appliances/VACUUM CLEANER VC-33 (2400W)/9. FAVORIT VC-33-legnata.png',
+              pictureHover: "assets/Small domestic appliances/VACUUM CLEANER VC-33 (2400W)/11. FAVORIT VC-33-so crevo i papuca.png",
+              subcategory: filters.vacuumCleaners,
+              backgroundColorproduct: 'linear-gradient(#5FC261 0%, #ffffff 90%, #ffffff 100%)',
+            },
+            {
               id: 110,
               name: this.productTranslations['110'] || 'VACUUM CLEANER FVC 123 RED',
               picture: 'assets/Small domestic appliances/VACUUM CLEANER FVC 123/FVC123-HD-01-1024x576.png',
@@ -1678,7 +1711,7 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
   }
 
   onNavigate(category: string, subcategory: string, productId: number) {
-    this._router.navigate([`/category/${category}/subcategory/${subcategory}/product/${productId}`], { queryParamsHandling: 'merge' })
+    this._router.navigate([`/p/${productId}`], { queryParamsHandling: 'merge' })
     .then(() => {
       window.scrollTo(0, 0);
     });

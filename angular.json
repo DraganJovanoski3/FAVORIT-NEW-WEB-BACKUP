@@ -58,12 +58,15 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "favorit-app:build"
+          },
           "configurations": {
             "production": {
-              "buildTarget": "favorit-app:build:production"
+              "browserTarget": "favorit-app:build:production"
             },
             "development": {
-              "buildTarget": "favorit-app:build:development"
+              "browserTarget": "favorit-app:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +74,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "favorit-app:build"
+            "browserTarget": "favorit-app:build"
           }
         },
         "test": {
@@ -91,32 +94,6 @@
               "src/styles.css"
             ],
             "scripts": []
-          }
-        },
-        "server": {
-          "builder": "@angular-devkit/build-angular:server",
-          "options": {
-            "outputPath": "dist/favorit-app/server",
-            "main": "src/main.server.ts",
-            "tsConfig": "tsconfig.server.json"
-          },
-          "configurations": {
-            "production": {
-              "outputHashing": "media"
-            }
-          }
-        },
-        "prerender": {
-          "builder": "@angular-devkit/build-angular:prerender",
-          "options": {
-            "browserTarget": "favorit-app:build:production",
-            "serverTarget": "favorit-app:server:production",
-            "routes": [
-              "/",
-              "/about-us",
-              "/contact",
-              "/all-products"
-            ]
           }
         }
       }

@@ -1,4 +1,5 @@
 <nav class="breadcrumbs">
+  <button class="back-arrow" (click)="goBack()" aria-label="Back">&#8592;</button>
   <ng-container *ngFor="let breadcrumb of breadcrumbs; let last = last; let i = index">
     <a [routerLink]="breadcrumb.url" [queryParams]="{lang: currentLang}" *ngIf="!last">{{ breadcrumb.label }}</a>
     <span *ngIf="last" class="current">{{ breadcrumb.label }}</span>

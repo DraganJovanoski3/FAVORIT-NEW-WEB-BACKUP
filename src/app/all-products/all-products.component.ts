@@ -23,7 +23,7 @@ export interface Product {
   standalone: true,
   imports: [CommonModule, MatTableModule, MatPaginatorModule, MatCardModule, FormsModule, MatIconModule],
   templateUrl: './all-products.component.html',
-  styleUrl: './all-products.component.css'
+  styleUrls: ['./all-products.component.css']
 })
 export class AllProductsComponent implements OnInit {
   searchText: any;

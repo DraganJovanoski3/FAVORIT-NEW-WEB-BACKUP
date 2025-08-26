@@ -388,6 +388,39 @@ body {
 .specifications-doc > a:hover {
   color: #204880;
 }
+/* Back Arrow Button */
+.back-arrow {
+  background: rgba(255, 255, 255, 0);
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 18px;
+  color: white;
+  margin-right: 12px;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.back-arrow:hover {
+  transform: scale(1.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.back-arrow:active {
+  transform: scale(0.95);
+}
+
+.back-arrow:focus {
+  outline: none;
+}
+
+/* Update breadcrumbs to accommodate the back arrow */
 .breadcrumbs {
     display: flex;
     align-items: center;
@@ -434,4 +467,40 @@ body {
   text-overflow: ellipsis;
   max-width: fit-content;
   flex-shrink: 1;
+}
+
+/* Mobile responsive for back arrow */
+@media (max-width: 768px) {
+  .back-arrow {
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+    margin-right: 8px;
+  }
+  
+  .breadcrumbs {
+    padding: 10px 15px !important;
+    margin: 0 0 15px 0;
+    font-size: 14px;
+    min-height: 30px;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    margin-top: 75px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .back-arrow {
+    width: 28px;
+    height: 28px;
+    font-size: 14px;
+    margin-right: 6px;
+  }
+  
+  .breadcrumbs {
+    padding: 8px 14px;
+    font-size: 11px;
+    flex-wrap: nowrap;
+    overflow: hidden;
+  }
 }

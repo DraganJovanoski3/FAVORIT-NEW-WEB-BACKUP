@@ -11,7 +11,7 @@ import footer_al from './footer_al.json'
     standalone:true,
     imports:[],
     templateUrl:'./footer.component.html',
-    styleUrl:'./footer.component.css'
+    styleUrls: ['./footer.component.css']
 })
 
 export class FooterFavorit implements OnInit {

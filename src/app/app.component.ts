@@ -1,10 +1,9 @@
 import { Component, Directive, ElementRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterLink, RouterLinkActive, RouterOutlet, NavigationEnd, Router, ActivatedRoute } from '@angular/router';
+import { RouterOutlet, NavigationEnd, Router, ActivatedRoute } from '@angular/router';
 import { NavbarComponent } from "./navbar/navbar.component";
-import { HomeComponent } from "./home/home.component";
-import { CategoryComponent } from './category/category.component';
 import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatDialogModule } from '@angular/material/dialog';
 import { filter, map, tap } from 'rxjs/operators';
 import { FooterFavorit } from './footer/footer.component';
 import { MatDialog } from '@angular/material/dialog';
@@ -13,8 +12,6 @@ import { Meta, Title } from '@angular/platform-browser';
 
 const components = [
   NavbarComponent,
-  HomeComponent,
-  CategoryComponent,
   FooterFavorit
 ];
 
@@ -32,7 +29,7 @@ const components = [
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, MatPaginatorModule, RouterOutlet, RouterLink, RouterLinkActive, ...components],
+  imports: [CommonModule, MatPaginatorModule, MatDialogModule, RouterOutlet, ...components],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })

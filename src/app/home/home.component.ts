@@ -32,7 +32,7 @@ interface Product {
     CommonModule
   ],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
+  styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit, OnDestroy {
   homeComponentConstant: any;

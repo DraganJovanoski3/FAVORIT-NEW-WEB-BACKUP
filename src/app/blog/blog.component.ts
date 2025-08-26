@@ -82,13 +82,47 @@ export class BlogComponent implements OnInit {
   }
 
   private updateMetaTags() {
+    const imageUrl = this.blog.image.startsWith('http') ? this.blog.image : `https://favoritelectronics.com/${this.blog.image}`;
+    const currentUrl = window.location.href;
+    
+    // Update page title
     this.titleService.setTitle(this.blog.title);
+    
+    // Update meta description
     this.meta.updateTag({ name: 'description', content: this.blog.excerpt });
+    
+    // Update Open Graph meta tags
     this.meta.updateTag({ property: 'og:title', content: this.blog.title });
     this.meta.updateTag({ property: 'og:description', content: this.blog.excerpt });
-    this.meta.updateTag({ property: 'og:image', content: this.blog.image });
-    this.meta.updateTag({ property: 'og:url', content: window.location.href });
+    this.meta.updateTag({ property: 'og:image', content: imageUrl });
+    this.meta.updateTag({ property: 'og:url', content: currentUrl });
     this.meta.updateTag({ property: 'og:type', content: 'article' });
+    this.meta.updateTag({ property: 'og:site_name', content: 'Favorit Electronics' });
+    this.meta.updateTag({ property: 'og:locale', content: this.getLocale() });
+    
+    // Update Twitter Card meta tags
+    this.meta.updateTag({ name: 'twitter:card', content: 'summary_large_image' });
+    this.meta.updateTag({ name: 'twitter:title', content: this.blog.title });
+    this.meta.updateTag({ name: 'twitter:description', content: this.blog.excerpt });
+    this.meta.updateTag({ name: 'twitter:image', content: imageUrl });
+    
+    // Update article specific meta tags
+    this.meta.updateTag({ property: 'article:published_time', content: `${this.blog.date}T00:00:00Z` });
+    this.meta.updateTag({ property: 'article:author', content: 'Favorit Electronics' });
+    this.meta.updateTag({ property: 'article:section', content: 'Blog' });
+    
+    // Update canonical URL
+    this.meta.updateTag({ rel: 'canonical', href: currentUrl });
+  }
+
+  private getLocale(): string {
+    const locales: { [key: string]: string } = {
+      mk: 'mk',
+      en: 'en',
+      sr: 'sr',
+      al: 'al'
+    };
+    return locales[this.currentLang] || 'en';
   }
 
   private redirectToBlogs() {

@@ -10,7 +10,7 @@ import sales_partners_al from './sales_partners_al.json';
   standalone: true,
   imports: [],
   templateUrl: './sales-partners.component.html',
-  styleUrl: './sales-partners.component.css'
+  styleUrls: ['./sales-partners.component.css']
 })
 export class SalesPartnersComponent implements OnInit {
 

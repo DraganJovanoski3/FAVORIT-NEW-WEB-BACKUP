@@ -41,7 +41,7 @@
         "builtInMicrowaves":"Built-In Microwaves",
         "builtInStoveTops":"Built-In Stove Tops",
         "builtInStoves":"Built-In Stoves",
-        "builtInFridges":"Built-In Fridges",
+        "builtInFridges":"Built-In Refrigerators",
         "fullyBuiltInDishwashersLabel": "Fully Built-in Dishwashers",
         "semiBuiltInDishwashersLabel": "Semi Built-in Dishwashers"
     },
@@ -50,7 +50,7 @@
         "dishwashers":"Dishwashers",
         "washingMachines":"Washing Machines",
         "dryers":"Dryers",
-        "fridges":"Fridges",
+        "fridges":"Refrigerators",
         "stovesAndMiniStoves":"Stoves",
         "freezers":"Freezers",
         "miniStoves": "Mini Stoves",

@@ -24,6 +24,7 @@ import filter_subcategory_en from '../subcategory/filter_subcategory_en.json';
 import filter_subcategory_sr from '../subcategory/filter_subcategory_sr.json';
 
 import product_names_mk from '../subcategory/product_names_mk.json';
+import product_names_en from '../subcategory/product_names_en.json';
 import product_names_sr from '../subcategory/product_names_sr.json';
 import product_names_al from '../subcategory/product_names_al.json';
 
@@ -36,7 +37,7 @@ import product_names_al from '../subcategory/product_names_al.json';
     FormsModule
   ],
   templateUrl: './navbar.component.html',
-  styleUrl: './navbar.component.css'
+  styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit, OnDestroy {
 
@@ -95,39 +96,27 @@ export class NavbarComponent implements OnInit, OnDestroy {
   onCategoryClick(category: any): void {
     if (category.category === 'air-conditioners') {
       // Redirect directly to the air-conditioners subcategory that shows all products
-      this._router.navigate([`/category/air-conditioners/subcategory/air-conditioners`], { queryParamsHandling: 'merge' })
+      this._router.navigate([`/c/air-conditioners/air-conditioners`], { queryParamsHandling: 'merge' })
         .then(() => window.scrollTo(0, 0));
     } else if (category.category === 'televisions') {
       // Redirect directly to the televisions subcategory that shows all products
-      this._router.navigate([`/category/televisions/subcategory/televisions`], { queryParamsHandling: 'merge' })
+      this._router.navigate([`/c/televisions/televisions`], { queryParamsHandling: 'merge' })
         .then(() => window.scrollTo(0, 0));
     } else if (category.category === 'hoods') {
       // Redirect directly to the hoods subcategory that shows all products
-      this._router.navigate([`/category/hoods/subcategory/hoods`], { queryParamsHandling: 'merge' })
+      this._router.navigate([`/c/hoods/hoods`], { queryParamsHandling: 'merge' })
         .then(() => window.scrollTo(0, 0));
     } else {
-      this._router.navigate([`/category/${category.category}`], { queryParamsHandling: 'merge' })
+      this._router.navigate([`/c/${category.category}`], { queryParamsHandling: 'merge' })
         .then(() => window.scrollTo(0, 0));
     }
     this.isSearchOpen = false;
   }
 
   onProductClick(product: any): void {
-    // Try to find category and subcategory for the product
-    let category = product.category || '';
-    let subcategory = product.subcategory || '';
-    // If not present, try to infer from product (if you have mapping logic, add here)
-    // Fallback: just go to product page by id
-    if (category && subcategory) {
-      this._router.navigate([`/category/${category}/subcategory/${subcategory}/product/${product.id}`], { queryParamsHandling: 'merge' })
-        .then(() => window.scrollTo(0, 0));
-    } else if (category) {
-      this._router.navigate([`/category/${category}/product/${product.id}`], { queryParamsHandling: 'merge' })
-        .then(() => window.scrollTo(0, 0));
-    } else {
-      this._router.navigate([`/product/${product.id}`], { queryParamsHandling: 'merge' })
-        .then(() => window.scrollTo(0, 0));
-    }
+    // Use the shorter product route
+    this._router.navigate([`/p/${product.id}`], { queryParamsHandling: 'merge' })
+      .then(() => window.scrollTo(0, 0));
     this.isSearchOpen = false;
   }
 
@@ -274,7 +263,7 @@ export class NavbarComponent implements OnInit, OnDestroy {
         filterSubcategory = filter_subcategory_mk;
         break;
       case 'en':
-        productTranslations = product_names_mk; // Use Macedonian as fallback
+        productTranslations = product_names_en;
         subcategoriesComponentConstant = subcategories_en;
         filterSubcategory = filter_subcategory_en;
         break;

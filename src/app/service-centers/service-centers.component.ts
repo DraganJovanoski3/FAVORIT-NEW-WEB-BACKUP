@@ -10,7 +10,7 @@ import service_centers_al from './service_centers_al.json'
   standalone: true,
   imports: [],
   templateUrl: './service-centers.component.html',
-  styleUrl: './service-centers.component.css'
+  styleUrls: ['./service-centers.component.css']
 })
 export class ServiceCentersComponent implements OnInit {
 
