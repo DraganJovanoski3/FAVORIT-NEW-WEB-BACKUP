@@ -25,7 +25,9 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              "src/.htaccess"
+              "src/.htaccess",
+              "src/static-products",
+              "src/static-blogs"
             ],
             "styles": [
               "@angular/material/prebuilt-themes/indigo-pink.css",
@@ -86,7 +88,9 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              "src/.htaccess"
+              "src/.htaccess",
+              "src/static-products",
+              "src/static-blogs"
             ],
             "styles": [
               "@angular/material/prebuilt-themes/indigo-pink.css",
