@@ -6,7 +6,9 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "generate-static": "node src/generate-static-products.js && node src/generate-static-blogs.js",
+    "build-with-static": "npm run generate-static && ng build --configuration production"
   },
   "private": true,
   "dependencies": {

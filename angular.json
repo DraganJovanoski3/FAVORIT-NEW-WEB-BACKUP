@@ -27,7 +27,17 @@
               "src/assets",
               "src/.htaccess",
               "src/static-products",
-              "src/static-blogs"
+              "src/static-blogs",
+              {
+                "glob": "**/*",
+                "input": "dist/favorit-app/static-product-pages",
+                "output": "static-product-pages"
+              },
+              {
+                "glob": "**/*",
+                "input": "dist/favorit-app/static-blog-pages",
+                "output": "static-blog-pages"
+              }
             ],
             "styles": [
               "@angular/material/prebuilt-themes/indigo-pink.css",
@@ -93,7 +103,17 @@
               "src/assets",
               "src/.htaccess",
               "src/static-products",
-              "src/static-blogs"
+              "src/static-blogs",
+              {
+                "glob": "**/*",
+                "input": "dist/favorit-app/static-product-pages",
+                "output": "static-product-pages"
+              },
+              {
+                "glob": "**/*",
+                "input": "dist/favorit-app/static-blog-pages",
+                "output": "static-blog-pages"
+              }
             ],
             "styles": [
               "@angular/material/prebuilt-themes/indigo-pink.css",
