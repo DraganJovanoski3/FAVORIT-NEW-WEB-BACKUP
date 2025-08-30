@@ -8,7 +8,7 @@ import { filter, map, tap } from 'rxjs/operators';
 import { FooterFavorit } from './footer/footer.component';
 import { MatDialog } from '@angular/material/dialog';
 import { PopupComponent } from './popup/popup.component';
-import { Meta, Title } from '@angular/platform-browser';
+import { MetaService } from './meta.service';
 
 const components = [
   NavbarComponent,
@@ -40,8 +40,7 @@ export class AppComponent {
     private router: Router,
     private activatedRoute: ActivatedRoute,
     private dialog: MatDialog,
-    private meta: Meta,
-    private titleService: Title
+    private metaService: MetaService
   ) {
     this.ensureLangQueryParam();
     this.listenToRouteChanges();
@@ -109,25 +108,16 @@ export class AppComponent {
    * Updates the meta tags based on the route data.
    */
   private updateMetaTags(data: any) {
-    const defaultTitle = 'Favorit Electronics';
-    const defaultDescription = 'Your trusted electronics partner';
-    const defaultImage = 'https://favoritelectronics.com/assets/default-image.jpg';
-    const currentUrl = window.location.href;
-
-    // Set page title
-    this.titleService.setTitle(data?.title || defaultTitle);
-
-    // Update Open Graph and Twitter meta tags
-    this.meta.updateTag({ name: 'description', content: data?.description || defaultDescription });
-    this.meta.updateTag({ property: 'og:title', content: data?.title || defaultTitle });
-    this.meta.updateTag({ property: 'og:description', content: data?.description || defaultDescription });
-    this.meta.updateTag({ property: 'og:image', content: data?.image || defaultImage });
-    this.meta.updateTag({ property: 'og:url', content: currentUrl });
-    this.meta.updateTag({ property: 'og:type', content: 'website' });
-
-    this.meta.updateTag({ name: 'twitter:title', content: data?.title || defaultTitle });
-    this.meta.updateTag({ name: 'twitter:description', content: data?.description || defaultDescription });
-    this.meta.updateTag({ name: 'twitter:image', content: data?.image || defaultImage });
-    this.meta.updateTag({ name: 'twitter:card', content: 'summary_large_image' });
+    if (data?.title || data?.description || data?.image) {
+      this.metaService.updateMetaTags({
+        title: data.title,
+        description: data.description,
+        image: data.image,
+        url: window.location.pathname,
+        type: 'website'
+      });
+    } else {
+      this.metaService.resetToDefault();
+    }
   }
 }

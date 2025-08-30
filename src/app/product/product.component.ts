@@ -3,6 +3,7 @@ import { ActivatedRoute, Router, RouterModule } from "@angular/router";
 import { combineLatest } from "rxjs";
 import { CommonModule } from "@angular/common";
 import { Location } from '@angular/common';
+import { MetaService } from '../meta.service';
 
 // Product lists and specification translations
 import productList_en from './products_list_en.json';
@@ -92,7 +93,8 @@ export class ProductComponent implements OnInit, AfterViewInit {
     private _route: ActivatedRoute,
     private _router: Router,
     private renderer: Renderer2,
-    private _location: Location
+    private _location: Location,
+    private metaService: MetaService
   ) {}
 
   ngOnInit(): void {
@@ -131,6 +133,23 @@ export class ProductComponent implements OnInit, AfterViewInit {
       }
 
       this.product = this.productList.find(p => p.id === this.productId);
+
+      // Update meta tags for SEO and social media sharing
+      if (this.product) {
+        const productImage = this.product.pictures && this.product.pictures.length > 0 
+          ? this.product.pictures[0] 
+          : '/assets/512X512.png';
+        
+        this.metaService.updateProductMetaTags({
+          name: this.product.name,
+          description: Array.isArray(this.product.description) 
+            ? this.product.description.join(' ') 
+            : this.product.description,
+          image: productImage,
+          id: this.product.id.toString(),
+          lang: this.currentLang
+        });
+      }
 
       // Only show product name in breadcrumbs
       this.breadcrumbs = [{ label: this.product?.name || '', url: '' }];
