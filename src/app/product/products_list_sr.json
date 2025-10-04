@@ -261,7 +261,7 @@
       "assets/Home appliances/COMBINED INDEPENDENT COOKER К 622 WWF/3-13.png",
       "assets/Home appliances/COMBINED INDEPENDENT COOKER К 622 WWF/5-6.png"
     ],
-    "specificationsDoc": "assets/PDF-Specifications/UPATSTVO-MK-GB-AL-SR-FAVORIT.pdf",
+    "specificationsDoc": "assets/Home appliances/COMBINED INDEPENDENT COOKER К 622 WWF/K 622 WWF.pdf",
     "specifications": {
       "ZAPREMINA RERNE BRUTO 42L": "NETO ZAPREMINA 36.6L",
       "BOJA": "BELO",
@@ -611,20 +611,18 @@
   },
   {
     "id": 19,
-    "name": "Mašina za sušenje veša L – 71 C",
+    "name": "Mašina za sušenje veša W-71 C",
     "description": [
       "Predstavljamo našu efikasnu kondenzacionu mašinu za sušenje veša sa kapacitetom od 7 kg i 15 programa. Sadrži indikatore za jednostavno održavanje, sigurnosnu zaštitu za decu i elegantan LED ekran. Sa svojim kompaktnim dizajnom i klasičnom belom završnom obradom, savršeno se uklapa u svaki moderni dom."
     ],
     "pictures": [
-      "assets/Home appliances/Dryer L – 71 C/FAVORIT-L-71-C-13-1024x576.png",
-      "assets/Home appliances/Dryer L – 71 C/FAVORIT-L-71-C-14-1024x576.png",
-      "assets/Home appliances/Dryer L – 71 C/FAVORIT-L-71-C-15-1024x576.png"
+      "assets/Home appliances/Dryer L – 71 C/W-71 C.png"
     ],
-    "specificationsDoc": "assets/Product Spec/L-71-C-upatstva.pdf",
+    "specificationsDoc": "assets/home appliances/Dryer L – 71 C/upatstvo srpski.pdf",
     "specifications": {
       "TIP": "KONDENZACIONA",
       "KAPACITET": "7 KG",
-      "VOLUMEN BUBNJA": "100 LITARA",
+      "VOLUMEN BUBNJA": "90 LITARA",
       "ENERGETSKA KLASA": "B",
       "POLOŽAJ REZERVOARA ZA VODU": "GORE",
       "BROJ PROGRAMA": "15",
@@ -643,20 +641,18 @@
   },
   {
     "id": 20,
-    "name": "Mašina za sušenje veša L – 81 C",
+    "name": "Mašina za sušenje veša N-82 C",
     "description": [
       "Predstavljamo našu najnoviju kondenzacionu mašinu za sušenje veša, sa impresivnim kapacitetom od 8 kg i prostranim bubnjem zapremine 112 litara, idealnim za tretiranje velikih količina veša sa lakoćom. Sa energetskom klasom B, garantuje efikasnost bez kompromisa na performansama."
     ],
     "pictures": [
-      "assets/Home appliances/Dryer L – 81 C/FAVORIT-L-81-C-16-1024x576.png",
-      "assets/Home appliances/Dryer L – 81 C/FAVORIT-L-81-C-17.png",
-      "assets/Home appliances/Dryer L – 81 C/FAVORIT-L-81-C-18-1024x576.png"
+      "assets/Home appliances/Dryer L – 81 C/N-82 C.png"
     ],
-    "specificationsDoc": "assets/Product Spec/L-81-C-Upatstva.pdf",
+    "specificationsDoc": "assets/Home appliances/Dryer L – 81 C/Upatstvo Srpski.pdf",
     "specifications": {
       "TIP": "KONDENZACIONA",
       "KAPACITET": "8 KG",
-      "VOLUMEN BUBNJA": "112 LITARA",
+      "VOLUMEN BUBNJA": "101 LITARA",
       "ENERGETSKA KLASA": "B",
       "LED EKRAN": "√",
       "POLOŽAJ REZERVOARA ZA VODU": "√",
@@ -681,58 +677,19 @@
     }
   },
   {
-    "id": 21,
-    "name": "Mašina za sušenje veša W – 72 C",
-    "description": [
-      "Predstavljamo našu efikasnu kondenzacionu mašinu za sušenje veša, dizajniranu za maksimalnu praktičnost i performanse. Sa prostranim kapacitetom od 7kg i zapreminom bubnja od 100 litara, efikasno se nosi sa vešom. Sa energetskom klasom B, nudi 15 raznovrsnih programa, uključujući opciju odloženog starta za fleksibilnost."
-    ],
-    "pictures": [
-      "assets/Home appliances/Dryer W – 72 C/3.W-72-C-nova-ispraven-izgled-10-1024x576.png",
-      "assets/Home appliances/Dryer W – 72 C/3.W-72-C-nova-ispraven-izgled-22-1024x576.png"
-    ],
-    "specificationsDoc": "assets/Product Spec/W-72-C-upatstva.pdf",
-    "specifications": {
-      "TIP": "KONDENZACIONA",
-      "KAPACITET": "7KG",
-      "VOLUMEN BUBNJA": "100 LITARA",
-      "ENERGETSKA KLASA": "B",
-      "LED EKRAN": "7 SEGMENTA",
-      "POLOŽAJ REZERVOARA ZA VODU": "GORE",
-      "BROJ PROGRAMA": "15",
-      "ODLOŽENI START": "√",
-      "INDIKATOR PUNE POSUDE VODE": "√",
-      "INDIKATOR ČIŠĆENJA FILTERA": "√",
-      "INDIKATOR ČIŠĆENJA KONDENZATORA": "√",
-      "SIGNAL ZA KRAJ SUŠENJA": "√",
-      "SIGNAL ZA BRISANJE PROGRAMA": "√",
-      "BRZI PROGRAM SUŠENJA": "√",
-      "FUNKCIJA PROTIV GUŽVANJA": "√",
-      "PROGRAM SUŠENJA PAMUKA": "DODATNO SUŠENJE PAMUKA, SUŠENJE PAMUKA BEZ POTREBE ZA PEGLOM, SUŠENJE PAMUKA SA POTREBOM ZA PEGLOM",
-      "PROGRAM SUŠENJA SINTETIKE": "SUŠENJE SINTETIKE BEZ POTREBE ZA PEGLOM, SUŠENJE SINTETIKE SA POTREBOM ZA PEGLOM, PROGRAM ZA BEBE",
-      "PROGRAM ZA BEBE": "√",
-      "OSTALO": "-KOŠULJE 12 ', BRZI PROGRAM 29', OSVEŽAVANJE, SUŠENJE NA 10 ', 30', 60 ', TEKSAS, DELIKATNO -ZAŠTITA ZA DECU, -DETEKCIJA PREOSTALOG VREMENA -BUKA 65DB -POTROŠNJA ELEKTRIČNE ENERGIJE: 561 KWH GODIŠNJE -NAPON 220-240V -SNAGA: 2700W",
-      "VISINA": "MIN: 84.5 CM",
-      "ŠIRINA": "59.6 CM",
-      "DUBINA": "56.3 CM",
-      "TEŽINA": "35,2 КГ",
-      "BOJA": "BELA"
-    }
-  },
-  {
     "id": 22,
-    "name": "Mašina za sušenje veša W – 82 HP (sa TOPLINSKOM PUMPOM)",
+    "name": "Mašina za sušenje veša C-82T HP",
     "description": [
       "Predstavljamo našu najnoviju mašinu za sušenje veša koja koristi toplotnu pumpu za nezabeleženu energetsku efikasnost. Sa impresivnim kapacitetom od 8kg i prostranim bubnjem zapremine 112 litara, lako se nosi sa velikim količinama veša. Sa ocenom A++, garantuje optimalne performanse uz minimalnu potrošnju energije."
     ],
     "pictures": [
-      "assets/Home appliances/Dryer W – 82 HP (with HEAT PUMP)/4.-FAVORIT-W-82-HP-13-1024x576.png",
-      "assets/Home appliances/Dryer W – 82 HP (with HEAT PUMP)/4.-FAVORIT-W-82-HP-15-1024x576.png"
+      "assets/Home appliances/Dryer W – 82 HP (with HEAT PUMP)/C-82T HP.png"
     ],
-    "specificationsDoc": "assets/Product Spec/W-82-HP-upatstva.pdf",
+    "specificationsDoc": "assets/Home appliances/Dryer W – 82 HP (with HEAT PUMP)/upatstvo srpski.pdf",
     "specifications": {
       "TIP": "SA TOPLINSKOM PUMPOM",
       "KAPACITET": "8KG",
-      "VOLUMEN BUBNJA": "112 LITARA",
+      "VOLUMEN BUBNJA": "101 LITARA",
       "ENERGETSKA KLASA": "A++",
       "LED EKRAN": "7 SEGMENTA",
       "POLOŽAJ REZERVOARA ZA VODU": "GORE",
@@ -3040,7 +2997,7 @@
     "pictures": [
       "assets/Small domestic appliances/Stand mixer HM9109/Mikser-so-postolje-HM9109-45-1024x576.png"
     ],
-    "specificationsDoc": "assets/PDF-Specifications/Uputstvo-za-mikser-sa-postoljem-HM9109.pdf",
+    "specificationsDoc": "assets/Small domestic appliances/Stand mixer HM9109/Upatstvo-za-mikser-so-postolje-HM9109.pdf",
     "specifications": {
       "snaga": "400 W",
       "rotirajuća posuda": "√",
@@ -3169,7 +3126,7 @@
     "pictures": [
       "assets/Small domestic appliances/Toster TA01101/toster-za-dvopek-TA01101-45-1024x576.png"
     ],
-    "specificationsDoc": "assets/Product Spec/GR572-GR573-UPATSTVO.pdf",
+    "specificationsDoc": "assets/Small domestic appliances/Toster TA01101/Upatstvo-za-toster-TA01101.pdf",
     "specifications": {
       "SNAGA": "2000W",
       "PODEŠAVAJUĆI TERMOSTAT": "√",
@@ -4238,41 +4195,45 @@
   },
   {
     "id": 144,
-    "name": "LED TV D50F135R-F (FHD ANDROID 14)",
+    "name": "LED Televizor 50U20B-20D",
     "description": [
-      "Ovaj 50-inčni (126cm) LED Smart TV sa Full HD (1920×1080) rezolucijom nudi jasnu i živopisnu sliku, dok Android 14 operativni sistem omogućava lak pristup aplikacijama preko Google Play Store-a. Sa ugrađenim Wi-Fi-jem, dva HDMI i dva USB porta, kao i podrškom za DVB-T2/S2, ovaj televizor je savršen za moderno kućno kino. "
+      "Ovaj 50-inčni (126 cm) LED Smart TV sa Full HD (1920×1080) rezolucijom pruža jasnu i živopisnu sliku, dok Android 14 operativni sistem omogućava lak pristup aplikacijama putem Google Play Store-a. Sa ugrađenim Wi-Fi-jem, dva HDMI i dva USB porta, kao i podrškom za DVB-T2/S2, ovaj televizor je idealan za moderno kućno kino."
     ],
     "pictures": [
-      "assets/TV/LED TV D50F135R FHD/6.-FAVORIT-TV-50F135R-F.png"
+      "assets/TV/LED TV 50U20B-20D/TV 50U20B-20D-front.png",
+      "assets/TV/LED TV 50U20B-20D/TV 50U20B-20D-back.png",
+      "assets/TV/LED TV 50U20B-20D/TV 50U20B-20D-side.png",
+      "assets/TV/LED TV 50U20B-20D/TV 50U20B-20D-top.png",
+      "assets/TV/LED TV 50U20B-20D/TV 50U20B-20D-all.png"
     ],
-    "specificationsDoc": "assets/TV/LED TV D50F135R FHD/UPATSTVA ZA MODELOT (red.br.6) D50F135R-F.pdf",
+    "specificationsDoc": "assets/TV/LED TV 50U20B-20D/UPATSTVO ZA MODEL 50U20B-20D.pdf",
     "specifications": {
       "Dijagonala": "50\" (126CM)",
       "Ekran": "LED",
       "Rezolucija": "1920×1080 (FULL HD)",
-      "Tjuner": "DVB-T2/S2",
-      "Osvetljenje": "200CD/M2 +/-10%",
+      "Tjuner": "DVB-C/T/T2/S2",
+      "Osvetljenje": "+/-10%  180nit",
       "Vreme odziva": "8 ms",
-      "SMART": "√",
-      "Bežično povezivanje": "Ugrađeno",
-      "Povezivanje": "LAN-1, HEAD PHONE 1; COAX AUDIO-1; RF IN 2; HDMI, 2 USB ulaza, CI 1, WI-FI",
-      "Operativni sistem": "ANDROID 14",
-      "Boja okvira": "Crna",
+      "Smart": "√",
+      "Bežični": "Ugrađen",
+      "Povezivanje": "SLUŠALICE 1; COAX AUDIO-1; RF IN 2; HDMI CEC; HDMI ARC; 2 USB ULAZA; CI 1; WI-FI; CI+",
+      "Android operativni sistem": "ANDROID 14",
+      "Boja okvira": "CRNA",
       "Memorija": "ROM 8 GB, RAM 1 GB",
-      "Jezik": "Makedonski; Engleski; Albanski; Srpski",
-      "Daljinski": "Sa direktnim Netflix & YouTube dugmetom",
-      "Internet": "SMART TV pretraživač (Netflix; YouTube)",
+      "Jezici": "MAKEDONSKI; ENGLESKI; ALBANSKI; SRPSKI",
+      "Daljinski upravljač": "SA DIREKTNIM NETFLIX; YOUTUBE DUGMETOM",
+      "Internet": "SMART TV BROWSER (NETFLIX; YOUTUBE)",
       "Podržava Google Play aplikacije": "√",
-      "PVR funkcija snimanja": "√",
+      "PVR funkcija za snimanje": "√",
       "DVB-C": "√",
       "DVB-T2/S2": "√",
       "Zvučnici": "2X10W",
-      "Noge": "Crne",
-      "Dimenzije (ŠxVxD) sa nogarama": "1089MM X 695MM X 239MM",
-      "Dimenzije (ŠxVxD) bez nogara": "1089MM X 632MM X 85MM",
-      "Težina (bruto/neto)": "9.57 / 7.16 kg"
+      "Nosači": "CRNI",
+      "Dimenzije (Š×V×D) sa nosačima": "1111MM X 705MM X 228MM",
+      "Dimenzije (Š×V×D) bez nosača": "1111MM X 645MM X 83MM",
+      "Težina (bruto/neto)": "10.90 / 8.40 KG"
     }
-  },
+  },  
   {
     "id": 145,
     "name": "LED TV 65U20B-G1",
@@ -4670,7 +4631,7 @@
     ],
     "specificationsDoc": "assets/Product Spec/Upatstvo za upotreba VC-09 VC-17 VC-19 VC-33.pdf",
     "specifications": {
-      "SNAGA": "2600 W",
+      "SNAGA": "1600W",
       "2 plastične cevi": "√",
       "Indikator pune kese za prašinu": "√",
       "Tekstilna kesa za višekratnu upotrebu od 2 litra": "√",
@@ -4747,7 +4708,83 @@
       "Ručka za lak transport": "√",
       "Dodaci": "plastična četka za pod, 2 u 1 uski adapter za prašinu, adapter za čišćenje tapacirunga, držač za dodatke"
     }
-  }
-      
-                
+  },
+    {
+          "id": 160,
+          "name": "Mašina za pranje veša A-9143 BLDC",
+          "description": [],
+          "pictures":[
+            "assets/Home appliances/WASHING MACHINE A-9143 BLDC/10. FAVORIT A-9143 BLDC.png"
+          ],
+          "specificationsDoc":"assets/Home appliances/WASHING MACHINE A-9143 BLDC/A-9143 BLDC-PDF.PDF",
+          "specifications": {
+            "Dimenzije (V/Š/D)": "84.5 / 60.5 / 60.40 CM",
+            "Maksimalna brzina centrifuge (o/min)": "1400",
+            "Maksimalni kapacitet": "9 KG",
+            "Inoks bubanj": "61 L",
+            "Inverter motor": "√ (10 GODINA GARANCIJE)",
+            "Digitalni LCD ekran na dodir": "√",
+            "Opcija Steam Assist (pranje parom)": "√",
+            "Odloženi start": "√",
+            "Programi": "15",
+            "Elektronski programator": "√",
+            "Dugme za kontrolu temperature vode": "√",
+            "Energetska klasa": "A",
+            "Sistem zaštite od izlivanja": "√",
+            "Zaštita od pene": "√",
+            "Automatski balans sistem": "√",
+            "Sistem za otkrivanje grešaka": "√",
+            "Dečija zaštita": "√",
+            "Uklonjiv gornji poklopac": "√",
+            "Potrošnja energije": "49 KWH/CIKLUS",
+            "Potrošnja vode": "50 L/CIKLUS",
+            "Nivo buke pri pranju": "50 DB",
+            "Nivo buke pri centrifugi": "75 DB",
+            "Super brzi program": "15 MINUTA NA 30°",
+            "Brzi program": "60 MINUTA NA 60°",
+            "Dugme za kontrolu brzine": "√",
+            "Senzor za pola punjenja": "√",
+            "Program za predpranje pamuka": "√"
+          }
+
+        },
+        {
+          "id": 161,
+          "name": "Mašina za sušenje veša L-71 HP",
+          "description": [
+            "Predstavljamo našu efikasnu kondenzacionu mašinu za sušenje veša sa kapacitetom od 7 kg i 15 programa. Opremljena indikatorima za održavanje, sigurnošću za zaključavanje za decu i modernim LED ekranom. Sa svojim kompaktim dizajnom i klasičnom belom završnom obradom, savršeno je rešenje za svaku modernu kuću."
+          ],
+          "pictures": [
+            "assets/Home appliances/Dryer L-71 HP/2. FAVORIT L-71HP.png"
+          ],
+          "specificationsDoc": "assets/Home appliances/Dryer L-71 HP/52560682-250325-00-SRB.pdf",
+          "specifications": {
+            "Tip": "Sa toplotnom pumpom",
+            "Kapacitet": "7kg",
+            "Zapremina bubnja": "90 LITARA",
+            "Energetska klasa": "A++",
+            "LED ekran": "7 SEGMENTA",
+            "Pozicija rezervoara za vodu": "GORE",
+            "Broj programa": "15",
+            "Odloženi start": "√",
+            "Indikator punog rezervoara za vodu": "√",
+            "Indikator čišćenja filtera": "√",
+            "Indikator čišćenja kondenzatora": "√",
+            "Signal završetka sušenja": "√",
+            "Signal zaštićenog programa": "√",
+            "Brzi program sušenja": "√",
+            "Anti-gužvanje funkcija": "√",
+            "Program za pamuk": "Dodatno sušenje pamuka, Sušenje pamuka bez peglanja, Sušenje pamuka sa peglanjem.",
+            "Program za sintetiku": "Sušenje sintetike bez peglanja, Sušenje sintetike sa peglanjem.",
+            "Sintetika": "√",
+            "Program za bebe": "√",
+            "Ostalo": "-Bluze 30’, EXPRESS 45’, OSVEŽAVANJE, SUŠENJE 20’, 40’, 60’, VUNA, DELIKATNO -DEČIJA ZAŠTITA -DETEKCIJA PREOSTALOG VREMENA -NIVO BUKE 65DB -POTROŠNJA ENERGIJE: 561 KWH GODIŠNJE -NAPON 220-240V -SNAGA: 2700W",
+            "Visina": "MIN: 84.5 CM",
+            "Širina": "59.6 CM",
+            "Dubina": "60.9 CM",
+            "Težina": "32.5 KG",
+            "Boja": "BELA"
+          }
+        }
+        
 ]

@@ -11,6 +11,88 @@ body {
   color: #333;
 }
 
+/* Loading State Styles */
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  text-align: center;
+}
+
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #667eea;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 20px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loading-container p {
+  color: #666;
+  font-size: 16px;
+}
+
+/* Product Not Found State Styles */
+.product-not-found {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  padding: 20px;
+}
+
+.product-not-found .not-found-content {
+  text-align: center;
+  background: white;
+  padding: 60px 40px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+}
+
+.product-not-found h1 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.product-not-found p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.product-not-found .btn {
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  background: #667eea;
+  color: white;
+  display: inline-block;
+}
+
+.product-not-found .btn:hover {
+  background: #5a6fd8;
+  transform: translateY(-2px);
+}
+
 /* Container for the entire product page */
 .product-page {
   max-width: 1200px;
@@ -80,16 +162,19 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   margin-top: 60px;
+  padding-left: 15px;
 }
 
 .product-title {
   font-size: 2rem;
   margin-bottom: 10px;
+  padding-left: 15px;
 }
 
 .product-description {
   font-size: 1rem;
   margin-bottom: 20px;
+  display: none;
 }
 
 .company-name {
@@ -97,6 +182,7 @@ body {
   color: #204880;
   padding-bottom: 8px;
   font-weight: 500;
+  padding-left: 15px;
 }
 
 /* Specifications Table */
@@ -502,5 +588,192 @@ body {
     font-size: 11px;
     flex-wrap: nowrap;
     overflow: hidden;
+  }
+}
+
+/* Social Media Sharing Buttons */
+.sharing-buttons {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
+}
+
+.sharing-buttons h3 {
+  margin: 0 0 10px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.share-links {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.share-btn {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.share-btn.whatsapp {
+  background-color: #25D366;
+  color: white;
+}
+
+.share-btn.viber {
+  background-color: #665CAC;
+  color: white;
+}
+
+.share-btn.facebook {
+  background-color: #1877F2;
+  color: white;
+}
+
+.share-btn.copy {
+  background-color: #6c757d;
+  color: white;
+}
+
+.share-btn:hover {
+  opacity: 0.8;
+  transform: translateY(-1px);
+}
+
+.share-note {
+  font-size: 12px;
+  color: #666;
+  margin: 0;
+  font-style: italic;
+  display: none;
+}
+
+/* Social Media Sharing Styles */
+.social-sharing {
+  margin: 20px 0;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
+}
+
+.social-sharing h3 {
+  margin-bottom: 15px;
+  color: #333;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.share-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-start;
+}
+
+.share-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  min-width: 120px;
+  justify-content: center;
+}
+
+.share-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.share-btn i {
+  font-size: 16px;
+}
+
+.share-btn span {
+  font-size: 14px;
+}
+
+/* Facebook */
+.share-btn.facebook {
+  background: #1877f2;
+  color: white;
+}
+
+.share-btn.facebook:hover {
+  background: #166fe5;
+}
+
+/* Instagram */
+.share-btn.instagram {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  color: white;
+}
+
+.share-btn.instagram:hover {
+  opacity: 0.9;
+}
+
+/* Twitter */
+.share-btn.twitter {
+  background: #1da1f2;
+  color: white;
+}
+
+.share-btn.twitter:hover {
+  background: #1a91da;
+}
+
+/* WhatsApp */
+.share-btn.whatsapp {
+  background: #25d366;
+  color: white;
+}
+
+.share-btn.whatsapp:hover {
+  background: #22c55e;
+}
+
+/* Viber */
+.share-btn.viber {
+  background: #665cac;
+  color: white;
+}
+
+.share-btn.viber:hover {
+  background: #5a4f9a;
+}
+
+@media (max-width: 768px) {
+  .share-links {
+    flex-direction: column;
+  }
+  
+  .share-btn {
+    text-align: center;
+  }
+  
+  .share-buttons {
+    flex-direction: column;
+  }
+  
+  .share-btn {
+    min-width: 100%;
   }
 }

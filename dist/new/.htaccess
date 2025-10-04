@@ -1,0 +1,62 @@
+# Enable rewrite engine
+RewriteEngine On
+RewriteBase /
+
+# Bot detection for social media and search engines
+SetEnvIfNoCase User-Agent "facebookexternalhit" is_facebook
+SetEnvIfNoCase User-Agent "Twitterbot|LinkedInBot|Pinterest|Tumblr|Slackbot|Discordbot|TelegramBot|SkypeUriPreview|BingPreview|Googlebot|Baiduspider|YandexBot|DuckDuckBot|Slurp|Applebot|Facebot|Embedly|Viber|WhatsApp|CFNetwork" is_bot
+SetEnvIfNoCase User-Agent ".*" is_bot
+
+# Cache control headers
+<IfModule mod_headers.c>
+  # Static HTML files - short cache for updates
+  <FilesMatch "\.html$">
+    Header set Cache-Control "max-age=3600, must-revalidate"
+    Header set Vary "User-Agent"
+  </FilesMatch>
+  
+  # Assets - long cache
+  <FilesMatch "\.(js|css|png|jpg|jpeg|gif|ico|pdf)$">
+    Header set Cache-Control "max-age=31536000, immutable"
+  </FilesMatch>
+</IfModule>
+
+# Compression
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json
+</IfModule>
+
+# Product page routing - serve static HTML to ALL requests
+# Handle /p/ pattern (short URL) - serve static HTML
+RewriteCond %{QUERY_STRING} !^.*from_static=true.*$
+RewriteCond %{REQUEST_URI} !^/product-([0-9]+)\.html$
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^p/([0-9]+) /product-$1.html [L]
+
+# Handle /product/ pattern (full URL) - serve static HTML  
+RewriteCond %{QUERY_STRING} !^.*from_static=true.*$
+RewriteCond %{REQUEST_URI} !^/product-([0-9]+)\.html$
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^product/([0-9]+) /product-$1.html [L]
+
+# Serve static HTML files directly (fallback)
+RewriteCond %{REQUEST_URI} ^/product-([0-9]+)\.html$
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^(.*)$ - [L]
+
+# Category page routing - serve static HTML to bots
+RewriteCond %{ENV:is_bot} ^1$
+RewriteCond %{QUERY_STRING} !^.*from_static=true.*$
+RewriteCond %{REQUEST_URI} !^/category-([a-zA-Z0-9\-]+)\.html$
+RewriteRule ^category/([a-zA-Z0-9\-]+) /category-$1.html [L]
+
+# Redirect users (not bots) from static HTML to Angular app
+RewriteCond %{ENV:is_bot} !^1$
+RewriteCond %{QUERY_STRING} !^.*from_static=true.*$
+RewriteCond %{REQUEST_URI} ^/product-([0-9]+)\.html$
+RewriteRule ^product-([0-9]+)\.html$ /p/$1?from_static=true [R=302,L]
+
+# Angular app routing for regular users
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.html [L]

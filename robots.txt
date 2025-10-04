@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://favoritelectronics.com/sitemap.xml
+
+# Disallow admin and private areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /api/
+Disallow: /new/admin/
+
+# Allow static HTML files for bots
+Allow: /product-*.html
+Allow: /category-*.html
+
+# Crawl delay for better server performance
+Crawl-delay: 1
+

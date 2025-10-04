@@ -1,0 +1,7 @@
+{
+    "errorCode": "404",
+    "errorTitle": "Faqja nuk u gjet",
+    "errorMessage": "Faqja që po kërkoni mund të jetë hequr, të ketë ndryshuar emrin ose të jetë përkohësisht e padisponueshme.",
+    "goHomeButton": "Shko në fillim",
+    "goBackButton": "Kthehu prapa"
+}

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="63f03af0-0458-416a-b479-520f7c7b9067" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/all-products/AllProductsComponent.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/all-products/all-products.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/all-products/all-products.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/all-products/all-products.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/all-products/all-products.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/category/category.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/category/category.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/category/category.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/category/category.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/category/category.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/category/category.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/contact/contact.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/contact/contact.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/footer/footer.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/footer/footer.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/home/home.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/home/home.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/home/home.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/home/home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/home/home.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/navbar/navbar.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/navbar/navbar.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/navbar/navbar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/navbar/navbar.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/navbar/navbar.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/navbar/navbar.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/navbar/navbar_al.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/navbar/navbar_al.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/navbar/navbar_en.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/navbar/navbar_en.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/navbar/navbar_mk.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/navbar/navbar_mk.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/navbar/navbar_sr.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/navbar/navbar_sr.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/product/product.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/product/product.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/product/product.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/product/product.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/product/product.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/product/product.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/product/products_list_al.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/product/products_list_al.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/product/products_list_en.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/product/products_list_en.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/product/products_list_mk.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/product/products_list_mk.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/product/products_list_sr.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/product/products_list_sr.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/subcategory/subcategories_al_new.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/subcategory/subcategories_al_new.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/subcategory/subcategories_en_new.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/subcategory/subcategories_en_new.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/subcategory/subcategories_mk_new.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/subcategory/subcategories_mk_new.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/subcategory/subcategories_sr_new.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/subcategory/subcategories_sr_new.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/subcategory/subcategory.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/subcategory/subcategory.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/subcategory/subcategory.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/subcategory/subcategory.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/subcategory/subcategory.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/subcategory/subcategory.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Home appliances/COMBINED FREESTANDING COOKERS К 622 WWFT/FAVORIT-K-622-WWFT-10-1-1024x576.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/Home appliances/COMBINED FREESTANDING COOKERS К 622 WWFT/FAVORIT-K-622-WWFT-10-1-1024x576.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Home appliances/COMBINED INDEPENDENT COOKER К 622 SF/FAVORIT-K-622-SF-10-1024x576.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/Home appliances/COMBINED INDEPENDENT COOKER К 622 SF/FAVORIT-K-622-SF-10-1024x576.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Home appliances/COMBINED REFRIGERATOR CF 278N/FAVORIT-CF-278-01-1024x576.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/Home appliances/COMBINED REFRIGERATOR CF 278N/FAVORIT-CF-278-01-1024x576.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Home appliances/COMBINED REFRIGERATOR CF 278N/FAVORIT-CF-278-02-1024x576.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/Home appliances/COMBINED REFRIGERATOR CF 278N/FAVORIT-CF-278-02-1024x576.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Home appliances/COMBINED REFRIGERATOR CF 278N/FAVORIT-CF-278-S-01-1024x576.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/Home appliances/COMBINED REFRIGERATOR CF 278N/FAVORIT-CF-278-S-01-1024x576.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Home appliances/COMBINED REFRIGERATOR CF 278N/FAVORIT-CF-278-S-02-1024x576.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/Home appliances/COMBINED REFRIGERATOR CF 278N/FAVORIT-CF-278-S-02-1024x576.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Home appliances/COMBINED REFRIGERATOR CF 374N/FAVORIT-CF-374-01-1024x576.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/Home appliances/COMBINED REFRIGERATOR CF 374N/FAVORIT-CF-374-01-1024x576.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Home appliances/COMBINED REFRIGERATOR CF 374N/FAVORIT-CF-374-02-1024x576.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/Home appliances/COMBINED REFRIGERATOR CF 374N/FAVORIT-CF-374-02-1024x576.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Home appliances/COMBINED REFRIGERATOR CF 374N/FAVORIT-CF-374-I-01-1024x576.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/Home appliances/COMBINED REFRIGERATOR CF 374N/FAVORIT-CF-374-I-01-1024x576.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Home appliances/COMBINED REFRIGERATOR NF 379N – NO FROST without dispensary/FAVORIT-NF-373-01-1024x576.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/Home appliances/COMBINED REFRIGERATOR NF 379N – NO FROST without dispensary/FAVORIT-NF-373-01-1024x576.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Home appliances/COMBINED REFRIGERATOR NF 379N – NO FROST without dispensary/FAVORIT-NF-373-02-1024x576.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/Home appliances/COMBINED REFRIGERATOR NF 379N – NO FROST without dispensary/FAVORIT-NF-373-02-1024x576.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Home appliances/COMBINED REFRIGERATOR NF 379N – NO FROST without dispensary/FAVORIT-NF-373-I-01-1024x576.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/Home appliances/COMBINED REFRIGERATOR NF 379N – NO FROST without dispensary/FAVORIT-NF-373-I-01-1024x576.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Home appliances/COMBINED REFRIGERATOR NF 379N – NO FROST without dispensary/FAVORIT-NF-373-I-02-1024x576.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/Home appliances/COMBINED REFRIGERATOR NF 379N – NO FROST without dispensary/FAVORIT-NF-373-I-02-1024x576.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Home appliances/ELECTRIC INDEPENDENT COOKER EC 640 SF/FAVORIT-EC-640-SF-10-1024x576.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/Home appliances/ELECTRIC INDEPENDENT COOKER EC 640 SF/FAVORIT-EC-640-SF-10-1024x576.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Home appliances/Electric Freestanding Cooker EC 640 WWF/FAVORIT-EC-640-WWF-10-1024x576.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/Home appliances/Electric Freestanding Cooker EC 640 WWF/FAVORIT-EC-640-WWF-10-1024x576.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Home appliances/Electric Independent Cooker EC 540 SF/Elektricen-sporet-EC-540-SF-43-1024x576.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/Home appliances/Electric Independent Cooker EC 540 SF/Elektricen-sporet-EC-540-SF-43-1024x576.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Home appliances/Electric Independent Cooker EC 540 WWFT/Elektricen-sporet-EC-540-WWFT-44-1024x576.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/Home appliances/Electric Independent Cooker EC 540 WWFT/Elektricen-sporet-EC-540-WWFT-44-1024x576.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Home appliances/GLASS-CERAMIC INDEPENDENT COOKER CC 500 SF/FAVORIT-CC-500-SF-10-1024x576.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/Home appliances/GLASS-CERAMIC INDEPENDENT COOKER CC 500 SF/FAVORIT-CC-500-SF-10-1024x576.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Home appliances/GLASS-CERAMIC INDEPENDENT COOKER CC 500 WWF/FAVORIT-CC-500-WWF-10-1024x576.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/Home appliances/GLASS-CERAMIC INDEPENDENT COOKER CC 500 WWF/FAVORIT-CC-500-WWF-10-1024x576.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Home appliances/REFRIGERATOR WITH CHAMBER R1001N/FAVORIT-R-1001-01-1024x576.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/Home appliances/REFRIGERATOR WITH CHAMBER R1001N/FAVORIT-R-1001-01-1024x576.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Home appliances/REFRIGERATOR WITH CHAMBER R1001N/FAVORIT-R-1001-02-1024x576.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/Home appliances/REFRIGERATOR WITH CHAMBER R1001N/FAVORIT-R-1001-02-1024x576.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Home appliances/REFRIGERATOR WITHOUT CHAMBER L1002N/FAVORIT-L-1002-01-1024x576.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/Home appliances/REFRIGERATOR WITHOUT CHAMBER L1002N/FAVORIT-L-1002-01-1024x576.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Home appliances/REFRIGERATOR WITHOUT CHAMBER L1002N/FAVORIT-L-1002-02-1024x576.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/Home appliances/REFRIGERATOR WITHOUT CHAMBER L1002N/FAVORIT-L-1002-02-1024x576.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Home appliances/REFRIGERATOR WITHOUT CHAMBER L2653N/FAVORIT-L-2653-01-1024x576.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/Home appliances/REFRIGERATOR WITHOUT CHAMBER L2653N/FAVORIT-L-2653-01-1024x576.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Home appliances/REFRIGERATOR WITHOUT CHAMBER L2653N/FAVORIT-L-2653-02-1024x576.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/Home appliances/REFRIGERATOR WITHOUT CHAMBER L2653N/FAVORIT-L-2653-02-1024x576.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Home appliances/REFRIGERATOR WITHOUT CHAMBER L2653N/FAVORIT-L-2653-S-01-1024x576.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/Home appliances/REFRIGERATOR WITHOUT CHAMBER L2653N/FAVORIT-L-2653-S-01-1024x576.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Home appliances/REFRIGERATOR WITHOUT CHAMBER L2653N/FAVORIT-L-2653-S-02-1024x576.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/Home appliances/REFRIGERATOR WITHOUT CHAMBER L2653N/FAVORIT-L-2653-S-02-1024x576.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Home appliances/TWO CHAMBER REFRIGERATOR RF 263N/FAVORIT-RF-263-01-3-1024x576.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/Home appliances/TWO CHAMBER REFRIGERATOR RF 263N/FAVORIT-RF-263-01-3-1024x576.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Home appliances/TWO CHAMBER REFRIGERATOR RF 263N/FAVORIT-RF-263-02-1024x576.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/Home appliances/TWO CHAMBER REFRIGERATOR RF 263N/FAVORIT-RF-263-02-1024x576.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Home appliances/TWO CHAMBER REFRIGERATOR RF 263N/FAVORIT-RF-263-S-01-1-1024x576.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/Home appliances/TWO CHAMBER REFRIGERATOR RF 263N/FAVORIT-RF-263-S-01-1-1024x576.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Home appliances/TWO CHAMBER REFRIGERATOR RF 263N/FAVORIT-RF-263-S-02-1024x576.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/Home appliances/TWO CHAMBER REFRIGERATOR RF 263N/FAVORIT-RF-263-S-02-1024x576.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Home appliances/WASHING MACHINE W – 7122N BLDC/W7122BLDC-1024x576.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/Home appliances/WASHING MACHINE W – 7122N BLDC/W7122BLDC-1024x576.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Hoods/Telescopic Cooker Hood 7062 X/ASPIRATORI-03-1536x864-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/Hoods/Telescopic Cooker Hood 7062 X/ASPIRATORI-03-1536x864-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Small domestic appliances/IRON PL-501/PEGLA-PL-501-01-1024x576.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/Small domestic appliances/IRON PL-501/PEGLA-PL-501-01-1024x576.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Small domestic appliances/IRON PL-619/PEGLA-PL-619-01-1024x576.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/Small domestic appliances/IRON PL-619/PEGLA-PL-619-01-1024x576.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/TV/LED ТЕЛЕВИЗОР 32DF1M1T2S2A-13HD ANDROID/TV-32DF1M1T2S2A-13HD-44-1024x576.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/TV/LED ТЕЛЕВИЗОР 32DF1M1T2S2A-13HD ANDROID/TV-32DF1M1T2S2A-13HD-44-1024x576.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/TV/LED ТЕЛЕВИЗОР 32DF1P4T2HD/32DF1P4T2HD-44-1024x576.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/TV/LED ТЕЛЕВИЗОР 32DF1P4T2HD/32DF1P4T2HD-44-1024x576.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/TV/LED ТЕЛЕВИЗОР 43DF3PHT2S2A-13FHD ANDROID/TV-43DF3PHT2S2A-13FHD-44-1024x576.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/TV/LED ТЕЛЕВИЗОР 43DF3PHT2S2A-13FHD ANDROID/TV-43DF3PHT2S2A-13FHD-44-1024x576.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/TV/LED ТЕЛЕВИЗОР 55DK5JM2T2S2A-11UHD 4K ANDROID(11)/11.-FAVORIT-LED-TV-55DK5JM2T2S2A-90UHD-ANDROID-55-SMART-Android-tv-01-1024x576.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/TV/LED ТЕЛЕВИЗОР 55DK5JM2T2S2A-11UHD 4K ANDROID(11)/11.-FAVORIT-LED-TV-55DK5JM2T2S2A-90UHD-ANDROID-55-SMART-Android-tv-01-1024x576.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/TV/LED ТЕЛЕВИЗОР 55DK5JM2T2S2A-11UHD 4K ANDROID(11)/7.-FAVORIT-LED-TV-55DK5JM2T2S2A-90UHD-ANDROID-55-SMART-Android-tv-1024x645.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/TV/LED ТЕЛЕВИЗОР 55DK5JM2T2S2A-11UHD 4K ANDROID(11)/7.-FAVORIT-LED-TV-55DK5JM2T2S2A-90UHD-ANDROID-55-SMART-Android-tv-1024x645.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/TV/LED ТЕЛЕВИЗОР 55DЕ2М1T2S2A-13UHD 4K ANDROID/TV-55DEM1T2S2A-13UHD-44-1024x576.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/TV/LED ТЕЛЕВИЗОР 55DЕ2М1T2S2A-13UHD 4K ANDROID/TV-55DEM1T2S2A-13UHD-44-1024x576.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\Program Files\NetMake\v9-php81\components\php\php.exe" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2tUBRw22IvKUhnX82105HpvmYmx" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/Dragan/Desktop/old favorit with some changes for the old website",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "C:\\Users\\Dragan\\Desktop\\Favorit-web-app\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="npm.Angular CLI Server">
+    <configuration name="Angular Application" type="JavascriptDebugType" uri="http://localhost:4200">
+      <method v="2" />
+    </configuration>
+    <configuration name="Angular CLI Server" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-PS-242.24807.17" />
+        <option value="bundled-php-predefined-a98d8de5180a-90914f2295cb-com.jetbrains.php.sharedIndexes-PS-242.24807.17" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="63f03af0-0458-416a-b479-520f7c7b9067" name="Changes" comment="" />
+      <created>1740396768264</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1740396768264</updated>
+      <workItem from="1740396770107" duration="2469000" />
+      <workItem from="1740604563795" duration="682000" />
+      <workItem from="1742604924712" duration="42000" />
+      <workItem from="1743176279039" duration="393000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

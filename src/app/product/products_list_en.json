@@ -262,7 +262,7 @@
       "assets/Home appliances/COMBINED INDEPENDENT COOKER К 622 WWF/3-13.png",
       "assets/Home appliances/COMBINED INDEPENDENT COOKER К 622 WWF/5-6.png"
     ],
-    "specificationsDoc": "assets/PDF-Specifications/UPATSTVO-MK-GB-AL-SR-FAVORIT.pdf",
+    "specificationsDoc": "assets/Home appliances/COMBINED INDEPENDENT COOKER К 622 WWF/K 622 WWF.pdf",
     "specifications": {
       "OVEN CAPACITY GROSS VOLUME 42L": "NET VOLUME 36.6L",
       "COLOR": "WHITE",
@@ -605,20 +605,18 @@
   },
   {
     "id": 19,
-    "name": "Dryer L – 71 C",
+    "name": "Dryer W-71 C",
     "description": [
       "Introducing our efficient condenser dryer with a 7kg capacity and 15 programs. Featuring indicators for easy maintenance, child lock safety, and a sleek LED display. With its compact design and classic white finish, it's the perfect fit for any modern home."
     ],
     "pictures": [
-      "assets/Home appliances/Dryer L – 71 C/FAVORIT-L-71-C-13-1024x576.png",
-      "assets/Home appliances/Dryer L – 71 C/FAVORIT-L-71-C-14-1024x576.png",
-      "assets/Home appliances/Dryer L – 71 C/FAVORIT-L-71-C-15-1024x576.png"
+      "assets/Home appliances/Dryer L – 71 C/W-71 C.png"
     ],
-    "specificationsDoc": "assets/Product Spec/L-71-C-upatstva.pdf",
+    "specificationsDoc": "assets/Home appliances/Dryer L – 71 C/upartsvo angliski.pdf",
     "specifications": {
       "TYPE": "CONDENSER",
       "CAPACITY": "7KG",
-      "DRUM VOLUME": "100 LITERS",
+      "DRUM VOLUME": "90 LITERS",
       "ENERGY CLASS": "B",
       "POSITION OF THE WATER TANK": "ABOVE",
       "NUMBER OF PROGRAMS": "15",
@@ -637,20 +635,18 @@
   },
   {
     "id": 20,
-    "name": "Dryer L – 81 C",
+    "name": "Dryer N-82 C",
     "description": [
       "Introducing our latest condenser dryer, featuring an impressive 8kg capacity and a spacious 112-liter drum volume, perfect for handling large loads of laundry with ease. With a B energy class rating, it ensures efficiency without compromising performance."
     ],
     "pictures": [
-      "assets/Home appliances/Dryer L – 81 C/FAVORIT-L-81-C-16-1024x576.png",
-      "assets/Home appliances/Dryer L – 81 C/FAVORIT-L-81-C-17.png",
-      "assets/Home appliances/Dryer L – 81 C/FAVORIT-L-81-C-18-1024x576.png"
+      "assets/Home appliances/Dryer L – 81 C/N-82 C.png"
     ],
-    "specificationsDoc": "assets/Product Spec/L-81-C-Upatstva.pdf",
+    "specificationsDoc": "assets/Home appliances/Dryer L – 81 C/Upatstvo Angliski.pdf",
     "specifications": {
       "TYPE": "CONDENSER",
       "CAPACITY": "8KG",
-      "DRUM VOLUME": "112 LITERS",
+      "DRUM VOLUME": "101 LITERS",
       "ENERGY CLASS": "B",
       "LED DISPLAY": "√",
       "WATER TANK POSITION": "√",
@@ -674,55 +670,17 @@
       "COLOR": "WHITE"
     }
   },
-  {
-    "id": 21,
-    "name": "Dryer W – 72 C",
-    "description": [
-      "Introducing our efficient condenser dryer, designed for ultimate convenience and performance. With a spacious 7kg capacity and 100-liter drum volume, it tackles laundry with ease. Boasting a B energy class, it offers 15 versatile programs, including a delayed start feature for flexibility. "
-    ],
-    "pictures": [
-      "assets/Home appliances/Dryer W – 72 C/3.W-72-C-nova-ispraven-izgled-10-1024x576.png",
-      "assets/Home appliances/Dryer W – 72 C/3.W-72-C-nova-ispraven-izgled-22-1024x576.png"
-    ],
-    "specificationsDoc": "assets/Product Spec/W-72-C-upatstva.pdf",
-    "specifications": {
-      "TYPE": "CONDENSER",
-      "CAPACITY": "7KG",
-      "DRUM VOLUME": "100 LITERS",
-      "ENERGY CLASS": "B",
-      "LED DISPLAY": "7 SEGMENTS",
-      "POSITION OF THE WATER TANK": "ABOVE",
-      "NUMBER OF PROGRAMS": "15",
-      "DELAYED START": "√",
-      "INDICATOR FOR FULL WATER TANK": "√",
-      "FILTER CLEANING INDICATOR": "√",
-      "CONDENSER CLEANING INDICATOR": "√",
-      "SIGNAL FOR THE END OF DRYING": "√",
-      "SIGNAL TO DELETE THE DEFAULT PROGRAM": "√",
-      "QUICK-DRYING PROGRAM": "√",
-      "ANTI-CREASE FUNCTION": "√",
-      "PROGRAM FOR COTTON DRYING": "ADDITIONAL COTTON DRYING, COTTON DRYING WITHOUT THE NEED FOR IRONING, COTTON DRYING WITH THE NEED FOR IRONING",
-      "SYNTHETIC DRYING PROGRAM": "SYNTHETIC DRYING WITHOUT THE NEED FOR IRONING, SYNTHETIC DRYING WITH THE NEED FOR IRONING, BABY PROGRAM",
-      "BABY PROGRAM": "√",
-      "OTHER": "-SHIRTS 12 ', EXPRESS 29', REFRESH, DRYING AT 10 ', 30', 60 ', JEANS, DELICATE -LOCKING FOR CHILDREN, -DETECTION OF REMAINING TIME -NOISE LEVEL 65DB -ELECTRIC CONSUMPTION. POWER: 561 KWH PER YEAR -VOLTAGE 220-240V -POWER: 2700W",
-      "HEIGHT": "MIN: 84.5 CM",
-      "WIDTH": "59.6 CM",
-      "DEPTH": "56.3 CM",
-      "WEIGHT": "35,2 КГ",
-      "COLOR": "WHITE"
-    }
-  },
+
   {
     "id": 22,
-    "name": "Dryer W – 82 HP (with HEAT PUMP)",
+    "name": "Dryer C-82T HP",
     "description": [
       "Introducing our cutting-edge dryer featuring a heat pump system for unparalleled energy efficiency. With an impressive 8kg capacity and a spacious 112-liter drum volume, it handles large loads effortlessly. Rated A++, it guarantees optimal performance while minimizing energy consumption."
     ],
     "pictures": [
-      "assets/Home appliances/Dryer W – 82 HP (with HEAT PUMP)/4.-FAVORIT-W-82-HP-13-1024x576.png",
-      "assets/Home appliances/Dryer W – 82 HP (with HEAT PUMP)/4.-FAVORIT-W-82-HP-15-1024x576.png"
+      "assets/Home appliances/Dryer W – 82 HP (with HEAT PUMP)/C-82T HP.png"
     ],
-    "specificationsDoc": "assets/Product Spec/W-82-HP-upatstva.pdf",
+    "specificationsDoc": "assets/Home appliances/Dryer W – 82 HP (with HEAT PUMP)/upatstvo angliski.pdf",
     "specifications": {
       "TYPE": "WITH HEAT PUMP",
       "CAPACITY": "8KG",
@@ -3072,7 +3030,7 @@
     "pictures": [
       "assets/Small domestic appliances/Stand mixer HM9109/Mikser-so-postolje-HM9109-45-1024x576.png"
     ],
-    "specificationsDoc": "assets/PDF-Specifications/Upatstvo-za-mikser-so-postolje-HM9109.pdf",
+    "specificationsDoc": "assets/Small domestic appliances/Stand mixer HM9109/Upatstvo-za-mikser-so-postolje-HM9109.pdf",
     "specifications": {
       "power": "400 W",
       "rotating vessel": "√",
@@ -3200,7 +3158,7 @@
     "pictures": [
       "assets/Small domestic appliances/Toster TA01101/toster-za-dvopek-TA01101-45-1024x576.png"
   ],
-    "specificationsDoc": "assets/Product Spec/GR572-GR573-UPATSTVO.pdf",
+    "specificationsDoc": "assets/Small domestic appliances/Toster TA01101/Upatstvo-za-toster-TA01101.pdf",
     "specifications": {
       "POWER": "2000W",
       "ADJUSTABLE THERMOSTAT": "√",
@@ -4287,41 +4245,45 @@
   },
   {
     "id": 144,
-    "name": "LED TV D50F135R-F (FHD ANDROID 14)",
+    "name": "LED TV 50U20B-20D",
     "description": [
-      ""
+      "This 50-inch (126cm) LED Smart TV with Full HD (1920×1080) resolution delivers clear and vivid picture quality, while the Android 14 operating system provides easy access to apps through the Google Play Store. With built-in Wi-Fi, two HDMI and two USB ports, as well as DVB-T2/S2 support, this TV is ideal for a modern home cinema."
     ],
     "pictures": [
-      "assets/TV/LED TV D50F135R FHD/6.-FAVORIT-TV-50F135R-F.png"
+      "assets/TV/LED TV 50U20B-20D/TV 50U20B-20D-front.png",
+      "assets/TV/LED TV 50U20B-20D/TV 50U20B-20D-back.png",
+      "assets/TV/LED TV 50U20B-20D/TV 50U20B-20D-side.png",
+      "assets/TV/LED TV 50U20B-20D/TV 50U20B-20D-top.png",
+      "assets/TV/LED TV 50U20B-20D/TV 50U20B-20D-all.png"
     ],
-    "specificationsDoc": "assets/TV/LED TV D50F135R FHD/UPATSTVA ZA MODELOT (red.br.6) D50F135R-F.pdf",
+    "specificationsDoc": "assets/TV/LED TV 50U20B-20D/UPATSTVO ZA MODEL 50U20B-20D.pdf",
     "specifications": {
       "Diagonal": "50\" (126CM)",
       "Screen": "LED",
       "Resolution": "1920×1080 (FULL HD)",
-      "Tuner": "DVB-T2/S2",
-      "Brightness": "200CD/M2 +/-10%",
-      "Response Time": "8 ms",
-      "SMART": "√",
+      "Tuner": "DVB-C/T/T2/S2",
+      "Brightness": "+/-10%  180nit",
+      "Response time": "8 ms",
+      "Smart": "√",
       "Wireless": "Built-in",
-      "Connectivity": "LAN-1, HEAD PHONE 1; COAX AUDIO-1; RF IN 2; HDMI, 2 USB ports, CI 1, WI-FI",
-      "Operating System": "ANDROID 14",
-      "Frame Color": "Black",
+      "Connectivity": "HEAD PHONE 1; COAX AUDIO-1; RF IN 2; HDMI CEC; HDMI ARC; 2 USB INPUTS; CI 1; WI-FI; CI+",
+      "Android OS": "ANDROID 14",
+      "Frame color": "BLACK",
       "Memory": "ROM 8 GB, RAM 1 GB",
-      "Language": "Macedonian; English; Albanian; Serbian",
-      "Remote Control": "With direct Netflix & YouTube button",
-      "Internet": "SMART TV Browser (Netflix; YouTube)",
-      "Supports Google Play Apps": "√",
-      "PVR Recording Function": "√",
+      "Languages": "MACEDONIAN; ENGLISH; ALBANIAN; SERBIAN",
+      "Remote control": "WITH DIRECT NETFLIX; YOUTUBE BUTTON",
+      "Internet": "SMART TV BROWSER (NETFLIX; YOUTUBE)",
+      "Supports Google Play apps": "√",
+      "PVR recording function": "√",
       "DVB-C": "√",
       "DVB-T2/S2": "√",
       "Speakers": "2X10W",
-      "Stand": "Black",
-      "Dimensions (WxHxD) with Stand": "1089MM X 695MM X 239MM",
-      "Dimensions (WxHxD) without Stand": "1089MM X 632MM X 85MM",
-      "Weight (Gross/Net)": "9.57 / 7.16 kg"
+      "Stands": "BLACK",
+      "Dimensions (W×H×D) with stands": "1111MM X 705MM X 228MM",
+      "Dimensions (W×H×D) without stands": "1111MM X 645MM X 83MM",
+      "Weight (gross/net)": "10.90 / 8.40 KG"
     }
-  },
+  },  
   {
     "id": 145,
     "name": "LED TV 65U20B-G1",
@@ -4719,7 +4681,7 @@
     ],
     "specificationsDoc": "assets/Product Spec/Upatstvo za upotreba VC-09 VC-17 VC-19 VC-33.pdf",
     "specifications": {
-      "POWER": "2600 W",
+      "POWER": "1600W",
       "2 plastic tubes": "√",
       "Full dust bag indicator": "√",
       "2L reusable textile bag": "√",
@@ -4796,6 +4758,83 @@
       "Easy-carry handle": "√",
       "Accessories": "plastic floor brush, 2-in-1 narrow dust adapter, upholstery cleaning adapter, accessory holder"
     }
-  }
+  },
+    {
+          "id": 160,
+          "name": "Washing Machine A-9143 BLDC",
+          "description": [],
+          "pictures":[
+            "assets/Home appliances/WASHING MACHINE A-9143 BLDC/10. FAVORIT A-9143 BLDC.png"
+          ],
+          "specificationsDoc":"assets/Home appliances/WASHING MACHINE A-9143 BLDC/A-9143 BLDC-PDF.PDF",
+          "specifications": {
+            "Dimensions (H/W/D)": "84.5 / 60.5 / 60.40 CM",
+            "Maximum spin speed (RPM)": "1400",
+            "Maximum capacity": "9 KG",
+            "Stainless steel drum": "61 L",
+            "Inverter motor": "√ (10 YEARS WARRANTY)",
+            "Digital LCD touch display": "√",
+            "Steam Assist option (washing with steam)": "√",
+            "Delayed start": "√",
+            "Programs": "15",
+            "Electronic programmer": "√",
+            "Water temperature control knob": "√",
+            "Energy class": "A",
+            "Overflow protection system": "√",
+            "Foam protection": "√",
+            "Automatic balance system": "√",
+            "Error detection system": "√",
+            "Child lock": "√",
+            "Removable top cover": "√",
+            "Energy consumption": "49 KWH/CYCLE",
+            "Water consumption": "50 L/CYCLE",
+            "Noise level while washing": "50 DB",
+            "Noise level while spinning": "75 DB",
+            "Super quick program": "15 MINUTES AT 30°",
+            "Quick program": "60 MINUTES AT 60°",
+            "Spin speed control knob": "√",
+            "Half load sensor": "√",
+            "Pre-wash cotton program": "√"
+          }
+
+        },
+        {
+          "id": 161,
+          "name": "Clothes Dryer L-71 HP",
+          "description": [
+            "Introducing our efficient condenser Clothes Dryer with a capacity of 7 kg and 15 programs. Equipped with maintenance indicators, child lock safety, and a modern LED display. With its compact design and classic white finish, it is the perfect solution for every modern home."
+          ],
+          "pictures": [
+            "assets/Home appliances/Dryer L-71 HP/2. FAVORIT L-71HP.png"
+          ],
+          "specificationsDoc": "assets/Home appliances/Dryer L-71 HP/52560619-250325-00_ENG.pdf",
+          "specifications": {
+            "Type": "With heat pump",
+            "Capacity": "7kg",
+            "Drum volume": "90 LITERS",
+            "Energy class": "A++",
+            "LED display": "7 SEGMENTS",
+            "Water tank position": "TOP",
+            "Number of programs": "15",
+            "Delayed start": "√",
+            "Water tank full indicator": "√",
+            "Filter cleaning indicator": "√",
+            "Condenser cleaning indicator": "√",
+            "End of drying signal": "√",
+            "Protected program reminder signal": "√",
+            "Quick dry program": "√",
+            "Anti-crease function": "√",
+            "Cotton drying program": "Extra dry cotton, Cotton dry no ironing needed, Cotton dry with ironing needed.",
+            "Synthetic drying program": "Synthetics dry no ironing needed, Synthetics dry with ironing needed.",
+            "Synthetics": "√",
+            "Baby program": "√",
+            "Others": "-Blouses 30’, EXPRESS 45’, REFRESH, DRY 20’, 40’, 60’, WOOL, DELICATE -CHILD LOCK -REMAINING TIME DETECTION -NOISE LEVEL 65DB -ENERGY CONSUMPTION: 561 KWH PER YEAR -VOLTAGE 220-240V -POWER: 2700W",
+            "Height": "MIN: 84.5 CM",
+            "Width": "59.6 CM",
+            "Depth": "60.9 CM",
+            "Weight": "32.5 KG",
+            "Color": "WHITE"
+          }
+        }        
         
 ]

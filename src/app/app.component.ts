@@ -8,7 +8,6 @@ import { filter, map, tap } from 'rxjs/operators';
 import { FooterFavorit } from './footer/footer.component';
 import { MatDialog } from '@angular/material/dialog';
 import { PopupComponent } from './popup/popup.component';
-import { MetaService } from './meta.service';
 
 const components = [
   NavbarComponent,
@@ -40,7 +39,6 @@ export class AppComponent {
     private router: Router,
     private activatedRoute: ActivatedRoute,
     private dialog: MatDialog,
-    private metaService: MetaService
   ) {
     this.ensureLangQueryParam();
     this.listenToRouteChanges();
@@ -100,24 +98,11 @@ export class AppComponent {
       }),
       map(route => route?.snapshot?.data || {})
     ).subscribe((data: any) => {
-      this.updateMetaTags(data);
+      // Meta tags handling removed
     });
   }
 
   /**
    * Updates the meta tags based on the route data.
    */
-  private updateMetaTags(data: any) {
-    if (data?.title || data?.description || data?.image) {
-      this.metaService.updateMetaTags({
-        title: data.title,
-        description: data.description,
-        image: data.image,
-        url: window.location.pathname,
-        type: 'website'
-      });
-    } else {
-      this.metaService.resetToDefault();
-    }
-  }
 }

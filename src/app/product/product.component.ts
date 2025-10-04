@@ -3,7 +3,6 @@ import { ActivatedRoute, Router, RouterModule } from "@angular/router";
 import { combineLatest } from "rxjs";
 import { CommonModule } from "@angular/common";
 import { Location } from '@angular/common';
-import { MetaService } from '../meta.service';
 
 // Product lists and specification translations
 import productList_en from './products_list_en.json';
@@ -61,6 +60,7 @@ export class ProductComponent implements OnInit, AfterViewInit {
   initialSpecificationCount: number = 999;
   relatedProducts: ProductListInterface[] = [];
   companyName: string = 'Favorit Eletronics';
+  isLoading: boolean = true;
 
   // Breadcrumbs for the product page
   breadcrumbs: { label: string, url: string }[] = [];
@@ -93,8 +93,7 @@ export class ProductComponent implements OnInit, AfterViewInit {
     private _route: ActivatedRoute,
     private _router: Router,
     private renderer: Renderer2,
-    private _location: Location,
-    private metaService: MetaService
+    private _location: Location
   ) {}
 
   ngOnInit(): void {
@@ -103,6 +102,7 @@ export class ProductComponent implements OnInit, AfterViewInit {
       this.subcategory = params['subcategory'] || '';
       this.productId = +params['productId'];
       this.currentLang = queryParams['lang'] || 'en';
+      
 
       switch (this.currentLang) {
         case 'mk':
@@ -134,22 +134,15 @@ export class ProductComponent implements OnInit, AfterViewInit {
 
       this.product = this.productList.find(p => p.id === this.productId);
 
-      // Update meta tags for SEO and social media sharing
-      if (this.product) {
-        const productImage = this.product.pictures && this.product.pictures.length > 0 
-          ? this.product.pictures[0] 
-          : '/assets/512X512.png';
-        
-        this.metaService.updateProductMetaTags({
-          name: this.product.name,
-          description: Array.isArray(this.product.description) 
-            ? this.product.description.join(' ') 
-            : this.product.description,
-          image: productImage,
-          id: this.product.id.toString(),
-          lang: this.currentLang
+      // If product not found, redirect to 404 page
+      if (!this.product) {
+        this._router.navigate(['/not-found'], { 
+          queryParams: { lang: this.currentLang },
+          replaceUrl: true 
         });
+        return;
       }
+
 
       // Only show product name in breadcrumbs
       this.breadcrumbs = [{ label: this.product?.name || '', url: '' }];
@@ -163,6 +156,7 @@ export class ProductComponent implements OnInit, AfterViewInit {
       }
 
       this.findRelatedProducts();
+      this.isLoading = false;
     });
   }
 
@@ -670,4 +664,91 @@ export class ProductComponent implements OnInit, AfterViewInit {
   goBack(): void {
     this._location.back();
   }
+
+  // Social sharing methods
+  getShareText(): string {
+    const productName = this.product?.name || '';
+    const productDescription = Array.isArray(this.product?.description) 
+      ? (this.product?.description?.[0] || '') 
+      : (this.product?.description || '');
+    
+    return `${productName} - ${productDescription}`;
+  }
+
+  getShareUrl(): string {
+    return `https://favoritelectronics.com/p/${this.productId}`;
+  }
+
+  shareOnFacebook(): void {
+    const url = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(this.getShareUrl())}`;
+    this.openShareWindow(url);
+  }
+
+  shareOnInstagram(): void {
+    // Instagram doesn't support direct URL sharing, so we'll copy the URL to clipboard
+    this.copyToClipboard(this.getShareUrl());
+    alert(this.getTranslatedText('instagramShareMessage'));
+  }
+
+  shareOnTwitter(): void {
+    const text = this.getShareText();
+    const url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(this.getShareUrl())}`;
+    this.openShareWindow(url);
+  }
+
+  shareOnWhatsApp(): void {
+    const text = `${this.getShareText()}\n\n${this.getShareUrl()}`;
+    const url = `https://wa.me/?text=${encodeURIComponent(text)}`;
+    this.openShareWindow(url);
+  }
+
+  shareOnViber(): void {
+    const text = `${this.getShareText()}\n\n${this.getShareUrl()}`;
+    const url = `viber://forward?text=${encodeURIComponent(text)}`;
+    this.openShareWindow(url);
+  }
+
+  private openShareWindow(url: string): void {
+    window.open(url, '_blank', 'width=600,height=400,scrollbars=yes,resizable=yes');
+  }
+
+  private copyToClipboard(text: string): void {
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(text);
+    } else {
+      // Fallback for older browsers
+      const textArea = document.createElement('textarea');
+      textArea.value = text;
+      document.body.appendChild(textArea);
+      textArea.select();
+      document.execCommand('copy');
+      document.body.removeChild(textArea);
+    }
+  }
+
+  getTranslatedText(key: string): string {
+    const translations: { [key: string]: { [lang: string]: string } } = {
+      shareOnSocialMedia: {
+        mk: 'Сподели на социјални мрежи',
+        sr: 'Podeli na društvenim mrežama',
+        al: 'Ndani në rrjetet sociale',
+        en: 'Share on social media'
+      },
+      instagramShareMessage: {
+        mk: 'URL-то е копирано во клипборд! Отворете го Instagram и вметнете го во вашата сторија или пост.',
+        sr: 'URL je kopiran u clipboard! Otvorite Instagram i nalepite ga u vašu priču ili post.',
+        al: 'URL është kopjuar në clipboard! Hapni Instagram dhe ngjiteni atë në historinë ose postin tuaj.',
+        en: 'URL copied to clipboard! Open Instagram and paste it in your story or post.'
+      }
+    };
+
+    return translations[key]?.[this.currentLang] || translations[key]?.['en'] || key;
+  }
+
+
+
+
+
+
+
 }

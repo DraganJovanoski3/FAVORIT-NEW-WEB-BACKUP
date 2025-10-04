@@ -1,4 +1,22 @@
-<nav class="breadcrumbs">
+<!-- Loading State -->
+<div class="loading-container" *ngIf="isLoading">
+  <div class="loading-spinner"></div>
+  <p>Loading product...</p>
+</div>
+
+<!-- Product Not Found State -->
+<div class="product-not-found" *ngIf="!isLoading && !product">
+  <div class="not-found-content">
+    <h1>Product Not Found</h1>
+    <p>The product you're looking for doesn't exist or has been removed.</p>
+    <a routerLink="/all-products" [queryParams]="{lang: currentLang}" class="btn btn-primary">
+      Browse All Products
+    </a>
+  </div>
+</div>
+
+<!-- Product Found State -->
+<nav class="breadcrumbs" *ngIf="!isLoading && product">
   <button class="back-arrow" (click)="goBack()" aria-label="Back">&#8592;</button>
   <ng-container *ngFor="let breadcrumb of breadcrumbs; let last = last; let i = index">
     <a [routerLink]="breadcrumb.url" [queryParams]="{lang: currentLang}" *ngIf="!last">{{ breadcrumb.label }}</a>
@@ -7,7 +25,7 @@
   </ng-container>
 </nav>
 
-<div class="product-page" *ngIf="product">
+<div class="product-page" *ngIf="!isLoading && product">
   <div class="product-main">
     <div class="product-photo">
       <img 
@@ -29,6 +47,34 @@
       <div class="company-name">{{ companyName }}</div>
       <h1 class="product-title">{{ product.name }}</h1>
       <p class="product-description">{{ product.description[0] }}</p>
+      
+      <!-- Social Media Sharing -->
+      <div class="social-sharing">
+        <h3>{{ getTranslatedText('shareOnSocialMedia') }}</h3>
+        <div class="share-buttons">
+          <button class="share-btn facebook" (click)="shareOnFacebook()" title="Facebook">
+            <i class="fab fa-facebook-f"></i>
+            <span>Facebook</span>
+          </button>
+          <button class="share-btn instagram" (click)="shareOnInstagram()" title="Instagram">
+            <i class="fab fa-instagram"></i>
+            <span>Instagram</span>
+          </button>
+          <button class="share-btn twitter" (click)="shareOnTwitter()" title="Twitter">
+            <i class="fab fa-twitter"></i>
+            <span>Twitter</span>
+          </button>
+          <button class="share-btn whatsapp" (click)="shareOnWhatsApp()" title="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+            <span>WhatsApp</span>
+          </button>
+          <button class="share-btn viber" (click)="shareOnViber()" title="Viber">
+            <i class="fab fa-viber"></i>
+            <span>Viber</span>
+          </button>
+        </div>
+      </div>
+      
       <div class="specifications-doc">
         <a *ngIf="product.specificationsDoc" 
            [href]="product.specificationsDoc" 
@@ -37,6 +83,7 @@
           {{ specificationTranslations.specificationsPdf }}
         </a>
       </div>
+      
     </div>
   </div>
 

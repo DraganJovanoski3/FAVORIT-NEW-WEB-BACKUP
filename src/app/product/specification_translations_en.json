@@ -1,5 +1,11 @@
 {
     "specifications": "Specifications",
     "specificationsPdf": "Specifications PDF",
-    "similarProducts": "Similar Products"   
+    "similarProducts": "Similar Products",
+    "shareThisProduct": "Share this product:",
+    "whatsapp": "📱 WhatsApp",
+    "viber": "💬 Viber",
+    "facebook": "📘 Facebook",
+    "copyLink": "📋 Copy Link",
+    "shareNote": "Links point to static pages optimized for social media sharing"
 }

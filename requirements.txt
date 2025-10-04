@@ -1,0 +1,5 @@
+# Python dependencies for static HTML generation
+# No external dependencies required for basic functionality
+# Optional: Add jinja2 for template rendering if needed
+# jinja2==3.1.2
+

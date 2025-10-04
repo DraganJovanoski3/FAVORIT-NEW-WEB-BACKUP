@@ -301,7 +301,7 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
           {
             // KEEP
             id: 45,
-            name: this.productTranslations['45'] ||'WASHING MACHINE L – 6100N',
+            name: this.productTranslations['45'] ||'WASHING MACHINE N - 6100',
             picture: 'assets/Home appliances/WASHING MACHINE L – 6100N/L-6100-02-1-1024x576.png',  
             pictureHover: 'assets/Home appliances/WASHING MACHINE L – 6100N/FAVORIT-L-6100-1024x576.png',
             subcategory: washingLabel, 
@@ -319,7 +319,7 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
           {
             // KEEP
             id: 46,
-            name: this.productTranslations['46'] ||'WASHING MACHINE L – 7101N',
+            name: this.productTranslations['46'] ||'WASHING MACHINE W-7101',
             picture: 'assets/Home appliances/WASHING MACHINE L – 7101N/W-7101-05-1024x576.png',  
             pictureHover: 'assets/Home appliances/WASHING MACHINE L – 7101N/FAVORIT-L-7101-1024x576.png',
             subcategory: washingLabel, 
@@ -346,7 +346,7 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
           {
             // KEEP
             id: 48,
-            name: this.productTranslations['48'] ||'WASHING MACHINE L – 9101N',
+            name: this.productTranslations['48'] ||'WASHING MACHINE C - 9102',
             picture: 'assets/Home appliances/WASHING MACHINE L – 9101N/L-9101-03-1024x576.png',  
             pictureHover: 'assets/Home appliances/WASHING MACHINE L – 9101N/FAVORIT-L-9101-1-1024x576.png',
             subcategory: washingLabel, 
@@ -355,7 +355,7 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
           {
             // KEEP
             id: 51,
-            name: this.productTranslations['51'] ||'WASHING MACHINE W – 7122N BLDC',
+            name: this.productTranslations['51'] ||'WASHING MACHINE L-7121 BLDC',
             picture: 'assets/Home appliances/WASHING MACHINE W – 7122N BLDC/W7122BLDC-1024x576.png',  
             pictureHover: 'assets/Home appliances/WASHING MACHINE W – 7122N BLDC/FAVORIT-W-7122-BLDC-1024x576.png',
             subcategory: washingLabel, 
@@ -372,7 +372,7 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
           {
             // KEEP
             id: 53,
-            name: this.productTranslations['53'] ||'WASHING MACHINE W – 8122N BLDC',
+            name: this.productTranslations['53'] ||'WASHING MACHINE W-8121 BLDC',
             picture: 'assets/Home appliances/WASHING MACHINE W – 8122N BLDC/W-8122-BLDC-11-1024x576.png',  
             pictureHover: 'assets/Home appliances/WASHING MACHINE W – 8122N BLDC/FAVORIT-W-8122-BLDC-1024x576.png',
             subcategory: washingLabel, 
@@ -404,33 +404,49 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
             subcategory: washingLabel, 
             backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
           },
+          {
+            id: 160,
+            name: this.productTranslations['160'] ||'WASHING MACHINE A-9143 BLDC',
+            picture: 'assets/Home appliances/WASHING MACHINE A-9143 BLDC/10. FAVORIT A-9143 BLDC.png',
+            pictureHover: 'assets/Home appliances/WASHING MACHINE A-9143 BLDC/10. FAVORIT A-9143 BLDC.png',
+            subcategory: washingLabel, 
+            backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
+          },
 
            // DRYERS
           {
             // KEEP
             id: 19,
-            name: this.productTranslations['19'] ||'Dryer L – 71 C',
-            picture: 'assets/Home appliances/Dryer L – 71 C/FAVORIT-L-71-C-13-1024x576.png',  
-            pictureHover: 'assets/Home appliances/Dryer L – 71 C/FAVORIT-L-71-C-14-1024x576.png',
+            name: this.productTranslations['19'] ||'Dryer W-71 C',
+            picture: 'assets/Home appliances/Dryer L – 71 C/W-71 C.png',  
+            pictureHover: 'assets/Home appliances/Dryer L – 71 C/W-71 C.png',
             subcategory: dryerLabel,
             backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
           },
           {
-            // KEEP
-            id: 21,
-            name: this.productTranslations['21'] ||'Dryer W – 72 C',
-            picture: 'assets/Home appliances/Dryer W – 72 C/3.W-72-C-nova-ispraven-izgled-10-1024x576.png',  
-            pictureHover: 'assets/Home appliances/Dryer W – 72 C/3.W-72-C-nova-ispraven-izgled-22-1024x576.png',
+            id: 161,
+            name: this.productTranslations['161'] ||'Dryer L-71 HP',
+            picture: 'assets/Home appliances/Dryer L-71 HP/2. FAVORIT L-71HP.png',  
+            pictureHover: 'assets/Home appliances/Dryer L-71 HP/2. FAVORIT L-71HP.png',
             subcategory: dryerLabel,
             backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
-
           },
+          // {
+          //   // KEEP
+          //   id: 21,
+          //   name: this.productTranslations['21'] ||'Dryer W – 72 C',
+          //   picture: 'assets/Home appliances/Dryer W – 72 C/3.W-72-C-nova-ispraven-izgled-10-1024x576.png',  
+          //   pictureHover: 'assets/Home appliances/Dryer W – 72 C/3.W-72-C-nova-ispraven-izgled-22-1024x576.png',
+          //   subcategory: dryerLabel,
+          //   backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
+
+          // },
           {
             // KEEP
             id: 20,
-            name: this.productTranslations['20'] ||'Dryer L – 81 C',
-            picture: 'assets/Home appliances/Dryer L – 81 C/FAVORIT-L-81-C-16-1024x576.png',  
-            pictureHover: 'assets/Home appliances/Dryer L – 81 C/FAVORIT-L-81-C-17.png',
+            name: this.productTranslations['20'] ||'Dryer N-82 C',
+            picture: 'assets/Home appliances/Dryer L – 81 C/N-82 C.png',  
+            pictureHover: 'assets/Home appliances/Dryer L – 81 C/N-82 C.png',
             subcategory: dryerLabel,
             backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
 
@@ -438,9 +454,9 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
           {
             // KEEP
             id: 22,
-            name: this.productTranslations['22'] ||'Dryer W – 82 HP',
-            picture: 'assets/Home appliances/Dryer W – 82 HP (with HEAT PUMP)/4.-FAVORIT-W-82-HP-13-1024x576.png',  
-            pictureHover: 'assets/Home appliances/Dryer W – 82 HP (with HEAT PUMP)/4.-FAVORIT-W-82-HP-15-1024x576.png',
+            name: this.productTranslations['22'] ||'Dryer C-82T HP',
+            picture: 'assets/Home appliances/Dryer W – 82 HP (with HEAT PUMP)/C-82T HP.png',  
+            pictureHover: 'assets/Home appliances/Dryer W – 82 HP (with HEAT PUMP)/C-82T HP.png',
             subcategory: dryerLabel,
             backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
           },
@@ -879,21 +895,21 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
             backgroundColorproduct: 'linear-gradient(#9f9f9f 0%, #ffffff 90%, #ffffff 100%)'
           },
           {
-            id: 143,
-            name: this.productTranslations['64'] ||'Built-in dishwasher BI60 – I14N',
+            id: 65,
+            name: this.productTranslations['65'] ||'Built-in dishwasher BI60 – I14N',
             picture: 'assets/Built In Appliances/Built-in dishwasher BI60 – I14 (fully integrated)/SI60-I14-11-1024x576.png',  pictureHover: 'assets/',
             subcategory: fullyBuiltInDishwashersLabel,
             backgroundColorproduct: 'linear-gradient(#9f9f9f 0%, #ffffff 90%, #ffffff 100%)'
 
           },
-          {
-            id: 65,
-            name: this.productTranslations['65'] ||'Built-in dishwasher BI60 – I14N',
-            picture: 'assets/Built In Appliances/Built-in dishwasher FAVORIT BI60-I1FN/RABOTEN-16.9-29-2-1024x576.png',
-            pictureHover: 'assets/',
-            subcategory: fullyBuiltInDishwashersLabel,
-            backgroundColorproduct: 'linear-gradient(#9f9f9f 0%, #ffffff 90%, #ffffff 100%)'
-          },
+          // {
+          //   id: 65,
+          //   name: this.productTranslations['65'] ||'Built-in dishwasher BI60 – I14N',
+          //   picture: 'assets/Built In Appliances/Built-in dishwasher FAVORIT BI60-I1FN/RABOTEN-16.9-29-2-1024x576.png',
+          //   pictureHover: 'assets/',
+          //   subcategory: fullyBuiltInDishwashersLabel,
+          //   backgroundColorproduct: 'linear-gradient(#9f9f9f 0%, #ffffff 90%, #ffffff 100%)'
+          // },
           {
             id: 66,
             name: this.productTranslations['66'] ||'Built-in dishwasher SI60 – I14',
@@ -1286,8 +1302,9 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
             {
               // KEEP
               id: 144,
-              name: this.productTranslations['144'] ||'LED TV D50F135R-F (FHD ANDROID 14)',
-              picture: 'assets/TV/LED TV D50F135R FHD/6.-FAVORIT-TV-50F135R-F.png',  pictureHover: 'assets/',
+              name: this.productTranslations['144'] ||'LED TV 50U20B-20D',
+              picture: 'assets/TV/LED TV 50U20B-20D/TV 50U20B-20D-front.png',  
+              pictureHover: 'assets/TV/LED TV 50U20B-20D/TV 50U20B-20D-back.png',
               subcategory: tvFilters.size50,
               backgroundColorproduct: 'linear-gradient(#928EE1 0%, #ffffff 50%, #ffffff 100%)'
             },
@@ -1595,6 +1612,14 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
               subcategory: filters.irons,
               backgroundColorproduct: 'linear-gradient(#ffa87d 0%,#ffffff 90%,#ffffff 100%)'
             },
+            {
+              id: 143,
+              name: this.productTranslations['143'] || 'IRON PL-607',
+              picture: 'assets/Small domestic appliances/IRON PL-607/viber_image_2024-03-25_13-19-07-518-1.png',
+              pictureHover: 'assets/',
+              subcategory: filters.irons,
+              backgroundColorproduct: 'linear-gradient(#ffa87d 0%,#ffffff 90%,#ffffff 100%)'
+            },
             // Vacuum Cleaners
             {
               id: 156,
@@ -1732,8 +1757,6 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
         p => p.subcategory && p.subcategory.toLowerCase().trim() === selected.toLowerCase().trim()
       );
     }
-    console.log('Selected subcategory:', selected);
-    console.log('Filtered products:', this.displayedProducts);
     // Close filter menu and scroll to top on mobile
     if (this.isMobileView) {
       this.showFilters = false;

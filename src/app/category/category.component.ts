@@ -197,15 +197,11 @@ export class CategoryComponent implements OnInit {
       ]
     };
 
-    console.log('Subcategory Keys:', Object.keys(this.subcategoriesComponentConstant[this.category] || {}));
-
     // Assign translated names to subcategories
     this.subcategories = subcategoryDefinitions[this.category] || [];
     this.subcategories.forEach(subcategory => {
       subcategory.name = this.getTranslatedName(subcategory.id);
     });
-
-    console.log('Loaded Subcategories:', this.subcategories);
 
     // Initialize pagination
     this.updateDisplayedSubcategories();
@@ -215,7 +211,6 @@ export class CategoryComponent implements OnInit {
     const startIndex = pageIndex * pageSize;
     const endIndex = startIndex + pageSize;
     this.displayedSubcategories = this.subcategories.slice(startIndex, endIndex);
-    console.log('Displayed Subcategories:', this.displayedSubcategories);
   }
 
   onPageEvent(event: PageEvent): void {

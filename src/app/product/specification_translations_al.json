@@ -1,5 +1,11 @@
 {
     "specifications": "Specifikimet",
     "specificationsPdf": "Specifikimet PDF",
-    "similarProducts": "Produkte të ngjashme"   
+    "similarProducts": "Produkte të ngjashme",
+    "shareThisProduct": "Ndani këtë produkt:",
+    "whatsapp": "📱 WhatsApp",
+    "viber": "💬 Viber",
+    "facebook": "📘 Facebook",
+    "copyLink": "📋 Kopjo lidhjen",
+    "shareNote": "Lidhjet drejtojnë në faqe statike të optimizuara për ndarjen në rrjetet sociale"
 }

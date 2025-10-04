@@ -1,7 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { MetaService } from '../meta.service';
 
 // Import blog translations
 import blogs_mk from '../blog-list/blogs_mk.json';
@@ -30,7 +29,6 @@ export class BlogComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private router: Router,
-    private metaService: MetaService
   ) {}
 
   ngOnInit(): void {
@@ -59,7 +57,7 @@ export class BlogComponent implements OnInit {
       return;
     }
 
-    this.updateMetaTags();
+    // Meta tags handling removed
   }
 
   private getBlogsByLanguage(): any[] {
@@ -80,17 +78,6 @@ export class BlogComponent implements OnInit {
     }
   }
 
-  private updateMetaTags() {
-    if (this.blog) {
-      this.metaService.updateBlogMetaTags({
-        title: this.blog.title,
-        description: this.blog.excerpt,
-        image: this.blog.image,
-        id: this.blog.id,
-        lang: this.currentLang
-      });
-    }
-  }
 
   private getLocale(): string {
     const locales: { [key: string]: string } = {

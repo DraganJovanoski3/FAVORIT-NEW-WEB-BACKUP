@@ -1,0 +1,7 @@
+{
+    "errorCode": "404",
+    "errorTitle": "Page Not Found",
+    "errorMessage": "The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.",
+    "goHomeButton": "Go to Home",
+    "goBackButton": "Go Back"
+}
