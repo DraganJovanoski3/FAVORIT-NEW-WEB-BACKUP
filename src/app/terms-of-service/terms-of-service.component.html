@@ -1,0 +1,112 @@
+<div class="terms-container">
+  <div class="terms-content">
+    <header class="terms-header">
+      <h1 class="terms-title">{{termsOfService?.title}}</h1>
+      <p class="last-updated">{{termsOfService?.lastUpdated}}</p>
+    </header>
+
+    <div class="terms-sections" *ngIf="termsOfService">
+      <!-- Introduction -->
+      <section class="terms-section">
+        <h2 class="section-title">{{termsOfService.sections.introduction.title}}</h2>
+        <p class="section-content">{{termsOfService.sections.introduction.content}}</p>
+      </section>
+
+      <!-- Acceptance -->
+      <section class="terms-section">
+        <h2 class="section-title">{{termsOfService.sections.acceptance.title}}</h2>
+        <p class="section-content">{{termsOfService.sections.acceptance.content}}</p>
+      </section>
+
+      <!-- Use of Website -->
+      <section class="terms-section">
+        <h2 class="section-title">{{termsOfService.sections.useOfWebsite.title}}</h2>
+        <p class="section-content">{{termsOfService.sections.useOfWebsite.content}}</p>
+        <ul class="section-list">
+          <li *ngFor="let item of termsOfService.sections.useOfWebsite.items">{{item}}</li>
+        </ul>
+        <p class="section-content restrictions-text">{{termsOfService.sections.useOfWebsite.restrictions}}</p>
+        <ul class="section-list restrictions-list">
+          <li *ngFor="let item of termsOfService.sections.useOfWebsite.restrictionItems">{{item}}</li>
+        </ul>
+      </section>
+
+      <!-- Products -->
+      <section class="terms-section">
+        <h2 class="section-title">{{termsOfService.sections.products.title}}</h2>
+        <p class="section-content">{{termsOfService.sections.products.content}}</p>
+      </section>
+
+      <!-- Orders -->
+      <section class="terms-section">
+        <h2 class="section-title">{{termsOfService.sections.orders.title}}</h2>
+        <p class="section-content">{{termsOfService.sections.orders.content}}</p>
+        <ul class="section-list">
+          <li *ngFor="let item of termsOfService.sections.orders.items">{{item}}</li>
+        </ul>
+      </section>
+
+      <!-- Payment -->
+      <section class="terms-section">
+        <h2 class="section-title">{{termsOfService.sections.payment.title}}</h2>
+        <p class="section-content">{{termsOfService.sections.payment.content}}</p>
+      </section>
+
+      <!-- Delivery -->
+      <section class="terms-section">
+        <h2 class="section-title">{{termsOfService.sections.delivery.title}}</h2>
+        <p class="section-content">{{termsOfService.sections.delivery.content}}</p>
+      </section>
+
+      <!-- Warranty -->
+      <section class="terms-section">
+        <h2 class="section-title">{{termsOfService.sections.warranty.title}}</h2>
+        <p class="section-content">{{termsOfService.sections.warranty.content}}</p>
+      </section>
+
+      <!-- Returns -->
+      <section class="terms-section">
+        <h2 class="section-title">{{termsOfService.sections.returns.title}}</h2>
+        <p class="section-content">{{termsOfService.sections.returns.content}}</p>
+      </section>
+
+      <!-- Intellectual Property -->
+      <section class="terms-section">
+        <h2 class="section-title">{{termsOfService.sections.intellectualProperty.title}}</h2>
+        <p class="section-content">{{termsOfService.sections.intellectualProperty.content}}</p>
+      </section>
+
+      <!-- Limitation -->
+      <section class="terms-section">
+        <h2 class="section-title">{{termsOfService.sections.limitation.title}}</h2>
+        <p class="section-content">{{termsOfService.sections.limitation.content}}</p>
+      </section>
+
+      <!-- Modifications -->
+      <section class="terms-section">
+        <h2 class="section-title">{{termsOfService.sections.modifications.title}}</h2>
+        <p class="section-content">{{termsOfService.sections.modifications.content}}</p>
+      </section>
+
+      <!-- Contact -->
+      <section class="terms-section contact-section">
+        <h2 class="section-title">{{termsOfService.sections.contact.title}}</h2>
+        <p class="section-content">{{termsOfService.sections.contact.content}}</p>
+        <div class="contact-info">
+          <div class="contact-item">
+            <strong>Email:</strong>
+            <a href="mailto:{{termsOfService.sections.contact.email}}">{{termsOfService.sections.contact.email}}</a>
+          </div>
+          <div class="contact-item">
+            <strong>Phone:</strong>
+            <a href="tel:{{termsOfService.sections.contact.phone}}">{{termsOfService.sections.contact.phone}}</a>
+          </div>
+          <div class="contact-item">
+            <strong>Address:</strong>
+            <span>{{termsOfService.sections.contact.address}}</span>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>

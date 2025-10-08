@@ -12,6 +12,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { NgModule } from '@angular/core';
 import { BlogComponent } from './blog/blog.component';
 import { BlogListComponent } from './blog-list/blog-list.component';
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
+import { TermsOfServiceComponent } from './terms-of-service/terms-of-service.component';
 
 export const routes: Routes = [
   { path: 'home', component: HomeComponent },

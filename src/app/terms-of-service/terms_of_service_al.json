@@ -1,0 +1,81 @@
+{
+  "title": "Kushtet e Shërbimit",
+  "lastUpdated": "Përditësuar për herë të fundit: dhjetor 2024",
+  "sections": {
+    "introduction": {
+      "title": "Hyrje",
+      "content": "Mirë se vini në faqen e internetit të Favorit Electronics. Këto kushte shërbimi rregullojnë të drejtat dhe detyrimet tuaja kur përdorni faqen tonë të internetit dhe shërbimet."
+    },
+    "acceptance": {
+      "title": "Pranimi i Kushteve",
+      "content": "Duke hyrë ose përdorur faqen tonë të internetit, ju pajtoheni të jeni të detyruar nga këto kushte shërbimi. Nëse nuk pajtoheni me ndonjë pjesë të këtyre kushteve, nuk duhet të përdorni faqen tonë të internetit."
+    },
+    "useOfWebsite": {
+      "title": "Përdorimi i Faqes së Internetit",
+      "content": "Mund të përdorni faqen tonë të internetit për të:",
+      "items": [
+        "Shfletuar produktet dhe shërbimet tona",
+        "Bërë porosi",
+        "Na kontaktuar",
+        "Aksesuar informacione për produktet tona"
+      ],
+      "restrictions": "Nuk lejohet të:",
+      "restrictionItems": [
+        "Përdorni faqen për qëllime të paligjshme",
+        "Përpiqeni të aksesoni zona të kufizuara",
+        "Transmetoni malware ose kod të dëmshëm",
+        "Përdorni sisteme të automatizuara për akses"
+      ]
+    },
+    "products": {
+      "title": "Produktet dhe Shërbimet",
+      "content": "Të gjitha produktet dhe shërbimet janë subjekt i disponueshmërisë. Ne rezervojmë të drejtën të ndryshojmë çmimet, specifikimet dhe disponueshmërinë e produkteve pa njoftim paraprak."
+    },
+    "orders": {
+      "title": "Porositë",
+      "content": "Kur bëni një porosi:",
+      "items": [
+        "Konfirmoni se jeni të paktën 18 vjeç",
+        "Të gjitha informacionet që jepni janë të sakta dhe të plota",
+        "Pajtoheni të paguani për produktet e porositura",
+        "Kuptoni se porositë mund të anulohen nga ne"
+      ]
+    },
+    "payment": {
+      "title": "Pagesa",
+      "content": "Pranojmë metoda të ndryshme pagese duke përfshirë para në dorëzim, transferim bankar dhe kartat e kreditit. Të gjitha pagesat duhet të përfundojnë para dorëzimit."
+    },
+    "delivery": {
+      "title": "Dorëzimi",
+      "content": "Dorëzimi bëhet në përputhje me kushtet tona të dorëzimit. Ne nuk jemi përgjegjës për vonesat për shkak të faktorëve jashtë kontrollit tonë."
+    },
+    "warranty": {
+      "title": "Garancia",
+      "content": "Produktet tona vijnë me garancinë standarde të prodhuesit. Detajet e garancisë janë të specifikuara me çdo produkt."
+    },
+    "returns": {
+      "title": "Kthimi i Produkteve",
+      "content": "Keni të drejtë të ktheni produktet në përputhje me politikën tonë të kthimit. Produktet duhet të jenë në gjendjen origjinale."
+    },
+    "intellectualProperty": {
+      "title": "Pronësia Intelektuale",
+      "content": "Të gjitha përmbajtjet në këtë faqe të internetit, duke përfshirë tekstet, imazhet, logot dhe dizajnin, janë të mbrojtura nga të drejtat e autorit dhe janë pronë e Favorit Electronics."
+    },
+    "limitation": {
+      "title": "Kufizimi i Përgjegjësisë",
+      "content": "Favorit Electronics nuk është përgjegjës për asnjë dëm të drejtpërdrejtë, indirekt, të rastësishëm ose pasues që rrjedhin nga përdorimi i faqes sonë të internetit ose shërbimeve."
+    },
+    "modifications": {
+      "title": "Ndryshimet e Kushteve",
+      "content": "Ne rezervojmë të drejtën të modifikojmë këto kushte shërbimi në çdo kohë. Kushtet e modifikuara do të hyjnë në fuqi menjëherë pas postimit në faqen e internetit."
+    },
+    "contact": {
+      "title": "Kontakt",
+      "content": "Nëse keni pyetje për këto kushte shërbimi, ju lutemi na kontaktoni:",
+      "email": "centrounion@centrounion.com.mk",
+      "phone": "+389 2 2440 110",
+      "address": "Rr. Partizanski odredi 154, 1000 Shkup, R. S. Maqedonia"
+    }
+  }
+}
+

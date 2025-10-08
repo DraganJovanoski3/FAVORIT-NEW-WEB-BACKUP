@@ -1,0 +1,164 @@
+.terms-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.terms-content {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.terms-header {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.terms-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0 0 1rem 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.last-updated {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  margin: 0;
+}
+
+.terms-sections {
+  padding: 2rem;
+}
+
+.terms-section {
+  margin-bottom: 2.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.terms-section:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin: 0 0 1rem 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e74c3c;
+  display: inline-block;
+}
+
+.section-content {
+  font-size: 1.1rem;
+  margin: 0 0 1rem 0;
+  color: #555;
+}
+
+.section-list {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+.section-list li {
+  margin-bottom: 0.5rem;
+  font-size: 1.05rem;
+  color: #555;
+}
+
+.restrictions-text {
+  font-weight: 600;
+  color: #e74c3c;
+  margin-top: 1.5rem;
+}
+
+.restrictions-list {
+  margin-top: 0.5rem;
+}
+
+.restrictions-list li {
+  color: #e74c3c;
+  font-weight: 500;
+}
+
+.contact-section {
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
+}
+
+.contact-info {
+  margin-top: 1.5rem;
+}
+
+.contact-item {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contact-item strong {
+  color: #2c3e50;
+  min-width: 80px;
+}
+
+.contact-item a {
+  color: #e74c3c;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+  color: #c0392b;
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .terms-container {
+    padding: 1rem 0.5rem;
+  }
+  
+  .terms-header {
+    padding: 2rem 1rem;
+  }
+  
+  .terms-title {
+    font-size: 2rem;
+  }
+  
+  .terms-sections {
+    padding: 1.5rem;
+  }
+  
+  .section-title {
+    font-size: 1.5rem;
+  }
+  
+  .contact-section {
+    padding: 1.5rem;
+  }
+  
+  .contact-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+  
+  .contact-item strong {
+    min-width: auto;
+  }
+}
+

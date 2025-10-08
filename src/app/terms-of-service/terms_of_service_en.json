@@ -1,0 +1,81 @@
+{
+  "title": "Terms of Service",
+  "lastUpdated": "Last updated: December 2024",
+  "sections": {
+    "introduction": {
+      "title": "Introduction",
+      "content": "Welcome to Favorit Electronics website. These terms of service govern your rights and obligations when using our website and services."
+    },
+    "acceptance": {
+      "title": "Acceptance of Terms",
+      "content": "By accessing or using our website, you agree to be bound by these terms of service. If you do not agree to any part of these terms, you should not use our website."
+    },
+    "useOfWebsite": {
+      "title": "Use of Website",
+      "content": "You may use our website to:",
+      "items": [
+        "Browse our products and services",
+        "Place orders",
+        "Contact us",
+        "Access information about our products"
+      ],
+      "restrictions": "You may not:",
+      "restrictionItems": [
+        "Use the website for illegal purposes",
+        "Attempt to access restricted areas",
+        "Transmit malware or harmful code",
+        "Use automated systems to access"
+      ]
+    },
+    "products": {
+      "title": "Products and Services",
+      "content": "All products and services are subject to availability. We reserve the right to change prices, specifications, and product availability without prior notice."
+    },
+    "orders": {
+      "title": "Orders",
+      "content": "When placing an order:",
+      "items": [
+        "You confirm that you are at least 18 years old",
+        "All information you provide is accurate and complete",
+        "You agree to pay for the ordered products",
+        "You understand that orders may be cancelled by us"
+      ]
+    },
+    "payment": {
+      "title": "Payment",
+      "content": "We accept various payment methods including cash on delivery, bank transfer, and credit cards. All payments must be completed before delivery."
+    },
+    "delivery": {
+      "title": "Delivery",
+      "content": "Delivery is made in accordance with our delivery terms. We are not responsible for delays due to factors beyond our control."
+    },
+    "warranty": {
+      "title": "Warranty",
+      "content": "Our products come with standard manufacturer warranty. Warranty details are specified with each product."
+    },
+    "returns": {
+      "title": "Returns",
+      "content": "You have the right to return products in accordance with our return policy. Products must be in original condition."
+    },
+    "intellectualProperty": {
+      "title": "Intellectual Property",
+      "content": "All content on this website, including texts, images, logos, and design, is protected by copyright and is the property of Favorit Electronics."
+    },
+    "limitation": {
+      "title": "Limitation of Liability",
+      "content": "Favorit Electronics is not liable for any direct, indirect, incidental, or consequential damages arising from the use of our website or services."
+    },
+    "modifications": {
+      "title": "Modifications to Terms",
+      "content": "We reserve the right to modify these terms of service at any time. Modified terms will take effect immediately upon posting on the website."
+    },
+    "contact": {
+      "title": "Contact",
+      "content": "If you have questions about these terms of service, please contact us:",
+      "email": "centrounion@centrounion.com.mk",
+      "phone": "+389 2 2440 110",
+      "address": "Ul. Partizanski odredi 154, 1000 Skopje, R. S. Macedonia"
+    }
+  }
+}
+

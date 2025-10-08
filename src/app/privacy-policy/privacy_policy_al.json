@@ -1,0 +1,65 @@
+{
+  "title": "Politika e Privatësisë",
+  "lastUpdated": "Përditësuar për herë të fundit: dhjetor 2024",
+  "sections": {
+    "introduction": {
+      "title": "Hyrje",
+      "content": "Favorit Electronics është i përkushtuar për të mbrojtur privatësinë tuaj. Kjo politikë e privatësisë shpjegon se si mbledhim, përdorim dhe mbrojmë të dhënat tuaja personale kur vizitoni faqen tonë të internetit ose përdorni shërbimet tona."
+    },
+    "dataCollection": {
+      "title": "Mbledhja e të Dhënave",
+      "content": "Mund të mbledhim të dhëna personale nga ju kur:",
+      "items": [
+        "Vizitoni faqet tona të internetit",
+        "Regjistroheni për një llogari",
+        "Bëni një porosi ose blini produkte",
+        "Abonoheni për buletinët tanë",
+        "Kontaktoni mbështetjen tonë për klientë",
+        "Merrni pjesë në anketime ose kërkime"
+      ]
+    },
+    "dataUsage": {
+      "title": "Përdorimi i të Dhënave",
+      "content": "Ne përdorim të dhënat tuaja personale për të:",
+      "items": [
+        "Përpunuar dhe dorëzuar porositë tuaja",
+        "Komunikuar me ju për porositë dhe shërbimet tuaja",
+        "Përmirësuar produktet dhe shërbimet tona",
+        "Dërguar materiale marketingu (vetëm me pëlqimin tuaj)",
+        "Përputhur me kërkesat ligjore"
+      ]
+    },
+    "dataProtection": {
+      "title": "Mbrojtja e të Dhënave",
+      "content": "Ne zbatojmë masa të përshtatshme teknike dhe organizative për të mbrojtur të dhënat tuaja personale nga aksesi i paautorizuar, ndryshimi, zbulimi ose shkatërrimi."
+    },
+    "cookies": {
+      "title": "Cookies",
+      "content": "Faqja jonë e internetit përdor cookies për të përmirësuar përvojën tuaj. Ju mund të kontrolloni cookies përmes cilësimeve të shfletuesit tuaj."
+    },
+    "thirdParty": {
+      "title": "Ndarja me Palë të Treta",
+      "content": "Ne nuk shesim, nuk marrim me qira ose nuk ndajmë të dhënat tuaja personale me palë të treta, përveç siç përshkruhet në këtë politikë privatësie ose me pëlqimin tuaj të qartë."
+    },
+    "yourRights": {
+      "title": "Të Drejtat Tuaja",
+      "content": "Ju keni të drejtë të:",
+      "items": [
+        "Aksesoni të dhënat tuaja personale",
+        "Korrigjoni të dhëna të pasakta",
+        "Fshini të dhënat tuaja",
+        "Kufizoni përpunimin",
+        "Portabiliteti i të dhënave",
+        "Kundërshtoni përpunimin"
+      ]
+    },
+    "contact": {
+      "title": "Kontakt",
+      "content": "Nëse keni pyetje për këtë politikë privatësie, ju lutemi na kontaktoni:",
+      "email": "centrounion@centrounion.com.mk",
+      "phone": "+389 2 2440 110",
+      "address": "Rr. Partizanski odredi 154, 1000 Shkup, R. S. Maqedonia"
+    }
+  }
+}
+

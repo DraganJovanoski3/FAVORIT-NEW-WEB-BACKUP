@@ -1,0 +1,81 @@
+<div class="privacy-policy-container">
+  <div class="privacy-policy-content">
+    <header class="privacy-header">
+      <h1 class="privacy-title">{{privacyPolicy?.title}}</h1>
+      <p class="last-updated">{{privacyPolicy?.lastUpdated}}</p>
+    </header>
+
+    <div class="privacy-sections" *ngIf="privacyPolicy">
+      <!-- Introduction -->
+      <section class="privacy-section">
+        <h2 class="section-title">{{privacyPolicy.sections.introduction.title}}</h2>
+        <p class="section-content">{{privacyPolicy.sections.introduction.content}}</p>
+      </section>
+
+      <!-- Data Collection -->
+      <section class="privacy-section">
+        <h2 class="section-title">{{privacyPolicy.sections.dataCollection.title}}</h2>
+        <p class="section-content">{{privacyPolicy.sections.dataCollection.content}}</p>
+        <ul class="section-list">
+          <li *ngFor="let item of privacyPolicy.sections.dataCollection.items">{{item}}</li>
+        </ul>
+      </section>
+
+      <!-- Data Usage -->
+      <section class="privacy-section">
+        <h2 class="section-title">{{privacyPolicy.sections.dataUsage.title}}</h2>
+        <p class="section-content">{{privacyPolicy.sections.dataUsage.content}}</p>
+        <ul class="section-list">
+          <li *ngFor="let item of privacyPolicy.sections.dataUsage.items">{{item}}</li>
+        </ul>
+      </section>
+
+      <!-- Data Protection -->
+      <section class="privacy-section">
+        <h2 class="section-title">{{privacyPolicy.sections.dataProtection.title}}</h2>
+        <p class="section-content">{{privacyPolicy.sections.dataProtection.content}}</p>
+      </section>
+
+      <!-- Cookies -->
+      <section class="privacy-section">
+        <h2 class="section-title">{{privacyPolicy.sections.cookies.title}}</h2>
+        <p class="section-content">{{privacyPolicy.sections.cookies.content}}</p>
+      </section>
+
+      <!-- Third Party -->
+      <section class="privacy-section">
+        <h2 class="section-title">{{privacyPolicy.sections.thirdParty.title}}</h2>
+        <p class="section-content">{{privacyPolicy.sections.thirdParty.content}}</p>
+      </section>
+
+      <!-- Your Rights -->
+      <section class="privacy-section">
+        <h2 class="section-title">{{privacyPolicy.sections.yourRights.title}}</h2>
+        <p class="section-content">{{privacyPolicy.sections.yourRights.content}}</p>
+        <ul class="section-list">
+          <li *ngFor="let item of privacyPolicy.sections.yourRights.items">{{item}}</li>
+        </ul>
+      </section>
+
+      <!-- Contact -->
+      <section class="privacy-section contact-section">
+        <h2 class="section-title">{{privacyPolicy.sections.contact.title}}</h2>
+        <p class="section-content">{{privacyPolicy.sections.contact.content}}</p>
+        <div class="contact-info">
+          <div class="contact-item">
+            <strong>Email:</strong>
+            <a href="mailto:{{privacyPolicy.sections.contact.email}}">{{privacyPolicy.sections.contact.email}}</a>
+          </div>
+          <div class="contact-item">
+            <strong>Phone:</strong>
+            <a href="tel:{{privacyPolicy.sections.contact.phone}}">{{privacyPolicy.sections.contact.phone}}</a>
+          </div>
+          <div class="contact-item">
+            <strong>Address:</strong>
+            <span>{{privacyPolicy.sections.contact.address}}</span>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>

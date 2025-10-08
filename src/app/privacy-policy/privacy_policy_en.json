@@ -1,0 +1,65 @@
+{
+  "title": "Privacy Policy",
+  "lastUpdated": "Last updated: December 2024",
+  "sections": {
+    "introduction": {
+      "title": "Introduction",
+      "content": "Favorit Electronics is committed to protecting your privacy. This privacy policy explains how we collect, use, and protect your personal data when you visit our website or use our services."
+    },
+    "dataCollection": {
+      "title": "Data Collection",
+      "content": "We may collect personal data from you when you:",
+      "items": [
+        "Visit our websites",
+        "Register for an account",
+        "Place an order or purchase products",
+        "Subscribe to our newsletters",
+        "Contact our customer support",
+        "Participate in surveys or research"
+      ]
+    },
+    "dataUsage": {
+      "title": "Data Usage",
+      "content": "We use your personal data to:",
+      "items": [
+        "Process and deliver your orders",
+        "Communicate with you about your orders and services",
+        "Improve our products and services",
+        "Send marketing materials (only with your consent)",
+        "Comply with legal requirements"
+      ]
+    },
+    "dataProtection": {
+      "title": "Data Protection",
+      "content": "We implement appropriate technical and organizational measures to protect your personal data from unauthorized access, alteration, disclosure, or destruction."
+    },
+    "cookies": {
+      "title": "Cookies",
+      "content": "Our website uses cookies to enhance your experience. You can control cookies through your browser settings."
+    },
+    "thirdParty": {
+      "title": "Third-Party Sharing",
+      "content": "We do not sell, rent, or share your personal data with third parties, except as described in this privacy policy or with your explicit consent."
+    },
+    "yourRights": {
+      "title": "Your Rights",
+      "content": "You have the right to:",
+      "items": [
+        "Access your personal data",
+        "Correct inaccurate data",
+        "Delete your data",
+        "Restrict processing",
+        "Data portability",
+        "Object to processing"
+      ]
+    },
+    "contact": {
+      "title": "Contact",
+      "content": "If you have questions about this privacy policy, please contact us:",
+      "email": "centrounion@centrounion.com.mk",
+      "phone": "+389 2 2440 110",
+      "address": "Ul. Partizanski odredi 154, 1000 Skopje, R. S. Macedonia"
+    }
+  }
+}
+
