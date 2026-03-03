@@ -3,12 +3,12 @@ body {
     margin: 0px;
     font-family: 'Roboto';
 }
-html, body { height: 100%; }
+html, body { height: 100%; overflow-x: hidden; }
 body, footer { 
     margin: 0; font-family: 'Roboto', "Helvetica Neue", sans-serif; 
 }
 
-html, body { height: 100%; }
+html, body { height: 100%; overflow-x: hidden; }
 body, footer { 
     margin: 0; font-family: 'Roboto', "Helvetica Neue", sans-serif; 
 }

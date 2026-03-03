@@ -1,6 +1,7 @@
 import {
   DomSanitizer
-} from "./chunk-J5Y6IJBX.js";
+} from "./chunk-ERBM6SKK.js";
+import "./chunk-GPR62MOW.js";
 import {
   CommonModule,
   DOCUMENT,
@@ -9,7 +10,7 @@ import {
   NgIf,
   NgStyle,
   isPlatformBrowser
-} from "./chunk-Y73HBF5W.js";
+} from "./chunk-45XJPFUW.js";
 import {
   ChangeDetectorRef,
   Component,
@@ -56,12 +57,13 @@ import {
   ɵɵtextInterpolate,
   ɵɵtextInterpolate2,
   ɵɵviewQuery
-} from "./chunk-3P2WM4VB.js";
-import "./chunk-RMCNOTGP.js";
-import "./chunk-7W5Y56R5.js";
+} from "./chunk-CD4CC5ZU.js";
+import "./chunk-UPHQNUTW.js";
+import "./chunk-JBZA3XKD.js";
+import "./chunk-NV2RJMHI.js";
 import {
   __spreadValues
-} from "./chunk-MQ5HLROT.js";
+} from "./chunk-5K356HEJ.js";
 
 // node_modules/ng-image-slider/fesm2020/ng-image-slider.mjs
 var _c0 = (a0) => ({

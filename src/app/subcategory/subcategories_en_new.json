@@ -40,7 +40,8 @@
       "builtInStoveTops":"Built-In Stove Tops",
       "builtInCookingAppliences":"Built-In Cooking Appliances",
       "builtInFridges":"Built-In Refrigerators",
-      "builtInStoves":"Built-In Stoves"
+      "builtInStoves":"Built-In Stoves",
+      "builtInStovesAndTops":"Built-In Stove With Stove Tops"
   },
   "homeAppliances":{
       "boilers":"Boilers",

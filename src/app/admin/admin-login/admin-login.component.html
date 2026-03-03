@@ -1,0 +1,22 @@
+<div class="admin-login-page">
+  <div class="login-card">
+    <h1>Admin Login</h1>
+    <p class="subtitle">Warranty verification panel</p>
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input id="email" type="email" formControlName="email" placeholder="admin@example.com" />
+        <span class="error" *ngIf="form.get('email')?.invalid && form.get('email')?.touched">Valid email required</span>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input id="password" type="password" formControlName="password" placeholder="••••••••" />
+        <span class="error" *ngIf="form.get('password')?.invalid && form.get('password')?.touched">Required</span>
+      </div>
+      <div class="error-msg" *ngIf="error">{{ error }}</div>
+      <button type="submit" class="btn-primary" [disabled]="loading">
+        {{ loading ? 'Signing in...' : 'Sign in' }}
+      </button>
+    </form>
+  </div>
+</div>

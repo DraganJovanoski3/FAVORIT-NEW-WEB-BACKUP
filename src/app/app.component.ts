@@ -9,10 +9,6 @@ import { FooterFavorit } from './footer/footer.component';
 import { MatDialog } from '@angular/material/dialog';
 import { PopupComponent } from './popup/popup.component';
 
-const components = [
-  NavbarComponent,
-  FooterFavorit
-];
 
 // @Directive({ selector: 'img' })
 // export class LazyImgDirective {
@@ -28,7 +24,7 @@ const components = [
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, MatPaginatorModule, MatDialogModule, RouterOutlet, ...components],
+  imports: [CommonModule, MatPaginatorModule, MatDialogModule, RouterOutlet, NavbarComponent, FooterFavorit],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
@@ -42,6 +38,18 @@ export class AppComponent {
   ) {
     this.ensureLangQueryParam();
     this.listenToRouteChanges();
+    this.scrollToTopOnNavigate();
+  }
+
+  /** Scroll to top on every route change (nav links, etc.). */
+  private scrollToTopOnNavigate(): void {
+    this.router.events.pipe(
+      filter((event): event is NavigationEnd => event instanceof NavigationEnd)
+    ).subscribe(() => {
+      window.scrollTo(0, 0);
+      document.documentElement.scrollTop = 0;
+      document.body.scrollTop = 0;
+    });
   }
 
   ngOnInit(): void {

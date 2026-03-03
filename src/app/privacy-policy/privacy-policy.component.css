@@ -5,6 +5,7 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
   color: #333;
+  margin-top: 80px;
 }
 
 .privacy-policy-content {
@@ -15,10 +16,11 @@
 }
 
 .privacy-header {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #204880 0%, #2c5aa0 50%, #1a3a6b 100%);
   color: white;
   padding: 3rem 2rem;
   text-align: center;
+  box-shadow: 0 4px 20px rgba(32, 72, 128, 0.3);
 }
 
 .privacy-title {
@@ -52,10 +54,10 @@
 .section-title {
   font-size: 1.8rem;
   font-weight: 600;
-  color: #2c3e50;
+  color: #204880;
   margin: 0 0 1rem 0;
   padding-bottom: 0.5rem;
-  border-bottom: 2px solid #3498db;
+  border-bottom: 2px solid #204880;
   display: inline-block;
 }
 
@@ -74,6 +76,25 @@
   margin-bottom: 0.5rem;
   font-size: 1.05rem;
   color: #555;
+}
+
+.legal-docs-list {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+.legal-docs-list li {
+  margin-bottom: 0.75rem;
+  font-size: 1.05rem;
+}
+
+.legal-docs-list a {
+  color: #204880;
+  text-decoration: none;
+}
+
+.legal-docs-list a:hover {
+  text-decoration: underline;
 }
 
 .contact-section {
@@ -100,13 +121,13 @@
 }
 
 .contact-item a {
-  color: #3498db;
+  color: #204880;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .contact-item a:hover {
-  color: #2980b9;
+  color: #2c5aa0;
   text-decoration: underline;
 }
 
@@ -114,6 +135,7 @@
 @media (max-width: 768px) {
   .privacy-policy-container {
     padding: 1rem 0.5rem;
+    margin-top: 70px;
   }
   
   .privacy-header {

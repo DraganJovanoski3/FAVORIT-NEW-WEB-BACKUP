@@ -1,8 +1,1 @@
-{
-    "serviceCenters": "Service Centers",
-    "callCenter": "Call Center",
-    "phone": "Phone: 02 2 440 070",
-    "email": "Email: servis@centrounion.com.mk",
-    "header": "Service Centers"
-  }
-  
+{"serviceCenters":"Service Centers","callCenter":"Call Center","phone":"Phone: 02 2 440 070","email":"Email: servis@centrounion.com.mk","header":"Service Centers","sendMessage":"Contact service centre","formSubtitle":"Send a message to the service department","name":"Full Name","youEmail":"Your Email","message":"Message","submit":"Submit","sending":"Sending...","namePlaceholder":"Enter your name","emailPlaceholder":"Enter your email address","phonePlaceholder":"+389 XX XXX XXX","subjectPlaceholder":"Message subject","messagePlaceholder":"Enter your message...","phoneLabel":"Phone","subject":"Subject","successMessage":"Your message has been sent. We will contact you soon.","formError":"This field is required."}

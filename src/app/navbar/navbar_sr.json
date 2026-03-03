@@ -1,17 +1,1 @@
-{
-    "homePage": "Doma",
-    "products": "Proizvodi",
-    "salesPartners": "Partneri",
-    "serviceCenters": "Servisni centri",
-    "aboutUs": "O nama",
-    "contact": "Kontakt",
-    "blogList": "Blog",
-    "address": "Adresa",
-    "addressLine": "ul. Partizanski Odredi 154, 1000 Skoplje, Republika Makedonija",
-    "phone": "Telefon",
-    "service": "Servisni odsek",
-    "email": "E-pošta",
-    "search": "Pretraži",
-    "searchPlaceholder": "Pretraži proizvode...",
-    "searchNoResults": "Nema rezultata."
-}
+{"homePage":"Doma","products":"Proizvodi","salesPartners":"Partneri","serviceCenters":"Servisni centri","aboutUs":"O nama","contact":"Kontakt","warranty":"Гаранција","blogList":"Blog","address":"Adresa","addressLine":"ul. Partizanski Odredi 154, 1000 Skoplje, Republika Makedonija","phone":"Telefon","service":"Servisni odsek","email":"E-pošta","search":"Pretraži","searchPlaceholder":"Pretraži proizvode...","searchNoResults":"Nema rezultata."}

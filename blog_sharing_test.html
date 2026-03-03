@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Sharing Test</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .test-section { margin: 20px 0; padding: 15px; border: 1px solid #ddd; border-radius: 5px; }
+        .url-test { background: #f0f8ff; }
+        .instructions { background: #f0fff0; }
+        .expected { background: #fff8f0; }
+        .test-button { background: #007cba; color: white; padding: 10px 20px; border: none; border-radius: 3px; cursor: pointer; margin: 5px; }
+        .test-button:hover { background: #005a87; }
+        .url-box { background: #f5f5f5; padding: 10px; border-radius: 3px; font-family: monospace; margin: 10px 0; }
+    </style>
+</head>
+<body>
+    <h1>🔧 Blog Sharing Test</h1>
+    
+    <div class="test-section url-test">
+        <h2>📋 Blog URLs to Test</h2>
+        
+        <h3>Air Conditioner Blog (Cyrillic URL):</h3>
+        <div class="url-box">https://favoritelectronics.com/blog/Зошто-климатизерите-најмногу-замрзнуваат-при-надворешна-температура-од-околу-нула-степени</div>
+        <button class="test-button" onclick="testUrl('https://favoritelectronics.com/blog/Зошто-климатизерите-најмногу-замрзнуваат-при-надворешна-температура-од-околу-нула-степени')">Test on Facebook</button>
+        <button class="test-button" onclick="copyUrl('https://favoritelectronics.com/blog/Зошто-климатизерите-најмногу-замрзнуваат-при-надворешна-температура-од-околу-нула-степени')">Copy URL</button>
+        
+        <h3>Centro Union Blog (Cyrillic URL):</h3>
+        <div class="url-box">https://favoritelectronics.com/blog/Центро-Унион-донираше-Favorit-Electronics-апарати-за-бела-техника-на-младата-девојка-од-Штип</div>
+        <button class="test-button" onclick="testUrl('https://favoritelectronics.com/blog/Центро-Унион-донираше-Favorit-Electronics-апарати-за-бела-техника-на-младата-девојка-од-Штип')">Test on Facebook</button>
+        <button class="test-button" onclick="copyUrl('https://favoritelectronics.com/blog/Центро-Унион-донираше-Favorit-Electronics-апарати-за-бела-техника-на-младата-девојка-од-Штип')">Copy URL</button>
+        
+        <h3>Easter Recipes Blog (Cyrillic URL):</h3>
+        <div class="url-box">https://favoritelectronics.com/blog/Уникатни-велигденски-рецепти-за-модерната-кујна</div>
+        <button class="test-button" onclick="testUrl('https://favoritelectronics.com/blog/Уникатни-велигденски-рецепти-за-модерната-кујна')">Test on Facebook</button>
+        <button class="test-button" onclick="copyUrl('https://favoritelectronics.com/blog/Уникатни-велигденски-рецепти-за-модерната-кујна')">Copy URL</button>
+    </div>
+
+    <div class="test-section instructions">
+        <h2>🔧 Testing Instructions</h2>
+        
+        <h3>Facebook Testing:</h3>
+        <ol>
+            <li>Click "Test on Facebook" button above</li>
+            <li>Or go to <a href="https://developers.facebook.com/tools/debug/" target="_blank">Facebook Sharing Debugger</a></li>
+            <li>Paste the Cyrillic URL</li>
+            <li>Click "Scrape Again"</li>
+            <li>Check if it shows blog content instead of homepage</li>
+        </ol>
+        
+        <h3>WhatsApp Testing:</h3>
+        <ol>
+            <li>Click "Copy URL" button above</li>
+            <li>Open WhatsApp</li>
+            <li>Paste the URL in a message</li>
+            <li>Check if preview shows blog content</li>
+        </ol>
+        
+        <h3>Viber Testing:</h3>
+        <ol>
+            <li>Copy the URL</li>
+            <li>Open Viber</li>
+            <li>Paste the URL in a message</li>
+            <li>Check if preview shows blog content</li>
+        </ol>
+    </div>
+
+    <div class="test-section expected">
+        <h2>✅ Expected Results</h2>
+        
+        <h3>Air Conditioner Blog Should Show:</h3>
+        <ul>
+            <li><strong>Title:</strong> "Зошто климатизерите најмногу замрзнуваат при надворешна температура од околу нула Целзиусови степени? - Favorit Electronics Blog"</li>
+            <li><strong>Description:</strong> "Климатизерите што работат во режим на греење (топлински пумпи) функционираат така што пренесуваат топлина од надворешниот воздух во просторијата..."</li>
+            <li><strong>Image:</strong> AC outdoor unit image</li>
+            <li><strong>Type:</strong> Article</li>
+        </ul>
+        
+        <h3>Centro Union Blog Should Show:</h3>
+        <ul>
+            <li><strong>Title:</strong> "Од хуманост никогаш доста - Центро Унион донираше Favorit Electronics апарати за бела техника на младата девојка од Штип - Favorit Electronics Blog"</li>
+            <li><strong>Description:</strong> Content about the donation story</li>
+            <li><strong>Image:</strong> Blog image</li>
+            <li><strong>Type:</strong> Article</li>
+        </ul>
+    </div>
+
+    <div class="test-section">
+        <h2>🐛 Troubleshooting</h2>
+        
+        <h3>If Still Not Working:</h3>
+        <ol>
+            <li><strong>Check File Upload:</strong> Make sure all files are uploaded to server:
+                <ul>
+                    <li>Updated .htaccess file</li>
+                    <li>blog-Zoshto-klimatizerite-najmnogu-zamrznuvaat-pri-nadvoreshna-temperatura-od-okolu-nula-stepeni.html</li>
+                    <li>blog-Centro-Union-donirashe-Favorit-Electronics-aparati-za-bela-tehnika-na-mladata-devojka-od-Shtip.html</li>
+                    <li>blog-Unikatni-veligdenski-recepti-za-modernata-kujna.html</li>
+                </ul>
+            </li>
+            <li><strong>Clear Cache:</strong> Clear any server-side caching</li>
+            <li><strong>Check Server Logs:</strong> Look for any .htaccess errors</li>
+            <li><strong>Test Direct Access:</strong> Try accessing the static HTML file directly:
+                <div class="url-box">https://favoritelectronics.com/blog-Zoshto-klimatizerite-najmnogu-zamrznuvaat-pri-nadvoreshna-temperatura-od-okolu-nula-stepeni.html</div>
+            </li>
+        </ol>
+    </div>
+
+    <script>
+        function testUrl(url) {
+            window.open('https://developers.facebook.com/tools/debug/?q=' + encodeURIComponent(url), '_blank');
+        }
+        
+        function copyUrl(url) {
+            navigator.clipboard.writeText(url).then(function() {
+                alert('URL copied to clipboard!');
+            });
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+

@@ -14,7 +14,7 @@ if %errorlevel% neq 0 (
 echo ✓ Angular build completed
 echo.
 
-echo [2/6] Generating static HTML files...
+echo [2/7] Generating static HTML files...
 python generate_static_html.py
 if %errorlevel% neq 0 (
     echo ERROR: Static HTML generation failed!
@@ -24,7 +24,17 @@ if %errorlevel% neq 0 (
 echo ✓ Static HTML files generated
 echo.
 
-echo [3/6] Validating static files...
+echo [3/7] Generating blog static HTML files...
+python generate_blog_static_html.py
+if %errorlevel% neq 0 (
+    echo ERROR: Blog static HTML generation failed!
+    pause
+    exit /b 1
+)
+echo ✓ Blog static HTML files generated
+echo.
+
+echo [4/7] Validating static files...
 python validate_static_files.py
 if %errorlevel% neq 0 (
     echo WARNING: Some static files have validation issues
@@ -32,7 +42,7 @@ if %errorlevel% neq 0 (
 echo ✓ Static files validation completed
 echo.
 
-echo [4/6] Generating sitemap...
+echo [5/7] Generating sitemap...
 python generate_sitemap.py
 if %errorlevel% neq 0 (
     echo ERROR: Sitemap generation failed!
@@ -42,7 +52,7 @@ if %errorlevel% neq 0 (
 echo ✓ Sitemap generated
 echo.
 
-echo [5/6] Flattening structure for main directory...
+echo [6/7] Flattening structure for main directory...
 echo Moving Angular files to root...
 move "dist\public_html\browser\*" "dist\public_html\"
 rmdir "dist\public_html\browser"
@@ -53,10 +63,11 @@ echo Copying additional files...
 copy "sitemap.xml" "dist\public_html\"
 copy "robots.txt" "dist\public_html\"
 copy "product-*.html" "dist\public_html\"
+copy "blog-*.html" "dist\public_html\"
 echo ✓ Structure flattened
 echo.
 
-echo [6/6] Finalizing build...
+echo [7/7] Finalizing build...
 echo ✓ Main directory build completed successfully!
 echo.
 echo ========================================
@@ -65,6 +76,7 @@ echo ========================================
 echo - All files: dist/public_html/
 echo - Angular app: dist/public_html/index.html
 echo - Static HTML: dist/public_html/product-*.html
+echo - Blog HTML: dist/public_html/blog-*.html
 echo - Sitemap: dist/public_html/sitemap.xml
 echo - Robots: dist/public_html/robots.txt
 echo - .htaccess: dist/public_html/.htaccess

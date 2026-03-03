@@ -1,0 +1,217 @@
+<div class="warranty-page">
+  <!-- Hero -->
+  <section class="warranty-hero">
+    <div class="warranty-hero-inner">
+      <img class="warranty-hero-logo" src="assets/favorit-logo.png" alt="Favorit">
+      <h1 class="warranty-hero-title">{{ t?.title || 'Warranty Registration' }}</h1>
+      <p class="warranty-hero-desc">{{ t?.subtitle || 'Register your product to activate your warranty.' }}</p>
+    </div>
+  </section>
+
+  <!-- Form + Image layout -->
+  <section class="warranty-content">
+    <div class="warranty-grid">
+      <div class="warranty-form-wrap">
+        <form class="warranty-form" [formGroup]="form" (ngSubmit)="onSubmit()">
+          <h2 class="warranty-form-title">{{ t?.title || 'Warranty Registration' }}</h2>
+          <div class="warranty-intro">
+            <p class="warranty-intro-bold" *ngIf="t?.introBold1"><strong>{{ t.introBold1 }}</strong></p>
+            <p class="warranty-intro-bold" *ngIf="t?.introBold2"><strong>{{ t.introBold2 }}</strong></p>
+            <p class="warranty-intro-p" *ngIf="t?.introParagraph1">{{ t.introParagraph1 }}</p>
+            <p class="warranty-intro-p warranty-red" *ngIf="t?.introParagraph2Before">{{ t.introParagraph2Before }}<strong>{{ t?.introParagraph2Bold }}</strong>{{ t?.introParagraph2After }}</p>
+            <p class="warranty-intro-p warranty-sticker-red" *ngIf="t?.stickerParagraph">{{ t.stickerParagraph }}</p>
+            <p class="warranty-red" *ngIf="t?.warningRed">
+              <ng-container *ngIf="!t?.warningRedPart1 && t?.warningRed">{{ t.warningRed }}</ng-container>
+            </p>
+          </div>
+          <!-- <div class="warranty-notice" *ngIf="t?.warning || t?.warningBefore">
+            <span class="warranty-red">
+              * <ng-container *ngIf="t?.warningBefore">{{ t.warningBefore }}<strong>{{ t?.warningBold }}</strong>{{ t?.warningAfter }}</ng-container>
+              <ng-container *ngIf="!t?.warningBefore && t?.warning">{{ t.warning }}</ng-container>
+            </span>
+          </div> -->
+          <!-- Name -->
+          <div class="warranty-row warranty-row-2">
+            <div class="warranty-field">
+              <label for="first_name">{{ t?.firstNamePlaceholder || 'First name' }} <span class="req">*</span></label>
+              <input id="first_name" type="text" formControlName="first_name" />
+              <span class="warranty-err" *ngIf="isFieldInvalid('first_name')">{{ t?.required || 'Required' }}</span>
+            </div>
+            <div class="warranty-field">
+              <label for="last_name">{{ t?.lastNamePlaceholder || 'Last name' }} <span class="req">*</span></label>
+              <input id="last_name" type="text" formControlName="last_name" />
+              <span class="warranty-err" *ngIf="isFieldInvalid('last_name')">{{ t?.required || 'Required' }}</span>
+            </div>
+          </div>
+
+          <!-- Address -->
+          <div class="warranty-row">
+            <div class="warranty-field warranty-field-full">
+              <label for="address">{{ t?.address || 'Address' }} <span class="req">*</span></label>
+              <input id="address" type="text" formControlName="address" />
+              <span class="warranty-err" *ngIf="isFieldInvalid('address')">{{ t?.required || 'Required' }}</span>
+            </div>
+          </div>
+
+          <!-- City + Postal -->
+          <div class="warranty-row warranty-row-2">
+            <div class="warranty-field">
+              <label for="city">{{ t?.city || 'City' }} <span class="req">*</span></label>
+              <input id="city" type="text" formControlName="city" />
+              <span class="warranty-err" *ngIf="isFieldInvalid('city')">{{ t?.required || 'Required' }}</span>
+            </div>
+            <div class="warranty-field">
+              <label for="postal_code">{{ t?.postalCode || 'Postal Code' }} <span class="req">*</span></label>
+              <input id="postal_code" type="text" formControlName="postal_code" />
+              <span class="warranty-err" *ngIf="isFieldInvalid('postal_code')">{{ t?.required || 'Required' }}</span>
+            </div>
+          </div>
+
+          <!-- Phone + Email -->
+          <div class="warranty-row warranty-row-2">
+            <div class="warranty-field">
+              <label for="phone">{{ t?.contactPhone || 'Contact Phone' }} <span class="req">*</span></label>
+              <input id="phone" type="tel" formControlName="phone" />
+              <span class="warranty-err" *ngIf="isFieldInvalid('phone')">{{ t?.invalidPhone || 'Invalid phone' }}</span>
+            </div>
+            <div class="warranty-field">
+              <label for="email">{{ t?.email || 'Email' }} <span class="req">*</span></label>
+              <input id="email" type="email" formControlName="email" />
+              <span class="warranty-err" *ngIf="isFieldInvalid('email')">{{ t?.invalidEmail || 'Invalid email' }}</span>
+            </div>
+          </div>
+
+          <!-- Device type (read-only) -->
+          <div class="warranty-row">
+            <div class="warranty-field warranty-field-full">
+              <label>{{ t?.deviceType || 'Device Type' }} <span class="req">*</span></label>
+              <div class="warranty-readonly">{{ categoryName }}</div>
+              <input type="hidden" formControlName="device_type" />
+            </div>
+          </div>
+
+          <!-- Device model (product search) -->
+          <div class="warranty-row warranty-row-2">
+            <div class="warranty-field warranty-product-field">
+              <label for="device_model">{{ t?.deviceModel || 'Device Model' }} <span class="req">*</span></label>
+              <div class="warranty-product-box">
+                <input
+                  id="device_model"
+                  type="text"
+                  formControlName="device_model"
+                  [placeholder]="t?.deviceModel || 'Search or select product'"
+                  (focus)="onProductInputFocus()"
+                  (blur)="closeProductDropdown()"
+                  autocomplete="off"
+                />
+                <div class="warranty-product-list" *ngIf="showProductDropdown && filteredProducts.length" (mousedown)="$event.preventDefault()">
+                  <button type="button" class="warranty-product-item" *ngFor="let p of filteredProducts" (click)="selectProduct(p)">
+                    <span class="warranty-product-name">{{ p.name }}</span>
+                    <span class="warranty-product-sub">{{ p.subcategory }}</span>
+                  </button>
+                </div>
+                <div class="warranty-product-list warranty-product-list-empty" *ngIf="showProductDropdown && form.get('device_model')?.value && !filteredProducts.length">
+                  {{ t?.searchNoResults || 'No products found.' }}
+                </div>
+              </div>
+              <span class="warranty-err" *ngIf="isFieldInvalid('device_model')">{{ t?.required || 'Required' }}</span>
+            </div>
+            <div class="warranty-field">
+              <label for="serial_number">{{ t?.serialNumber || 'Serial Number' }} <span class="req">*</span></label>
+              <input id="serial_number" type="text" formControlName="serial_number" />
+              <span class="warranty-err" *ngIf="isFieldInvalid('serial_number')">{{ t?.required || 'Required' }}</span>
+            </div>
+          </div>
+
+          <!-- Date of purchase -->
+          <div class="warranty-row">
+            <div class="warranty-field warranty-field-full">
+              <label>{{ t?.dateOfPurchase || 'Date of Purchase' }}</label>
+              <div class="warranty-date-row">
+                <div class="warranty-date-col">
+                  <label class="warranty-sublabel" for="purchase_day">{{ t?.dayOfPurchase || 'Day' }} <span class="req">*</span></label>
+                  <select id="purchase_day" formControlName="purchase_day">
+                    <option [ngValue]="null">{{ t?.dayOfPurchase || 'Day' }}</option>
+                    <option *ngFor="let d of days" [ngValue]="d">{{ d }}</option>
+                  </select>
+                </div>
+                <div class="warranty-date-col">
+                  <label class="warranty-sublabel" for="purchase_month">{{ t?.monthOfPurchase || 'Month' }} <span class="req">*</span></label>
+                  <select id="purchase_month" formControlName="purchase_month">
+                    <option [ngValue]="null">{{ t?.monthOfPurchase || 'Month' }}</option>
+                    <option *ngFor="let m of months" [ngValue]="m">{{ t?.months?.[m - 1] || m }}</option>
+                  </select>
+                </div>
+                <div class="warranty-date-col">
+                  <label class="warranty-sublabel" for="purchase_year">{{ t?.yearOfPurchase || 'Year' }} <span class="req">*</span></label>
+                  <select id="purchase_year" formControlName="purchase_year">
+                    <option [ngValue]="null">{{ t?.yearOfPurchase || 'Year' }}</option>
+                    <option *ngFor="let y of years" [ngValue]="y">{{ y }}</option>
+                  </select>
+                </div>
+              </div>
+              <span class="warranty-err" *ngIf="isFieldInvalid('purchase_day') || isFieldInvalid('purchase_month') || isFieldInvalid('purchase_year')">{{ t?.required || 'Required' }}</span>
+            </div>
+          </div>
+
+          <!-- Place of purchase -->
+          <div class="warranty-row warranty-row-2">
+            <div class="warranty-field">
+              <label for="place_of_purchase">{{ t?.placeOfPurchase || 'Place of Purchase' }} <span class="req">*</span></label>
+              <input id="place_of_purchase" type="text" formControlName="place_of_purchase" />
+              <span class="warranty-err" *ngIf="isFieldInvalid('place_of_purchase')">{{ t?.required || 'Required' }}</span>
+            </div>
+            <div class="warranty-field">
+              <label for="city_of_purchase">{{ t?.cityOfPurchase || 'City of Purchase' }} <span class="req">*</span></label>
+              <input id="city_of_purchase" type="text" formControlName="city_of_purchase" />
+              <span class="warranty-err" *ngIf="isFieldInvalid('city_of_purchase')">{{ t?.required || 'Required' }}</span>
+            </div>
+          </div>
+
+          <!-- Fiscal receipt -->
+          <div class="warranty-row">
+            <div class="warranty-field warranty-field-full">
+              <label for="fiscal_receipt_number">{{ t?.fiscalReceiptNumber || 'Fiscal Receipt / Invoice Number' }} <span class="req">*</span></label>
+              <input id="fiscal_receipt_number" type="text" formControlName="fiscal_receipt_number" />
+              <span class="warranty-err" *ngIf="isFieldInvalid('fiscal_receipt_number')">{{ t?.required || 'Required' }}</span>
+            </div>
+          </div>
+
+          <!-- Terms -->
+          <div class="warranty-row">
+            <div class="warranty-field warranty-field-full warranty-field-checkbox">
+              <label class="warranty-checkbox-label">
+                <input type="checkbox" formControlName="terms_accepted" />
+                <span>{{ t?.termsLabel || 'I confirm that I have read and agree to the General Terms and Conditions and the Privacy Policy' }} <span class="req">*</span></span>
+              </label>
+              <span class="warranty-err" *ngIf="isFieldInvalid('terms_accepted')">{{ t?.required || 'Required' }}</span>
+              <span class="read-more" style="color: rgb(61, 61, 241); font-weight: 600;"><a href="/privacy-policy" class="legal-link">{{ t?.PrivacyLearnMore || 'Privacy - Learn More'}}</a></span>
+            </div>
+          </div>
+
+          <!-- Warning above submit -->
+          <div class="warranty-row warranty-incorrect-warning" *ngIf="t?.incorrectInfoWarning">
+            <p class="warranty-incorrect-info-msg">* {{ t.incorrectInfoWarning }}</p>
+          </div>
+          <!-- Submit -->
+          <div class="warranty-row warranty-actions">
+            <button type="submit" class="warranty-submit" [disabled]="isSubmitting">
+              {{ isSubmitting ? '...' : (t?.submit || 'Submit') }}
+            </button>
+          </div>
+
+          <div class="warranty-msg" *ngIf="message" [class.warranty-msg-ok]="success" [class.warranty-msg-err]="!success">
+            {{ message }}
+          </div>
+        </form>
+      </div>
+
+      <aside class="warranty-side">
+        <div class="warranty-side-card">
+          <img class="warranty-side-img" src="assets/warenty-image.jpg" alt="Warranty" />
+          <!-- <p class="warranty-side-text">{{ t?.subtitle || 'Register your product to activate your warranty.' }}</p> -->
+        </div>
+      </aside>
+    </div>
+  </section>
+</div>

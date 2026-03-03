@@ -1,9 +1,106 @@
-<div class="header-container">
-  <h1 class="header">{{serviceCentersConstant.header}}</h1>
-</div>
-<h1>{{serviceCentersConstant.serviceCenters}} <br>
-  {{serviceCentersConstant.callCenter}}: <br>
-  {{serviceCentersConstant.phone}} <br>
-  {{serviceCentersConstant.email}}</h1>
+<div class="service-centers-page">
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-background">
+      <div class="hero-pattern"></div>
+    </div>
+    <div class="hero-content">
+      <div class="logo-container">
+        <img class="logo" src="assets/favorit-logo.png" alt="Favorit Electronics">
+      </div>
+      <h1 class="hero-title">{{serviceCentersConstant.header}}</h1>
+      <p class="hero-subtitle">{{serviceCentersConstant.formSubtitle}}</p>
+    </div>
+  </section>
 
-<iframe src="https://www.google.com/maps/d/embed?mid=1u4NH2XNWCieXpuyRT_JdA2FwfpcEAsBX&ehbc=2E312F" width="90%" height="90%"></iframe>
+  <!-- Main Section: Info + Form -->
+  <section class="main-section">
+    <div class="main-container">
+      <!-- Contact info card -->
+      <div class="info-section">
+        <div class="section-header">
+          <h2 class="section-title">{{serviceCentersConstant.serviceCenters}}</h2>
+          <p class="section-subtitle">{{serviceCentersConstant.callCenter}}</p>
+        </div>
+        <div class="info-cards">
+          <div class="info-card">
+            <div class="card-icon">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <div class="card-content">
+              <h3>{{serviceCentersConstant.phoneLabel}}</h3>
+              <a href="tel:+38922440070">{{serviceCentersConstant.phone}}</a>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="card-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="card-content">
+              <h3>{{serviceCentersConstant.youEmail}}</h3>
+              <a href="mailto:servis@centrounion.com.mk">servis&#64;centrounion.com.mk</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact form -->
+      <div class="form-section">
+        <div class="section-header">
+          <h2 class="section-title">{{serviceCentersConstant.sendMessage}}</h2>
+          <p class="section-subtitle">{{serviceCentersConstant.formSubtitle}}</p>
+        </div>
+        <form [formGroup]="serviceForm" (ngSubmit)="onSubmit()" class="service-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="sc-name">{{serviceCentersConstant.name}}</label>
+              <input id="sc-name" type="text" formControlName="name" [placeholder]="serviceCentersConstant.namePlaceholder" class="form-control" />
+              <small class="error" *ngIf="isFieldInvalid('name')">{{ getErrorMessage('name') }}</small>
+            </div>
+            <div class="form-group">
+              <label for="sc-email">{{serviceCentersConstant.youEmail}}</label>
+              <input id="sc-email" type="email" formControlName="email" [placeholder]="serviceCentersConstant.emailPlaceholder" class="form-control" />
+              <small class="error" *ngIf="isFieldInvalid('email')">{{ getErrorMessage('email') }}</small>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="sc-phone">{{serviceCentersConstant.phoneLabel}}</label>
+              <input id="sc-phone" type="tel" formControlName="phone" [placeholder]="serviceCentersConstant.phonePlaceholder" class="form-control" />
+              <small class="error" *ngIf="isFieldInvalid('phone')">{{ getErrorMessage('phone') }}</small>
+            </div>
+            <div class="form-group">
+              <label for="sc-subject">{{serviceCentersConstant.subject}}</label>
+              <input id="sc-subject" type="text" formControlName="subject" [placeholder]="serviceCentersConstant.subjectPlaceholder" class="form-control" />
+              <small class="error" *ngIf="isFieldInvalid('subject')">{{ getErrorMessage('subject') }}</small>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="sc-message">{{serviceCentersConstant.message}}</label>
+            <textarea id="sc-message" formControlName="message" [placeholder]="serviceCentersConstant.messagePlaceholder" class="form-control" rows="5"></textarea>
+            <small class="error" *ngIf="isFieldInvalid('message')">{{ getErrorMessage('message') }}</small>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn-submit" [disabled]="isSubmitting">
+              {{ isSubmitting ? serviceCentersConstant.sending : serviceCentersConstant.submit }}
+            </button>
+          </div>
+          <p class="form-message success" *ngIf="submitSuccess">{{ submitMessage }}</p>
+          <p class="form-message error" *ngIf="!submitSuccess && submitMessage">{{ submitMessage }}</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <section class="map-section">
+    <div class="map-container">
+      <div class="section-header">
+        <h2 class="section-title">{{ serviceCentersConstant.serviceCenters }} – map</h2>
+      </div>
+      <div class="map-wrapper">
+        <iframe src="https://www.google.com/maps/d/embed?mid=1u4NH2XNWCieXpuyRT_JdA2FwfpcEAsBX&ehbc=2E312F" title="Service centers map" loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+</div>

@@ -32,12 +32,13 @@
       "inverter-35C": "Инвертер (-35 °C)"
     },
     "built-in-appliances": {
-      "built-in-dishwashers": "Вградни машини за садови",
-      "built-in-microwaves": "Вградни микробранови печки",
-      "built-in-stove-tops": "Вградни Плочи",
-      "built-in-cooking-appliences": "Вградни Апарати за Готвење",
-      "built-in-fridges": "Вградни Фрижидери",
-      "built-in-stoves": "Вградни Шпорети"
+      "built-in-dishwashers": "Вградeни машини за садови",
+      "built-in-microwaves": "Вградeни микробранови печки",
+      "built-in-stove-tops": "Вградeни Плочи",
+      "built-in-cooking-appliences": "Вградeни Апарати за Готвење",
+      "built-in-fridges": "Вградeни Фрижидери",
+      "built-in-stoves": "Вградeни Рерни",
+      "built-in-stoves-and-tops": "Вградeни Шпорети"
     },
     "home-appliances": {
       "boilers": "Бојлери",

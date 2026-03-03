@@ -236,6 +236,7 @@
       "COLOR": "WHITE",
       "2 ELECTRIC HOT PLATES": "(∅ 180 + ∅ 145)",
       "1 HEAT PLATE": "∅ 145 (1000 W)",
+      "Fan in oven": "√",
       "ENAMELED SURFACE": "√",
       "LIGHT IN THE OVEN": "√",
       "0+3 OVEN FUNCTIONS": "√",
@@ -268,6 +269,7 @@
       "COLOR": "WHITE",
       "2 ELECTRIC HOT PLATES": "(∅ 180 + ∅ 145)",
       "1 HEAT PLATE": "∅ 145 (1000 W)",
+      "Ventilator in oven": "√",
       "ENAMELED SURFACE": "√",
       "LIGHT IN THE OVEN": "√",
       "0+3 OVEN FUNCTIONS": "√",
@@ -297,7 +299,7 @@
       "net volume": "168 L",
       "electric energy consumption": "257 kWh/y",
       "noise level": "40 dB",
-      "energy class": "F",
+      "energy class": "E",
       "gas": "P 600 A",
       "color": "white/silver",
       "regulating legs": "√",
@@ -331,7 +333,7 @@
       "refrigerator freezer net volume": "230 L / 106 L",
       "electric energy consumption": "306 kWh/y",
       "noise level": "41 dB",
-      "energy class": "F",
+      "energy class": "E",
       "gas": "Р 600 A",
       "color": "white/inox",
       "regulating legs": "√",
@@ -371,7 +373,7 @@
       "gross volume": "341 L",
       "net volume": "324 L",
       "refrigerator freezer net volume": "230 L / 106 L",
-      "energy class": "F",
+      "energy class": "E",
       "gas": "P 600 A",
       "color": "white/inox",
       "interchangeable doors":  "√",
@@ -386,50 +388,6 @@
       "freezing chamber with transparent drawers":  "√",
       "electric energy consumption": "306 kWh/y",
       "noise level": "41 dB"
-    }
-  },
-  {
-    "id": 14,
-    "name": "Dishwasher E60 – A22",
-    "description": [
-      "This dishwasher model boasts compact dimensions (w/h/d 85/59.8/59.8) and a capacity for 13 sets of dishes. It offers 7 versatile programs, including a quick 30-minute cycle at 40°C. The dishwasher features a third shelf, LED display, and energy-efficient A++ rating. With a noise level of 57 dB, it includes a delayed start option (up to 24 hours) and consumes 0.91 kWh per eco-program cycle. Additionally, it provides flood and heater protection, a child lock, and supports tablet washing. This white/inox dishwasher is efficient, reliable, and user-friendly for everyday use."   
-    ],
-    "pictures": [
-      "assets/Home appliances/Dishwasher E60 – A22/E60-A22-04-1024x576.png",
-      "assets/Home appliances/Dishwasher E60 – A22/E60-A22-05-1024x576.png",
-      "assets/Home appliances/Dishwasher E60 – A22/E60-A22-X-07-1024x576.png",
-      "assets/Home appliances/Dishwasher E60 – A22/E60-A22-X-08-1024x576.png"
-    ],
-    "specificationsDoc": "assets/PDF-Specifications/4.E60-A22-upatstva-EN-AL-SIR-MAK-.pdf",
-    "specifications": {
-      "dimensions": "w/h/d 85/59,8/59,8",
-      "maximum capacity": "13 sets of dishes",
-      "programs": "7",
-      "third shelf": "√",
-      "LED DISPLAY": "√",
-      "fast program": "30 min. on 40 °C",
-      "half load button": "√",
-      "power class": "A ++",
-      "drying class": "A",
-      "noise when working": "57 dB",
-      "delayed start": "1, 2, 3…..24h",
-      "one cycle": "4,5 l to 9 l of water according to the program",
-      "program duration eco program": "171min",
-      "power consumption eco program": "0,91 KWh",
-      "energy consumption per year": "270 KWh",
-      "flood protection": "√",
-      "heater protection": "√",
-      "color": "white/inox",
-      "hidden heater": "√",
-      "metal filter": "√",
-      "on off button": "√",
-      "program end indicator": "√",
-      "indicators for the wash dry function": "√",
-      "salt deficiency indicator": "√",
-      "gloss deficiency indicator": "√",
-      "child protection": "√",
-      "special option for washing with tablets": "√",
-      "extra hygiene options extra rinsing extra drying": "√"
     }
   },
   {
@@ -476,57 +434,45 @@
     }
   },
   {
-    "id": 16,
-    "name": "DISHWASHER E60-A24N BLDC with inverter motor",
+    "id": 17,
+    "name": "Dishwasher F45 – Y15N",
     "description": [
-      "This dishwasher features a compact size with dimensions of 85 cm in height, 60 cm in width, and 60 cm in depth. It can accommodate up to 15 sets of dishes and includes convenient features like a third shelf, LED display, inverter motor, and various programs. Notably, it offers a fast program lasting 30 minutes at 40°C, with noise levels at 49 dB during operation. Other functionalities include a delayed start up to 24 hours, eco-friendly washing programs, and comprehensive protection mechanisms such as flood and heater protection. The dishwasher also comes with multiple indicators, extra operation options, and child protection features for added convenience and safety."   
+      "Introducing our compact and efficient dishwasher, designed to handle your daily dishwashing needs with ease. With dimensions of H/W/D 85/44.8/59.8, it can accommodate up to 10 sets of dishes. Featuring 6 versatile programs, including a fast 30-minute cycle at 40°C, it ensures efficient and thorough cleaning."
     ],
     "pictures": [
-      "assets/Home appliances/DISHWASHER E60-A24N BLDC with inverter motor/E60-A24-BLDC-04-1-1024x576.png",
-      "assets/Home appliances/DISHWASHER E60-A24N BLDC with inverter motor/E60-A24-BLDC-04-1024x576.png",
-      "assets/Home appliances/DISHWASHER E60-A24N BLDC with inverter motor/E60-A24-BLDC-05-1024x576.png",
-      "assets/Home appliances/DISHWASHER E60-A24N BLDC with inverter motor/E60-A24-BLDC-06-1024x576.png",
-      "assets/Home appliances/DISHWASHER E60-A24N BLDC with inverter motor/E60-A24-BLDC-X-01-1024x576.png",
-      "assets/Home appliances/DISHWASHER E60-A24N BLDC with inverter motor/E60-A24-BLDC-X-02-1024x576.png"
+      "assets/Home appliances/Dishwasher F45 – Y15N/F45-Y15-S-04-1024x576.png",
+      "assets/Home appliances/Dishwasher F45 – Y15N/F45-Y15-S-05-1024x576.png",
+      "assets/Home appliances/Dishwasher F45 – Y15N/F45-Y15-S-06-1024x576.png"
     ],
-    "specificationsDoc": "assets/PDF-Specifications/4.E60-A22-upatstva-EN-AL-SIR-MAK-.pdf",
+    "specificationsDoc": "assets/Product Spec/1.-F45-Y15-F45-Y15-S-upatstva-MAK-AL-SIR-EN.pdf",
     "specifications": {
-      "dimensions": "h/w/d 85/60/60",
-      "maximum capacity": "15 sets of dishes",
-      "third shelf":  "√",
-      "LED display":  "√",
-      "inverter motor":  "√",
-      "programs":  "√",
-      "fast program": "30 min. on 40°C",
-      "half load button":  "√",
-      "power class": "D",
-      "drying class": "A",
-      "noise when working": "49 dB",
-      "delayed start": "1, 2, 3….24h",
-      "one cycle water consumption": "4.5 L to 17.2 L water according to the program",
-      "program duration eco program": "239 min",
-      "power consumption eco program": "0.84 KWh",
-      "flood protection":  "√",
-      "heater protection":  "√",
-      "hidden heater":  "√",
-      "metal filter":  "√",
-      "color": "white/inox",
-      "on off button":  "√",
-      "start pause button":  "√",
-      "program end indicator":  "√",
-      "wash dry function indicators":  "√",
-      "salt deficiency indicator":  "√",
-      "gloss deficiency indicator":  "√",
-      "extra operation options":  "√",
-      "child protection":  "√",
-      "washing with tablets option":  "√",
-      "outdoor option":  "√",
-      "extra hygiene option":  "√",
-      "audible signal":  "√"
+      "DIMENSIONS": "H/W/D 85/44,8/59,8",
+      "MAXIMUM CAPACITY": "10 SETS OF DISHES",
+      "PROGRAMS": "6",
+      "FAST PROGRAM": "30 MIN. ON 40 °C",
+      "HALF (1/2) LOAD BUTTON": "√",
+      "ENERGY CLASS": "E",
+      "DRYING CLASS": "А",
+      "NOISE WHEN OPERATING": "57 DB",
+      "DELAYED START": "3H, 6H И 9H",
+      "ONE CYCLE": "3.8 L TO 17.6 L WATER ACCORDING TO THE PROGRAM",
+      "PROGRAM DURATION (ECO-PROGRAM)": "198 MIN.",
+      "POWER CONSUMPTION (ECO PROGRAM)": "0,73 KWH",
+      "ENERGY CONSUMPTION (PER YEAR)": "211 KWH",
+      "FLOOD PROTECTION": "√",
+      "HIDDEN HEATER": "√",
+      "HEATER PROTECTION": "√",
+      "METAL FILTER": "√",
+      "COLOR": "WHITE/GREY",
+      "ON/OFF BUTTON": "√",
+      "START/PAUSE BUTTON": "√",
+      "WASHING FUNCTION INDICATORS": "√",
+      "SALT DEFICIENCY INDICATOR": "√",
+      "GLOSS DEFICIENCY INDICATOR": "√"
     }
   },
   {
-    "id": 17,
+    "id": 142,
     "name": "Dishwasher F45 – Y15N",
     "description": [
       "Introducing our compact and efficient dishwasher, designed to handle your daily dishwashing needs with ease. With dimensions of H/W/D 85/44.8/59.8, it can accommodate up to 10 sets of dishes. Featuring 6 versatile programs, including a fast 30-minute cycle at 40°C, it ensures efficient and thorough cleaning."
@@ -820,31 +766,6 @@
     }
   },
   {
-    "id": 26,
-    "name": "Electric Cooker EC 540 WWFT",
-    "description": [
-      "This product has dimensions of 85x50x60 cm (H/W/D) and an oven volume of 55 liters. It includes a stove lid, an enameled plate, and comes with 3 control switch positions.",
-      "The oven features heating plates of 2x145mm and 2x180mm, along with a bottom and top heater, each with a power of 1000 Watts. The energy class of this appliance is A."
-    ],
-    "pictures": [
-      "assets/Home appliances/Electric Independent Cooker EC 540 WWFT/Elektricen-sporet-EC-540-WWFT-44-1024x576.png"
-    ],
-    "specificationsDoc": "assets/PDF-Specifications/Upatstvo-EC-540-WWFT-EC-540-SFT.pdf",
-    "specifications": {
-      "dimensions (HxWxD)": "85x50x60",
-      "oven volume": "55 L",
-      "stove lid": "√",
-      "heating plates": "2x145mm - 2x180mm",
-      "plate": "Enameled",
-      "control switch positions": 3,
-      "oven rack": "√",
-      "oven tray": "√",
-      "energy class": "A",
-      "bottom heater": "1000 W",
-      "top heater": "1000 W"
-    }
-},
-  {
     "id": 27,
     "name": "ELECTRIC FREESTANDING COOKER EC 640 SF",
     "description": [
@@ -868,6 +789,7 @@
       "oven volume": "72 L",
       "control panel": "6 switches",
       "6 positions of control switches": "√",
+      "Fan in oven": "√",
       "1 oven pan": "√",
       "oven rack": "√",
       "oven lamp": "√",
@@ -892,6 +814,7 @@
       "glass ceramic hob with 4 cooking zones": "2X145MM, 2X180MM",
       "oven volume": "50 L",
       "control panel": "CONTROL PANEL WITH 6 SWITCHES",
+      "Fan in oven": "√",
       "6 positions of control switches": "√",
       "2 deep oven pans": "√",
       "oven rack": "√",
@@ -920,6 +843,7 @@
       "3d white panel": "√",
       "oven volume": "50 L",
       "control panel": "CONTROL PANEL WITH 6 SWITCHES",
+      "Fan in oven": "√",
       "6 positions of control switches": "√",
       "2 deep oven pans": "√",
       "oven rack": "√",
@@ -955,7 +879,7 @@
       "3d silver panel": "√",
       "oven volume": "65 L",
       "control panel": "6 switches, 6-panel control panel",
-      "turbo fan": "√",
+      "Fan in oven": "√",
       "2 deep oven pans": "√",
       "oven rack": "√",
       "oven lamp": "√",
@@ -989,7 +913,7 @@
       "3d silver panel": "√",
       "oven volume": "65 L",
       "control panel": "6 switches, 6-panel control panel",
-      "turbo fan": "√",
+      "Fan in oven": "√",
       "2 deep oven pans": "√",
       "oven rack": "√",
       "oven lamp": "√",
@@ -1024,6 +948,7 @@
       "3d white panel": "√",
       "oven volume": "65 L",
       "control panel": "6 switches",
+      "Fan in oven": "√",
       "6 positions of control switches": "√",
       "2 deep oven pans": "√",
       "oven rack": "√",
@@ -1168,7 +1093,7 @@
       "gross volume": "91L",
       "net volume": "88L",
       "refrigerator freezer net volume": "73/8 L",
-      "energy class": "F",
+      "energy class": "E",
       "gas": "Р600",
       "color": "white",
       "interchangeable door":  "√",
@@ -1195,7 +1120,7 @@
       "dimensions": "82.1/48/50 cm",
       "gross volume": "91L",
       "net volume": "89L",
-      "energy class": "F",
+      "energy class": "E",
       "color": "white",
       "interchangeable door":  "√",
       "regulating legs":  "√",
@@ -1219,7 +1144,7 @@
       "dimensions": "82.1/48/50 cm",
       "gross volume": "91L",
       "net volume": "89L",
-      "energy class": "F",
+      "energy class": "E",
       "color": "white",
       "interchangeable door":  "√",
       "regulating legs":  "√",
@@ -1243,7 +1168,7 @@
       "dimensions": "144/54/57 cm",
       "gross net volume": "216/213 L",
       "refrigerator freezer net volume": "171/42 L",
-      "energy class": "F",
+      "energy class": "E",
       "gas": "R600",
       "color": "white/silver",
       "interchangeable doors":  "√",
@@ -1270,7 +1195,7 @@
       "dimensions": "84/48/56 cm",
       "gross volume": "64L",
       "net volume": "63L",
-      "energy class": "F",
+      "energy class": "E",
       "gas": "P600",
       "color": "white",
       "interchangeable door":  "√",
@@ -1298,7 +1223,7 @@
       "dimensions": "144/54/60 cm",
       "gross volume": "210 L",
       "net volume": "182 L",
-      "energy class": "F",
+      "energy class": "E",
       "gas": "P600",
       "color": "white",
       "interchangeable door":  "√",
@@ -1463,82 +1388,6 @@
     "Half-load sensor": "√",
     "Cotton pre-wash program": "√"
   }
-  },
-  {
-    "id": 49,
-    "name": "WASHING MACHINE W – 6101N",
-    "description": [
-      "Introducing our advanced washing machine, designed to simplify your laundry routine. With a generous 6 kg capacity and a durable 44 L inox drum, it handles large loads effortlessly. Featuring 15 programs and a maximum RPM of 1000, it ensures thorough cleaning for all types of fabrics."
-    ],
-    "pictures": [
-      "assets/Home appliances/WASHING MACHINE W – 6101N/W-6101-06-1024x576.png",
-      "assets/Home appliances/WASHING MACHINE W – 6101N/FAVORIT-W-6101-1-1024x576.png"
-    ],
-    "specificationsDoc": "assets/Product Spec/Upatstvo-W-6101.pdf",
-    "specifications": {
-      "dimensions hwl": "84.50 / 59.70 / 49.70 CM",
-      "maximum revolutions per minute": "1000",
-      "capacity": "6 KG",
-      "inox drum": "44 L",
-      "programs": "15",
-      "electronic programmer": "√",
-      "water temperature control knob": "√",
-      "energy class": "D",
-      "eco energy saving system": "√",
-      "leakage protection": "√",
-      "foam protection": "√",
-      "automatic balance system": "√",
-      "error detection system": "√",
-      "childrens lock": "√",
-      "removable top cover": "√",
-      "energy consumption": "151 KWH/ANNUM",
-      "water consumption": "9900 L/ANNUM",
-      "noise level during washing": "58 DB",
-      "spin noise level": "77 DB",
-      "fast program": "15 MIN. 30 C",
-      "spin control": "√",
-      "delay start button": "√",
-      "half load sensor": "√"
-    }
-  },
-  {
-    "id": 50,
-    "name": "WASHING MACHINE W – 7122N",
-    "description": [
-      "Introducing our powerful washing machine: With a 7 kg capacity and 15 programs, it's designed for efficiency and convenience. Features include electronic programmer, temperature control, and eco-energy saving system. Safety features like leakage protection and child lock ensure peace of mind. Quiet operation and advanced technology make laundry a breeze."
-    ],
-    "pictures": [
-      "assets/Home appliances/WASHING MACHINE W – 7122N/W-7122-07-1024x576.png",
-      "assets/Home appliances/WASHING MACHINE W – 7122N/FAVORIT-W-7122-1024x576.png"
-    ],
-    "specificationsDoc": "assets/Product Spec/W-7122-Upatstvo.pdf",
-    "specifications": {
-      "dimensions hwd": "84,5/59,5/54,0 CM",
-      "maximum revolutions per minute": "1200",
-      "capacity": "7 KG",
-      "inox drum": "45 Л.",
-      "programs": "15",
-      "electronic programmer": "√",
-      "temperature control button": "√",
-      "energy class": "D",
-      "eco energy saving system": "√",
-      "leakage protection": "√",
-      "foam protection": "√",
-      "automatic balance system": "√",
-      "error detection system": "√",
-      "childrens lock": "√",
-      "removable top cover": "√",
-      "energy consumption": "172 KWH/ANNUM",
-      "water consumption": "10337 L/ANNUM",
-      "noise level during washing": "58 DB",
-      "spin noise level": "78 DB",
-      "fast program": "15 МИНУТИ НА 30 °C",
-      "spin control button": "√",
-      "half load sensor": "√",
-      "allergy safe program": "√",
-      "prewash button": "√",
-      "delay start button": "√"
-    }
   },
   {
     "id": 51,
@@ -1707,93 +1556,6 @@
     }
   },
   {
-    "id": 55,
-    "name": "WASHING MACHINE W – 9142ТN BLDC",
-    "description": [
-      "Introducing our latest washing machine model, the W-9122N BLDC, featuring a spacious 9 KG capacity stainless steel drum and a powerful inverter motor for efficient cleaning. With 15 programs and advanced features like a digital LCD touch screen and delayed start, laundry day just got easier. Enjoy peace of mind with built-in protection systems and energy-saving technology."
-    ],
-    "pictures": [
-      "assets/Home appliances/WASHING MACHINE W – 9142ТN BLDC/W9142T-BLDC-1024x576.png",
-      "assets/Home appliances/WASHING MACHINE W – 9142ТN BLDC/FAVORIT-W-9142T-BLDC-12-1024x576.png"
-    ],
-    "specificationsDoc": "assets/Product Spec/Upatstvo-W-9142T-BLDC.pdf",
-    "specifications": {
-      "DIMENSIONS": "84.5 / 60.5 / 60.4 CM",
-      "MAXIMUM REVOLUTIONS PER MINUTE": "1400",
-      "MAXIMUM CAPACITY": "9 KG",
-      "INOX DRUM": "61 L",
-      "INVERTER MOTOR": "√",
-      "DIGITAL LCD TOUCH SCREEN": "√",
-      "DELAYED START": "√",
-      "PROGRAMS": "15",
-      "ELECTRONIC PROGRAMMER": "√",
-      "DUVET AND BLANKET WASHING PROGRAM": "√",
-      "WATER TEMPERATURE CONTROL KNOB": "√",
-      "ENERGY CLASS": "B",
-      "ECO ENERGY SAVING SYSTEM": "√",
-      "LEAKAGE PROTECTION": "√",
-      "FOAM PROTECTION": "√",
-      "AUTOMATIC BALANCE SYSTEM": "√",
-      "ERROR DETECTION SYSTEM": "√",
-      "CHILDRENS LOCK": "√",
-      "REMOVABLE TOP COVER": "√",
-      "ANTIALLERGIC PROGRAM": "√",
-      "SENSITIVE HAND WASHING": "√",
-      "ENERGY CONSUMPTION": "168KWH/ANNUM",
-      "WATER CONSUMPTION": "12100 L/ANNUM",
-      "NOISE LEVEL DURING WASHING": "50 DB",
-      "SPIN NOISE LEVEL": "75 DB",
-      "FAST PROGRAM": "15 MIN. 30°",
-      "SPEED REGULATION": "√",
-      "HALF LOAD SENSOR": "√",
-      "PREWASH BUTTON": "√"
-    }
-  },
-  {
-    "id": 56,
-    "name": "WASHING MACHINE W-9122N BLDC",
-    "description": [
-      "Introducing our latest washing machine model, featuring a spacious 9 KG capacity stainless steel drum and a powerful inverter motor for efficient cleaning. With 15 programs and advanced features like a digital LCD touch screen and delayed start, laundry day just got easier. Enjoy peace of mind with built-in protection systems and energy-saving technology."
-    ],
-    "pictures": [
-      "assets/Home appliances/WASHING MACHINE W-9122N BLDC/W-9122N-BLDC-16-1024x576.png"
-    ],
-    "specificationsDoc": "assets/Product Spec/Upatstva-za-W-9122N-BLDC.pdf",
-    "specifications": {
-      "dimensions hwd": "84.5 / 59.7 / 58.2 CM",
-      "maximum revolutions per minute": 1200,
-      "maximum capacity": "9 KG",
-      "inox drum": "59 L",
-      "inverter motor": "√",
-      "digital lcd touch screen 7 segments": "√",
-      "display of the remaining washing time": "√",
-      "delayed start": "√",
-      "programs": 15,
-      "electronic programmer": "√",
-      "water temperature control button": "√",
-      "duvet and blanket washing program": "√",
-      "energy class according the new regulation": "A",
-      "eco energy saving system": "√",
-      "leakage protection": "√",
-      "foam protection": "√",
-      "automatic balance system": "√",
-      "error detection system": "√",
-      "childrens lock": "√",
-      "removable top cover": "√",
-      "antiallergic program": "√",
-      "sensitive hand washing": "√",
-      "energy consumption according the new regulation": "49KWH/ON 100",
-      "water consumption according the new regulation": "50 L",
-      "noise level during washing": "50 DB",
-      "spin noise level": "76 DB",
-      "speed program": "60 MIN. 60°√",
-      "speed regulation": "√",
-      "half load sensor": "√",
-      "fast program": "15 MIN. 30°",
-      "prewash button": "√"
-    }
-  },
-  {
     "id": 57,
     "name": "WATER HEATER TE50A20",
     "description": [
@@ -1838,7 +1600,7 @@
     ],
     "specificationsDoc": "assets/PDF-Specifications/TE80B20 TE80A20.pdf",
     "specifications": {
-      "capacity": "50 L",
+      "capacity": "80 L",
       "CONTROL TYPE MECHANICAL": "√ ON THE FRONT OF THE BOILER",
       "dimensions": "427 Х 612 MM",
       "weight": "17/19 KG",
@@ -1867,7 +1629,7 @@
       "Features thermal protection, THERMOMETER, and SAFETY VALVE for safety. 1980 W heating power and 1/2 inch water connection. Built with durable copper heater, sapphire blue enamel, and COLD STEEL boiler. Insulated with POLYURETHANE FOAM for efficiency."
     ],
     "pictures": [
-      "assets/Home appliances/WATER HEATER TE80A20/1-BOLJER-01-800x450-1-500x375-1.png:"
+      "assets/Home appliances/WATER HEATER TE80A20/1-BOLJER-04-scaled-1-1024x576.png"
     ],
     "specificationsDoc": "assets/PDF-Specifications/TE80B20 TE80A20.pdf",
     "specifications": {
@@ -1900,7 +1662,7 @@
       "Features thermal protection, SAFETY VALVE, and protective magnesium anode for safety. 1980 W heating power and 1/2 inch water connection. Built with durable copper heater, sapphire blue enamel, and COLD STEEL boiler. Insulated with POLYURETHANE FOAM for efficiency."
     ],
     "pictures": [
-      "assets/Home appliances/WATER HEATER TE80B20/1-BOLJER-01-800x450-1-500x375-1.png:"
+      "assets/Home appliances/WATER HEATER TE80B20/1-BOLJER-04-scaled-1-1024x576.png"
     ],
     "specificationsDoc": "assets/PDF-Specifications/TE80B20 TE80A20.pdf",
     "specifications": {
@@ -1922,78 +1684,6 @@
       "enamel": "sapphire blue",
       "PURE FOAM INSoLATION": "√ POLYURETHANE FOAM",
       "BOILER MATERIAL": "COLD STEEl"
-    }
-  },
-  {
-    "id": 61,
-    "name": "BUILT-IN COOKER 4 – J BLACK",
-    "description": [
-      "This product is a versatile oven with a spacious capacity of 65 liters and various features for convenient cooking. It boasts an energy-efficient design with an A-class energy rating. The oven includes 8 control switch positions, a control knob for precise temperature adjustments, and a glass control panel with an oven light for enhanced visibility. Additionally, it features a turbo fan for efficient heat distribution and comes equipped with a grill heater delivering 1000 W of power. The oven's heating capabilities are supplemented by a range of heating zones, including specific dimensions for each zone (2x145mm from 1200 W and 2x180mm from 1800 W). The appliance also includes an independent glass-ceramic hob with 4 heating zones, making it suitable for versatile cooking needs. Its sleek black color and advanced features ensure efficient and enjoyable cooking experiences."
-    ],
-    "pictures": [
-      "assets/Built In Appliances/BUILT-IN COOKER 4 – J INOX-B/FAVORIT-4-J-INOX-B-05-1024x576.png",
-      "assets/Built In Appliances/BUILT-IN COOKER 4 – J BLACK/FAVORIT-4-J-BLACK-02-1024x576.png",
-      "assets/Built In Appliances/BUILT-IN COOKER 4 – J BLACK/3-3.png",
-      "assets/Built In Appliances/BUILT-IN COOKER 4 – J BLACK/4-2.png",
-      "assets/Built In Appliances/BUILT-IN COOKER 4 – J BLACK/5-2.jpg",
-      "assets/Built In Appliances/BUILT-IN COOKER 4 – J BLACK/6-1.jpg",
-      "assets/Built In Appliances/BUILT-IN COOKER 4 – J BLACK/7-1.jpg"
-    ],
-    "specificationsDoc": "assets/PDF-Specifications/4J-BLACK-4J-INOX-B-UPATSTVO-1-1.pdf",
-    "specifications": {
-      "independent oven":  "√",
-      "dimensions": "W/L/H 59/59,5/55 cm",
-      "energy class": "A",
-      "oven volume": "65 L",
-      "8 oven control switch positions":  "√",
-      "oven control knob":  "√",
-      "oven thermostat knob":  "√",
-      "glass control panel":  "√",
-      "oven light":  "√",
-      "single grill and deep oven pan":  "√",
-      "turbo fan":  "√",
-      "heaters": "above -1200; down -1100 W",
-      "grill heater": "1000 W",
-      "color": "black",
-      "independent glass-ceramic hob":  "√",
-      "4 heating zones":  "√",
-      "size of zones": "(2x145mm from 1200 W ) (2×180 mm from 1800 W)"
-    }
-  },
-  {
-    "id": 62,
-    "name": "BUILT-IN COOKER 4 – J INOX-B",
-    "description": [
-      "This product is a versatile oven with a spacious capacity of 65 liters and various features for convenient cooking. It boasts an energy-efficient design with an A-class energy rating. The oven includes 8 control switch positions, a control knob for precise temperature adjustments, and a glass control panel with an oven light for enhanced visibility. Additionally, it features a turbo fan for efficient heat distribution and comes equipped with a grill heater delivering 1000 W of power. The oven's heating capabilities are supplemented by a range of heating zones, including specific dimensions for each zone (2x145mm from 1200 W and 2x180mm from 1800 W). The appliance also includes an independent glass-ceramic hob with 4 heating zones, making it suitable for versatile cooking needs. Its sleek black color and advanced features ensure efficient and enjoyable cooking experiences."
-    ],
-    "pictures": [
-      "assets/Built In Appliances/BUILT-IN COOKER 4 – J INOX-B/FAVORIT-4-J-INOX-B-05-1024x576.png",
-      "assets/Built In Appliances/BUILT-IN COOKER 4 – J INOX-B/FAVORIT-4-J-INOX-B-06-1024x576.png",
-      "assets/Built In Appliances/BUILT-IN COOKER 4 – J INOX-B/3-3.png",
-      "assets/Built In Appliances/BUILT-IN COOKER 4 – J INOX-B/4-2.png",
-      "assets/Built In Appliances/BUILT-IN COOKER 4 – J INOX-B/5-2.jpg",
-      "assets/Built In Appliances/BUILT-IN COOKER 4 – J INOX-B/6-1.jpg",
-      "assets/Built In Appliances/BUILT-IN COOKER 4 – J INOX-B/7-1.jpg"
-    ],
-    "specificationsDoc": "assets/PDF-Specifications/4J-BLACK-4J-INOX-B-UPATSTVO-1-1.pdf",
-    "specifications": {
-      "independent oven":  "√",
-      "dimensions": "W/L/H 59/59,5/55 cm",
-      "energy class": "A",
-      "oven volume": "65 L",
-      "8 oven control switch positions":  "√",
-      "oven control knob":  "√",
-      "oven thermostat knob":  "√",
-      "glass control panel":  "√",
-      "oven light":  "√",
-      "single grill and deep oven pan":  "√",
-      "turbo fan":  "√",
-      "heaters": "above -1200; down -1100 W",
-      "grill heater": "1000 W",
-      "color": "black",
-      "independent glass-ceramic hob":  "√",
-      "4 heating zones":  "√",
-      "size of zones": "(2x145mm from 1200 W ) (2×180 mm from 1800 W)"
     }
   },
   {
@@ -2033,111 +1723,38 @@
     }
   },
   {
-    "id": 64,
-    "name": "Built-in dishwasher BI60 – I14N (fully integrated)",
-    "description": [
-      "This dishwasher has dimensions of H/W/L 82cm/59.8cm/55cm and a maximum capacity of 12 sets of dishes. It features 5 programs with a temperature range of 3 levels. The energy class is A++, and the drying class is A. The water consumption of the eco-program is 12 liters, with an energy consumption ranging from 0.90 KWh to 1.55 KWh depending on the program. It has a duration of the ECO program of 222 minutes.",
-      "Additionally, it has heater protection, flood protection, and is fully integrated with On/Off button, program selection button, wash time delay button (3, 6, and 9 hours), half-filling, salt indicator, rinse aid indicator, end indicator, and a noise level of 54 dB. It also includes a fast program of 30 minutes at 40°C."
-    ],
-    "pictures": [
-      "assets/Built In Appliances/Built-in dishwasher SI60 – I14/BI60-I14-02-1024x576.png",
-      "assets/Built In Appliances/Built-in dishwasher SI60 – I14/SI60-I14-01-1024x576.png",
-      "assets/Built In Appliances/Built-in dishwasher SI60 – I14/BI60-I14-03-1024x576.png",
-      "assets/Built In Appliances/Built-in dishwasher SI60 – I14/Vgradni-dimenzii-za-poluvgradna-Mas-za-sadovi-FAVORIT-SI60-I14-pdf.png"
-    ],
-    "specificationsDoc": "assets/Built In Appliances/Built-in dishwasher SI60 – I14/2.-SI60-I14-upatstva-EN-MAK-SIR-AL.pdf",
-    "specifications": {
-      "Dimensions H/W/D": "82.0cm/59.8cm/57.0cm",
-      "semi-integrated with inox panel": "√",
-      "maximum capacity": "12 place settings",
-      "programs": 5,
-      "temperature": "4",
-      "energy class": "A ++",
-      "water consumption on ECO program": "12 liters of water",
-      "energy consumption depending on the program": "0.90 KWh – 1.55 KWh",
-      "interior": "inox",
-      "metal filter": "√",
-      "flood protection": "√",
-      "On/Off button": "√",
-      "program selection button": "√",
-      "delayed start button": "3, 6 and 9 hours",
-      "half load (timer)": "3, 6 and 9 hours",
-      "half load": "√",
-      "salt level indicator": "√",
-      "rinse aid indicator": "√",
-      "end of program indicator": "√",
-      "noise level": "57 dB",
-      "quick program": "30 min. / 40 °C"
-    }
-  },
-  {
     "id": 65,
-    "name": "Built-in Dishwasher BI60 – I14N",
+    "name": "Built-in Dishwasher BI60-I1FN",
     "description": "The BI60 – I14N built-in dishwasher is energy efficient (A++) and fully integrated, with a capacity of 12 place settings. It features 5 washing programs and 3 temperature settings. The ECO program runs for 222 minutes with a water consumption of 12 liters. Additional features include delayed start (3, 6, and 9 hours), salt and rinse aid indicators, flood protection, and a noise level of 54 dB.",
     "pictures": [
-      "assets/Built In Appliances/Built-in dishwasher BI60 – I14 (fully integrated)/SI60-I14-11-1024x576.png",
-      "assets/Built In Appliances/Built-in dishwasher BI60 – I14 (fully integrated)/SI60-I14-10-1024x576.png",
-      "assets/Built In Appliances/Built-in dishwasher BI60 – I14 (fully integrated)/SI60-I14-12-1024x576.png",
-      "assets/Built In Appliances/Built-in dishwasher BI60 – I14 (fully integrated)/2-9.png"
+      "assets/Built In Appliances/Built-in dishwasher FAVORIT BI60-I1FN/BI60-I1FN.jpg",
+      "assets/Built In Appliances/Built-in dishwasher FAVORIT BI60-I1FN/BI60-I1FN-OPEN DOOR.png"
     ],
-    "specificationsDoc": "assets/Built In Appliances/Built-in dishwasher BI60 – I14 (fully integrated)/3.-BI60-Y14-upatstva-EN-SIR-MAK-AL.pdf",
+    "specificationsDoc": "assets/Built In Appliances/Built-in dishwasher FAVORIT BI60-I1FN/BI60-I1FN-PDF.pdf",
     "specifications": {
-      "Dimensions (H/W/D)": "82cm/59.8cm/55cm",
-      "Max Capacity": "12 place settings",
-      "Programs": 5,
-      "Temperature Settings": "3",
-      "Energy Class": "A ++",
-      "Water Consumption (ECO Program)": "12 liters",
-      "Energy Consumption (Program Dependent)": "0.90 KWh – 1.55 KWh",
-      "ECO Program Duration": "222 min.",
-      "Heater Protection": "√",
-      "Flood Protection": "√",
-      "Fully Integrated": "√",
-      "On/Off Button": "√",
-      "Program Selector Button": "√",
-      "Delayed Start Button": "3, 6 and 9 hours",
-      "Half Load Option": "√",
-      "Salt Refill Indicator": "√",
-      "Rinse Aid Indicator": "√",
-      "Program End Indicator": "√",
-      "Noise Level": "54 dB",
-      "Quick Program": "30 min. / 40 °C"
-    }
-  },
-  {
-    "id": 66,
-    "name": "Built-in dishwasher SI60 – I14",
-    "description": [
-      "dishwasher with specific dimensions (H/W/L: 82.0cm/59.8cm/57.0cm), a semi-built design with a stainless steel panel, and a capacity for 12 sets of dishes. It features 5 programs, 4 temperature settings, and is energy-efficient with an A++ rating. The dishwasher consumes 12 liters of water in the eco-program and has variable energy consumption (0.90 KWh to 1.55 KWh). It includes a stainless steel interior, a metal filter, flood protection, and user-friendly controls like an On/Off button, program selection button, and wash time delay (3, 6, or 9 hours). The dishwasher supports half-filling and includes indicators for salt, rinse aid, and cycle completion. Operating noise level is 57 dB, and there's a fast 30-minute program at 40°C for quick washing."
-    ],
-    "pictures": [
-      "assets/Built In Appliances/Built-in dishwasher SI60 – I14/BI60-I14-02-1024x576.png",
-      "assets/Built In Appliances/Built-in dishwasher SI60 – I14/SI60-I14-01-1024x576.png",
-      "assets/Built In Appliances/Built-in dishwasher SI60 – I14/BI60-I14-03-1024x576.png",
-      "assets/Built In Appliances/Built-in dishwasher SI60 – I14/Vgradni-dimenzii-za-poluvgradna-Mas-za-sadovi-FAVORIT-SI60-I14-pdf.png"
-    ],
-    "specificationsDoc": "assets/PDF-Specifications/2.-SI60-I14-upatstva-EN-MAK-SIR-AL.pdf",
-    "specifications": {
-      "dimensions": "H/W/L 82,0cm/59,8cm/57,0cm",
-      "semi-built with stainless steel panel":  "√",
-      "maximum capacity": "12 sets of dishes",
-      "programs": 5,
-      "temperature": 4,
-      "energy class": "A ++",
-      "water consumption of eco-program": "12 L water",
-      "energy consumption (depending on the program)": "0,90 KWh – 1,55 KWh",
-      "interior": "inox",
-      "metal filter":  "√",
-      "flood protection":  "√",
-      "On/Off button":  "√",
-      "program selection button":  "√",
-      "wash time delay button": "3, 6 и 9 hours",
-      "half-filling":  "√",
-      "salt indicator":  "√",
-      "rinse aid indicator":  "√",
-      "end indicator":  "√",
-      "noise level": "57 dB",
-      "fast program": "30 min. / 40 °C"
+      "Dimensions H/W/D": "82cm/59.8cm/55cm",
+      "maximum capacity": "13 place settings",
+      "programs": 7,
+      "hidden LED display": "√",
+      "third rack": "√",
+      "energy class": "E / A++",
+      "drying class": "A",
+      "water consumption on ECO program": "9 L water",
+      "energy consumption (annual)": "261 kWh/year",
+      "ECO program duration": "221 min",
+      "Super 50’ 65°C program (Quick Clean)": "√",
+      "quick program": "30 min / 40 °C",
+      "heater protection": "√",
+      "flood protection": "√",
+      "fully built-in": "√",
+      "On/Off button": "√",
+      "program selection button": "√",
+      "delay start button": "1–19 hours",
+      "half load": "√",
+      "salt refill indicator": "√",
+      "rinse aid indicator": "√",
+      "end of cycle indicator": "√",
+      "noise level": "57 dB"  
     }
   },
   {
@@ -2503,84 +2120,6 @@
     }
   },
   {
-    "id": 82,
-    "name": "AIR CONDITIONER INVERTER 12000 BTU",
-    "description": [
-      "This air conditioning system delivers efficient cooling and heating performance with a cooling capacity of 3520W (12000 BTU) and a heating capacity of 3810W (13000 BTU). It operates quietly with indoor noise levels of ≤ 39 dB and outdoor noise levels of ≤ 48 dB, ensuring a comfortable environment. The unit features a SEER cooling rating of 6.6 and energy efficiency class ratings of A++ for cooling and A+ for heating, reflecting its energy-saving design."
-    ],
-    "pictures": [
-      "assets/Ait Conditioners/AIR CONDITIONER INVERTER 12000 BTU/FAVORIT-18000-BTU-KLIMA-01-scaled-1-1024x576.png",
-      "assets/Ait Conditioners/AIR CONDITIONER INVERTER 12000 BTU/FAVORIT-12000-BTU-R32-KROPNATI-01-800x450-2.png",
-      "assets/Ait Conditioners/AIR CONDITIONER INVERTER 12000 BTU/FAVORIT-12000-BTU-R32-KROPNATI-02-800x450-1.png",
-      "assets/Ait Conditioners/AIR CONDITIONER INVERTER 12000 BTU/DALJINSKO-01-800x450-1.png"
-
-    ],
-    "specificationsDoc": "assets/PDF-Specifications/FAVORIT-KLIMA-INVERTER-1.pdf",
-    "specifications": {
-      "COOLING CAPACITY (W)": "3520",
-      "HEATING CAPACITY (W)": "3810",
-      "COOLING CAPACITY (BTU)": "12000",
-      "HEATING CAPACITY (BTU)": "13000",
-      "POWER INPUT: (W) COOLING": "1650 W",
-      "POWER INPUT: (W) HEATING": "1200 W",
-      "seer cooling (w/w)": "6.6",
-      "heating scope (w/w)": "4.0",
-      "airflow": "< 550 m3/h",
-      "DEHUMIDIFICATION": "1,2 L/H",
-      "NOISE (SOUND FLOW) INDOOR UNIT": "≤ 39",
-      "NOISE (SOUND FLOW) OUTDOOR UNIT": "≤ 48",
-      "VOLUME AT STANDARD CONDITIONS INDOOR UNIT": "≤ 52",
-      "VOLUME AT STANDARD CONDITIONS OUTDOOR UNIT": "≤ 63",
-      "energy class (cooling)": "A ++",
-      "energy class (heating)": "A +",
-      "DUST FILTER": "√",
-      "operating temperature for heating": "from -15 to +30 °C",
-      "AUTO FAN": "√",
-      "ENERGY SAVING MODE": "√",
-      "ionizer": "√",
-      "TIMER": "√",
-      "operating temperature for cooling": "from +18 to +53 °C",
-      "REMOTE CONTROL WITH I FEEL FUNCTION": "√",
-      "type of gas": "R 32",
-      "power supply": "220-240V~50Hz/1P",
-      "COMPRESSOR": "LG",
-      "voltage range (v)": "165~265",
-      "indoor unit dimensions (mm) wxhxd": "822X281X202",
-      "outdoor unit dimensions (mm) wxhxd": "815X532X300",
-      "packaging dimensions for indoor unit (mm) wxhxd": "885X355X260",
-      "packaging dimensions for outdoor unit (mm) wxhxd": "854X590X324"
-    }
-  },
-  {
-    "id": 83,
-    "name": "AIR CONDITIONER INVERTER 12000 BTU WI-FI",
-    "description": [
-      "This air conditioning system delivers efficient cooling and heating performance with a cooling capacity of 3520W (12000 BTU) and a heating capacity of 3810W (13000 BTU). It operates quietly with indoor noise levels of ≤ 39 dB and outdoor noise levels of ≤ 48 dB, ensuring a comfortable environment. The unit features a SEER cooling rating of 6.6 and energy efficiency class ratings of A++ for cooling and A+ for heating, reflecting its energy-saving design."
-    ],
-    "pictures": [
-      "assets/Ait Conditioners/AIR CONDITIONER INVERTER 12000 BTU WI-FI/FAVORIT-KLIMA-12000-BTU-INVERTER-WI-FI-01-1024x576.png",
-      "assets/Ait Conditioners/AIR CONDITIONER INVERTER 12000 BTU WI-FI/FAVORIT-KLIMA-24000-BTU-INVERTER-WI-FI-02-1024x576.png"
-    ],
-    "specificationsDoc": "assets/PDF-Specifications/FAVORIT-INVERTER-WI-FI-TOTAL.pdf",
-    "specifications": {
-      "seer cooling (w/w)": "6.1",
-      "heating scope (w/w)": "4.0",
-      "airflow": "< 550 m3/h",
-      "energy class (cooling)": "A ++",
-      "energy class (heating)": "A +",
-      "operating temperature for heating": "from -15 to +30 °C",
-      "ionizer": "√",
-      "operating temperature for cooling": "from +15 to +53 °C",
-      "type of gas": "R 32",
-      "power supply": "220-240V~50Hz/1P",
-      "voltage range (v)": "170~265",
-      "indoor unit dimensions (mm) wxhxd": "777x250x201",
-      "outdoor unit dimensions (mm) wxhxd": "777x498x290",
-      "packaging dimensions for indoor unit (mm) wxhxd": "777x250x201",
-      "packaging dimensions for outdoor unit (mm) wxhxd": "803x600x325"
-    }
-  },
-  {
     "id": 84,
     "name": "AIR CONDITIONER INVERTER 12000BTU FF",
     "description": [
@@ -2644,72 +2183,6 @@
       "Ambient Temp-heating": "-25~30℃"
     }
   },
-  {
-    "id": 86,
-    "name": "AIR CONDITIONER INVERTER 18000 BTU",
-    "description": [
-      "This air conditioning system offers versatile cooling and heating capacities suitable for a range of environments. The cooling capacity ranges from 0.8 kW to 4.1 kW (equivalent to 11942 BTU), while the heating capacity ranges from 1.0 kW to 4.2 kW (equivalent to 12966 BTU). With a high SEER (Seasonal Energy Efficiency Ratio) of 6.19 and a SCOP (Seasonal Coefficient of Performance) heating average of 4.03, this system achieves excellent energy efficiency, earning A++ and A+ energy class ratings for cooling and heating, respectively."
-    ],
-    "pictures": [
-      "assets/Ait Conditioners/AIR CONDITIONER INVERTER 18000 BTU/FAVORIT-18000-BTU-KLIMA-01-1024x576.png",
-      "assets/Ait Conditioners/AIR CONDITIONER INVERTER 18000 BTU/FAVORIT-12000-BTU-R32-KROPNATI-01-1024x576.png",
-      "assets/Ait Conditioners/AIR CONDITIONER INVERTER 18000 BTU/FAVORIT-12000-BTU-R32-Outdoor-1024x576.png",
-      "assets/Ait Conditioners/AIR CONDITIONER INVERTER 18000 BTU/FAVORIT-12000-BTU-R32-KROPNATI-02-1024x576.png",
-      "assets/Ait Conditioners/AIR CONDITIONER INVERTER 18000 BTU/DALJINSKO-01-1024x576.png"
-    ],
-    "specificationsDoc": "assets/PDF-Specifications/FAVORIT-KLIMA-INVERTER.pdf",
-    "specifications": {
-      "Cooling Capacity (kW)": "3.5(0.8-4.1)",
-      "Cooling Capacity (BTU)": "11942",
-      "Heating Capacity (kW)": "3.8(1.0-4.2)",
-      "Heating Capacity (BTU)": "12966",
-      "SEER Cooling": "6.19",
-      "SCOP Heating-average": "4.03",
-      "SEER energy class": "A++",
-      "SCOP energy class-average": "A+",
-      "Refrigerant": "R32",
-      "Air flow ": "600",
-      "Indoor/Outdoor Unit Noise(Sound Power) (dB)": "53/62",
-      "Indoor Unit Net Weight (kg)": "8.5",
-      "Outdoor Unit Net Weight (kg)": "22.5",
-      "Dimension(indoor)-net": "792*292*201",
-      "Dimension(outdoor)-net": "705*530*279",
-      "Ambient Temp-cooling": "16~50℃",
-      "Ambient Temp-heating": "-25~30℃"
-    }
-  },
-  {
-    "id": 87,
-    "name": "AIR CONDITIONER INVERTER 18000 BTU WI-FI",
-    "description": [
-      "This air conditioning system offers versatile cooling and heating capacities suitable for a range of environments. The cooling capacity ranges from 0.8 kW to 4.1 kW (equivalent to 11942 BTU), while the heating capacity ranges from 1.0 kW to 4.2 kW (equivalent to 12966 BTU). With a high SEER (Seasonal Energy Efficiency Ratio) of 6.19 and a SCOP (Seasonal Coefficient of Performance) heating average of 4.03, this system achieves excellent energy efficiency, earning A++ and A+ energy class ratings for cooling and heating, respectively."
-    ],
-    "pictures": [
-      "assets/Ait Conditioners/AIR CONDITIONER INVERTER 18000 BTU WI-FI/FAVORIT-KLIMA-18000-BTU-INVERTER-WI-FI-01-1024x576.png",
-      "assets/Ait Conditioners/AIR CONDITIONER INVERTER 18000 BTU WI-FI/FAVORIT-KLIMA-24000-BTU-INVERTER-WI-FI-02-1024x576.png"
-    ],
-    "specificationsDoc": "assets/PDF-Specifications/FAVORIT-INVERTER-WI-FI-TOTAL.pdf",
-    "specifications": {
-      "Cooling Capacity (kW)": "3.5(0.8-4.1)",
-      "Cooling Capacity (BTU)": "11942",
-      "Heating Capacity (kW)": "3.8(1.0-4.2)",
-      "Heating Capacity (BTU)": "12966",
-      "SEER Cooling": "6.19",
-      "SCOP Heating-average": "4.03",
-      "SEER energy class": "A++",
-      "SCOP energy class-average": "A+",
-      "Refrigerant": "R32",
-      "Air flow ": "600",
-      "Indoor/Outdoor Unit Noise(Sound Power) (dB)": "53/62",
-      "Indoor Unit Net Weight (kg)": "8.5",
-      "Outdoor Unit Net Weight (kg)": "22.5",
-      "Dimension(indoor)-net": "792*292*201",
-      "Dimension(outdoor)-net": "705*530*279",
-      "Ambient Temp-cooling": "16~50℃",
-      "Ambient Temp-heating": "-25~30℃"
-    }
-  },
-  
   {
     "id": 88,
     "name": "AIR CONDITIONER INVERTER 18000BTU FF (-15 °C)",
@@ -3188,6 +2661,7 @@
   ],
     "specificationsDoc": "assets/PDF-Specifications/FVC-123.pdf",
     "specifications": {
+      "Димензии (B/Д/Ш)": "247x308x511",
       "2 plastic pipes": "√",
       "plastic floor brush": "Electronic regulator",
       "automatic cable winding button": "√",
@@ -3234,35 +2708,6 @@
       "cable length": "4.5 m",
       "power": "2000 W",
       "color": "black/red"
-    }
-  },
-  {
-    "id": 112,
-    "name": "VACUUM CLEANER FVC 160",
-    "description": [
-      "The vacuum cleaner boasts a powerful 2000W motor with a cyclone system and HEPA filter, ensuring efficient cleaning and air filtration. It features power regulation for customized performance, along with a dust level indicator for convenience.",
-      "Equipped with a telescopic tube and a 2-liter container, this vacuum offers versatility and ample capacity. It operates at an energy-efficient class A rating and emits a noise level of 81 dBA, suitable for quieter cleaning sessions."
-  ],
-    "pictures": [
-      "assets/Small domestic appliances/VACUUM CLEANER FVC 160/2-FAVORIT-pravosmukalka-FVC-160-01-1024x576.png",
-      "assets/Small domestic appliances/VACUUM CLEANER FVC 160/FVC-160-2.png",
-      "assets/Small domestic appliances/VACUUM CLEANER FVC 160/FVC160-Hepa-filter-nadvoresen-02-01-1024x576.png",
-      "assets/Small domestic appliances/VACUUM CLEANER FVC 160/FVC160-Hepa-filter-vnatresen-03-01-1024x576.png",
-      "assets/Small domestic appliances/VACUUM CLEANER FVC 160/FVC-160-3.png"
-  ],
-    "specificationsDoc": "assets/PDF-Specifications/FVC-160.pdf",
-    "specifications": {
-      "power": "2000 W",
-      "Cyclone system": "√",
-      "Hepa filter": "√",
-      "power regulation": "√",
-      "dust level indicator in sado": "√",
-      "Telescopic tube": "√",
-      "Container size": "2 l.",
-      "energy class": "А",
-      "noise level": "81 dBA",
-      "Cable length": "4.5 m",
-      "Weight": "5.15 kg."
     }
   },
   {
@@ -3332,377 +2777,6 @@
     }
   },
   {
-    "id": 115,
-    "name": "VACUUM CLEANER FVC 585",
-    "description": [
-      "The FVC 585 vacuum cleaner is a compact yet powerful cleaning solution with a 600W cyclone system and HEPA filter, ensuring efficient dust and dirt removal. Its 0.5-liter container size and lightweight design, weighing just 1.85kg, make it ideal for quick cleaning tasks.",
-      "This vacuum cleaner operates quietly with a noise level of 80 dBA, providing a comfortable cleaning experience. It features a 5-meter cable length for extended reach, allowing you to clean larger areas without changing power outlets frequently."
-  ],
-    "pictures": [
-      "assets/Small domestic appliances/VACUUM CLEANER FVC 585/7.1-FAVORIT-pravosmukalka-FVC-585-CELOSNA-01-1024x576.png",
-      "assets/Small domestic appliances/VACUUM CLEANER FVC 585/7-FAVORIT-pravosmukalka-FVC-585-01-1024x576.jpg",
-      "assets/Small domestic appliances/VACUUM CLEANER FVC 585/7.2-FAVORIT-pravosmukalka-FVC-585-01-1024x576.png",
-      "assets/Small domestic appliances/VACUUM CLEANER FVC 585/7.3-FAVORIT-FVC-585-01-1024x576.png",
-      "assets/Small domestic appliances/VACUUM CLEANER FVC 585/FVC585-HEPA-filtervnatresen-01-1024x576.png"
-  ],
-    "specificationsDoc": "assets/PDF-Specifications/FVC-306.pdf",
-    "specifications": {
-      "power": "600 W",
-      "cyclone system": "√",
-      "HEPA filter": "√",
-      "container size": "0,5 l.",
-      "energy class": "А",
-      "noise level": "80 dBA",
-      "cable length": "5 m",
-      "weight": "1,85kg."
-    }
-  },
-  {
-    "id": 116,
-    "name": "LED TV 32DF1M1T2S2A-13HD ANDROID",
-    "description": [
-      "This 32-inch LED TV features HD Ready resolution (1366×768) and a built-in tuner supporting digital DVB-T2/C. It has a sleek black frame design, smart functionality powered by Android 11, and VESA wall mount compatibility. Connectivity options include SCART, 3 HDMI, VGA, 2 USB, and Wi-Fi. It has built-in wireless capability, supports Google Play applications, and offers PVR function for recording content.",
-      "The TV has a quad-core processor running at 1.8GHz, with 8GB ROM and 1GB RAM memory. Other features include smart TV browsing, support for multiple languages, and compatibility with DVB-C and DVB-T2 standards. It comes with 2x10W speakers, silver metal legs, and dimensions of 718.6mm x 442.1mm x 86.1mm with the holder."
-    ],
-    "pictures": [
-      "assets/TV/LED ТЕЛЕВИЗОР 32DF1M1T2S2A-13HD ANDROID/TV-32DF1M1T2S2A-13HD-44-1024x576.png"
-    ],
-    "specificationsDoc": "assets/TV/LED Телевизор 32DF1M1T2S2A-13HD ANDROID/Upatstva-za-upotreba-za-TV-13-android-FINAL-istoto-e-za-site-modeli.pdf",
-    "specifications": {
-      "diagonal": "32” (80cm)",
-      "screen": "LED",
-      "resolution": "1366×768 (HD READY)",
-      "tuner": "DIGITALEN DVB-T2/C",
-      "light": "220 CD/M2 +/-10%",
-      "response time": "8 MS",
-      "Smart": "√",
-      "Wireless": "BUILT-IN",
-      "connectivity ": "SCART, 3 HDMI, VGA, 2 USB, SUPPORT CL+, WI-FI",
-      "frame color": "BLACK THIN FRAME",
-      "SPEED": "QUAD CORE 1.8GHZ",
-      "MEMORY ": "MEMORY ROM 8GB, RAM 1GB",
-      "language": "MACEDONIAN; ENGLISH; CROATIAN; SERBIAN",
-      "SUPPORTS GOOGLE PLAY APPLICATIONS": "√",
-      "REMOTE ": "WITH DIRECT NETFLIX; YOUTUBE BUTTON",
-      "INTERNET ": "SMART TV BROWSER (NETFLIX;YOU TUBE; HBBTV ; AMAZON PRIME…)",
-      "PVR FUNCTION RECORDING CONTENT": "√",
-      "other": "SUPPORTS A WIRELESS KEYBOARD; HOTEL REGIME; MULTILINGUAL MENU",
-      "Dvb-c": "√",
-      "DVB-T2": "√",
-      "speakers": "2x10W",
-      "legs": "SILVER METAL",
-      "dimensions with holder (VxHxT):": "718,6mm x 442,1mm x 86,1mm"
-    }
-  },
-  {
-    "id": 117,
-    "name": "LED ТV 32DF1P4T2HD",
-    "description": [
-      "This 32-inch LED TV boasts a high-definition display (1366×768) and DIGITALEN DVB-T2/C tuner for access to digital channels. With essential connectivity options including SCART, 2 HDMI ports, VGA, and built-in Wi-Fi, it offers convenient access to online content. Featuring a sleek black thin frame design, this TV adds elegance to any space.",
-      "It also includes 2x10W speakers for immersive audio. Compact dimensions (718.6mm x 442.1mm x 86.1mm) and a net weight of 3.6 KG make it suitable for various setups. Ideal for personal and hotel use, it combines performance, connectivity, and sleek design."
-    ],
-    "pictures": [
-      "assets/TV/LED ТЕЛЕВИЗОР 32DF1P4T2HD/32DF1P4T2HD-44-1024x576.png"
-    ],
-    "specificationsDoc": "assets/TV/LED ТЕЛЕВИЗОР 32DF1M1T2S2A-13HD ANDROID/Upatstva-za-upotreba-za-TV-13-android-FINAL-istoto-e-za-site-modeli.pdf",
-    "specifications": {
-      "diagonal": "32” (80cm)",
-      "screen": "LED",
-      "energy class": "A",
-      "resolution": "1366×768 (HD READY)",
-      "tuner": "DIGITALEN DVB-T2/C",
-      "light": "220 CD/M2 +/-10%",
-      "response time": "8 MS",
-      "smart": "NO",
-      "wireless": "NO",
-      "connectivity": "SCART, 2 HDMI, VGA, 2 USB, AV, HEADPHONE OUTPUT, COAXIAL AUDIO, WI-FI",
-      "frame color": "BLACK THIN FRAME",
-      "language": "MACEDONIAN; ENGLISH; CROATIAN; SERBIAN",
-      "speakers": "2x10W",
-      "legs": "PLASTIC, BLACK",
-      "dvb c": "√",
-      "dvb t2": "√",
-      "dimensions with holder": "718,6mm x 442,1mm x 86,1mm",
-      "net weight": "3,6 KG",
-      "other": "HOTEL MODE"
-    }
-  },
-  {
-    "id": 118,
-    "name": "LED TV 32DN4M3T2S2A – 11HD ANDROID",
-    "description": [
-      "This 32-inch LED TV boasts a vibrant display with HD Ready resolution (1366×768), ensuring crisp and clear visuals, while its built-in tuner supports digital DVB-T2/S2 for seamless access to digital channels.",
-      "With smart functionality powered by the Android 11 operating system, users can enjoy a variety of apps and streaming services right from their TV. Its sleek black frame design adds a touch of elegance to any living space, and VESA wall mount compatibility provides flexible installation options to suit your preferences."
-    ],
-    "pictures": [
-      "assets/TV/LED ТЕЛЕВИЗОР 32DN4M3T2S2A – 11HD ANDROID/FAVORIT-LED-TV-32DN4M3T2A-70HD-ANDROID-32-SMART-Android (1).png",
-      "assets/TV/LED ТЕЛЕВИЗОР 32DN4M3T2S2A – 11HD ANDROID/FAVORIT-LED-TV-32DN4M3T2A-70HD-ANDROID-32-SMART-Android (2).png"
-    ],
-    "specificationsDoc": "assets/TV/LED ТЕЛЕВИЗОР 32DN4M3T2S2A – 11HD ANDROID/TV-32DN4M3T2S2A-ANDROID-11-i-TV-43DN4JM2T2A-ANDROID-11.pdf",
-    "specifications": {
-      "diagonal": "32” (80CM)",
-      "screen": "LED",
-      "resolution": "1366×768 (HD READY)",
-      "tuner": "DIGITAL DVB-T2/S2",
-      "light": "220 CD/M2",
-      "response time": "8,5 MS",
-      "smart": "√",
-      "wireless": "BUILT-IN",
-      "connectivity": "SCART,HDMIX3,VGA,USB X2, SUPPORT CL+, WI-FI",
-      "wall mount": "VESA (200MM X100MM)",
-      "android operating system": "ANDROID 11",
-      "frame color": "BLACK",
-      "processor": "QUAD CORE 1.2GHZ",
-      "speed": "MEMORY 8GB, RAM 1GB",
-      "language": "MACEDONIAN; ANGLICAN; CROATIA; SERBIAN",
-      "supports google play applications": "√",
-      "pvr function recording content": "√",
-      "other": "SUPPORTS A WIRELESS KEYBOARD; HOTEL REGIME; MULTILINGUAL MENU",
-      "dvb-c": "√",
-      "dvb-t2/s2": "√",
-      "speakers": "2X7W",
-      "legs": "IRON",
-      "dimensions with holder (vxhxt):": "730MM X 470MM X 225 MM",
-      "dimensions without holder (vxhxt):": "730MM × 442MM × 86 MM"
-    }
-  },
-  {
-    "id": 119,
-    "name": "LED TV 32DN4P4T2HD",
-    "description": [
-      "This 32-inch LED TV features a screen resolution of 1366×768 (HD Ready) and a diagonal size of 80cm. It comes equipped with a digital DVB-T2/C tuner for clear reception. The TV offers a brightness of 220 cd/m2 and a response time of 8.5 ms, ensuring vibrant visuals with minimal motion blur. While not a smart TV, it provides various connectivity options, including Scart, HDMIx3, VGA, USB x2, AV, headphone output, coaxial audio, and Wi-Fi capability."
-    ],
-    "pictures": [
-      "assets/TV/LED ТЕЛЕВИЗОР 32DN4P4T2HD/1.-FAVORIT-LED-TV-32DN4P4T2HD-32-Digital-tv-01-1-1024x576.png",
-      "assets/TV/LED ТЕЛЕВИЗОР 32DN4P4T2HD/32DN4P4ANHD-1024x768.png"
-    ],
-    "specificationsDoc": "assets/PDF-Specifications/UPATSTVO-ZA-TV-32-40-OBICEN.pdf",
-    "specifications": {
-      "diagonal": "32” (80cm)",
-      "screen": "LED",
-      "resolution": "1366×768 (HD Ready)",
-      "tuner": "Digital DVB-T2/C",
-      "lighting": "220 cd/m2 +/-10%",
-      "response time": "8.5 ms",
-      "Smart": "no",
-      "Wireless": "no",
-      "connectivity": "Scart, HDMIx3, VGA, USB x2, AV, headphone output, coaxial audio, Wi-Fi",
-      "wall mount": "VESA (200ммx100мм)",
-      "frame color": "black",
-      "language": "Macedonian; English; Croatian; Serbian",
-      "speakers": "2x10W",
-      "legs": "plastic",
-      "Dvb-c": "√",
-      "Dvb-t2": "√",
-      "dimensions with holder": "730mm x 470.5mm x 225mm",
-      "dimensions without holder": "730mm x 442mm x 86mm",
-      "net weight": "4 kg",
-      "other": "Hotel mode"
-    }
-  },
-  {
-    "id": 120,
-    "name": "LED TV 40DN4JM3T2A – ANDROID (7.0)",
-    "description": [
-      "This 40-inch LED TV offers a stunning Full HD (1920×1080) resolution across its 101cm diagonal screen. It features a DVB-T/C/T2 tuner for versatile channel reception and boasts a brightness of 250 cd/m2 with an 8ms response time for smooth visuals. This smart TV runs on Android 7.0, powered by a quad-core 1.2GHz processor with 8GB of storage and 1GB of RAM, providing access to Google Play applications and supporting PVR recording."
-    ],
-    "pictures": [
-      "assets/TV/LED ТЕЛЕВИЗОР 40DN4JM3T2A – ANDROID (7.0)/6.-FAVORIT-LED-TV-40DN4JM3T2A-70FHD-ANDROID-40-SMART-Android-tv-01-1024x576.png",
-      "assets/TV/LED ТЕЛЕВИЗОР 40DN4JM3T2A – ANDROID (7.0)/4.-FAVORIT-LED-TV-40DN4JM3T2A-70FHD-ANDROID-40-SMART-Android-tv-01-1024x576.png"
-    ],
-    "specificationsDoc": "assets/PDF-Specifications/led-televizori.pdf",
-    "specifications": {
-      "diagonal": "40\" (101cm)",
-      "screen": "LED",
-      "resolution": "1920×1080 (Full HD)",
-      "tuner": "DVB-T/C/T2",
-      "lighting": "250cd/m2",
-      "response time": "8 ms",
-      "Smart": "√",
-      "Wireless": "Built-in",
-      "connectivity": "Scart, HDMIx3, VGA, USB x2, CI+, headphone output, coaxial audio, Wi-Fi",
-      "wall mount": "VESA (200ммx100мм)",
-      "android operating system": "Android 7.0",
-      "frame color": "black",
-      "memory speed": "Quad core 1.2GHz",
-      "memory": "8GB, RAM 1GB",
-      "language": "Macedonian; English; Croatian; Serbian",
-      "supports google play applications": "√",
-      "PVR function recording content": "√",
-      "other": "supports a wireless keyboard; hotel regime; multilingual menu",
-      "Dvb-c": "√",
-      "Dvb-t2": "√",
-      "speakers": "2x10W",
-      "legs": "iron",
-      "dimensions with holder": "903x553x179.7 mm",
-      "dimensions without holder": "903×515.7×83 mm",
-      "net weight": "6.00 kg"
-    }
-  },
-  {
-    "id": 121,
-    "name": "LED TV 43DF3PHT2S2A-13FHD ANDROID",
-    "description": [
-      "This 43-inch LED TV offers Full HD (1920×1080) resolution with a diagonal screen size of 109cm. It features a DVB-T2/S2 tuner, making it compatible with terrestrial and satellite broadcasts. The TV has a brightness of 220 cd/m2 and an 8ms response time, delivering clear and smooth visuals.",
-      "This smart TV runs on Android 13 and is equipped with a quad-core 1.8GHz processor, 8GB of ROM, and 1GB of RAM, providing a seamless and responsive user experience. It comes with built-in Wi-Fi and supports a variety of connectivity options including SCART, 3 HDMI ports, VGA, 2 USB ports, CI+, headphone output, and coaxial audio."
-    ],
-    "pictures": [
-      "assets/TV/LED ТЕЛЕВИЗОР 43DF3PHT2S2A-13FHD ANDROID/TV-43DF3PHT2S2A-13FHD-44-1024x576.png",
-      "assets/TV/LED ТЕЛЕВИЗОР 43DF3PHT2S2A-13FHD ANDROID/2.-FAVORIT-LED-TV-32DN4M3T2A-70HD-ANDROID-32-SMART-Android-tv-01-1024x576.png"
-    ],
-    "specificationsDoc": "assets/PDF-Specifications/Upatstva-za-upotreba-za-TV-13-android-FINAL-istoto-e-za-site-modeli.pdf",
-    "specifications": {
-      "diagonal": "43\" (109cm)",
-      "screen": "LED",
-      "energy class": "А+",
-      "resolution": "1920×1080 (Full HD)",
-      "tuner": "DVB-T2/S2",
-      "lighting": "220CD/M2 +/-10%",
-      "response time": "8 ms",
-      "Smart": "√",
-      "Wireless": "Built-in",
-      "connectivity": "SCART, 3 HDMI, VGA, 2 USB, CI+, HEADPHONES, COAXIALLY AUDIO, WI-FI",
-      "android operating system": "Android 13",
-      "frame color": "BLACK THIN FRAME",
-      "speed": "QUAD CORE 1.8GHZ",
-      "memory": "MEMORY ROM 8GB, RAM 1GB",
-      "language": "Macedonian; English; Croatia; Serbian",
-      "supports google play applications": "√",
-      "remote": "WITH DIRECT NETFLIX; YOUTUBE BUTTON",
-      "internet": "SMART TV BROWSER (NETFLIX;YOU TUBE; HBBTV ; AMAZON PRIME…)",
-      "PVR function recording content": "√",
-      "other": "SUPPORTS A WIRELESS KEYBOARD; HOTEL REGIME; MULTILINGUAL MENU",
-      "Dvb-c": "√",
-      "DVB-T2/S2": "√",
-      "speakers": "2x10W",
-      "legs": "PLASTIC BLACK",
-      "dimensions with holder": "952.60mm X 539.10mm X 84,40mm",
-      "net weight": "6,60 kg"
-    }
-  },
-  {
-    "id": 122,
-    "name": "LED TV 43DN4JM2T2S2A 11FHD ANDROID (11)",
-    "description": [
-      "This 43-inch LED TV delivers Full HD (1920×1080) resolution across a 109cm diagonal screen. It features a DVB-T2/S2 tuner for both terrestrial and satellite broadcasts and offers a brightness of 250 cd/m2 with an 8ms response time for crisp visuals.",
-      "Equipped with smart functionality, this TV runs on Android 11 powered by a quad-core 1.2GHz processor, 8GB of storage, and 1GB of RAM, ensuring smooth performance and access to Google Play applications. It includes built-in Wi-Fi and various connectivity options such as Scart, HDMIx3, VGA, USB x2, CI+, headphone output, coaxial audio, and supports VESA wall mounting (200mmx100mm)."
-    ],
-    "pictures": [
-      "assets/TV/LED ТЕЛЕВИЗОР 43DN4JM2T2S2A – 11FHD ANDROID (11)/123456-1024x576.png",
-      "assets/TV/LED ТЕЛЕВИЗОР 43DN4JM2T2S2A – 11FHD ANDROID (11)/5.-FAVORIT-LED-TV-43DN4JM2T2A-44FHD-ANDROID-43-SMART-Android-tv-01-1024x576.png"
-    ],
-    "specificationsDoc": "assets/PDF-Specifications/Upatstvo-za-TV-SMART-ANDROID-32-43-50-MK.pdf",
-    "specifications": {
-      "diagonal": "43\" (109cm)",
-      "screen": "LED",
-      "resolution": "1920×1080 (Full HD)",
-      "tuner": "DVB-T2/S2",
-      "lighting": "250cd/m2",
-      "response time": "8 ms",
-      "Smart": "√",
-      "Wireless": "Built-in",
-      "connectivity": "Scart, HDMIx3, VGA, USB x2, CI+, headphones, coaxially audio, Wi-Fi",
-      "wall mount": "VESA (200mmx100mm)",
-      "android operating system": "Android 11",
-      "frame color": "black",
-      "speed": "Quad core 1.2GHz",
-      "memory": "memory 8GB, RAM 1GB",
-      "language": "Macedonian; English; Croatia; Serbian",
-      "supports google play applications": "√",
-      "PVR function recording content": "√",
-      "other": "supports a wireless keyboard; hotel regime; multilingual menu",
-      "Dvb-c": "√",
-      "DVB-T2/S2": "√",
-      "speakers": "2x10W",
-      "legs": "iron",
-      "dimensions with holder": "903x553x179,7 mm",
-      "dimensions without holder": "903×515,7×83 mm",
-      "net weight": "7,00 kg"
-    }
-  },
-  {
-    "id": 123,
-    "name": "LED TV 55DK5JM2T2S2A -11UHD 4K ANDROID(11)",
-    "description": [
-      "This 55-inch LED TV features a stunning 4K Ultra HD resolution (3840×2160) across a 140cm diagonal screen, delivering vibrant and detailed visuals. It comes equipped with a DVB-T2/S2 tuner for terrestrial and satellite broadcasts and offers a brightness of 280 cd/m2 with a response time of 9.5 ms, ensuring smooth motion and clarity.",
-      "As a smart TV running on Android 11, it boasts a quad-core 1.2GHz processor, 8GB of storage, and 1.5GB of RAM, providing seamless performance and access to Google Play applications. Built-in Wi-Fi enables wireless connectivity, complementing the variety of physical connections including Scart, HDMIx3, VGA, USB x2, CI+, headphone output, and coaxial audio."
-    ],
-    "pictures": [
-      "assets/TV/LED ТЕЛЕВИЗОР 55DK5JM2T2S2A-11UHD 4K ANDROID(11)/11.-FAVORIT-LED-TV-55DK5JM2T2S2A-90UHD-ANDROID-55-SMART-Android-tv-01-1024x576.png",
-      "assets/TV/LED ТЕЛЕВИЗОР 55DK5JM2T2S2A-11UHD 4K ANDROID(11)/7.-FAVORIT-LED-TV-55DK5JM2T2S2A-90UHD-ANDROID-55-SMART-Android-tv-1024x645.png"
-    ],
-    "specificationsDoc": "assets/PDF-Specifications/UPATSTVO-ZA-TV-SMART-ANDROID-za-55-MK.pdf",
-    "specifications": {
-      "diagonal": "55\" (140cm)",
-      "screen": "LED",
-      "resolution": "3840×2160 (ULTRA HD) 4K",
-      "tuner": "DVB-T2/S2",
-      "light": "280cd/m2 +/-10%",
-      "response time": "9.5 ms",
-      "Smart": "√",
-      "Wireless": "built-in",
-      "connectivity": "Scart, HDMIx3, VGA, USB x2, CI+, headphone output, coaxial audio, Wi-Fi",
-      "wall mount": "VESA (200mmx100mm)",
-      "android operating system": "Android 11",
-      "frame color": "SILVER",
-      "speed": "Quad core 1.2GHz",
-      "memory speed": "memory 8GB, RAM 1.5GB",
-      "language": "Macedonian; English; Croatian; Serbian",
-      "supports google play applications": "√",
-      "PVR function recording content": "√",
-      "Hotel mode": "√",
-      "other": "supports a wireless keyboard; multilingual menu",
-      "Dvb-c": "√",
-      "DVB-T2/S2": "√",
-      "speakers": "2x10W",
-      "legs": "iron",
-      "dimensions with holder": "1245mm x 812mm x 254mm",
-      "dimensions without holder": "1245mm x 766mm x 83mm",
-      "net weight": "12 kg"
-    }
-  },
-  {
-    "id": 124,
-    "name": "LED TV 55DЕ2М1T2S2A-13UHD 4K ANDROID",
-    "description": [
-      "This 55-inch LED TV combines impressive features with a sleek design. It boasts a 4K Ultra HD resolution (3840×2160) across a 140cm diagonal screen, delivering stunning clarity and detail. With an energy efficiency rating of A, this TV ensures optimal performance while conserving energy.",
-      "Equipped with a DVB-T2/S2 tuner, the TV supports terrestrial and satellite broadcasts. It features a brightness of 270 cd/m2 and an 8ms response time for smooth visuals. As a smart TV running on Android 13, powered by a quad-core 1.2GHz processor and 8GB ROM with 1.9GB RAM, it offers seamless performance and access to Google Play applications."
-    ],
-    "pictures": [
-      "assets/TV/LED ТЕЛЕВИЗОР 55DЕ2М1T2S2A-13UHD 4K ANDROID/TV-55DEM1T2S2A-13UHD-44-1024x576.png"
-    ],
-    "specificationsDoc": "assets/PDF-Specifications/UPATSTVO-ZA-TV-SMART-ANDROID-za-55-MK.pdf",
-    "specifications": {
-      "diagonal": "55\" (140cm)",
-      "screen": "LED",
-      "energy class": "A",
-      "resolution": "3840×2160 (ULTRA HD) 4K",
-      "tuner": "DVB-T2/S2",
-      "light": "270CD/M2 +/-10%",
-      "response time": "8 ms",
-      "Smart": "√",
-      "Wireless": "built-in",
-      "connectivity": "SCART, HDMIX3, VGA, USB X2, CI+, HEADPHONE OUTPUT, COAXIAL AUDIO, WI-FI",
-      "android operating system": "Android 13",
-      "frame color": "SILVER THIN FRAME",
-      "speed": "Quad core 1.2GHz",
-      "memory": "MEMORY ROM 8GB, RAM 1.9GB",
-      "language": "Macedonian; English; Croatian; Serbian",
-      "remote": "WITH DIRECT NETFLIX; YOUTUBE BUTTON",
-      "internet": "SMART TV BROWSER (NETFLIX;YOU TUBE; HBBTV ; AMAZON PRIME…)",
-      "supports google play applications": "√",
-      "PVR function recording content": "√",
-      "Hotel mode": "√",
-      "other": "SUPPORTS A WIRELESS KEYBOARD; MULTILINGUAL MENU",
-      "Dvb-c": "√",
-      "DVB-T2/S2": "√",
-      "speakers": "2x10W",
-      "legs": "SILVER",
-      "dimensions": "1245MM X 766MM X 83MM",
-      "net weight": "12 kg"
-    }
-  },
-  {
     "id": 125,
     "name": "AIR CONDITIONER 24000BTU FF (-15 °C)",
     "description": [
@@ -3736,40 +2810,6 @@
       "Dimensions (External, Net)": "900x700x350",
       "Ambient Temperature (Cooling)": "16~52℃",
       "Ambient Temperature (Heating)": "-15~30℃"
-    }
-  },
-  {
-    "id": 126,
-    "name": "AIR CONDITIONER INVERTER 24000BTU FF (-15°C)",
-    "description": [
-      "This high-efficiency air conditioning unit offers powerful cooling and heating, with SEER 6.53 and SCOP 4.09 ratings for energy efficiency. It operates quietly, has I Feel technology, Wi-Fi readiness, and uses environmentally friendly R32 gas.",
-      "With a net weight of 12.5 kg for the indoor unit and 39 kg for the outdoor unit, it fits comfortably in most spaces. Its dimensions are 1082x330x233 mm for the indoor unit and 900x700x350 mm for the outdoor unit, with a cooling range of 1649℃ and a heating range of -1530℃."
-    ],
-    "pictures": [
-      "assets/Ait Conditioners/AIR CONDITIONER INVERTER 24000BTU FF (-15°C)/12000BTU-QB-HE-HB-18000BTU-QB-HE-HB-vnatresna-edinica-1024x429.png",
-      "assets/Ait Conditioners/AIR CONDITIONER INVERTER 24000BTU FF (-15 °C)/12000BTU-QB-HE-HB-18000BTU-QB-HE-HB-nadvoresna-edinica-1024x719.png"
-    ],
-    "specificationsDoc": "assets/PDF-Specifications/MKD-user-manual-12000BTU-FF-18000BTU-FF-24000BTU-FF-series.pdf",
-    "specifications": {
-      "cooling capacity kw": "7.3 (1.8 – 7.4)",
-      "cooling capacity btu": 24566,
-      "heating capacity kw": "7.3(1.8 – 8.0)",
-      "heating capacity btu": 24566,
-      "seer cooling": 6.53,
-      "scop heating average": 4.09,
-      "seer energy class": "A++",
-      "scop energy class average": "A+",
-      "gas type": "R32",
-      "air flow": 1300,
-      "i feel": "Yes",
-      "wifi ready": "Yes",
-      "noise level outdoor indoor db": "63/66",
-      "net weight indoor unit kg": 12.5,
-      "net weight outdoor unit kg": 39,
-      "dimensions indoor net": "1082x330x233",
-      "dimensions outdoor net": "900x700x350",
-      "ambient temp cooling": "16~49℃",
-      "ambient temp heating": "-15~30℃"
     }
   },
   {
@@ -3981,8 +3021,8 @@
       "Introducing our advanced dishwasher, designed to streamline your dishwashing experience. With dimensions of W/H/D 85/59.8/59.8, it offers a generous capacity of up to 12 sets of dishes. Featuring 5 versatile programs, including a quick 30-minute cycle at 40°C, it efficiently cleans dishes of all kinds."
     ],
     "pictures": [
-      "assets/Home appliances/Dishwasher F60 – Y14N S/F60-Y14 S-04.png",
-      "assets/Home appliances/Dishwasher F60 – Y14N S/F60-Y14 S-05.png",
+      "assets/Home appliances/Dishwasher F60 – Y14N S/F60-Y14_S-04.png",
+      "assets/Home appliances/Dishwasher F60 – Y14N S/F60-Y14_S-05.png",
       "assets/Home appliances/Dishwasher F60 – Y14N S/F60-Y14 S-06.jpg"
     ],
     "specificationsDoc": "assets/Product Spec/2.-F60-Y14-F60-Y14-S-EN-SIR-MAK-AL.pdf",
@@ -4071,7 +3111,7 @@
       "dimensions": "82.1/48/50 cm",
       "gross volume": "91L",
       "net volume": "89L",
-      "energy class": "F",
+      "energy class": "E",
       "color": "white",
       "interchangeable door":  "√",
       "regulating legs":  "√",
@@ -4096,7 +3136,7 @@
       "dimensions": "144/54/57 cm",
       "gross net volume": "216/213 L",
       "refrigerator freezer net volume": "171/42 L",
-      "energy class": "F",
+      "energy class": "E",
       "gas": "R600",
       "color": "white/silver",
       "interchangeable doors":  "√",
@@ -4125,7 +3165,7 @@
       "net volume": "168 L",
       "electric energy consumption": "257 kWh/y",
       "noise level": "40 dB",
-      "energy class": "F",
+      "energy class": "E",
       "gas": "P 600 A",
       "color": "white/silver",
       "regulating legs": "√",
@@ -4199,7 +3239,7 @@
       "gross volume": "341 L",
       "net volume": "324 L",
       "refrigerator freezer net volume": "230 L / 106 L",
-      "energy class": "F",
+      "energy class": "E",
       "gas": "P 600 A",
       "color": "white/inox",
       "interchangeable doors":  "√",
@@ -4427,6 +3467,8 @@
           "Resolution": "1920×1080 (FHD)",
           "Tuner": "DVB-T2/S2",
           "Brightness": "180CD/M2 +/-10%",
+          "Viewing Angle": "176° x 176°",  
+          "Refresh Rate": "60 Hz",
           "Response Time": "8 ms",
           "SMART": "√",
           "Wireless": "BUILT-IN",
@@ -4835,6 +3877,733 @@
             "Weight": "32.5 KG",
             "Color": "WHITE"
           }
-        }        
+        },
+        {
+          "id": 162,
+          "name": "Built-in dishwasher BI60-I14FN",
+          "description": [],
+          "pictures": [
+            "assets/Built In Appliances/Built-in dishwasher BI60 – I14 (fully integrated)/BI60-I14N.jpg",
+            "assets/Built In Appliances/Built-in dishwasher BI60 – I14 (fully integrated)/BI60-I14N-OPEND.png"
+          ],
+          "specificationsDoc": "assets/Built In Appliances/Built-in dishwasher BI60 – I14 (fully integrated)/BI60-I14N-PDF.pdf",
+          "specifications": {
+              "model": "BI60-I14",
+              "type": "fully built-in",
+              "Dimensions H/W/D": "82cm/59.8cm/55cm",
+              "maximum capacity": "12 place settings",
+              "programs": 5,
+              "temperature levels": 3,
+              "energy class": "A++",
+              "drying class": "A",
+              "water consumption on ECO program": "12 L water",
+              "energy consumption (depending on program)": "0.90 – 1.55 kWh",
+              "ECO program duration": "222 min",
+              "heater protection": "√",
+              "flood protection": "√",
+              "fully built-in": "√",
+              "On/Off button": "√",
+              "program selection button": "√",
+              "delay start": "3, 6 and 9 hours",
+              "half load": "√",
+              "salt refill indicator": "√",
+              "rinse aid indicator": "√",
+              "end of cycle indicator": "√",
+              "noise level": "54 dB",
+              "quick program": "30 min / 40 °C"
+          }
+        },
+        {
+          "id": 163,
+          "name": "Built-in Cooker S 70MTB-40",
+          "description": [],
+          "specificationsLabel": "Specifications for oven",
+          "specificationsExtraLabel": "Specifications for stove top",
+          "specificationsDocLabel": "Specifications PDF for oven",
+          "specificationsDocExtraLabel": "Specifications PDF for stove top",
+          "pictures": [
+            "assets/Built In Appliances/Built-in oven with stove top S 70MTB-40/RERNA.png",
+            "assets/Built In Appliances/Built-in oven with stove top S 70MTB-40/PLOCA -gore.png",
+            "assets/Built In Appliances/Built-in oven with stove top S 70MTB-40/ploca desno.png"
+          ],
+          "specificationsDoc": "assets/Built In Appliances/Built-in oven with stove top S 70MTB-40/4. BIO-70MTB oven UM- English language.pdf",
+          "specificationsDocExtra": "assets/Built In Appliances/Built-in oven with stove top S 70MTB-40/3. BIH-6060-40T-hob-UM English language.pdf",
+          "specifications": {
+            "Package dimensions": "648mm / 688mm / 785mm",
+            "Energy class": "A",
+            "Oven volume": "70 L",
+            "Black panel": "√",
+            "Oven functions": "8",
+            "Maximum power": "2900 W",
+            "Timer": "mechanical",
+            "ECO": "√",
+            "Thermostat": "mechanical",
+            "Side racks in oven": "√",
+            "Fan": "√",
+            "Oven light": "√",
+            "Deep tray": "1",
+            "Chrome rack": "1",
+            "Color": "black"
+          },
+          "specificationsExtra": {
+            "Cooktop dimensions (W/D/H)": "590*520*51 mm",
+            "Energy class": "A",
+            "Number of heating zones": "4",
+            "Diameter of heating zones": "2 x Ø165mm / 2 x Ø200mm",
+            "Heating zone power": "Ø200mm - 1800W / Ø165mm - 1200W",
+            "Control": "touch",
+            "Cable": "5*1.5mm / 1.2m",
+            "Child lock": "√",
+            "Cooktop type": "vitroceramic",
+            "Cooktop color": "black",
+            "Residual heat indicators": "√",
+            "Stainless steel frame": "X",
+            "Power levels": "9"
+          }
+        },
+        {
+          "id": 164,
+          "name": "Dishwasher DW 45FS5P-9",
+          "description": [],
+          "pictures": [
+            "assets/Home appliances/Dishwasher DW 45FS5P-9/DW 45FS5P-9.png",
+            "assets/Home appliances/Dishwasher DW 45FS5P-9/DW 45FS5P-9-OTVORENA.png"
+          ],
+          "specificationsDoc": "assets/Home appliances/Dishwasher DW 45FS5P-9/1. DW 45FS5P-9 & DW 45FS5P-09-S Macedonian language.pdf",
+          "specifications": {
+            "Dimensions": "H/W/D 845/448/600 mm",
+            "MAXIMUM CAPACITY": "9 place settings",
+            "programs": "5",
+            "quick program": "√",
+            "LED display": "√",
+            "half load (1/2) button": "√",
+            "energy class": "E",
+            "drying class": "A",
+            "noise level during operation": "49 dB",
+            "delayed start": "1-24 hours",
+            "DRY +": "√",
+            "energy consumption per 100 cycles": "70 kWh",
+            "flood protection": "√",
+            "hidden heater": "√",
+            "heater protection": "√",
+            "metal filter": "√",
+            "COLOR": "WHITE/GREY",
+            "On/Off button": "√",
+            "START/PAUSE BUTTON": "√",
+            "WASHING FUNCTION INDICATOR": "√",
+            "SALT LACK INDICATOR": "√",
+            "RINSE AID LACK INDICATOR": "√"
+          }
+        },
+        {
+          "id": 165,
+          "name": "Dishwasher DW 45FS5P-9 S",
+          "description": [],
+          "pictures": [
+            "assets/Home appliances/Dishwasher DW 45FS5P-9 S/DW 45FS5P-9 S.png",
+            "assets/Home appliances/Dishwasher DW 45FS5P-9 S/DW 45FS5P-9 S -otvorena.png"
+          ],
+          "specificationsDoc": "assets/Home appliances/Dishwasher DW 45FS5P-9 S/1. DW 45FS5P-9 & DW 45FS5P-09-S Macedonian language.pdf",
+          "specifications": {
+            "Dimensions": "H/W/D 845/448/600 mm",
+            "MAXIMUM CAPACITY": "9 place settings",
+            "programs": "5",
+            "quick program": "√",
+            "LED display": "√",
+            "half load (1/2) button": "√",
+            "energy class": "E",
+            "drying class": "A",
+            "noise level during operation": "49 dB",
+            "delayed start": "1-24 hours",
+            "DRY +": "√",
+            "energy consumption per 100 cycles": "70 kWh",
+            "flood protection": "√",
+            "hidden heater": "√",
+            "heater protection": "√",
+            "metal filter": "√",
+            "COLOR": "WHITE/GREY",
+            "On/Off button": "√",
+            "START/PAUSE BUTTON": "√",
+            "WASHING FUNCTION INDICATOR": "√",
+            "SALT LACK INDICATOR": "√",
+            "RINSE AID LACK INDICATOR": "√"
+          }
+        },
+        {
+          "id": 166,
+          "name": "Built-in Dishwasher DW 45BI7P-9",
+          "description": [],
+          "specificationsDocLabel": "User Manual",
+          "specificationsDocExtraLabel": "Installation Instructions",
+          "pictures": [
+            "assets/Built In Appliances/Built-in dishwasher DW 45BI7P-9/DW 45BI7P-9.png",
+            "assets/Built In Appliances/Built-in dishwasher DW 45BI7P-9/DW 45BI7P-9-OTVORENA.png"
+          ],
+          "specificationsDoc": "assets/Built In Appliances/Built-in dishwasher DW 45BI7P-9/4. DW 45BI7P-9 user manual - English language.pdf",
+          "specificationsDocExtra": "assets/Built In Appliances/Built-in dishwasher DW 45BI7P-9/4. DW 45BI7P-9 Installation - English language.pdf",
+          "specifications": {
+            "Dimensions H/W/D": "815/448/558 mm",
+            "maximum capacity": "9 place settings",
+            "9 place settings": "√",
+            "quick program": "√",
+            "programs": "7",
+            "Half load (½) button": "√",
+            "Interior light": "√",
+            "DRY +": "√",
+            "energy class": "E",
+            "drying class": "A",
+            "heating protection": "√",
+            "flood protection": "√",
+            "fully integrated": "√",
+            "ON/OFF button": "√",
+            "delayed start": "1-24 hours",
+            "half load": "√",
+            "salt indicator": "√",
+            "rinse aid indicator": "√",
+            "noise": "49 dB"
+          }
+        },
+        {
+          "id": 167,
+          "name": "Built-in Dishwasher DW 60BI8P-13",
+          "description": [],
+          "specificationsDocLabel": "User Manual",
+          "specificationsDocExtraLabel": "Installation Instructions",
+          "pictures": [
+            "assets/Built In Appliances/Built-in dishwasher DW 60BI8P-13/DW 60BI8P-13.png",
+            "assets/Built In Appliances/Built-in dishwasher DW 60BI8P-13/DW 60BI8P-13 -OTVORENA.png"
+          ],
+          "specificationsDoc": "assets/Built In Appliances/Built-in dishwasher DW 60BI8P-13/1. DW 60BI8P-13 user manual -Macedonian language.pdf",
+          "specificationsDocExtra": "assets/Built In Appliances/Built-in dishwasher DW 60BI8P-13/1. DW 60BI8P-13 installation Macedonian language.pdf",
+          "specifications": {
+            "Dimensions H/W/D": "815/596/558 mm",
+            "maximum capacity": "13 place settings",
+            "programs": "8",
+            "temperature": "3",
+            "energy class": "E",
+            "drying class": "A",
+            "water consumption on ECO program": "11 L water",
+            "11 L water": "√",
+            "flood protection": "√",
+            "fully built-in": "√",
+            "On/Off button": "√",
+            "program selection button": "√",
+            "delay wash time button": "1-24 hours",
+            "half load 1/2": "√",
+            "salt lack indicator": "√",
+            "rinse aid lack indicator": "√",
+            "end of cycle indicator": "√",
+            "noise level during operation": "49 dB"
+          }
+        },
+        {
+          "id": 168,
+          "name": "Dishwasher DW 60FS5P-13",
+          "description": [],
+          "pictures": [
+            "assets/Home appliances/Dishwasher DW 60FS5P-13/DW 60FS5P-13.png",
+            "assets/Home appliances/Dishwasher DW 60FS5P-13/DW 60FS5P-13-OTVORENA.png"
+          ],
+          "specificationsDoc": "assets/Home appliances/Dishwasher DW 60FS5P-13/4. DW 60FS5P & DW 60FS5P S -13 English language.pdf",
+          "specifications": {
+            "Dimensions": "H/W/D 845/600/600 mm",
+            "maximum capacity": "13 place settings",
+            "programs": "5",
+            "quick program": "√",
+            "LED display": "√",
+            "half load (1/2) button": "√",
+            "energy class": "E",
+            "drying class": "A",
+            "noise level during operation": "49 dB",
+            "delayed start": "1-24 hours",
+            "DRY +": "√",
+            "energy consumption per 100 cycles": "93 kWh",
+            "flood protection": "√",
+            "hidden heater": "√",
+            "heater protection": "√",
+            "metal filter": "√",
+            "COLOR": "WHITE",
+            "On/Off button": "√",
+            "START/PAUSE BUTTON": "√",
+            "WASHING FUNCTION INDICATOR": "√",
+            "SALT LACK INDICATOR": "√",
+            "RINSE AID LACK INDICATOR": "√"
+          }
+        },
+        {
+          "id": 169,
+          "name": "Dishwasher DW 60FS5P-13 S",
+          "description": [],
+          "pictures": [
+            "assets/Home appliances/Dishwasher DW 60FS5P-13 S/DW 60FS5P-13 S.png",
+            "assets/Home appliances/Dishwasher DW 60FS5P-13 S/DW 60FS5P-13 S-otvorena.png"
+          ],
+          "specificationsDoc": "assets/Home appliances/Dishwasher DW 60FS5P-13 S/4. DW 60FS5P & DW 60FS5P S -13 English language.pdf",
+          "specifications": {
+            "Dimensions": "H/W/D 845/600/600 mm",
+            "maximum capacity": "13 place settings",
+            "programs": "5",
+            "quick program": "√",
+            "LED display": "√",
+            "half load (1/2) button": "√",
+            "energy class": "E",
+            "drying class": "A",
+            "noise level during operation": "49 dB",
+            "delayed start": "1-24 hours",
+            "DRY +": "√",
+            "energy consumption per 100 cycles": "93 kWh",
+            "flood protection": "√",
+            "hidden heater": "√",
+            "heater protection": "√",
+            "metal filter": "√",
+            "COLOR": "GREY",
+            "On/Off button": "√",
+            "START/PAUSE BUTTON": "√",
+            "WASHING FUNCTION INDICATOR": "√",
+            "SALT LACK INDICATOR": "√",
+            "RINSE AID LACK INDICATOR": "√"
+          }
+        },
+        {
+          "id": 171,
+          "name": "Dishwasher DW 60FS6P3R-15 X",
+          "description": [],
+          "pictures": [
+              "assets/Home appliances/Dishwasher DW 60FS6P3R-15 X/DW 60FS6P3R-15 X.png",
+              "assets/Home appliances/Dishwasher DW 60FS6P3R-15 X/DW 60FS6P3R-15 X- otvorena.png"
+          ],
+          "specificationsDoc": "assets/Home appliances/Dishwasher DW 60FS6P3R-15/1. DW60FS6P3R-15 & DW60FS6P3R-15 X Macedonia languagen.pdf",
+          "specifications": {
+            "Dimensions": "H/W/D 845/600/600 mm",
+            "maximum capacity": "15 place settings",
+            "programs": "6",
+            "3rd rack": "√",
+            "3 washing levels with 3 spray arms": "√",
+            "LED display": "√",
+            "Automatic door opening after finishing": "√",
+            "quick program": "√",
+            "half load (1/2) button": "√",
+            "energy class": "D",
+            "drying class": "A",
+            "noise level during operation": "49 dB",
+            "delayed start 1-24 hours": "1-24 hours",
+            "energy consumption per 100 cycles": "86 kWh",
+            "flood protection": "√",
+            "hidden heater": "√",
+            "heater protection": "√",
+            "metal filter": "√",
+            "COLOR": "REAL INOX",
+            "START/PAUSE BUTTON": "√",
+            "WASHING FUNCTION INDICATOR": "√",
+            "SALT LACK INDICATOR": "√",
+            "RINSE AID LACK INDICATOR": "√"
+          }
+        },
+        {
+          "id": 172,
+          "name": "Washing Machine WM701200-03 BLDC",
+          "description": [],
+          "pictures": [
+            "assets/Home appliances/WASHING MACHINE WM701200-03 BLDC/WM701200-03 BLDC (1).png",
+            "assets/Home appliances/WASHING MACHINE WM701200-03 BLDC/WM701200-03 BLDC (2).png",
+            "assets/Home appliances/WASHING MACHINE WM701200-03 BLDC/WM701200-03 BLDC (3).png"
+          ],
+          "specificationsDoc": "assets/Home appliances/WASHING MACHINE WM701200-03 BLDC/1. WM-03 UM-1 (7KG- 9KG) MK-AL-SERB-ENG.pdf",
+          "specifications": {
+            "DIMENSIONS (H/W/D)": "850/595/495 mm",
+            "MAXIMUM SPIN SPEED (RPM)": "1200",
+            "MAXIMUM CAPACITY": "7 kg",
+            "STAINLESS STEEL DRUM": "50 L",
+            "INVERTER MOTOR": "√ (10 YEARS WARRANTY)",
+            "DIGITAL LED DISPLAY": "√",
+            "DELAYED START": "3-24 h",
+            "PROGRAMS": "16",
+            "ELECTRONIC PROGRAMMER": "√",
+            "WATER TEMPERATURE CONTROL BUTTON": "√",
+            "ENERGY CLASS": "A",
+            "DRUM CLEAN PROGRAM": "√",
+            "STEAM ASSIST PROGRAM": "√",
+            "CHILD LOCK": "√",
+            "ENERGY CONSUMPTION": "40 kWh/cycle",
+            "WATER CONSUMPTION": "44 L/cycle",
+            "NOISE LEVEL DURING WASHING": "62 dB",
+            "NOISE LEVEL DURING SPIN": "76 dB",
+            "SUPER QUICK PROGRAM": "15 minutes at 30°",
+            "SPIN SPEED CONTROL BUTTON": "√",
+            "GROSS/NET WEIGHT": "60/57 kg"
+          }
+        },
+        {
+          "id": 173,
+          "name": "Washing Machine WM801400-63 BLDC",
+          "description": [],
+          "pictures": [
+            "assets/Home appliances/WASHING MACHINE WM801400-63 BLDC/WM801400-063 BLDC (1).png",
+            "assets/Home appliances/WASHING MACHINE WM801400-63 BLDC/WM801400-063 BLDC (2).png",
+            "assets/Home appliances/WASHING MACHINE WM801400-63 BLDC/WM801400-063 BLDC (3).png"
+          ],
+          "specificationsDoc": "assets/Home appliances/WASHING MACHINE WM801400-63 BLDC/1. WM-063 UM-1 (8KG) - MK-AL-SERB-ENG.pdf",
+          "specifications": {
+            "DIMENSIONS (H/W/D)": "850/595/520 mm",
+            "MAXIMUM SPIN SPEED (RPM)": "1400",
+            "MAXIMUM CAPACITY": "8 kg",
+            "STAINLESS STEEL DRUM": "53 L",
+            "INVERTER MOTOR": "√ (10 YEARS WARRANTY)",
+            "DIGITAL LED DISPLAY": "√",
+            "DELAYED START": "3-24 h",
+            "PROGRAMS": "16",
+            "ELECTRONIC PROGRAMMER": "√",
+            "WATER TEMPERATURE CONTROL BUTTON": "√",
+            "ENERGY CLASS": "A",
+            "OVERFLOW PROTECTION SYSTEM": "√",
+            "FOAM PROTECTION": "√",
+            "ERROR DETECTION SYSTEM": "√",
+            "CHILD LOCK": "√",
+            "ENERGY CONSUMPTION": "42 kWh/cycle",
+            "WATER CONSUMPTION": "48 L/cycle",
+            "NOISE LEVEL DURING WASHING": "62 dB",
+            "NOISE LEVEL DURING SPIN": "76 dB",
+            "DRUM CLEAN PROGRAM": "√",
+            "STEAM ASSIST PROGRAM": "√",
+            "SUPER QUICK PROGRAM": "15 min 30°",
+            "SPIN SPEED CONTROL BUTTON": "√",
+            "COTTON PRE-WASH PROGRAM": "√",
+            "GROSS/NET WEIGHT": "61/58 kg"
+          }
+        },
+        {
+          "id": 174,
+          "name": "Washing Machine WM901400-03 BLDC",
+          "description": [],
+          "pictures": [
+            "assets/Home appliances/WASHING MACHINE WM901400-03 BLDC/WM901400-03 BLDC (3).png",
+            "assets/Home appliances/WASHING MACHINE WM901400-03 BLDC/WM901400-03 BLDC (2).png",
+            "assets/Home appliances/WASHING MACHINE WM901400-03 BLDC/WM901400-03 BLDC (1).png"
+          ],
+          "specificationsDoc": "assets/Home appliances/WASHING MACHINE WM901400-03 BLDC/1. WM-03 UM-1 (7KG- 9KG) MK-AL-SERB-ENG.pdf",
+          "specifications": {
+            "DIMENSIONS (H/W/D)": "850/595/560 mm",
+            "MAXIMUM SPIN SPEED (RPM)": "1400",
+            "MAXIMUM CAPACITY": "9 kg",
+            "STAINLESS STEEL DRUM": "60 L",
+            "INVERTER MOTOR": "√ (10 YEARS WARRANTY)",
+            "DIGITAL LED DISPLAY": "√",
+            "STEAM ASSIST (steam washing)": "√",
+            "DELAYED START": "3-24 h",
+            "PROGRAMS": "16",
+            "ELECTRONIC PROGRAMMER": "√",
+            "WATER TEMPERATURE CONTROL BUTTON": "√",
+            "ENERGY CLASS": "A",
+            "DRUM CLEAN PROGRAM": "√",
+            "FOAM PROTECTION": "√",
+            "STEAM ASSIST PROGRAM": "√",
+            "CHILD LOCK": "√",
+            "ERROR DETECTION SYSTEM": "√",
+            "ENERGY CONSUMPTION": "44 kWh/cycle",
+            "WATER CONSUMPTION": "50 L/cycle",
+            "NOISE LEVEL DURING WASHING": "62 dB",
+            "NOISE LEVEL DURING SPIN": "76 dB",
+            "SUPER QUICK PROGRAM": "15 minutes at 30°",
+            "SPIN SPEED CONTROL BUTTON": "√",
+            "COTTON PRE-WASH PROGRAM": "√",
+            "GROSS/NET WEIGHT": "67/64 kg"
+          }
+        },
+        {
+          "id": 175,
+          "name": "Refrigerator with Compartment RTT 90",
+          "description": [],
+          "pictures": [
+            "assets/Home appliances/REFRIGERATOR RTT 90/RTT 90 Exterior.png",
+            "assets/Home appliances/REFRIGERATOR RTT 90/RTT 90 Interior.png"
+          ],
+          "specificationsDoc": "assets/Home appliances/REFRIGERATOR RTT 90/Upatsvo RTT 90.pdf",
+          "specifications": {
+            "DIMENSIONS (H/W/D)": "850/475/445 mm",
+            "GROSS VOLUME": "91 L",
+            "NET VOLUME": "90 L",
+            "ENERGY CLASS": "E",
+            "COLOR": "WHITE",
+            "REVERSIBLE DOOR": "√",
+            "ADJUSTABLE FEET": "√",
+            "FIXED DOOR HANDLES": "√",
+            "DOOR SHELVES": "√",
+            "ADJUSTABLE TRANSPARENT SHELVES": "√",
+            "TRANSPARENT DRAWER": "√",
+            "ENERGY CONSUMPTION": "85 kWh/year",
+            "NOISE LEVEL": "39 dB",
+            "GAS": "R600"
+          }
+        },
+        {
+          "id": 176,
+          "name": "Refrigerator without Compartment LU 242",
+          "description": [],
+          "pictures": [
+            "assets/Home appliances/REFRIGERATOR WITHOUT CHAMBER LU 242/LU 242 Exterior.png",
+            "assets/Home appliances/REFRIGERATOR WITHOUT CHAMBER LU 242/LU 242 Interior.png"
+          ],
+          "specificationsDoc": "assets/Home appliances/REFRIGERATOR WITHOUT CHAMBER LU 242/Upatsvo LU 242.pdf",
+          "specifications": {
+            "DIMENSIONS (H/W/D)": "1430/550/560 mm",
+            "GROSS VOLUME": "246 L",
+            "NET VOLUME": "242 L",
+            "ENERGY CLASS": "E",
+            "COLOR": "WHITE",
+            "REVERSIBLE DOOR": "√",
+            "ADJUSTABLE FEET": "√",
+            "FIXED DOOR HANDLES": "√",
+            "DOOR SHELVES": "√",
+            "ADJUSTABLE TRANSPARENT SHELVES": "√",
+            "TRANSPARENT DRAWER": "√",
+            "ENERGY CONSUMPTION": "130 kWh/year",
+            "NOISE LEVEL": "40 dB",
+            "GAS": "P600"
+          }
+        },
+        {
+          "id": 177,
+          "name": "Vertical Freezer FU 168",
+          "description": [],
+          "pictures": [
+            "assets/Home appliances/VERTICAL FREEZER FU 168/FU 168 Exterior.png",
+            "assets/Home appliances/VERTICAL FREEZER FU 168/FU 168 Interior.jpg"
+          ],
+          "specificationsDoc": "assets/Home appliances/VERTICAL FREEZER FU 168/Upatsvo FU 168.pdf",
+          "specifications": {
+            "DIMENSIONS (H/W/D)": "1430/550/580 mm",
+            "GROSS VOLUME": "170 L",
+            "NET VOLUME": "168 L",
+            "ENERGY CLASS": "E",
+            "COLOR": "WHITE",
+            "REVERSIBLE DOOR": "√",
+            "ADJUSTABLE FEET": "√",
+            "FIXED DOOR HANDLES": "√",
+            "DOOR SHELVES": "√",
+            "FAST FREEZE COMPARTMENTS": "√",
+            "TRANSPARENT DRAWERS": "√",
+            "ENERGY CONSUMPTION": "190 kWh/year",
+            "NOISE LEVEL": "40 dB",
+            "GAS": "P600"
+          }
+        },
+        {
+          "id": 178,
+          "name": "Two-Chamber Refrigerator RTMF 206",
+          "description": [],
+          "pictures": [
+            "assets/Home appliances/TWO CHAMBER REFRIGERATOR RTMF 206/RTMF 206 Exterior.png",
+            "assets/Home appliances/TWO CHAMBER REFRIGERATOR RTMF 206/RTMF 206 Interior.png"
+          ],
+          "specificationsDoc": "assets/Home appliances/TWO CHAMBER REFRIGERATOR RTMF 206/Upatsvo RTMF 206.pdf",
+          "specifications": {
+            "DIMENSIONS (H/W/D)": "1430/550/560 mm",
+            "GROSS VOLUME": "208/206 L",
+            "NET VOLUME": "169/37 L",
+            "ENERGY CLASS": "E",
+            "COLOR": "WHITE",
+            "REVERSIBLE DOOR": "√",
+            "ADJUSTABLE FEET": "√",
+            "FIXED DOOR HANDLES": "√",
+            "DOOR SHELVES": "√",
+            "TRANSPARENT DRAWER": "√",
+            "ADJUSTABLE TRANSPARENT SHELVES": "√",
+            "ENERGY CONSUMPTION": "172 kWh/year",
+            "NOISE LEVEL": "40 dB",
+            "GAS": "P600"
+          }
+        },
+        {
+          "id": 179,
+          "name": "Two-Chamber Refrigerator RTMF 206 S",
+          "description": [],
+          "pictures": [
+            "assets/Home appliances/TWO CHAMBER REFRIGERATOR RTMF 206 S/RTMF 206 S Exterior.png",
+            "assets/Home appliances/TWO CHAMBER REFRIGERATOR RTMF 206 S/RTMF 206 S Interior.png"
+          ],
+          "specificationsDoc": "assets/Home appliances/TWO CHAMBER REFRIGERATOR RTMF 206 S/Upatsvo RTMF 206 & RTMF 206 S.pdf",
+          "specifications": {
+            "DIMENSIONS (H/W/D)": "1430/550/560 mm",
+            "GROSS VOLUME": "208/206 L",
+            "NET VOLUME": "169/37 L",
+            "ENERGY CLASS": "E",
+            "COLOR": "GREY",
+            "REVERSIBLE DOOR": "√",
+            "ADJUSTABLE FEET": "√",
+            "FIXED DOOR HANDLES": "√",
+            "DOOR SHELVES": "√",
+            "TRANSPARENT DRAWER": "√",
+            "ADJUSTABLE TRANSPARENT SHELVES": "√",
+            "ENERGY CONSUMPTION": "172 kWh/year",
+            "NOISE LEVEL": "40 dB",
+            "GAS": "P600"
+          }
+        },
+        {
+          "id": 180,
+          "name": "Combined Refrigerator CBMF 262",
+          "description": [],
+          "pictures": [
+            "assets/Home appliances/TWO CHAMBER REFRIGERATOR CBMF 262/CBMF 262 Exterior.png",
+            "assets/Home appliances/TWO CHAMBER REFRIGERATOR CBMF 262/CBMF 262 Interior.png"
+          ],
+          "specificationsDoc": "assets/Home appliances/TWO CHAMBER REFRIGERATOR CBMF 262/Upatsvo CBMF 262.pdf",
+          "specifications": {
+            "DIMENSIONS (H/W/D)": "1800/550/560 mm",
+            "GROSS/NET VOLUME": "265/262 L",
+            "NET VOLUME FRIDGE/FREEZER": "191/71 L",
+            "ENERGY CLASS": "E",
+            "COLOR": "WHITE",
+            "REVERSIBLE DOOR": "√",
+            "ADJUSTABLE FEET": "√",
+            "FIXED DOOR HANDLES": "√",
+            "DOOR SHELVES": "√",
+            "TRANSPARENT DRAWER": "√",
+            "ADJUSTABLE TRANSPARENT SHELVES": "√",
+            "FREEZER COMPARTMENT WITH TRANSPARENT DRAWERS": "√",
+            "ENERGY CONSUMPTION": "210 kWh/year",
+            "NOISE LEVEL": "40 dB",
+            "GAS": "P600"
+          }
+        },
+        {
+          "id": 181,
+          "name": "Combined Refrigerator CBMF 262 S",
+          "description": [],
+          "pictures": [
+            "assets/Home appliances/TWO CHAMBER REFRIGERATOR CBMF 262 S/CBMF 262 S Exterior.png",
+            "assets/Home appliances/TWO CHAMBER REFRIGERATOR CBMF 262 S/CBMF 262 S Interior.png"
+          ],
+          "specificationsDoc": "assets/Home appliances/TWO CHAMBER REFRIGERATOR CBMF 262 S/Upatsvo CBMF 262.pdf",
+          "specifications": {
+            "DIMENSIONS (H/W/D)": "1800/550/560 mm",
+            "GROSS/NET VOLUME": "265/262 L",
+            "NET VOLUME FRIDGE/FREEZER": "191/71 L",
+            "ENERGY CLASS": "E",
+            "COLOR": "SILVER",
+            "REVERSIBLE DOOR": "√",
+            "ADJUSTABLE FEET": "√",
+            "FIXED DOOR HANDLES": "√",
+            "DOOR SHELVES": "√",
+            "TRANSPARENT DRAWER": "√",
+            "ADJUSTABLE TRANSPARENT SHELVES": "√",
+            "FREEZER COMPARTMENT WITH TRANSPARENT DRAWERS": "√",
+            "ENERGY CONSUMPTION": "210 kWh/year",
+            "NOISE LEVEL": "40 dB",
+            "GAS": "P600"
+          }
+        },
+        {
+          "id": 182,
+          "name": "Combined Refrigerator CBMF 315",
+          "description": [],
+          "pictures": [
+            "assets/Home appliances/COMBINED REFRIGERATOR CBMF 315/CBMF 315 Exterior.png",
+            "assets/Home appliances/COMBINED REFRIGERATOR CBMF 315/CBMF 315 Interior.png"
+          ],
+          "specificationsDoc": "assets/Home appliances/COMBINED REFRIGERATOR CBMF 315/Upatsvo CBMF 315 & CBMF 315 X.pdf",
+          "specifications": {
+            "DIMENSIONS (H/W/D)": "1860/600/600 mm",
+            "GROSS/NET VOLUME": "322/315 L",
+            "NET VOLUME FRIDGE/FREEZER": "219/96 L",
+            "ENERGY CLASS": "E",
+            "COLOR": "WHITE",
+            "REVERSIBLE DOOR": "√",
+            "ADJUSTABLE FEET": "√",
+            "FIXED DOOR HANDLES": "√",
+            "DOOR SHELVES": "√",
+            "TRANSPARENT DRAWER": "√",
+            "ADJUSTABLE TRANSPARENT SHELVES": "√",
+            "FREEZER COMPARTMENT WITH TRANSPARENT DRAWERS": "√",
+            "ENERGY CONSUMPTION": "234 kWh/year",
+            "NOISE LEVEL": "40 dB",
+            "GAS": "P600"
+          }
+        },
+        {
+          "id": 183,
+          "name": "Combined Refrigerator CBMF 315 X",
+          "description": [],
+          "pictures": [
+            "assets/Home appliances/COMBINED REFRIGERATOR CBMF 315 X/CBMF 315 X Exterior.png",
+            "assets/Home appliances/COMBINED REFRIGERATOR CBMF 315 X/CBMF 315 X Interior.png"
+          ],
+          "specificationsDoc": "assets/Home appliances/COMBINED REFRIGERATOR CBMF 315/Upatsvo CBMF 315 & CBMF 315 X.pdf",
+          "specifications": {
+            "DIMENSIONS (H/W/D)": "1860/600/600 mm",
+            "GROSS/NET VOLUME": "322/315 L",
+            "NET VOLUME FRIDGE/FREEZER": "219/96 L",
+            "ENERGY CLASS": "E",
+            "COLOR": "REAL INOX",
+            "REVERSIBLE DOOR": "√",
+            "ADJUSTABLE FEET": "√",
+            "FIXED DOOR HANDLES": "√",
+            "DOOR SHELVES": "√",
+            "TRANSPARENT DRAWER": "√",
+            "ADJUSTABLE TRANSPARENT SHELVES": "√",
+            "FREEZER COMPARTMENT WITH TRANSPARENT DRAWERS": "√",
+            "ENERGY CONSUMPTION": "234 kWh/year",
+            "NOISE LEVEL": "40 dB",
+            "GAS": "P600"
+          }
+        },
+        {
+          "id": 184,
+          "name": "Combined Refrigerator NFCBMF 253 X",
+          "description": [],
+          "pictures": [
+            "assets/Home appliances/COMBINED REFRIGERATOR NFCBMF 253 X/NFCBMF 253 X Exterior.png",
+            "assets/Home appliances/COMBINED REFRIGERATOR NFCBMF 253 X/NFCBMF 253 X Interior.png"
+          ],
+          "specificationsDoc": "assets/Home appliances/COMBINED REFRIGERATOR NFCBMF 253 X/Upatsvo NFCBMF 253 & NFCBMF 253 X.pdf",
+          "specifications": {
+            "DIMENSIONS (H/W/D)": "1810/550/600 mm",
+            "GROSS/NET VOLUME": "271/253 L",
+            "NET VOLUME FRIDGE/FREEZER": "182/71 L",
+            "ENERGY CLASS": "E",
+            "COLOR": "REAL INOX",
+            "NO FROST SYSTEM": "√",
+            "INTEGRATED AIR CIRCULATION SYSTEM": "√",
+            "REVERSIBLE DOOR": "√",
+            "ADJUSTABLE FEET": "√",
+            "FIXED DOOR HANDLES": "√",
+            "DOOR SHELVES": "√",
+            "TRANSPARENT DRAWER": "√",
+            "ADJUSTABLE TRANSPARENT SHELVES": "√",
+            "FREEZER COMPARTMENT WITH TRANSPARENT DRAWERS": "√",
+            "FAST FREEZE COMPARTMENTS": "√",
+            "ENERGY CONSUMPTION": "220 kWh/year",
+            "NOISE LEVEL": "40 dB",
+            "GAS": "P600"
+          }
+        },
+        {
+          "id": 185,
+          "name": "Built-in Refrigerator BIBMF 249",
+          "description": [],
+          "pictures": [
+            "assets/Built In Appliances/Built-in refrigerator BIBMF 249/BIBMF 249 Exterior.jpg",
+            "assets/Built In Appliances/Built-in refrigerator BIBMF 249/BIBMF 249 Interior.png"
+          ],
+          "specificationsDoc": "assets/Built In Appliances/Built-in refrigerator BIBMF 249/Upatsvo BIBMF 249.pdf",
+          "specifications": {
+            "DIMENSIONS (H/W/D)": "1780/540/540 mm",
+            "GROSS VOLUME": "256/249 L",
+            "NET VOLUME": "179/70 L",
+            "ENERGY CLASS": "E",
+            "COLOR": "WHITE",
+            "FULLY BUILT-IN": "√",
+            "REVERSIBLE DOOR": "√",
+            "ADJUSTABLE FEET": "√",
+            "FIXED DOOR HANDLES": "√",
+            "TRANSPARENT DRAWER": "√",
+            "ADJUSTABLE TRANSPARENT SHELVES": "√",
+            "FREEZER COMPARTMENT WITH TRANSPARENT DRAWERS": "√",
+            "FAST FREEZE COMPARTMENTS": "√",
+            "ENERGY CONSUMPTION": "216 kWh/year",
+            "NOISE LEVEL": "39 dB",
+            "GAS": "P600"
+          }
+        }                  
         
 ]

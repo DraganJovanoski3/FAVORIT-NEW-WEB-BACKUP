@@ -291,33 +291,34 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
           //   backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
           // },
           {
+            // KEEP // KEEP
             id: 152,
-            name: this.productTranslations['152'] ||'WASHING MACHINE A – 5100',
+            name: this.productTranslations['152'] ||'WASHING MACHINE A-5100',
             picture: 'assets/Home appliances/WASHING MACHINE A – 5100/MASINA-ZA-ALISTA-5100.png',  
             pictureHover: 'assets/Home appliances/WASHING MACHINE A – 5100/MASINA-ZA-ALISTA-5100.png',
             subcategory: washingLabel,
             backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
           },
           {
-            // KEEP
+            // KEEP // KEEP
             id: 45,
-            name: this.productTranslations['45'] ||'WASHING MACHINE N - 6100',
+            name: this.productTranslations['45'] ||'WASHING MACHINE L-6100N',
             picture: 'assets/Home appliances/WASHING MACHINE L – 6100N/L-6100-02-1-1024x576.png',  
             pictureHover: 'assets/Home appliances/WASHING MACHINE L – 6100N/FAVORIT-L-6100-1024x576.png',
             subcategory: washingLabel, 
             backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
           },
+          // {
+          //   // KEEP
+          //   id: 49,
+          //   name: this.productTranslations['49'] ||'WASHING MACHINE W – 6101N',
+          //   picture: 'assets/Home appliances/WASHING MACHINE W – 6101N/W-6101-06-1024x576.png',  
+          //   pictureHover: 'assets/Home appliances/WASHING MACHINE W – 6101N/FAVORIT-W-6101-1-1024x576.png',
+          //   subcategory: washingLabel, 
+          //   backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
+          // },
           {
-            // KEEP
-            id: 49,
-            name: this.productTranslations['49'] ||'WASHING MACHINE W – 6101N',
-            picture: 'assets/Home appliances/WASHING MACHINE W – 6101N/W-6101-06-1024x576.png',  
-            pictureHover: 'assets/Home appliances/WASHING MACHINE W – 6101N/FAVORIT-W-6101-1-1024x576.png',
-            subcategory: washingLabel, 
-            backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
-          },
-          {
-            // KEEP
+            // KEEP // KEEP
             id: 46,
             name: this.productTranslations['46'] ||'WASHING MACHINE W-7101',
             picture: 'assets/Home appliances/WASHING MACHINE L – 7101N/W-7101-05-1024x576.png',  
@@ -325,17 +326,17 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
             subcategory: washingLabel, 
             backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
           },
+          // {
+          //   // KEEP
+          //   id: 50,
+          //   name: this.productTranslations['50'] ||'WASHING MACHINE W – 7122N',
+          //   picture: 'assets/Home appliances/WASHING MACHINE W – 7122N/W-7122-07-1024x576.png',  
+          //   pictureHover: 'assets/Home appliances/WASHING MACHINE W – 7122N/FAVORIT-W-7122-1024x576.png',
+          //   subcategory: washingLabel, 
+          //   backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
+          // },
           {
-            // KEEP
-            id: 50,
-            name: this.productTranslations['50'] ||'WASHING MACHINE W – 7122N',
-            picture: 'assets/Home appliances/WASHING MACHINE W – 7122N/W-7122-07-1024x576.png',  
-            pictureHover: 'assets/Home appliances/WASHING MACHINE W – 7122N/FAVORIT-W-7122-1024x576.png',
-            subcategory: washingLabel, 
-            backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
-          },
-          {
-            // KEEP
+            // KEEP // KEEP
             id: 47,
             name: this.productTranslations['47'] ||'WASHING MACHINE L – 8101',
             picture: 'assets/Home appliances/WASHING MACHINE L – 8101N/L-8101-04-1024x576.png',  
@@ -344,7 +345,7 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
             backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
           },
           {
-            // KEEP
+            // KEEP // KEEP
             id: 48,
             name: this.productTranslations['48'] ||'WASHING MACHINE C - 9102',
             picture: 'assets/Home appliances/WASHING MACHINE L – 9101N/L-9101-03-1024x576.png',  
@@ -353,7 +354,15 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
             backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
           },
           {
-            // KEEP
+            id: 172,
+            name: this.productTranslations['172'] ||'WASHING MACHINE WM701200-03 BLDC',
+            picture: 'assets/Home appliances/WASHING MACHINE WM701200-03 BLDC/WM701200-03 BLDC (1).png',
+            pictureHover: 'assets/Home appliances/WASHING MACHINE WM701200-03 BLDC/WM701200-03 BLDC (2).png',
+            subcategory: washingLabel, 
+            backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
+          },
+          {
+            // KEEP // KEEP
             id: 51,
             name: this.productTranslations['51'] ||'WASHING MACHINE L-7121 BLDC',
             picture: 'assets/Home appliances/WASHING MACHINE W – 7122N BLDC/W7122BLDC-1024x576.png',  
@@ -362,6 +371,7 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
             backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
           },
           {
+            // KEEP // KEEP
             id: 154,
             name: this.productTranslations['154'] ||'WASHING MACHINE N-7122T BLDC',
             picture: 'assets/Home appliances/WASHING MACHINE N-7122T BLDC/5. FAVORIT N-7122T BLDC.png',
@@ -370,7 +380,15 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
             backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
           },
           {
-            // KEEP
+            id:173,
+            name: this.productTranslations['173'] ||'WASHING MACHINE WM801400-63 BLDC',
+            picture: 'assets/Home appliances/WASHING MACHINE WM801400-63 BLDC/WM801400-063 BLDC (1).png',
+            pictureHover: 'assets/Home appliances/WASHING MACHINE WM801400-63 BLDC/WM801400-063 BLDC (2).png',
+            subcategory: washingLabel, 
+            backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
+          },
+          {
+            // KEEP // KEEP
             id: 53,
             name: this.productTranslations['53'] ||'WASHING MACHINE W-8121 BLDC',
             picture: 'assets/Home appliances/WASHING MACHINE W – 8122N BLDC/W-8122-BLDC-11-1024x576.png',  
@@ -379,6 +397,7 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
             backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
           },
           {
+            // KEEP // KEEP
             id: 155,
             name: this.productTranslations['155'] ||'WASHING MACHINE C-8143 BLDC',
             picture: 'assets/Home appliances/WASHING MACHINE C-8143 BLDC/8. FAVORIT C-8143 BLDC.png',
@@ -386,25 +405,34 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
             subcategory: washingLabel, 
             backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
           },
+          // {
+          //   // KEEP // KEEP
+          //   id: 56,
+          //   name: this.productTranslations['56'] ||'WASHING MACHINE W-9122N BLDC',
+          //   picture: 'assets/Home appliances/WASHING MACHINE W-9122N BLDC/W-9122N-BLDC-16-1024x576.png',  
+          //   pictureHover: 'assets/Home appliances/WASHING MACHINE W-9122N BLDC/W-9122N-BLDC-16-1024x576.png',
+          //   subcategory: washingLabel, 
+          //   backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
+          // },
+          // {
+          //   // KEEP // KEEP
+          //   id: 55,
+          //   name: this.productTranslations['55'] ||'WASHING MACHINE W – 9142ТN BLDC',
+          //   picture: 'assets/Home appliances/WASHING MACHINE W – 9142ТN BLDC/W9142T-BLDC-1024x576.png',  
+          //   pictureHover: 'assets/Home appliances/WASHING MACHINE W – 9142ТN BLDC/FAVORIT-W-9142T-BLDC-12-1024x576.png',
+          //   subcategory: washingLabel, 
+          //   backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
+          // },
           {
-            // KEEP
-            id: 56,
-            name: this.productTranslations['56'] ||'WASHING MACHINE W-9122N BLDC',
-            picture: 'assets/Home appliances/WASHING MACHINE W-9122N BLDC/W-9122N-BLDC-16-1024x576.png',  
-            pictureHover: 'assets/Home appliances/WASHING MACHINE W-9122N BLDC/W-9122N-BLDC-16-1024x576.png',
+            id: 174,
+            name: this.productTranslations['174'] ||'WASHING MACHINE WM901400-03 BLDC',
+            picture: 'assets/Home appliances/WASHING MACHINE WM901400-03 BLDC/WM901400-03 BLDC (3).png',
+            pictureHover: 'assets/Home appliances/WASHING MACHINE WM901400-03 BLDC/WM901400-03 BLDC (2).png',
             subcategory: washingLabel, 
             backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
           },
           {
-            // KEEP
-            id: 55,
-            name: this.productTranslations['55'] ||'WASHING MACHINE W – 9142ТN BLDC',
-            picture: 'assets/Home appliances/WASHING MACHINE W – 9142ТN BLDC/W9142T-BLDC-1024x576.png',  
-            pictureHover: 'assets/Home appliances/WASHING MACHINE W – 9142ТN BLDC/FAVORIT-W-9142T-BLDC-12-1024x576.png',
-            subcategory: washingLabel, 
-            backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
-          },
-          {
+            // KEEP // KEEP
             id: 160,
             name: this.productTranslations['160'] ||'WASHING MACHINE A-9143 BLDC',
             picture: 'assets/Home appliances/WASHING MACHINE A-9143 BLDC/10. FAVORIT A-9143 BLDC.png',
@@ -415,7 +443,7 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
 
            // DRYERS
           {
-            // KEEP
+            // KEEP // KEEP
             id: 19,
             name: this.productTranslations['19'] ||'Dryer W-71 C',
             picture: 'assets/Home appliances/Dryer L – 71 C/W-71 C.png',  
@@ -424,6 +452,7 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
             backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
           },
           {
+            // KEEP // KEEP
             id: 161,
             name: this.productTranslations['161'] ||'Dryer L-71 HP',
             picture: 'assets/Home appliances/Dryer L-71 HP/2. FAVORIT L-71HP.png',  
@@ -442,7 +471,7 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
 
           // },
           {
-            // KEEP
+            // KEEP // KEEP
             id: 20,
             name: this.productTranslations['20'] ||'Dryer N-82 C',
             picture: 'assets/Home appliances/Dryer L – 81 C/N-82 C.png',  
@@ -452,7 +481,7 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
 
           },
           {
-            // KEEP
+            // KEEP // KEEP
             id: 22,
             name: this.productTranslations['22'] ||'Dryer C-82T HP',
             picture: 'assets/Home appliances/Dryer W – 82 HP (with HEAT PUMP)/C-82T HP.png',  
@@ -615,40 +644,19 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
         this.subcategoryName = this.filterSubcategory.homeAppliances.dishwashers;
         this.products = [
           // DISHWASHERS
-          // {
-          //   // KEEP
-          //   id: 142,
-          //   name: this.productTranslations['17'] ||'Dishwasher F45 – Y15N',
-          //   picture: 'assets/Home appliances/Dishwasher F45 – Y15N/F45-Y15-S-04-1024x576.png',  
-          //   pictureHover: 'assets/Home appliances/Dishwasher F45 – Y15N/F45-Y15-S-05-1024x576.png',
-          //   // CHANGE PHOTO
-          //   subcategory: dishwasherLabel, 
-          //   backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
-          // },
           {
-            // KEEP
-            id: 17,
-            name: this.productTranslations['17'] ||'Dishwasher F45 – Y15N S',
-            picture: 'assets/Home appliances/Dishwasher F45 – Y15N S/F45-Y15 S-04.png',  
-            pictureHover: 'assets/Home appliances/Dishwasher F45 – Y15N S/F45-Y15 S-05.png',
+            id: 170,
+            name: this.productTranslations['170'] ||'Dishwasher DW 60FS6P3R-15',
+            picture: 'assets/Home appliances/Dishwasher DW 60FS6P3R-15/DW 60FS6P3R-15.png',
+            pictureHover: 'assets/Home appliances/Dishwasher DW 60FS6P3R-15/DW 60FS6P3R-15-otvorena.png',
             subcategory: dishwashersLabel, 
             backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
           },
           {
-            // KEEP
-            id: 18,
-            name: this.productTranslations['18'] ||'Dishwasher F60 – Y14N',
-            picture: 'assets/Home appliances/Dishwasher F60 – Y14N/F60-Y14-04-1024x576.png',  
-            pictureHover: 'assets/Home appliances/Dishwasher F60 – Y14N/F60-Y14-S-05-1024x576.png',
-            subcategory: dishwashersLabel, 
-            backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
-          },
-          {
-            // KEEP
-            id: 135,
-            name: this.productTranslations['135'] ||'Dishwasher F60 – Y14N S',
-            picture: 'assets/Home appliances/Dishwasher F60 – Y14N S/F60-Y14_S-04.png',  
-            pictureHover: 'assets/Home appliances/Dishwasher F60 – Y14N S/F60-Y14_S-05.png',
+            id: 171,
+            name: this.productTranslations['171'] ||'Dishwasher DW 60FS6P3R-15 X',
+            picture: 'assets/Home appliances/Dishwasher DW 60FS6P3R-15 X/DW 60FS6P3R-15 X.png',
+            pictureHover: 'assets/Home appliances/Dishwasher DW 60FS6P3R-15 X/DW 60FS6P3R-15 X- otvorena.png',
             subcategory: dishwashersLabel, 
             backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
           },
@@ -671,21 +679,89 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
             backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
           },
           {
-            id: 14,
-            name: this.productTranslations['14'] ||'Dishwasher E60 – A22',
-            picture: 'assets/Home appliances/Dishwasher E60 – A22/E60-A22-04-1024x576.png',  
-            pictureHover: 'assets/',
+            id: 164,
+            name: this.productTranslations['164'] ||'Dishwasher DW 45FS5P-9',
+            picture: 'assets/Home appliances/Dishwasher DW 45FS5P-9/DW 45FS5P-9.png',  
+            pictureHover: 'assets/Home appliances/Dishwasher DW 45FS5P-9/DW 45FS5P-9-OTVORENA.png',
             subcategory: dishwashersLabel, 
             backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
           },
           {
-            id: 16,
-            name: this.productTranslations['16'] ||'DISHWASHER E60-A24N BLDC',
-            picture: 'assets/Home appliances/DISHWASHER E60-A24N BLDC with inverter motor/E60-A24-BLDC-04-1-1024x576.png',  
-            pictureHover: 'assets/',
-            subcategory: this.subcategoriesComponentConstant.homeAppliances.dishwashers, 
+            id: 165,
+            name: this.productTranslations['165'] ||'Dishwasher DW 45FS5P-9 S',
+            picture: 'assets/Home appliances/Dishwasher DW 45FS5P-9 S/DW 45FS5P-9 S.png',  
+            pictureHover: 'assets/Home appliances/Dishwasher DW 45FS5P-9 S/DW 45FS5P-9 S -otvorena.png',
+            subcategory: dishwashersLabel, 
             backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
           },
+          {
+            // KEEP
+            id: 142,
+            name: this.productTranslations['142'] ||'Dishwasher F45 – Y15N',
+            picture: 'assets/Home appliances/Dishwasher F45 – Y15N/F45-Y15-S-04-1024x576.png',  
+            pictureHover: 'assets/Home appliances/Dishwasher F45 – Y15N/F45-Y15-S-05-1024x576.png',
+            subcategory: dishwashersLabel, 
+            backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
+          },
+          {
+            // KEEP
+            id: 17,
+            name: this.productTranslations['17'] ||'Dishwasher F45 – Y15N S',
+            picture: 'assets/Home appliances/Dishwasher F45 – Y15N S/F45-Y15 S-04.png',  
+            pictureHover: 'assets/Home appliances/Dishwasher F45 – Y15N S/F45-Y15 S-05.png',
+            subcategory: dishwashersLabel, 
+            backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
+          },
+          {
+            id: 168,
+            name: this.productTranslations['168'] ||'Dishwasher DW 60FS5P-13',
+            picture: 'assets/Home appliances/Dishwasher DW 60FS5P-13/DW 60FS5P-13.png',
+            pictureHover: 'assets/Home appliances/Dishwasher DW 60FS5P-13/DW 60FS5P-13-OTVORENA.png',
+            subcategory: dishwashersLabel, 
+            backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
+          },
+          {
+            id: 169,
+            name: this.productTranslations['169'] ||'Dishwasher DW 60FS5P-13 S',
+            picture: 'assets/Home appliances/Dishwasher DW 60FS5P-13 S/DW 60FS5P-13 S.png',
+            pictureHover: 'assets/Home appliances/Dishwasher DW 60FS5P-13 S/DW 60FS5P-13 S-otvorena.png',
+            subcategory: dishwashersLabel, 
+            backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
+          },
+          {
+            // KEEP
+            id: 18,
+            name: this.productTranslations['18'] ||'Dishwasher F60 – Y14N',
+            picture: 'assets/Home appliances/Dishwasher F60 – Y14N/F60-Y14-04-1024x576.png',  
+            pictureHover: 'assets/Home appliances/Dishwasher F60 – Y14N/F60-Y14-S-05-1024x576.png',
+            subcategory: dishwashersLabel, 
+            backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
+          },
+          {
+            // KEEP
+            id: 135,
+            name: this.productTranslations['135'] ||'Dishwasher F60 – Y14N S',
+            picture: 'assets/Home appliances/Dishwasher F60 – Y14N S/F60-Y14_S-04.png',  
+            pictureHover: 'assets/Home appliances/Dishwasher F60 – Y14N S/F60-Y14_S-05.png',
+            subcategory: dishwashersLabel, 
+            backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
+          },
+          // {
+          //   id: 14,
+          //   name: this.productTranslations['14'] ||'Dishwasher E60 – A22',
+          //   picture: 'assets/Home appliances/Dishwasher E60 – A22/E60-A22-04-1024x576.png',  
+          //   pictureHover: 'assets/',
+          //   subcategory: dishwashersLabel, 
+          //   backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
+          // },
+          // {
+          //   id: 16,
+          //   name: this.productTranslations['16'] ||'DISHWASHER E60-A24N BLDC',
+          //   picture: 'assets/Home appliances/DISHWASHER E60-A24N BLDC with inverter motor/E60-A24-BLDC-04-1-1024x576.png',  
+          //   pictureHover: 'assets/',
+          //   subcategory: this.subcategoriesComponentConstant.homeAppliances.dishwashers, 
+          //   backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
+          // },
         ];
         break;
       case 'fridges-and-freezers':
@@ -697,6 +773,14 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
         this.backgroundStyle = 'linear-gradient(rgba(0, 0, 0, 0.27), rgba(0, 0, 0, 0.27)), url("assets/boilers.jpg")';
         this.products = [
                    // REFRIGERATORS
+          {
+            id: 175,
+            name: this.productTranslations['175'] ||'REFRIGERATOR RTT 90',
+            picture: 'assets/Home appliances/REFRIGERATOR RTT 90/RTT 90 Exterior.png',
+            pictureHover: 'assets/Home appliances/REFRIGERATOR RTT 90/RTT 90 Interior.png',
+            subcategory: fridgeLabel, 
+            backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
+          },
           {
             // KEEP
             id: 38,
@@ -712,6 +796,14 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
             name: this.productTranslations['39'] ||'REFRIGERATOR WITHOUT CHAMBER L1002E',
             picture: 'assets/Home appliances/REFRIGERATOR WITHOUT CHAMBER L1002N/FAVORIT-L-1002-01-1024x576.png',  
             pictureHover: 'assets/Home appliances/REFRIGERATOR WITHOUT CHAMBER L1002N/FAVORIT-L-1002-02-1024x576.png',
+            subcategory: fridgeLabel, 
+            backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
+          },
+          {
+            id: 176,
+            name: this.productTranslations['176'] ||'REFRIGERATOR WITHOUT CHAMBER LU 242',
+            picture: 'assets/Home appliances/REFRIGERATOR WITHOUT CHAMBER LU 242/LU 242 Exterior.png',  
+            pictureHover: 'assets/Home appliances/REFRIGERATOR WITHOUT CHAMBER LU 242/LU 242 Interior.png',
             subcategory: fridgeLabel, 
             backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
           },
@@ -743,20 +835,44 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
             backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
           },
           {
+            id: 177,
+            name: this.productTranslations['177'] ||'VERTICAL FREEZER FU 168',
+            picture: 'assets/Home appliances/VERTICAL FREEZER FU 168/FU 168 Exterior.png',
+            pictureHover: 'assets/Home appliances/VERTICAL FREEZER FU 168/FU 168 Interior.jpg',
+            subcategory: verticalFreezerLabel, 
+            backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
+          },
+          {
             // KEEP
             id: 43,
-                name: this.productTranslations['43'] ||'VERTICAL FREEZER F2451N',
+            name: this.productTranslations['43'] ||'VERTICAL FREEZER F2451N',
             picture: 'assets/Home appliances/VERTICAL FREEZER F 2451N/FAVORIT-F-2451-01-1024x576.png',  
             pictureHover: 'assets/Home appliances/VERTICAL FREEZER F 2451N/FAVORIT-F-2451-02-1024x576.png',
-                subcategory: verticalFreezerLabel, 
+            subcategory: verticalFreezerLabel, 
             backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
           },
           {
             // KEEP
             id: 41,
             name: this.productTranslations['41'] ||'VERTICAL FREEZER F2451E',
-            picture: 'assets/Home appliances/VERTICAL FREEZER F 2451N/FAVORIT-F-2451-01-1024x576.png',  
-            pictureHover: 'assets/Home appliances/VERTICAL FREEZER F 2451N/FAVORIT-F-2451-02-1024x576.png',
+            picture: 'assets/Home appliances/TWO CHAMBER REFRIGERATOR RF 263N/FAVORIT-RF-263-01-3-1024x576.png',  
+            pictureHover: 'assets/Home appliances/TWO CHAMBER REFRIGERATOR RF 263N/FAVORIT-RF-263-02-1024x576.png',
+            subcategory: verticalFreezerLabel, 
+            backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
+          },
+          {
+            id: 178,
+            name: this.productTranslations['178'] ||'TWO CHAMBER REFRIGERATOR RTMF 206',
+            picture: 'assets/Home appliances/TWO CHAMBER REFRIGERATOR RTMF 206/RTMF 206 Exterior.png',  
+            pictureHover: 'assets/Home appliances/TWO CHAMBER REFRIGERATOR RTMF 206/RTMF 206 Interior.png',
+            subcategory: verticalFreezerLabel, 
+            backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
+          },
+          {
+            id: 179,
+            name: this.productTranslations['179'] ||'TWO CHAMBER REFRIGERATOR RTMF 206 S',
+            picture: 'assets/Home appliances/TWO CHAMBER REFRIGERATOR RTMF 206 S/RTMF 206 S Exterior.png',  
+            pictureHover: 'assets/Home appliances/TWO CHAMBER REFRIGERATOR RTMF 206 S/RTMF 206 S Interior.png',
             subcategory: verticalFreezerLabel, 
             backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
           },
@@ -766,6 +882,22 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
             name: this.productTranslations['138'] ||'TWO CHAMBER REFRIGERATOR RF 263E S',
             picture: 'assets/Home appliances/TWO CHAMBER REFRIGERATOR RF 263N/FAVORIT-RF-263-S-01-1-1024x576.png',  
             pictureHover: 'assets/Home appliances/TWO CHAMBER REFRIGERATOR RF 263N/FAVORIT-RF-263-S-02-1024x576.png',
+            subcategory: verticalFreezerLabel,  
+            backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
+          },
+          {
+            id: 180,
+            name: this.productTranslations['180'] ||'TWO CHAMBER REFRIGERATOR CBMF 262',
+            picture: 'assets/Home appliances/TWO CHAMBER REFRIGERATOR CBMF 262/CBMF 262 Exterior.png',  
+            pictureHover: 'assets/Home appliances/TWO CHAMBER REFRIGERATOR CBMF 262/CBMF 262 Interior.png',
+            subcategory: verticalFreezerLabel,  
+            backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
+          },
+          {
+            id: 181,
+            name: this.productTranslations['181'] ||'TWO CHAMBER REFRIGERATOR CBMF 262 S',
+            picture: 'assets/Home appliances/TWO CHAMBER REFRIGERATOR CBMF 262 S/CBMF 262 S Exterior.png',  
+            pictureHover: 'assets/Home appliances/TWO CHAMBER REFRIGERATOR CBMF 262 S/CBMF 262 S Interior.png',
             subcategory: verticalFreezerLabel,  
             backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
           },
@@ -786,6 +918,22 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
             pictureHover: 'assets/Home appliances/COMBINED REFRIGERATOR CF 278N/FAVORIT-CF-278-S-02-1024x576.png',
             subcategory: this.subcategoriesComponentConstant.homeAppliances.Fridges, 
             backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'            
+          },
+          {
+            id: 182,
+            name: this.productTranslations['182'] ||'COMBINED REFRIGERATOR CBMF 315',
+            picture: 'assets/Home appliances/COMBINED REFRIGERATOR CBMF 315/CBMF 315 Exterior.png',
+            pictureHover: 'assets/Home appliances/COMBINED REFRIGERATOR CBMF 315/CBMF 315 Interior.png',
+            subcategory: fridgeLabel,  
+            backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
+          },
+          {
+            id: 183,
+            name: this.productTranslations['183'] ||'COMBINED REFRIGERATOR CBMF 315 X',
+            picture: 'assets/Home appliances/COMBINED REFRIGERATOR CBMF 315 X/CBMF 315 X Exterior.png',
+            pictureHover: 'assets/Home appliances/COMBINED REFRIGERATOR CBMF 315 X/CBMF 315 X Interior.png',
+            subcategory: fridgeLabel,  
+            backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
           },
           {
              // KEEP
@@ -812,6 +960,14 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
             picture: 'assets/Home appliances/COMBINED REFRIGERATOR NF 379N – NO FROST without dispensary/FAVORIT-NF-373-01-1024x576.png',  
             pictureHover: 'assets/Home appliances/COMBINED REFRIGERATOR NF 379N – NO FROST without dispensary/FAVORIT-NF-373-02-1024x576.png',
             subcategory: fridgeLabel, 
+            backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
+          },
+          {
+            id: 184,
+            name: this.productTranslations['184'] ||'COMBINED REFRIGERATOR NFCBMF 253 X',
+            picture: 'assets/Home appliances/COMBINED REFRIGERATOR NFCBMF 253 X/NFCBMF 253 X Exterior.png',  
+            pictureHover: 'assets/Home appliances/COMBINED REFRIGERATOR NFCBMF 253 X/NFCBMF 253 X Interior.png',
+            subcategory: fridgeLabel,  
             backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
           },
           {
@@ -879,55 +1035,74 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
         this.subcategoryName = builtInDishwashersLabel;
         this.products = [
           {
-            id: 63,
-            name: (this.productTranslations && this.productTranslations['63']) || 'Built-in dishwasher BI45-I1E',
-            picture: 'assets/Built In Appliances/Built-in dishwasher BI45-I1E (fully integrated)/BI-45-I1E-08-1024x576.png',
-            pictureHover: 'assets/',
+            id: 166,
+            name: this.productTranslations['166'] ||'Built-in dishwasher DW 45BI7P-9',
+            picture: 'assets/Built In Appliances/Built-in dishwasher DW 45BI7P-9/DW 45BI7P-9.png',
+            pictureHover: 'assets/Built In Appliances/Built-in dishwasher DW 45BI7P-9/DW 45BI7P-9-OTVORENA.png',
             subcategory: fullyBuiltInDishwashersLabel,
             backgroundColorproduct: 'linear-gradient(#9f9f9f 0%, #ffffff 90%, #ffffff 100%)'
           },
+          // {
+          //   id: 64,
+          //   name: this.productTranslations['64'] ||'Built-in dishwasher SI60 – I14N',
+          //   picture: 'assets/Built In Appliances/Built-in dishwasher BI60 – I14 (fully integrated)/SI60-I14-11-1024x576.png',
+          //   pictureHover: 'assets/',
+          //   subcategory: semiBuiltInDishwashersLabel,
+          //   backgroundColorproduct: 'linear-gradient(#9f9f9f 0%, #ffffff 90%, #ffffff 100%)'
+          // },
           {
-            id: 64,
-            name: this.productTranslations['64'] ||'Built-in dishwasher SI60 – I14N',
-            picture: 'assets/Built In Appliances/Built-in dishwasher BI60 – I14 (fully integrated)/SI60-I14-11-1024x576.png',
-            pictureHover: 'assets/',
-            subcategory: semiBuiltInDishwashersLabel,
+            id: 167,
+            name: this.productTranslations['167'] ||'Built-in dishwasher DW 60BI8P-13',
+            picture: 'assets/Built In Appliances/Built-in dishwasher DW 60BI8P-13/DW 60BI8P-13.png',
+            pictureHover: 'assets/Built In Appliances/Built-in dishwasher DW 60BI8P-13/DW 60BI8P-13 -OTVORENA.png',
+            subcategory: fullyBuiltInDishwashersLabel,
             backgroundColorproduct: 'linear-gradient(#9f9f9f 0%, #ffffff 90%, #ffffff 100%)'
           },
           {
             id: 65,
             name: this.productTranslations['65'] ||'Built-in dishwasher BI60 – I14N',
-            picture: 'assets/Built In Appliances/Built-in dishwasher BI60 – I14 (fully integrated)/SI60-I14-11-1024x576.png',  pictureHover: 'assets/',
+            picture: 'assets/Built In Appliances/Built-in dishwasher FAVORIT BI60-I1FN/BI60-I1FN.jpg',  
+            pictureHover: 'assets/Built In Appliances/Built-in dishwasher FAVORIT BI60-I1FN/BI60-I1FN-OPEN DOOR.png',
             subcategory: fullyBuiltInDishwashersLabel,
             backgroundColorproduct: 'linear-gradient(#9f9f9f 0%, #ffffff 90%, #ffffff 100%)'
 
           },
-          // {
-          //   id: 65,
-          //   name: this.productTranslations['65'] ||'Built-in dishwasher BI60 – I14N',
-          //   picture: 'assets/Built In Appliances/Built-in dishwasher FAVORIT BI60-I1FN/RABOTEN-16.9-29-2-1024x576.png',
-          //   pictureHover: 'assets/',
-          //   subcategory: fullyBuiltInDishwashersLabel,
-          //   backgroundColorproduct: 'linear-gradient(#9f9f9f 0%, #ffffff 90%, #ffffff 100%)'
-          // },
           {
-            id: 66,
-            name: this.productTranslations['66'] ||'Built-in dishwasher SI60 – I14',
-            picture: 'assets/Built In Appliances/Built-in dishwasher SI60 – I14/BI60-I14-02-1024x576.png',
-            pictureHover: 'assets/',
-            subcategory: semiBuiltInDishwashersLabel,
+            id: 162,
+            name: this.productTranslations['162'] ||'Built-in dishwasher BI60-I14FN',
+            picture: 'assets/Built In Appliances/Built-in dishwasher BI60 – I14 (fully integrated)/BI60-I14N.jpg',
+            pictureHover: 'assets/Built In Appliances/Built-in dishwasher BI60 – I14 (fully integrated)/BI60-I14N-OPEND.png',
+            subcategory: fullyBuiltInDishwashersLabel,
             backgroundColorproduct: 'linear-gradient(#9f9f9f 0%, #ffffff 90%, #ffffff 100%)'
           }
+          // {
+          //   id: 66,
+          //   name: this.productTranslations['66'] ||'Built-in dishwasher SI60-I1FN',
+          //   picture: 'assets/Built In Appliances/Built-in dishwasher SI60 – I14/BI60-I14-02-1024x576.png',
+          //   pictureHover: 'assets/',
+          //   subcategory: semiBuiltInDishwashersLabel,
+          //   backgroundColorproduct: 'linear-gradient(#9f9f9f 0%, #ffffff 90%, #ffffff 100%)'
+          // }
         ];
         break;
       case 'built-in-cooking-appliences':
         const cookingMicrowavesLabel = this.filterSubcategory.builtInAppliances.builtInMicrowaves;
         const cookingStoveTopsLabel = this.filterSubcategory.builtInAppliances.builtInStoveTops;
         const cookingBuiltInStovesLabel = this.filterSubcategory.builtInAppliances.builtInStoves;
-        this.subcategories = [cookingBuiltInStovesLabel, cookingMicrowavesLabel, cookingStoveTopsLabel, allLabel];
+        const cookingBuiltInStovesAndTopsLabel = this.filterSubcategory.builtInAppliances.builtInStovesAndTops;
+        this.subcategories = [cookingBuiltInStovesAndTopsLabel, cookingBuiltInStovesLabel, cookingMicrowavesLabel, cookingStoveTopsLabel, allLabel];
         this.backgroundStyle = 'linear-gradient(rgba(0, 0, 0, 0.27), rgba(0, 0, 0, 0.27)), url("assets/subcategories/built-in-ovens.jpg")';
         this.subcategoryName = this.filterSubcategory.builtInAppliances.builtInCookingAppliences;
         this.products = [
+          // BUILT-IN STOVES AND STOVE TOPS
+          {
+            id: 163,
+            name: this.productTranslations['163'] ||'Built in oven with stove top S 70MTB-40',
+            picture: 'assets/Built In Appliances/Built-in oven with stove top S 70MTB-40/RERNA.png',
+            pictureHover: 'assets/Built In Appliances/Built-in oven with stove top S 70MTB-40/PLOCA -gore.png',
+            subcategory: cookingBuiltInStovesAndTopsLabel,
+            backgroundColorproduct: 'linear-gradient(#9f9f9f 0%, #ffffff 90%, #ffffff 100%)'
+          },
           // BUILT-IN OVENS
           {
             // KEEP
@@ -973,23 +1148,23 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
             subcategory: cookingBuiltInStovesLabel,
             backgroundColorproduct: 'linear-gradient(#9f9f9f 0%, #ffffff 90%, #ffffff 100%)'
           },
-          {
-            id: 61,
-            name: this.productTranslations['61'] ||'BUILT-IN COOKER 4 – J BLACK',
-            picture: 'assets/Built In Appliances/BUILT-IN COOKER 4 – J BLACK/FAVORIT-4-J-BLACK-01-1024x576.png',  
-            pictureHover: 'assets/',
-            subcategory: cookingBuiltInStovesLabel,
-            backgroundColorproduct: 'linear-gradient(#9f9f9f 0%, #ffffff 90%, #ffffff 100%)'
-          },
-          {
-            // KEEP
-            id: 62,
-            name: this.productTranslations['62'] ||'BUILT-IN COOKER 4 – J INOX-B',
-            picture: 'assets/Built In Appliances/BUILT-IN COOKER 4 – J INOX-B/FAVORIT-4-J-INOX-B-05-1024x576.png',  
-            pictureHover: 'assets/',
-            subcategory: cookingBuiltInStovesLabel,
-            backgroundColorproduct: 'linear-gradient(#9f9f9f 0%, #ffffff 90%, #ffffff 100%)'
-          },
+          // {
+          //   id: 61,
+          //   name: this.productTranslations['61'] ||'BUILT-IN COOKER 4 – J BLACK',
+          //   picture: 'assets/Built In Appliances/BUILT-IN COOKER 4 – J BLACK/FAVORIT-4-J-BLACK-01-1024x576.png',  
+          //   pictureHover: 'assets/',
+          //   subcategory: cookingBuiltInStovesLabel,
+          //   backgroundColorproduct: 'linear-gradient(#9f9f9f 0%, #ffffff 90%, #ffffff 100%)'
+          // },
+          // {
+          //   // KEEP
+          //   id: 62,
+          //   name: this.productTranslations['62'] ||'BUILT-IN COOKER 4 – J INOX-B',
+          //   picture: 'assets/Built In Appliances/BUILT-IN COOKER 4 – J INOX-B/FAVORIT-4-J-INOX-B-05-1024x576.png',  
+          //   pictureHover: 'assets/',
+          //   subcategory: cookingBuiltInStovesLabel,
+          //   backgroundColorproduct: 'linear-gradient(#9f9f9f 0%, #ffffff 90%, #ffffff 100%)'
+          // },
           // BUILT-IN MICROWAVES
           {
             id: 68,
@@ -1044,6 +1219,14 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
         this.backgroundStyle = 'linear-gradient(rgba(0, 0, 0, 0.27), rgba(0, 0, 0, 0.27)), url("assets/subcategories/built-in-fridges.jpg")';
         this.subcategoryName = builtInFridgesLabel;
         this.products = [
+          {
+            id: 185,
+            name: this.productTranslations['185'] ||'Built-in refrigerator BIBMF 249',
+            picture: 'assets/Built In Appliances/Built-in refrigerator BIBMF 249/BIBMF 249 Exterior.jpg',
+            pictureHover: 'assets/Built In Appliances/Built-in refrigerator BIBMF 249/BIBMF 249 Interior.png',
+            subcategory: builtInFridgesLabel,
+            backgroundColorproduct: 'linear-gradient(#9f9f9f 0%, #ffffff 90%, #ffffff 100%)'
+          },
           {
             id: 74,
             name: this.productTranslations['74'] ||'Built-in refrigerator UCF 2764N',
@@ -1282,23 +1465,23 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
               subcategory: tvFilters.size55,
               backgroundColorproduct: 'linear-gradient(#928EE1 0%, #ffffff 50%, #ffffff 100%)'
             },
-            {
-              // KEEP
-              id: 123,
-              name: this.productTranslations['123'] ||'LED TV 55DK5JM2T2S2A -11UHD 4K ANDROI',
-              picture: 'assets/TV/LED ТЕЛЕВИЗОР 55DK5JM2T2S2A-11UHD 4K ANDROID(11)/11.-FAVORIT-LED-TV-55DK5JM2T2S2A-90UHD-ANDROID-55-SMART-Android-tv-01-1024x576.png',  
-              pictureHover: 'assets/TV/LED ТЕЛЕВИЗОР 55DK5JM2T2S2A-11UHD 4K ANDROID(11)/7.-FAVORIT-LED-TV-55DK5JM2T2S2A-90UHD-ANDROID-55-SMART-Android-tv-1024x645.png',
-              subcategory: tvFilters.size55,
-              backgroundColorproduct: 'linear-gradient(#928EE1 0%, #ffffff 50%, #ffffff 100%)'
-            },
-            {
-              // KEEP
-              id: 124,
-              name: this.productTranslations['124'] ||'LED TV 55DЕ2М1T2S2A-13UHD 4K ANDROID',
-              picture: 'assets/TV/LED ТЕЛЕВИЗОР 55DЕ2М1T2S2A-13UHD 4K ANDROID/TV-55DEM1T2S2A-13UHD-44-1024x576.png',  pictureHover: 'assets/',
-              subcategory: tvFilters.size55,
-              backgroundColorproduct: 'linear-gradient(#928EE1 0%, #ffffff 50%, #ffffff 100%)'
-            },
+            // {
+            //   // KEEP
+            //   id: 123,
+            //   name: this.productTranslations['123'] ||'LED TV 55DK5JM2T2S2A -11UHD 4K ANDROI',
+            //   picture: 'assets/TV/LED ТЕЛЕВИЗОР 55DK5JM2T2S2A-11UHD 4K ANDROID(11)/11.-FAVORIT-LED-TV-55DK5JM2T2S2A-90UHD-ANDROID-55-SMART-Android-tv-01-1024x576.png',  
+            //   pictureHover: 'assets/TV/LED ТЕЛЕВИЗОР 55DK5JM2T2S2A-11UHD 4K ANDROID(11)/7.-FAVORIT-LED-TV-55DK5JM2T2S2A-90UHD-ANDROID-55-SMART-Android-tv-1024x645.png',
+            //   subcategory: tvFilters.size55,
+            //   backgroundColorproduct: 'linear-gradient(#928EE1 0%, #ffffff 50%, #ffffff 100%)'
+            // },
+            // {
+            //   // KEEP
+            //   id: 124,
+            //   name: this.productTranslations['124'] ||'LED TV 55DЕ2М1T2S2A-13UHD 4K ANDROID',
+            //   picture: 'assets/TV/LED ТЕЛЕВИЗОР 55DЕ2М1T2S2A-13UHD 4K ANDROID/TV-55DEM1T2S2A-13UHD-44-1024x576.png',  pictureHover: 'assets/',
+            //   subcategory: tvFilters.size55,
+            //   backgroundColorproduct: 'linear-gradient(#928EE1 0%, #ffffff 50%, #ffffff 100%)'
+            // },
             {
               // KEEP
               id: 144,
@@ -1308,15 +1491,15 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
               subcategory: tvFilters.size50,
               backgroundColorproduct: 'linear-gradient(#928EE1 0%, #ffffff 50%, #ffffff 100%)'
             },
-            {
-              // KEEP
-              id: 121,
-              name: this.productTranslations['121'] ||'LED TV 43DF3PHT2S2A-13FHD ANDROID',
-              picture: 'assets/TV/LED ТЕЛЕВИЗОР 43DF3PHT2S2A-13FHD ANDROID/TV-43DF3PHT2S2A-13FHD-44-1024x576.png', 
-              pictureHover: 'assets/',
-              subcategory: tvFilters.size43,
-              backgroundColorproduct: 'linear-gradient(#928EE1 0%, #ffffff 50%, #ffffff 100%)'
-            },
+            // {
+            //   // KEEP
+            //   id: 121,
+            //   name: this.productTranslations['121'] ||'LED TV 43DF3PHT2S2A-13FHD ANDROID',
+            //   picture: 'assets/TV/LED ТЕЛЕВИЗОР 43DF3PHT2S2A-13FHD ANDROID/TV-43DF3PHT2S2A-13FHD-44-1024x576.png', 
+            //   pictureHover: 'assets/',
+            //   subcategory: tvFilters.size43,
+            //   backgroundColorproduct: 'linear-gradient(#928EE1 0%, #ffffff 50%, #ffffff 100%)'
+            // },
             {
               id: 148,
               name: this.productTranslations['148'] ||'LED TV 43U20B-20D',
@@ -1333,23 +1516,23 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
               subcategory: tvFilters.size32,
               backgroundColorproduct: 'linear-gradient(#928EE1 0%, #ffffff 50%, #ffffff 100%)'
             },
-            {
-              // KEEP
-              id: 117,
-              name: this.productTranslations['117'] ||'LED TV 32DF1P4T2HD',
-              picture: 'assets/TV/LED ТЕЛЕВИЗОР 32DF1P4T2HD/32DF1P4T2HD-44-1024x576.png',  pictureHover: 'assets/',
-              subcategory: tvFilters.size32,
-              backgroundColorproduct: 'linear-gradient(#928EE1 0%, #ffffff 50%, #ffffff 100%)'
-            },
-            {
-              // KEEP
-              id: 116,
-              name: this.productTranslations['116'] ||'LED TV 32DF1M1T2S2A-13HD ANDROID',
-              picture: 'assets/TV/LED ТЕЛЕВИЗОР 32DF1M1T2S2A-13HD ANDROID/TV-32DF1M1T2S2A-13HD-44-1024x576.png',  pictureHover: 'assets/',
-              subcategory: tvFilters.size32,
-              backgroundColorproduct: 'linear-gradient(#928EE1 0%, #ffffff 50%, #ffffff 100%)'
-              // #4900E4 0%, #D681C6 100%
-            },
+            // {
+            //   // KEEP
+            //   id: 117,
+            //   name: this.productTranslations['117'] ||'LED TV 32DF1P4T2HD',
+            //   picture: 'assets/TV/LED ТЕЛЕВИЗОР 32DF1P4T2HD/32DF1P4T2HD-44-1024x576.png',  pictureHover: 'assets/',
+            //   subcategory: tvFilters.size32,
+            //   backgroundColorproduct: 'linear-gradient(#928EE1 0%, #ffffff 50%, #ffffff 100%)'
+            // },
+            // {
+            //   // KEEP
+            //   id: 116,
+            //   name: this.productTranslations['116'] ||'LED TV 32DF1M1T2S2A-13HD ANDROID',
+            //   picture: 'assets/TV/LED ТЕЛЕВИЗОР 32DF1M1T2S2A-13HD ANDROID/TV-32DF1M1T2S2A-13HD-44-1024x576.png',  pictureHover: 'assets/',
+            //   subcategory: tvFilters.size32,
+            //   backgroundColorproduct: 'linear-gradient(#928EE1 0%, #ffffff 50%, #ffffff 100%)'
+            //   // #4900E4 0%, #D681C6 100%
+            // },
   
             // {
             //   id: 119,
@@ -1480,14 +1663,14 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
               subcategory: filters.toasters,
               backgroundColorproduct: 'linear-gradient(#ffa87d 0%,#ffffff 90%,#ffffff 100%)'
             },
-            // {
-            //   id: 109,
-            //   name: this.productTranslations['109'] || 'Toster TA01101',
-            //   picture: 'assets/Small domestic appliances/Toster TA01101/toster-za-dvopek-TA01101-45-1024x576.png',
-            //   pictureHover: 'assets/',
-            //   subcategory: filters.toasters,
-            //   backgroundColorproduct: 'linear-gradient(#ffa87d 0%,#ffffff 90%,#ffffff 100%)'
-            // },
+            {
+              id: 109,
+              name: this.productTranslations['109'] || 'Toster TA01101',
+              picture: 'assets/Small domestic appliances/Toster TA01101/toster-za-dvopek-TA01101-45-1024x576.png',
+              pictureHover: 'assets/',
+              subcategory: filters.toasters,
+              backgroundColorproduct: 'linear-gradient(#ffa87d 0%,#ffffff 90%,#ffffff 100%)'
+            },
             {
               id: 108,
               name: this.productTranslations['108'] || 'Toaster TR-1800',
@@ -1662,14 +1845,6 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
               backgroundColorproduct: 'linear-gradient(#5FC261 0%, #ffffff 90%, #ffffff 100%)'
             },
             {
-              id: 110,
-              name: this.productTranslations['110'] || 'VACUUM CLEANER FVC 123 BLUE',
-              picture: 'assets/Small domestic appliances/VACUUM CLEANER FVC 123/FVC123-HD-01-1024x576.png',
-              pictureHover: 'assets/',
-              subcategory: filters.vacuumCleaners,
-              backgroundColorproduct: 'linear-gradient(#5FC261 0%, #ffffff 90%, #ffffff 100%)'
-            },
-            {
               id: 114,
               name: this.productTranslations['114'] || 'VACUUM CLEANER FVC 306 GREY/ORANGE',
               picture: 'assets/Small domestic appliances/VACUUM CLEANER FVC 306/FVC306-HD-10-1024x577.png',
@@ -1693,22 +1868,22 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
               subcategory: filters.vacuumCleaners,
               backgroundColorproduct: 'linear-gradient(#5FC261 0%, #ffffff 90%, #ffffff 100%)'
             },
-            {
-              id: 112,
-              name: this.productTranslations['112'] || 'VACUUM CLEANER FVC 160',
-              picture: 'assets/Small domestic appliances/VACUUM CLEANER FVC 160/2-FAVORIT-pravosmukalka-FVC-160-01-1024x576.png',
-              pictureHover: 'assets/',
-              subcategory: filters.vacuumCleaners,
-              backgroundColorproduct: 'linear-gradient(#5FC261 0%, #ffffff 90%, #ffffff 100%)'
-            },
-            {
-              id: 115,
-              name: this.productTranslations['115'] || 'VACUUM CLEANER FVC 585',
-              picture: 'assets/Small domestic appliances/VACUUM CLEANER FVC 585/7.1-FAVORIT-pravosmukalka-FVC-585-CELOSNA-01-1024x576.png',
-              pictureHover: 'assets/',
-              subcategory: filters.vacuumCleaners,
-              backgroundColorproduct: 'linear-gradient(#5FC261 0%, #ffffff 90%, #ffffff 100%)'
-            }
+            // {
+            //   id: 112,
+            //   name: this.productTranslations['112'] || 'VACUUM CLEANER FVC 160',
+            //   picture: 'assets/Small domestic appliances/VACUUM CLEANER FVC 160/2-FAVORIT-pravosmukalka-FVC-160-01-1024x576.png',
+            //   pictureHover: 'assets/',
+            //   subcategory: filters.vacuumCleaners,
+            //   backgroundColorproduct: 'linear-gradient(#5FC261 0%, #ffffff 90%, #ffffff 100%)'
+            // },
+            // {
+            //   id: 115,
+            //   name: this.productTranslations['115'] || 'VACUUM CLEANER FVC 585',
+            //   picture: 'assets/Small domestic appliances/VACUUM CLEANER FVC 585/7.1-FAVORIT-pravosmukalka-FVC-585-CELOSNA-01-1024x576.png',
+            //   pictureHover: 'assets/',
+            //   subcategory: filters.vacuumCleaners,
+            //   backgroundColorproduct: 'linear-gradient(#5FC261 0%, #ffffff 90%, #ffffff 100%)'
+            // }
           ];
           break;
         }

@@ -37,14 +37,15 @@
         "inverter35C": "Инвертер (-35 °C)"
     },
     "builtInAppliances":{
-        "builtInDishwashers":"Вградни машини за садови",
-        "builtInOvens":"Вградни Апарати за Готвење",
-        "builtInMicrowaves":"Вградни микробранови печки",
-        "builtInStoveTops":"Вградни Плочи",
-        "builtInStoves":"Вградни Шпорети",
-        "builtInFridges":"Вградни Фрижидери",
-        "fullyBuiltInDishwashersLabel": "Целосно вградни машини за садови",
-        "semiBuiltInDishwashersLabel": "Полувградни машини за садови"
+        "builtInDishwashers":"Вградeни машини за садови",
+        "builtInOvens":"Вградeни Апарати за Готвење",
+        "builtInMicrowaves":"Вградeни микробранови печки",
+        "builtInStoveTops":"Вградeни Плочи",
+        "builtInStoves":"Вградeни рерни",
+        "builtInStovesAndTops":"Вградeни шпорети",
+        "builtInFridges":"Вградeни Фрижидери",
+        "fullyBuiltInDishwashersLabel": "Целосно вградeни машини за садови",
+        "semiBuiltInDishwashersLabel": "Полувградeни машини за садови"
     },
     "homeAppliances":{
         "boilers":"Бојлери",

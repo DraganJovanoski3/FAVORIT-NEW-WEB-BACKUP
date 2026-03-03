@@ -2,9 +2,102 @@
 RewriteEngine On
 RewriteBase /
 
+# Redirect old /new/ URLs to new structure
+RewriteCond %{REQUEST_URI} ^/new/p/([0-9]+)
+RewriteRule ^new/p/([0-9]+) /p/$1 [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^/new/product/([0-9]+)
+RewriteRule ^new/product/([0-9]+) /product/$1 [R=301,L]
+
 # Bot detection for social media and search engines
 SetEnvIfNoCase User-Agent "facebookexternalhit" is_facebook
-SetEnvIfNoCase User-Agent "Twitterbot|LinkedInBot|Pinterest|Tumblr|Slackbot|Discordbot|TelegramBot|SkypeUriPreview|BingPreview|Googlebot|Baiduspider|YandexBot|DuckDuckBot|Slurp|Applebot|Facebot|Embedly|Viber|WhatsApp|CFNetwork" is_bot
+SetEnvIfNoCase User-Agent "Facebot" is_facebot
+SetEnvIfNoCase User-Agent "Twitterbot" is_twitter
+SetEnvIfNoCase User-Agent "LinkedInBot" is_linkedin
+SetEnvIfNoCase User-Agent "Pinterest" is_pinterest
+SetEnvIfNoCase User-Agent "Tumblr" is_tumblr
+SetEnvIfNoCase User-Agent "Slackbot" is_slack
+SetEnvIfNoCase User-Agent "Discordbot" is_discord
+SetEnvIfNoCase User-Agent "TelegramBot" is_telegram
+SetEnvIfNoCase User-Agent "SkypeUriPreview" is_skype
+SetEnvIfNoCase User-Agent "WhatsApp" is_whatsapp
+SetEnvIfNoCase User-Agent "Viber" is_viber
+SetEnvIfNoCase User-Agent "ViberBot" is_viber_bot
+SetEnvIfNoCase User-Agent "ViberShare" is_viber_share
+SetEnvIfNoCase User-Agent "Viber.*" is_viber_pattern
+SetEnvIfNoCase User-Agent ".*Viber.*" is_viber_anywhere
+SetEnvIfNoCase User-Agent "ViberDesktop" is_viber_desktop
+SetEnvIfNoCase User-Agent "ViberMobile" is_viber_mobile
+SetEnvIfNoCase User-Agent "ViberiOS" is_viber_ios
+SetEnvIfNoCase User-Agent "ViberAndroid" is_viber_android
+SetEnvIfNoCase User-Agent "ViberWeb" is_viber_web
+SetEnvIfNoCase User-Agent "Viber.*Bot" is_viber_bot_pattern
+SetEnvIfNoCase User-Agent "Viber.*Crawler" is_viber_crawler
+SetEnvIfNoCase User-Agent "Viber.*Preview" is_viber_preview
+SetEnvIfNoCase User-Agent "BingPreview" is_bing
+SetEnvIfNoCase User-Agent "Googlebot" is_google
+SetEnvIfNoCase User-Agent "Baiduspider" is_baidu
+SetEnvIfNoCase User-Agent "YandexBot" is_yandex
+SetEnvIfNoCase User-Agent "DuckDuckBot" is_duckduck
+SetEnvIfNoCase User-Agent "Slurp" is_slurp
+SetEnvIfNoCase User-Agent "Applebot" is_apple
+SetEnvIfNoCase User-Agent "Embedly" is_embedly
+SetEnvIfNoCase User-Agent "CFNetwork" is_cfnetwork
+SetEnvIfNoCase User-Agent "bot" is_generic_bot
+SetEnvIfNoCase User-Agent "crawler" is_generic_crawler
+SetEnvIfNoCase User-Agent "spider" is_generic_spider
+SetEnvIfNoCase User-Agent "facebook" is_facebook_generic
+SetEnvIfNoCase User-Agent "twitter" is_twitter_generic
+SetEnvIfNoCase User-Agent "linkedin" is_linkedin_generic
+SetEnvIfNoCase User-Agent "pinterest" is_pinterest_generic
+SetEnvIfNoCase User-Agent "instagram" is_instagram
+SetEnvIfNoCase User-Agent "snapchat" is_snapchat
+SetEnvIfNoCase User-Agent "tiktok" is_tiktok
+
+# Combine all bots under a single flag
+SetEnvIf is_facebook "^1$" is_bot
+SetEnvIf is_facebot "^1$" is_bot
+SetEnvIf is_twitter "^1$" is_bot
+SetEnvIf is_linkedin "^1$" is_bot
+SetEnvIf is_pinterest "^1$" is_bot
+SetEnvIf is_tumblr "^1$" is_bot
+SetEnvIf is_slack "^1$" is_bot
+SetEnvIf is_discord "^1$" is_bot
+SetEnvIf is_telegram "^1$" is_bot
+SetEnvIf is_skype "^1$" is_bot
+SetEnvIf is_whatsapp "^1$" is_bot
+SetEnvIf is_viber "^1$" is_bot
+SetEnvIf is_viber_bot "^1$" is_bot
+SetEnvIf is_viber_share "^1$" is_bot
+SetEnvIf is_viber_pattern "^1$" is_bot
+SetEnvIf is_viber_anywhere "^1$" is_bot
+SetEnvIf is_viber_desktop "^1$" is_bot
+SetEnvIf is_viber_mobile "^1$" is_bot
+SetEnvIf is_viber_ios "^1$" is_bot
+SetEnvIf is_viber_android "^1$" is_bot
+SetEnvIf is_viber_web "^1$" is_bot
+SetEnvIf is_viber_bot_pattern "^1$" is_bot
+SetEnvIf is_viber_crawler "^1$" is_bot
+SetEnvIf is_viber_preview "^1$" is_bot
+SetEnvIf is_bing "^1$" is_bot
+SetEnvIf is_google "^1$" is_bot
+SetEnvIf is_baidu "^1$" is_bot
+SetEnvIf is_yandex "^1$" is_bot
+SetEnvIf is_duckduck "^1$" is_bot
+SetEnvIf is_slurp "^1$" is_bot
+SetEnvIf is_apple "^1$" is_bot
+SetEnvIf is_embedly "^1$" is_bot
+SetEnvIf is_cfnetwork "^1$" is_bot
+SetEnvIf is_generic_bot "^1$" is_bot
+SetEnvIf is_generic_crawler "^1$" is_bot
+SetEnvIf is_generic_spider "^1$" is_bot
+SetEnvIf is_facebook_generic "^1$" is_bot
+SetEnvIf is_twitter_generic "^1$" is_bot
+SetEnvIf is_linkedin_generic "^1$" is_bot
+SetEnvIf is_pinterest_generic "^1$" is_bot
+SetEnvIf is_instagram "^1$" is_bot
+SetEnvIf is_snapchat "^1$" is_bot
+SetEnvIf is_tiktok "^1$" is_bot
 
 # Cache control headers
 <IfModule mod_headers.c>
@@ -28,34 +121,93 @@ SetEnvIfNoCase User-Agent "Twitterbot|LinkedInBot|Pinterest|Tumblr|Slackbot|Disc
 # Product page routing - serve static HTML to bots only
 # Handle /p/ pattern (short URL) - serve static HTML to bots
 RewriteCond %{ENV:is_bot} ^1$
-RewriteCond %{QUERY_STRING} !^.*from_static=true.*$
-RewriteCond %{REQUEST_URI} !^/product-([0-9]+)\.html$
 RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^p/([0-9]+) /product-$1.html [L]
 
 # Handle /product/ pattern (full URL) - serve static HTML to bots
 RewriteCond %{ENV:is_bot} ^1$
-RewriteCond %{QUERY_STRING} !^.*from_static=true.*$
-RewriteCond %{REQUEST_URI} !^/product-([0-9]+)\.html$
 RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^product/([0-9]+) /product-$1.html [L]
+
+# Blog page routing - serve static HTML to bots
+# Handle /blog/ pattern - serve static HTML to bots
+RewriteCond %{ENV:is_bot} ^1$
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^blog/(.*) /blog-$1.html [L]
+
+# Special handling for Cyrillic blog URLs - convert to Latin Macedonian
+RewriteCond %{ENV:is_bot} ^1$
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^blog/Зошто-климатизерите-најмногу-замрзнуваат-при-надворешна-температура-од-околу-нула-степени$ /blog-Zoshto-klimatizerite-najmnogu-zamrznuvaat-pri-nadvoreshna-temperatura-od-okolu-nula-stepeni.html [L]
+RewriteRule ^blog/Центро-Унион-донираше-Favorit-Electronics-апарати-за-бела-техника-на-младата-девојка-од-Штип$ /blog-Centro-Union-donirashe-Favorit-Electronics-aparati-za-bela-tehnika-na-mladata-devojka-od-Shtip.html [L]
+RewriteRule ^blog/Уникатни-велигденски-рецепти-за-модерната-кујна$ /blog-Unikatni-veligdenski-recepti-za-modernata-kujna.html [L]
+
+# Fallback: Serve static HTML for any request that looks like a bot
+# This catches Viber and other platforms that might not be in our detection list
+RewriteCond %{HTTP_USER_AGENT} !^Mozilla.*$
+RewriteCond %{HTTP_USER_AGENT} !^Chrome.*$
+RewriteCond %{HTTP_USER_AGENT} !^Safari.*$
+RewriteCond %{HTTP_USER_AGENT} !^Firefox.*$
+RewriteCond %{HTTP_USER_AGENT} !^Edge.*$
+RewriteCond %{HTTP_USER_AGENT} !^$
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^p/([0-9]+) /product-$1.html [L]
+
+RewriteCond %{HTTP_USER_AGENT} !^Mozilla.*$
+RewriteCond %{HTTP_USER_AGENT} !^Chrome.*$
+RewriteCond %{HTTP_USER_AGENT} !^Safari.*$
+RewriteCond %{HTTP_USER_AGENT} !^Firefox.*$
+RewriteCond %{HTTP_USER_AGENT} !^Edge.*$
+RewriteCond %{HTTP_USER_AGENT} !^$
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^product/([0-9]+) /product-$1.html [L]
+
+RewriteCond %{HTTP_USER_AGENT} !^Mozilla.*$
+RewriteCond %{HTTP_USER_AGENT} !^Chrome.*$
+RewriteCond %{HTTP_USER_AGENT} !^Safari.*$
+RewriteCond %{HTTP_USER_AGENT} !^Firefox.*$
+RewriteCond %{HTTP_USER_AGENT} !^Edge.*$
+RewriteCond %{HTTP_USER_AGENT} !^$
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^blog/(.*) /blog-$1.html [L]
+
+# Special handling for Cyrillic blog URLs in fallback section
+RewriteCond %{HTTP_USER_AGENT} !^Mozilla.*$
+RewriteCond %{HTTP_USER_AGENT} !^Chrome.*$
+RewriteCond %{HTTP_USER_AGENT} !^Safari.*$
+RewriteCond %{HTTP_USER_AGENT} !^Firefox.*$
+RewriteCond %{HTTP_USER_AGENT} !^Edge.*$
+RewriteCond %{HTTP_USER_AGENT} !^$
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^blog/Зошто-климатизерите-најмногу-замрзнуваат-при-надворешна-температура-од-околу-нула-степени$ /blog-Zoshto-klimatizerite-najmnogu-zamrznuvaat-pri-nadvoreshna-temperatura-od-okolu-nula-stepeni.html [L]
+RewriteRule ^blog/Центро-Унион-донираше-Favorit-Electronics-апарати-за-бела-техника-на-младата-девојка-од-Штип$ /blog-Centro-Union-donirashe-Favorit-Electronics-aparati-za-bela-tehnika-na-mladata-devojka-od-Shtip.html [L]
+RewriteRule ^blog/Уникатни-велигденски-рецепти-за-модерната-кујна$ /blog-Unikatni-veligdenski-recepti-za-modernata-kujna.html [L]
 
 # Serve static HTML files directly (fallback)
 RewriteCond %{REQUEST_URI} ^/product-([0-9]+)\.html$
 RewriteCond %{REQUEST_FILENAME} -f
 RewriteRule ^(.*)$ - [L]
 
-# Category page routing - serve static HTML to bots
-RewriteCond %{ENV:is_bot} ^1$
-RewriteCond %{QUERY_STRING} !^.*from_static=true.*$
-RewriteCond %{REQUEST_URI} !^/category-([a-zA-Z0-9\-]+)\.html$
-RewriteRule ^category/([a-zA-Z0-9\-]+) /category-$1.html [L]
+RewriteCond %{REQUEST_URI} ^/blog-(.*)\.html$
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^(.*)$ - [L]
 
-# Redirect users (not bots) from static HTML to Angular app
+# Block direct access to static HTML files for users
 RewriteCond %{ENV:is_bot} !^1$
-RewriteCond %{QUERY_STRING} !^.*from_static=true.*$
 RewriteCond %{REQUEST_URI} ^/product-([0-9]+)\.html$
-RewriteRule ^product-([0-9]+)\.html$ /p/$1?from_static=true [R=302,L]
+RewriteRule ^product-([0-9]+)\.html$ /p/$1 [R=302,L]
+
+RewriteCond %{ENV:is_bot} !^1$
+RewriteCond %{REQUEST_URI} ^/blog-(.*)\.html$
+RewriteRule ^blog-(.*)\.html$ /blog/$1 [R=302,L]
 
 # Angular app routing for regular users
 RewriteCond %{REQUEST_FILENAME} !-f

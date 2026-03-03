@@ -30,9 +30,28 @@ class SitemapGenerator:
         
         return sorted(list(all_products))
     
+    def load_blogs(self):
+        """Load all blogs from JSON files"""
+        all_blogs = set()
+        
+        for language in self.languages:
+            file_path = f"src/app/blog-list/blogs_{language}.json"
+            try:
+                with open(file_path, 'r', encoding='utf-8') as f:
+                    blog_data = json.load(f)
+                    blogs = blog_data.get('blogs', [])
+                    for blog in blogs:
+                        all_blogs.add(blog['id'])
+            except FileNotFoundError:
+                print(f"Warning: {file_path} not found")
+                continue
+        
+        return sorted(list(all_blogs))
+    
     def generate_sitemap(self):
         """Generate XML sitemap"""
         products = self.load_products()
+        blogs = self.load_blogs()
         current_date = datetime.now().strftime("%Y-%m-%d")
         
         sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n'
@@ -65,6 +84,15 @@ class SitemapGenerator:
             sitemap += f'    <lastmod>{current_date}</lastmod>\n'
             sitemap += f'    <changefreq>weekly</changefreq>\n'
             sitemap += f'    <priority>0.8</priority>\n'
+            sitemap += f'  </url>\n'
+        
+        # Add blog pages
+        for blog_id in blogs:
+            sitemap += f'  <url>\n'
+            sitemap += f'    <loc>{self.base_url}/blog/{blog_id}</loc>\n'
+            sitemap += f'    <lastmod>{current_date}</lastmod>\n'
+            sitemap += f'    <changefreq>monthly</changefreq>\n'
+            sitemap += f'    <priority>0.7</priority>\n'
             sitemap += f'  </url>\n'
         
         # Add category pages

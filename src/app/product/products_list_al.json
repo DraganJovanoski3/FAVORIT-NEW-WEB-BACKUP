@@ -232,6 +232,7 @@
             "COLOR": "WHITE",
             "2 ELECTRIC HOT PLATES": "(∅ 180 + ∅ 145)",
             "1 HEAT PLATE": "∅ 145 (1000 W)",
+            "Ventilator në furrë": "√",
             "ENAMELED SURFACE": "√",
             "LIGHT IN THE OVEN": "√",
             "0+3 OVEN FUNCTIONS": "√",
@@ -263,6 +264,7 @@
             "OVEN CAPACITY GROSS VOLUME 42L": "NET VOLUME 36.6L",
             "COLOR": "WHITE",
             "2 ELECTRIC HOT PLATES": "(∅ 180 + ∅ 145)",
+            "Ventilator në furrë": "√",
             "1 HEAT PLATE": "∅ 145 (1000 W)",
             "ENAMELED SURFACE": "√",
             "LIGHT IN THE OVEN": "√",
@@ -295,7 +297,7 @@
             "volumi net": "168 L",
             "konzumimi energjik elektrik": "257 kWh/vit",
             "nivel zhurme": "40 dB",
-            "klasa energjetike": "F",
+            "klasa energjetike": "E",
             "gazi": "P 600 A",
             "ngjyra": "bardhë/argjend",
             "këmbët e rregullimit": "√",
@@ -373,7 +375,7 @@
           "volumi bruto": "341 L",
           "volumi net": "324 L",
           "volumi net i frigoriferit fryezuesit": "230 L / 106 L",
-          "klasa energjetike": "F",
+          "klasa energjetike": "E",
           "gazi": "P 600 A",
           "ngjyra": "bardhë/inox",
           "dyert e zëvendësueshme":  "√",
@@ -388,50 +390,6 @@
           "dhoma e fryezimit me fijoka transparente":  "√",
           "konsumi i energjisë elektrike": "306 kWh/vit",
           "niveli i zhurmës": "41 dB"
-        }
-      },
-      {
-        "id": 14,
-        "name": "Pjata larës E60 – A22",
-        "description": [
-          "Ky model i pjata larësit dallohet për dimensionet e kompakta (l/g/d 85/59,8/59,8) dhe kapacitetin për 13 sete pjatash. ofron 7 programe të ndryshme, duke përfshirë një cikël të shpejtë 30-minutësh në 40°C. Pjata larësi ka një raft të tretë, ekran LED, dhe klasifikim energjitik A++. Me një nivel zhurmë prej 57 dB, përfshin një mundësi të vonimit (deri në 24 orë) dhe konsumon 0,91 kWh për cikël në programin ekologjik. Shtohet gjithashtu mbrojtje nga përmbytja dhe ngrohja, një kërkese për fëmijët dhe mbështetjen e larjes me tableta. Pjata larësi i bardhë/inox është efikas, i besueshëm dhe i përshtatshëm për përdorim të përditshëm."
-        ],
-        "pictures": [
-          "assets/Home appliances/Dishwasher E60 – A22/E60-A22-04-1024x576.png",
-          "assets/Home appliances/Dishwasher E60 – A22/E60-A22-05-1024x576.png",
-          "assets/Home appliances/Dishwasher E60 – A22/E60-A22-X-07-1024x576.png",
-          "assets/Home appliances/Dishwasher E60 – A22/E60-A22-X-08-1024x576.png"
-        ],
-        "specificationsDoc": "assets/PDF-Specifications/4.E60-A22-upatstva-EN-AL-SIR-MAK-.pdf",
-        "specifications": {
-          "dimensione": "dimensione: l/g/d 85/59,8/59,8 cm",
-          "kapaciteti maksimal": "kapaciteti maksimal: 13 sete pjatash",
-          "programet": "programet: 7",
-          "rafte trete": "raft i tretë: e aktivizuar",
-          "ekran LED": "ekran LED: e aktivizuar",
-          "program i shpejte": "program i shpejtë: 30 min. në 40 °C",
-          "butoni per ngarkese te pjeter": "buton për ngarkesë të pjesshme: e aktivizuar",
-          "klasa e konsumit": "klasa e konsumit: A ++",
-          "klasa e tharjes": "klasa e tharjes: A",
-          "zhurma gjate punes": "zhurmë gjatë punës: 57 dB",
-          "start i vonuar": "start i vonuar: 1, 2, 3…..24 orë",
-          "nje ciklus": "një cikël: nga 4,5 deri në 9 l ujë sipas programit",
-          "kohëzgjatja e programit ekonomik": "kohëzgjatja e programit ekonomik: 171 minuta",
-          "konsumi i energjisë ne programin ekonomik": "konsumi i energjisë në programin ekonomik: 0,91 KWh",
-          "konsumi i energjisë vjetor": "konsumi i energjisë vjetor: 270 KWh",
-          "mbrojtja ndaj përmbytjeve": "mbrojtja ndaj përmbytjeve: e aktivizuar",
-          "mbrojtja ndaj ngrohjes": "mbrojtja ndaj ngrohjes: e aktivizuar",
-          "ngjyra": "ngjyra: e bardhë/inox",
-          "ngrohja e fshehur": "ngrohja e fshehur: e aktivizuar",
-          "filtër metali": "filtër metalik: e aktivizuar",
-          "butoni i ndezjes/fikjes": "buton i ndezjes/fikjes: e aktivizuar",
-          "indikator për fundin e programit": "indikator për fundin e programit: e aktivizuar",
-          "indikatorët për funksionin larje/tharje": "indikatorët për funksionin larje/tharje: e aktivizuar",
-          "indikatori i mungesës së kripës": "indikatori i mungesës së kripës: e aktivizuar",
-          "indikatori i mungesës së substancës së britjes": "indikatori i mungesës së substancës së britjes: e aktivizuar",
-          "mbrojtja për fëmijët": "mbrojtja për fëmijët: e aktivizuar",
-          "opsion specifik për larjen me tableta": "opsion specifik për larjen me tableta: e aktivizuar",
-          "opsione shtesë për higjienë/larje shtesë/tharje shtesë": "opsione shtesë për higjienë/larje shtesë/tharje shtesë: e aktivizuar"
         }
       },
     {
@@ -478,56 +436,6 @@
         }
     },
     {
-        "id": 16,
-        "name": "Pjatë larës E60-A24N BLDC me motor inverter",
-        "description": [
-          "Ky pjatë larës ka një madhësi kompakte me dimensione 85 cm në lartësi, 60 cm në gjatësi, dhe 60 cm në thellësi. Mund të pranojë deri në 15 sete pjatash dhe përfshin karakteristika të dobishme si një raft i tretë, ekran LED, motor inverter, dhe programe të ndryshme. Në veçanti, ofron një program të shpejtë që zgjat 30 minuta në 40°C, me nivele zhurme 49 dB gjatë punës. Funksionalitetet e tjera përfshijnë një start të vonuar deri në 24 orë, programe larjeje miqësore me mjedisin, dhe mekanizma të kompletuar të mbrojtjes siç janë mbrojtja nga përmbytja dhe ngrohja. Pjatë larësi gjithashtu vjen me shumë indikatorë, opsione ekstra për operacione, dhe karakteristika për mbrojtjen e fëmijëve për shtesë të përshtatshme dhe sigurie."
-        ],
-        "pictures": [
-          "assets/Home appliances/DISHWASHER E60-A24N BLDC with inverter motor/E60-A24-BLDC-04-1-1024x576.png",
-          "assets/Home appliances/DISHWASHER E60-A24N BLDC with inverter motor/E60-A24-BLDC-04-1024x576.png",
-          "assets/Home appliances/DISHWASHER E60-A24N BLDC with inverter motor/E60-A24-BLDC-05-1024x576.png",
-          "assets/Home appliances/DISHWASHER E60-A24N BLDC with inverter motor/E60-A24-BLDC-06-1024x576.png",
-          "assets/Home appliances/DISHWASHER E60-A24N BLDC with inverter motor/E60-A24-BLDC-X-01-1024x576.png",
-          "assets/Home appliances/DISHWASHER E60-A24N BLDC with inverter motor/E60-A24-BLDC-X-02-1024x576.png"
-        ],
-        "specificationsDoc": "assets/PDF-Specifications/4.E60-A22-upatstva-EN-AL-SIR-MAK-.pdf",
-        "specifications": {
-          "dimensione": "l/g/d 85/60/60 cm",
-          "kapaciteti maksimal": "deri në 15 sete pjatash",
-          "rafte trete":  "√",
-          "ekran LED":  "√",
-          "motor inverter":  "√",
-          "programet":  "√",
-          "program i shpejte": "30 min. në 40°C",
-          "butoni për ngarkesë të pjesshme":  "√",
-          "klasa e konsumit": "D",
-          "klasa e tharjes": "A",
-          "zhurma gjatë punes": "49 dB",
-          "start i vonuar": "1, 2, 3….24h",
-          "konsumi i ujës për një cikël": "4.5 L deri në 17.2 L ujë sipas programit",
-          "kohëzgjatja e programit ekonomik": "239 min",
-          "konsumi i energjisë ne programin ekonomik": "0.84 KWh",
-          "mbrojtja ndaj përmbytjeve":  "√",
-          "mbrojtja ndaj ngrohjes":  "√",
-          "ngrohja e fshehur":  "√",
-          "filtër metali":  "√",
-          "ngjyra": "e bardhë/inox",
-          "butoni i ndezjes/fikjes":  "√",
-          "butoni i startit/pauzës":  "√",
-          "indikator për fundin e programit":  "√",
-          "indikatorët për funksionin larje/sušje":  "√",
-          "indikatori i mungesës së kripës":  "√",
-          "indikatori i mungesës së substancës së britjes":  "√",
-          "opsionet shtesë për operacione":  "√",
-          "mbrojtja për fëmijët":  "√",
-          "opsioni për larjen me tableta":  "√",
-          "opsioni për jashtë":  "√",
-          "opsion për higjienë shtesë":  "√",
-          "sinjal akuçion":  "√"
-        }
-      },
-    {
         "id": 17,
         "name": "Lavastoviglie F45 - Y15N",
         "description": [
@@ -566,6 +474,45 @@
             "TREGUESI I MUNGESËS SË SHKËLQIMIT": "√"
         }
     },
+    {
+      "id": 142,
+      "name": "Lavastoviglie F45 - Y15N",
+      "description": [
+          "Ju prezantojmë lavastoviglie tonë kompakte dhe efikase, e dizajnuar për të përballuar nevojat e përditshme të larjes së enëve tuaja me lehtësi. Me dimensione të H / W / D 85/44.8/59.8, mund të pranojë deri në 10 sete enësh. Duke përfshirë 6 programe të shumëanshme, duke përfshirë një cikël të shpejtë 30-minutash në 40°C, siguron një larje efikase dhe të plotësuese."
+      ],
+      "pictures": [
+          "assets/Home appliances/Dishwasher F45 – Y15N/F45-Y15-S-04-1024x576.png",
+          "assets/Home appliances/Dishwasher F45 – Y15N/F45-Y15-S-05-1024x576.png",
+          "assets/Home appliances/Dishwasher F45 – Y15N/F45-Y15-S-06-1024x576.png"
+      ],
+      "specificationsDoc": "assets/Product Spec/1.-F45-Y15-F45-Y15-S-upatstva-MAK-AL-SIR-EN.pdf",
+      "specifications": {
+          "DIMENSIONET": "H / W / D 85/44,8/59,8",
+          "KAPACITETI MAKSIMAL": "10 SETE ENËSH",
+          "PROGRAMET": "6",
+          "PROGRAMI I SHPEJTË": "30 MIN. NË 40 °C",
+          "BUTONI I NGARKESËS SË NJËJTË (1/2)": "√",
+          "KLASA E ENERGJISË": "E",
+          "KLASA E NXJERRJES": "А",
+          "ZHURMA KUR ËSHTË NË PËRDORIM": "57 DB",
+          "NISJA E VONUAR": "3H, 6H DHE 9H",
+          "NJË CIKËL": "3.8 L DERI NË 17.6 L UJË SIPAS PROGRAMIT",
+          "KOHËZGJATJA E PROGRAMIT (PROGRAMI EKO)": "198 MIN.",
+          "KONSUMI I ENERGJISË (PROGRAMI EKO)": "0,73 KWH",
+          "KONSUMI I ENERGJISË (NË VIT)": "211 KWH",
+          "MBROJTJA NGA PËRMBYTESA": "√",
+          "NGROHËSI I FSHIHUR": "√",
+          "MBROJTJA E NGROHJES": "√",
+          "FILTRI METALIK": "√",
+          "NGJYRA": "GRIS",
+          "BUTONI NDALEJ/NIS": "√",
+          "BUTONI NISJES/PAUZËS": "√",
+          "TREGUESI I MBARIMIT TË PROGRAMIT": "√",
+          "TREGUESI PËR FUNKSIONIN LARËS/THARËS": "√",
+          "TREGUESI I MUNGESËS SË KRIPTËS": "√",
+          "TREGUESI I MUNGESËS SË SHKËLQIMIT": "√"
+      }
+  },
     {
         "id": 18,
         "name": "Lavastoviglie F60 - Y14N",
@@ -795,31 +742,6 @@
           "ngrohësi i lartëm": "1000 W"
         }
       },
-      {
-        "id": 26,
-        "name": "Furrë elektrike e pavarur EC 540 WWFT",
-        "description": [
-          "Ky produkt ka dimensione të 85x50x60 cm (L/G/D) dhe një volum të furrës prej 55 litra. Përfshin një kapak për furrë, pllakë të emaluar, dhe vjen me 3 pozicione për kontroll të prekës.",
-          "Furra përfshin pllaka ngrohëse të 2x145mm dhe 2x180mm, së bashku me një ngrohës të poshtëm dhe një ngrohës të lartëm, të dyja me fuqi prej 1000 W secila. Klasa energjetike e këtij aparati është A."
-        ],
-        "pictures": [
-          "assets/Home appliances/Electric Independent Cooker EC 540 WWFT/Elektricen-sporet-EC-540-WWFT-44-1024x576.png"
-        ],
-        "specificationsDoc": "assets/PDF-Specifications/Upatstvo-EC-540-WWFT-EC-540-SFT.pdf",
-        "specifications": {
-          "DIMENSIONE: L/G/D": "85x50x60",
-          "VOLUMI I FURRËS": "55 L",
-          "KAPAK PËR FURRËN":  "√",
-          "Pllaka ngrohëse": "2x145mm - 2x180mm",
-          "Pllaka": "Emailluar",
-          "Pozicione për kontroll të prekës": 3,
-          "Rafta për furrë":  "√",
-          "Tavë":  "√",
-          "KLASA ENERGJETIKE": "A",
-          "NGROHËSI POSHTËM": "1000 W",
-          "NGROHËSI I LARTËM": "1000 W"
-        }
-      },
     {
         "id": 27,
         "name": "Furre Gatimi Elektrike e Pavarur EC 640 SF",
@@ -867,6 +789,7 @@
             "plaka e furre gjelber ceramike me 4 zona gatimi": "2X145MM, 2X180MM",
             "volumi i furres": "50 L",
             "paneli i kontrollit": "PANELI I KONTROLLIT ME 6 KAPAKË",
+            "ventilatori në furrë": "√",
             "6 pozicionet e kapakëve të kontrollit": "√",
             "2 tava te thehta furreje": "√",
             "rafsha e furres": "√",
@@ -895,6 +818,7 @@
             "paneli 3d i bardhë": "√",
             "volumi i furres": "50 L",
             "paneli i kontrollit": "PANELI I KONTROLLIT ME 6 KAPAKË",
+            "ventilatori në furrë": "√",
             "6 pozicionet e kapakëve të kontrollit": "√",
             "2 tava te thehta furreje": "√",
             "rafsha e furres": "√",
@@ -930,7 +854,7 @@
             "3d silver panel": "√",
             "oven volume": "65 L",
             "control panel": "6 switches, 6-panel control panel",
-            "turbo fan": "√",
+            "fan in oven": "√",
             "2 deep oven pans": "√",
             "oven rack": "√",
             "oven lamp": "√",
@@ -964,7 +888,7 @@
             "paneli 3d argjend": "√",
             "volumi i furres": "65 L",
             "paneli kontrollit": "6 kapakë, panel kontrolli me 6 panele",
-            "ventilatori turbo": "√",
+            "fan in oven": "√",
             "2 tava të thehta furreje": "√",
             "rafsha e furres": "√",
             "llambë furreje": "√",
@@ -999,6 +923,7 @@
             "paneli 3d bardhë": "√",
             "volumi i furres": "65 L",
             "paneli i kontrollit": "6 kapakë",
+            "ventilatori në furrë": "√",
             "6 pozicionet e kapakëve të kontrollit": "√",
             "2 tava të thehta furreje": "√",
             "rafsha e furres": "√",
@@ -1142,7 +1067,7 @@
           "volumi bruto": "91L",
           "volumi neto": "88L",
           "volumi neto frigorifer ftohës": "73/8 L",
-          "klasa energjetike": "F",
+          "klasa energjetike": "E",
           "gazi tipi": "Р600",
           "ngjyra": "bela",
           "derë e zëvendësueshme":  "√",
@@ -1170,7 +1095,7 @@
           "dimensione": "82.1/48/50 cm",
           "volumi bruto": "91L",
           "volumi neto": "89L",
-          "klasa energjetike": "F",
+          "klasa energjetike": "E",
           "ngjyra": "bela",
           "derë e zëvendësueshme":  "√",
           "këmbë të rregullueshme":  "√",
@@ -1196,7 +1121,7 @@
           "dimensione": "82.1/48/50 cm",
           "volumi bruto": "91L",
           "volumi neto": "89L",
-          "klasa energjetike": "F",
+          "klasa energjetike": "E",
           "ngjyra": "bardhë",
           "derë e zëvendësueshme":  "√",
           "këmbët rregulluese":  "√",
@@ -1213,16 +1138,14 @@
         ],
         "pictures": [
           "assets/Home appliances/TWO CHAMBER REFRIGERATOR RF 263N/FAVORIT-RF-263-01-3-1024x576.png",
-          "assets/Home appliances/TWO CHAMBER REFRIGERATOR RF 263N/FAVORIT-RF-263-02-1024x576.png",
-          "assets/Home appliances/TWO CHAMBER REFRIGERATOR RF 263N/FAVORIT-RF-263-S-01-1-1024x576.png",
-          "assets/Home appliances/TWO CHAMBER REFRIGERATOR RF 263N/FAVORIT-RF-263-S-02-1024x576.png"
+          "assets/Home appliances/TWO CHAMBER REFRIGERATOR RF 263N/FAVORIT-RF-263-02-1024x576.png"
         ],
         "specificationsDoc": "assets/PDF-Specifications/RF-263-upatstvo.pdf",
         "specifications": {
           "dimensione": "144/54/57 cm",
           "volumi bruto": "216/213 L",
           "volumi frigorifer zamrzivaç": "171/42 L",
-          "klasa energjitike": "F",
+          "klasa energjitike": "E",
           "gas": "R600",
           "ngjyra": "bardhë/argjendi",
           "derët zëvendësuese":  "√",
@@ -1248,7 +1171,7 @@
           "dimensione": "84/48/56 cm",
           "volumi bruto": "64L",
           "volumi neto": "63L",
-          "klasa energjike": "F",
+          "klasa energjike": "E",
           "gaz": "P600",
           "ngjyra": "e bardhë",
           "derë e zëvendësueshme":  "√",
@@ -1275,7 +1198,7 @@
           "dimensions": "144/54/60 cm",
           "volumi bruto": "210 L",
           "volumi neto": "182 L",
-          "klasa energjike": "F",
+          "klasa energjike": "E",
           "gaz": "P600",
           "ngjyra": "e bardhë",
           "derë e zëvendësueshme":  "√",
@@ -1436,83 +1359,6 @@
           "Buton për kontrollin e shpejtësisë": "√",
           "Sensor për gjysmë ngarkesë": "√",
           "Program me parapastrimin e pambukut": "√"
-        }
-    },
-    {
-        "id": 49,
-        "name": "Peshqirra larese W - 6101N",
-        "description": [
-            "Ju prezantojmë makinën tonë të avancuar të larjes, e dizajnuar për të thjeshtuar rutinën tuaj të larjes. Me një kapacitet të madh prej 6 kg dhe një drum 44 L inox të qëndrueshëm, ajo trajton lehtësisht ngarkesa të mëdha. Duke përfshirë 15 programe dhe një RPM maksimal prej 1000, ajo siguron pastrim të plotë për të gjitha llojet e tekstive."
-        ],
-        "pictures": [
-          "assets/Home appliances/WASHING MACHINE W – 6101N/W-6101-06-1024x576.png",
-          "assets/Home appliances/WASHING MACHINE W – 6101N/FAVORIT-W-6101-1-1024x576.png"
-        ],
-        "specificationsDoc": "assets/Product Spec/Upatstvo-W-6101.pdf",
-        "specifications": {
-            "dimensionet hwl": "84.50 / 59.70 / 49.70 CM",
-            "rrotullime maksimale ne minute": "1000",
-            "kapaciteti": "6 KG",
-            "inox drum": "44 L",
-            "programet": "15",
-            "programues elektronik": "√",
-            "kontrolli i temperature se ujit nen presion": "√",
-            "klasa energjetike": "D",
-            "sistemi i ruajtjes se energjise eco": "√",
-            "mbrojtja ndaj lekezave": "√",
-            "mbrojtja ndaj ecemave": "√",
-            "sistemi automatik i balances": "√",
-            "sistemi i zbulimit te gabimeve": "√",
-            "blloku per femijet": "√",
-            "kapaku i siperme i levizshem": "√",
-            "konsumi i energjise": "151 KWH/ANNUM",
-            "konsumi i ujit": "9900 L/ANNUM",
-            "nivel zera gjate larjes": "58 DB",
-            "nivel zera gjate qarkullimit": "77 DB",
-            "programi i shpejte": "15 MIN. 30 C",
-            "kontrolli i qarkullimit": "√",
-            "butoni i nisjes me vonese": "√",
-            "sensori i ngarkeses se polovices": "√"
-        }
-    },
-    
-    {
-        "id": 50,
-        "name": "Peshqirra larese W - 7122N",
-        "description": [
-            "Ju prezantojmë makinën tonë të fuqishme të larjes: Me një kapacitet prej 7 kg dhe 15 programe, është e dizajnuar për efikasitet dhe përshtatshmëri. Karakteristikat përfshijnë programues elektronik, kontroll temperaturash dhe sistem kursimi energjetik eco. Masa të sigurisë si mbrojtja ndaj lekezave dhe blloku për fëmijë sigurojnë qetësi të mendjes. Operacioni i qetë dhe teknologjia e përparuar bëjnë larjen e peshqirrave një frymëzim."
-        ],
-        "pictures": [
-          "assets/Home appliances/WASHING MACHINE W – 7122N/W-7122-07-1024x576.png",
-          "assets/Home appliances/WASHING MACHINE W – 7122N/FAVORIT-W-7122-1024x576.png"
-        ],
-        "specificationsDoc": "assets/Product Spec/W-7122-Upatstvo.pdf",
-        "specifications": {
-            "dimensionet hwd": "84,5/59,5/54,0 CM",
-            "rrotullime maksimale ne minute": "1200",
-            "kapaciteti": "7 KG",
-            "inox drum": "45 L",
-            "programet": "15",
-            "programues elektronik": "√",
-            "butoni kontroll temperature": "√",
-            "klasa energjetike": "D",
-            "sistemi i kursimit të energjisë eco": "√",
-            "mbrojtja ndaj lekezave": "√",
-            "foam protection": "√",
-            "automatic balance system": "√",
-            "sistemi i zbulimit te gabimeve": "√",
-            "blloku për fëmijët": "√",
-            "kapaku i siperme i levizshem": "√",
-            "konsumi i energjise": "172 KWH/ANNUM",
-            "konsumi i ujit": "10337 L/ANNUM",
-            "nivel zera gjate larjes": "58 DB",
-            "nivel zera gjate qarkullimit": "78 DB",
-            "programi i shpejte": "15 MIN. 30 °C",
-            "butoni kontroll qarkullimi": "√",
-            "sensori i ngarkeses se polovices": "√",
-            "programi allergy safe": "√",
-            "butoni për larjen e paraprake": "√",
-            "butoni i nisjes së vonës": "√"
         }
     },
     {
@@ -1681,92 +1527,6 @@
         }
       },
     {
-        "id": 55,
-        "name": "Lavatrice W - 9142ТN BLDC",
-        "description": [
-            "Vi presentiamo il nostro ultimo modello di lavatrice, la W-9122N BLDC, dotata di un tamburo in acciaio inox spazioso da 9 KG e un potente motore inverter per una pulizia efficiente. Con 15 programmi e funzionalità avanzate come uno schermo touch LCD digitale e l'avvio ritardato, il giorno del bucato è diventato più facile. Godetevi la tranquillità con i sistemi di protezione integrati e la tecnologia a risparmio energetico."
-        ],
-        "pictures": [
-          "assets/Home appliances/WASHING MACHINE W – 9142ТN BLDC/W9142T-BLDC-1024x576.png",
-          "assets/Home appliances/WASHING MACHINE W – 9142ТN BLDC/FAVORIT-W-9142T-BLDC-12-1024x576.png"
-        ],
-        "specificationsDoc": "assets/Product Spec/Upatstvo-W-9142T-BLDC.pdf",
-        "specifications": {
-            "DIMENSIONS": "84.5 / 60.5 / 60.4 CM",
-            "MAXIMUM REVOLUTIONS PER MINUTE": "1400",
-            "MAXIMUM CAPACITY": "9 KG",
-            "INOX DRUM": "61 L",
-            "INVERTER MOTOR": "√",
-            "DIGITAL LCD TOUCH SCREEN": "√",
-            "DELAYED START": "√",
-            "PROGRAMS": "15",
-            "ELECTRONIC PROGRAMMER": "√",
-            "DUVET AND BLANKET WASHING PROGRAM": "√",
-            "WATER TEMPERATURE CONTROL KNOB": "√",
-            "ENERGY CLASS": "B",
-            "ECO ENERGY SAVING SYSTEM": "√",
-            "LEAKAGE PROTECTION": "√",
-            "FOAM PROTECTION": "√",
-            "AUTOMATIC BALANCE SYSTEM": "√",
-            "ERROR DETECTION SYSTEM": "√",
-            "CHILDRENS LOCK": "√",
-            "REMOVABLE TOP COVER": "√",
-            "ANTIALLERGIC PROGRAM": "√",
-            "SENSITIVE HAND WASHING": "√",
-            "ENERGY CONSUMPTION": "168KWH/ANNUM",
-            "WATER CONSUMPTION": "12100 L/ANNUM",
-            "NOISE LEVEL DURING WASHING": "50 DB",
-            "SPIN NOISE LEVEL": "75 DB",
-            "FAST PROGRAM": "15 MIN. 30°",
-            "SPEED REGULATION": "√",
-            "HALF LOAD SENSOR": "√",
-            "PREWASH BUTTON": "√"
-        }
-    },
-    {
-        "id": 56,
-        "name": "Lavatrice W-9122N BLDC",
-        "description": [
-            "Vi presentiamo il nostro ultimo modello di lavatrice, dotato di un tamburo in acciaio inox spazioso da 9 KG e un potente motore inverter per una pulizia efficiente. Con 15 programmi e funzionalità avanzate come uno schermo touch LCD digitale e l'avvio ritardato, il giorno del bucato è diventato più facile. Godetevi la tranquillità con i sistemi di protezione integrati e la tecnologia a risparmio energetico."
-        ],
-        "pictures": [
-            "assets/Home appliances/WASHING MACHINE W-9122N BLDC/W-9122N-BLDC-16-1024x576.png"
-        ],
-        "specificationsDoc": "assets/Product Spec/Upatstva-za-W-9122N-BLDC.pdf",
-        "specifications": {
-            "dimensioni hwd": "84.5 / 59.7 / 58.2 CM",
-            "massime rivoluzioni al minuto": 1200,
-            "massima capacità": "9 KG",
-            "inox drum": "59 L",
-            "inverter motor": "√",
-            "schermo lcd touch digitale 7 segmenti": "√",
-            "visualizzazione del tempo di lavaggio rimanente": "√",
-            "avvio ritardato": "√",
-            "programmi": 15,
-            "programmatore elettronico": "√",
-            "pulsante di controllo della temperatura dellacqua": "√",
-            "programma di lavaggio copripiumini e coperte": "√",
-            "classe energetica secondo la nuova regolamentazione": "A",
-            "sistema di risparmio energetico eco": "√",
-            "protezione contro le perdite": "√",
-            "protezione antischiuma": "√",
-            "sistema di bilanciamento automatico": "√",
-            "sistema di rilevamento errori": "√",
-            "blocco per bambini": "√",
-            "coperchio superiore removibile": "√",
-            "programma antiallergico": "√",
-            "lavaggio delicato a mano": "√",
-            "consumo energetico secondo la nuova regolamentazione": "49KWH/ON 100",
-            "consumo di acqua secondo la nuova regolamentazione": "50 L",
-            "livello di rumore durante il lavaggio": "50 DB",
-            "livello di rumore durante la centrifuga": "76 DB",
-            "programma veloce": "60 MIN. 60°√",
-            "regolazione della velocità": "√",
-            "sensore di carico pieno": "√",
-            "pulsante prelavaggio": "√"
-        }
-    },
-    {
         "id": 57,
         "name": "Scaldabagno TE50A20",
         "description": [
@@ -1840,7 +1600,7 @@
             "Caratteristiche di protezione termica, TERMOMETRO e VALVOLA DI SICUREZZA per la sicurezza. Potenza di riscaldamento 1980 W e connessione idraulica da 1/2 pollice. Realizzato con riscaldatore in rame resistente, smalto blu zaffiro e boiler in ACCIAIO FREDDO. Isolato con SCHIUMA DI POLIURETANO per l'efficienza."
         ],
         "pictures": [
-            "assets/Home appliances/WATER HEATER TE80A20/1-BOLJER-01-800x450-1-500x375-1.png:"
+          "assets/Home appliances/WATER HEATER TE80A20/1-BOLJER-04-scaled-1-1024x576.png"
         ],
         "specificationsDoc": "assets/PDF-Specifications/TE80B20 TE80A20.pdf",
         "specifications": {
@@ -1873,7 +1633,7 @@
             "Features thermal protection, SAFETY VALVE, and protective magnesium anode for safety. 1980 W heating power and 1/2 inch water connection. Built with durable copper heater, sapphire blue enamel, and COLD STEEL boiler. Insulated with POLYURETHANE FOAM for efficiency."
         ],
         "pictures": [
-            "assets/Home appliances/WATER HEATER TE80B20/1-BOLJER-01-800x450-1-500x375-1.png:"
+            "assets/Home appliances/WATER HEATER TE80B20/1-BOLJER-01-800x450-1-500x375-1.png"
         ],
         "specificationsDoc": "assets/PDF-Specifications/TE80B20 TE80A20.pdf",
         "specifications": {
@@ -1897,78 +1657,6 @@
             "BOILER MATERIAL": "COLD STEEl"
         }
     },
-    {
-        "id": 61,
-        "name": "FURRË E NDAFËRT 4 - J E ZEZË",
-        "description": [
-          "Ky produkt është një furrë e përshtatshme me një kapacitet të gjerë prej 65 litra dhe shumë veçori për gatimin e lehtë. Ka një dizajn energjitik me klasë energjie A. Furrës i janë përfshirë 8 pozicione kontrolli prejkapës, një buton kontrolli për përshtatje të saktë të temperaturës, dhe një panel kontrolli me xham me dritë për një shikim më të mirë. Gjithashtu, ka një ventilator turbo për shpërndarjen efikase të ngrohjes dhe është pajisur me një gril ngrohës që ofron 1000 W fuqi. Mundësitë e ngrohjes së furres përdoren nga një sërë zonash ngrohjeje, duke përfshirë dimensione specifike për secilën zonë (2x145mm nga 1200 W dhe 2x180mm nga 1800 W). Pajisja gjithashtu përfshin një plakë të pavarur stërkërpuse me xham-keramikë me 4 zona ngrohjeje, duke e bërë atë të përshtatshme për nevojat e ndryshme të gatimit. Ngjyra e saj e zezë elegante dhe veçoritë e avancuara sigurojnë përvojë efikase dhe të kënaqshme gatimi."
-        ],
-        "pictures": [
-          "assets/Home appliances/BUILT-IN COOKER 4 – J E ZEZË/FAVORIT-4-J-E-ZEZË-01-1024x576.png:",
-          "assets/Home appliances/BUILT-IN COOKER 4 – J E ZEZË/FAVORIT-4-J-E-ZEZË-02-1024x576.png:",
-          "assets/Home appliances/BUILT-IN COOKER 4 – J E ZEZË/3-3.jpg",
-          "assets/Home appliances/BUILT-IN COOKER 4 – J E ZEZË/4-2.jpg",
-          "assets/Home appliances/BUILT-IN COOKER 4 – J E ZEZË/5-2.jpg",
-          "assets/Home appliances/BUILT-IN COOKER 4 – J E ZEZË/6-1.jpg",
-          "assets/Home appliances/BUILT-IN COOKER 4 – J E ZEZË/7-1.jpg"
-        ],
-        "specificationsDoc": "assets/PDF-Specifications/4J-BLACK-4J-INOX-B-UPATSTVO-1-1.pdf",
-        "specifications": {
-          "furrë e pavarur":  "√",
-          "dimensione": "G/L/H 59/59,5/55 cm",
-          "klasë energjie": "A",
-          "volumi i furres": "65 L",
-          "8 pozicione kontrolli furres":  "√",
-          "buton kontrolli furres":  "√",
-          "butoni termostat furres":  "√",
-          "paneli kontrollit me xham":  "√",
-          "drita e furres":  "√",
-          "gril i vetëm dhe tava e thellë e furres":  "√",
-          "ventilator turbo":  "√",
-          "ngrohës": "në sipër -1200; poshtë -1100 W",
-          "gril ngrohës": "1000 W",
-          "ngjyra": "e zezë",
-          "plaka e pavarur e stërkërpuse me xham-keramikë":  "√",
-          "4 zona ngrohjeje":  "√",
-          "dimensione e zonave": "(2x145mm nga 1200 W) (2×180 mm nga 1800 W)"
-        }
-      },
-      {
-        "id": 62,
-        "name": "FURRË E NDAFËRT 4 - J INOX-B",
-        "description": [
-          "Ky produkt është një furrë e përshtatshme me një kapacitet të gjerë prej 65 litra dhe shumë veçori për gatimin e lehtë. Ka një dizajn energjitik me klasë energjie A. Furrës i janë përfshirë 8 pozicione kontrolli prejkapës, një buton kontrolli për përshtatje të saktë të temperaturës, dhe një panel kontrolli me xham me dritë për një shikim më të mirë. Gjithashtu, ka një ventilator turbo për shpërndarjen efikase të ngrohjes dhe është pajisur me një gril ngrohës që ofron 1000 W fuqi. Mundësitë e ngrohjes së furres përdoren nga një sërë zonash ngrohjeje, duke përfshirë dimensione specifike për secilën zonë (2x145mm nga 1200 W dhe 2x180mm nga 1800 W). Pajisja gjithashtu përfshin një plakë të pavarur stërkërpuse me xham-keramikë me 4 zona ngrohjeje, duke e bërë atë të përshtatshme për nevojat e ndryshme të gatimit. Ngjyra e saj inox elegante dhe veçoritë e avancuara sigurojnë përvojë efikase dhe të kënaqshme gatimi."
-        ],
-        "pictures": [
-            "assets/Built In Appliances/BUILT-IN COOKER 4 – J INOX-B/FAVORIT-4-J-INOX-B-05-1024x576.png",
-            "assets/Built In Appliances/BUILT-IN COOKER 4 – J INOX-B/FAVORIT-4-J-INOX-B-06-1024x576.png",
-            "assets/Built In Appliances/BUILT-IN COOKER 4 – J INOX-B/3-3.png",
-            "assets/Built In Appliances/BUILT-IN COOKER 4 – J INOX-B/4-2.png",
-            "assets/Built In Appliances/BUILT-IN COOKER 4 – J INOX-B/5-2.jpg",
-            "assets/Built In Appliances/BUILT-IN COOKER 4 – J INOX-B/6-1.jpg",
-            "assets/Built In Appliances/BUILT-IN COOKER 4 – J INOX-B/7-1.jpg"
-        ],
-        "specificationsDoc": "assets/PDF-Specifications/4J-BLACK-4J-INOX-B-UPATSTVO-1-1.pdf",
-        "specifications": {
-          "furrë e pavarur":  "√",
-          "dimensione": "G/L/H 59/59,5/55 cm",
-          "klasë energjie": "A",
-          "volumi i furres": "65 L",
-          "8 pozicione kontrolli furres":  "√",
-          "buton kontrolli furres":  "√",
-          "butoni termostat furres":  "√",
-          "paneli kontrollit me xham":  "√",
-          "drita e furres":  "√",
-          "gril i vetëm dhe tava e thellë e furres":  "√",
-          "ventilator turbo":  "√",
-          "ngrohës": "në sipër -1200; poshtë -1100 W",
-          "gril ngrohës": "1000 W",
-          "ngjyra": "inox",
-          "plaka e pavarur e stërkërpuse me xham-keramikë":  "√",
-          "4 zona ngrohjeje":  "√",
-          "dimensione e zonave": "(2x145mm nga 1200 W) (2×180 mm nga 1800 W)"
-        }
-      },
     {
         "id": 63,
         "name": "Built-in dishwasher BI45-I1EN (fully integrated)",
@@ -2005,55 +1693,15 @@
             "fast program": "30 min. / 40 °C"
         }
     },
-    {
-        "id": 64,
-        "name": "Lavastoviglie incorporata SI60 – I14N (completamente integrata)",
-        "description": [
-          "Kjo lavastoviglie ka dimensione V/L/P 82cm/59.8cm/55cm dhe një kapacitet maksimal prej 12 seteve pjatash. Ajo ofron 5 programe me një gamë temperature prej 3 nivelesh. Klasa e energjisë është A++, dhe klasa e tharjes është A. Konsumi i ujit në programin ekologjik është 12 litra, me një konsum energjie që varion nga 0.90 KWh deri në 1.55 KWh në varësi të programit. Ka një kohë të programit ekologjik prej 222 minutash.",
-          "Përveç kësaj, ka mbrojtje nga ngrohësi, mbrojtje nga përmbytja, dhe është plotësisht e integruar me butonin On/Off, butonin e zgjedhjes së programit, butonin e vonimit të larjes (3, 6, dhe 9 orë), mbushje të pjesshme, indikator për kripë, indikator për lëng për shkumë, indikator për përfundim, dhe një nivel zhurme prej 54 dB. Përmban gjithashtu një program të shpejtë prej 30 minutash në 40°C."
-        ],
-        "pictures": [
-          "assets/Built In Appliances/Built-in dishwasher SI60 – I14/BI60-I14-02-1024x576.png",
-          "assets/Built In Appliances/Built-in dishwasher SI60 – I14/SI60-I14-01-1024x576.png",
-          "assets/Built In Appliances/Built-in dishwasher SI60 – I14/BI60-I14-03-1024x576.png",
-          "assets/Built In Appliances/Built-in dishwasher SI60 – I14/Vgradni-dimenzii-za-poluvgradna-Mas-za-sadovi-FAVORIT-SI60-I14-pdf.png"
-        ],
-        "specificationsDoc": "assets/Built In Appliances/Built-in dishwasher SI60 – I14/2.-SI60-I14-upatstva-EN-MAK-SIR-AL.pdf",
-        "specifications": {
-          "Përmasat L/G/T": "82,0cm/59,8cm/57,0cm",
-          "gjysmë e integruar me panel inox": "√",
-          "kapaciteti maksimal": "12 sete enësh",
-          "programet": 5,
-          "temperatura": "4",
-          "klasa e energjisë": "A ++",
-          "konsumi i ujit në programin ECO": "12 litra ujë",
-          "konsumi i energjisë në varësi të programit": "0.90 KWh – 1.55 KWh",
-          "brendësia": "inox",
-          "filtër metalik": "√",
-          "mbrojtje kundër përmbytjes": "√",
-          "butoni On/Off": "√",
-          "butoni për përzgjedhje të programeve": "√",
-          "butoni për vonesë të larjes": "3, 6 dhe 9 orë",
-          "gjysmë ngarkese (kohëmatës)": "3, 6 dhe 9 orë",
-          "gjysmë ngarkese": "√",
-          "tregues për mungesë kripe": "√",
-          "tregues për mungesë lëngu për shkëlqim": "√",
-          "tregues për përfundim të ciklit": "√",
-          "zëri": "57 dB",
-          "program i shpejtë": "30 min. / 40 °C"
-        }
-      },
       {
         "id": 65,
-        "name": "Makineri enësh e integruar BI60 – I14N",
+        "name": "Makineri enësh e integruar BI60-I1FN",
         "description": "Makineria për enë BI60 – I14N është efikase në energji (A++) dhe plotësisht e integruar, me kapacitet për 12 sete enësh. Ka 5 programe dhe 3 nivele temperature. Programi ECO zgjat 222 minuta dhe përdor 12 litra ujë. Karakteristikat shtesë përfshijnë nisje të vonuar (3, 6 dhe 9 orë), tregues për mungesën e kripës dhe lëngut për shkëlqim, mbrojtje nga përmbytja dhe nivel zhurme prej 54 dB.",
         "pictures": [
-          "assets/Built In Appliances/Built-in dishwasher BI60 – I14 (fully integrated)/SI60-I14-11-1024x576.png",
-          "assets/Built In Appliances/Built-in dishwasher BI60 – I14 (fully integrated)/SI60-I14-10-1024x576.png",
-          "assets/Built In Appliances/Built-in dishwasher BI60 – I14 (fully integrated)/SI60-I14-12-1024x576.png",
-          "assets/Built In Appliances/Built-in dishwasher BI60 – I14 (fully integrated)/2-9.png"
+        "assets/Built In Appliances/Built-in dishwasher FAVORIT BI60-I1FN/BI60-I1FN.jpg",
+        "assets/Built In Appliances/Built-in dishwasher FAVORIT BI60-I1FN/BI60-I1FN-OPEN DOOR.png"
         ],
-        "specificationsDoc": "assets/Built In Appliances/Built-in dishwasher BI60 – I14 (fully integrated)/3.-BI60-Y14-upatstva-EN-SIR-MAK-AL.pdf",
+        "specificationsDoc": "assets/Built In Appliances/Built-in dishwasher FAVORIT BI60-I1FN/BI60-I1FN-PDF.pdf",
         "specifications": {
           "Përmasat (L/G/T)": "82cm/59.8cm/55cm",
           "Kapacitet maksimal": "12 sete enësh",
@@ -2075,42 +1723,6 @@
           "Tregues për përfundimin e programit": "√",
           "Zhurma gjatë punës": "54 dB",
           "Program i shpejtë": "30 min. / 40 °C"
-        }
-      },
-    {
-        "id": 66,
-        "name": "Larëse enësh e ndërtuar SI60 - I14",
-        "description": [
-          "Larëse enësh me dimensione specifike (L/G/J: 82,0cm/59,8cm/57,0cm), dizajn gjysmë të ndërtuar me panel inox dhe kapacitet për 12 sete enësh. Ajo ka 5 programe, 4 temperatura dhe është energjitik me një vlerësim klasë A++. Larëse enësh konsumon 12 litra ujë në programin ekologjik dhe ka konsum të ndryshueshëm të energjisë (0,90 KWh deri në 1,55 KWh). Përmban një brendësi inox, një filtrë metalik, mbrojtje nga përmbytja, dhe kontrolla miqësorë për përdoruesit si butoni për të ndezur/fikur, butoni për zgjedhjen e programit dhe vonesa e kohës së larës (3, 6 ose 9 orë). Larësi përmban mbështetje për gjysmë-përmbytje dhe përfshin indikatorë për kripë, lëng për shkumë dhe përfundim të ciklit. Niveli i zhurmës gjatë punës është 57 dB, dhe ka një program të shpejtë 30-minutësh në 40°C për larje të shpejtë."
-        ],
-        "pictures": [
-            "assets/Built In Appliances/Built-in dishwasher SI60 – I14/BI60-I14-02-1024x576.png",
-            "assets/Built In Appliances/Built-in dishwasher SI60 – I14/SI60-I14-01-1024x576.png",
-            "assets/Built In Appliances/Built-in dishwasher SI60 – I14/BI60-I14-03-1024x576.png",
-            "assets/Built In Appliances/Built-in dishwasher SI60 – I14/Vgradni-dimenzii-za-poluvgradna-Mas-za-sadovi-FAVORIT-SI60-I14-pdf.png"
-        ],
-        "specificationsDoc": "assets/PDF-Specifications/2.-SI60-I14-upatstva-EN-MAK-SIR-AL.pdf",
-        "specifications": {
-          "dimensione": "L/G/J 82,0cm/59,8cm/57,0cm",
-          "gjysmë-ndërtuar me panel inox":  "√",
-          "kapacitet maksimal": "12 sete enësh",
-          "programet": 5,
-          "temperaturat": 4,
-          "klasa energjitike": "A++",
-          "konsumi i ujit në programin ekologjik": "12 L ujë",
-          "konsumi i energjisë (varësisht nga programi)": "0,90 KWh – 1,55 KWh",
-          "brendësia": "inox",
-          "filtrë metalik":  "√",
-          "mbrojtje nga përmbytja":  "√",
-          "butoni për të ndezur/fikur":  "√",
-          "butoni për zgjedhjen e programit":  "√",
-          "butoni për vonesa të kohës së larës": "3, 6 dhe 9 orë",
-          "gjysmë-përmbytje":  "√",
-          "indikator për kripë":  "√",
-          "indikator për lëng për shkumë":  "√",
-          "indikator për përfundim":  "√",
-          "nivel i zhurmës": "57 dB",
-          "program i shpejtë": "30 min. / 40 °C"
         }
       },
       {
@@ -2476,83 +2088,6 @@
         }
       },
     {
-      "id": 82,
-      "name": "KONDICIONERI I AJRIT INVERTER 12000 BTU",
-      "description": [
-        "Ky sistem i klimatizimit ofron performancë efikase të ftohjes dhe ngrohjes me një kapacitet ftohjeje prej 3520W (12000 BTU) dhe një kapacitet ngrohjeje prej 3810W (13000 BTU). Operon në heshtje me nivelet e zhurmës në brendësi ≤ 39 dB dhe në jashtë ≤ 48 dB, duke siguruar një mjedis të këndshëm. Përveç kësaj, pajisja ka një vlerësim SEER për ftohje prej 6.6 dhe klasa efikasiteti të energjisë A++ për ftohje dhe A+ për ngrohje, duke pasqyruar dizajnin e tij për të kursyer energjinë."
-      ],
-      "pictures": [
-        "assets/Ait Conditioners/AIR CONDITIONER INVERTER 12000 BTU/FAVORIT-18000-BTU-KLIMA-01-scaled-1-1024x576.png",
-        "assets/Ait Conditioners/AIR CONDITIONER INVERTER 12000 BTU/FAVORIT-12000-BTU-R32-KROPNATI-01-800x450-2.png",
-        "assets/Ait Conditioners/AIR CONDITIONER INVERTER 12000 BTU/FAVORIT-12000-BTU-R32-KROPNATI-02-800x450-1.png",
-        "assets/Ait Conditioners/AIR CONDITIONER INVERTER 12000 BTU/DALJINSKO-01-800x450-1.png"
-      ],
-      "specificationsDoc": "assets/PDF-Specifications/FAVORIT-KLIMA-INVERTER-1.pdf",
-      "specifications": {
-        "KAPACITETI I FTOHJES (W)": "3520",
-        "KAPACITETI I NGROHJES (W)": "3810",
-        "KAPACITETI I FTOHJES (BTU)": "12000",
-        "KAPACITETI I NGROHJES (BTU)": "13000",
-        "HYRJA E ENERGJISË: (W) FTOHJA": "1650 W",
-        "HYRJA E ENERGJISË: (W) NGROHJA": "1200 W",
-        "SEER PËR FTOHJEN (W/W)": "6.6",
-        "OBLASTI I NGROHJES (W/W)": "4.0",
-        "FLUKS AERI": "< 550 m3/h",
-        "DEHUMIDIFIKIMI": "1,2 L/h",
-        "ZHURMA (PRESIONI I ZËRIT) NË NJËSINË BRENDA": "≤ 39",
-        "ZHURMA (PRESIONI I ZËRIT) NË NJËSINË JASHTË": "≤ 48",
-        "VOLUMI NË KUSHTET E STANDARIT NË NJËSINË BRENDA": "≤ 52",
-        "VOLUMI NË KUSHTET E STANDARIT NË NJËSINË JASHTË": "≤ 63",
-        "KLASA ENERGJETIKE (FTOHJA)": "A ++",
-        "KLASA ENERGJETIKE (NGROHJA)": "A +",
-        "FILTRI I PRAKËSISË": "√",
-        "TEMPERATURA E OPERIMIT PËR NGROHJEN": "nga -15 deri në +30 °C",
-        "VENTILATORI AUTO": "√",
-        "MËNYRA E SHPËRBLYERJES SË ENERGJISË": "√",
-        "JONIZATOR": "√",
-        "TIMER": "√",
-        "TEMPERATURA E OPERIMIT PËR FTOHJEN": "nga +18 deri në +53 °C",
-        "KONTROLLI LARG ME FUNKSIONIN I FEEL": "√",
-        "LLOJI I GAZIT": "R 32",
-        "FURNIZIMI I ENERGJISË": "220-240V~50Hz/1P",
-        "KOMPRESORI": "LG",
-        "GAMA E NËNJESITËS SË NAPONIT (V)": "165~265",
-        "DIMENSIONET E NJËSISË SË BRENDA (mm) WxHxD": "822X281X202",
-        "DIMENSIONET E NJËSISË SË JASHTME (mm) WxHxD": "815X532X300",
-        "DIMENSIONET E PAKETIMIT PËR NJËSINË BRENDA (mm) WxHxD": "885X355X260",
-        "DIMENSIONET E PAKETIMIT PËR NJËSINË JASHTME (mm) WxHxD": "854X590X324"
-      }
-    },
-    {
-      "id": 83,
-      "name": "KONDICIONERI I AJRIT INVERTER 12000 BTU WI-FI",
-      "description": [
-        "Ky sistem i klimatizimit ofron performancë efikase të ftohjes dhe ngrohjes me një kapacitet ftohjeje prej 3520W (12000 BTU) dhe një kapacitet ngrohjeje prej 3810W (13000 BTU). Operon në heshtje me nivelet e zhurmës në brendësi ≤ 39 dB dhe në jashtë ≤ 48 dB, duke siguruar një mjedis të këndshëm. Përveç kësaj, pajisja ka një vlerësim SEER për ftohje prej 6.6 dhe klasa efikasiteti të energjisë A++ për ftohje dhe A+ për ngrohje, duke pasqyruar dizajnin e tij për të kursyer energjinë."
-      ],
-      "pictures": [
-        "assets/Ait Conditioners/AIR CONDITIONER INVERTER 12000 BTU WI-FI/FAVORIT-KLIMA-12000-BTU-INVERTER-WI-FI-01-1024x576.png",
-        "assets/Ait Conditioners/AIR CONDITIONER INVERTER 12000 BTU WI-FI/FAVORIT-KLIMA-24000-BTU-INVERTER-WI-FI-02-1024x576.png"
-      ],
-      "specificationsDoc": "assets/PDF-Specifications/FAVORIT-INVERTER-WI-FI-TOTAL.pdf",
-      "specifications": {
-        "SEER PËR FTOHJEN (W/W)": "6.1",
-        "OBLASTI I NGROHJES (W/W)": "4.0",
-        "FLUKS AERI": "< 550 m3/h",
-        "KLASA ENERGJETIKE (FTOHJA)": "A ++",
-        "KLASA ENERGJETIKE (NGROHJA)": "A +",
-        "TEMPERATURA E OPERIMIT PËR NGROHJEN": "nga -15 deri në +30 °C",
-        "JONIZATOR": "√",
-        "TEMPERATURA E OPERIMIT PËR FTOHJEN": "nga +15 deri në +53 °C",
-        "LLOJI I GAZIT": "R 32",
-        "FURNIZIMI I ENERGJISË": "220-240V~50Hz/1P",
-        "GAMA E NËNJESITËS SË NAPONIT (V)": "170~265",
-        "DIMENSIONET E NJËSISË SË BRENDA (mm) WxHxD": "777x250x201",
-        "DIMENSIONET E NJËSISË SË JASHTME (mm) WxHxD": "777x498x290",
-        "DIMENSIONET E PAKETIMIT PËR NJËSINË BRENDA (mm) WxHxD": "777x250x201",
-        "DIMENSIONET E PAKETIMIT PËR NJËSINË JASHTME (mm) WxHxD": "803x600x325"
-      }
-    },
-    {
       "id": 84,
       "name": "KONDICIONERI I AJRIT INVERTER 12000BTU FF",
       "description": [
@@ -2596,67 +2131,6 @@
         "assets/Ait Conditioners/AIR CONDITIONER INVERTER 12000BTU JD HB/Untitled-design-2-1024x576.png"
       ],
       "specificationsDoc": "assets/PDF-Specifications/FAVORIT-KLIMA-INVERTER.pdf",
-      "specifications": {
-        "Kapaciteti i Ftohjes (kW)": "3.5(0.8-4.1)",
-        "Kapaciteti i Ftohjes (BTU)": "11942",
-        "Kapaciteti i Ngrohjes (kW)": "3.8(1.0-4.2)",
-        "Kapaciteti i Ngrohjes (BTU)": "12966",
-        "SEER Ftohje": "6.19",
-        "SCOP Ngrohje-mesatar": "4.03",
-        "Klasa Energetike SEER": "A++",
-        "Klasa Energetike SCOP-mesatar": "A+",
-        "Rrefrigerant": "R32",
-        "Fluksi i Ajrit (m3/h)": "600",
-        "Pesha Nete e Njësisë Brendëshme/Jashtme (kg)": "8.5",
-        "Dimensionet (brendëshme) - neto": "792*292*201",
-        "Dimensionet (jashtme) - neto": "705*530*279",
-        "Temperatura Ambiente-ftohje": "16~50℃",
-        "Temperatura Ambiente-ngrohje": "-25~30℃"
-      }
-    },
-    {
-      "id": 86,
-      "name": "KLIMATIZUES INVERTUES 18000 BTU",
-      "description": [
-        "Ky sistem i kondicionimit të ajrit ofron kapacitete të ftohjes dhe ngrohjes të përshtatshme për një gamë ambientesh. Kapaciteti i ftohjes lëviz nga 0.8 kW deri në 4.1 kW (ekuivalent me 11942 BTU), ndërsa kapaciteti i ngrohjes lëviz nga 1.0 kW deri në 4.2 kW (ekuivalent me 12966 BTU). Me një SEER (Raporti i Efikasitetit Sezonik të Energjisë) prej 6.19 dhe një SCOP (Koeficienti Sezonik i Performancës) mesatar për ngrohjen prej 4.03, ky sistem arrin një efikasitet të shkëlqyer të energjisë, duke fituar vlerësime energjetike A++ dhe A+ për ftohjen dhe ngrohjen, përkatësisht."
-      ],
-      "pictures": [
-        "assets/Ait Conditioners/AIR CONDITIONER INVERTER 18000 BTU/FAVORIT-18000-BTU-KLIMA-01-1024x576.png",
-        "assets/Ait Conditioners/AIR CONDITIONER INVERTER 18000 BTU/FAVORIT-12000-BTU-R32-KROPNATI-01-1024x576.png",
-        "assets/Ait Conditioners/AIR CONDITIONER INVERTER 18000 BTU/FAVORIT-12000-BTU-R32-Outdoor-1024x576.png",
-        "assets/Ait Conditioners/AIR CONDITIONER INVERTER 18000 BTU/FAVORIT-12000-BTU-R32-KROPNATI-02-1024x576.png",
-        "assets/Ait Conditioners/AIR CONDITIONER INVERTER 18000 BTU/DALJINSKO-01-1024x576.png"
-      ],
-      "specificationsDoc": "assets/PDF-Specifications/FAVORIT-KLIMA-INVERTER.pdf",
-      "specifications": {
-        "Kapaciteti i Ftohjes (kW)": "3.5(0.8-4.1)",
-        "Kapaciteti i Ftohjes (BTU)": "11942",
-        "Kapaciteti i Ngrohjes (kW)": "3.8(1.0-4.2)",
-        "Kapaciteti i Ngrohjes (BTU)": "12966",
-        "SEER Ftohje": "6.19",
-        "SCOP Ngrohje-mesatar": "4.03",
-        "Klasa Energetike SEER": "A++",
-        "Klasa Energetike SCOP-mesatar": "A+",
-        "Rrefrigerant": "R32",
-        "Fluksi i Ajrit (m3/h)": "600",
-        "Pesha Nete e Njësisë Brendëshme/Jashtme (kg)": "8.5",
-        "Dimensionet (brendëshme) - neto": "792*292*201",
-        "Dimensionet (jashtme) - neto": "705*530*279",
-        "Temperatura Ambiente-ftohje": "16~50℃",
-        "Temperatura Ambiente-ngrohje": "-25~30℃"
-      }
-    },
-    {
-      "id": 87,
-      "name": "KLIMATIZUES INVERTUES 18000 BTU WI-FI",
-      "description": [
-        "Ky sistem i kondicionimit të ajrit ofron kapacitete të ftohjes dhe ngrohjes të përshtatshme për një gamë ambientesh. Kapaciteti i ftohjes lëviz nga 0.8 kW deri në 4.1 kW (ekuivalent me 11942 BTU), ndërsa kapaciteti i ngrohjes lëviz nga 1.0 kW deri në 4.2 kW (ekuivalent me 12966 BTU). Me një SEER (Raporti i Efikasitetit Sezonik të Energjisë) prej 6.19 dhe një SCOP (Koeficienti Sezonik i Performancës) mesatar për ngrohjen prej 4.03, ky sistem arrin një efikasitet të shkëlqyer të energjisë, duke fituar vlerësime energjetike A++ dhe A+ për ftohjen dhe ngrohjen, përkatësisht."
-      ],
-      "pictures": [
-        "assets/Ait Conditioners/AIR CONDITIONER INVERTER 18000 BTU WI-FI/FAVORIT-KLIMA-18000-BTU-INVERTER-WI-FI-01-1024x576.png",
-        "assets/Ait Conditioners/AIR CONDITIONER INVERTER 18000 BTU WI-FI/FAVORIT-KLIMA-24000-BTU-INVERTER-WI-FI-02-1024x576.png"
-      ],
-      "specificationsDoc": "assets/PDF-Specifications/FAVORIT-INVERTER-WI-FI-TOTAL.pdf",
       "specifications": {
         "Kapaciteti i Ftohjes (kW)": "3.5(0.8-4.1)",
         "Kapaciteti i Ftohjes (BTU)": "11942",
@@ -3156,6 +2630,7 @@
       ],
       "specificationsDoc": "assets/PDF-Specifications/FVC-123.pdf",
       "specifications": {
+        "Димензии (B/Д/Ш)": "247x308x511",
         "2 tuba plastike": "√",
         "regulator elektronik për furçën plastike të dyshemes": "Po",
         "butoni për shpullar automatik të kabllovës": "√",
@@ -3201,35 +2676,6 @@
         "gjatësia e kabllit": "4.5 m",
         "fuqia": "2000 W",
         "ngjyra": "e zeza/e kuqe"
-      }
-    },
-    {
-      "id": 112,
-      "name": "Pastrores Vakumi FVC 160",
-      "description": [
-        "Pastroresi FVC 160 përmban një motor të fuqishëm prej 2000W me një sistem ciklonik dhe filtrë HEPA, duke siguruar pastrim efikas dhe filtrim të ajrit. Ai ofron rregullim të fuqisë për performancë të personalizuar, së bashku me një indikator të nivelit të pluhurit për të lehtësuar përdorimin.",
-        "I pajisur me një tubë teleskopike dhe një kontejner prej 2 litra, ky pastrores ofron shumëfishësi dhe kapacitet të mjaftueshëm. Operon në një klasë energjie A dhe lëshon një nivel zhurme prej 81 dBA, e përshtatshme për seancat e qetë të pastrimit."
-      ],
-      "pictures": [
-        "assets/Small domestic appliances/VACUUM CLEANER FVC 160/2-FAVORIT-pravosmukalka-FVC-160-01-1024x576.png",
-        "assets/Small domestic appliances/VACUUM CLEANER FVC 160/FVC-160-2.png",
-        "assets/Small domestic appliances/VACUUM CLEANER FVC 160/FVC160-Hepa-filter-nadvoresen-02-01-1024x576.png",
-        "assets/Small domestic appliances/VACUUM CLEANER FVC 160/FVC160-Hepa-filter-vnatresen-03-01-1024x576.png",
-        "assets/Small domestic appliances/VACUUM CLEANER FVC 160/FVC-160-3.png"
-      ],
-      "specificationsDoc": "assets/PDF-Specifications/FVC-160.pdf",
-      "specifications": {
-        "fuqia": "2000 W",
-        "sistemi ciklonik": "√",
-        "filtrë HEPA": "√",
-        "rregullimi i fuqisë": "√",
-        "indikatori i nivelit të pluhurit në sado": "√",
-        "tubë teleskopike": "√",
-        "madhësia e kontejnerit": "2 l.",
-        "klasa energjitike": "А",
-        "nivel i zhurmës": "81 dBA",
-        "gjatësia e kabllos": "4.5 m",
-        "pesha": "5.15 kg."
       }
     },
     {
@@ -3299,372 +2745,6 @@
       }
     },
     {
-      "id": 115,
-      "name": "Përdhës FVC 585",
-      "description": [
-        "Përdhësi FVC 585 është një zgjidhje e fuqishme dhe kompakte për pastrimin me një sistem ciklonik prej 600W dhe filtrues HEPA, që siguron largimin efikas të pluhurit dhe shkurtësirës. Madhësia e konteinerit të tij prej 0.5 litra dhe dizajni i lehtë, me peshë vetëm 1.85kg, e bëjnë atë ideale për detyra të shpejta pastrimi.",
-        "Ky përdhës vepron në heshtje me një nivel zhurme prej 80 dBA, duke ofruar një përvojë të rehatshme për pastrim. Ai ka një kabllë me gjatësi 5 metra për të arritur më gjërë, duke lejuar pastrimin e zona më të mëdha pa ndryshuar shpesh prizat e energjisë."
-      ],
-      "pictures": [
-        "assets/Small domestic appliances/VACUUM CLEANER FVC 585/7.1-FAVORIT-pravosmukalka-FVC-585-CELOSNA-01-1024x576.png",
-        "assets/Small domestic appliances/VACUUM CLEANER FVC 585/7-FAVORIT-pravosmukalka-FVC-585-01-1024x576.jpg",
-        "assets/Small domestic appliances/VACUUM CLEANER FVC 585/7.2-FAVORIT-pravosmukalka-FVC-585-01-1024x576.png",
-        "assets/Small domestic appliances/VACUUM CLEANER FVC 585/7.3-FAVORIT-FVC-585-01-1024x576.png",
-        "assets/Small domestic appliances/VACUUM CLEANER FVC 585/FVC585-HEPA-filtervnatresen-01-1024x576.png"
-      ],
-      "specificationsDoc": "assets/PDF-Specifications/FVC-306.pdf",
-      "specifications": {
-        "fuqia": "600 W",
-        "sistemi ciklonik": "√",
-        "filtër HEPA": "√",
-        "madhësia e konteinerit": "0,5 l.",
-        "klasa energjetike": "A",
-        "nivel i zhurmës": "80 dBA",
-        "gjatësia e kabllos": "5 m",
-        "pesha": "1,85 kg."
-      }
-    },
-    {
-      "id": 116,
-      "name": "TV LED 32DF1M1T2S2A-13HD ANDROID",
-      "description": [
-        "Ky televizor LED 32 inçsh ofron zgjidhje me rezolucion HD Ready (1366×768) dhe një tunel të integruar që mbështet kanale dixhitale DVB-T2/C. Ka një dizajn tërheqës të kornizës së zeze, funksionalitet smart i fuqizuar nga Android 11 dhe kompatibilitet me montimin në mur VESA. Opsionet e lidhjes përfshijnë SCART, 3 HDMI, VGA, 2 USB dhe Wi-Fi. Ka aftësi të ndërtuara pa tel, mbështet aplikacionet Google Play dhe ofron funksion PVR për regjistrimin e përmbajtjes.",
-        "TV-ja ka një procesor quad-core që punon në 1.8GHz, me 8GB ROM dhe 1GB RAM memorie. Karakteristikat e tjera përfshijnë shfletimin e televizionit të zgjuar, mbështetjen për disa gjuhë dhe kompatibilitetin me standardet DVB-C dhe DVB-T2. Vjen me 2x10W speakerë, këmbë metali argjendi dhe dimensione 718.6mm x 442.1mm x 86.1mm me mbajtësin."
-      ],
-      "pictures": [
-        "assets/TV/LED ТЕЛЕВИЗОР 32DF1M1T2S2A-13HD ANDROID/TV-32DF1M1T2S2A-13HD-44-1024x576.png"
-      ],
-      "specificationsDoc": "assets/TV/LED Телевизор 32DF1M1T2S2A-13HD ANDROID/Upatstva-za-upotreba-za-TV-13-android-FINAL-istoto-e-za-site-modeli.pdf",
-      "specifications": {
-        "diagonal": "32” (80cm)",
-        "ekran": "LED",
-        "rezolucion": "1366×768 (HD READY)",
-        "tuneli": "DIXHITAL DVB-T2/C",
-        "ndriçimi": "220 CD/M2 +/-10%",
-        "koha e përgjigjes": "8 MS",
-        "Smart": "√",
-        "pa tel": "E NDËRTUAR",
-        "lidhje": "SCART, 3 HDMI, VGA, 2 USB, MBËSHTET CL+, WI-FI",
-        "ngjyra e kornizës": "KORNIZA E ZEZË E HOLLË",
-        "SHPEJTESIA": "QUAD CORE 1.8GHZ",
-        "MENORJA": "MEMORY ROM 8GB, RAM 1GB",
-        "gjuha": "MAQEDONISHT; ANGLISHT; KROATISHT; SERBISHT",
-        "MBËSHTET APLIKACIONET GOOGLE PLAY": "√",
-        "telekomanda": "ME BUTON DIREKT PËR NETFLIX; YOUTUBE",
-        "internet": "SHFLETUES I TV-SË TË ZGJUAR (NETFLIX; YOU TUBE; HBBTV; AMAZON PRIME…)",
-        "FUNKSIONI PVR REGJISTRON PËRMBLEDHJEN": "√",
-        "tjetër": "MBËSHTET NJË TASTIERË PA TEL; REGJIM HOTELI; MENU MULTILINGUAL",
-        "Dvb-c": "√",
-        "DVB-T2": "√",
-        "speakerët": "2x10W",
-        "këmbët": "KËMBË METALIKE ARGJENDI",
-        "dimensionet me mbajtës (VxLxG)": "718,6mm x 442,1mm x 86,1mm"
-      }
-    },
-    {
-      "id": 117,
-      "name": "TV LED 32DF1P4T2HD",
-      "description": [
-        "Ky televizor LED 32 inçsh përfaqëson një ekran me rezolucion të lartë (1366×768) dhe një tunel DVB-T2/C për qasje në kanale dixhitale. Me opsionet e lidhjes themelore duke përfshirë SCART, 2 portat HDMI, VGA dhe Wi-Fi të ndërtuar, ofron qasje të lehtë në përmbajtje online. Duke përfshirë një dizajn tërheqës të kornizës së zeze të hollë, ky televizor shton elegancë në çdo hapësirë.",
-        "Gjithashtu përfshin 2x10W speakerë për një audio të përfshirë. Dimensione kompakte (718.6mm x 442.1mm x 86.1mm) dhe një peshë neto prej 3.6kg e bëjnë të lehtë për montim dhe manovrim. Ky model vjen me 1GB RAM dhe 4GB ROM, duke siguruar mjaftueshëm hapësirë për aplikacionet dhe përmbajtjen e dëshiruar."
-      ],
-      "pictures": [
-        "assets/TV/LED ТЕЛЕВИЗОР 32DF1P4T2HD/TV-32DF1P4T2HD-01-1024x576.png"
-      ],
-      "specificationsDoc": "assets/TV/LED ТЕЛЕВИЗОР 32DF1M1T2S2A-13HD ANDROID/Upatstva-za-upotreba-za-TV-13-android-FINAL-istoto-e-za-site-modeli.pdf",
-      "specifications": {
-        "diagonal": "32” (80cm)",
-        "ekran": "LED",
-        "rezolucion": "1366×768 (HD)",
-        "tuneli": "DIXHITAL DVB-T2/C",
-        "Smart": "X",
-        "pa tel": "PËRGJEGJËS",
-        "lidhje": "SCART, 2 HDMI, VGA, WI-FI",
-        "ngjyra e kornizës": "KORNIZA E ZEZË E HOLLË",
-        "SPEAKERËT": "2X10W",
-        "këmbët": "STAND QË MBËSHTET FIKSIMIN",
-        "DVB-C": "√",
-        "DVB-T2": "√",
-        "dimensionet me mbajtës": "718,6mm X 442,1mm X 86,1mm",
-        "peshë neto bruto": "3.6KG"
-      }
-    },
-    {
-      "id": 118,
-      "name": "LED TV 32DN4M3T2S2A – 11HD ANDROID",
-      "description": [
-        "Ky televizor LED 32 inç ka një ekran të gjallë me rezolucion HD Ready (1366×768), duke siguruar vizuale të qarta dhe të pastra, ndërsa tuner-i i integruar mbështet kanale digjitale DVB-T2/S2 për qasje të paqartë në kanale digjitale.",
-        "Me funksionet e mençura të fuqizuara nga Android 11, përdoruesit mund të shijojnë një varietet aplikacionesh dhe shërbimesh të transmetimit drejtpërdrejtë nga televizori i tyre. Dizajni elegant i kornizës së zezë jep një prekje elegante çdo hapësire banimi, ndërsa kompatibiliteti me VESA nosaç për montimin në mur ofron opsione të instalimit fleksibël sipas preferencave tuaja."
-      ],
-      "pictures": [
-        "assets/TV/LED ТЕЛЕВИЗОР 32DN4M3T2S2A – 11HD ANDROID/FAVORIT-LED-TV-32DN4M3T2A-70HD-ANDROID-32-SMART-Android (1).png",
-        "assets/TV/LED ТЕЛЕВИЗОР 32DN4M3T2S2A – 11HD ANDROID/FAVORIT-LED-TV-32DN4M3T2A-70HD-ANDROID-32-SMART-Android (2).png"
-      ],
-      "specificationsDoc": "assets/TV/LED ТЕЛЕВИЗОР 32DN4M3T2S2A – 11HD ANDROID/TV-32DN4M3T2S2A-ANDROID-11-i-TV-43DN4JM2T2A-ANDROID-11.pdf",
-      "specifications": {
-        "dijagonala": "32” (80CM)",
-        "tip ekrani": "LED",
-        "rezolucija": "1366×768 (HD READY)",
-        "tuner": "DIGJITAL DVB-T2/S2",
-        "ndricimi": "220 CD/M2",
-        "koha e reagimit": "8,5 MS",
-        "smart": "√",
-        "lidhja pa tel": "E NDËRTUAR",
-        "lidhja": "SCART, HDMIX3, VGA, USB X2, MBËSHTETJE CL+, WI-FI",
-        "VESA nosaç për mur": "VESA (200MM X100MM)",
-        "sistemi operativ": "ANDROID 11",
-        "ngjyra e kornizës": "E ZEZA",
-        "procesori": "ÇETËRJEZIKËSH 1.2GHZ",
-        "shpejtësia": "ROM 8GB, RAM 1GB",
-        "gjuha": "MAQEDONISHT; ANGLISHT; KROATISHT; SERBISHT",
-        "mbështetja e aplikacioneve Google Play": "√",
-        "funksioni PVR për regjistrimin e përmbajtjes": "√",
-        "tjetra": "MBËSHTET TASTIERË PA TEL; REZHIM HOTELI; MENYJE ME SHUMË GJUHË",
-        "dvb-c": "√",
-        "dvb-t2/s2": "√",
-        "zërat": "2X7W",
-        "nogat": "HEKURA",
-        "dimensionet me postament (GxLxD)": "730MM X 470MM X 225 MM",
-        "dimensionet pa postament (GxLxD)": "730MM × 442MM × 86 MM"
-      }
-    },
-    {
-      "id": 119,
-      "name": "TV LED 32DN4P4T2HD",
-      "description": [
-        "Ky televizor LED 32-inç ka një rezolucion ekranit prej 1366×768 (HD Ready) dhe një madhësi diagonale prej 80cm. Ai është i pajisur me një tunër dixhital DVB-T2/C për pranim të qartë. Televizori ofron një ndriçim prej 220 cd/m2 dhe një kohë reagimi prej 8.5 ms, duke siguruar vizuale tërheqëse me bllofim minimal të lëvizjes. Edhe pse nuk është një televizor i zgjuar (smart TV), ai ofron shumë opsione lidhjesh, duke përfshirë Scart, HDMIx3, VGA, USB x2, AV, dalje për kufje, audio koaksial, dhe aftësi Wi-Fi."
-      ],
-      "pictures": [
-        "assets/TV/LED ТЕЛЕВИЗОР 32DN4P4T2HD/1.-FAVORIT-LED-TV-32DN4P4T2HD-32-Digital-tv-01-1-1024x576.png",
-        "assets/TV/LED ТЕЛЕВИЗОР 32DN4P4T2HD/32DN4P4ANHD-1024x768.png"
-      ],
-      "specificationsDoc": "assets/PDF-Specifications/UPATSTVO-ZA-TV-32-40-OBICEN.pdf",
-      "specifications": {
-        "dijagonala": "32” (80cm)",
-        "ekran": "LED",
-        "rezolucioni": "1366×768 (HD Ready)",
-        "tuner": "Digital DVB-T2/C",
-        "ndriçimi": "220 cd/m2 +/-10%",
-        "koha e reagimit": "8.5 ms",
-        "Smart": "jo",
-        "Wireless": "jo",
-        "povezanost": "Scart, HDMIx3, VGA, USB x2, AV, dalje për kufje, audio koaksial, Wi-Fi",
-        "montimi i murit": "VESA (200ммx100мм)",
-        "ngjyra e kadrit": "e zeza",
-        "gjuha": "Maqedonisht; Anglisht; Kroatisht; Serbisht",
-        "zërat": "2x10W",
-        "këmbët": "plastike",
-        "Dvb-c": "√",
-        "Dvb-t2": "√",
-        "dimensionet me mbajtësin": "730mm x 470.5mm x 225mm",
-        "dimensionet pa mbajtësin": "730mm x 442mm x 86mm",
-        "pesha neto": "4 kg",
-        "tjetra": "mënyrë hotel"
-      }
-    },
-    {
-      "id": 120,
-      "name": "LED TV 40DN4JM3T2A – ANDROID (7.0)",
-      "description": [
-        "Ky televizor LED 40-inç ofron një rezolucion të shkëlqyer Full HD (1920×1080) nëpër ekranin e tij diagonale prej 101cm. Ai ka një tunër DVB-T/C/T2 për pranim të kanaleve të shumta dhe ofron një ndriçim prej 250 cd/m2 me një kohë reagimi prej 8 ms për vizuale tërheqëse. Ky televizor i zgjuar (smart TV) vjen me Android 7.0, e ushqyer nga një procesor katër-jetësh 1.2GHz me 8GB depo dhe 1GB RAM, duke ofruar qasje në aplikacionet e Google Play dhe mbështetjen për regjistrim PVR."
-      ],
-      "pictures": [
-        "assets/TV/LED ТЕЛЕВИЗОР 40DN4JM3T2A – ANDROID (7.0)/6.-FAVORIT-LED-TV-40DN4JM3T2A-70FHD-ANDROID-40-SMART-Android-tv-01-1024x576.png",
-        "assets/TV/LED ТЕЛЕВИЗОР 40DN4JM3T2A – ANDROID (7.0)/4.-FAVORIT-LED-TV-40DN4JM3T2A-70FHD-ANDROID-40-SMART-Android-tv-01-1024x576.png"
-      ],
-      "specificationsDoc": "assets/PDF-Specifications/led-televizori.pdf",
-      "specifications": {
-        "diagonal": "40\" (101cm)",
-        "screen": "LED",
-        "resolution": "1920×1080 (Full HD)",
-        "tuner": "DVB-T/C/T2",
-        "lighting": "250cd/m2",
-        "response time": "8 ms",
-        "Smart": "√",
-        "Wireless": "Në të brendshme",
-        "connectivity": "Scart, HDMIx3, VGA, USB x2, CI+, dalje për kufje, audio koaksial, Wi-Fi",
-        "wall mount": "VESA (200ммx100мм)",
-        "android operating system": "Android 7.0",
-        "frame color": "e zeza",
-        "memory speed": "Katër-jetësh 1.2GHz",
-        "memory": "8GB, RAM 1GB",
-        "language": "Maqedonisht; Anglisht; Kroatisht; Serbisht",
-        "supports google play applications": "√",
-        "PVR function recording content": "√",
-        "other": "mbështet tastierën pa tel dhe režimin e hotelit; menu e shumëgjuhëshme",
-        "Dvb-c": "√",
-        "Dvb-t2": "√",
-        "speakers": "2x10W",
-        "legs": "hekur",
-        "dimensions with holder": "903x553x179.7 mm",
-        "dimensions without holder": "903×515.7×83 mm",
-        "net weight": "6.00 kg"
-      }
-    },
-    {
-      "id": 121,
-      "name": "TV LED 43DF3PHT2S2A-13FHD ANDROID",
-      "description": [
-        "Ky televizor LED 43-inç ofron rezolucion Full HD (1920×1080) me një madhësi diagonale ekrani 109cm. Ai ka një tuner DVB-T2/S2, e bënë të kompatueshëm me transmetimet tokësore dhe satelitore. TV ka një ndriçim të 220 cd/m2 dhe një kohë përgjigjeje 8ms, ofron vizualizime të qarta dhe tërheqëse.",
-        "Ky televizor inteligjent funksionon në Android 13 dhe është i pajisur me një procesor quad-core 1.8GHz, 8GB ROM dhe 1GB RAM, ofrues i një përvoje të përdoruesit tërheqëse dhe të përgjigjshme. Ka WiFi të brendshëm dhe mbështet një gamë të gjerë të opsioneve të lidhjeve duke përfshirë SCART, 3 porta HDMI, VGA, 2 porta USB, CI+, dalje për dëgjim me kufje, dhe audio koaksial."
-      ],
-      "pictures": [
-        "assets/TV/LED ТЕЛЕВИЗОР 43DF3PHT2S2A-13FHD ANDROID/TV-43DF3PHT2S2A-13FHD-44-1024x576.png",
-        "assets/TV/LED ТЕЛЕВИЗОР 43DF3PHT2S2A-13FHD ANDROID/2.-FAVORIT-LED-TV-32DN4M3T2A-70HD-ANDROID-32-SMART-Android-tv-01-1024x576.png"
-      ],
-      "specificationsDoc": "assets/PDF-Specifications/Upatstva-za-upotreba-za-TV-13-android-FINAL-istoto-e-za-site-modeli.pdf",
-      "specifications": {
-        "diagonal": "Diagonalja: 43\" (109cm)",
-        "ekrani": "LED",
-        "klasa energjetike": "А+",
-        "rezolucion": "1920×1080 (Full HD)",
-        "tuner": "DVB-T2/S2",
-        "ndriçimi": "220CD/M2 +/-10%",
-        "koha e përgjigjes": "8 ms",
-        "Smart": "√",
-        "Pa Wireless": "I ndërtuar",
-        "lidhshmëria": "SCART, 3 HDMI, VGA, 2 USB, CI+, DALJE PËR DËGJIM ME KUFJE, AUDIO KOAKSIAL, WI-FI",
-        "sistemi operativ Android": "Android 13",
-        "ngjyra e kornizës": "KORNIZA E HOLLË E ZEZË",
-        "shpejtësia": "QUAD CORE 1.8GHZ",
-        "memoria": "MEMORIA ROM 8GB, RAM 1GB",
-        "gjuha": "Maqedonisht; Anglisht; Kroatisht; Serbisht",
-        "mbështet aplikacionet google play": "√",
-        "piloti": "ME TASTIERË DHE BUTON NETFLIX; YOUTUBE",
-        "interneti": "SHFLETORE SMART TV (NETFLIX; YOUTUBE; HBBTV; AMAZON PRIME…)",
-        "funksioni PVR regjistrimi përmbajtje": "√",
-        "tjetër": "MBËSHTET NJË TASTIERË PA TROKAS WIRELESS; REGJIMI I HOTELIT; MENUJA ME SHUMË GJUHË",
-        "Dvb-c": "√",
-        "DVB-T2/S2": "√",
-        "strehuesit": "2x10W",
-        "këmbët": "PLASTIK I ZEZË",
-        "dimensionet me mbesenë": "952.60mm X 539.10mm X 84,40mm",
-        "pesha neto": "Pesha neto: 6,60 kg"
-      }
-    },
-    {
-      "id": 122,
-      "name": "TV LED 43DN4JM2T2S2A 11FHD ANDROID (11)",
-      "description": [
-        "Ky televizor LED 43-inç ofron rezolucion Full HD (1920×1080) në një ekran diagonal prej 109cm. Ka një tuner DVB-T2/S2 për transmetime tokësore dhe satelitore dhe ofron një ndriçim prej 250 cd/m2 me një kohë përgjigjeje 8 ms për imazhe të qarta.",
-        "I pajisur me funksionalitet inteligjent, ky televizor funksionon në Android 11 me një procesor quad-core 1.2GHz, 8GB ruajtje dhe 1GB RAM, siguruar një performancë tërheqëse dhe qasje në aplikacione të Google Play. Përmban Wi-Fi të brendshëm dhe opsione të ndryshme të lidhjeve si Scart, HDMI x3, VGA, USB x2, CI+, dalje për dëgjim me kufje, audio koaksial, dhe mbështet montimin VESA në mur (200mmx100mm)."
-      ],
-      "pictures": [
-        "assets/TV/LED ТЕЛЕВИЗОР 43DN4JM2T2S2A – 11FHD ANDROID (11)/123456-1024x576.png",
-        "assets/TV/LED ТЕЛЕВИЗОР 43DN4JM2T2S2A – 11FHD ANDROID (11)/5.-FAVORIT-LED-TV-43DN4JM2T2A-44FHD-ANDROID-43-SMART-Android-tv-01-1024x576.png"
-      ],
-      "specificationsDoc": "assets/PDF-Specifications/Udhëzime për TV SMART ANDROID 32-43-50-SQ.pdf",
-      "specifications": {
-        "diagonal": "43\" (109cm)",
-        "ekran": "LED",
-        "rezolucion": "1920×1080 (Full HD)",
-        "tuner": "DVB-T2/S2",
-        "ndriçimi": "250cd/m2",
-        "koha përgjigjje": "8 ms",
-        "Smart": "√",
-        "Pa Wireless": "I ndërtuar",
-        "lidhshmëria": "Scart, HDMI x3, VGA, USB x2, CI+, dalje për dëgjim me kufje, audio koaksial, Wi-Fi",
-        "montimi mur": "VESA (200mmx100mm)",
-        "sistemi operativ Android": "Android 11",
-        "ngjyra ramkës": "e zezë",
-        "shpejtësia": "Quad core 1.2GHz",
-        "memoria": "memoria 8GB, RAM 1GB",
-        "gjuha": "Maqedonisht; Anglisht; Kroatisht; Serbisht",
-        "mbështet aplikacionet google play": "√",
-        "funksioni PVR regjistrimi përmbajtje": "√",
-        "tjetër": "mbështet një tastierë pa tel, regjimi hotelier, menuja me disa gjuhë",
-        "Dvb-c": "√",
-        "DVB-T2/S2": "√",
-        "zërat": "2x10W",
-        "këmbët": "hekur",
-        "dimensionet me mbesenë": "903x553x179,7 mm",
-        "dimensionet pa mbesenë": "903×515,7×83 mm",
-        "pesha neto": "Pesha neto: 7,00 kg"
-      }
-    },
-    {
-      "id": 123,
-      "name": "TV LED 55DK5JM2T2S2A -11UHD 4K ANDROID(11)",
-      "description": [
-        "Ky televizor LED 55-inç ofron një rezolucion të shkëlqyer 4K Ultra HD (3840×2160) në një ekran diagonal prej 140cm, duke ofruar imazhe të ngjashme dhe të detajuara. Është i pajisur me një tuner DVB-T2/S2 për transmetime tokësore dhe satelitore dhe ofron një ndriçim prej 280 cd/m2 me një kohë përgjigjeje prej 9.5 ms, duke siguruar lëvizje të shkëlqyeshme dhe qartësi.",
-        "Si një TV inteligjent që punon në Android 11, krenohet me një procesor quad-core 1.2GHz, 8GB ruajtje dhe 1.5GB RAM, duke siguruar performancë tërheqëse dhe qasje në aplikacione të Google Play. Wi-Fi i brendshëm mundëson lidhje pa tel, duke kompletuar shumëllojshmërinë e lidhjeve fizike duke përfshirë Scart, HDMI x3, VGA, USB x2, CI+, dalje për dëgjim me kufje, dhe audio koaksial."
-      ],
-      "pictures": [
-        "assets/TV/LED ТЕЛЕВИЗОР 55DK5JM2T2S2A-11UHD 4K ANDROID(11)/11.-FAVORIT-LED-TV-55DK5JM2T2S2A-90UHD-ANDROID-55-SMART-Android-tv-01-1024x576.png",
-        "assets/TV/LED ТЕЛЕВИЗОР 55DK5JM2T2S2A-11UHD 4K ANDROID(11)/7.-FAVORIT-LED-TV-55DK5JM2T2S2A-90UHD-ANDROID-55-SMART-Android-tv-1024x645.png"
-      ],
-      "specificationsDoc": "assets/PDF-Specifications/Udhëzime për TV SMART ANDROID për 55-SQ.pdf",
-      "specifications": {
-        "diagonal": "55\" (140cm)",
-        "ekran": "LED",
-        "rezolucion": "3840×2160 (ULTRA HD) 4K",
-        "tjuner": "DVB-T2/S2",
-        "ndriçimi": "280cd/m2 +/-10%",
-        "koha përgjigjje": "9.5 ms",
-        "Smart": "√",
-        "Pa tel": "i brendshëm",
-        "lidhshmëria": "Scart, HDMI x3, VGA, USB x2, CI+, dalje për dëgjim me kufje, audio koaksial, Wi-Fi",
-        "montimi mur": "VESA (200mmx100mm)",
-        "sistemi operativ Android": "Android 11",
-        "ngjyra ramkës": "ARGJENDT",
-        "shpejtësia": "Quad core 1.2GHz",
-        "shpejtësia memorie": "memoria 8GB, RAM 1.5GB",
-        "gjuha": "Maqedonisht; Anglisht; Kroatisht; Serbisht",
-        "mbështet aplikacionet google play": "√",
-        "PVR funksioni regjistrimi përmbajtje": "√",
-        "mënyra hotele": "√",
-        "tjetër": "mbështet një tastierë pa tel, menu e shumëgjuhëshme",
-        "Dvb-c": "√",
-        "DVB-T2/S2": "√",
-        "zërat": "2x10W",
-        "këmbët": "hekur",
-        "dimensionet me mbesenë": "1245mm x 812mm x 254mm",
-        "dimensionet pa mbesenë": "1245mm x 766mm x 83mm",
-        "pesha neto": "Pesha neto: 12 kg"
-      }
-    },
-    {
-      "id": 124,
-      "name": "Televizion LED 55DЕ2М1T2S2A-13UHD 4K ANDROID",
-      "description": [
-        "Kjo TV LED 55-inç kombinon karakteristika të mahnitshme me një dizajn elegant. Ajo ka një rezolucion 4K Ultra HD (3840×2160) në një ekran me diagonale 140 cm, duke ofruar qartësi dhe detaje të jashtëzakonshme. Me një klasifikim të efikasitetit energjetik A, kjo TV siguron performancë optimale duke kursyer energji.",
-        "E pajisur me tuner DVB-T2/S2, TV-ja mbështet transmetimet tokësore dhe satelitore. Ajo ka një ndriçim prej 270 cd/m2 dhe një kohë reagimi prej 8 ms për vizualizime të qeta. Si një Smart TV që funksionon në Android 13, e fuqizuar nga një procesor quad-core 1.2GHz dhe 8GB ROM me 1.9GB RAM, ajo ofron performancë pa ndërprerje dhe qasje në aplikacionet e Google Play."
-      ],
-      "pictures": [
-        "assets/TV/LED ТЕЛЕВИЗОР 55DЕ2М1T2S2A-13UHD 4K ANDROID/TV-55DEM1T2S2A-13UHD-44-1024x576.png"
-      ],
-      "specificationsDoc": "assets/PDF-Specifications/UPATSTVO-ZA-TV-SMART-ANDROID-za-55-MK.pdf",
-      "specifications": {
-        "Dijagonale": "55\" (140 cm)",
-        "Ekran": "LED",
-        "Klasa energjetike": "A",
-        "Rezolucioni": "3840×2160 (Ultra HD) 4K",
-        "Tuner": "DVB-T2/S2",
-        "Ndriçimi": "270 cd/m2 +/-10%",
-        "Koha e reagimit": "8 ms",
-        "Smart": "√",
-        "Pa tela": "i integruar",
-        "Lidhshmëria": "SCART, HDMIX3, VGA, USB x2, CI+, dalje për kufje, audio koaksial, Wi-Fi",
-        "Sistemi operativ Android": "Android 13",
-        "Ngjyra e kornizës": "Kornizë e hollë argjendi",
-        "Shpejtësia": "Quad-core 1.2GHz",
-        "Memorja": "8GB ROM, 1.9GB RAM",
-        "Gjuhët": "maqedonisht; anglisht; kroatisht; serbisht",
-        "Telekomandë": "me Netflix të drejtpërdrejtë; buton YouTube",
-        "Internet": "Shfletues Smart TV (Netflix, YouTube, HBBTV, Amazon Prime…)",
-        "Mbështet aplikacionet Google Play": "√",
-        "Funksioni PVR për regjistrim": "√",
-        "Modalitet hotelieri": "√",
-        "Të tjera": "Mbështet tastierë pa tela; meniu shumëgjuhësh",
-        "DVB-C": "√",
-        "DVB-T2/S2": "√",
-        "Lartëfolës": "2x10W",
-        "Këmbët": "argjendi",
-        "Dimensionet": "1245 mm x 766 mm x 83 mm",
-        "Pesha neto": "12 kg"
-      }
-    },    
-    {
       "id": 125,
       "name": "KLIMËR INVERTER 24000BTU FF (-15 °C)",
       "description": [
@@ -3698,38 +2778,6 @@
         "Dimensionet (jashtëm, neto)": "900x700x350",
         "Temperatura ambiente (ftohja)": "16~52℃",
         "Temperatura ambiente (ngrohja)": "-15~30℃"
-      }
-    },
-    {
-      "id": 126,
-      "name": "KLIMËR INVERTER 24000BTU FF (-15 °C)",
-      "description": [
-        "Kjo makinë e kondicionimit të ajrit me efikasitet të lartë ofron ftohje dhe ngrohje të fuqishme, me vlerësime SEER 6.53 dhe SCOP 4.09 për efikasitetin e energjisë. Operon në heshtje, ka teknologjinë I Feel, gati për Wi-Fi, dhe përdor gazin e miqësueshëm ndaj mjedisit R32.",
-        "Me një peshë neto prej 12.5 kg për njësinën brenda dhe 39 kg për njësinën jashtë, përshtatet lehtësisht në shumicën e hapësirave. Dimensionet e saj janë 1082x330x233 mm për njësinën brenda dhe 900x700x350 mm për njësinën jashtë, me një gamë ftohje nga 16 deri në 49°C dhe ngrohje nga -15 deri në 30°C."
-      ],
-      "pictures": [
-        "assets/Ait Conditioners/AIR CONDITIONER INVERTER 24000BTU FF (-15°C)/12000BTU-QB-HE-HB-18000BTU-QB-HE-HB-vnatresna-edinica-1024x429.png",
-        "assets/Ait Conditioners/AIR CONDITIONER INVERTER 24000BTU FF (-15 °C)/12000BTU-QB-HE-HB-18000BTU-QB-HE-HB-nadvoresna-edinica-1024x719.png"
-      ],
-      "specificationsDoc": "assets/PDF-Specifications/MKD-user-manual-12000BTU-FF-18000BTU-FF-24000BTU-FF-series.pdf",
-      "specifications": {
-        "kapacitet ftojne kw": "7.3 (1.8 – 7.4)",
-        "kapacitet ngrohje kw": "7.3(1.8 – 8.0)",
-        "SEER ftojne": 6.53,
-        "SCOP ngrohje mesatar": 4.09,
-        "SEER klasa energjetike": "A++",
-        "SCOP klasa energjetike mesatare": "A+",
-        "lloji gazi": "R32",
-        "fluksi ajrit": 1300,
-        "ndjej": "Po",
-        "gati wifi": "Po",
-        "nivel buke jashte brenda db": "63/66",
-        "pesha nete unaze brenda kg": 12.5,
-        "pesha nete jashte unaze kg": 39,
-        "dimensionet nete unaze": "1082x330x233",
-        "dimensionet nete jashte unaze": "900x700x350",
-        "temperatura rreze herët ftojne": "16~50℃",
-        "temperatura rreze herët ngrohje": "-15~30℃"
       }
     },
     {
@@ -3937,8 +2985,8 @@
           "Prezantimi i lavastoviglieve tona të avancuara, të dizajnuara për të optimizuar përvojën tuaj të larjes së enëve. Me dimensione W/H/D 85/59.8/59.8, ofron një kapacitet të madh deri në 12 sete enësh. Përfshin 5 programe të ndryshueshme, duke përfshirë një cikël të shpejtë 30-minutësh në 40°C, që lar efikasishëm enë të të gjitha llojeve."
         ],
         "pictures": [
-          "assets/Home appliances/Dishwasher F60 – Y14N S/F60-Y14 S-04.png",
-          "assets/Home appliances/Dishwasher F60 – Y14N S/F60-Y14 S-05.png",
+          "assets/Home appliances/Dishwasher F60 – Y14N S/F60-Y14_S-04.png",
+          "assets/Home appliances/Dishwasher F60 – Y14N S/F60-Y14_S-05.png",
           "assets/Home appliances/Dishwasher F60 – Y14N S/F60-Y14 S-06.jpg"
         ],
         "specificationsDoc": "assets/Specifikacionet e Produktit/2.-F60-Y14-F60-Y14-S-EN-SIR-MAK-AL.pdf",
@@ -4027,7 +3075,7 @@
           "dimensione": "82.1/48/50 cm",
           "volumi bruto": "91L",
           "volumi neto": "89L",
-          "klasa energjitike": "F",
+          "klasa energjitike": "E",
           "ngjyra": "bardhë",
           "derë e shkëmbyeshme": "√",
           "këmbët rregullues": "√",
@@ -4051,7 +3099,7 @@
           "dimensione": "144/54/57 cm",
           "volumi bruto net": "216/213 L",
           "volumi refrigerator frymëzues": "171/42 L",
-          "klasa energjitike": "F",
+          "klasa energjitike": "E",
           "gas": "R600",
           "ngjyra": "bardhë/argjend",
           "derët e shkëmbyeshme": "√",
@@ -4080,7 +3128,7 @@
           "volumi neto": "168 L",
           "konsumi i energjisë elektrike": "257 kWh/vit",
           "nivel i zhurmës": "40 dB",
-          "klasa energjitike": "F",
+          "klasa energjitike": "E",
           "gas": "P 600 A",
           "ngjyra": "bardhë/argjend",
           "këmbët rregullues": "√",
@@ -4114,7 +3162,7 @@
           "volumi neto": "324 L",
           "konsumi i energjisë elektrike": "306 kWh/vit",
           "nivel i zhurmës": "41 dB",
-          "klasa energjitike": "F",
+          "klasa energjitike": "E",
           "gas": "P 600 A",
           "ngjyra": "bardhë/inox",
           "këmbët rregullues": "√",
@@ -4150,7 +3198,7 @@
           "volumi bruto": "341 L",
           "volumi neto": "324 L",
           "volumi refrigerator ftohës": "230 L / 106 L",
-          "klasa energjitike": "F",
+          "klasa energjitike": "E",
           "gas": "P 600 A",
           "ngjyra": "bardhë/inox",
           "derët e shkëmbyeshme": "√",
@@ -4377,7 +3425,9 @@
             "Rezolucioni": "1920×1080 (FHD)",
             "Tuner": "DVB-T2/S2",
             "Ndriçimi": "180CD/M2 +/-10%",
+            "Këndi i shikimit": "176° x 176°",  
             "Koha e përgjigjes": "8 ms",
+            "Freskimi i ekranit": "60 Hz",
             "SMART": "√",
             "Pa tela": "I integruar",
             "Lidhshmëria": "LAN-1, HEAD PHONE 1; COAX AUDIO-1; RF IN 2; HDMI, 2 USB porta, CI 1, WI-FI",
@@ -4784,7 +3834,769 @@
             "Pesha": "32.5 KG",
             "Ngjyra": "E BARDHË"
           }
-        }        
-      
-                      
+        },
+        {
+          "id": 162,
+          "name": "Lavatriçe e integruar BI60-I14FN",
+          "description": [],
+          "pictures": [
+            "assets/Built In Appliances/Built-in dishwasher BI60 – I14 (fully integrated)/BI60-I14N.jpg",
+            "assets/Built In Appliances/Built-in dishwasher BI60 – I14 (fully integrated)/BI60-I14N-OPEND.png"
+          ],
+          "specificationsDoc": "assets/Built In Appliances/Built-in dishwasher BI60 – I14 (fully integrated)/BI60-I14N-PDF.pdf",
+          "specifications": {
+              "modeli": "BI60-I14",
+              "lloji": "plotësisht e integruar",
+              "Dimensionet L/G/T": "82cm/59.8cm/55cm",
+              "kapaciteti maksimal": "12 sete enësh",
+              "programet": 5,
+              "nivelet e temperaturës": 3,
+              "klasa e energjisë": "A++",
+              "klasa e tharjes": "A",
+              "konsumi i ujit në programin ECO": "12 L ujë",
+              "konsumi i energjisë (varësisht nga programi)": "0.90 – 1.55 kWh",
+              "kohëzgjatja e programit ECO": "222 min",
+              "mbrojtje e ngrohësit": "√",
+              "mbrojtje nga përmbytja": "√",
+              "plotësisht e integruar": "√",
+              "butoni On/Off": "√",
+              "butoni për zgjedhjen e programeve": "√",
+              "nisje e vonuar": "3, 6 dhe 9 orë",
+              "gjysmë ngarkese": "√",
+              "tregues për mungesë kripe": "√",
+              "tregues për mungesë shkëlqyesi": "√",
+              "tregues i përfundimit të punës": "√",
+              "niveli i zhurmës": "54 dB",
+              "program i shpejtë": "30 min / 40 °C"
+          }
+        },
+        {
+          "id": 163,
+          "name": "Sobë e integruar S 70MTB-40",
+          "description": [],
+          "specificationsLabel": "Specifikimet për furrë",
+          "specificationsExtraLabel": "Specifikimet për pllakë",
+          "specificationsDocLabel": "Udhëzues për furrë (PDF)",
+          "specificationsDocExtraLabel": "Udhëzues për pllakë (PDF)",
+          "pictures": [
+            "assets/Built In Appliances/Built-in oven with stove top S 70MTB-40/RERNA.png",
+            "assets/Built In Appliances/Built-in oven with stove top S 70MTB-40/PLOCA -gore.png",
+            "assets/Built In Appliances/Built-in oven with stove top S 70MTB-40/ploca desno.png"
+          ],
+          "specificationsDoc": "assets/Built In Appliances/Built-in oven with stove top S 70MTB-40/2. BIO-70MTB oven UM-Albanian language.pdf",
+          "specificationsDocExtra": "assets/Built In Appliances/Built-in oven with stove top S 70MTB-40/2. BIH 6060-40T hob UM Abanian language.pdf",
+          "specifications": {
+            "Përmasat e paketimit": "648mm / 688mm / 785mm",
+            "Klasa e energjisë": "A",
+            "Vëllimi i furrës": "70 L",
+            "Panel i zi": "√",
+            "Funksionet e furrës": "8",
+            "Fuqia maksimale": "2900 W",
+            "Kohëmatës": "mekanik",
+            "ECO": "√",
+            "Termostat": "mekanik",
+            "Udhëzues anësor në furrë": "√",
+            "Ventilator": "√",
+            "Dritë e furrës": "√",
+            "Tavë e thellë": "1",
+            "Rrjetë kromi": "1",
+            "Ngjyra": "e zezë"
+          },
+          "specificationsExtra": {
+            "Përmasat e pllakës (GJ/T/L)": "590*520*51 mm",
+            "Klasa e energjisë": "A",
+            "Numri i zonave ngrohëse": "4",
+            "Diametri i zonave ngrohëse": "2 x Ø165mm / 2 x Ø200mm",
+            "Fuqia e zonave ngrohëse": "Ø200mm - 1800W / Ø165mm - 1200W",
+            "Kontrolli": "me prekje",
+            "Kabllo": "5*1.5mm / 1.2m",
+            "Bllokim për fëmijë": "√",
+            "Lloji i pllakës": "vitroceramike",
+            "Ngjyra e pllakës": "e zezë",
+            "Tregues i sipërfaqes së nxehtë": "√",
+            "Kornizë inoksi": "X",
+            "Nivelet e fuqisë": "9"
+          }
+        },
+        {
+          "id": 164,
+          "name": "Enëlarëse DW 45FS5P-9",
+          "description": [],
+          "pictures": [
+            "assets/Home appliances/Dishwasher DW 45FS5P-9/DW 45FS5P-9.png",
+            "assets/Home appliances/Dishwasher DW 45FS5P-9/DW 45FS5P-9-OTVORENA.png"
+          ],
+          "specificationsDoc": "assets/Home appliances/Dishwasher DW 45FS5P-9/1. DW 45FS5P-9 & DW 45FS5P-09-S Macedonian language.pdf",
+          "specifications": {
+            "Përmasat": "L/Gj/T 845/448/600 mm",
+            "KAPACITETI MAKSIMAL": "9 sete enësh",
+            "programe": "5",
+            "program i shpejtë": "√",
+            "ekran LED": "√",
+            "buton për gjysmë (1/2) mbushje": "√",
+            "klasa e energjisë": "E",
+            "klasa e tharjes": "A",
+            "niveli i zhurmës gjatë punës": "49 dB",
+            "nisje e vonuar": "1-24 orë",
+            "DRY +": "√",
+            "konsumi i energjisë për 100 cikle": "70 kWh",
+            "mbrojtje nga përmbytja": "√",
+            "ngrohës i fshehur": "√",
+            "mbrojtje e ngrohësit": "√",
+            "filtër metalik": "√",
+            "NGJYRA": "E BARDHË/GRI",
+            "Butoni On/Off": "√",
+            "BUTONI START/PAUZË": "√",
+            "INDIKATORI I FUNKSIONIT TË LARJES": "√",
+            "INDIKATORI I MUNGESËS SË KRIPËS": "√",
+            "INDIKATORI I MUNGESËS SË SHKËLQYESIT": "√"
+          }
+        },
+        {
+          "id": 165,
+          "name": "Enëlarëse DW 45FS5P-9 S",
+          "description": [],
+          "pictures": [
+            "assets/Home appliances/Dishwasher DW 45FS5P-9 S/DW 45FS5P-9 S.png",
+            "assets/Home appliances/Dishwasher DW 45FS5P-9 S/DW 45FS5P-9 S -otvorena.png"
+          ],
+          "specificationsDoc": "assets/Home appliances/Dishwasher DW 45FS5P-9 S/1. DW 45FS5P-9 & DW 45FS5P-09-S Macedonian language.pdf",
+          "specifications": {
+            "Përmasat": "L/Gj/T 845/448/600 mm",
+            "KAPACITETI MAKSIMAL": "9 sete enësh",
+            "programe": "5",
+            "program i shpejtë": "√",
+            "ekran LED": "√",
+            "buton për gjysmë (1/2) mbushje": "√",
+            "klasa e energjisë": "E",
+            "klasa e tharjes": "A",
+            "niveli i zhurmës gjatë punës": "49 dB",
+            "nisje e vonuar": "1-24 orë",
+            "DRY +": "√",
+            "konsumi i energjisë për 100 cikle": "70 kWh",
+            "mbrojtje nga përmbytja": "√",
+            "ngrohës i fshehur": "√",
+            "mbrojtje e ngrohësit": "√",
+            "filtër metalik": "√",
+            "NGJYRA": "E BARDHË/GRI",
+            "Butoni On/Off": "√",
+            "BUTONI START/PAUZË": "√",
+            "INDIKATORI I FUNKSIONIT TË LARJES": "√",
+            "INDIKATORI I MUNGESËS SË KRIPËS": "√",
+            "INDIKATORI I MUNGESËS SË SHKËLQYESIT": "√"
+          }
+        },
+        {
+          "id": 166,
+          "name": "Enëlarëse e integruar DW 45BI7P-9",
+          "description": [],
+          "specificationsDocLabel": "Manual përdorimi",
+          "specificationsDocExtraLabel": "Udhëzime për instalim",
+          "pictures": [
+            "assets/Built In Appliances/Built-in dishwasher DW 45BI7P-9/DW 45BI7P-9.png",
+            "assets/Built In Appliances/Built-in dishwasher DW 45BI7P-9/DW 45BI7P-9-OTVORENA.png"
+          ],
+          "specificationsDoc": "assets/Built In Appliances/Built-in dishwasher DW 45BI7P-9/2. DW 45BI7P-9 user manual Albanian language.pdf",
+          "specificationsDocExtra": "assets/Built In Appliances/Built-in dishwasher DW 45BI7P-9/2. DW 45BI7P-9 installation Albanian language.pdf",
+          "specifications": {
+            "Përmasat L/Gj/T": "815/448/558 mm",
+            "kapaciteti maksimal": "9 sete enësh",
+            "9 sete enësh": "√",
+            "program i shpejtë": "√",
+            "programe": "7",
+            "Buton për gjysmë (½) mbushje": "√",
+            "Dritë e brendshme": "√",
+            "DRY +": "√",
+            "klasa e energjisë": "E",
+            "klasa e tharjes": "A",
+            "mbrojtje e ngrohjes": "√",
+            "mbrojtje nga përmbytja": "√",
+            "plotësisht e integruar": "√",
+            "Butoni NDEZ/FIK": "√",
+            "nisje e vonuar": "1-24 orë",
+            "gjysmë mbushje": "√",
+            "indikator i kripës": "√",
+            "indikator i shkëlqyesit": "√",
+            "zhurma": "49 dB"
+          }
+        },
+        {
+          "id": 167,
+          "name": "Enëlarëse e integruar DW 60BI8P-13",
+          "description": [],
+          "specificationsDocLabel": "Manual përdorimi",
+          "specificationsDocExtraLabel": "Udhëzime për instalim",
+          "pictures": [
+            "assets/Built In Appliances/Built-in dishwasher DW 60BI8P-13/DW 60BI8P-13.png",
+            "assets/Built In Appliances/Built-in dishwasher DW 60BI8P-13/DW 60BI8P-13 -OTVORENA.png"
+          ],
+          "specificationsDoc": "assets/Built In Appliances/Built-in dishwasher DW 60BI8P-13/1. DW 60BI8P-13 user manual -Macedonian language.pdf",
+          "specificationsDocExtra": "assets/Built In Appliances/Built-in dishwasher DW 60BI8P-13/1. DW 60BI8P-13 installation Macedonian language.pdf",
+          "specifications": {
+            "Përmasat L/Gj/T": "815/596/558 mm",
+            "kapaciteti maksimal": "13 sete enësh",
+            "programe": "8",
+            "temperatura": "3",
+            "klasa e energjisë": "E",
+            "klasa e tharjes": "A",
+            "konsumi i ujit në programin ECO": "11 L ujë",
+            "11 L ujë": "√",
+            "mbrojtje nga përmbytja": "√",
+            "plotësisht e integruar": "√",
+            "Butoni On/Off": "√",
+            "buton për zgjedhjen e programeve": "√",
+            "buton për vonesë të larjes": "1-24 orë",
+            "gjysmë mbushje 1/2": "√",
+            "indikator i mungesës së kripës": "√",
+            "indikator i mungesës së shkëlqyesit": "√",
+            "indikator i përfundimit të ciklit": "√",
+            "niveli i zhurmës gjatë punës": "49 dB"
+          }
+        },
+        {
+          "id": 168,
+          "name": "Enëlarëse DW 60FS5P-13",
+          "description": [],
+          "pictures": [
+            "assets/Home appliances/Dishwasher DW 60FS5P-13/DW 60FS5P-13.png",
+            "assets/Home appliances/Dishwasher DW 60FS5P-13/DW 60FS5P-13-OTVORENA.png"
+          ],
+          "specificationsDoc": "assets/Home appliances/Dishwasher DW 60FS5P-13/2. DW 60FS5P i& DW 60FS5P S -13 Albanian language.pdf",
+          "specifications": {
+            "Përmasat": "L/Gj/T 845/600/600 mm",
+            "kapaciteti maksimal": "13 sete enësh",
+            "programe": "5",
+            "program i shpejtë": "√",
+            "ekran LED": "√",
+            "buton për gjysmë (1/2) mbushje": "√",
+            "klasa e energjisë": "E",
+            "klasa e tharjes": "A",
+            "niveli i zhurmës gjatë punës": "49 dB",
+            "nisje e vonuar": "1-24 orë",
+            "DRY +": "√",
+            "konsumi i energjisë për 100 cikle": "93 kWh",
+            "mbrojtje nga përmbytja": "√",
+            "ngrohës i fshehur": "√",
+            "mbrojtje e ngrohësit": "√",
+            "filtër metalik": "√",
+            "NGJYRA": "E BARDHË/GRI",
+            "Butoni On/Off": "√",
+            "BUTONI START/PAUZË": "√",
+            "INDIKATORI I FUNKSIONIT TË LARJES": "√",
+            "INDIKATORI I MUNGESËS SË KRIPËS": "√",
+            "INDIKATORI I MUNGESËS SË SHKËLQYESIT": "√"
+          }
+        },
+        {
+          "id": 169,
+          "name": "Enëlarëse DW 60FS5P-13 S",
+          "description": [],
+          "pictures": [
+              "assets/Home appliances/Dishwasher DW 60FS5P-13 S/DW 60FS5P-13 S.png",
+              "assets/Home appliances/Dishwasher DW 60FS5P-13 S/DW 60FS5P-13 S-otvorena.png"
+          ],
+          "specificationsDoc": "assets/Home appliances/Dishwasher DW 60FS5P-13 S/2. DW 60FS5P i& DW 60FS5P S -13 Albanian language.pdf",
+          "specifications": {
+            "Përmasat": "L/Gj/T 845/600/600 mm",
+            "kapaciteti maksimal": "13 sete enësh",
+            "programe": "5",
+            "program i shpejtë": "√",
+            "ekran LED": "√",
+            "buton për gjysmë (1/2) mbushje": "√",
+            "klasa e energjisë": "E",
+            "klasa e tharjes": "A",
+            "niveli i zhurmës gjatë punës": "49 dB",
+            "nisje e vonuar": "1-24 orë",
+            "DRY +": "√",
+            "konsumi i energjisë për 100 cikle": "93 kWh",
+            "mbrojtje nga përmbytja": "√",
+            "ngrohës i fshehur": "√",
+            "mbrojtje e ngrohësit": "√",
+            "filtër metalik": "√",
+            "NGJYRA": "E GRI",
+            "Butoni On/Off": "√",
+            "BUTONI START/PAUZË": "√",
+            "INDIKATORI I FUNKSIONIT TË LARJES": "√",
+            "INDIKATORI I MUNGESËS SË KRIPËS": "√",
+            "INDIKATORI I MUNGESËS SË SHKËLQYESIT": "√"
+          }
+        },
+        {
+          "id": 170,
+          "name": "Enëlarëse DW 60FS6P3R-15",
+          "description": [],
+          "pictures": [
+            "assets/Home appliances/Dishwasher DW 60FS6P3R-15/DW 60FS6P3R-15.png",
+            "assets/Home appliances/Dishwasher DW 60FS6P3R-15/DW 60FS6P3R-15-otvorena.png"
+          ],
+          "specificationsDoc": "assets/Home appliances/Dishwasher DW 60FS6P3R-15/1. DW60FS6P3R-15 & DW60FS6P3R-15 X Macedonia languagen.pdf",
+          "specifications": {
+            "Përmasat": "L/Gj/T 845/600/600 mm",
+            "kapaciteti maksimal": "15 sete enësh",
+            "programe": "6",
+            "Shporta e tretë": "√",
+            "3 nivele larjeje me 3 spërkatës": "√",
+            "ekran LED": "√",
+            "Hapje automatike e derës pas përfundimit": "√",
+            "program i shpejtë": "√",
+            "buton për gjysmë (1/2) mbushje": "√",
+            "klasa e energjisë": "D",
+            "klasa e tharjes": "A",
+            "niveli i zhurmës gjatë punës": "49 dB",
+            "nisje e vonuar 1-24 orë": "1-24 orë",
+            "konsumi i energjisë për 100 cikle": "86 kWh",
+            "mbrojtje nga përmbytja": "√",
+            "ngrohës i fshehur": "√",
+            "mbrojtje e ngrohësit": "√",
+            "filtër metalik": "√",
+            "NGJYRA": "E BARDHË",
+            "E BARDHË/REAL INOX": "√",
+            "BUTONI START/PAUZË": "√",
+            "INDIKATORI I FUNKSIONIT TË LARJES": "√",
+            "INDIKATORI I MUNGESËS SË KRIPËS": "√",
+            "INDIKATORI I MUNGESËS SË SHKËLQYESIT": "√"
+          }
+        },
+        {
+          "id": 171,
+          "name": "Enëlarëse DW 60FS6P3R-15 X",
+          "description": [],
+          "pictures": [
+              "assets/Home appliances/Dishwasher DW 60FS6P3R-15 X/DW 60FS6P3R-15 X.png",
+              "assets/Home appliances/Dishwasher DW 60FS6P3R-15 X/DW 60FS6P3R-15 X- otvorena.png"
+          ],
+          "specificationsDoc": "assets/Home appliances/Dishwasher DW 60FS6P3R-15/1. DW60FS6P3R-15 & DW60FS6P3R-15 X Macedonia languagen.pdf",
+          "specifications": {
+            "Përmasat": "L/Gj/T 845/600/600 mm",
+            "kapaciteti maksimal": "15 sete enësh",
+            "programe": "6",
+            "Shporta e tretë": "√",
+            "3 nivele larjeje me 3 spërkatës": "√",
+            "ekran LED": "√",
+            "Hapje automatike e derës pas përfundimit": "√",
+            "program i shpejtë": "√",
+            "buton për gjysmë (1/2) mbushje": "√",
+            "klasa e energjisë": "D",
+            "klasa e tharjes": "A",
+            "niveli i zhurmës gjatë punës": "49 dB",
+            "nisje e vonuar 1-24 orë": "1-24 orë",
+            "konsumi i energjisë për 100 cikle": "86 kWh",
+            "mbrojtje nga përmbytja": "√",
+            "ngrohës i fshehur": "√",
+            "mbrojtje e ngrohësit": "√",
+            "filtër metalik": "√",
+            "NGJYRA": "E REAL INOX",
+            "BUTONI START/PAUZË": "√",
+            "INDIKATORI I FUNKSIONIT TË LARJES": "√",
+            "INDIKATORI I MUNGESËS SË KRIPËS": "√",
+            "INDIKATORI I MUNGESËS SË SHKËLQYESIT": "√"
+          }
+        },
+        {
+          "id": 172,
+          "name": "Lavatrice WM701200-03 BLDC",
+          "description": [],
+          "pictures": [
+            "assets/Home appliances/WASHING MACHINE WM701200-03 BLDC/WM701200-03 BLDC (1).png",
+            "assets/Home appliances/WASHING MACHINE WM701200-03 BLDC/WM701200-03 BLDC (2).png",
+            "assets/Home appliances/WASHING MACHINE WM701200-03 BLDC/WM701200-03 BLDC (3).png"
+          ],
+          "specificationsDoc": "assets/Home appliances/WASHING MACHINE WM701200-03 BLDC/1. WM-03 UM-1 (7KG- 9KG) MK-AL-SERB-ENG.pdf",
+          "specifications": {
+            "PËRMASAT (L/Gj/T)": "850/595/495 mm",
+            "SHPEJTËSIA MAKSIMALE E RROTULLIMIT (RPM)": "1200",
+            "KAPACITETI MAKSIMAL": "7 kg",
+            "DAULLA INOX": "50 L",
+            "MOTOR INVERTER": "√ (10 VITE GARANCI)",
+            "EKRAN DIGJITAL LED": "√",
+            "NISJE E VONUAR": "3-24 h",
+            "PROGRAME": "16",
+            "PROGRAMATOR ELEKTRONIK": "√",
+            "BUTON PËR KONTROLLIN E TEMPERATURËS SË UJIT": "√",
+            "KLASA E ENERGJISË": "A",
+            "PROGRAMI DRUM CLEAN": "√",
+            "PROGRAMI STEAM ASSIST": "√",
+            "MBROJTJE PËR FËMIJË": "√",
+            "KONSUMI I ENERGJISË": "40 kWh/cikël",
+            "KONSUMI I UJIT": "44 L/cikël",
+            "NIVELI I ZHURMËS GJATË LARJES": "62 dB",
+            "NIVELI I ZHURMËS GJATË CENTRIFUGIMIT": "76 dB",
+            "PROGRAM SUPER I SHPEJTË": "15 minuta në 30°",
+            "BUTON PËR KONTROLLIN E SHPEJTËSISË": "√",
+            "PESHA BRUTO/NETO": "60/57 kg"
+          }
+        },
+        {
+          "id": 173,
+          "name": "Lavatrice WM801400-63 BLDC",
+          "description": [],
+          "pictures": [
+            "assets/Home appliances/WASHING MACHINE WM801400-63 BLDC/WM801400-063 BLDC (1).png",
+            "assets/Home appliances/WASHING MACHINE WM801400-63 BLDC/WM801400-063 BLDC (2).png",
+            "assets/Home appliances/WASHING MACHINE WM801400-63 BLDC/WM801400-063 BLDC (3).png"
+          ],
+          "specificationsDoc": "assets/Home appliances/WASHING MACHINE WM801400-63 BLDC/1. WM-063 UM-1 (8KG) - MK-AL-SERB-ENG.pdf",
+          "specifications": {
+            "PËRMASAT (L/Gj/T)": "850/595/520 mm",
+            "SHPEJTËSIA MAKSIMALE E RROTULLIMIT (RPM)": "1400",
+            "KAPACITETI MAKSIMAL": "8 kg",
+            "DAULLA INOX": "53 L",
+            "MOTOR INVERTER": "√ (10 VITE GARANCI)",
+            "EKRAN DIGJITAL LED": "√",
+            "NISJE E VONUAR": "3-24 h",
+            "PROGRAME": "16",
+            "PROGRAMATOR ELEKTRONIK": "√",
+            "BUTON PËR KONTROLLIN E TEMPERATURËS SË UJIT": "√",
+            "KLASA E ENERGJISË": "A",
+            "SISTEM MBROJTËS NGA DËRDHJA": "√",
+            "MBROJTJE NGA SHKUMA": "√",
+            "SISTEM PËR ZBULIMIN E GABIMEVE": "√",
+            "MBROJTJE PËR FËMIJË": "√",
+            "KONSUMI I ENERGJISË": "42 kWh/cikël",
+            "KONSUMI I UJIT": "48 L/cikël",
+            "NIVELI I ZHURMËS GJATË LARJES": "62 dB",
+            "NIVELI I ZHURMËS GJATË CENTRIFUGIMIT": "76 dB",
+            "PROGRAMI DRUM CLEAN": "√",
+            "PROGRAMI STEAM ASSIST": "√",
+            "PROGRAM SUPER I SHPEJTË": "15 min 30°",
+            "BUTON PËR KONTROLLIN E SHPEJTËSISË SË CENTRIFUGËS": "√",
+            "PROGRAM ME PARALARJE PËR PAMBUK": "√",
+            "PESHA BRUTO/NETO": "61/58 kg"
+          }
+        },
+        {
+          "id": 174,
+          "name": "Lavatrice WM901400-03 BLDC",
+          "description": [],
+          "pictures": [
+            "assets/Home appliances/WASHING MACHINE WM901400-03 BLDC/WM901400-03 BLDC (3).png",
+            "assets/Home appliances/WASHING MACHINE WM901400-03 BLDC/WM901400-03 BLDC (2).png",
+            "assets/Home appliances/WASHING MACHINE WM901400-03 BLDC/WM901400-03 BLDC (1).png"
+          ],
+          "specificationsDoc": "assets/Home appliances/WASHING MACHINE WM901400-03 BLDC/1. WM-03 UM-1 (7KG- 9KG) MK-AL-SERB-ENG.pdf",
+          "specifications": {
+            "PËRMASAT (L/Gj/T)": "850/595/560 mm",
+            "SHPEJTËSIA MAKSIMALE E RROTULLIMIT (RPM)": "1400",
+            "KAPACITETI MAKSIMAL": "9 kg",
+            "DAULLA INOX": "60 L",
+            "MOTOR INVERTER": "√ (10 VITE GARANCI)",
+            "EKRAN DIGJITAL LED": "√",
+            "STEAM ASSIST (larje me avull)": "√",
+            "NISJE E VONUAR": "3-24 h",
+            "PROGRAME": "16",
+            "PROGRAMATOR ELEKTRONIK": "√",
+            "BUTON PËR KONTROLLIN E TEMPERATURËS SË UJIT": "√",
+            "KLASA E ENERGJISË": "A",
+            "PROGRAMI DRUM CLEAN": "√",
+            "MBROJTJE NGA SHKUMA": "√",
+            "PROGRAMI STEAM ASSIST": "√",
+            "MBROJTJE PËR FËMIJË": "√",
+            "SISTEM PËR ZBULIMIN E GABIMEVE": "√",
+            "KONSUMI I ENERGJISË": "44 kWh/cikël",
+            "KONSUMI I UJIT": "50 L/cikël",
+            "NIVELI I ZHURMËS GJATË LARJES": "62 dB",
+            "NIVELI I ZHURMËS GJATË CENTRIFUGIMIT": "76 dB",
+            "PROGRAM SUPER I SHPEJTË": "15 minuta në 30°",
+            "BUTON PËR KONTROLLIN E SHPEJTËSISË": "√",
+            "PROGRAM ME PARALARJE PËR PAMBUK": "√",
+            "PESHA BRUTO/NETO": "67/64 kg"
+          }
+        },
+        {
+          "id": 175,
+          "name": "Ftohës me Komorë RTT 90",
+          "description": [],
+          "pictures": [
+            "assets/Home appliances/REFRIGERATOR RTT 90/RTT 90 Exterior.png",
+            "assets/Home appliances/REFRIGERATOR RTT 90/RTT 90 Interior.png"
+          ],
+          "specificationsDoc": "assets/Home appliances/REFRIGERATOR RTT 90/Upatsvo RTT 90.pdf",
+          "specifications": {
+            "PËRMASAT (L/Gj/T)": "850/475/445 mm",
+            "VOLUMI BRUT": "91 L",
+            "VOLUMI NETO": "90 L",
+            "KLASA E ENERGJISË": "E",
+            "NGJYRË": "E BARDHË",
+            "DERA E KTHYESHME": "√",
+            "KËMBËT E RREGULLUESHME": "√",
+            "DORËZAT E DERËS FIKSE": "√",
+            "SHPARËT E DERËS": "√",
+            "SHPARËT TRANSPARANTE TË RREGULLUESHME": "√",
+            "SHPARËT TRANSPARANTE (FIJOKË)": "√",
+            "KONSUMI I ENERGJISË": "85 kWh/vit",
+            "NIVELI I ZHURMËS": "39 dB",
+            "GASI": "R600"
+          }
+        },
+        {
+          "id": 176,
+          "name": "Ftohës pa Komorë LU 242",
+          "description": [],
+          "pictures": [
+            "assets/Home appliances/REFRIGERATOR WITHOUT CHAMBER LU 242/LU 242 Exterior.png",
+            "assets/Home appliances/REFRIGERATOR WITHOUT CHAMBER LU 242/LU 242 Interior.png"
+          ],
+          "specificationsDoc": "assets/Home appliances/REFRIGERATOR WITHOUT CHAMBER LU 242/Upatsvo LU 242.pdf",
+          "specifications": {
+            "PËRMASAT (L/Gj/T)": "1430/550/560 mm",
+            "VOLUMI BRUT": "246 L",
+            "VOLUMI NETO": "242 L",
+            "KLASA E ENERGJISË": "E",
+            "NGJYRË": "E BARDHË",
+            "DERA E KTHYESHME": "√",
+            "KËMBËT E RREGULLUESHME": "√",
+            "DORËZAT E DERËS FIKSE": "√",
+            "SHPARËT E DERËS": "√",
+            "SHPARËT TRANSPARANTE TË RREGULLUESHME": "√",
+            "SHPARËT TRANSPARANTE (FIJOKË)": "√",
+            "KONSUMI I ENERGJISË": "130 kWh/vit",
+            "NIVELI I ZHURMËS": "40 dB",
+            "GASI": "P600"
+          }
+        },
+        {
+          "id": 177,
+          "name": "Frigorifer Vertikal FU 168",
+          "description": [],
+          "pictures": [
+            "assets/Home appliances/VERTICAL FREEZER FU 168/FU 168 Exterior.png",
+            "assets/Home appliances/VERTICAL FREEZER FU 168/FU 168 Interior.jpg"
+          ],
+          "specificationsDoc": "assets/Home appliances/VERTICAL FREEZER FU 168/Upatsvo FU 168.pdf",
+          "specifications": {
+            "PËRMASAT (L/Gj/T)": "1430/550/580 mm",
+            "VOLUMI BRUT": "170 L",
+            "VOLUMI NETO": "168 L",
+            "KLASA E ENERGJISË": "E",
+            "NGJYRË": "E BARDHË",
+            "DERA E KTHYESHME": "√",
+            "KËMBËT E RREGULLUESHME": "√",
+            "DORËZAT E DERËS FIKSE": "√",
+            "SHPARËT E DERËS": "√",
+            "KOMPARTAMENTE PËR NGRIRJE TË SHPEJTË": "√",
+            "SHPARËT TRANSPARANTE": "√",
+            "KONSUMI I ENERGJISË": "190 kWh/vit",
+            "NIVELI I ZHURMËS": "40 dB",
+            "GASI": "P600"
+          }
+        },
+        {
+          "id": 178,
+          "name": "Frigorifer me Dy Dera RTMF 206",
+          "description": [],
+          "pictures": [
+            "assets/Home appliances/TWO CHAMBER REFRIGERATOR RTMF 206/RTMF 206 Exterior.png",
+            "assets/Home appliances/TWO CHAMBER REFRIGERATOR RTMF 206/RTMF 206 Interior.png"
+          ],
+          "specificationsDoc": "assets/Home appliances/TWO CHAMBER REFRIGERATOR RTMF 206/Upatsvo RTMF 206.pdf",
+          "specifications": {
+            "PËRMASAT (L/Gj/T)": "1430/550/560 mm",
+            "VOLUMI BRUT": "208/206 L",
+            "VOLUMI NETO": "169/37 L",
+            "KLASA E ENERGJISË": "E",
+            "NGJYRË": "E BARDHË",
+            "DERA E KTHYESHME": "√",
+            "KËMBËT E RREGULLUESHME": "√",
+            "DORËZAT E DERËS FIKSE": "√",
+            "SHPARËT E DERËS": "√",
+            "FIQE TRANSPARENTE": "√",
+            "SHPARËT TRANSPARANTE TË RREGULLUESHME": "√",
+            "KONSUMI I ENERGJISË": "172 kWh/vit",
+            "NIVELI I ZHURMËS": "40 dB",
+            "GASI": "P600"
+          }
+        },
+        {
+          "id": 179,
+          "name": "Frigorifer me Dy Dera RTMF 206 S",
+          "description": [],
+          "pictures": [
+            "assets/Home appliances/TWO CHAMBER REFRIGERATOR RTMF 206 S/RTMF 206 S Exterior.png",
+            "assets/Home appliances/TWO CHAMBER REFRIGERATOR RTMF 206 S/RTMF 206 S Interior.png"
+          ],
+          "specificationsDoc": "assets/Home appliances/TWO CHAMBER REFRIGERATOR RTMF 206 S/Upatsvo RTMF 206 & RTMF 206 S.pdf",
+          "specifications": {
+            "PËRMASAT (L/Gj/T)": "1430/550/560 mm",
+            "VOLUMI BRUT": "208/206 L",
+            "VOLUMI NETO": "169/37 L",
+            "KLASA E ENERGJISË": "E",
+            "NGJYRË": "E GRI",
+            "DERA E KTHYESHME": "√",
+            "KËMBËT E RREGULLUESHME": "√",
+            "DORËZAT E DERËS FIKSE": "√",
+            "SHPARËT E DERËS": "√",
+            "FIQE TRANSPARENTE": "√",
+            "SHPARËT TRANSPARANTE TË RREGULLUESHME": "√",
+            "KONSUMI I ENERGJISË": "172 kWh/vit",
+            "NIVELI I ZHURMËS": "40 dB",
+            "GASI": "P600"
+          }
+        },
+        {
+          "id": 180,
+          "name": "Frigorifer i Kombinuar CBMF 262",
+          "description": [],
+          "pictures": [
+            "assets/Home appliances/TWO CHAMBER REFRIGERATOR CBMF 262/CBMF 262 Exterior.png",
+            "assets/Home appliances/TWO CHAMBER REFRIGERATOR CBMF 262/CBMF 262 Interior.png"
+          ],
+          "specificationsDoc": "assets/Home appliances/TWO CHAMBER REFRIGERATOR CBMF 262/Upatsvo CBMF 262.pdf",
+          "specifications": {
+            "PËRMASAT (L/Gj/T)": "1800/550/560 mm",
+            "VOLUMI BRUT/NETO": "265/262 L",
+            "VOLUMI NETO FRIQIDER/FRYZER": "191/71 L",
+            "KLASA E ENERGJISË": "E",
+            "NGJYRË": "E BARDHË",
+            "DERA E KTHYESHME": "√",
+            "KËMBËT E RREGULLUESHME": "√",
+            "DORËZAT E DERËS FIKSE": "√",
+            "SHPARËT E DERËS": "√",
+            "FIQE TRANSPARENTE": "√",
+            "SHPARËT TRANSPARANTE TË RREGULLUESHME": "√",
+            "KOMORA E FRYZERIT ME FIQE TRANSPARENTE": "√",
+            "KONSUMI I ENERGJISË": "210 kWh/vit",
+            "NIVELI I ZHURMËS": "40 dB",
+            "GASI": "P600"
+          }
+        },
+        {
+          "id": 181,
+          "name": "Frigorifer i Kombinuar CBMF 262",
+          "description": [],
+          "pictures": [
+            "assets/Home appliances/TWO CHAMBER REFRIGERATOR CBMF 262 S/CBMF 262 S Exterior.png",
+            "assets/Home appliances/TWO CHAMBER REFRIGERATOR CBMF 262 S/CBMF 262 S Interior.png"
+          ],
+          "specificationsDoc": "assets/Home appliances/TWO CHAMBER REFRIGERATOR CBMF 262 S/Upatsvo CBMF 262.pdf",
+          "specifications": {
+            "PËRMASAT (L/Gj/T)": "1800/550/560 mm",
+            "VOLUMI BRUT/NETO": "265/262 L",
+            "VOLUMI NETO FRIQIDER/FRYZER": "191/71 L",
+            "KLASA E ENERGJISË": "E",
+            "NGJYRË": "E GRI",
+            "DERA E KTHYESHME": "√",
+            "KËMBËT E RREGULLUESHME": "√",
+            "DORËZAT E DERËS FIKSE": "√",
+            "SHPARËT E DERËS": "√",
+            "FIQE TRANSPARENTE": "√",
+            "SHPARËT TRANSPARANTE TË RREGULLUESHME": "√",
+            "KOMORA E FRYZERIT ME FIQE TRANSPARENTE": "√",
+            "KONSUMI I ENERGJISË": "210 kWh/vit",
+            "NIVELI I ZHURMËS": "40 dB",
+            "GASI": "P600"
+          }
+        },
+        {
+          "id": 182,
+          "name": "Frigorifer i Kombinuar CBMF 315",
+          "description": [],
+          "pictures": [
+            "assets/Home appliances/COMBINED REFRIGERATOR CBMF 315/CBMF 315 Exterior.png",
+            "assets/Home appliances/COMBINED REFRIGERATOR CBMF 315/CBMF 315 Interior.png"
+          ],
+          "specificationsDoc": "assets/Home appliances/COMBINED REFRIGERATOR CBMF 315/Upatsvo CBMF 315 & CBMF 315 X.pdf",
+          "specifications": {
+            "PËRMASAT (L/Gj/T)": "1860/600/600 mm",
+            "VOLUMI BRUT/NETO": "322/315 L",
+            "VOLUMI NETO FRIQIDER/FRYZER": "219/96 L",
+            "KLASA E ENERGJISË": "E",
+            "NGJYRË": "E BARDHË",
+            "DERA E KTHYESHME": "√",
+            "KËMBËT E RREGULLUESHME": "√",
+            "DORËZAT E DERËS FIKSE": "√",
+            "SHPARËT E DERËS": "√",
+            "FIQE TRANSPARENTE": "√",
+            "SHPARËT TRANSPARANTE TË RREGULLUESHME": "√",
+            "KOMORA E FRYZERIT ME FIQE TRANSPARENTE": "√",
+            "KONSUMI I ENERGJISË": "234 kWh/vit",
+            "NIVELI I ZHURMËS": "40 dB",
+            "GASI": "P600"
+          }
+        },
+        {
+          "id": 183,
+          "name": "Frigorifer i Kombinuar CBMF 315 X",
+          "description": [],
+          "pictures": [
+            "assets/Home appliances/COMBINED REFRIGERATOR CBMF 315 X/CBMF 315 X Exterior.png",
+            "assets/Home appliances/COMBINED REFRIGERATOR CBMF 315 X/CBMF 315 X Interior.png"
+          ],
+          "specificationsDoc": "assets/Home appliances/COMBINED REFRIGERATOR CBMF 315 X/Upatsvo CBMF 315 & CBMF 315 X.pdf",
+          "specifications": {
+            "PËRMASAT (L/Gj/T)": "1860/600/600 mm",
+            "VOLUMI BRUT/NETO": "322/315 L",
+            "VOLUMI NETO FRIQIDER/FRYZER": "219/96 L",
+            "KLASA E ENERGJISË": "E",
+            "NGJYRË": "REAL INOX",
+            "DERA E KTHYESHME": "√",
+            "KËMBËT E RREGULLUESHME": "√",
+            "DORËZAT E DERËS FIKSE": "√",
+            "SHPARËT E DERËS": "√",
+            "FIQE TRANSPARENTE": "√",
+            "SHPARËT TRANSPARANTE TË RREGULLUESHME": "√",
+            "KOMORA E FRYZERIT ME FIQE TRANSPARENTE": "√",
+            "KONSUMI I ENERGJISË": "234 kWh/vit",
+            "NIVELI I ZHURMËS": "40 dB",
+            "GASI": "P600"
+          }
+        },
+        {
+          "id": 184,
+          "name": "Frigorifer i Kombinuar NFCBMF 253 X",
+          "description": [],
+          "pictures": [
+            "assets/Home appliances/COMBINED REFRIGERATOR NFCBMF 253 X/NFCBMF 253 X Exterior.png",
+            "assets/Home appliances/COMBINED REFRIGERATOR NFCBMF 253 X/NFCBMF 253 X Interior.png"
+          ],
+          "specificationsDoc": "assets/Home appliances/COMBINED REFRIGERATOR NFCBMF 253 X/Upatsvo NFCBMF 253 & NFCBMF 253 X.pdf",
+          "specifications": {
+            "PËRMASAT (L/Gj/T)": "1810/550/600 mm",
+            "VOLUMI BRUT/NETO": "271/253 L",
+            "VOLUMI NETO FRIQIDER/FRYZER": "182/71 L",
+            "KLASA E ENERGJISË": "E",
+            "NGJYRË": "REAL INOX",
+            "SISTEM PA AKULL (NO FROST)": "√",
+            "SISTEM I INTEGRUAR QË CIKLON AJRIN": "√",
+            "DERA E KTHYESHME": "√",
+            "KËMBËT E RREGULLUESHME": "√",
+            "DORËZAT E DERËS FIKSE": "√",
+            "SHPARËT E DERËS": "√",
+            "FIQE TRANSPARENTE": "√",
+            "SHPARËT TRANSPARANTE TË RREGULLUESHME": "√",
+            "KOMORA E FRYZERIT ME FIQE TRANSPARENTE": "√",
+            "KOMORA PËR FRYZIM TË SHPEJTË": "√",
+            "KONSUMI I ENERGJISË": "220 kWh/vit",
+            "NIVELI I ZHURMËS": "40 dB",
+            "GASI": "P600"
+          }
+        },
+        {
+          "id": 185,
+          "name": "Frigorifer i Integruar BIBMF 249",
+          "description": [],
+          "pictures": [
+            "assets/Built In Appliances/Built-in refrigerator BIBMF 249/BIBMF 249 Exterior.jpg",
+            "assets/Built In Appliances/Built-in refrigerator BIBMF 249/BIBMF 249 Interior.png"
+          ],
+          "specificationsDoc": "assets/Built In Appliances/Built-in refrigerator BIBMF 249/Upatsvo BIBMF 249.pdf",
+          "specifications": {
+            "PËRMASAT (L/Gj/T)": "1780/540/540 mm",
+            "VOLUMI BRUT": "256/249 L",
+            "VOLUMI NETO": "179/70 L",
+            "KLASA E ENERGJISË": "E",
+            "NGJYRË": "E BARDHË",
+            "PLOTËSISHT I INTEGRUAR": "√",
+            "DERA E KTHYESHME": "√",
+            "KËMBËT E RREGULLUESHME": "√",
+            "DORËZAT FIKSE TË DERËS": "√",
+            "FIQE TRANSPARENTE": "√",
+            "SHPARËT TRANSPARANTE TË RREGULLUESHME": "√",
+            "KOMORA E FRYZERIT ME FIQE TRANSPARENTE": "√",
+            "KOMORA PËR FRYZIM TË SHPEJTË": "√",
+            "KONSUMI I ENERGJISË": "216 kWh/vit",
+            "NIVELI I ZHURMËS": "39 dB",
+            "GASI": "P600"
+          }
+        }
+
 ]

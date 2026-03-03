@@ -41,7 +41,8 @@
       "builtInStoveTops":"Pjesë të sipërme të sobave të ndërtuara",
       "builtInCookingAppliences":"Pajisje të ndërtuara për gatim",
       "builtInFridges":"Frigoriferë të ndërtuar",
-      "builtInStoves":"Soba të ndërtuara"
+      "builtInStoves":"Soba të ndërtuara",
+      "builtInStovesAndTops":"Soba të ndërtuara me Ploçë"
   },
   "homeAppliances":{
       "boilers":"Bojlerë",

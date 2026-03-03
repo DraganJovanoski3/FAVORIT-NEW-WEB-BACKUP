@@ -190,14 +190,13 @@ padding: 0 0 0 20px;
 .main-cointainer {
   margin-top: 120px !important;
   width: 100%;
-  margin: auto;
+  margin: 0 auto 30px auto;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
   padding: 0 20px;
   box-sizing: border-box;
-  max-width: 1400px;
-  margin-bottom: 30px;
+  max-width: 1200px;
 }
 .close-icon {
   position: absolute;

@@ -1,17 +1,1 @@
-{
-    "homePage":"Почетна",
-    "products":"Производи",
-    "salesPartners":"Партнери",
-    "serviceCenters":"Сервисна Мрежа",
-    "aboutUs":"За Нас",
-    "blogList": "Новости",
-    "contact":"Контакт",
-    "address": "Адреса",
-    "addressLine": "St. Partizanski Odredi 154 1000 Skopje, Republic of Macedonia",
-    "phone": "Телефон",
-    "service": "Сервисен оддел",
-    "email": "Е-пошта",
-    "search": "Пребарај",
-    "searchPlaceholder": "Пребарај производи...",
-    "searchNoResults": "Нема резултати."
-}
+{"homePage":"Почетна","products":"Производи","salesPartners":"Партнери","serviceCenters":"Сервисна Мрежа","aboutUs":"За Нас","blogList":"Новости","contact":"Контакт","warranty":"Гаранција","address":"Адреса","addressLine":"St. Partizanski Odredi 154 1000 Skopje, Republic of Macedonia","phone":"Телефон","service":"Сервисен оддел","email":"Е-пошта","search":"Пребарај","searchPlaceholder":"Пребарај производи...","searchNoResults":"Нема резултати."}

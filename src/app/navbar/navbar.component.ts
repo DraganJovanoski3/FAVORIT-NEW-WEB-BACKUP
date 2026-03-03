@@ -228,16 +228,20 @@ export class NavbarComponent implements OnInit, OnDestroy {
     }
   }
 
-  onNavigate(navigateParam:string) {
-    this._router.navigate([navigateParam],{queryParamsHandling: 'merge'});
-    const clickedElements = document.querySelectorAll('.nav-link.clicked');
-    clickedElements.forEach((element: Element) => {
-      element.classList.remove('clicked');
+  onNavigate(navigateParam: string) {
+    const path = navigateParam === '' ? 'home' : navigateParam;
+    this._router.navigate([path], { queryParamsHandling: 'merge' }).then(() => {
+      window.scrollTo(0, 0);
+      document.documentElement.scrollTop = 0;
+      document.body.scrollTop = 0;
     });
-    
-    const clickedTarget = event?.target as HTMLElement; 
+    const clickedElements = document.querySelectorAll('.nav-link.clicked');
+    clickedElements.forEach((element: Element) => element.classList.remove('clicked'));
+    const clickedTarget = (event as Event)?.target as HTMLElement;
     clickedTarget?.classList.add('clicked');
-    window.scrollTo(0, 0);
+    this.isOpen = false;
+    const hamburgerMenu = document.querySelector('.hamburger-menu');
+    hamburgerMenu?.classList.remove('open');
   }
 
   changeLanguage(lang: string): void {
@@ -298,19 +302,19 @@ export class NavbarComponent implements OnInit, OnDestroy {
     const washingLabel = filterSubcategory.homeAppliances.washingMachines;
     const dryerLabel = filterSubcategory.homeAppliances.dryers;
     allProducts.push(
-      { id: 152, name: productTranslations['152'] || 'WASHING MACHINE A – 5100', picture: 'assets/Home appliances/WASHING MACHINE A – 5100/MASINA-ZA-ALISTA-5100.png', subcategory: washingLabel, category: 'home-appliances' },
-      { id: 45, name: productTranslations['45'] || 'WASHING MACHINE L – 6100N', picture: 'assets/Home appliances/WASHING MACHINE L – 6100N/L-6100-02-1-1024x576.png', subcategory: washingLabel, category: 'home-appliances' },
-      { id: 49, name: productTranslations['49'] || 'WASHING MACHINE W – 6101N', picture: 'assets/Home appliances/WASHING MACHINE W – 6101N/W-6101-06-1024x576.png', subcategory: washingLabel, category: 'home-appliances' },
-      { id: 46, name: productTranslations['46'] || 'WASHING MACHINE L – 7101N', picture: 'assets/Home appliances/WASHING MACHINE L – 7101N/W-7101-05-1024x576.png', subcategory: washingLabel, category: 'home-appliances' },
-      { id: 50, name: productTranslations['50'] || 'WASHING MACHINE W – 7122N', picture: 'assets/Home appliances/WASHING MACHINE W – 7122N/W-7122-07-1024x576.png', subcategory: washingLabel, category: 'home-appliances' },
-      { id: 47, name: productTranslations['47'] || 'WASHING MACHINE L – 8101', picture: 'assets/Home appliances/WASHING MACHINE L – 8101N/L-8101-04-1024x576.png', subcategory: washingLabel, category: 'home-appliances' },
-      { id: 48, name: productTranslations['48'] || 'WASHING MACHINE L – 9101N', picture: 'assets/Home appliances/WASHING MACHINE L – 9101N/L-9101-03-1024x576.png', subcategory: washingLabel, category: 'home-appliances' },
-      { id: 51, name: productTranslations['51'] || 'WASHING MACHINE W – 7122N BLDC', picture: 'assets/Home appliances/WASHING MACHINE W – 7122N BLDC/W7122BLDC-1024x576.png', subcategory: washingLabel, category: 'home-appliances' },
+      { id: 152, name: productTranslations['152'] || 'WASHING MACHINE A - 5100', picture: 'assets/Home appliances/WASHING MACHINE A – 5100/MASINA-ZA-ALISTA-5100.png', subcategory: washingLabel, category: 'home-appliances' },
+      { id: 45, name: productTranslations['45'] || 'WASHING MACHINE L - 6100N', picture: 'assets/Home appliances/WASHING MACHINE L – 6100N/L-6100-02-1-1024x576.png', subcategory: washingLabel, category: 'home-appliances' },
+      { id: 49, name: productTranslations['49'] || 'WASHING MACHINE W - 6101N', picture: 'assets/Home appliances/WASHING MACHINE W – 6101N/W-6101-06-1024x576.png', subcategory: washingLabel, category: 'home-appliances' },
+      { id: 46, name: productTranslations['46'] || 'WASHING MACHINE L - 7101N', picture: 'assets/Home appliances/WASHING MACHINE L – 7101N/W-7101-05-1024x576.png', subcategory: washingLabel, category: 'home-appliances' },
+      { id: 50, name: productTranslations['50'] || 'WASHING MACHINE W - 7122N', picture: 'assets/Home appliances/WASHING MACHINE W – 7122N/W-7122-07-1024x576.png', subcategory: washingLabel, category: 'home-appliances' },
+      { id: 47, name: productTranslations['47'] || 'WASHING MACHINE L - 8101', picture: 'assets/Home appliances/WASHING MACHINE L – 8101N/L-8101-04-1024x576.png', subcategory: washingLabel, category: 'home-appliances' },
+      { id: 48, name: productTranslations['48'] || 'WASHING MACHINE L - 9101N', picture: 'assets/Home appliances/WASHING MACHINE L – 9101N/L-9101-03-1024x576.png', subcategory: washingLabel, category: 'home-appliances' },
+      { id: 51, name: productTranslations['51'] || 'WASHING MACHINE W - 7122N BLDC', picture: 'assets/Home appliances/WASHING MACHINE W – 7122N BLDC/W7122BLDC-1024x576.png', subcategory: washingLabel, category: 'home-appliances' },
       { id: 154, name: productTranslations['154'] || 'WASHING MACHINE N-7122T BLDC', picture: 'assets/Home appliances/WASHING MACHINE N-7122T BLDC/5. FAVORIT N-7122T BLDC.png', subcategory: washingLabel, category: 'home-appliances' },
       { id: 53, name: productTranslations['53'] || 'WASHING MACHINE W – 8122N BLDC', picture: 'assets/Home appliances/WASHING MACHINE W – 8122N BLDC/W-8122-BLDC-11-1024x576.png', subcategory: washingLabel, category: 'home-appliances' },
       { id: 155, name: productTranslations['155'] || 'WASHING MACHINE C-8143 BLDC', picture: 'assets/Home appliances/WASHING MACHINE C-8143 BLDC/8. FAVORIT C-8143 BLDC.png', subcategory: washingLabel, category: 'home-appliances' },
-      { id: 56, name: productTranslations['56'] || 'WASHING MACHINE W-9122N BLDC', picture: 'assets/Home appliances/WASHING MACHINE W-9122N BLDC/W-9122N-BLDC-16-1024x576.png', subcategory: washingLabel, category: 'home-appliances' },
-      { id: 55, name: productTranslations['55'] || 'WASHING MACHINE W – 9142ТN BLDC', picture: 'assets/Home appliances/WASHING MACHINE W – 9142ТN BLDC/W9142T-BLDC-1024x576.png', subcategory: washingLabel, category: 'home-appliances' },
+      // { id: 56, name: productTranslations['56'] || 'WASHING MACHINE W-9122N BLDC', picture: 'assets/Home appliances/WASHING MACHINE W-9122N BLDC/W-9122N-BLDC-16-1024x576.png', subcategory: washingLabel, category: 'home-appliances' },
+      // { id: 55, name: productTranslations['55'] || 'WASHING MACHINE W - 9142ТN BLDC', picture: 'assets/Home appliances/WASHING MACHINE W - 9142ТN BLDC/W9142T-BLDC-1024x576.png', subcategory: washingLabel, category: 'home-appliances' },
       { id: 160, name: productTranslations['160'] || 'WASHING MACHINE A-9143 BLDC', picture: 'assets/Home appliances/WASHING MACHINE A-9143 BLDC/10. FAVORIT A-9143 BLDC.png', subcategory: washingLabel, category: 'home-appliances' },
       // DRYERS
       { id: 19, name: productTranslations['19'] || 'Dryer W-71 C', picture: 'assets/Home appliances/Dryer L – 71 C/W-71 C.png', subcategory: dryerLabel, category: 'home-appliances' },
@@ -330,7 +334,7 @@ export class NavbarComponent implements OnInit, OnDestroy {
       { id: 11, name: productTranslations['11'] || 'COMBINED REFRIGERATOR CF 278E', picture: 'assets/Home appliances/COMBINED REFRIGERATOR CF 278N/FAVORIT-CF-278-01-1024x576.png', subcategory: fridgeLabel, category: 'home-appliances' },
       { id: 12, name: productTranslations['12'] || 'COMBINED REFRIGERATOR CF 374E', picture: 'assets/Home appliances/COMBINED REFRIGERATOR CF 374N/FAVORIT-CF-374-01-1024x576.png', subcategory: fridgeLabel, category: 'home-appliances' },
       { id: 13, name: productTranslations['13'] || 'COMBINED REFRIGERATOR NF 379E', picture: 'assets/Home appliances/COMBINED REFRIGERATOR NF 379N – NO FROST without dispensary/FAVORIT-NF-373-01-1024x576.png', subcategory: fridgeLabel, category: 'home-appliances' },
-      { id: 41, name: productTranslations['41'] || 'VERTICAL FREEZER F2451E', picture: 'assets/Home appliances/VERTICAL FREEZER F 2451N/FAVORIT-F-2451-01-1024x576.png', subcategory: verticalFreezerLabel, category: 'home-appliances' },
+      { id: 41, name: productTranslations['41'] || 'VERTICAL FREEZER F2451E', picture: 'assets/Home appliances/TWO CHAMBER REFRIGERATOR RF 263N/FAVORIT-RF-263-01-3-1024x576.png', subcategory: verticalFreezerLabel, category: 'home-appliances' },
       { id: 42, name: productTranslations['42'] || 'VERTICAL FREEZER F1005E', picture: 'assets/Home appliances/VERTICAL FREEZER F1005N/FAVORIT-F-1005-01-1024x576.png', subcategory: verticalFreezerLabel, category: 'home-appliances' },
       { id: 43, name: productTranslations['43'] || 'VERTICAL FREEZER F2451N', picture: 'assets/Home appliances/VERTICAL FREEZER F 2451N/FAVORIT-F-2451-01-1024x576.png', subcategory: verticalFreezerLabel, category: 'home-appliances' },
       { id: 33, name: productTranslations['33'] || 'HCF 150', picture: 'assets/Home appliances/HCF 150/150-ZATVOREN-1024x576.png', subcategory: horizontalFreezerLabel, category: 'home-appliances' },
@@ -348,13 +352,13 @@ export class NavbarComponent implements OnInit, OnDestroy {
     // Add dishwashers
     const dishwashersLabel = filterSubcategory.homeAppliances.dishwashers;
     allProducts.push(
-      { id: 17, name: productTranslations['17'] || 'Dishwasher F45 – Y15N S', picture: 'assets/Home appliances/Dishwasher F45 – Y15N S/F45-Y15 S-04.png', subcategory: dishwashersLabel, category: 'home-appliances' },
-      { id: 18, name: productTranslations['18'] || 'Dishwasher F60 – Y14N', picture: 'assets/Home appliances/Dishwasher F60 – Y14N/F60-Y14-04-1024x576.png', subcategory: dishwashersLabel, category: 'home-appliances' },
-      { id: 135, name: productTranslations['135'] || 'Dishwasher F60 – Y14N S', picture: 'assets/Home appliances/Dishwasher F60 – Y14N S/F60-Y14_S-04.png', subcategory: dishwashersLabel, category: 'home-appliances' },
+      { id: 17, name: productTranslations['17'] || 'Dishwasher F45 - Y15N S', picture: 'assets/Home appliances/Dishwasher F45 – Y15N/F45-Y15-S-04-1024x576.png', subcategory: dishwashersLabel, category: 'home-appliances' },
+      { id: 18, name: productTranslations['18'] || 'Dishwasher F60 - Y14N', picture: 'assets/Home appliances/Dishwasher F60 – Y14N/F60-Y14-04-1024x576.png', subcategory: dishwashersLabel, category: 'home-appliances' },
+      { id: 135, name: productTranslations['135'] || 'Dishwasher F60 - Y14N S', picture: 'assets/Home appliances/Dishwasher F60 – Y14N S/F60-Y14_S-04.png', subcategory: dishwashersLabel, category: 'home-appliances' },
       { id: 15, name: productTranslations['15'] || 'Dishwasher E60-A1FN', picture: 'assets/Home appliances/Dishwasher E60-A1FN/RABOTEN-16.9-31-1024x576.png', subcategory: dishwashersLabel, category: 'home-appliances' },
       { id: 136, name: productTranslations['136'] || 'Dishwasher E60-A1FN X', picture: 'assets/Home appliances/Dishwasher E60-A1FN X/RABOTEN-16.9-33-1024x576.png', subcategory: dishwashersLabel, category: 'home-appliances' },
-      { id: 14, name: productTranslations['14'] || 'Dishwasher E60 – A22', picture: 'assets/Home appliances/Dishwasher E60 – A22/E60-A22-04-1024x576.png', subcategory: dishwashersLabel, category: 'home-appliances' },
-      { id: 16, name: productTranslations['16'] || 'DISHWASHER E60-A24N BLDC', picture: 'assets/Home appliances/DISHWASHER E60-A24N BLDC with inverter motor/E60-A24-BLDC-04-1-1024x576.png', subcategory: dishwashersLabel, category: 'home-appliances' }
+      // { id: 14, name: productTranslations['14'] || 'Dishwasher E60 - A22', picture: 'assets/Home appliances/Dishwasher E60 - A22/E60-A22-04-1024x576.png', subcategory: dishwashersLabel, category: 'home-appliances' },
+      // { id: 16, name: productTranslations['16'] || 'DISHWASHER E60-A24N BLDC', picture: 'assets/Home appliances/DISHWASHER E60-A24N BLDC with inverter motor/E60-A24-BLDC-04-1-1024x576.png', subcategory: dishwashersLabel, category: 'home-appliances' }
     );
 
     // Add stoves and mini stoves
@@ -367,16 +371,16 @@ export class NavbarComponent implements OnInit, OnDestroy {
       { id: 7, name: productTranslations['7'] || 'Combined Cooker К 622 WWFT', picture: 'assets/Home appliances/COMBINED FREESTANDING COOKERS К 622 WWFT/FAVORIT-K-622-WWFT-10-1-1024x576.png', subcategory: stovesLabel, category: 'home-appliances' },
       { id: 23, name: productTranslations['23'] || 'Electric Cooker EC 640 WWF', picture: 'assets/Home appliances/Electric Freestanding Cooker EC 640 WWF/FAVORIT-EC-640-WWF-10-1024x576.png', subcategory: stovesLabel, category: 'home-appliances' },
       { id: 27, name: productTranslations['27'] || 'ELECTRIC COOKER EC 640 SF', picture: 'assets/Home appliances/ELECTRIC INDEPENDENT COOKER EC 640 SF/FAVORIT-EC-640-SF-10-1024x576.png', subcategory: stovesLabel, category: 'home-appliances' },
-      { id: 9, name: productTranslations['9'] || 'COMBINED COOKER K 622 SF', picture: 'assets/Home appliances/COMBINED INDEPENDENT COOKER К 622 SF/FAVORIT-K-622-SF-10-1-1024x576.png', subcategory: stovesLabel, category: 'home-appliances' },
+      { id: 9, name: productTranslations['9'] || 'COMBINED COOKER K 622 SF', picture: 'assets/Home appliances/COMBINED INDEPENDENT COOKER К 622 SF/FAVORIT-K-622-SF-10-1024x576.png', subcategory: stovesLabel, category: 'home-appliances' },
       { id: 26, name: productTranslations['26'] || 'Electric Independent Cooker EC 540 WWFT', picture: 'assets/Home appliances/Electric Independent Cooker EC 540 WWFT/Elektricen-sporet-EC-540-WWFT-44-1024x576.png', subcategory: stovesLabel, category: 'home-appliances' },
       { id: 25, name: productTranslations['25'] || 'Electric Independent Cooker EC 540 SF', picture: 'assets/Home appliances/Electric Independent Cooker EC 540 SF/Elektricen-sporet-EC-540-SF-43-1024x576.png', subcategory: stovesLabel, category: 'home-appliances' },
       { id: 10, name: productTranslations['10'] || 'COMBINED COOKER К 622 WWF', picture: 'assets/Home appliances/COMBINED INDEPENDENT COOKER К 622 WWF/FAVORIT-K-622-WWF-10-1024x576.png', subcategory: stovesLabel, category: 'home-appliances' },
       // Glass-ceramic cookers
       { id: 32, name: productTranslations['32'] || 'GLASS-CERAMIC COOKER CC 600 WWF', picture: 'assets/Home appliances/GLASS-CERAMIC INDEPENDENT COOKER CC 600 WWF/FAVORIT-CC-600-WWF-10-1024x576.png', subcategory: stovesGlassLabel, category: 'home-appliances' },
       { id: 31, name: productTranslations['31'] || 'GLASS-CERAMIC COOKER CC 600 SF', picture: 'assets/Home appliances/GLASS-CERAMIC INDEPENDENT COOKER CC 600 SF/FAVORIT-CC-600-SF-10-1024x576.png', subcategory: stovesGlassLabel, category: 'home-appliances' },
-      { id: 30, name: productTranslations['30'] || 'GLASS-CERAMIC COOKER CC 600 IF', picture: 'assets/Home appliances/GLASS-CERAMIC INDEPENDENT COOKER CC 600 IF/FAVORIT-CC-600-IF-10-1-1024x576.png', subcategory: stovesGlassLabel, category: 'home-appliances' },
-      { id: 29, name: productTranslations['29'] || 'GLASS-CERAMIC COOKER CC 500 WWF', picture: 'assets/Home appliances/GLASS-CERAMIC INDEPENDENT COOKER CC 500 WWF/FAVORIT-CC-500-WWF-10-1-1024x576.png', subcategory: stovesGlassLabel, category: 'home-appliances' },
-      { id: 28, name: productTranslations['28'] || 'GLASS-CERAMIC COOKER CC 500 SF', picture: 'assets/Home appliances/GLASS-CERAMIC INDEPENDENT COOKER CC 500 SF/FAVORIT-CC-500-SF-10-1-1024x576.png', subcategory: stovesGlassLabel, category: 'home-appliances' },
+      { id: 30, name: productTranslations['30'] || 'GLASS-CERAMIC COOKER CC 600 IF', picture: 'assets/Home appliances/GLASS-CERAMIC INDEPENDENT COOKER CC 600 IF/FAVORIT-CC-600-IF-10-1024x576.png', subcategory: stovesGlassLabel, category: 'home-appliances' },
+      { id: 29, name: productTranslations['29'] || 'GLASS-CERAMIC COOKER CC 500 WWF', picture: 'assets/Home appliances/GLASS-CERAMIC INDEPENDENT COOKER CC 500 WWF/FAVORIT-CC-500-WWF-10-1024x576.png', subcategory: stovesGlassLabel, category: 'home-appliances' },
+      { id: 28, name: productTranslations['28'] || 'GLASS-CERAMIC COOKER CC 500 SF', picture: 'assets/Home appliances/GLASS-CERAMIC INDEPENDENT COOKER CC 500 SF/FAVORIT-CC-500-SF-10-1024x576.png', subcategory: stovesGlassLabel, category: 'home-appliances' },
       // Mini stoves
       { id: 8, name: productTranslations['8'] || 'MINI STOVE MO-42W', picture: 'assets/Home appliances/MINI STOVE MO-42W/FAVORIT-MO42W-1024x576.png', subcategory: miniStovesLabel, category: 'home-appliances' },
       { id: 37, name: productTranslations['37'] || 'MINI STOVE MO-42B', picture: 'assets/Home appliances/MINI STOVE MO-42B (BLACK)/FAVORIT-MO42B-1024x576.png', subcategory: miniStovesLabel, category: 'home-appliances' }
@@ -384,17 +388,19 @@ export class NavbarComponent implements OnInit, OnDestroy {
 
     // Add built-in appliances
     const cookingBuiltInStovesLabel = filterSubcategory.builtInAppliances.builtInStoves;
+    const cookingBuiltInStovesAndTopsLabel = filterSubcategory.builtInAppliances.builtInStovesAndTops;
     const cookingMicrowavesLabel = filterSubcategory.builtInAppliances.builtInMicrowaves;
     const cookingStoveTopsLabel = filterSubcategory.builtInAppliances.builtInStoveTops;
     const builtInFridgesLabel = filterSubcategory.builtInAppliances.builtInFridges;
     allProducts.push(
+      { id: 163, name: productTranslations['163'] || 'Built in oven with stove top S 70MTB-40', picture: 'assets/Built In Appliances/Built-in oven with stove top S 70MTB-40/RERNA.png', subcategory: cookingBuiltInStovesAndTopsLabel, category: 'built-in-appliances' },
       { id: 70, name: productTranslations['70'] || 'Built-in oven FAVORIT BIO 65-B', picture: 'assets/Built In Appliances/Built-in oven FAVORIT BIO 65-B/BIO-65-B-PHOTO-1-1024x576.png', subcategory: cookingBuiltInStovesLabel, category: 'built-in-appliances' },
       { id: 153, name: productTranslations['153'] || 'Built-in oven BIO-65M B', picture: 'assets/Built In Appliances/Built-in oven FAVORIT BIO-65M B/BIO-65-X-PHOTO-1-1024x576.png', subcategory: cookingBuiltInStovesLabel, category: 'built-in-appliances' },
       { id: 71, name: productTranslations['71'] || 'Built-in oven FAVORIT BIO 65-X', picture: 'assets/Built In Appliances/Built-in oven FAVORIT BIO 65-X/BIO-65-X-PHOTO-1-1024x576.png', subcategory: cookingBuiltInStovesLabel, category: 'built-in-appliances' },
       { id: 72, name: productTranslations['72'] || 'Built-in oven FAVORIT BIO 65-XB', picture: 'assets/Built In Appliances/Built-in oven FAVORIT BIO 78-D LUX B/BIO-78-D-LUX-B-PHOTO-1-1024x576.png', subcategory: cookingBuiltInStovesLabel, category: 'built-in-appliances' },
       { id: 73, name: productTranslations['73'] || 'Built-in oven FAVORIT BIO 65-XS', picture: 'assets/Built In Appliances/Built-in oven FAVORIT BIO 78-D LUX X/BIO-78-D-LUX-X-PHOTO-1-1024x576.png', subcategory: cookingBuiltInStovesLabel, category: 'built-in-appliances' },
-      { id: 61, name: productTranslations['61'] || 'BUILT-IN COOKER 4 – J BLACK', picture: 'assets/Built In Appliances/BUILT-IN COOKER 4 – J BLACK/FAVORIT-4-J-BLACK-01-1024x576.png', subcategory: cookingBuiltInStovesLabel, category: 'built-in-appliances' },
-      { id: 62, name: productTranslations['62'] || 'BUILT-IN COOKER 4 – J INOX-B', picture: 'assets/Built In Appliances/BUILT-IN COOKER 4 – J INOX-B/FAVORIT-4-J-INOX-B-05-1024x576.png', subcategory: cookingBuiltInStovesLabel, category: 'built-in-appliances' },
+      // { id: 61, name: productTranslations['61'] || 'BUILT-IN COOKER 4 - J BLACK', picture: 'assets/Built In Appliances/BUILT-IN COOKER 4 - J BLACK/FAVORIT-4-J-BLACK-01-1024x576.png', subcategory: cookingBuiltInStovesLabel, category: 'built-in-appliances' },
+      // { id: 62, name: productTranslations['62'] || 'BUILT-IN COOKER 4 - J INOX-B', picture: 'assets/Built In Appliances/BUILT-IN COOKER 4 - J INOX-B/FAVORIT-4-J-INOX-B-05-1024x576.png', subcategory: cookingBuiltInStovesLabel, category: 'built-in-appliances' },
       { id: 68, name: productTranslations['68'] || 'Built-in Microwave Oven BIMW-20 BLACK', picture: 'assets/Built In Appliances/BUILT-IN MICROWAVE OVEN BIMW-20 BLACK/FAVORIT-BIMW-20-BLACK-1-scaled-1-1024x576.png', subcategory: cookingMicrowavesLabel, category: 'built-in-appliances' },
       { id: 69, name: productTranslations['69'] || 'Built-in Microwave Oven BIMW-20 INOX', picture: 'assets/Built In Appliances/BUILT-IN MICROWAVE OVEN BIMW-20 INOX/FAVORIT-BIMW-20-INOX-1024x576.png', subcategory: cookingMicrowavesLabel, category: 'built-in-appliances' },
       { id: 77, name: productTranslations['77'] || 'Vitro ceramic hob FAVORIT BIH-40', picture: 'assets/Built In Appliances/Vitro ceramic hob FAVORIT BIH-40/BIH-40-PHOTO-1-1024x576.png', subcategory: cookingStoveTopsLabel, category: 'built-in-appliances' },
@@ -410,10 +416,11 @@ export class NavbarComponent implements OnInit, OnDestroy {
     const fullyBuiltInDishwashersLabel = subcategoriesComponentConstant.builtInAppliances.fullyBuiltInDishwashers;
     allProducts.push(
       { id: 63, name: productTranslations['63'] || 'Built-in dishwasher BI45-I1E', picture: 'assets/Built In Appliances/Built-in dishwasher BI45-I1E (fully integrated)/BI-45-I1E-08-1024x576.png', subcategory: fullyBuiltInDishwashersLabel, category: 'built-in-appliances' },
-      { id: 64, name: productTranslations['64'] || 'Built-in dishwasher SI60 – I14N', picture: 'assets/Built In Appliances/Built-in dishwasher BI60 – I14 (fully integrated)/SI60-I14-11-1024x576.png', subcategory: fullyBuiltInDishwashersLabel, category: 'built-in-appliances' },
-      { id: 65, name: productTranslations['65'] || 'Built-in dishwasher BI60 – I14N', picture: 'assets/Built In Appliances/Built-in dishwasher FAVORIT BI60-I1FN/RABOTEN-16.9-29-2-1024x576.png', subcategory: fullyBuiltInDishwashersLabel, category: 'built-in-appliances' },
-      { id: 66, name: productTranslations['66'] || 'Built-in dishwasher SI60 – I14', picture: 'assets/Built In Appliances/Built-in dishwasher SI60 – I14/SI60-I14-11-1024x576.png', subcategory: fullyBuiltInDishwashersLabel, category: 'built-in-appliances' },
-      { id: 143, name: productTranslations['143'] || 'Hekur PL-607', picture: '', subcategory: fullyBuiltInDishwashersLabel, category: 'built-in-appliances' }
+      // { id: 64, name: productTranslations['64'] || 'Built-in dishwasher SI60 - I14N', picture: 'assets/Built In Appliances/Built-in dishwasher BI60 - I14 (fully integrated)/SI60-I14-11-1024x576.png', subcategory: fullyBuiltInDishwashersLabel, category: 'built-in-appliances' },
+      { id: 65, name: productTranslations['65'] || 'Built-in dishwasher BI60 - I14N', picture: 'assets/Built In Appliances/Built-in dishwasher FAVORIT BI60-I1FN/BI60-I1FN.jpg', subcategory: fullyBuiltInDishwashersLabel, category: 'built-in-appliances' },
+      { id: 66, name: productTranslations['66'] || 'Built-in dishwasher SI60 - I14', picture: 'assets/Built In Appliances/Built-in dishwasher BI60 – I14 (fully integrated)/BI60-I14N.jpg', subcategory: fullyBuiltInDishwashersLabel, category: 'built-in-appliances' },
+      { id: 162, name: productTranslations['162'] || 'Built-in dishwasher BI60-I14FN', picture: 'assets/Built In Appliances/Built-in dishwasher BI60 – I14 (fully integrated)/SI60-I14-11-1024x576.png', subcategory: fullyBuiltInDishwashersLabel, category: 'built-in-appliances' },
+      { id: 143, name: productTranslations['143'] || 'Hekur PL-607', picture: 'assets/Small domestic appliances/IRON PL-607/viber_image_2024-03-25_13-19-07-518-1.png', subcategory: fullyBuiltInDishwashersLabel, category: 'built-in-appliances' }
     );
 
     // Add air conditioners
@@ -446,14 +453,14 @@ export class NavbarComponent implements OnInit, OnDestroy {
       { id: 146, name: productTranslations['146'] || 'LED TV 75U20B-G1', picture: 'assets/TV/LED TV 75U20B-G1/7. FAVORIT TV 75U20B-G1-1.png', subcategory: tvFilters.size75, category: 'televisions' },
       { id: 145, name: productTranslations['145'] || 'LED TV 65U20B-G1', picture: 'assets/TV/LED TV 65U20B-G1/6.-FAVORIT-TV-50F135R-F-1.png', subcategory: tvFilters.size65, category: 'televisions' },
       { id: 147, name: productTranslations['147'] || 'LED TV 55U20B-G1', picture: 'assets/TV/LED TV 55U20B-G1/5. FAVORIT TV 55U20B-G1-1.png', subcategory: tvFilters.size55, category: 'televisions' },
-      { id: 123, name: productTranslations['123'] || 'LED TV 55DK5JM2T2S2A -11UHD 4K ANDROI', picture: 'assets/TV/LED ТЕЛЕВИЗОР 55DK5JM2T2S2A-11UHD 4K ANDROID(11)/11.-FAVORIT-LED-TV-55DK5JM2T2S2A-90UHD-ANDROID-55-SMART-Android-tv-01-1024x576.png', subcategory: tvFilters.size55, category: 'televisions' },
-      { id: 124, name: productTranslations['124'] || 'LED TV 55DЕ2М1T2S2A-13UHD 4K ANDROID', picture: 'assets/TV/LED ТЕЛЕВИЗОР 55DЕ2М1T2S2A-13UHD 4K ANDROID/TV-55DEM1T2S2A-13UHD-44-1024x576.png', subcategory: tvFilters.size55, category: 'televisions' },
+      // { id: 123, name: productTranslations['123'] || 'LED TV 55DK5JM2T2S2A -11UHD 4K ANDROI', picture: 'assets/TV/LED ТЕЛЕВИЗОР 55DK5JM2T2S2A-11UHD 4K ANDROID(11)/11.-FAVORIT-LED-TV-55DK5JM2T2S2A-90UHD-ANDROID-55-SMART-Android-tv-01-1024x576.png', subcategory: tvFilters.size55, category: 'televisions' },
+      // { id: 124, name: productTranslations['124'] || 'LED TV 55DЕ2М1T2S2A-13UHD 4K ANDROID', picture: 'assets/TV/LED ТЕЛЕВИЗОР 55DЕ2М1T2S2A-13UHD 4K ANDROID/TV-55DEM1T2S2A-13UHD-44-1024x576.png', subcategory: tvFilters.size55, category: 'televisions' },
       { id: 144, name: productTranslations['144'] || 'LED TV D50F135R-F (FHD ANDROID 14)', picture: 'assets/TV/LED TV D50F135R FHD/6.-FAVORIT-TV-50F135R-F.png', subcategory: tvFilters.size50, category: 'televisions' },
-      { id: 121, name: productTranslations['121'] || 'LED TV 43DF3PHT2S2A-13FHD ANDROID', picture: 'assets/TV/LED ТЕЛЕВИЗОР 43DF3PHT2S2A-13FHD ANDROID/TV-43DF3PHT2S2A-13FHD-44-1024x576.png', subcategory: tvFilters.size43, category: 'televisions' },
+      // { id: 121, name: productTranslations['121'] || 'LED TV 43DF3PHT2S2A-13FHD ANDROID', picture: 'assets/TV/LED ТЕЛЕВИЗОР 43DF3PHT2S2A-13FHD ANDROID/TV-43DF3PHT2S2A-13FHD-44-1024x576.png', subcategory: tvFilters.size43, category: 'televisions' },
       { id: 148, name: productTranslations['148'] || 'LED TV 43U20B-20D', picture: 'assets/TV/LED TV 43U20B-20D/2. FAVORIT TV 43U20B-20D-1.png', subcategory: tvFilters.size43, category: 'televisions' },
       { id: 149, name: productTranslations['149'] || 'LED TV 32U20B-20D', picture: 'assets/TV/LED TV 32U20B-20D/1. FAVORIT TV 32U20B-20D-1.png', subcategory: tvFilters.size32, category: 'televisions' },
-      { id: 117, name: productTranslations['117'] || 'LED TV 32DF1P4T2HD', picture: 'assets/TV/LED ТЕЛЕВИЗОР 32DF1P4T2HD/32DF1P4T2HD-44-1024x576.png', subcategory: tvFilters.size32, category: 'televisions' },
-      { id: 116, name: productTranslations['116'] || 'LED TV 32DF1M1T2S2A-13HD ANDROID', picture: 'assets/TV/LED ТЕЛЕВИЗОР 32DF1M1T2S2A-13HD ANDROID/TV-32DF1M1T2S2A-13HD-44-1024x576.png', subcategory: tvFilters.size32, category: 'televisions' }
+      // { id: 117, name: productTranslations['117'] || 'LED TV 32DF1P4T2HD', picture: 'assets/TV/LED ТЕЛЕВИЗОР 32DF1P4T2HD/32DF1P4T2HD-44-1024x576.png', subcategory: tvFilters.size32, category: 'televisions' },
+      // { id: 116, name: productTranslations['116'] || 'LED TV 32DF1M1T2S2A-13HD ANDROID', picture: 'assets/TV/LED ТЕЛЕВИЗОР 32DF1M1T2S2A-13HD ANDROID/TV-32DF1M1T2S2A-13HD-44-1024x576.png', subcategory: tvFilters.size32, category: 'televisions' }
     );
 
     // Add small domestic appliances
@@ -485,8 +492,6 @@ export class NavbarComponent implements OnInit, OnDestroy {
       { id: 114, name: productTranslations['114'] || 'VACUUM CLEANER FVC 306 GREY/ORANGE', picture: 'assets/Small domestic appliances/VACUUM CLEANER FVC 306/FVC306-HD-10-1024x577.png', subcategory: smallAppliancesFilters.vacuumCleaners, category: 'small-domestic-appliances' },
       { id: 113, name: productTranslations['113'] || 'VACUUM CLEANER FVC 245 RED', picture: 'assets/Small domestic appliances/VACUUM CLEANER FVC 245/FVC245-HD-01-1024x576.png', subcategory: smallAppliancesFilters.vacuumCleaners, category: 'small-domestic-appliances' },
       { id: 111, name: productTranslations['111'] || 'VACUUM CLEANER FVC 156', picture: 'assets/Small domestic appliances/VACUUM CLEANER FVC 156/FVC156-HD-01-1024x576.png', subcategory: smallAppliancesFilters.vacuumCleaners, category: 'small-domestic-appliances' },
-      { id: 112, name: productTranslations['112'] || 'VACUUM CLEANER FVC 160', picture: 'assets/Small domestic appliances/VACUUM CLEANER FVC 160/2-FAVORIT-pravosmukalka-FVC-160-01-1024x576.png', subcategory: smallAppliancesFilters.vacuumCleaners, category: 'small-domestic-appliances' },
-      { id: 115, name: productTranslations['115'] || 'VACUUM CLEANER FVC 585', picture: 'assets/Small domestic appliances/VACUUM CLEANER FVC 585/7.1-FAVORIT-pravosmukalka-FVC-585-CELOSNA-01-1024x576.png', subcategory: smallAppliancesFilters.vacuumCleaners, category: 'small-domestic-appliances' }
     );
 
     return allProducts;

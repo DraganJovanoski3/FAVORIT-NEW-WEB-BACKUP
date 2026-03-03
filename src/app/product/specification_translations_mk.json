@@ -1,11 +1,12 @@
 {
     "specifications":"Спецификации",
-    "specificationsPdf":"Спецификации PDF",
+    "specificationsPdf":"Упатство за употреба",
     "similarProducts":"Слични производи",
     "shareThisProduct": "Сподели го овој производ:",
     "whatsapp": "📱 WhatsApp",
     "viber": "💬 Viber",
     "facebook": "📘 Facebook",
     "copyLink": "📋 Копирај линк",
-    "shareNote": "Линковите водат до статички страници оптимизирани за споделување на социјални мрежи"
+    "shareNote": "Линковите водат до статички страници оптимизирани за споделување на социјални мрежи",
+    "specificationsPdfExtra": "Упатство за употреба за спореден производ"
 }

@@ -14,6 +14,10 @@ import { BlogComponent } from './blog/blog.component';
 import { BlogListComponent } from './blog-list/blog-list.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { TermsOfServiceComponent } from './terms-of-service/terms-of-service.component';
+import { WarrantyRegistrationComponent } from './warranty/warranty-registration.component';
+import { AdminLoginComponent } from './admin/admin-login/admin-login.component';
+import { AdminWarrantyCheckComponent } from './admin/admin-warranty-check/admin-warranty-check.component';
+import { adminAuthGuard } from './admin/admin-auth.guard';
 
 export const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -24,6 +28,14 @@ export const routes: Routes = [
   { path: 'service-centers', component: ServiceCentersComponent },
   { path: 'blogs', component: BlogListComponent },
   { path: 'blog/:id', component: BlogComponent },
+  { path: 'privacy-policy', component: PrivacyPolicyComponent },
+  { path: 'terms-of-service', component: TermsOfServiceComponent },
+  { path: 'warranty-register', component: WarrantyRegistrationComponent },
+
+  // Admin (warranty verification)
+  { path: 'admin/login', component: AdminLoginComponent },
+  { path: 'admin/warranty-check', component: AdminWarrantyCheckComponent, canActivate: [adminAuthGuard] },
+  { path: 'admin', redirectTo: 'admin/warranty-check', pathMatch: 'full' },
 
   // Shorter route structure
   { path: 'c/:category', component: CategoryComponent },  // /c/built-in-appliances

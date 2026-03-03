@@ -24,6 +24,7 @@ import subcategories_sr from '../subcategory/subcategories_sr_new.json';
 import product_names_mk from '../subcategory/product_names_mk.json';
 import product_names_sr from '../subcategory/product_names_sr.json';
 import product_names_al from '../subcategory/product_names_al.json';
+import product_names_en from '../subcategory/product_names_en.json';
 
 interface ProductListInterface {
   id: number;
@@ -31,7 +32,17 @@ interface ProductListInterface {
   pictures?: string[];
   description: string | string[];
   specifications?: { [key: string]: string | number | string[] | undefined };
+  specificationsExtra?: { [key: string]: string | number | string[] | undefined };
+  /** Optional label for the first specifications table (e.g. "Specifications for oven"). */
+  specificationsLabel?: string;
+  /** Optional label for the second specifications table (e.g. "Specifications for stove top"). */
+  specificationsExtraLabel?: string;
+  /** Optional label for the first PDF link (e.g. "Specifications PDF for oven"). */
+  specificationsDocLabel?: string;
+  /** Optional label for the second PDF link (e.g. "Specifications PDF for stove top"). */
+  specificationsDocExtraLabel?: string;
   specificationsDoc?: string;
+  specificationsDocExtra?: string;
   discount?: string;
   originalPrice?: number;
   category?: string; // Added for breadcrumbs
@@ -55,12 +66,22 @@ export class ProductComponent implements OnInit, AfterViewInit {
   product: ProductListInterface | undefined;
   allSpecifications: any[] = [];
   displayedSpecifications: any[] = [];
+  displayedSpecificationsExtra: any[] = [];
+  /** Label for the first spec table (from product.specificationsLabel or default). */
+  specificationsTableLabel: string = '';
+  /** Label for the second spec table (from product.specificationsExtraLabel or default). */
+  specificationsExtraTableLabel: string = '';
+  /** Label for the first PDF link (from product.specificationsDocLabel or default). */
+  specificationsDocLinkLabel: string = '';
+  /** Label for the second PDF link (from product.specificationsDocExtraLabel or default). */
+  specificationsDocExtraLinkLabel: string = '';
   firstFiveSpecifications: { label: string; value: string }[] = [];
   showAll: boolean = false;
   initialSpecificationCount: number = 999;
   relatedProducts: ProductListInterface[] = [];
   companyName: string = 'Favorit Eletronics';
   isLoading: boolean = true;
+  productNames: any;
 
   // Breadcrumbs for the product page
   breadcrumbs: { label: string, url: string }[] = [];
@@ -109,30 +130,42 @@ export class ProductComponent implements OnInit, AfterViewInit {
           this.productList = productList_mk;
           this.specificationTranslations = specificationTranslations_mk;
           this.subcategoriesComponentConstant = subcategories_mk;
+          this.productNames = product_names_mk;
           break;
         case 'en':
           this.productList = productList_en;
           this.specificationTranslations = specificationTranslations_en;
           this.subcategoriesComponentConstant = subcategories_en;
+          this.productNames = product_names_en;
           break;
         case 'sr':
           this.productList = productList_sr;
           this.specificationTranslations = specificationTranslations_sr;
           this.subcategoriesComponentConstant = subcategories_sr;
+          this.productNames = product_names_sr;
           break;
         case 'al':
           this.productList = productList_al;
           this.specificationTranslations = specificationTranslations_al;
           this.subcategoriesComponentConstant = subcategories_al;
+          this.productNames = product_names_al;
           break;
         default:
           this.productList = productList_en;
           this.specificationTranslations = specificationTranslations_en;
           this.subcategoriesComponentConstant = subcategories_en;
+          this.productNames = product_names_en;
           break;
       }
 
       this.product = this.productList.find(p => p.id === this.productId);
+      const defaultSpecLabel = this.specificationTranslations?.specifications ?? 'Specifications';
+      const defaultPdfLabel = this.specificationTranslations?.specificationsPdf ?? 'Specifications PDF';
+      const defaultPdfExtraLabel = this.specificationTranslations?.specificationsPdfExtra ?? 'Specifications PDF for extra product';
+      this.specificationsTableLabel = defaultSpecLabel;
+      this.specificationsExtraTableLabel = defaultSpecLabel;
+      this.specificationsDocLinkLabel = defaultPdfLabel;
+      this.specificationsDocExtraLinkLabel = defaultPdfExtraLabel;
 
       // If product not found, redirect to 404 page
       if (!this.product) {
@@ -143,6 +176,13 @@ export class ProductComponent implements OnInit, AfterViewInit {
         return;
       }
 
+      // Update product name with translated name from product_names file
+      if (this.product && this.productNames) {
+        const translatedName = (this.productNames as any)[this.product.id.toString()];
+        if (translatedName) {
+          this.product.name = translatedName;
+        }
+      }
 
       // Only show product name in breadcrumbs
       this.breadcrumbs = [{ label: this.product?.name || '', url: '' }];
@@ -152,7 +192,17 @@ export class ProductComponent implements OnInit, AfterViewInit {
           ([key, value]) => ({ label: key, value })
         );
         this.displayedSpecifications = this.allSpecifications.slice(0, this.initialSpecificationCount);
+        this.displayedSpecificationsExtra = this.product.specificationsExtra
+          ? Object.entries(this.product.specificationsExtra).map(([key, value]) => ({ label: key, value }))
+          : [];
+        if (this.product.specificationsLabel) this.specificationsTableLabel = this.product.specificationsLabel;
+        if (this.product.specificationsExtraLabel) this.specificationsExtraTableLabel = this.product.specificationsExtraLabel;
+        if (this.product.specificationsDocLabel) this.specificationsDocLinkLabel = this.product.specificationsDocLabel;
+        if (this.product.specificationsDocExtraLabel) this.specificationsDocExtraLinkLabel = this.product.specificationsDocExtraLabel;
         this.firstFiveSpecifications = this.extractFirstFiveSpecifications(this.product.specifications);
+        if (this.product.specificationsExtra) {
+          this.firstFiveSpecifications = this.firstFiveSpecifications.concat(this.extractFirstFiveSpecifications(this.product.specificationsExtra));
+        }
       }
 
       this.findRelatedProducts();
@@ -532,26 +582,8 @@ export class ProductComponent implements OnInit, AfterViewInit {
   }
 
   private getSubcategoryProducts(): ProductListInterface[] {
-    // Get the appropriate translation files based on language
-    let productTranslations: any;
-    
-    switch (this.currentLang) {
-      case 'mk':
-        productTranslations = product_names_mk;
-        break;
-      case 'en':
-        productTranslations = product_names_mk; // Use Macedonian as fallback for English
-        break;
-      case 'sr':
-        productTranslations = product_names_sr;
-        break;
-      case 'al':
-        productTranslations = product_names_al;
-        break;
-      default:
-        productTranslations = product_names_mk;
-        break;
-    }
+    // Use the already loaded product names
+    const productTranslations = this.productNames;
 
     // Get products based on subcategory (similar to subcategory component logic)
     const products: ProductListInterface[] = [];
@@ -576,8 +608,8 @@ export class ProductComponent implements OnInit, AfterViewInit {
           { id: 48, name: productTranslations['48'] || 'WASHING MACHINE L – 9101N', pictures: ['assets/Home appliances/WASHING MACHINE L – 9101N/W-9101-05-1024x576.png'], description: ['Washing machine'], specifications: {} },
           { id: 51, name: productTranslations['51'] || 'WASHING MACHINE W – 7122N BLDC', pictures: ['assets/Home appliances/WASHING MACHINE W – 7122N BLDC/W-7122-BLDC-06-1024x576.png'], description: ['Washing machine'], specifications: {} },
           { id: 53, name: productTranslations['53'] || 'WASHING MACHINE W – 8122N BLDC', pictures: ['assets/Home appliances/WASHING MACHINE W – 8122N BLDC/W-8122-BLDC-06-1024x576.png'], description: ['Washing machine'], specifications: {} },
-          { id: 56, name: productTranslations['56'] || 'WASHING MACHINE W-9122N BLDC', pictures: ['assets/Home appliances/WASHING MACHINE W-9122N BLDC/W-9122-BLDC-06-1024x576.png'], description: ['Washing machine'], specifications: {} },
-          { id: 55, name: productTranslations['55'] || 'WASHING MACHINE W – 9142ТN BLDC', pictures: ['assets/Home appliances/WASHING MACHINE W – 9142ТN BLDC/W-9142-BLDC-06-1024x576.png'], description: ['Washing machine'], specifications: {} },
+          // { id: 56, name: productTranslations['56'] || 'WASHING MACHINE W-9122N BLDC', pictures: ['assets/Home appliances/WASHING MACHINE W-9122N BLDC/W-9122-BLDC-06-1024x576.png'], description: ['Washing machine'], specifications: {} },
+          // { id: 55, name: productTranslations['55'] || 'WASHING MACHINE W – 9142ТN BLDC', pictures: ['assets/Home appliances/WASHING MACHINE W – 9142ТN BLDC/W-9142-BLDC-06-1024x576.png'], description: ['Washing machine'], specifications: {} },
           { id: 19, name: productTranslations['19'] || 'Dryer L – 71 C', pictures: ['assets/Home appliances/Dryer L – 71 C/DRYER-L-71-C-01-1024x576.png'], description: ['Dryer'], specifications: {} },
           { id: 21, name: productTranslations['21'] || 'Dryer W – 72 C', pictures: ['assets/Home appliances/Dryer W – 72 C/DRYER-W-72-C-01-1024x576.png'], description: ['Dryer'], specifications: {} },
           { id: 20, name: productTranslations['20'] || 'Dryer L – 81 C', pictures: ['assets/Home appliances/Dryer L – 81 C/DRYER-L-81-C-01-1024x576.png'], description: ['Dryer'], specifications: {} },
@@ -587,8 +619,9 @@ export class ProductComponent implements OnInit, AfterViewInit {
       case 'built-in-dishwashers':
         products.push(
           { id: 63, name: productTranslations['63'] || 'Built-in dishwasher BI45-I1E', pictures: ['assets/Built In Appliances/Built-in dishwasher BI45-I1E (fully integrated)/BI-45-I1E-08-1024x576.png'], description: ['Built-in dishwasher'], specifications: {} },
-          { id: 64, name: productTranslations['64'] || 'Built-in dishwasher SI60 – I14N', pictures: ['assets/Built In Appliances/Built-in dishwasher BI60 – I14 (fully integrated)/SI60-I14-11-1024x576.png'], description: ['Built-in dishwasher'], specifications: {} },
-          { id: 65, name: productTranslations['65'] || 'Built-in dishwasher BI60 – I14N', pictures: ['assets/Built In Appliances/Built-in dishwasher FAVORIT BI60-I1FN/RABOTEN-16.9-29-2-1024x576.png'], description: ['Built-in dishwasher'], specifications: {} },
+          // { id: 64, name: productTranslations['64'] || 'Built-in dishwasher SI60 – I14N', pictures: ['assets/Built In Appliances/Built-in dishwasher BI60 – I14 (fully integrated)/SI60-I14-11-1024x576.png'], description: ['Built-in dishwasher'], specifications: {} },
+          { id: 65, name: productTranslations['65'] || 'Built-in dishwasher BI60 – I14N', pictures: ['assets/Built In Appliances/Built-in dishwasher FAVORIT BI60-I1FN/BI60-I1FN.jpg'], description: ['Built-in dishwasher'], specifications: {} },
+          { id: 162, name: productTranslations['162'] || 'Built-in dishwasher BI60-I14FN', pictures: ['assets/Built In Appliances/Built-in dishwasher BI60 – I14 (fully integrated)/BI60-I14N.jpg'], description: ['Built-in dishwasher'], specifications: {} },
           { id: 66, name: productTranslations['66'] || 'Built-in dishwasher SI60 – I14', pictures: ['assets/Built In Appliances/Built-in dishwasher SI60 – I14/BI60-I14-02-1024x576.png'], description: ['Built-in dishwasher'], specifications: {} }
         );
         break;
@@ -618,8 +651,8 @@ export class ProductComponent implements OnInit, AfterViewInit {
           { id: 135, name: productTranslations['135'] || 'Dishwasher F60 – Y14N S', pictures: ['assets/Home appliances/Dishwasher F60 – Y14N S/F60-Y14_S-04.png'], description: ['Dishwasher'], specifications: {} },
           { id: 15, name: productTranslations['15'] || 'Dishwasher E60-A1FN', pictures: ['assets/Home appliances/Dishwasher E60-A1FN/E60-A1FN-04-1024x576.png'], description: ['Dishwasher'], specifications: {} },
           { id: 136, name: productTranslations['136'] || 'Dishwasher E60-A1FN X', pictures: ['assets/Home appliances/Dishwasher E60-A1FN X/E60-A1FN-X-04.png'], description: ['Dishwasher'], specifications: {} },
-          { id: 14, name: productTranslations['14'] || 'Dishwasher E60 – A22', pictures: ['assets/Home appliances/Dishwasher E60 – A22/E60-A22-04-1024x576.png'], description: ['Dishwasher'], specifications: {} },
-          { id: 16, name: productTranslations['16'] || 'DISHWASHER E60-A24N BLDC', pictures: ['assets/Home appliances/DISHWASHER E60-A24N BLDC/E60-A24N-BLDC-04-1024x576.png'], description: ['Dishwasher'], specifications: {} }
+          // { id: 14, name: productTranslations['14'] || 'Dishwasher E60 – A22', pictures: ['assets/Home appliances/Dishwasher E60 – A22/E60-A22-04-1024x576.png'], description: ['Dishwasher'], specifications: {} },
+          // { id: 16, name: productTranslations['16'] || 'DISHWASHER E60-A24N BLDC', pictures: ['assets/Home appliances/DISHWASHER E60-A24N BLDC/E60-A24N-BLDC-04-1024x576.png'], description: ['Dishwasher'], specifications: {} }
         );
         break;
       case 'fridges-and-freezers':
@@ -627,7 +660,7 @@ export class ProductComponent implements OnInit, AfterViewInit {
           { id: 38, name: productTranslations['38'] || 'REFRIGERATOR WITH CHAMBER R1001N', pictures: ['assets/Home appliances/REFRIGERATOR WITH CHAMBER R1001N/FAVORIT-R-1001-01-1024x576.png'], description: ['Refrigerator'], specifications: {} },
           { id: 39, name: productTranslations['39'] || 'REFRIGERATOR WITHOUT CHAMBER L1002E', pictures: ['assets/Home appliances/REFRIGERATOR WITHOUT CHAMBER L1002N/FAVORIT-L-1002-01-1024x576.png'], description: ['Refrigerator'], specifications: {} },
           { id: 40, name: productTranslations['40'] || 'REFRIGERATOR WITHOUT CHAMBER L2653E', pictures: ['assets/Home appliances/REFRIGERATOR WITHOUT CHAMBER L2653E/FAVORIT-L-2653-01-1024x576.png'], description: ['Refrigerator'], specifications: {} },
-          { id: 41, name: productTranslations['41'] || 'VERTICAL FREEZER F2451E', pictures: ['assets/Home appliances/VERTICAL FREEZER F2451E/FAVORIT-F-2451-01-1024x576.png'], description: ['Freezer'], specifications: {} },
+          { id: 41, name: productTranslations['41'] || 'VERTICAL FREEZER F2451E', pictures: ['assets/Home appliances/TWO CHAMBER REFRIGERATOR RF 263N/FAVORIT-RF-263-01-3-1024x576.png'], description: ['Freezer'], specifications: {} },
           { id: 42, name: productTranslations['42'] || 'VERTICAL FREEZER F1005E', pictures: ['assets/Home appliances/VERTICAL FREEZER F1005E/FAVORIT-F-1005-01-1024x576.png'], description: ['Freezer'], specifications: {} },
           { id: 43, name: productTranslations['43'] || 'VERTICAL FREEZER F2451N', pictures: ['assets/Home appliances/VERTICAL FREEZER F2451N/FAVORIT-F-2451-01-1024x576.png'], description: ['Freezer'], specifications: {} },
           { id: 11, name: productTranslations['11'] || 'COMBINED REFRIGERATOR CF 278E', pictures: ['assets/Home appliances/COMBINED REFRIGERATOR CF 278N/FAVORIT-CF-278-01-1024x576.png'], description: ['Combined refrigerator'], specifications: {} },
@@ -652,6 +685,12 @@ export class ProductComponent implements OnInit, AfterViewInit {
     if (this.specificationTranslations === specificationTranslations_en) {
       return this.product!.name;
     } else {
+      // Get English name from product_names_en file
+      const englishName = (product_names_en as any)[this.product!.id.toString()];
+      if (englishName) {
+        return englishName;
+      }
+      // Fallback to original product list
       const englishProduct = productList_en.find((prod: { id: number; }) => prod.id === this.product!.id);
       return englishProduct ? englishProduct.name : this.product!.name;
     }
@@ -676,7 +715,8 @@ export class ProductComponent implements OnInit, AfterViewInit {
   }
 
   getShareUrl(): string {
-    return `https://favoritelectronics.com/p/${this.productId}`;
+    // Use /p/ pattern with static parameter for social media sharing
+    return `https://favoritelectronics.com/p/${this.productId}?static=true`;
   }
 
   shareOnFacebook(): void {
@@ -704,8 +744,23 @@ export class ProductComponent implements OnInit, AfterViewInit {
 
   shareOnViber(): void {
     const text = `${this.getShareText()}\n\n${this.getShareUrl()}`;
-    const url = `viber://forward?text=${encodeURIComponent(text)}`;
-    this.openShareWindow(url);
+    
+    // Try to use Viber's web sharing first, fallback to copy to clipboard
+    if (navigator.share) {
+      navigator.share({
+        title: this.product?.name || '',
+        text: this.getShareText(),
+        url: this.getShareUrl()
+      }).catch(() => {
+        // Fallback to clipboard if sharing fails
+        this.copyToClipboard(text);
+        alert(this.getTranslatedText('viberShareMessage'));
+      });
+    } else {
+      // Fallback to clipboard for older browsers
+      this.copyToClipboard(text);
+      alert(this.getTranslatedText('viberShareMessage'));
+    }
   }
 
   private openShareWindow(url: string): void {
@@ -739,6 +794,12 @@ export class ProductComponent implements OnInit, AfterViewInit {
         sr: 'URL je kopiran u clipboard! Otvorite Instagram i nalepite ga u vašu priču ili post.',
         al: 'URL është kopjuar në clipboard! Hapni Instagram dhe ngjiteni atë në historinë ose postin tuaj.',
         en: 'URL copied to clipboard! Open Instagram and paste it in your story or post.'
+      },
+      viberShareMessage: {
+        mk: 'Текстот е копиран во клипборд! Отворете го Viber и вметнете го во вашата разговора.',
+        sr: 'Tekst je kopiran u clipboard! Otvorite Viber i nalepite ga u vašu konverzaciju.',
+        al: 'Teksti është kopjuar në clipboard! Hapni Viber dhe ngjiteni atë në bisedën tuaj.',
+        en: 'Text copied to clipboard! Open Viber and paste it in your conversation.'
       }
     };
 

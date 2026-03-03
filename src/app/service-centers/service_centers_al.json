@@ -1,8 +1,1 @@
-{
-    "serviceCenters": "Qendrat e Shërbimit",
-    "callCenter": "Qendra e Thirrjeve",
-    "phone": "Тelefon: 02 2 440 070",
-    "email": "Еmail: servis@centrounion.com.mk",
-    "header": "Qendrat e shërbimit"
-  }
-  
+{"serviceCenters":"Qendrat e Shërbimit","callCenter":"Qendra e Thirrjeve","phone":"Telefon: 02 2 440 070","email":"Email: servis@centrounion.com.mk","header":"Qendrat e shërbimit","sendMessage":"Kontaktoni qendrën e shërbimit","formSubtitle":"Dërgoni një mesazh departamentit të shërbimit","name":"Emri i plotë","youEmail":"Email juaj","message":"Mesazhi","submit":"Dërgo","sending":"Duke dërguar...","namePlaceholder":"Shkruani emrin tuaj","emailPlaceholder":"Shkruani adresën tuaj të emailit","phonePlaceholder":"+389 XX XXX XXX","subjectPlaceholder":"Subjekti i mesazhit","messagePlaceholder":"Shkruani mesazhin tuaj...","phoneLabel":"Telefoni","subject":"Subjekti","successMessage":"Mesazhi juaj u dërgua. Do t'ju kontaktojmë së shpejti.","formError":"Kjo fushë është e detyrueshme."}

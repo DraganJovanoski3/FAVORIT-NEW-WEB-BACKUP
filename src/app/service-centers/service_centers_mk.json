@@ -1,8 +1,1 @@
-{
-    "serviceCenters": "Сервисна Мрежа",
-    "callCenter": "Центар за повици",
-    "phone": "Телефон: 02 2 440 070",
-    "email": "Емаил: servis@centrounion.com.mk",
-    "header": "Сервисни Центри"
-  }
-  
+{"serviceCenters":"Сервисна Мрежа","callCenter":"Центар за повици","phone":"Телефон: 02 2 440 070","email":"Емаил: servis@centrounion.com.mk","header":"Сервисни Центри","sendMessage":"Контакт сервис","formSubtitle":"Испратете порака до сервисниот оддел","name":"Име и презиме","youEmail":"Вашата е-пошта","message":"Порака","submit":"Испрати","sending":"Се испраќа...","namePlaceholder":"Внесете го вашето име","emailPlaceholder":"Внесете ја вашата е-пошта","phonePlaceholder":"+389 XX XXX XXX","subjectPlaceholder":"Наслов на пораката","messagePlaceholder":"Внесете ја вашата порака...","phoneLabel":"Телефон","subject":"Наслов","successMessage":"Вашата порака е испратена. Ќе ве контактираме наскоро.","formError":"Ова поле е задолжително."}

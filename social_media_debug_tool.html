@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Sharing Debug Tool</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .test-section { margin: 20px 0; padding: 15px; border: 1px solid #ddd; border-radius: 5px; }
+        .url-test { background: #f0f8ff; }
+        .meta-test { background: #f0fff0; }
+        .debug-info { background: #fff8f0; }
+        .error { color: red; }
+        .success { color: green; }
+        .warning { color: orange; }
+        pre { background: #f5f5f5; padding: 10px; border-radius: 3px; overflow-x: auto; }
+        .test-button { background: #007cba; color: white; padding: 10px 20px; border: none; border-radius: 3px; cursor: pointer; margin: 5px; }
+        .test-button:hover { background: #005a87; }
+    </style>
+</head>
+<body>
+    <h1>🔍 Social Media Sharing Debug Tool</h1>
+    
+    <div class="test-section url-test">
+        <h2>📋 Test URLs</h2>
+        <p><strong>Product URLs to test:</strong></p>
+        <ul>
+            <li><a href="https://favoritelectronics.com/product/1" target="_blank">Product 1 (Hood)</a></li>
+            <li><a href="https://favoritelectronics.com/product/2" target="_blank">Product 2</a></li>
+            <li><a href="https://favoritelectronics.com/product/3" target="_blank">Product 3</a></li>
+        </ul>
+        
+        <p><strong>Blog URLs to test:</strong></p>
+        <ul>
+            <li><a href="https://favoritelectronics.com/blog/Зошто-климатизерите-најмногу-замрзнуваат-при-надворешна-температура-од-околу-нула-степени" target="_blank">Air Conditioner Blog (Cyrillic)</a></li>
+            <li><a href="https://favoritelectronics.com/blog/Zoshto-klimatizerite-najmnogu-zamrznuvaat-pri-nadvoreshna-temperatura-od-okolu-nula-stepeni" target="_blank">Air Conditioner Blog (Latin)</a></li>
+        </ul>
+    </div>
+
+    <div class="test-section meta-test">
+        <h2>🔧 Social Media Testing Tools</h2>
+        <p>Use these tools to test your URLs:</p>
+        
+        <h3>Facebook</h3>
+        <button class="test-button" onclick="window.open('https://developers.facebook.com/tools/debug/', '_blank')">Facebook Sharing Debugger</button>
+        <p>Enter your URL and click "Scrape Again" to see what Facebook sees.</p>
+        
+        <h3>Twitter</h3>
+        <button class="test-button" onclick="window.open('https://cards-dev.twitter.com/validator', '_blank')">Twitter Card Validator</button>
+        <p>Test how your links appear on Twitter.</p>
+        
+        <h3>LinkedIn</h3>
+        <button class="test-button" onclick="window.open('https://www.linkedin.com/post-inspector/', '_blank')">LinkedIn Post Inspector</button>
+        <p>Check LinkedIn link previews.</p>
+        
+        <h3>WhatsApp/Viber</h3>
+        <p>Simply paste the URL in a message to see the preview.</p>
+    </div>
+
+    <div class="test-section debug-info">
+        <h2>🐛 Common Issues & Solutions</h2>
+        
+        <h3>❌ Issue: "Missing Properties - fb:app_id"</h3>
+        <p><strong>Status:</strong> <span class="success">✅ FIXED</span></p>
+        <p>Facebook App ID has been commented out in both product and blog generators.</p>
+        
+        <h3>❌ Issue: "Redirects to homepage instead of product/blog"</h3>
+        <p><strong>Status:</strong> <span class="warning">⚠️ CHECKING</span></p>
+        <p>This happens when .htaccess routing doesn't work properly. Check:</p>
+        <ul>
+            <li>Static HTML files exist in root directory</li>
+            <li>.htaccess file is uploaded correctly</li>
+            <li>Bot detection is working</li>
+        </ul>
+        
+        <h3>❌ Issue: "Wrong image type"</h3>
+        <p><strong>Status:</strong> <span class="success">✅ FIXED</span></p>
+        <p>Image type meta tags now match actual file extensions (PNG for products, JPEG for blogs).</p>
+        
+        <h3>❌ Issue: "Generic descriptions"</h3>
+        <p><strong>Status:</strong> <span class="success">✅ FIXED</span></p>
+        <p>Blog descriptions now use meaningful content from first section instead of generic excerpt.</p>
+        
+        <h3>❌ Issue: "Cyrillic URLs not working"</h3>
+        <p><strong>Status:</strong> <span class="success">✅ FIXED</span></p>
+        <p>Blog URLs now use Latin Macedonian characters for better compatibility.</p>
+    </div>
+
+    <div class="test-section">
+        <h2>📊 Expected Results</h2>
+        
+        <h3>✅ Product URLs Should Show:</h3>
+        <ul>
+            <li><strong>Title:</strong> Product name in Macedonian + "Favorit Electronics"</li>
+            <li><strong>Description:</strong> First paragraph of product description</li>
+            <li><strong>Image:</strong> Primary product image</li>
+            <li><strong>Type:</strong> "product"</li>
+        </ul>
+        
+        <h3>✅ Blog URLs Should Show:</h3>
+        <ul>
+            <li><strong>Title:</strong> Blog title in Macedonian + "Favorit Electronics Blog"</li>
+            <li><strong>Description:</strong> Content from first section (not generic excerpt)</li>
+            <li><strong>Image:</strong> Blog image or first section image</li>
+            <li><strong>Type:</strong> "article"</li>
+        </ul>
+    </div>
+
+    <div class="test-section">
+        <h2>🔍 Manual Testing Steps</h2>
+        <ol>
+            <li><strong>Test Product URL:</strong>
+                <ol>
+                    <li>Go to <a href="https://developers.facebook.com/tools/debug/" target="_blank">Facebook Sharing Debugger</a></li>
+                    <li>Enter: <code>https://favoritelectronics.com/product/1</code></li>
+                    <li>Click "Scrape Again"</li>
+                    <li>Check if it shows product info instead of homepage</li>
+                </ol>
+            </li>
+            <li><strong>Test Blog URL:</strong>
+                <ol>
+                    <li>Enter: <code>https://favoritelectronics.com/blog/Зошто-климатизерите-најмногу-замрзнуваат-при-надворешна-температура-од-околу-нула-степени</code></li>
+                    <li>Click "Scrape Again"</li>
+                    <li>Check if it shows blog info instead of homepage</li>
+                </ol>
+            </li>
+            <li><strong>Test Image URLs:</strong>
+                <ol>
+                    <li>Copy image URL from meta tags</li>
+                    <li>Paste in browser address bar</li>
+                    <li>Verify image loads correctly</li>
+                </ol>
+            </li>
+        </ol>
+    </div>
+
+    <div class="test-section">
+        <h2>📁 Files to Upload</h2>
+        <p>Make sure these files are uploaded to your server:</p>
+        <ul>
+            <li><strong>.htaccess</strong> - Updated with blog routing rules</li>
+            <li><strong>product-*.html</strong> - All product static files (162 files)</li>
+            <li><strong>blog-*.html</strong> - All blog static files (3 files)</li>
+        </ul>
+        
+        <h3>File Count Check:</h3>
+        <p>You should have:</p>
+        <ul>
+            <li>162 product HTML files</li>
+            <li>3 blog HTML files</li>
+            <li>1 .htaccess file</li>
+        </ul>
+    </div>
+
+    <script>
+        // Add some interactive debugging
+        function testUrl(url) {
+            window.open('https://developers.facebook.com/tools/debug/?q=' + encodeURIComponent(url), '_blank');
+        }
+        
+        function copyUrl(url) {
+            navigator.clipboard.writeText(url).then(function() {
+                alert('URL copied to clipboard: ' + url);
+            });
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+

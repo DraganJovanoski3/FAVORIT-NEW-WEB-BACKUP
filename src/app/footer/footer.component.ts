@@ -11,7 +11,7 @@ import footer_al from './footer_al.json'
     standalone:true,
     imports:[],
     templateUrl:'./footer.component.html',
-    styleUrls: ['./footer.component.css']
+    styleUrl:'./footer.component.css'
 })
 
 export class FooterFavorit implements OnInit {
@@ -35,7 +35,7 @@ export class FooterFavorit implements OnInit {
                 this.footerConstant = footer_al;
                 break;
                 default:
-                  this.footerConstant = {}; 
+                  this.footerConstant = footer_en; 
             }
           });
     }

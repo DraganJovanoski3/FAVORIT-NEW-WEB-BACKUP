@@ -1,63 +1,35 @@
-# Enable rewrite engine
 RewriteEngine On
-RewriteBase /
 
-# Bot detection for social media and search engines
-SetEnvIfNoCase User-Agent "facebookexternalhit" is_facebook
-SetEnvIfNoCase User-Agent "Twitterbot|LinkedInBot|Pinterest|Tumblr|Slackbot|Discordbot|TelegramBot|SkypeUriPreview|BingPreview|Googlebot|Baiduspider|YandexBot|DuckDuckBot|Slurp|Applebot|Facebot|Embedly|Viber|WhatsApp|CFNetwork" is_bot
-
-# Cache control headers
-<IfModule mod_headers.c>
-  # Static HTML files - short cache for updates
-  <FilesMatch "\.html$">
-    Header set Cache-Control "max-age=3600, must-revalidate"
-    Header set Vary "User-Agent"
-  </FilesMatch>
-  
-  # Assets - long cache
-  <FilesMatch "\.(js|css|png|jpg|jpeg|gif|ico|pdf)$">
-    Header set Cache-Control "max-age=31536000, immutable"
-  </FilesMatch>
-</IfModule>
-
-# Compression
-<IfModule mod_deflate.c>
-  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json
-</IfModule>
-
-# Product page routing - serve static HTML to bots only
-# Handle /p/ pattern (short URL) - serve static HTML to bots
-RewriteCond %{ENV:is_bot} ^1$
-RewriteCond %{QUERY_STRING} !^.*from_static=true.*$
-RewriteCond %{REQUEST_URI} !^/product-([0-9]+)\.html$
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^p/([0-9]+) /product-$1.html [L]
-
-# Handle /product/ pattern (full URL) - serve static HTML to bots
-RewriteCond %{ENV:is_bot} ^1$
-RewriteCond %{QUERY_STRING} !^.*from_static=true.*$
-RewriteCond %{REQUEST_URI} !^/product-([0-9]+)\.html$
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^product/([0-9]+) /product-$1.html [L]
-
-# Serve static HTML files directly (fallback)
-RewriteCond %{REQUEST_URI} ^/product-([0-9]+)\.html$
-RewriteCond %{REQUEST_FILENAME} -f
-RewriteRule ^(.*)$ - [L]
-
-# Category page routing - serve static HTML to bots
-RewriteCond %{ENV:is_bot} ^1$
-RewriteCond %{QUERY_STRING} !^.*from_static=true.*$
-RewriteCond %{REQUEST_URI} !^/category-([a-zA-Z0-9\-]+)\.html$
-RewriteRule ^category/([a-zA-Z0-9\-]+) /category-$1.html [L]
-
-# Redirect users (not bots) from static HTML to Angular app
-RewriteCond %{ENV:is_bot} !^1$
-RewriteCond %{QUERY_STRING} !^.*from_static=true.*$
-RewriteCond %{REQUEST_URI} ^/product-([0-9]+)\.html$
-RewriteRule ^product-([0-9]+)\.html$ /p/$1?from_static=true [R=302,L]
-
-# Angular app routing for regular users
+# Handle Angular routes for subdomain
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /index.html [L]
+RewriteRule ^(.*)$ /index.html [L]
+
+# Force HTTPS (optional - uncomment if you want HTTPS)
+# RewriteCond %{HTTPS} off
+# RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Enable compression
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/plain
+  AddOutputFilterByType DEFLATE text/html
+  AddOutputFilterByType DEFLATE text/xml
+  AddOutputFilterByType DEFLATE text/css
+  AddOutputFilterByType DEFLATE application/xml
+  AddOutputFilterByType DEFLATE application/xhtml+xml
+  AddOutputFilterByType DEFLATE application/rss+xml
+  AddOutputFilterByType DEFLATE application/javascript
+  AddOutputFilterByType DEFLATE application/x-javascript
+</IfModule>
+
+# Cache static assets
+<IfModule mod_expires.c>
+  ExpiresActive on
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/jpg "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/gif "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+</IfModule>

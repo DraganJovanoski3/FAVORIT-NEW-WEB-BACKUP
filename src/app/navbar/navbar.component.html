@@ -17,6 +17,7 @@
     <li class="nav-item"><a class="nav-link" (click)="onNavigate('sales-partners')">{{navbarConstant.salesPartners}}</a></li>
     <li class="nav-item"><a class="nav-link" (click)="onNavigate('service-centers')">{{navbarConstant.serviceCenters}}</a></li>
     <li class="nav-item"><a class="nav-link" (click)="onNavigate('contact')">{{navbarConstant.contact}}</a></li>
+    <li class="nav-item"><a class="nav-link" (click)="onNavigate('warranty-register')">{{navbarConstant.warranty}}</a></li>
     <li class="nav-item"><a class="nav-link" (click)="onNavigate('blogs')">{{navbarConstant.blogList}}</a></li>
 
     <li class="nav-item">
@@ -85,6 +86,7 @@
     <li class="nav-item"><a class="nav-link" (click)="toggleMenu(); onNavigate('sales-partners')">{{navbarConstant.salesPartners}}</a></li>
     <li class="nav-item"><a class="nav-link" (click)="toggleMenu(); onNavigate('service-centers')">{{navbarConstant.serviceCenters}}</a></li>
     <li class="nav-item"><a class="nav-link" (click)="toggleMenu(); onNavigate('contact')">{{navbarConstant.contact}}</a></li>
+    <li class="nav-item"><a class="nav-link" (click)="toggleMenu(); onNavigate('warranty-register')">{{navbarConstant.warranty}}</a></li>
     <li class="nav-item"><a class="nav-link" (click)="toggleMenu(); onNavigate('blogs')">{{navbarConstant.blogList}}</a></li>
 
     <!-- Mobile Search -->
@@ -104,10 +106,10 @@
         </span>
       </a>
       <div *ngIf="isDropdownOpen" class="dropdown-content">
-        <a class="dropdown-item" (click)="toggleMenu(); changeLanguage('mk')" (click)="handleDropdownItemClick()"><img src="/assets/macedonia.png" alt="Macedonian Flag"> Македонски</a>
-        <a class="dropdown-item" (click)="toggleMenu(); changeLanguage('en')" (click)="handleDropdownItemClick()"><img src="/assets/english.png" alt="English Flag"> English</a>
-        <a class="dropdown-item" (click)="toggleMenu(); changeLanguage('al')" (click)="handleDropdownItemClick()"><img src="/assets/albania.png" alt="Albanian Flag"> Albanian</a>
-        <a class="dropdown-item" (click)="toggleMenu(); changeLanguage('sr')" (click)="handleDropdownItemClick()"><img src="/assets/serbia.png" alt="Serbian Flag"> Serbian</a>
+        <a class="dropdown-item" (click)="toggleMenu(); handleDropdownItemClick(); changeLanguage('mk')"><img src="/assets/macedonia.png" alt="Macedonian Flag"> Македонски</a>
+        <a class="dropdown-item" (click)="toggleMenu(); handleDropdownItemClick(); changeLanguage('en')"><img src="/assets/english.png" alt="English Flag"> English</a>
+        <a class="dropdown-item" (click)="toggleMenu(); handleDropdownItemClick(); changeLanguage('al')"><img src="/assets/albania.png" alt="Albanian Flag"> Albanian</a>
+        <a class="dropdown-item" (click)="toggleMenu(); handleDropdownItemClick(); changeLanguage('sr')"><img src="/assets/serbia.png" alt="Serbian Flag"> Serbian</a>
       </div>
     </li>
     

@@ -75,14 +75,22 @@
         </div>
       </div>
       
-      <div class="specifications-doc">
-        <a *ngIf="product.specificationsDoc" 
-           [href]="product.specificationsDoc" 
-           [attr.download]="getEnglishName() + '-Specifications.pdf'" 
-           class="btn">
-          {{ specificationTranslations.specificationsPdf }}
-        </a>
-      </div>
+        <div class="specifications-doc">
+          <a *ngIf="product.specificationsDoc" 
+            [href]="product.specificationsDoc" 
+            [attr.download]="getEnglishName() + '-Specifications.pdf'" 
+            class="btn">
+            {{ specificationsDocLinkLabel }}
+          </a>
+        </div>
+        <div class="specifications-doc">
+          <a *ngIf="product.specificationsDocExtra" 
+            [href]="product.specificationsDocExtra" 
+            [attr.download]="getEnglishName() + '-Specifications-Extra.pdf'" 
+            class="btn">
+            {{ specificationsDocExtraLinkLabel }}
+          </a>
+        </div>
       
     </div>
   </div>
@@ -91,12 +99,30 @@
     <table>
       <thead>
         <tr>
-          <th>{{ specificationTranslations.specifications }}</th>
+          <th>{{ specificationsTableLabel }}</th>
           <th></th>
         </tr>
       </thead>
       <tbody>
         <ng-container *ngFor="let spec of displayedSpecifications">
+          <tr>
+            <td>{{ spec.label }}</td>
+            <td>{{ spec.value }}</td>
+          </tr>
+        </ng-container>
+      </tbody>
+    </table>
+  </div>
+  <div class="spec-table" *ngIf="displayedSpecificationsExtra.length">
+    <table>
+      <thead>
+        <tr>
+          <th>{{ specificationsExtraTableLabel }}</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <ng-container *ngFor="let spec of displayedSpecificationsExtra">
           <tr>
             <td>{{ spec.label }}</td>
             <td>{{ spec.value }}</td>

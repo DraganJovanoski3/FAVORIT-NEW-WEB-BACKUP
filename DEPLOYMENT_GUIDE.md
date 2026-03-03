@@ -34,6 +34,8 @@ Upload the following files to your web server:
 ```
 production-server/
 ├── .htaccess                    # Bot detection and routing
+├── send-contact.php             # General contact form (emails to favoritelectro@favoritelectronics.com)
+├── send-service-contact.php     # Service centre form (emails to servis@centrounion.com.mk)
 ├── sitemap.xml                  # SEO sitemap
 ├── robots.txt                   # Search engine directives
 ├── product-*.html              # Static HTML files (all products)
@@ -46,6 +48,17 @@ production-server/
 └── static/                     # Static HTML files directory
     └── product-*.html
 ```
+
+#### Contact form (cPanel)
+
+The contact page has two forms:
+- **General contact** uses `send-contact.php` and sends to **favoritelectro@favoritelectronics.com**.
+- **Service centre** uses `send-service-contact.php` and sends to **servis@centrounion.com.mk**.
+
+No Gmail or mailbox access is needed; both scripts use PHP `mail()` on your host.
+
+- Ensure `send-contact.php` and `send-service-contact.php` are in the same directory as `.htaccess` (site root).
+- cPanel must allow PHP and `mail()`. If mail fails, check PHP mail settings or use an SMTP plugin/forwarder in cPanel.
 
 ### 3. Server Configuration
 
@@ -236,4 +249,28 @@ For technical support:
 ---
 
 *This deployment guide ensures proper setup of the hybrid static/dynamic architecture for optimal SEO and user experience.*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

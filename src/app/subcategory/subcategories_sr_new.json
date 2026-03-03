@@ -40,7 +40,8 @@
       "builtInStoveTops":"Ugrađene ploče za kuvanje",
       "builtInCookingAppliences":"Ugrađeni aparati za kuvanje",
       "builtInFridges":"Ugrađeni frižideri",
-      "builtInStoves":"Ugrađeni šporeti"
+      "builtInStoves":"Ugrađeni šporeti",
+      "builtInStovesAndTops":"Ugrađeni šporeti sa pločama"
   },
   "homeAppliances":{
       "boilers":"Bojleri",

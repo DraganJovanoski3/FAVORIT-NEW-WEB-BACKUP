@@ -235,6 +235,7 @@
       "BOJA": "BELO",
       "2 ELEKTRIČNE PLOČE": "(∅ 180 + ∅ 145)",
       "1 GREJNO TELO": "∅ 145 (1000 W)",
+      "Ventilator u rerni": "√",
       "EMAJLIRANA POVRŠINA": "√",
       "SVETLO U RERNI": "√",
       "0+3 FUNKCIJE RERNE": "√",
@@ -267,6 +268,7 @@
       "BOJA": "BELO",
       "2 ELEKTRIČNE PLOČE": "(∅ 180 + ∅ 145)",
       "1 GREJNO TELO": "∅ 145 (1000 W)",
+      "Ventilator u rerni": "√",
       "EMAJLIRANA POVRŠINA": "√",
       "SVETLO U RERNI": "√",
       "0+3 FUNKCIJE RERNE": "√",
@@ -298,7 +300,7 @@
       "neto zapremina": "168 L",
       "potrošnja električne energije": "257 kWh/g",
       "nivo buke": "40 dB",
-      "energetska klasa": "F",
+      "energetska klasa": "E",
       "gas": "P 600 A",
       "boja": "bela/srebrna",
       "podesive nogice": "√",
@@ -333,7 +335,7 @@
       "neto zapremina": "324 L",
       "potrošnja električne energije": "306 kWh/god.",
       "nivo buke": "41 dB",
-      "energetski razred": "F",
+      "energetski razred": "E",
       "gas": "Р 600 A",
       "boja": "bela/inox",
       "regulacione noge": "√",
@@ -394,50 +396,6 @@
     }
   },
   {
-    "id": 14,
-    "name": "Mašina za sudove E60 – A22",
-    "description": [
-      "Ovaj model mašine za sudove se ističe kompaktnim dimenzijama (v/š/d 85/59,8/59,8) i kapacitetom za 13 kompleta sudova. Nudi 7 različitih programa, uključujući brzi ciklus od 30 minuta na 40°C. Mašina za sudove ima treću policu, LED ekran, i energetsku klasu A++. Sa nivoom buke od 57 dB, uključuje opciju odloženog starta (do 24 sata) i troši 0,91 kWh po ciklusu u ekonomičnom programu. Dodatno, pruža zaštitu od poplave i grejanja, sigurnosnu bravu za decu, i podržava pranje tableta. Ova bela/inox mašina za sudove je efikasna, pouzdana i jednostavna za svakodnevnu upotrebu."
-    ],
-    "pictures": [
-      "assets/Home appliances/Dishwasher E60 – A22/E60-A22-04-1024x576.png",
-      "assets/Home appliances/Dishwasher E60 – A22/E60-A22-05-1024x576.png",
-      "assets/Home appliances/Dishwasher E60 – A22/E60-A22-X-07-1024x576.png",
-      "assets/Home appliances/Dishwasher E60 – A22/E60-A22-X-08-1024x576.png"
-    ],
-    "specificationsDoc": "assets/PDF-Specifications/4.E60-A22-upatstva-EN-AL-SIR-MAK-.pdf",
-    "specifications": {
-      "dimenzije": "dimenzije: v/š/d 85/59,8/59,8 cm",
-      "maksimalni kapacitet": "maksimalni kapacitet: 13 kompleta sudova",
-      "programi": "programi: 7",
-      "treća polica": "treća polica: uključeno",
-      "LED ekran": "LED ekran: uključeno",
-      "brzi program": "brzi program: 30 minuta na 40 °C",
-      "dugme za punjenje na polovinu": "dugme za punjenje na polovinu: uključeno",
-      "energetska klasa": "energetska klasa: A ++",
-      "klasa sušenja": "klasa sušenja: A",
-      "buka pri radu": "buka pri radu: 57 dB",
-      "odloženi start": "odloženi start: 1, 2, 3…..24 sata",
-      "jedan ciklus": "jedan ciklus: od 4,5 do 9 l vode prema programu",
-      "trajanje ekonomičnog programa": "trajanje ekonomičnog programa: 171 minuta",
-      "potrošnja energije u ekonomičnom programu": "potrošnja energije u ekonomičnom programu: 0,91 KWh",
-      "potrošnja energije godišnje": "potrošnja energije godišnje: 270 KWh",
-      "zaštita od poplave": "zaštita od poplave: uključeno",
-      "zaštita od grejanja": "zaštita od grejanja: uključeno",
-      "boja": "boja: bela/inox",
-      "skriveno grejanje": "skriveno grejanje: uključeno",
-      "metalni filter": "metalni filter: uključeno",
-      "dugme za uključivanje/isključivanje": "dugme za uključivanje/isključivanje: uključeno",
-      "indikator za završetak programa": "indikator za završetak programa: uključeno",
-      "indikatori za funkciju pranje/sušenje": "indikatori za funkciju pranje/sušenje: uključeno",
-      "indikator nedostatka soli": "indikator nedostatka soli: uključeno",
-      "indikator nedostatka sredstva za sjaj": "indikator nedostatka sredstva za sjaj: uključeno",
-      "zaštita za decu": "zaštita za decu: uključeno",
-      "specijalna opcija za piranje sa tabletama": "specijalna opcija za pranje sa tabletama: uključeno",
-      "dodatne higijenske opcije dodatno ispiranje dodatno sušenje": "dodatne higijenske opcije/dodatno ispiranje/dodatno sušenje: uključeno"
-    }
-  },
-  {
     "id": 15,
     "name": "Mašina za pranje posuđa E60-A1FN",
     "description": [
@@ -481,56 +439,6 @@
     }
   },
   {
-    "id": 16,
-    "name": "Mašina za pranje sudova E60-A24N BLDC sa inverter motorom",
-    "description": [
-      "Ova mašina za pranje sudova dolazi u kompaktnim dimenzijama visine 85 cm, širine 60 cm i dubine 60 cm. Može da primi do 15 kompleta sudova i uključuje praktične karakteristike kao što su treća polica, LED ekran, inverter motor i razni programi. Posebno, nudi brzi program koji traje 30 minuta na 40°C, sa nivoom buke od 49 dB tokom rada. Ostale funkcionalnosti uključuju odloženi start do 24 sata, ekološke programe pranja i sveobuhvatne mehanizme zaštite kao što su zaštita od poplava i grejanja. Mašina za pranje sudova takođe dolazi sa više indikatora, dodatnim opcijama rada i funkcijama za zaštitu dece radi dodatne udobnosti i sigurnosti."
-    ],
-    "pictures": [
-      "assets/Home appliances/DISHWASHER E60-A24N BLDC with inverter motor/E60-A24-BLDC-04-1-1024x576.png",
-      "assets/Home appliances/DISHWASHER E60-A24N BLDC with inverter motor/E60-A24-BLDC-04-1024x576.png",
-      "assets/Home appliances/DISHWASHER E60-A24N BLDC with inverter motor/E60-A24-BLDC-05-1024x576.png",
-      "assets/Home appliances/DISHWASHER E60-A24N BLDC with inverter motor/E60-A24-BLDC-06-1024x576.png",
-      "assets/Home appliances/DISHWASHER E60-A24N BLDC with inverter motor/E60-A24-BLDC-X-01-1024x576.png",
-      "assets/Home appliances/DISHWASHER E60-A24N BLDC with inverter motor/E60-A24-BLDC-X-02-1024x576.png"
-    ],
-    "specificationsDoc": "assets/PDF-Specifications/4.E60-A22-upatstva-EN-AL-SIR-MAK-.pdf",
-    "specifications": {
-      "dimenzije": "v/š/d 85/60/60 cm",
-      "maksimalni kapacitet": "do 15 kompleta sudova",
-      "treća polica":  "√",
-      "LED ekran":  "√",
-      "inverter motor":  "√",
-      "programi":  "√",
-      "brzi program": "30 min. na 40°C",
-      "dugme za pola punjenje":  "√",
-      "klasa snage": "D",
-      "klasa suvosti": "A",
-      "buka pri radu": "49 dB",
-      "odloženi start": "1, 2, 3….24h",
-      "potrošnja vode za jedan ciklus": "4,5 L do 17,2 L vode prema programu",
-      "trajanje eko programa": "239 minuta",
-      "potrošnja energije eko program": "0,84 KWh",
-      "zaštita od poplave":  "√",
-      "zaštita od grejanja":  "√",
-      "skriveno grejanje":  "√",
-      "metalni filter":  "√",
-      "boja": "bela/inox",
-      "dugme za uključivanje/isključivanje":  "√",
-      "dugme start/pauza":  "√",
-      "indikator završetka programa":  "√",
-      "indikatori funkcije pranje/sušenje":  "√",
-      "indikator nedostatka sol":  "√",
-      "indikator nedostatka sredstva za sjaj":  "√",
-      "dodatne opcije rada":  "√",
-      "zaštita dece":  "√",
-      "opcija pranje sa tabletama":  "√",
-      "opcija za napolje":  "√",
-      "dodatna higijenska opcija":  "√",
-      "zvučni signal":  "√"
-    }
-  },
-  {
     "id": 17,
     "name": "Mašina za pranje posuđa F45 – Y15N",
     "description": [
@@ -561,6 +469,45 @@
       "ZAŠTITA GREJAČA": "√",
       "METALNI FILTER": "√",
       "BOJA": "BELA/SIVA",
+      "DUGME ZA UKLJUČIVANJE/ISKLJUČIVANJE": "√",
+      "DUGME STARTA/PAUZE": "√",
+      "INDIKATOR ZAVRŠETKA PROGRAMA": "√",
+      "INDIKATORI FUNKCIJE PRANJA/SUŠENJA": "√",
+      "INDIKATOR NEDOSTATKA SOLI": "√",
+      "INDIKATOR MANJKA SJAJA": "√"
+    }
+  },
+  {
+    "id": 142,
+    "name": "Mašina za pranje posuđa F45 – Y15N",
+    "description": [
+      "Predstavljamo našu kompaktnu i efikasnu mašinu za pranje posuđa, dizajniranu da lako upravlja vašim svakodnevnim potrebama pranja posuđa. Sa dimenzijama od V/Š/D 85/44.8/59.8, može primiti do 10 kompleta posuđa. Sadrži 6 raznovrsnih programa, uključujući brzi ciklus od 30 minuta na 40°C, što garantuje efikasno i temeljno čišćenje."
+    ],
+    "pictures": [
+      "assets/Home appliances/Dishwasher F45 – Y15N/F45-Y15-S-04-1024x576.png",
+      "assets/Home appliances/Dishwasher F45 – Y15N/F45-Y15-S-05-1024x576.png",
+      "assets/Home appliances/Dishwasher F45 – Y15N/F45-Y15-S-06-1024x576.png"
+    ],
+    "specificationsDoc": "assets/Product Spec/1.-F45-Y15-F45-Y15-S-upatstva-MAK-AL-SIR-EN.pdf",
+    "specifications": {
+      "DIMENZIJE": "V/Š/D 85/44,8/59,8",
+      "MAKSIMALNI KAPACITET": "10 KOMPLETA POSUĐA",
+      "PROGRAMI": "6",
+      "BRZI PROGRAM": "30 MIN. NA 40 °C",
+      "DUGME ZA POLA PUNJENJA": "√",
+      "ENERGETSKA KLASA": "E",
+      "KLASA SUŠENJA": "А",
+      "BUKA PRI RADU": "57 DB",
+      "ODLOŽENI START": "3H, 6H И 9H",
+      "JEDAN CIKLUS": "3.8 L DO 17.6 L VODE U ZAVISNOSTI OD PROGRAMA",
+      "TRAJANJE PROGRAMA (EKO PROGRAM)": "198 MIN.",
+      "POTROŠNJA STRUJE (EKO PROGRAM)": "0,73 KWH",
+      "POTROŠNJA ENERGIJE (GODIŠNJE)": "211 KWH",
+      "ZAŠTITA OD POPLAVE": "√",
+      "SKRIVENI GREJAČ": "√",
+      "ZAŠTITA GREJAČA": "√",
+      "METALNI FILTER": "√",
+      "BOJA": "BELA",
       "DUGME ZA UKLJUČIVANJE/ISKLJUČIVANJE": "√",
       "DUGME STARTA/PAUZE": "√",
       "INDIKATOR ZAVRŠETKA PROGRAMA": "√",
@@ -798,31 +745,6 @@
     }
   },
   {
-    "id": 26,
-    "name": "Električni nezavisni šporet EC 540 WWFT",
-    "description": [
-      "Ovaj proizvod ima dimenzije 85x50x60 cm (V/Š/D) i zapreminu rerne od 55 litara. Uključuje poklopac za šporet, emajliranu ploču i dolazi sa 3 pozicije za kontrolu prekidača.",
-      "Rerna uključuje grejna tela sa ringlama od 2x145mm i 2x180mm, zajedno sa donjim i gornjim grejačem svaki sa snagom od 1000 vati. Energetska klasa ovog aparata je A."
-    ],
-    "pictures": [
-      "assets/Home appliances/Electric Independent Cooker EC 540 WWFT/Elektricen-sporet-EC-540-WWFT-44-1024x576.png"
-    ],
-    "specificationsDoc": "assets/PDF-Specifications/Upatstvo-EC-540-WWFT-EC-540-SFT.pdf",
-    "specifications": {
-      "DIMENZIJE: V/Š/D": "85x50x60",
-      "ZAPREMINA RERNE": "55 L",
-      "POKLOPAC ZA ŠPORET":  "√",
-      "Grejna tela": "2x145mm - 2x180mm",
-      "Ploča": "Emajlirana",
-      "Pozicije za kontrolu prekidača": 3,
-      "Rack za rernu":  "√",
-      "Tepsija":  "√",
-      "ENERGETSKA KLASA": "A",
-      "DONJI GREJAČ": "1000 W",
-      "GORNJI GREJAČ": "1000 W"
-    }
-  },
-  {
     "id": 27,
     "name": "Električni nezavisni šporet EC 640 SF",
     "description": [
@@ -846,6 +768,7 @@
       "zapremina rerne": "72 L",
       "kontrolna tabla": "6 prekidača",
       "6 pozicija kontrolnih prekidača": "√",
+      "Ventilator u rerni": "√",
       "2 duboka pleha za rernu": "√",
       "rešetka za rernu": "√",
       "sijalica za rernu": "√",
@@ -869,6 +792,7 @@
       "staklokeramička ploča sa 4 kuvne zone": "2X145MM, 2X180MM",
       "zapremina rerne": "50 L",
       "kontrolna tabla": "KONTROLNA TABLA SA 6 PREKIDAČA",
+      "ventilator u rerni": "√",
       "6 pozicija kontrolnih prekidača": "√",
       "2 duboka pleha za rernu": "√",
       "rešetka za rernu": "√",
@@ -897,6 +821,7 @@
       "3d bela panel": "√",
       "zapremina rerne": "50 L",
       "kontrolna tabla": "KONTROLNA TABLA SA 6 PREKIDAČA",
+      "ventilator u rerni": "√",
       "6 pozicija kontrolnih prekidača": "√",
       "2 duboka pleha za rernu": "√",
       "rešetka za rernu": "√",
@@ -932,7 +857,7 @@
       "3d srebrni panel": "√",
       "zapremina rerne": "65 L",
       "kontrolna tabla": "6 prekidača, kontrolna tabla sa 6 prekidača",
-      "turbo ventilator": "√",
+      "ventilator u rerni": "√",
       "2 duboka pleha za rernu": "√",
       "rešetka za rernu": "√",
       "sijalica za rernu": "√",
@@ -966,7 +891,7 @@
       "3d srebrni panel": "√",
       "zapremina rerne": "65 L",
       "kontrolna tabla": "6 prekidača, kontrolna tabla sa 6 prekidača",
-      "turbo ventilator": "√",
+      "ventilator u rerni": "√",
       "2 duboka pleha za rernu": "√",
       "rešetka za rernu": "√",
       "sijalica za rernu": "√",
@@ -1005,6 +930,7 @@
       "2 duboka pleha za rernu": "√",
       "rešetka za rernu": "√",
       "sijalica za rernu": "√",
+      "ventilator u rerni": "√",
       "ventilator za ravnomerno kuvanje": "√",
       "energetska klasa": "A",
       "donji grejač": "1100 W",
@@ -1146,7 +1072,7 @@
       "bruto zapremina": "91L",
       "neto zapremina": "88L",
       "neto zapremina frizider zamrzivac": "73/8 L",
-      "energetska klasa": "F",
+      "energetska klasa": "E",
       "gas tip": "Р600",
       "boja": "bela",
       "zamenska vrata":  "√",
@@ -1174,7 +1100,7 @@
       "dimenzije": "82.1/48/50 cm",
       "bruto zapremina": "91L",
       "neto zapremina": "89L",
-      "energetska klasa": "F",
+      "energetska klasa": "E",
       "boja": "bela",
       "zamenska vrata":  "√",
       "regulacione nogare":  "√",
@@ -1200,7 +1126,7 @@
       "dimenzije": "82.1/48/50 cm",
       "bruto zapremina": "91L",
       "neto zapremina": "89L",
-      "energetska klasa": "F",
+      "energetska klasa": "E",
       "boja": "bela",
       "zamenska vrata":  "√",
       "regulacione nogare":  "√",
@@ -1217,16 +1143,14 @@
     ],
     "pictures": [
       "assets/Home appliances/TWO CHAMBER REFRIGERATOR RF 263N/FAVORIT-RF-263-01-3-1024x576.png",
-      "assets/Home appliances/TWO CHAMBER REFRIGERATOR RF 263N/FAVORIT-RF-263-02-1024x576.png",
-      "assets/Home appliances/TWO CHAMBER REFRIGERATOR RF 263N/FAVORIT-RF-263-S-01-1-1024x576.png",
-      "assets/Home appliances/TWO CHAMBER REFRIGERATOR RF 263N/FAVORIT-RF-263-S-02-1024x576.png"
+      "assets/Home appliances/TWO CHAMBER REFRIGERATOR RF 263N/FAVORIT-RF-263-02-1024x576.png"
     ],
     "specificationsDoc": "assets/PDF-Specifications/RF-263-upatstvo.pdf",
     "specifications": {
       "dimenzije": "144/54/57 cm",
       "bruto neto zapremina": "216/213 L",
       "zapremina frizider zamrzivač": "171/42 L",
-      "klasa energije": "F",
+      "klasa energije": "E",
       "gas": "R600",
       "boja": "bela/srebrna",
       "zamenska vrata":  "√",
@@ -1252,7 +1176,7 @@
       "dimenzije": "84/48/56 cm",
       "bruto zapremina": "64L",
       "neto zapremina": "63L",
-      "klasa energije": "F",
+      "klasa energije": "E",
       "gas": "P600",
       "boja": "bela",
       "zamenska vrata":  "√",
@@ -1279,7 +1203,7 @@
       "dimensions": "144/54/60 cm",
       "bruto zapremina": "210 L",
       "neto zapremina": "182 L",
-      "energetska klasa": "F",
+      "energetska klasa": "E",
       "gas": "P600",
       "boja": "bela",
       "zamenska vrata":  "√",
@@ -1442,82 +1366,6 @@
       "Dugme za kontrolu brzine": "√",
       "Senzor za pola punjenja": "√",
       "Program sa predpranjem pamuka": "√"
-    }
-  },
-  {
-    "id": 49,
-    "name": "MAŠINA ZA PRANJE W – 6101N",
-    "description": [
-      "Predstavljamo vam našu naprednu mašinu za pranje, dizajniranu da olakša vašu rutinu pranja veša. Sa velikim kapacitetom od 6 kg i izdržljivim bubnjem od 44 L od inoxa, bez problema se nosi sa velikim količinama veša. Sa 15 programa i maksimalnim obrtajima od 1000, obezbeđuje temeljno čišćenje za sve vrste tkanina."
-    ],
-    "pictures": [
-      "assets/Home appliances/WASHING MACHINE W – 6101N/W-6101-06-1024x576.png",
-      "assets/Home appliances/WASHING MACHINE W – 6101N/FAVORIT-W-6101-1-1024x576.png"
-    ],
-    "specificationsDoc": "assets/Product Spec/Upatstvo-W-6101.pdf",
-    "specifications": {
-      "dimenzije vsz": "84,50 / 59,70 / 49,70 CM",
-      "maksimalni obrtaji u minuti": "1000",
-      "kapacitet": "6 KG",
-      "bubanj od inoxa": "44 L",
-      "programi": "15",
-      "elektronski programator": "√",
-      "kontrola temperature vode": "√",
-      "energetski razred": "D",
-      "sistem za štednju energije": "√",
-      "zaštita od curenja": "√",
-      "zaštita od pene": "√",
-      "automatski balansni sistem": "√",
-      "sistem za detekciju grešaka": "√",
-      "zaključavanje za decu": "√",
-      "skidivi gornji poklopac": "√",
-      "potrošnja energije": "151 KWH/GOD",
-      "potrošnja vode": "9900 L/GOD",
-      "nivo buke prilikom pranja": "58 DB",
-      "nivo buke prilikom centrifuge": "77 DB",
-      "brzi program": "15 MIN. 30 C",
-      "kontrola centrifuge": "√",
-      "dugme za odložen start": "√",
-      "senzor za pola opterećenje": "√"
-    }
-  },
-  {
-    "id": 50,
-    "name": "MAŠINA ZA PRANJE W – 7122N",
-    "description": [
-      "Predstavljamo vam našu moćnu mašinu za pranje: Sa kapacitetom od 7 kg i 15 programa, dizajnirana je za efikasnost i praktičnost. Karakteristike uključuju elektronski programator, kontrolu temperature i sistem za štednju energije. Mere bezbednosti kao što su zaštita od curenja i sigurnosno zaključavanje za decu garantuju mir. Tiha operacija i napredna tehnologija olakšavaju pranje veša."
-    ],
-    "pictures": [
-      "assets/Home appliances/WASHING MACHINE W – 7122N/W-7122-07-1024x576.png",
-      "assets/Home appliances/WASHING MACHINE W – 7122N/FAVORIT-W-7122-1024x576.png"
-    ],
-    "specificationsDoc": "assets/Product Spec/W-7122-Upatstvo.pdf",
-    "specifications": {
-      "dimenzije vsz": "84,5/59,5/54,0 CM",
-      "maksimalni obrtaji u minuti": "1200",
-      "kapacitet": "7 KG",
-      "bubanj od inoxa": "45 Л.",
-      "programi": "15",
-      "elektronski programator": "√",
-      "dugme za kontrolu temperature": "√",
-      "energetski razred": "D",
-      "sistem za štednju energije": "√",
-      "zaštita od curenja": "√",
-      "zaštita od pene": "√",
-      "automatski balansni sistem": "√",
-      "sistem za detekciju grešaka": "√",
-      "zaključavanje za decu": "√",
-      "skidivi gornji poklopac": "√",
-      "potrošnja energije": "172 KWH/GOD",
-      "potrošnja vode": "10337 L/GOD",
-      "nivo buke prilikom pranja": "58 DB",
-      "nivo buke prilikom centrifuge": "78 DB",
-      "brzi program": "15 MINUTA NA 30 °C",
-      "dugme za kontrolu centrifuge": "√",
-      "senzor za pola opterećenje": "√",
-      "program za senzitivno pranje ruku": "√",
-      "dugme za predpranje": "√",
-      "dugme za odložen start": "√"
     }
   },
   {
@@ -1686,93 +1534,6 @@
     }
   },
     {
-      "id": 55,
-      "name": "VEŠ MAŠINA W – 9142ТN BLDC",
-      "description": [
-        "Predstavljamo naš najnoviji model veš mašine, W-9122N BLDC, sa prostranim bubnjem od nerđajućeg čelika kapaciteta 9 KG i snažnim inverterskim motorom za efikasno čišćenje. Sa 15 programa i naprednim funkcijama poput digitalnog LCD dodirnog ekrana i odloženog starta, dan za pranje veša je postao lakši. Uživajte u miru uma uz ugrađene zaštitne sisteme i tehnologiju štednje energije."
-      ],
-      "pictures": [
-        "assets/Home appliances/WASHING MACHINE W – 9142ТN BLDC/W9142T-BLDC-1024x576.png",
-        "assets/Home appliances/WASHING MACHINE W – 9142ТN BLDC/FAVORIT-W-9142T-BLDC-12-1024x576.png"
-      ],
-      "specificationsDoc": "assets/Product Spec/Upatstvo-W-9142T-BLDC.pdf",
-      "specifications": {
-        "DIMENZIJE": "84.5 / 60.5 / 60.4 CM",
-        "MAKSIMALNI BROJ OKRETANJA U MINUTU": "1400",
-        "MAKSIMALNI KAPACITET": "9 KG",
-        "INOX BUBANJ": "61 L",
-        "INVERTERSKI MOTOR": "√",
-        "DIGITALNI LCD DODIRNI EKRAN": "√",
-        "ODLOŽENI START": "√",
-        "PROGRAMI": "15",
-        "ELEKTRONSKI PROGRAMER": "√",
-        "PROGRAM ZA PRANJE DEKE I POKRIVAČA": "√",
-        "KONTROLA TEMPERATURE VODE": "√",
-        "ENERGETSKI RAZRED": "B",
-        "TEHNOLOGIJA ŠTEDNJE ENERGIJE": "√",
-        "ZAŠTITA OD CURENJA": "√",
-        "ZAŠTITA OD PENJANJA PENOM": "√",
-        "AUTOMATSKI BALANS SISTEM": "√",
-        "SISTEM ZA OTKRIVANJE GREŠAKA": "√",
-        "ZAKLJUČAVANJE ZA DECU": "√",
-        "SKIDIVI POKLOPAC OD GORE": "√",
-        "ANTIALERGIJSKI PROGRAM": "√",
-        "NEŽNO PRANJE RUKOM": "√",
-        "POTROŠNJA ENERGIJE": "168KWH/GODIŠNJE",
-        "POTROŠNJA VODE": "12100 L/GODIŠNJE",
-        "BUKA PRI PRANJU": "50 DB",
-        "BUKA PRI CEĐENJU": "75 DB",
-        "BRZI PROGRAM": "15 MIN. 30°",
-        "REGULACIJA BRZINE": "√",
-        "SENZOR POLA NAPUNJENOSTI": "√",
-        "PREPRANJE DUGMETA": "√"
-      }
-    },
-    {
-      "id": 56,
-      "name": "VEŠ MAŠINA W-9122N BLDC",
-      "description": [
-        "Predstavljamo naš najnoviji model veš mašine sa prostranim bubnjem od nerđajućeg čelika kapaciteta 9 KG i snažnim inverterskim motorom za efikasno čišćenje. Sa 15 programa i naprednim funkcijama poput digitalnog LCD dodirnog ekrana i odloženog starta, dan za pranje veša je postao lakši. Uživajte u miru uma uz ugrađene zaštitne sisteme i tehnologiju štednje energije."
-      ],
-      "pictures": [
-        "assets/Home appliances/WASHING MACHINE W-9122N BLDC/W-9122N-BLDC-16-1024x576.png"
-      ],
-      "specificationsDoc": "assets/Product Spec/Upatstva-za-W-9122N-BLDC.pdf",
-      "specifications": {
-        "DIMENZIJE": "84.5 / 59.7 / 58.2 CM",
-        "MAKSIMALNI BROJ OKRETANJA U MINUTU": 1200,
-        "MAKSIMALNI KAPACITET": "9 KG",
-        "INOX BUBANJ": "59 L",
-        "INVERTERSKI MOTOR": "√",
-        "DIGITALNI LCD DODIRNI EKRAN U 7 SEGMENTA": "√",
-        "PRIKAZ PREOSTALOG VREMENA PRANJA": "√",
-        "ODLOŽENI START": "√",
-        "PROGRAMI": 15,
-        "ELEKTRONSKI PROGRAMER": "√",
-        "DUGME ZA KONTROLU TEMPERATURE VODE": "√",
-        "PROGRAM ZA PRANJE DEKE I POKRIVAČA": "√",
-        "ENERGETSKI RAZRED PREMA NOVOM PROPISU": "A",
-        "TEHNOLOGIJA ŠTEDNJE ENERGIJE": "√",
-        "ZAŠTITA OD CURENJA": "√",
-        "ZAŠTITA OD PENJANJA PENOM": "√",
-        "AUTOMATSKI BALANS SISTEM": "√",
-        "SISTEM ZA OTKRIVANJE GREŠAKA": "√",
-        "ZAKLJUČAVANJE ZA DECU": "√",
-        "SKIDIVI POKLOPAC OD GORE": "√",
-        "ANTIALERGIJSKI PROGRAM": "√",
-        "NEŽNO PRANJE RUKOM": "√",
-        "POTROŠNJA ENERGIJE PREMA NOVOM PROPISU": "49KWH/NA 100",
-        "POTROŠNJA VODE PREMA NOVOM PROPISU": "50 L",
-        "BUKA PRI PRANJU": "50 DB",
-        "BUKA PRI CEĐENJU": "76 DB",
-        "PROGRAM SA BRZIM CEĐENJEM": "60 MIN. 60°√",
-        "REGULACIJA BRZINE": "√",
-        "SENZOR POLA NAPUNJENOSTI": "√",
-        "BRZI PROGRAM": "15 MIN. 30°",
-        "PREPRANJE DUGMETA": "√"
-      }
-    },
-    {
       "id": 57,
       "name": "BOJLER TE50A20",
       "description": [
@@ -1817,7 +1578,7 @@
       ],
       "specificationsDoc": "assets/PDF-Specifications/TE80B20 TE80A20.pdf",
       "specifications": {
-        "kapacitet": "50 L",
+        "kapacitet": "80 L",
         "VRSTA KONTROLE MEHANIČKA": "√ NA PREDNJOJ STRANI BOJLERA",
         "dimenzije": "427 Х 612 MM",
         "težina": "17/19 KG",
@@ -1846,7 +1607,7 @@
         "Izdvaja se termičkom zaštitom, TERMOMETROM i VENTILOM ZA SIGURNOST radi bezbednosti. Snaga grejanja 1980 W i priključak za vodu od 1/2 inča. Napravljen sa izdržljivim bakarnim grejačem, emajlom u boji safir plavom i bojlerom od HLADNOG ČELIKA. Izolovan poliuretanskom penom radi efikasnosti."
       ],
       "pictures": [
-        "assets/Home appliances/WATER HEATER TE80A20/1-BOLJER-01-800x450-1-500x375-1.png"
+        "assets/Home appliances/WATER HEATER TE80A20/1-BOLJER-04-scaled-1-1024x576.png"
       ],
       "specificationsDoc": "assets/PDF-Specifications/TE80B20 TE80A20.pdf",
       "specifications": {
@@ -1904,78 +1665,6 @@
       }
     },
   {
-    "id": 61,
-    "name": "UGRAĐENI ŠPORET 4 – J CRNI",
-    "description": [
-      "Ovaj proizvod je univerzalna rerna sa prostranim kapacitetom od 65 litara i raznim funkcijama za praktično kuvanje. Ima energetski efikasan dizajn sa energetskom klasom A. Rerna sadrži 8 položaja prekidača za kontrolu, kontrolni dugme za precizno podešavanje temperature i stakleni kontrolni panel sa svetlom za bolju vidljivost. Takođe, poseduje turbo ventilator za efikasnu distribuciju toplote i opremljena je gril grejačem snage 1000 W. Mogućnosti grejanja rerne su dopunjene sa nizom grejnih zona, uključujući specifične dimenzije za svaku zonu (2x145mm od 1200 W i 2x180mm od 1800 W). Aparat takođe uključuje nezavisnu staklo-keramičku ploču sa 4 grejne zone, čineći ga pogodnim za različite potrebe kuvanja. Njegova elegantna crna boja i napredne funkcije osiguravaju efikasno i uživanje u kuvanju."
-    ],
-    "pictures": [
-      "assets/Built In Appliances/BUILT-IN COOKER 4 – J INOX-B/FAVORIT-4-J-INOX-B-05-1024x576.png",
-      "assets/Built In Appliances/BUILT-IN COOKER 4 – J BLACK/FAVORIT-4-J-BLACK-02-1024x576.png",
-      "assets/Built In Appliances/BUILT-IN COOKER 4 – J BLACK/3-3.png",
-      "assets/Built In Appliances/BUILT-IN COOKER 4 – J BLACK/4-2.png",
-      "assets/Built In Appliances/BUILT-IN COOKER 4 – J BLACK/5-2.jpg",
-      "assets/Built In Appliances/BUILT-IN COOKER 4 – J BLACK/6-1.jpg",
-      "assets/Built In Appliances/BUILT-IN COOKER 4 – J BLACK/7-1.jpg"
-    ],
-    "specificationsDoc": "assets/PDF-Specifications/4J-CRNI-4J-INOX-B-UŽIVOTNO-1-1.pdf",
-    "specifications": {
-      "nezavisna rerna":  "√",
-      "dimenzije": "Š/D/V 59/59,5/55 cm",
-      "energetska klasa": "A",
-      "zapremina rerne": "65 L",
-      "8 položaja prekidača za kontrolu rerne":  "√",
-      "kontrolno dugme za rerne":  "√",
-      "dugme za termostat rerne":  "√",
-      "stakleni kontrolni panel":  "√",
-      "svetlo za rerne":  "√",
-      "jedan gril i duboki pleh za pečenje":  "√",
-      "turbo ventilator":  "√",
-      "grejači": "gore -1200; dole -1100 W",
-      "gril grejač": "1000 W",
-      "boja": "crna",
-      "nezavisna staklo-keramička ploča":  "√",
-      "4 grejne zone":  "√",
-      "dimenzije zona": "(2x145mm od 1200 W ) (2×180 mm od 1800 W)"
-    }
-  },
-  {
-    "id": 62,
-    "name": "UGRAĐENI ŠPORET 4 – J INOX-B",
-    "description": [
-      "Ovaj proizvod je univerzalna rerna sa prostranim kapacitetom od 65 litara i raznim funkcijama za praktično kuvanje. Ima energetski efikasan dizajn sa energetskom klasom A. Rerna sadrži 8 položaja prekidača za kontrolu, kontrolni dugme za precizno podešavanje temperature i stakleni kontrolni panel sa svetlom za bolju vidljivost. Takođe, poseduje turbo ventilator za efikasnu distribuciju toplote i opremljena je gril grejačem snage 1000 W. Mogućnosti grejanja rerne su dopunjene sa nizom grejnih zona, uključujući specifične dimenzije za svaku zonu (2x145mm od 1200 W i 2x180mm od 1800 W). Aparat takođe uključuje nezavisnu staklo-keramičku ploču sa 4 grejne zone, čineći ga pogodnim za različite potrebe kuvanja. Njegova elegantna crna boja i napredne funkcije osiguravaju efikasno i uživanje u kuvanju."
-    ],
-    "pictures": [
-      "assets/Built In Appliances/BUILT-IN COOKER 4 – J INOX-B/FAVORIT-4-J-INOX-B-05-1024x576.png",
-      "assets/Built In Appliances/BUILT-IN COOKER 4 – J INOX-B/FAVORIT-4-J-INOX-B-06-1024x576.png",
-      "assets/Built In Appliances/BUILT-IN COOKER 4 – J INOX-B/3-3.png",
-      "assets/Built In Appliances/BUILT-IN COOKER 4 – J INOX-B/4-2.png",
-      "assets/Built In Appliances/BUILT-IN COOKER 4 – J INOX-B/5-2.jpg",
-      "assets/Built In Appliances/BUILT-IN COOKER 4 – J INOX-B/6-1.jpg",
-      "assets/Built In Appliances/BUILT-IN COOKER 4 – J INOX-B/7-1.jpg"
-    ],
-    "specificationsDoc": "assets/PDF-Specifications/4J-BLACK-4J-INOX-B-UPATSTVO-1-1.pdf",
-    "specifications": {
-      "nezavisna rerna":  "√",
-      "dimenzije": "Š/D/V 59/59,5/55 cm",
-      "energetska klasa": "A",
-      "zapremina rerne": "65 L",
-      "8 položaja prekidača za kontrolu rerne":  "√",
-      "kontrolno dugme za rerne":  "√",
-      "dugme za termostat rerne":  "√",
-      "stakleni kontrolni panel":  "√",
-      "svetlo za rerne":  "√",
-      "jedan gril i duboki pleh za pečenje":  "√",
-      "turbo ventilator":  "√",
-      "grejači": "gore -1200; dole -1100 W",
-      "gril grejač": "1000 W",
-      "boja": "inox",
-      "nezavisna staklo-keramička ploča":  "√",
-      "4 grejne zone":  "√",
-      "dimenzije zona": "(2x145mm od 1200 W ) (2×180 mm od 1800 W)"
-    }
-  },
-  {
     "id": 63,
     "name": "Ugradna mašina za sudove BI45-I1EN (potpuno integrisana)",
     "description": [
@@ -2012,111 +1701,38 @@
     }
   },
   {
-    "id": 64,
-    "name": "Ugradna mašina za sudove SI60 – I14N (potpuno integrisana)",
-    "description": [
-      "Ova mašina za pranje sudova ima dimenzije V/Š/D 82cm/59.8cm/55cm i maksimalni kapacitet od 12 setova sudova. Ima 5 programa sa rasponom temperature od 3 nivoa. Energetska klasa je A++, a klasa sušenja je A. Potrošnja vode u eco-programu je 12 litara, sa potrošnjom energije u rasponu od 0.90 KWh do 1.55 KWh u zavisnosti od programa. Trajanje eco programa je 222 minuta.",
-      "Dodatno, ima zaštitu od grejača, zaštitu od poplava i potpuno je integrisana sa dugmetom za uključivanje/isključivanje, dugmetom za izbor programa, dugmetom za odloženi start (3, 6 i 9 sati), podržava pola punjenja, indikatorima za so, sredstvo za ispiranje, indikatorom za završetak, i nivoom buke od 54 dB. Takođe uključuje brzi program od 30 minuta na 40°C."
-    ],
-    "pictures": [
-      "assets/Built In Appliances/Built-in dishwasher SI60 – I14/BI60-I14-02-1024x576.png",
-      "assets/Built In Appliances/Built-in dishwasher SI60 – I14/SI60-I14-01-1024x576.png",
-      "assets/Built In Appliances/Built-in dishwasher SI60 – I14/BI60-I14-03-1024x576.png",
-      "assets/Built In Appliances/Built-in dishwasher SI60 – I14/Vgradni-dimenzii-za-poluvgradna-Mas-za-sadovi-FAVORIT-SI60-I14-pdf.png"
-    ],
-    "specificationsDoc": "assets/Built In Appliances/Built-in dishwasher SI60 – I14/2.-SI60-I14-upatstva-EN-MAK-SIR-AL.pdf",
-    "specifications": {
-      "Dimenzije V/Š/D": "82,0cm/59,8cm/57,0cm",
-      "poluugradni sa inox panelom": "√",
-      "maksimalni kapacitet": "12 kompleta posuđa",
-      "programi": 5,
-      "temperatura": "4",
-      "energetska klasa": "A ++",
-      "potrošnja vode u ECO programu": "12 litara vode",
-      "potrošnja energije u zavisnosti od programa": "0.90 KWh – 1.55 KWh",
-      "unutrašnjost": "inox",
-      "metalni filter": "√",
-      "zaštita od poplave": "√",
-      "On/Off dugme": "√",
-      "dugme za izbor programa": "√",
-      "dugme za odloženi početak": "3, 6 i 9 sati",
-      "polupunjenje (tajmer)": "3, 6 i 9 sati",
-      "polupunjenje": "√",
-      "indikator nedostatka soli": "√",
-      "indikator nedostatka sjaja": "√",
-      "indikator završetka rada": "√",
-      "buka": "57 dB",
-      "brzi program": "30 min. / 40 °C"
-    }
-  },
-  {
     "id": 65,
-    "name": "Ugradna mašina za sudove BI60 – I14N",
+    "name": "Ugradna mašina za sudove BI60-I1FN",
     "description": "Ugradna mašina za sudove BI60 – I14N je energetski efikasna (A++) i potpuno integrisana, sa kapacitetom za 12 kompleta posuđa. Ima 5 programa i 3 temperaturna nivoa. ECO program traje 222 minuta i troši 12 litara vode. Dodatne funkcije uključuju odloženi početak (3, 6 i 9 sati), indikatore za so i sjaj, zaštitu od poplave i nivo buke od 54 dB.",
     "pictures": [
-      "assets/Built In Appliances/Built-in dishwasher BI60 – I14 (fully integrated)/SI60-I14-11-1024x576.png",
-      "assets/Built In Appliances/Built-in dishwasher BI60 – I14 (fully integrated)/SI60-I14-10-1024x576.png",
-      "assets/Built In Appliances/Built-in dishwasher BI60 – I14 (fully integrated)/SI60-I14-12-1024x576.png",
-      "assets/Built In Appliances/Built-in dishwasher BI60 – I14 (fully integrated)/2-9.png"
+      "assets/Built In Appliances/Built-in dishwasher FAVORIT BI60-I1FN/BI60-I1FN.jpg",
+      "assets/Built In Appliances/Built-in dishwasher FAVORIT BI60-I1FN/BI60-I1FN-OPEN DOOR.png"
     ],
-    "specificationsDoc": "assets/Built In Appliances/Built-in dishwasher BI60 – I14 (fully integrated)/3.-BI60-Y14-upatstva-EN-SIR-MAK-AL.pdf",
+    "specificationsDoc": "assets/Built In Appliances/Built-in dishwasher FAVORIT BI60-I1FN/BI60-I1FN-PDF.pdf",
     "specifications": {
-      "Dimenzije (V/Š/D)": "82cm/59.8cm/55cm",
-      "Maksimalni kapacitet": "12 kompleta posuđa",
-      "Programi": 5,
-      "Temperatura": "3",
-      "Energetska klasa": "A ++",
-      "Potrošnja vode (ECO program)": "12 litara",
-      "Potrošnja energije (u zavisnosti od programa)": "0.90 KWh – 1.55 KWh",
-      "Trajanje ECO programa": "222 min.",
-      "Zaštita grejača": "√",
-      "Zaštita od poplave": "√",
-      "Potpuno ugradna": "√",
-      "On/Off dugme": "√",
-      "Dugme za izbor programa": "√",
-      "Dugme za odlaganje pranja": "3, 6 i 9 sati",
-      "Opcija pola punjenja": "√",
-      "Indikator za so": "√",
-      "Indikator za sjaj": "√",
-      "Indikator završetka programa": "√",
-      "Nivo buke": "54 dB",
-      "Brzi program": "30 min. / 40 °C"
-    }
-  },
-  {
-    "id": 66,
-    "name": "Ugradni mašina za sudove SI60 - I14",
-    "description": [
-      "Mašina za pranje sudova sa specifičnim dimenzijama (V/Š/D: 82,0cm/59,8cm/57,0cm), polu-ugradni dizajn sa panelom od nerđajućeg čelika i kapacitetom za 12 kompleta sudova. Ova mašina za pranje sudova ima 5 programa, 4 podešavanja temperature i energetsku efikasnost sa ocenom A++. Mašina za pranje sudova troši 12 litara vode u eco-programu i ima varijabilnu potrošnju energije (0,90 KWh do 1,55 KWh). Unutrašnjost mašine za pranje sudova je od nerđajućeg čelika, ima metalni filter, zaštitu od poplava i korisnički prijateljske kontrole kao što su dugme za uključivanje/isključivanje, dugme za izbor programa i odloženo vreme pranja (3, 6 ili 9 sati). Mašina za pranje sudova podržava pola punjenja i uključuje indikatore za so, sredstvo za ispiranje i završetak ciklusa. Nivo buke tokom rada je 57 dB, a postoji brzi program od 30 minuta na 40°C za brzo pranje."
-    ],
-    "pictures": [
-      "assets/Built In Appliances/Built-in dishwasher SI60 – I14/BI60-I14-02-1024x576.png",
-      "assets/Built In Appliances/Built-in dishwasher SI60 – I14/SI60-I14-01-1024x576.png",
-      "assets/Built In Appliances/Built-in dishwasher SI60 – I14/BI60-I14-03-1024x576.png",
-      "assets/Built In Appliances/Built-in dishwasher SI60 – I14/Vgradni-dimenzii-za-poluvgradna-Mas-za-sadovi-FAVORIT-SI60-I14-pdf.png"
-    ],
-    "specificationsDoc": "assets/PDF-Specifications/2.-SI60-I14-upatstva-EN-MAK-SIR-AL.pdf",
-    "specifications": {
-      "dimenzije": "V/Š/D 82,0cm/59,8cm/57,0cm",
-      "polu-ugradni sa panelom od nerđajućeg čelika":  "√",
-      "maksimalni kapacitet": "12 kompleta sudova",
-      "programi": 5,
-      "temperatura": 4,
-      "energetska klasa": "A++",
-      "potrošnja vode u eco-programu": "12 L vode",
-      "potrošnja energije (zavisno od programa)": "0,90 KWh – 1,55 KWh",
-      "unutrašnjost": "nerđajući čelik",
-      "metalni filter":  "√",
-      "zaštita od poplava":  "√",
-      "dugme za uključivanje/isključivanje":  "√",
-      "dugme za izbor programa":  "√",
-      "dugme za odloženo vreme pranja": "3, 6 i 9 sati",
-      "pola punjenja":  "√",
-      "indikator za so":  "√",
-      "indikator za sredstvo za ispiranje":  "√",
-      "indikator za završetak":  "√",
-      "nivo buke": "57 dB",
-      "brzi program": "30 min. / 40 °C"
+      "Dimensionet L/G/T": "82cm/59.8cm/55cm",
+      "kapaciteti maksimal": "13 sete enësh",
+      "programet": 7,
+      "ekran LED i fshehur": "√",
+      "rafti i tretë": "√",
+      "klasa e energjisë": "E / A++",
+      "klasa e tharjes": "A",
+      "konsumi i ujit në programin ECO": "9 L ujë",
+      "konsumi vjetor i energjisë": "261 kWh/vit",
+      "kohëzgjatja e programit ECO": "221 min",
+      "programi Super 50’ 65°C (Quick Clean)": "√",
+      "program i shpejtë": "30 min / 40 °C",
+      "mbrojtje e ngrohësit": "√",
+      "mbrojtje nga përmbytja": "√",
+      "plotësisht e integruar": "√",
+      "butoni On/Off": "√",
+      "butoni për zgjedhjen e programeve": "√",
+      "nisje e vonuar": "1–19 orë",
+      "gjysmë ngarkese": "√",
+      "tregues për mungesë kripe": "√",
+      "tregues për mungesë shkëlqyesi": "√",
+      "tregues i përfundimit të punës": "√",
+      "niveli i zhurmës": "57 dB"
     }
   },
   {
@@ -2482,83 +2098,6 @@
     }
   },
   {
-    "id": 82,
-    "name": "KLIMA UREĐAJ INVERTER 12000 BTU",
-    "description": [
-      "Ovaj sistem klimatizacije pruža efikasnu performansu za hlađenje i grejanje sa kapacitetom hlađenja od 3520W (12000 BTU) i kapacitetom grejanja od 3810W (13000 BTU). Radi tiho sa nivoima buke u prostoru od ≤ 39 dB i napolju od ≤ 48 dB, obezbeđujući udobno okruženje. Sistem ima SEER ocenu hlađenja od 6.6 i energetsku klasu A++ za hlađenje i A+ za grejanje, što odražava njegov dizajn štednje energije."
-    ],
-    "pictures": [
-      "assets/Ait Conditioners/AIR CONDITIONER INVERTER 12000 BTU/FAVORIT-18000-BTU-KLIMA-01-scaled-1-1024x576.png",
-      "assets/Ait Conditioners/AIR CONDITIONER INVERTER 12000 BTU/FAVORIT-12000-BTU-R32-KROPNATI-01-800x450-2.png",
-      "assets/Ait Conditioners/AIR CONDITIONER INVERTER 12000 BTU/FAVORIT-12000-BTU-R32-KROPNATI-02-800x450-1.png",
-      "assets/Ait Conditioners/AIR CONDITIONER INVERTER 12000 BTU/DALJINSKO-01-800x450-1.png"
-    ],
-    "specificationsDoc": "assets/PDF-Specifications/FAVORIT-KLIMA-INVERTER-1.pdf",
-    "specifications": {
-      "KAPACITET ZA HLADJENJE (W)": "3520",
-      "KAPACITET ZA GREJANJE (W)": "3810",
-      "KAPACITET ZA HLADJENJE (BTU)": "12000",
-      "KAPACITET ZA GREJANJE (BTU)": "13000",
-      "UNUTRAŠNJA POTROŠNJA ENERGIJE ZA HLADJENJE (W)": "1650 W",
-      "UNUTRAŠNJA POTROŠNJA ENERGIJE ZA GREJANJE (W)": "1200 W",
-      "SEER OCENA ZA HLADJENJE (W/W)": "6.6",
-      "OBLAST GREJANJA (W/W)": "4.0",
-      "STRUJANJE VAZDUHA": "< 550 m3/h",
-      "ODVLAŽIVANJE": "1,2 L/H",
-      "BUKA (NIVO ZVUKA) UNUTRAŠNJA JEDINICA": "≤ 39",
-      "BUKA (NIVO ZVUKA) SPOLJNA JEDINICA": "≤ 48",
-      "VOLUME PRI STANDARDNIM USLOVIMA UNUTRAŠNJA JEDINICA": "≤ 52",
-      "VOLUME PRI STANDARDNIM USLOVIMA SPOLJNA JEDINICA": "≤ 63",
-      "ENERGETSKA KLASA (HLADJENJE)": "A ++",
-      "ENERGETSKA KLASA (GREJANJE)": "A +",
-      "FILTER ZA PRAŠINU": "√",
-      "RADNA TEMPERATURA ZA GREJANJE": "od -15 do +30 °C",
-      "AUTO VENTILATOR": "√",
-      "REŽIM ŠTEDNJE ENERGIJE": "√",
-      "JONIZATOR": "√",
-      "TIMER": "√",
-      "RADNA TEMPERATURA ZA HLADJENJE": "od +18 do +53 °C",
-      "DALJINSKI UPRAVLJAČ SA FUNKCIJOM I FEEL": "√",
-      "VRSTA GAS": "R 32",
-      "NAPONSKO NAPAJANJE": "220-240V~50Hz/1P",
-      "KOMPRESOR": "LG",
-      "OBLAST NAPONA (V)": "165~265",
-      "DIMENZIJE UNUTRAŠNJE JEDINICE (mm) ŠxVxD": "822X281X202",
-      "DIMENZIJE SPOLJNE JEDINICE (mm) ŠxVxD": "815X532X300",
-      "DIMENZIJE PAKOVANJA ZA UNUTRAŠNJU JEDINICU (mm) ŠxVxD": "885X355X260",
-      "DIMENZIJE PAKOVANJA ZA SPOLJNU JEDINICU (mm) ŠxVxD": "854X590X324"
-    }
-  },
-  {
-    "id": 83,
-    "name": "KLIMA UREĐAJ INVERTER 12000 BTU WI-FI",
-    "description": [
-      "Ovaj sistem klimatizacije pruža efikasnu performansu za hlađenje i grejanje sa kapacitetom hlađenja od 3520W (12000 BTU) i kapacitetom grejanja od 3810W (13000 BTU). Radi tiho sa nivoima buke u prostoru od ≤ 39 dB i napolju od ≤ 48 dB, obezbeđujući udobno okruženje. Sistem ima SEER ocenu hlađenja od 6.1 i energetsku klasu A++ za hlađenje i A+ za grejanje, što odražava njegov dizajn štednje energije."
-    ],
-    "pictures": [
-      "assets/Ait Conditioners/AIR CONDITIONER INVERTER 12000 BTU WI-FI/FAVORIT-KLIMA-12000-BTU-INVERTER-WI-FI-01-1024x576.png",
-      "assets/Ait Conditioners/AIR CONDITIONER INVERTER 12000 BTU WI-FI/FAVORIT-KLIMA-24000-BTU-INVERTER-WI-FI-02-1024x576.png"
-    ],
-    "specificationsDoc": "assets/PDF-Specifications/FAVORIT-INVERTER-WI-FI-TOTAL.pdf",
-    "specifications": {
-      "SEER OCENA ZA HLADJENJE (W/W)": "6.1",
-      "OBLAST GREJANJA (W/W)": "4.0",
-      "STRUJANJE VAZDUHA": "< 550 m3/h",
-      "ENERGETSKA KLASA (HLADJENJE)": "A ++",
-      "ENERGETSKA KLASA (GREJANJE)": "A +",
-      "RADNA TEMPERATURA ZA GREJANJE": "od -15 do +30 °C",
-      "JONIZATOR": "√",
-      "RADNA TEMPERATURA ZA HLADJENJE": "od +15 do +53 °C",
-      "VRSTA GAS": "R 32",
-      "NAPONSKO NAPAJANJE": "220-240V~50Hz/1P",
-      "OBLAST NAPONA (V)": "170~265",
-      "DIMENZIJE UNUTRAŠNJE JEDINICE (mm) ŠxVxD": "777x250x201",
-      "DIMENZIJE SPOLJNE JEDINICE (mm) ŠxVxD": "777x498x290",
-      "DIMENZIJE PAKOVANJA ZA UNUTRAŠNJU JEDINICU (mm) ŠxVxD": "777x250x201",
-      "DIMENZIJE PAKOVANJA ZA SPOLJNU JEDINICU (mm) ŠxVxD": "803x600x325"
-    }
-  },
-  {
     "id": 84,
     "name": "KLIMA UREĐAJ INVERTER 12000BTU FF",
     "description": [
@@ -2618,67 +2157,6 @@
       "Dimenzije (spoljne) - neto": "705*530*279",
       "Ambijentalna temperatura-hlađenje": "16~49℃",
       "Ambijentalna temperatura-grejanje": "-25~30℃"
-    }
-  },
-  {
-    "id": 86,
-    "name": "KLIMA UREĐAJ INVERTER 18000 BTU",
-    "description": [
-      "Ovaj sistem za klimatizacija nudi raznovrsne kapacitete hlađenja i grejanja koji odgovaraju različitim okruženjima. Kapacitet hlađenja varira od 0.8 kW do 4.1 kW (što odgovara 11942 BTU), dok kapacitet grejanja varira od 1.0 kW do 4.2 kW (što odgovara 12966 BTU). Sa visokim SEER (Sezonski koeficijent energetske efikasnosti) od 6.19 i prosečnim SCOP (Sezonski koeficijent performansi) grejanja od 4.03, ovaj sistem postiže izuzetnu energetsku efikasnost, dobijajući energetske klase A++ za hlađenje i A+ za grejanje, respektivno."
-    ],
-    "pictures": [
-      "assets/Ait Conditioners/AIR CONDITIONER INVERTER 18000 BTU/FAVORIT-18000-BTU-KLIMA-01-1024x576.png",
-      "assets/Ait Conditioners/AIR CONDITIONER INVERTER 18000 BTU/FAVORIT-12000-BTU-R32-KROPNATI-01-1024x576.png",
-      "assets/Ait Conditioners/AIR CONDITIONER INVERTER 18000 BTU/FAVORIT-12000-BTU-R32-Outdoor-1024x576.png",
-      "assets/Ait Conditioners/AIR CONDITIONER INVERTER 18000 BTU/FAVORIT-12000-BTU-R32-KROPNATI-02-1024x576.png",
-      "assets/Ait Conditioners/AIR CONDITIONER INVERTER 18000 BTU/DALJINSKO-01-1024x576.png"
-    ],
-    "specificationsDoc": "assets/PDF-Specifications/FAVORIT-KLIMA-INVERTER.pdf",
-    "specifications": {
-      "Kapacitet hlađenja (kW)": "3.5(0.8-4.1)",
-      "Kapacitet hlađenja (BTU)": "11942",
-      "Kapacitet grejanja (kW)": "3.8(1.0-4.2)",
-      "Kapacitet grejanja (BTU)": "12966",
-      "SEER za hlađenje": "6.19",
-      "SCOP za grejanje-prosečno": "4.03",
-      "Energetska klasa SEER": "A++",
-      "Energetska klasa SCOP-prosečno": "A+",
-      "Rashladno sredstvo": "R32",
-      "Protok vazduha (m3/h)": "600",
-      "Težina unutrašnje/spoljne jedinice (kg)": "8.5",
-      "Dimenzije (unutrašnje) - neto": "792*292*201",
-      "Dimenzije (spoljne) - neto": "705*530*279",
-      "Ambijentalna temperatura-hlađenje": "16~49℃",
-      "Ambijentalna temperatura-grejanje": "-25~30℃"
-    }
-  },
-  {
-    "id": 87,
-    "name": "KLIMA UREĐAJ INVERTER 18000 BTU WI-FI",
-    "description": [
-      "Ovaj sistem za klimatizaciju nudi raznovrsne kapacitete za hlađenje i grejanje, pogodne za različite okoline. Kapacitet za hlađenje varira od 0.8 kW do 4.1 kW (što je ekvivalentno 11942 BTU), dok kapacitet za grejanje varira od 1.0 kW do 4.2 kW (što je ekvivalentno 12966 BTU). Sa visokim SEER (Sezonski koeficijent energetske efikasnosti) od 6.19 i prosečnim SCOP (Sezonski koeficijent performansi) za grejanje od 4.03, ovaj sistem postiže odličnu energetsku efikasnost, sa klasifikacijama A++ za hlađenje i A+ za grejanje."
-    ],
-    "pictures": [
-      "assets/Ait Conditioners/AIR CONDITIONER INVERTER 18000 BTU WI-FI/FAVORIT-KLIMA-18000-BTU-INVERTER-WI-FI-01-1024x576.png",
-      "assets/Ait Conditioners/AIR CONDITIONER INVERTER 18000 BTU WI-FI/FAVORIT-KLIMA-24000-BTU-INVERTER-WI-FI-02-1024x576.png"
-    ],
-    "specificationsDoc": "assets/PDF-Specifications/FAVORIT-INVERTER-WI-FI-TOTAL.pdf",
-    "specifications": {
-      "Kapacitet hlađenja (kW)": "3.5(0.8-4.1)",
-      "Kapacitet hlađenja (BTU)": "11942",
-      "Kapacitet grejanja (kW)": "3.8(1.0-4.2)",
-      "Kapacitet grejanja (BTU)": "12966",
-      "SEER za hlađenje": "6.19",
-      "Prosečan SCOP za grejanje": "4.03",
-      "Klasa energetske efikasnosti SEER": "A++",
-      "Prosečna klasa energetske efikasnosti SCOP": "A+",
-      "Refrigerant": "R32",
-      "Protok vazduha (m3/h)": "600",
-      "Neto težina unutrašnje/spoljne jedinice (kg)": "8.5",
-      "Dimenzije (unutrašnje) - neto": "792*292*201",
-      "Dimenzije (spoljne) - neto": "705*530*279",
-      "Ambijentalna temperatura - hlađenje": "16~49℃",
-      "Ambijentalna temperatura - grejanje": "-25~30℃"
     }
   },
   {
@@ -3155,6 +2633,7 @@
     ],
     "specificationsDoc": "assets/PDF-Specifications/FVC-123.pdf",
     "specifications": {
+      "Димензии (B/Д/Ш)": "247x308x511",
       "2 plastične cevi": "√",
       "elektronski regulator za plastičnu četku za pod": "Da",
       "dugme za automatsko uvlačenje kabla": "√",
@@ -3200,35 +2679,6 @@
       "dužina kabla": "4.5 m",
       "snaga": "2000 W",
       "boja": "crna/crvena"
-    }
-  },
-  {
-    "id": 112,
-    "name": "Usisivač FVC 160",
-    "description": [
-      "Usisivač raspolaže snažnim motorom od 2000W sa ciklonskim sistemom i HEPA filterom, što osigurava efikasno čišćenje i filtriranje vazduha. Ima regulaciju snage za prilagođene performanse, zajedno sa indikatorom nivoa prašine za praktičnost.",
-      "Opremljen teleskopskom cevi i kontejnerom od 2 litre, ovaj usisivač nudi raznovrsnost i dovoljnu zapreminu. Radi u energetskom razredu A i ispušta nivo buke od 81 dBA, što je pogodno za tiše sesije čišćenja."
-    ],
-    "pictures": [
-      "assets/Small domestic appliances/VACUUM CLEANER FVC 160/2-FAVORIT-pravosmukalka-FVC-160-01-1024x576.png",
-      "assets/Small domestic appliances/VACUUM CLEANER FVC 160/FVC-160-2.png",
-      "assets/Small domestic appliances/VACUUM CLEANER FVC 160/FVC160-Hepa-filter-nadvoresen-02-01-1024x576.png",
-      "assets/Small domestic appliances/VACUUM CLEANER FVC 160/FVC160-Hepa-filter-vnatresen-03-01-1024x576.png",
-      "assets/Small domestic appliances/VACUUM CLEANER FVC 160/FVC-160-3.png"
-    ],
-    "specificationsDoc": "assets/PDF-Specifications/FVC-160.pdf",
-    "specifications": {
-      "snaga": "2000 W",
-      "ciklonski sistem": "√",
-      "HEPA filter": "√",
-      "regulacija snage": "√",
-      "indikator nivoa prašine u sadu": "√",
-      "teleskopska cev": "√",
-      "zapremina kontejnera": "2 l.",
-      "energetski razred": "А",
-      "nivo buke": "81 dBA",
-      "dužina kabla": "4.5 m",
-      "težina": "5.15 kg."
     }
   },
   {
@@ -3298,377 +2748,6 @@
     }
   },
   {
-    "id": 115,
-    "name": "Usisivač FVC 585",
-    "description": [
-      "Usisivač FVC 585 je kompaktno, ali moćno rešenje za čišćenje sa ciklonskim sistemom od 600W i HEPA filterom, obezbeđujući efikasno uklanjanje prašine i nečistoća. Njegova veličina kontejnera od 0,5 litara i lagani dizajn, težine samo 1,85 kg, čine ga idealnim za brze zadatke čišćenja.",
-      "Ovaj usisivač radi tiho sa nivoom buke od 80 dBA, pružajući udobno iskustvo čišćenja. Ima kabl dužine 5 metara za veći doseg, omogućavajući čišćenje većih površina bez čestih promena priključaka za struju."
-    ],
-    "pictures": [
-      "assets/Small domestic appliances/VACUUM CLEANER FVC 585/7.1-FAVORIT-pravosmukalka-FVC-585-CELOSNA-01-1024x576.png",
-      "assets/Small domestic appliances/VACUUM CLEANER FVC 585/7-FAVORIT-pravosmukalka-FVC-585-01-1024x576.jpg",
-      "assets/Small domestic appliances/VACUUM CLEANER FVC 585/7.2-FAVORIT-pravosmukalka-FVC-585-01-1024x576.png",
-      "assets/Small domestic appliances/VACUUM CLEANER FVC 585/7.3-FAVORIT-FVC-585-01-1024x576.png",
-      "assets/Small domestic appliances/VACUUM CLEANER FVC 585/FVC585-HEPA-filtervnatresen-01-1024x576.png"
-    ],
-    "specificationsDoc": "assets/PDF-Specifications/FVC-306.pdf",
-    "specifications": {
-      "snaga": "600 W",
-      "ciklonski sistem": "√",
-      "HEPA filter": "√",
-      "veličina kontejnera": "0,5 l.",
-      "energetska klasa": "A",
-      "nivo buke": "80 dBA",
-      "dužina kabla": "5 m",
-      "težina": "1,85 kg."
-    }
-  },
-  {
-    "id": 116,
-    "name": "LED TV 32DF1M1T2S2A-13HD ANDROID",
-    "description": [
-      "Ovaj LED TV dijagonale 32 inča ima HD Ready rezoluciju (1366×768) i ugrađeni tuner koji podržava digitalni DVB-T2/C. Ima elegantan crni ram, pametne funkcije pokretane Androidom 11, i kompatibilnost sa VESA nosačem za zid. Opcije povezivanja uključuju SCART, 3 HDMI, VGA, 2 USB i Wi-Fi. Ugrađena je bežična funkcionalnost, podržava Google Play aplikacije i nudi PVR funkciju za snimanje sadržaja.",
-      "Televizor ima četverojezgarni procesor sa radnim taktom od 1.8GHz, sa 8GB ROM i 1GB RAM memorije. Druge funkcije uključuju pametno pretraživanje TV sadržaja, podršku za više jezika i kompatibilnost sa DVB-C i DVB-T2 standardima. Dolazi sa zvučnicima od 2x10W, srebrnim metalnim nogarama, i dimenzijama od 718.6mm x 442.1mm x 86.1mm sa postoljem."
-    ],
-    "pictures": [
-      "assets/TV/LED ТЕЛЕВИЗОР 32DF1M1T2S2A-13HD ANDROID/TV-32DF1M1T2S2A-13HD-44-1024x576.png"
-    ],
-    "specificationsDoc": "assets/TV/LED ТЕЛЕВИЗОР 32DF1M1T2S2A-13HD ANDROID/Upatstva-za-upotreba-za-TV-13-android-FINAL-istoto-e-za-site-modeli.pdf",
-    "specifications": {
-      "dijagonala": "32” (80cm)",
-      "tip ekrana": "LED",
-      "rezolucija": "1366×768 (HD READY)",
-      "tuner": "DIGITALNI DVB-T2/C",
-      "osveženje slike": "220 CD/M2 +/-10%",
-      "vreme odziva": "8 MS",
-      "smart": "√",
-      "bežična povezivost": "UGRAĐENA",
-      "povezivost": "SCART, 3 HDMI, VGA, 2 USB, podrška za CL+, WI-FI",
-      "boja okvira": "CRNA TANKA IVICA",
-      "brzina procesora": "ČETVEROJEZGARNI 1.8GHZ",
-      "memorija": "ROM 8GB, RAM 1GB",
-      "jezici": "MAKEDONSKI; ENGLESKI; HRVATSKI; SRPSKI",
-      "podrška za Google Play aplikacije": "√",
-      "daljinski upravljač": "SA DIREKTNIM NETFLIX I YOUTUBE DUGMADIMA",
-      "internet": "SMART TV BROWSER (NETFLIX; YOUTUBE; HBBTV; AMAZON PRIME…)",
-      "PVR funkcija za snimanje sadržaja": "√",
-      "ostalo": "PODRŽAVA BEŽIČNU TASTATURU; HOTELSKI REŽIM; VIŠEJEZIČNI MENI",
-      "DVB-C podrška": "√",
-      "DVB-T2 podrška": "√",
-      "zvučnici": "2x10W",
-      "nogare": "METALNE SREBRNE",
-      "dimenzije sa postoljem (ŠxVxD)": "718,6mm x 442,1mm x 86,1mm"
-    }
-  },
-  {
-    "id": 117,
-    "name": "LED TV 32DF1P4T2HD",
-    "description": [
-      "Ovaj LED TV dijagonale 32 inča ima visokokvalitetan prikaz (1366×768) i DIGITALNI DVB-T2/C tuner za pristup digitalnim kanalima. Sa osnovnim opcijama povezivanja uključujući SCART, 2 HDMI porta, VGA, i ugrađenim Wi-Fi-om, pruža praktičan pristup online sadržajima. Sa elegantnim crnim tankim ramom, ovaj TV dodaje eleganciju svakom prostoru.",
-      "Uključuje i zvučnike od 2x10W za impresivan zvuk. Kompaktne dimenzije (718.6mm x 442.1mm x 86.1mm) i neto težina od 3.6 KG čine ga pogodnim za različite postavke. Idealno za ličnu i hotelsku upotrebu, kombinuje performanse, povezivanje i elegantan dizajn."
-    ],
-    "pictures": [
-      "assets/TV/LED ТЕЛЕВИЗОР 32DF1P4T2HD/32DF1P4T2HD-44-1024x576.png"
-    ],
-    "specificationsDoc": "assets/TV/LED ТЕЛЕВИЗОР 32DF1M1T2S2A-13HD ANDROID/Upatstva-za-upotreba-za-TV-13-android-FINAL-istoto-e-za-site-modeli.pdf",
-    "specifications": {
-      "dijagonala": "32” (80cm)",
-      "tip ekrana": "LED",
-      "energetska klasa": "A",
-      "rezolucija": "1366×768 (HD READY)",
-      "tuner": "DIGITALNI DVB-T2/C",
-      "osveženje slike": "220 CD/M2 +/-10%",
-      "vreme odziva": "8 MS",
-      "smart": "NE",
-      "bežična povezivost": "NE",
-      "povezivost": "SCART, 2 HDMI, VGA, 2 USB, AV, IZLAZ ZA SLUŠALICE, KOAKSIALNI AUDIO, WI-FI",
-      "boja okvira": "CRNA TANKA IVICA",
-      "jezici": "MAKEDONSKI; ENGLESKI; HRVATSKI; SRPSKI",
-      "zvučnici": "2x10W",
-      "nogare": "PLASTIKA, CRNA",
-      "DVB-C podrška": "√",
-      "DVB-T2 podrška": "√",
-      "dimenzije sa postoljem (ŠxVxD)": "718,6mm x 442,1mm x 86,1mm",
-      "težina": "3,6 KG",
-      "ostalo": "HOTELSKI REŽIM"
-    }
-  },
-  {
-    "id": 118,
-    "name": "LED TV 32DN4M3T2S2A – 11HD ANDROID",
-    "description": [
-      "Ovaj LED TV dijagonale 32 inča poseduje vibrantan prikaz sa HD Ready rezolucijom (1366×768), osiguravajući jasne i čiste vizuale, dok ugrađeni tuner podržava digitalne kanale DVB-T2/S2 za besprekoran pristup digitalnim kanalima.",
-      "Sa pametnim funkcijama pokretanim Androidom 11, korisnici mogu uživati u različitim aplikacijama i servisima za strimovanje direktno sa svog televizora. Njegov elegantan crni ram dodaje dodir elegancije svakom prostoru za život, a kompatibilnost sa VESA nosačem za zid pruža fleksibilne opcije instalacije prema vašim željama."
-    ],
-    "pictures": [
-      "assets/TV/LED ТЕЛЕВИЗОР 32DN4M3T2S2A – 11HD ANDROID/FAVORIT-LED-TV-32DN4M3T2A-70HD-ANDROID-32-SMART-Android (1).png",
-      "assets/TV/LED ТЕЛЕВИЗОР 32DN4M3T2S2A – 11HD ANDROID/FAVORIT-LED-TV-32DN4M3T2A-70HD-ANDROID-32-SMART-Android (2).png"
-    ],
-    "specificationsDoc": "assets/TV/LED ТЕЛЕВИЗОР 32DN4M3T2S2A – 11HD ANDROID/TV-32DN4M3T2S2A-ANDROID-11-i-TV-43DN4JM2T2A-ANDROID-11.pdf",
-    "specifications": {
-      "dijagonala": "32” (80CM)",
-      "tip ekrana": "LED",
-      "rezolucija": "1366×768 (HD READY)",
-      "tuner": "DIGITALNI DVB-T2/S2",
-      "osveženje slike": "220 CD/M2",
-      "vreme odziva": "8,5 MS",
-      "smart": "√",
-      "bežična povezivost": "UGRAĐENA",
-      "povezivost": "SCART, HDMIX3, VGA, USB X2, podrška za CL+, WI-FI",
-      "VESA nosač za zid": "VESA (200MM X100MM)",
-      "operativni sistem": "ANDROID 11",
-      "boja okvira": "CRNA",
-      "procesor": "ČETVEROJEZGARNI 1.2GHZ",
-      "memorija": "ROM 8GB, RAM 1GB",
-      "jezici": "MAKEDONSKI; ENGLESKI; HRVATSKI; SRPSKI",
-      "podrška za Google Play aplikacije": "√",
-      "PVR funkcija za snimanje sadržaja": "√",
-      "ostalo": "PODRŽAVA BEŽIČNU TASTATURU; HOTELSKI REŽIM; VIŠEJEZIČNI MENI",
-      "DVB-C podrška": "√",
-      "DVB-T2/S2 podrška": "√",
-      "zvučnici": "2X7W",
-      "nogare": "GVOZDENE",
-      "dimenzije sa postoljem (ŠxVxD)": "730MM X 470MM X 225 MM",
-      "dimenzije bez postolja (ŠxVxD)": "730MM × 442MM × 86 MM"
-    }
-  },
-  {
-    "id": 119,
-    "name": "LED TV 32DN4P4T2HD",
-    "description": [
-      "Ovaj LED TV dijagonale 32 inča ima rezoluciju ekrana od 1366×768 (HD Ready) i dijagonalu od 80cm. Ima digitalni tuner DVB-T2/C za jasan prijem. Televizor nudi osvetljenje od 220 cd/m2 i vreme odziva od 8.5 ms, obezbeđujući vibrantne vizuale sa minimalnim zamućenjem pokreta. Iako nije pametan TV (smart TV), pruža različite opcije povezivanja, uključujući Scart, HDMIx3, VGA, USB x2, AV, izlaz za slušalice, koaksijalni audio i Wi-Fi mogućnost."
-    ],
-    "slike": [
-      "assets/TV/LED ТЕЛЕВИЗОР 32DN4P4T2HD/1.-FAVORIT-LED-TV-32DN4P4T2HD-32-Digital-tv-01-1-1024x576.png",
-      "assets/TV/LED ТЕЛЕВИЗОР 32DN4P4T2HD/32DN4P4ANHD-1024x768.png"
-    ],
-    "specificationsDoc": "assets/PDF-Specifications/UPATSTVO-ZA-TV-32-40-OBICEN.pdf",
-    "specifications": {
-      "dijagonala": "32” (80cm)",
-      "ekran": "LED",
-      "rezolucija": "1366×768 (HD Ready)",
-      "tuner": "Digitalni DVB-T2/C",
-      "osvetljenje": "220 CD/M2 +/-10%",
-      "vreme odziva": "8.5 MS",
-      "Smart": "ne",
-      "Bežična": "ne",
-      "povezanost": "Scart, HDMIx3, VGA, USB x2, AV, izlaz za slušalice, koaksijalni audio, Wi-Fi",
-      "VESA nosač za zid": "VESA (200ммx100мм)",
-      "boja okvira": "crna",
-      "jezik": "Makedonski; Engleski; Hrvatski; Srpski",
-      "zvučnici": "2x10W",
-      "nogare": "plastične",
-      "Dvb-c": "√",
-      "Dvb-t2": "√",
-      "dimenzije sa postoljem": "730mm x 470.5mm x 225mm",
-      "dimenzije bez postolja": "730mm x 442mm x 86mm",
-      "neto težina": "4 kg",
-      "ostalo": "režim hotela"
-    }
-  },
-  {
-    "id": 120,
-    "name": "LED TV 40DN4JM3T2A – ANDROID (7.0)",
-    "description": [
-      "Ovaj LED televizor dijagonale 40 inča pruža izvanrednu Full HD (1920×1080) rezoluciju na svom dijagonalnom ekranu od 101cm. Ima DVB-T/C/T2 tuner za raznovrsno prijem kanala i nudi osvetljenje od 250 cd/m2 sa vremenom odziva od 8 ms za glatke vizuale. Ovaj pametni televizor radi na Android 7.0, pokreće ga četvorojezgarni procesor 1.2GHz sa 8GB memorije i 1GB RAM-a, pružajući pristup Google Play aplikacijama i podršku za PVR snimanje."
-    ],
-    "pictures": [
-      "assets/TV/LED ТЕЛЕВИЗОР 40DN4JM3T2A – ANDROID (7.0)/6.-FAVORIT-LED-TV-40DN4JM3T2A-70FHD-ANDROID-40-SMART-Android-tv-01-1024x576.png",
-      "assets/TV/LED ТЕЛЕВИЗОР 40DN4JM3T2A – ANDROID (7.0)/4.-FAVORIT-LED-TV-40DN4JM3T2A-70FHD-ANDROID-40-SMART-Android-tv-01-1024x576.png"
-    ],
-    "specificationsDoc": "assets/PDF-Specifications/led-televizori.pdf",
-    "specifications": {
-      "dijagonala": "40\" (101cm)",
-      "ekran": "LED",
-      "rezolucija": "1920×1080 (Full HD)",
-      "tuner": "DVB-T/C/T2",
-      "osvetljenje": "250cd/m2",
-      "vreme odziva": "8 ms",
-      "Smart": "√",
-      "Bežična": "Ugrađena",
-      "povezanost": "Scart, HDMIx3, VGA, USB x2, CI+, izlaz za slušalice, koaksijalni audio, Wi-Fi",
-      "VESA nosač za zid": "VESA (200ммx100мм)",
-      "operativni sistem android": "Android 7.0",
-      "boja okvira": "crna",
-      "brzina memorije": "Četvorojezgarni 1.2GHz",
-      "memorija": "8GB, RAM 1GB",
-      "jezik": "Makedonski; Engleski; Hrvatski; Srpski",
-      "podrška za google play aplikacije": "√",
-      "PVR funkcija snimanje sadržaj": "√",
-      "ostalo": "podržava bežičnu tastaturu; režim hotela; meni na više jezika",
-      "Dvb-c": "√",
-      "Dvb-t2": "√",
-      "zvučnici": "2x10W",
-      "nogare": "gvozdeni",
-      "dimenzije sa postoljem": "903x553x179.7 mm",
-      "dimenzije bez postolja": "903×515.7×83 mm",
-      "neto težina": "6.00 kg"
-    }
-  },
-  {
-    "id": 121,
-    "name": "LED TV 43DF3PHT2S2A-13FHD ANDROID",
-    "description": [
-      "Ovaj LED televizor dijagonale 43 inča nudi Full HD rezoluciju (1920×1080) na svom dijagonalnom ekranu od 109cm. Ima DVB-T2/S2 tuner, što ga čini kompatibilnim sa zemaljskim i satelitskim emitovanjem. Televizor ima osvetljenje od 220 cd/m2 i vreme odziva od 8 ms, pružajući jasne i glatke vizuale.",
-      "Ovaj pametni televizor radi na Android 13 i opremljen je četvorojezgarnim procesorom 1.8GHz, 8GB ROM i 1GB RAM, pružajući besprekorno i odzivno korisničko iskustvo. Dolazi sa ugrađenim Wi-Fi-jem i podržava različite opcije povezivanja, uključujući SCART, 3 HDMI porta, VGA, 2 USB porta, CI+, izlaz za slušalice, i koaksijalni audio."
-    ],
-    "pictures": [
-      "assets/TV/LED ТЕЛЕВИЗОР 43DF3PHT2S2A-13FHD ANDROID/TV-43DF3PHT2S2A-13FHD-44-1024x576.png",
-      "assets/TV/LED ТЕЛЕВИЗОР 43DF3PHT2S2A-13FHD ANDROID/2.-FAVORIT-LED-TV-32DN4M3T2A-70HD-ANDROID-32-SMART-Android-tv-01-1024x576.png"
-    ],
-    "specificationsDoc": "assets/PDF-Specifications/Upatstva-za-upotreba-za-TV-13-android-FINAL-istoto-e-za-site-modeli.pdf",
-    "specifications": {
-      "dijagonala": "43\" (109cm)",
-      "ekran": "LED",
-      "energetska klasa": "А+",
-      "rezolucija": "1920×1080 (Full HD)",
-      "tjuner": "DVB-T2/S2",
-      "osvetljenje": "220CD/M2 +/-10%",
-      "vreme odziva": "8 ms",
-      "Smart": "√",
-      "Bežična": "Ugrađena",
-      "povezanost": "SCART, 3 HDMI, VGA, 2 USB, CI+, izlaz za slušalice, koaksijalni audio, Wi-Fi",
-      "operativni sistem android": "Android 13",
-      "boja okvira": "CRNA TANKA RAMA",
-      "brzina": "ČETVEROJEZGARNI 1.8GHZ",
-      "memorija": "MEMORIJA ROM 8GB, RAM 1GB",
-      "jezik": "Makedonski; Engleski; Hrvatski; Srpski",
-      "podrška za google play aplikacije": "√",
-      "daljinski": "SA DIREKTNIM NETFLIX; DUGME ZA YOUTUBE",
-      "internet": "SMART TV BROWSER (NETFLIX; YOUTUBE; HBBTV; AMAZON PRIME…)",
-      "PVR funkcija snimanje sadržaj": "√",
-      "ostalo": "PODRŽAVA BEŽIČNU TASTATURU; HOTELSKI REŽIM; VIŠEJEZIČNI MENI",
-      "Dvb-c": "√",
-      "DVB-T2/S2": "√",
-      "zvučnici": "2x10W",
-      "nogare": "PLASTIKA CRNA",
-      "dimenzije sa postoljem": "952.60mm X 539.10mm X 84,40mm",
-      "neto težina": "6,60 kg"
-    }
-  },
-  {
-    "id": 122,
-    "name": "LED Televizor 43DN4JM2T2S2A 11FHD ANDROID (11)",
-    "description": [
-      "Ovaj LED televizor od 43 inča pruža Full HD (1920×1080) rezoluciju na dijagonalnom ekranu od 109cm. Ima DVB-T2/S2 tuner za zemaljske i satelitske emitovanje i nudi osvetljenost od 250 cd/m2 sa vremenom odziva od 8 ms za jasnu sliku.",
-      "Opremljen pametnom funkcionalnošću, ovaj televizor radi na Androidu 11 pokretan četverojezgarnim procesorom od 1.2GHz, 8GB memorije i 1GB RAM-a, osiguravajući glatku izvedbu i pristup Google Play aplikacijama. Uključuje ugrađeni Wi-Fi i razne opcije povezivanja poput Scart, HDMI x3, VGA, USB x2, CI+, izlaz za slušalice, koaksijalni audio i podršku za VESA montažu na zidu (200mmx100mm)."
-    ],
-    "pictures": [
-      "assets/TV/LED ТЕЛЕВИЗОР 43DN4JM2T2S2A – 11FHD ANDROID (11)/123456-1024x576.png",
-      "assets/TV/LED ТЕЛЕВИЗОР 43DN4JM2T2S2A – 11FHD ANDROID (11)/5.-FAVORIT-LED-TV-43DN4JM2T2A-44FHD-ANDROID-43-SMART-Android-tv-01-1024x576.png"
-    ],
-    "specificationsDoc": "assets/PDF-Specifications/Upatstvo-za-TV-SMART-ANDROID-32-43-50-SR.pdf",
-    "specifications": {
-      "dijagonala": "43\" (109cm)",
-      "ekran": "LED",
-      "rezolucija": "1920×1080 (Full HD)",
-      "tjuner": "DVB-T2/S2",
-      "osvetljenost": "250cd/m2",
-      "vreme odziva": "8 ms",
-      "Smart": "√",
-      "Bežični": "Ugrađen",
-      "povezivanje": "Scart, HDMI x3, VGA, USB x2, CI+, izlaz za slušalice, koaksijalni audio, Wi-Fi",
-      "zidna montaža": "VESA (200mmx100mm)",
-      "operativni sistem Android": "Android 11",
-      "boja okvira": "crna",
-      "brzina": "Četverojezgarni 1.2GHz",
-      "memorija": "memorija 8GB, RAM 1GB",
-      "jezik": "Makedonski; Engleski; Hrvatski; Srpski",
-      "podrška za aplikacije google play": "√",
-      "PVR funkcija snimanja sadržaja": "√",
-      "ostalo": "podrška za bežičnu tastaturu; hotelski režim; višejezični meni",
-      "Dvb-c": "√",
-      "DVB-T2/S2": "√",
-      "zvučnici": "2x10W",
-      "noge": "gvožđe",
-      "dimenzije sa postoljem": "903x553x179,7 mm",
-      "dimenzije bez postolja": "903×515,7×83 mm",
-      "neto težina": "Neto težina: 7,00 kg"
-    }
-  },
-  {
-    "id": 123,
-    "name": "LED Televizor 55DK5JM2T2S2A -11UHD 4K ANDROID(11)",
-    "description": [
-      "Ovaj LED televizor od 55 inča ima izvanrednu 4K Ultra HD rezoluciju (3840×2160) na dijagonalnom ekranu od 140cm, pružajući vibrantne i detaljne slike. Opremljen je DVB-T2/S2 tunerom za zemaljske i satelitske emitovanja i nudi osvetljenost od 280 cd/m2 sa vremenom odziva od 9.5 ms, što osigurava glatko kretanje i jasnoću.",
-      "Kao pametni televizor koji radi na Androidu 11, pohvaljuje se četverojezgarnim procesorom od 1.2GHz, 8GB memorije i 1.5GB RAM-a, pružajući besprekoran performans i pristup aplikacijama sa Google Play-a. Ugrađeni Wi-Fi omogućava bežičnu povezanost, dopunjujući raznovrsnost fizičkih konekcija kao što su Scart, HDMI x3, VGA, USB x2, CI+, izlaz za slušalice i koaksijalni audio."
-    ],
-    "pictures": [
-      "assets/TV/LED ТЕЛЕВИЗОР 55DK5JM2T2S2A-11UHD 4K ANDROID(11)/11.-FAVORIT-LED-TV-55DK5JM2T2S2A-90UHD-ANDROID-55-SMART-Android-tv-01-1024x576.png",
-      "assets/TV/LED ТЕЛЕВИЗОР 55DK5JM2T2S2A-11UHD 4K ANDROID(11)/7.-FAVORIT-LED-TV-55DK5JM2T2S2A-90UHD-ANDROID-55-SMART-Android-tv-1024x645.png"
-    ],
-    "specificationsDoc": "assets/PDF-Specifications/Uputstvo-za-TV-SMART-ANDROID-za-55-SR.pdf",
-    "specifications": {
-      "dijagonala": "55\" (140cm)",
-      "ekran": "LED",
-      "rezolucija": "3840×2160 (ULTRA HD) 4K",
-      "tjuner": "DVB-T2/S2",
-      "osvetljenje": "280cd/m2 +/-10%",
-      "vreme odziva": "9.5 ms",
-      "Smart": "√",
-      "Bežična": "ugrađena",
-      "povezivanje": "Scart, HDMI x3, VGA, USB x2, CI+, izlaz za slušalice, koaksijalni audio, Wi-Fi",
-      "zidna montaža": "VESA (200mmx100mm)",
-      "operativni sistem Android": "Android 11",
-      "boja okvira": "SREBRNA",
-      "brzina": "Četverojezgarni 1.2GHz",
-      "brzina memorije": "memorija 8GB, RAM 1.5GB",
-      "jezik": "Makedonski; Engleski; Hrvatski; Srpski",
-      "podrška za aplikacije google play": "√",
-      "PVR funkcija snimanja sadržaja": "√",
-      "Hotel režim": "√",
-      "ostalo": "podrška za bežičnu tastaturu; višejezični meni",
-      "Dvb-c": "√",
-      "DVB-T2/S2": "√",
-      "zvučnici": "2x10W",
-      "noge": "gvozdeni",
-      "dimenzije sa postoljem": "1245mm x 812mm x 254mm",
-      "dimenzije bez postolja": "1245mm x 766mm x 83mm",
-      "neto težina": "Neto težina: 12 kg"
-    }
-  },
-  {
-    "id": 124,
-    "name": "LED телевизор 55DЕ2М1T2S2A-13UHD 4K ANDROID",
-    "description": [
-      "Ovaj 55-inčni LED TV kombinuje impresivne karakteristike sa elegantnim dizajnom. Poseduje 4K Ultra HD rezoluciju (3840×2160) na ekranu dijagonale 140 cm, pružajući izuzetnu jasnoću i detalje. Sa energetskom klasom A, ovaj TV osigurava optimalne performanse uz očuvanje energije.",
-      "Opremljen DVB-T2/S2 tunerom, TV podržava zemaljske i satelitske prijenose. Ima osvetljenje od 270 cd/m2 i vreme odziva od 8 ms za glatku sliku. Kao Smart TV koji radi na Android 13, pokretan quad-core 1.2GHz procesorom i 8GB ROM sa 1.9GB RAM, nudi besprekornu izvedbu i pristup Google Play aplikacijama."
-    ],
-    "pictures": [
-      "assets/TV/LED ТЕЛЕВИЗОР 55DЕ2М1T2S2A-13UHD 4K ANDROID/TV-55DEM1T2S2A-13UHD-44-1024x576.png"
-    ],
-    "specificationsDoc": "assets/PDF-Specifications/UPATSTVO-ZA-TV-SMART-ANDROID-za-55-MK.pdf",
-    "specifications": {
-      "Dijagonala": "55\" (140 cm)",
-      "Ekran": "LED",
-      "Energetska klasa": "A",
-      "Rezolucija": "3840×2160 (Ultra HD) 4K",
-      "Tuner": "DVB-T2/S2",
-      "Osvetljenje": "270 cd/m2 +/-10%",
-      "Vreme odziva": "8 ms",
-      "Smart": "√",
-      "Bežični": "ugrađen",
-      "Konekcija": "SCART, HDMIX3, VGA, USB x2, CI+, izlaz za slušalice, koaksijalni audio, Wi-Fi",
-      "Android operativni sistem": "Android 13",
-      "Boja ramke": "Srebrna tanka ramka",
-      "Brzina": "Quad-core 1.2GHz",
-      "Memorija": "8GB ROM, 1.9GB RAM",
-      "Jezik": "makedonski; engleski; hrvatski; srpski",
-      "Daljinski": "sa direktnim Netflix-om; YouTube dugme",
-      "Internet": "Smart TV pregledač (Netflix, YouTube, HBBTV, Amazon Prime…)",
-      "Podrška za Google Play aplikacije": "√",
-      "PVR funkcija za snimanje sadržaja": "√",
-      "Hotel mod": "√",
-      "Ostalo": "Podržava bežičnu tastaturu; višejezični meni",
-      "DVB-C": "√",
-      "DVB-T2/S2": "√",
-      "Zvucnici": "2x10W",
-      "Noge": "srebrne",
-      "Dimenzije": "1245 mm x 766 mm x 83 mm",
-      "Neto težina": "12 kg"
-    }
-  },  
-  {
   "id": 125,
   "name": "INVERTER KLIMA UREĐAJ 24000BTU FF (-15 °C)",
   "description": [
@@ -3702,38 +2781,6 @@
     "Димензије (спољна, нето)": "900x700x350",
     "Амбијентална температура (ладење)": "16~52℃",
     "Амбијентална температура (грејање)": "-15~30℃"
-  }
-},
-{
-  "id": 126,
-  "name": "INVERTER KLIMA UREĐAJ 24000BTU FF (-15 °C)",
-  "description": [
-    "Ovaj klima uređaj visoke efikasnosti pruža snažno hlađenje i grejanje, sa SEER-om 6.53 i SCOP-om 4.09 za energetsku efikasnost. Radi tiho, ima tehnologiju I Feel, spremnost za Wi-Fi i koristi ekološki prihvatljiv gas R32.",
-    "Sa neto težinom od 12.5 kg za unutrašnju jedinicu i 39 kg za spoljašnju jedinicu, udobno se uklapa u većinu prostora. Dimenzije su 1082x330x233 mm za unutrašnju jedinicu i 900x700x350 mm za spoljašnju jedinicu, sa opsegom hlađenja od 16 do 49°C i grejanja od -15 do 30°C."
-  ],
-  "pictures": [
-    "assets/Ait Conditioners/AIR CONDITIONER INVERTER 24000BTU FF (-15°C)/12000BTU-QB-HE-HB-18000BTU-QB-HE-HB-vnatresna-edinica-1024x429.png",
-    "assets/Ait Conditioners/AIR CONDITIONER INVERTER 24000BTU FF (-15 °C)/12000BTU-QB-HE-HB-18000BTU-QB-HE-HB-nadvoresna-edinica-1024x719.png"
-  ],
-  "specificationsDoc": "assets/PDF-Specifications/MKD-user-manual-12000BTU-FF-18000BTU-FF-24000BTU-FF-series.pdf",
-  "specifications": {
-    "kapacitet hlađenja kw": "7.3 (1.8 – 7.4)",
-    "kapacitet grejanja kw": "7.3(1.8 – 8.0)",
-    "SEER hlađenje": 6.53,
-    "SCOP grejanje prosecno": 4.09,
-    "SEER energetska klasa": "A++",
-    "SCOP energetska klasa prosecno": "A+",
-    "tip gas": "R32",
-    "protok vazduha": 1300,
-    "i feel": "Da",
-    "spremnost za wifi": "Da",
-    "nivo buke napolju unutra db": "63/66",
-    "neto tezina unutrasnja jedinica kg": 12.5,
-    "neto tezina napolju unutrasnja jedinica kg": 39,
-    "dimenzije unutrasnja jedinica net": "1082x330x233",
-    "dimenzije napolju unutrasnja jedinica net": "900x700x350",
-    "temperatura okoline hlađenje": "16~49℃",
-    "temperatura okoline grejanje": "-15~30℃"
   }
 },
 {
@@ -3943,8 +2990,8 @@
       "Predstavljamo našu naprednu mašinu za pranje sudova, dizajniranu da olakša vaše iskustvo pranja sudova. Sa dimenzijama W/V/D 85/59.8/59.8, nudi veliki kapacitet do 12 setova sudova. Ima 5 raznovrsnih programa, uključujući brzi ciklus od 30 minuta na 40°C, koji efikasno čisti sudove svih vrsta."
     ],
     "pictures": [
-      "assets/Home appliances/Dishwasher F60 – Y14N S/F60-Y14 S-04.png",
-      "assets/Home appliances/Dishwasher F60 – Y14N S/F60-Y14 S-05.png",
+      "assets/Home appliances/Dishwasher F60 – Y14N S/F60-Y14_S-04.png",
+      "assets/Home appliances/Dishwasher F60 – Y14N S/F60-Y14_S-05.png",
       "assets/Home appliances/Dishwasher F60 – Y14N S/F60-Y14 S-06.jpg"
     ],
     "specificationsDoc": "assets/Product Spec/2.-F60-Y14-F60-Y14-S-EN-SIR-MAK-AL.pdf",
@@ -4033,7 +3080,7 @@
       "DIMENZIJE": "82.1/48/50 cm",
       "BRUTO VOLUMEN": "91L",
       "NETO VOLUMEN": "89L",
-      "ENERGETSKA KLASA": "F",
+      "ENERGETSKA KLASA": "E",
       "BOJA": "BELA",
       "ZAMENJIVA VRATA": "√",
       "PODEŠAVAJUĆE NOGE": "√",
@@ -4057,7 +3104,7 @@
       "DIMENZIJE": "144/54/57 cm",
       "BRUTO NETO VOLUMEN": "216/213 L",
       "NETO VOLUMEN FRIZIDERA/ZAMRZIVAČA": "171/42 L",
-      "ENERGETSKA KLASA": "F",
+      "ENERGETSKA KLASA": "E",
       "GAS": "R600",
       "BOJA": "BELO/SREBRNA",
       "ZAMENJIVA VRATA": "√",
@@ -4086,7 +3133,7 @@
       "NETO VOLUMEN": "168 L",
       "POTROŠNJA ELEKTRIČNE ENERGIJE": "257 kWh/god",
       "NIVO BUKE": "40 dB",
-      "ENERGETSKA KLASA": "F",
+      "ENERGETSKA KLASA": "E",
       "PODEŠAVAJUĆE NOGE": "√",
       "PROMENJIVE STAKLENE POLICE": "√",
       "ZAMENJIVA VRATA": "√",
@@ -4115,7 +3162,7 @@
       "NETO VOLUMEN": "324 L",
       "POTROŠNJA ELEKTRIČNE ENERGIJE": "306 kWh/god",
       "NIVO BUKE": "41 dB",
-      "ENERGETSKA KLASA": "F",
+      "ENERGETSKA KLASA": "E",
       "GAS": "Р 600 A",
       "BOJA": "BELO/INOX",
       "PODEŠAVAJUĆE NOGE": "√",
@@ -4149,7 +3196,7 @@
       "BRUTO VOLUMEN": "341 L",
       "NETO VOLUMEN": "324 L",
       "NETO VOLUMEN FRIZIDERA/ZAMRZIVAČA": "230 L / 106 L",
-      "ENERGETSKA KLASA": "F",
+      "ENERGETSKA KLASA": "E",
       "GAS": "P 600 A",
       "BOJA": "BELO/INOX",
       "ZAMENJIVA VRATA": "√",
@@ -4377,7 +3424,9 @@
             "Rezolucija": "1920×1080 (FHD)",
             "Tjuner": "DVB-T2/S2",
             "Osvetljenje": "180CD/M2 +/-10%",
+            "Ugao gledanja": "176° x 176°",  
             "Vreme odgovora": "8 ms",
+            "Osvežavanje ekrana": "60 Hz",
             "SMART": "√",
             "Wireless": "UGRAĐEN",
             "Povezivanje": "LAN-1, HEAD PHONE 1; COAX AUDIO-1; RF IN 2; HDMI, 2 USB ulaza, CI 1, WI-FI",
@@ -4785,6 +3834,735 @@
             "Težina": "32.5 KG",
             "Boja": "BELA"
           }
+        },
+        {
+          "id": 162,
+          "name": "Ugradna mašina za sudove BI60-I14FN",
+          "description": [],
+          "pictures": [
+            "assets/Built In Appliances/Built-in dishwasher BI60 – I14 (fully integrated)/BI60-I14N.jpg",
+            "assets/Built In Appliances/Built-in dishwasher BI60 – I14 (fully integrated)/BI60-I14N-OPEND.png"
+          ],
+          "specificationsDoc": "assets/Built In Appliances/Built-in dishwasher BI60 – I14 (fully integrated)/BI60-I14N-PDF.pdf",
+          "specifications": {
+              "model": "BI60-I14",
+              "tip": "potpuno ugradna",
+              "Dimenzije V/Š/D": "82cm/59,8cm/55cm",
+              "maksimalni kapacitet": "12 kompleta posuđa",
+              "programi": 5,
+              "temperature": 3,
+              "energetska klasa": "A++",
+              "klasa sušenja": "A",
+              "potrošnja vode na ECO programu": "12 L vode",
+              "potrošnja energije (u zavisnosti od programa)": "0,90 – 1,55 kWh",
+              "trajanje ECO programa": "222 min",
+              "zaštita grejača": "√",
+              "zaštita od poplave": "√",
+              "potpuno ugradna": "√",
+              "On/Off dugme": "√",
+              "dugme za izbor programa": "√",
+              "odloženi start": "3, 6 i 9 sati",
+              "polu punjenje": "√",
+              "indikator za so": "√",
+              "indikator za sjaj": "√",
+              "indikator završetka rada": "√",
+              "nivo buke": "54 dB",
+              "brzi program": "30 min / 40 °C"
+          }
+        },
+        {
+          "id": 163,
+          "name": "Ugradni šporet S 70MTB-40",
+          "description": [],
+          "specificationsLabel": "Спецификације за рерну",
+          "specificationsExtraLabel": "Спецификације за плочу",
+          "specificationsDocLabel": "Упутство за рерну (PDF)",
+          "specificationsDocExtraLabel": "Упутство за плочу (PDF)",
+          "pictures": [
+            "assets/Built In Appliances/Built-in oven with stove top S 70MTB-40/RERNA.png",
+            "assets/Built In Appliances/Built-in oven with stove top S 70MTB-40/PLOCA -gore.png",
+            "assets/Built In Appliances/Built-in oven with stove top S 70MTB-40/ploca desno.png"
+          ],
+          "specificationsDoc": "assets/Built In Appliances/Built-in oven with stove top S 70MTB-40/3. BIO-70MTB oven UM- Serbian language.pdf",
+          "specificationsDocExtra": "assets/Built In Appliances/Built-in oven with stove top S 70MTB-40/3. BIH-6060-40T-hob-UM Serbian language.pdf",
+          "specifications": {
+            "Dimenzije pakovanja": "648mm / 688mm / 785mm",
+            "Energetska klasa": "A",
+            "Zapremina rerne": "70 L",
+            "Crni panel": "√",
+            "Funkcije rerne": "8",
+            "Maksimalna snaga": "2900 W",
+            "Tajmer": "mehanički",
+            "ECO": "√",
+            "Termostat": "mehanički",
+            "Bočne vođice u rerni": "√",
+            "Ventilator": "√",
+            "Svetlo u rerni": "√",
+            "Duboki pleh": "1",
+            "Hromirana rešetka": "1",
+            "Boja": "crna"
+          },
+          "specificationsExtra": {
+            "Dimenzije ploče (Š/D/V)": "590*520*51 mm",
+            "Energetska klasa": "A",
+            "Broj grejnih zona": "4",
+            "Prečnik grejnih zona": "2 x Ø165mm / 2 x Ø200mm",
+            "Snaga grejnih zona": "Ø200mm - 1800W / Ø165mm - 1200W",
+            "Kontrola": "na dodir",
+            "Kabl": "5*1.5mm / 1.2m",
+            "Dečija zaštita": "√",
+            "Tip ploče": "staklokeramička",
+            "Boja ploče": "crna",
+            "Indikatori vrele površine": "√",
+            "Inoks ram": "X",
+            "Nivoi snage": "9"
+          }
+        },
+        {
+          "id": 164,
+          "name": "Mašina za pranje sudova DW 45FS5P-9",
+          "description": [],
+          "pictures": [
+            "assets/Home appliances/Dishwasher DW 45FS5P-9/DW 45FS5P-9.png",
+            "assets/Home appliances/Dishwasher DW 45FS5P-9/DW 45FS5P-9-OTVORENA.png"
+          ],
+          "specificationsDoc": "assets/Home appliances/Dishwasher DW 45FS5P-9/1. DW 45FS5P-9 & DW 45FS5P-09-S Macedonian language.pdf",
+          "specifications": {
+            "Dimenzije": "V/Š/D 845/448/600 mm",
+            "MAKSIMALNI KAPACITET": "9 kompleta posuđa",
+            "programi": "5",
+            "brzi program": "√",
+            "LED displej": "√",
+            "dugme za polovično (1/2) punjenje": "√",
+            "energetska klasa": "E",
+            "klasa sušenja": "A",
+            "buka pri radu": "49 dB",
+            "odloženi start": "1-24 sata",
+            "DRY +": "√",
+            "energetska potrošnja na 100 ciklusa": "70 kWh",
+            "zaštita od poplave": "√",
+            "skriveni grejač": "√",
+            "zaštita grejača": "√",
+            "metalni filter": "√",
+            "BOJA": "BELA/SIVA",
+            "On/Off dugme": "√",
+            "START/PAUZA DUGME": "√",
+            "INDIKATOR FUNKCIJE PRANJA": "√",
+            "INDIKATOR NEDOSTATKA SOLI": "√",
+            "INDIKATOR NEDOSTATKA SJAJA": "√"
+          }
+        },
+        {
+          "id": 165,
+          "name": "Mašina za pranje sudova DW 45FS5P-9 S",
+          "description": [],
+          "pictures": [
+            "assets/Home appliances/Dishwasher DW 45FS5P-9 S/DW 45FS5P-9 S.png",
+            "assets/Home appliances/Dishwasher DW 45FS5P-9 S/DW 45FS5P-9 S -otvorena.png"
+          ],
+          "specificationsDoc": "assets/Home appliances/Dishwasher DW 45FS5P-9 S/1. DW 45FS5P-9 & DW 45FS5P-09-S Macedonian language.pdf",
+          "specifications": {
+            "Dimenzije": "V/Š/D 845/448/600 mm",
+            "MAKSIMALNI KAPACITET": "9 kompleta posuđa",
+            "programi": "5",
+            "brzi program": "√",
+            "LED displej": "√",
+            "dugme za polovično (1/2) punjenje": "√",
+            "energetska klasa": "E",
+            "klasa sušenja": "A",
+            "buka pri radu": "49 dB",
+            "odloženi start": "1-24 sata",
+            "DRY +": "√",
+            "energetska potrošnja na 100 ciklusa": "70 kWh",
+            "zaštita od poplave": "√",
+            "skriveni grejač": "√",
+            "zaštita grejača": "√",
+            "metalni filter": "√",
+            "BOJA": "BELA/SIVA",
+            "On/Off dugme": "√",
+            "START/PAUZA DUGME": "√",
+            "INDIKATOR FUNKCIJE PRANJA": "√",
+            "INDIKATOR NEDOSTATKA SOLI": "√",
+            "INDIKATOR NEDOSTATKA SJAJA": "√"
+          }
+        },
+        {
+          "id": 166,
+          "name": "Ugradna mašina za pranje sudova DW 45BI7P-9",
+          "description": [],
+          "specificationsDocLabel": "Uputstvo za upotrebu",
+          "specificationsDocExtraLabel": "Uputstvo za instalaciju",
+          "pictures": [
+            "assets/Built In Appliances/Built-in dishwasher DW 45BI7P-9/DW 45BI7P-9.png",
+            "assets/Built In Appliances/Built-in dishwasher DW 45BI7P-9/DW 45BI7P-9-OTVORENA.png"
+          ],
+          "specificationsDoc": "assets/Built In Appliances/Built-in dishwasher DW 45BI7P-9/3. DW 45BI7P-9 user manual Serbian language.pdf",
+          "specificationsDocExtra": "assets/Built In Appliances/Built-in dishwasher DW 45BI7P-9/3. DW 45BI7P-9 Installation Serbian language.pdf",
+          "specifications": {
+            "Dimenzije V/Š/D": "815/448/558 mm",
+            "maksimalni kapacitet": "9 kompleta posuđa",
+            "9 kompleta posuđa": "√",
+            "brzi program": "√",
+            "programi": "7",
+            "Dugme za polovično (½) punjenje": "√",
+            "Unutrašnje svetlo": "√",
+            "DRY +": "√",
+            "energetska klasa": "E",
+            "klasa sušenja": "A",
+            "zaštita grejanja": "√",
+            "zaštita od poplave": "√",
+            "potpuno integrisana": "√",
+            "dugme UKLJ/ISKLJ": "√",
+            "odloženi početak": "1-24 sata",
+            "polovično punjenje": "√",
+            "indikator za so": "√",
+            "indikator za sjaj": "√",
+            "buka": "49 dB"
+          }
+        },
+        {
+          "id": 167,
+          "name": "Ugradna mašina za pranje sudova DW 60BI8P-13",
+          "description": [],
+          "specificationsDocLabel": "Uputstvo za upotrebu",
+          "specificationsDocExtraLabel": "Uputstvo za instalaciju",
+          "pictures": [
+            "assets/Built In Appliances/Built-in dishwasher DW 60BI8P-13/DW 60BI8P-13.png",
+            "assets/Built In Appliances/Built-in dishwasher DW 60BI8P-13/DW 60BI8P-13 -OTVORENA.png"
+          ],
+          "specificationsDoc": "assets/Built In Appliances/Built-in dishwasher DW 60BI8P-13/1. DW 60BI8P-13 user manual -Macedonian language.pdf",
+          "specificationsDocExtra": "assets/Built In Appliances/Built-in dishwasher DW 60BI8P-13/1. DW 60BI8P-13 installation Macedonian language.pdf",
+          "specifications": {
+            "Dimenzije V/Š/D": "815/596/558 mm",
+            "maksimalni kapacitet": "13 kompleta posuđa",
+            "programi": "8",
+            "temperatura": "3",
+            "energetska klasa": "E",
+            "klasa sušenja": "A",
+            "potrošnja vode na ECO programu": "11 L vode",
+            "11 L vode": "√",
+            "zaštita od poplave": "√",
+            "potpuno ugradna": "√",
+            "On/Off dugme": "√",
+            "dugme za izbor programa": "√",
+            "dugme za odloženo pranje": "1-24 sata",
+            "polovično punjenje 1/2": "√",
+            "indikator nedostatka soli": "√",
+            "indikator nedostatka sjaja": "√",
+            "indikator završetka rada": "√",
+            "buka pri radu": "49 dB"
+          }
+        },
+        {
+          "id": 168,
+          "name": "Mašina za pranje sudova DW 60FS5P-13",
+          "description": [],
+          "pictures": [
+            "assets/Home appliances/Dishwasher DW 60FS5P-13/DW 60FS5P-13.png",
+            "assets/Home appliances/Dishwasher DW 60FS5P-13/DW 60FS5P-13-OTVORENA.png"
+          ],
+          "specificationsDoc": "assets/Home appliances/Dishwasher DW 60FS5P-13/3. DW 60FS5P & DW 60FS5P S -13 Serbian language.pdf",
+          "specifications": {
+            "Dimenzije": "V/Š/D 845/600/600 mm",
+            "maksimalni kapacitet": "13 kompleta posuđa",
+            "programi": "5",
+            "brzi program": "√",
+            "LED displej": "√",
+            "dugme za polovično (1/2) punjenje": "√",
+            "energetska klasa": "E",
+            "klasa sušenja": "A",
+            "buka pri radu": "49 dB",
+            "odloženi start": "1-24 sata",
+            "DRY +": "√",
+            "energetska potrošnja na 100 ciklusa": "93 kWh",
+            "zaštita od poplave": "√",
+            "skriveni grejač": "√",
+            "zaštita grejača": "√",
+            "metalni filter": "√",
+            "BOJA": "BELA/SIVA",
+            "On/Off dugme": "√",
+            "START/PAUZA DUGME": "√",
+            "INDIKATOR FUNKCIJE PRANJA": "√",
+            "INDIKATOR NEDOSTATKA SOLI": "√",
+            "INDIKATOR NEDOSTATKA SJAJA": "√"
+          }
+        },
+        {
+          "id": 169,
+          "name": "Mašina za pranje sudova DW 60FS5P-13 S",
+          "description": [],
+          "pictures": [
+              "assets/Home appliances/Dishwasher DW 60FS5P-13 S/DW 60FS5P-13 S.png",
+              "assets/Home appliances/Dishwasher DW 60FS5P-13 S/DW 60FS5P-13 S-otvorena.png"
+          ],
+          "specificationsDoc": "assets/Home appliances/Dishwasher DW 60FS5P-13 S/3. DW 60FS5P & DW 60FS5P S -13 Serbian language.pdf",
+          "specifications": {
+            "Dimenzije": "V/Š/D 845/600/600 mm",
+            "maksimalni kapacitet": "13 kompleta posuđa",
+            "programi": "5",
+            "brzi program": "√",
+            "LED displej": "√",
+            "dugme za polovično (1/2) punjenje": "√",
+            "energetska klasa": "E",
+            "klasa sušenja": "A",
+            "buka pri radu": "49 dB",
+            "odloženi start": "1-24 sata",
+            "DRY +": "√",
+            "energetska potrošnja na 100 ciklusa": "93 kWh",
+            "zaštita od poplave": "√",
+            "skriveni grejač": "√",
+            "zaštita grejača": "√",
+            "metalni filter": "√",
+            "BOJA": "BELA/SIVA",
+            "On/Off dugme": "√",
+            "START/PAUZA DUGME": "√",
+            "INDIKATOR FUNKCIJE PRANJA": "√",
+            "INDIKATOR NEDOSTATKA SOLI": "√",
+            "INDIKATOR NEDOSTATKA SJAJA": "√"
+          }
+        },
+        {
+          "id": 171,
+          "name": "Mašina za pranje sudova DW 60FS6P3R-15",
+          "description": [],
+          "pictures": [
+              "assets/Home appliances/Dishwasher DW 60FS6P3R-15 X/DW 60FS6P3R-15 X.png",
+              "assets/Home appliances/Dishwasher DW 60FS6P3R-15 X/DW 60FS6P3R-15 X- otvorena.png"
+          ],
+          "specificationsDoc": "assets/Home appliances/Dishwasher DW 60FS6P3R-15/1. DW60FS6P3R-15 & DW60FS6P3R-15 X Macedonia languagen.pdf",
+          "specifications": {
+            "Dimenzije": "V/Š/D 845/600/600 mm",
+            "maksimalni kapacitet": "15 kompleta posuđa",
+            "programi": "6",
+            "3. korpa": "√",
+            "3 nivoa pranja sa 3 prskalice": "√",
+            "LED displej": "√",
+            "Automatsko otvaranje vrata po završetku": "√",
+            "brzi program": "√",
+            "dugme za polovično (1/2) punjenje": "√",
+            "energetska klasa": "D",
+            "klasa sušenja": "A",
+            "buka pri radu": "49 dB",
+            "odloženi start 1-24 sata": "1-24 sata",
+            "energetska potrošnja na 100 ciklusa": "86 kWh",
+            "zaštita od poplave": "√",
+            "skriveni grejač": "√",
+            "zaštita grejača": "√",
+            "metalni filter": "√",
+            "BOJA": "BELA",
+            "BELA/REAL INOX": "√",
+            "START/PAUZA DUGME": "√",
+            "INDIKATOR FUNKCIJE PRANJA": "√",
+            "INDIKATOR NEDOSTATKA SOLI": "√",
+            "INDIKATOR NEDOSTATKA SJAJA": "√"
+          }
+        },
+        {
+          "id": 172,
+          "name": "Mašina za pranje veša WM701200-03 BLDC",
+          "description": [],
+          "pictures": [
+            "assets/Home appliances/WASHING MACHINE WM701200-03 BLDC/WM701200-03 BLDC (1).png",
+            "assets/Home appliances/WASHING MACHINE WM701200-03 BLDC/WM701200-03 BLDC (2).png",
+            "assets/Home appliances/WASHING MACHINE WM701200-03 BLDC/WM701200-03 BLDC (3).png"
+          ],
+          "specificationsDoc": "assets/Home appliances/WASHING MACHINE WM701200-03 BLDC/1. WM-03 UM-1 (7KG- 9KG) MK-AL-SERB-ENG.pdf",
+          "specifications": {
+            "DIMENZIJE (V/Š/D)": "850/595/495 mm",
+            "MAKSIMALNA BRZINA CENTRIFUGE (RPM)": "1200",
+            "MAKSIMALNI KAPACITET": "7 kg",
+            "INOX BUBANJ": "50 L",
+            "INVERTER MOTOR": "√ (10 GODINA GARANCIJE)",
+            "DIGITALNI LED DISPLEJ": "√",
+            "ODLOŽENI START": "3-24 h",
+            "PROGRAMI": "16",
+            "ELEKTRONSKI PROGRAMATOR": "√",
+            "DUGME ZA KONTROLU TEMPERATURE VODE": "√",
+            "ENERGETSKA KLASA": "A",
+            "DRUM CLEAN PROGRAM": "√",
+            "STEAM ASSIST PROGRAM": "√",
+            "DEČIJA ZAŠTITA": "√",
+            "POTROŠNJA ENERGIJE": "40 kWh/ciklus",
+            "POTROŠNJA VODE": "44 L/ciklus",
+            "NIVO BUKE PRI PRANJU": "62 dB",
+            "NIVO BUKE PRI CENTRIFUGI": "76 dB",
+            "SUPER BRZI PROGRAM": "15 minuta na 30°",
+            "DUGME ZA KONTROLU BRZINE": "√",
+            "BRUTO/NETO TEŽINA": "60/57 kg"
+          }
+        },
+        {
+          "id": 173,
+          "name": "Mašina za pranje veša WM801400-63 BLDC",
+          "description": [],
+          "pictures": [
+            "assets/Home appliances/WASHING MACHINE WM801400-63 BLDC/WM801400-063 BLDC (1).png",
+            "assets/Home appliances/WASHING MACHINE WM801400-63 BLDC/WM801400-063 BLDC (2).png",
+            "assets/Home appliances/WASHING MACHINE WM801400-63 BLDC/WM801400-063 BLDC (3).png"
+          ],
+          "specificationsDoc": "assets/Home appliances/WASHING MACHINE WM801400-63 BLDC/1. WM-063 UM-1 (8KG) - MK-AL-SERB-ENG.pdf",
+          "specifications": {
+            "DIMENZIJE (V/Š/D)": "850/595/520 mm",
+            "MAKSIMALNA BRZINA CENTRIFUGE (RPM)": "1400",
+            "MAKSIMALNI KAPACITET": "8 kg",
+            "INOX BUBANJ": "53 L",
+            "INVERTER MOTOR": "√ (10 GODINA GARANCIJE)",
+            "DIGITALNI LED DISPLEJ": "√",
+            "ODLOŽENI START": "3-24 h",
+            "PROGRAMI": "16",
+            "ELEKTRONSKI PROGRAMATOR": "√",
+            "DUGME ZA KONTROLU TEMPERATURE VODE": "√",
+            "ENERGETSKA KLASA": "A",
+            "SISTEM ZA ZAŠTITU OD IZLIVANJA": "√",
+            "ZAŠTITA OD PENE": "√",
+            "SISTEM ZA OTKRIVANJE GREŠAKA": "√",
+            "DEČIJA ZAŠTITA": "√",
+            "POTROŠNJA ENERGIJE": "42 kWh/ciklus",
+            "POTROŠNJA VODE": "48 L/ciklus",
+            "NIVO BUKE PRI PRANJU": "62 dB",
+            "NIVO BUKE PRI CENTRIFUGI": "76 dB",
+            "DRUM CLEAN PROGRAM": "√",
+            "STEAM ASSIST PROGRAM": "√",
+            "SUPER BRZI PROGRAM": "15 min 30°",
+            "DUGME ZA KONTROLU BRZINE CENTRIFUGE": "√",
+            "PROGRAM SA PREDPRANJEM PAMUKA": "√",
+            "BRUTO/NETO TEŽINA": "61/58 kg"
+          }
+        },
+        {
+          "id": 174,
+          "name": "Mašina za pranje veša WM901400-03 BLDC",
+          "description": [],
+          "pictures": [
+            "assets/Home appliances/WASHING MACHINE WM901400-03 BLDC/WM901400-03 BLDC (3).png",
+            "assets/Home appliances/WASHING MACHINE WM901400-03 BLDC/WM901400-03 BLDC (2).png",
+            "assets/Home appliances/WASHING MACHINE WM901400-03 BLDC/WM901400-03 BLDC (1).png"
+          ],
+          "specificationsDoc": "assets/Home appliances/WASHING MACHINE WM901400-03 BLDC/1. WM-03 UM-1 (7KG- 9KG) MK-AL-SERB-ENG.pdf",
+          "specifications": {
+            "DIMENZIJE (V/Š/D)": "850/595/560 mm",
+            "MAKSIMALNA BRZINA CENTRIFUGE (RPM)": "1400",
+            "MAKSIMALNI KAPACITET": "9 kg",
+            "INOX BUBANJ": "60 L",
+            "INVERTER MOTOR": "√ (10 GODINA GARANCIJE)",
+            "DIGITALNI LED DISPLEJ": "√",
+            "STEAM ASSIST (pranje parom)": "√",
+            "ODLOŽENI START": "3-24 h",
+            "PROGRAMI": "16",
+            "ELEKTRONSKI PROGRAMATOR": "√",
+            "DUGME ZA KONTROLU TEMPERATURE VODE": "√",
+            "ENERGETSKA KLASA": "A",
+            "DRUM CLEAN PROGRAM": "√",
+            "ZAŠTITA OD PENE": "√",
+            "STEAM ASSIST PROGRAM": "√",
+            "DEČIJA ZAŠTITA": "√",
+            "SISTEM ZA OTKRIVANJE GREŠAKA": "√",
+            "POTROŠNJA ENERGIJE": "44 kWh/ciklus",
+            "POTROŠNJA VODE": "50 L/ciklus",
+            "NIVO BUKE PRI PRANJU": "62 dB",
+            "NIVO BUKE PRI CENTRIFUGI": "76 dB",
+            "SUPER BRZI PROGRAM": "15 minuta na 30°",
+            "DUGME ZA KONTROLU BRZINE": "√",
+            "PROGRAM SA PRETPRANJEM PAMUKA": "√",
+            "BRUTO/NETO TEŽINA": "67/64 kg"
+          }
+        },
+        {
+          "id": 175,
+          "name": "Frižider sa komorom RTT 90",
+          "description": [],
+          "pictures": [
+            "assets/Home appliances/REFRIGERATOR RTT 90/RTT 90 Exterior.png",
+            "assets/Home appliances/REFRIGERATOR RTT 90/RTT 90 Interior.png"
+          ],
+          "specificationsDoc": "assets/Home appliances/REFRIGERATOR RTT 90/Upatsvo RTT 90.pdf",
+          "specifications": {
+            "DIMENZIJE (V/Š/D)": "850/475/445 mm",
+            "BRUTO VOLUMEN": "91 L",
+            "NETO VOLUMEN": "90 L",
+            "ENERGETSKA KLASA": "E",
+            "BOJA": "BIJELA",
+            "PREOKRETNA VRATA": "√",
+            "PODESIVE NOGE": "√",
+            "FIKSNE RUČKE VRATA": "√",
+            "POLICE NA VRATIMA": "√",
+            "PODESIVE PROVIDNE POLICE": "√",
+            "PROVIDNA FIŠEKA": "√",
+            "POTROŠNJA ENERGIJE": "85 kWh/god",
+            "NIVO BUKE": "39 dB",
+            "GAS": "R600"
+          }
+        },
+        {
+          "id": 176,
+          "name": "Frižider bez komore LU 242",
+          "description": [],
+          "pictures": [
+            "assets/Home appliances/REFRIGERATOR WITHOUT CHAMBER LU 242/LU 242 Exterior.png",
+            "assets/Home appliances/REFRIGERATOR WITHOUT CHAMBER LU 242/LU 242 Interior.png"
+          ],
+          "specificationsDoc": "assets/Home appliances/REFRIGERATOR WITHOUT CHAMBER LU 242/Upatsvo LU 242.pdf",
+          "specifications": {
+            "DIMENZIJE (V/Š/D)": "1430/550/560 mm",
+            "BRUTO VOLUMEN": "246 L",
+            "NETO VOLUMEN": "242 L",
+            "ENERGETSKA KLASA": "E",
+            "BOJA": "BIJELA",
+            "PREOKRETNA VRATA": "√",
+            "PODESIVE NOGE": "√",
+            "FIKSNE RUČKE VRATA": "√",
+            "POLICE NA VRATIMA": "√",
+            "PODESIVE PROVIDNE POLICE": "√",
+            "PROVIDNA FIŠEKA": "√",
+            "POTROŠNJA ENERGIJE": "130 kWh/god",
+            "NIVO BUKE": "40 dB",
+            "GAS": "P600"
+          }
+        },
+        {
+          "id": 177,
+          "name": "Vertikalni Frižider FU 168",
+          "description": [],
+          "pictures": [
+            "assets/Home appliances/VERTICAL FREEZER FU 168/FU 168 Exterior.png",
+            "assets/Home appliances/VERTICAL FREEZER FU 168/FU 168 Interior.jpg"
+          ],
+          "specificationsDoc": "assets/Home appliances/VERTICAL FREEZER FU 168/Upatsvo FU 168.pdf",
+          "specifications": {
+            "DIMENZIJE (V/Š/D)": "1430/550/580 mm",
+            "BRUTO VOLUMEN": "170 L",
+            "NETO VOLUMEN": "168 L",
+            "ENERGETSKA KLASA": "E",
+            "BOJA": "BIJELA",
+            "PREOKRETNA VRATA": "√",
+            "PODESIVE NOGE": "√",
+            "FIKSNE RUČKE VRATA": "√",
+            "POLICE NA VRATIMA": "√",
+            "PREDELI ZA BRZO ZAMRZAVANJE": "√",
+            "PROVIDNE FIŠEKE": "√",
+            "POTROŠNJA ENERGIJE": "190 kWh/god",
+            "NIVO BUKE": "40 dB",
+            "GAS": "P600"
+          }
+        },
+        {
+          "id": 178,
+          "name": "Dvozonski Frižider RTMF 206",
+          "description": [],
+          "pictures": [
+            "assets/Home appliances/TWO CHAMBER REFRIGERATOR RTMF 206/RTMF 206 Exterior.png",
+            "assets/Home appliances/TWO CHAMBER REFRIGERATOR RTMF 206/RTMF 206 Interior.png"
+          ],
+          "specificationsDoc": "assets/Home appliances/TWO CHAMBER REFRIGERATOR RTMF 206/Upatsvo RTMF 206.pdf",
+          "specifications": {
+            "DIMENZIJE (V/Š/D)": "1430/550/560 mm",
+            "BRUTO VOLUMEN": "208/206 L",
+            "NETO VOLUMEN": "169/37 L",
+            "ENERGETSKA KLASA": "E",
+            "BOJA": "BIJELA",
+            "PREOKRETNA VRATA": "√",
+            "PODESIVE NOGE": "√",
+            "FIKSNE RUČKE VRATA": "√",
+            "POLICE NA VRATIMA": "√",
+            "PROVIDNA FIŠEKA": "√",
+            "PODESIVE PROVIDNE POLICE": "√",
+            "POTROŠNJA ENERGIJE": "172 kWh/god",
+            "NIVO BUKE": "40 dB",
+            "GAS": "P600"
+          }
+        },
+        {
+          "id": 179,
+          "name": "Dvozonski Frižider RTMF 206 S",
+          "description": [],
+          "pictures": [
+            "assets/Home appliances/TWO CHAMBER REFRIGERATOR RTMF 206 S/RTMF 206 S Exterior.png",
+            "assets/Home appliances/TWO CHAMBER REFRIGERATOR RTMF 206 S/RTMF 206 S Interior.png"
+          ],
+          "specificationsDoc": "assets/Home appliances/TWO CHAMBER REFRIGERATOR RTMF 206 S/Upatsvo RTMF 206 & RTMF 206 S.pdf",
+          "specifications": {
+            "DIMENZIJE (V/Š/D)": "1430/550/560 mm",
+            "BRUTO VOLUMEN": "208/206 L",
+            "NETO VOLUMEN": "169/37 L",
+            "ENERGETSKA KLASA": "E",
+            "BOJA": "SIVA",
+            "PREOKRETNA VRATA": "√",
+            "PODESIVE NOGE": "√",
+            "FIKSNE RUČKE VRATA": "√",
+            "POLICE NA VRATIMA": "√",
+            "PROVIDNA FIŠEKA": "√",
+            "PODESIVE PROVIDNE POLICE": "√",
+            "POTROŠNJA ENERGIJE": "172 kWh/god",
+            "NIVO BUKE": "40 dB",
+            "GAS": "P600"
+          }
+        },
+        {
+          "id": 180,
+          "name": "Kombinovani Frižider CBMF 262",
+          "description": [],
+          "pictures": [
+            "assets/Home appliances/TWO CHAMBER REFRIGERATOR CBMF 262/CBMF 262 Exterior.png",
+            "assets/Home appliances/TWO CHAMBER REFRIGERATOR CBMF 262/CBMF 262 Interior.png"
+          ],
+          "specificationsDoc": "assets/Home appliances/TWO CHAMBER REFRIGERATOR CBMF 262/Upatsvo CBMF 262.pdf",
+          "specifications": {
+            "DIMENZIJE (V/Š/D)": "1800/550/560 mm",
+            "BRUTO/NETO VOLUMEN": "265/262 L",
+            "NETO VOLUMEN FRIŽIDER/ZAMRZIVAČ": "191/71 L",
+            "ENERGETSKA KLASA": "E",
+            "BOJA": "BIJELA",
+            "PREOKRETNA VRATA": "√",
+            "PODESIVE NOGE": "√",
+            "FIKSNE RUČKE VRATA": "√",
+            "POLICE NA VRATIMA": "√",
+            "PROVIDNA FIŠEKA": "√",
+            "PODESIVE PROVIDNE POLICE": "√",
+            "KOMPARTMAN ZA ZAMRZAVANJE SA PROVIDNIM FIŠEKAMA": "√",
+            "POTROŠNJA ENERGIJE": "210 kWh/god",
+            "NIVO BUKE": "40 dB",
+            "GAS": "P600"
+          }
+        },
+        {
+          "id": 181,
+          "name": "Kombinovani Frižider CBMF 262",
+          "description": [],
+          "pictures": [
+            "assets/Home appliances/TWO CHAMBER REFRIGERATOR CBMF 262 S/CBMF 262 S Exterior.png",
+            "assets/Home appliances/TWO CHAMBER REFRIGERATOR CBMF 262 S/CBMF 262 S Interior.png"
+          ],
+          "specificationsDoc": "assets/Home appliances/TWO CHAMBER REFRIGERATOR CBMF 262 S/Upatsvo CBMF 262.pdf",
+          "specifications": {
+            "DIMENZIJE (V/Š/D)": "1800/550/560 mm",
+            "BRUTO/NETO VOLUMEN": "265/262 L",
+            "NETO VOLUMEN FRIŽIDER/ZAMRZIVAČ": "191/71 L",
+            "ENERGETSKA KLASA": "E",
+            "BOJA": "SREBRNA",
+            "PREOKRETNA VRATA": "√",
+            "PODESIVE NOGE": "√",
+            "FIKSNE RUČKE VRATA": "√",
+            "POLICE NA VRATIMA": "√",
+            "PROVIDNA FIŠEKA": "√",
+            "PODESIVE PROVIDNE POLICE": "√",
+            "KOMPARTMAN ZA ZAMRZAVANJE SA PROVIDNIM FIŠEKAMA": "√",
+            "POTROŠNJA ENERGIJE": "210 kWh/god",
+            "NIVO BUKE": "40 dB",
+            "GAS": "P600"
+          }
+        },
+        {
+          "id": 182,
+          "name": "Kombinovani Frižider CBMF 315",
+          "description": [],
+          "pictures": [
+            "assets/Home appliances/COMBINED REFRIGERATOR CBMF 315/CBMF 315 Exterior.png",
+            "assets/Home appliances/COMBINED REFRIGERATOR CBMF 315/CBMF 315 Interior.png"
+          ],
+          "specificationsDoc": "assets/Home appliances/COMBINED REFRIGERATOR CBMF 315/Upatsvo CBMF 315 & CBMF 315 X.pdf",
+          "specifications": {
+            "DIMENZIJE (V/Š/D)": "1860/600/600 mm",
+            "BRUTO/NETO VOLUMEN": "322/315 L",
+            "NETO VOLUMEN FRIŽIDER/ZAMRZIVAČ": "219/96 L",
+            "ENERGETSKA KLASA": "E",
+            "BOJA": "BIJELA",
+            "PREOKRETNA VRATA": "√",
+            "PODESIVE NOGE": "√",
+            "FIKSNE RUČKE VRATA": "√",
+            "POLICE NA VRATIMA": "√",
+            "PROVIDNA FIŠEKA": "√",
+            "PODESIVE PROVIDNE POLICE": "√",
+            "KOMPARTMAN ZA ZAMRZAVANJE SA PROVIDNIM FIŠEKAMA": "√",
+            "POTROŠNJA ENERGIJE": "234 kWh/god",
+            "NIVO BUKE": "40 dB",
+            "GAS": "P600"
+          }
+        },
+        {
+          "id": 183,
+          "name": "Kombinovani Frižider CBMF 315 X",
+          "description": [],
+          "pictures": [
+            "assets/Home appliances/COMBINED REFRIGERATOR CBMF 315 X/CBMF 315 X Exterior.png",
+            "assets/Home appliances/COMBINED REFRIGERATOR CBMF 315 X/CBMF 315 X Interior.png"
+          ],
+          "specificationsDoc": "assets/Home appliances/COMBINED REFRIGERATOR CBMF 315 X/Upatsvo CBMF 315 & CBMF 315 X.pdf",
+          "specifications": {
+            "DIMENZIJE (V/Š/D)": "1860/600/600 mm",
+            "BRUTO/NETO VOLUMEN": "322/315 L",
+            "NETO VOLUMEN FRIŽIDER/ZAMRZIVAČ": "219/96 L",
+            "ENERGETSKA KLASA": "E",
+            "BOJA": "REAL INOX",
+            "PREOKRETNA VRATA": "√",
+            "PODESIVE NOGE": "√",
+            "FIKSNE RUČKE VRATA": "√",
+            "POLICE NA VRATIMA": "√",
+            "PROVIDNA FIŠEKA": "√",
+            "PODESIVE PROVIDNE POLICE": "√",
+            "KOMPARTMAN ZA ZAMRZAVANJE SA PROVIDNIM FIŠEKAMA": "√",
+            "POTROŠNJA ENERGIJE": "234 kWh/god",
+            "NIVO BUKE": "40 dB",
+            "GAS": "P600"
+          }
+        },
+        {
+          "id": 184,
+          "name": "Kombinovani Frižider NFCBMF 253 X",
+          "description": [],
+          "pictures": [
+            "assets/Home appliances/COMBINED REFRIGERATOR NFCBMF 253 X/NFCBMF 253 X Exterior.png",
+            "assets/Home appliances/COMBINED REFRIGERATOR NFCBMF 253 X/NFCBMF 253 X Interior.png"
+          ],
+          "specificationsDoc": "assets/Home appliances/COMBINED REFRIGERATOR NFCBMF 253 X/Upatsvo NFCBMF 253 & NFCBMF 253 X.pdf",
+          "specifications": {
+            "DIMENZIJE (V/Š/D)": "1810/550/600 mm",
+            "BRUTO/NETO VOLUMEN": "271/253 L",
+            "NETO VOLUMEN FRIŽIDER/ZAMRZIVAČ": "182/71 L",
+            "ENERGETSKA KLASA": "E",
+            "BOJA": "REAL INOX",
+            "NO FROST SISTEM": "√",
+            "INTEGRISANI SISTEM CIRKULACIJE VAZDUHA": "√",
+            "PREOKRETNA VRATA": "√",
+            "PODESIVE NOGE": "√",
+            "FIKSNE RUČKE VRATA": "√",
+            "POLICE NA VRATIMA": "√",
+            "PROVIDNA FIŠEKA": "√",
+            "PODESIVE PROVIDNE POLICE": "√",
+            "KOMPARTMAN ZA ZAMRZAVANJE SA PROVIDNIM FIŠEKAMA": "√",
+            "KOMORE ZA BRZO ZAMRZAVANJE": "√",
+            "POTROŠNJA ENERGIJE": "220 kWh/god",
+            "NIVO BUKE": "40 dB",
+            "GAS": "P600"
+          }
+        },
+        {
+          "id": 185,
+          "name": "Ugradni Frižider BIBMF 249",
+          "description": [],
+          "pictures": [
+            "assets/Built In Appliances/Built-in refrigerator BIBMF 249/BIBMF 249 Exterior.jpg",
+            "assets/Built In Appliances/Built-in refrigerator BIBMF 249/BIBMF 249 Interior.png"
+          ],
+          "specificationsDoc": "assets/Built In Appliances/Built-in refrigerator BIBMF 249/Upatsvo BIBMF 249.pdf",
+          "specifications": {
+            "DIMENZIJE (V/Š/D)": "1780/540/540 mm",
+            "BRUTO VOLUMEN": "256/249 L",
+            "NETO VOLUMEN": "179/70 L",
+            "ENERGETSKA KLASA": "E",
+            "BOJA": "BELO",
+            "POTPUNO UGRAĐEN": "√",
+            "PREOKRETNA VRATA": "√",
+            "PODESIVE NOGE": "√",
+            "FIKSNE RUČKE VRATA": "√",
+            "PROVIDNA FIŠEKA": "√",
+            "PODESIVE PROVIDNE POLICE": "√",
+            "KOMPARTMAN ZA ZAMRZIVAČ SA PROVIDNIM FIŠEKAMA": "√",
+            "KOMORE ZA BRZO ZAMRZAVANJE": "√",
+            "POTROŠNJA ENERGIJE": "216 kWh/god",
+            "NIVO BUKE": "39 dB",
+            "GAS": "P600"
+          }
         }
+
         
 ]

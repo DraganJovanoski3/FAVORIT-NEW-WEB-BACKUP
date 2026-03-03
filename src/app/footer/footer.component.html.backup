@@ -1,0 +1,959 @@
+import { Component, OnInit } from "@angular/core";
+import { ActivatedRoute } from "@angular/router";
+import footer_mk from './footer_mk.json'
+import footer_en from './footer_en.json'
+import footer_sr from './footer_sr.json'
+import footer_al from './footer_al.json'
+
+
+@Component({
+    selector:'footer-favorit',
+    standalone:true,
+    imports:[],
+    templateUrl:'./footer.component.html',
+    styleUrl:'./footer.component.css'
+})
+
+export class FooterFavorit implements OnInit {
+    footerConstant: any;
+
+    constructor(private _activatedRoute:ActivatedRoute){}
+    ngOnInit(): void {
+        this._activatedRoute.queryParamMap.subscribe(params => {
+            const lang = params.get('lang');
+            switch(lang) {
+              case 'mk' :
+                this.footerConstant = footer_mk;
+                break;
+              case 'en' :
+                this.footerConstant = footer_en;
+                break;
+              case 'sr' :
+                this.footerConstant = footer_sr;
+                break;
+              case 'al' :
+                this.footerConstant = footer_al;
+                break;
+                default:
+                  this.footerConstant = {}; 
+            }
+          });
+    }
+}
+<footer class="footer">
+  <div class="footer-container">
+    <!-- Main Footer Content -->
+    <div class="main-footer">
+      <!-- Brand Section -->
+      <div class="footer-section brand-section">
+        <div class="logo-container">
+          <img src="assets/new-footer-logo-white.png" alt="footer-logo" class="footer-logo">
+          <h3 class="brand-name">{{footerConstant.brand}}</h3>
+        </div>
+        <p class="brand-description">Водечки електронски решенија за вашите бизнис и домашни потреби.</p>
+      </div>
+
+      <!-- Navigation Links Section -->
+      <div class="footer-section nav-section">
+        <div class="section-header">
+          <h3>Навигација</h3>
+        </div>
+        <nav class="footer-nav">
+          <ul class="nav-links">
+            <li><a href="/" class="nav-link">Почетна</a></li>
+            <li><a href="/products" class="nav-link">Производи</a></li>
+            <li><a href="/services" class="nav-link">Услуги</a></li>
+            <li><a href="/about" class="nav-link">За нас</a></li>
+            <li><a href="/contact" class="nav-link">Контакт</a></li>
+            <li><a href="/support" class="nav-link">Поддршка</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Contact Information Section -->
+      <div class="footer-section contact-section">
+        <div class="section-header">
+          <h3>{{footerConstant.contact}}</h3>
+        </div>
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div class="contact-details">
+              <strong>{{footerConstant.address}}:</strong>
+              <a href="https://maps.google.com/?q=Ул. Партизански одреди 154 1000 Скопје, Р. С. Македонија">Ул. Партизански одреди 154 1000 Скопје, Р. С. Македонија</a>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">📞</div>
+            <div class="contact-details">
+              <strong>{{footerConstant.phone}}:</strong>
+              <a href="tel:+389 2 2440 110">+389 2 2440 110</a>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">✉️</div>
+            <div class="contact-details">
+              <strong>{{footerConstant.email}}:</strong>
+              <a href="mailto:centrounion@centrounion.com.mk">centrounion&#64;centrounion.com.mk</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service Information Section -->
+      <div class="footer-section service-section">
+        <div class="section-header">
+          <h3>{{footerConstant.service}}</h3>
+        </div>
+        <div class="service-info">
+          <div class="contact-item">
+            <div class="contact-icon">🔧</div>
+            <div class="contact-details">
+              <strong>{{footerConstant.phone}}:</strong>
+              <a href="tel:+389 02 2 440 070">02 2 440 070</a>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">📧</div>
+            <div class="contact-details">
+              <strong>{{footerConstant.email}}:</strong>
+              <a href="mailto:servis@centrounion.com.mk">servis&#64;centrounion.com.mk</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Social Media Section -->
+      <div class="footer-section social-section">
+        <div class="section-header">
+          <h3>Follow Us</h3>
+        </div>
+        <div class="social-links">
+          <a href="https://www.facebook.com/favoritelectronics/" class="social-link facebook" aria-label="Facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z" />
+            </svg>
+            <span>Facebook</span>
+          </a>
+          
+          <a href="https://www.instagram.com/favorit.electronics/" class="social-link instagram" aria-label="Instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6" style="stroke-width: 0.5"></path>
+              <path d="M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z" style="stroke-width: 0.5"></path>
+            </svg>
+            <span>Instagram</span>
+          </a>
+          
+          <a href="https://www.youtube.com/channel/UCc0vfxwYErY_apNzscYVQ2A" class="social-link youtube" aria-label="YouTube">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M10,15L15.19,12L10,9V15M21.56,7.17C21.69,7.64 21.78,8.27 21.84,9.07C21.91,9.87 21.94,10.56 21.94,11.16L22,12C22,14.19 21.84,15.8 21.56,16.83C21.31,17.73 20.73,18.31 19.83,18.56C19.36,18.69 18.5,18.78 17.18,18.84C15.88,18.91 14.69,18.94 13.59,18.94L12,19C7.81,19 5.2,18.84 4.17,18.56C3.27,18.31 2.69,17.73 2.44,16.83C2.31,16.36 2.22,15.73 2.16,14.93C2.09,14.13 2.06,13.44 2.06,12.84L2,12C2,9.81 2.16,8.2 2.44,7.17C2.69,6.27 3.27,5.69 4.17,5.44C4.64,5.31 5.5,5.22 6.82,5.16C8.12,5.09 9.31,5.06 10.41,5.06L12,5C16.19,5 18.8,5.16 19.83,5.44C20.73,5.69 21.31,6.27 21.56,7.17Z" />
+            </svg>
+            <span>YouTube</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <div class="footer-bottom-content">
+        <p class="copyright-text">{{footerConstant.copy}}</p>
+        <p class="development-credit">
+          {{footerConstant.copyright}} &copy; 2024 Favorit Electronics - {{footerConstant.designAndDevelopment}}
+          <a href="https://www.instagram.com/ddsolutions.mk/" class="dev-link">Dynamic Development Solutions</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+/* Enhanced Footer with Better Layout and Dotted Background */
+.footer {
+  width: 100%;
+  background: linear-gradient(135deg, #204880 0%, #1a3a6b 50%, #153055 100%);
+  box-shadow: 0 -4px 20px rgba(32, 72, 128, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Enhanced Dotted Background Pattern */
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(circle at 25% 25%, rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+    radial-gradient(circle at 75% 75%, rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+    radial-gradient(circle at 50% 10%, rgba(255, 255, 255, 0.05) 0.5px, transparent 0.5px),
+    radial-gradient(circle at 10% 50%, rgba(255, 255, 255, 0.04) 0.8px, transparent 0.8px),
+    radial-gradient(circle at 90% 30%, rgba(255, 255, 255, 0.07) 1.2px, transparent 1.2px);
+  background-size: 40px 40px, 60px 60px, 80px 80px, 50px 50px, 70px 70px;
+  background-position: 0 0, 20px 20px, 40px 40px, 10px 10px, 30px 30px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.footer-container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Main Footer Grid Layout */
+.main-footer {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr 1fr 1fr;
+  gap: 30px;
+  padding: 60px 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+  min-height: 400px;
+}
+
+/* Footer Sections */
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/* Brand Section */
+.brand-section {
+  grid-column: 1;
+  align-items: center;
+  text-align: center;
+}
+
+.logo-container {
+  margin-bottom: 20px;
+}
+
+.footer-logo {
+  width: 80%;
+  max-width: 200px;
+  height: auto;
+  filter: brightness(1.1) drop-shadow(0 4px 12px rgba(0, 0, 0, 0.3));
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.footer-logo:hover {
+  transform: scale(1.05);
+  filter: brightness(1.2) drop-shadow(0 6px 16px rgba(0, 0, 0, 0.4));
+}
+
+.brand-name {
+  color: #ffffff;
+  font-size: 1.4em;
+  font-weight: 600;
+  margin: 15px 0 10px 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.brand-description {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.95em;
+  line-height: 1.5;
+  text-align: center;
+  max-width: 250px;
+  margin: 0 auto;
+}
+
+/* Navigation Section */
+.nav-section {
+  grid-column: 2;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact and Service Sections */
+.contact-section,
+.service-section {
+  grid-column: 3;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.service-section {
+  grid-column: 4;
+  text-align: center;
+}
+
+.section-header {
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.section-header h3 {
+  color: #ffffff;
+  font-size: 1.2em;
+  font-weight: 500;
+  margin: 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 12px;
+  position: relative;
+}
+
+.section-header h3::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.6), transparent);
+}
+
+/* Contact Items */
+.contact-info,
+.service-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.3s ease;
+}
+
+.contact-item:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.contact-icon {
+  font-size: 1.2em;
+  min-width: 24px;
+  text-align: center;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.3));
+}
+
+.contact-details {
+  flex: 1;
+}
+
+.contact-details strong {
+  color: rgba(255, 255, 255, 0.95);
+  font-weight: 500;
+  display: block;
+  margin-bottom: 5px;
+  font-size: 0.9em;
+}
+
+.contact-details a {
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+  font-size: 0.9em;
+  line-height: 1.4;
+  transition: all 0.3s ease;
+  display: block;
+}
+
+.contact-details a:hover {
+  color: #ffffff;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+  transform: translateX(3px);
+}
+
+/* Navigation Links */
+.footer-nav {
+  width: 100%;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.nav-links li {
+  margin: 0;
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+  font-size: 0.9em;
+  font-weight: 400;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  display: block;
+  position: relative;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.nav-link:hover {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+  transform: translateX(5px);
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+}
+
+/* Social Media Section */
+.social-section {
+  grid-column: 5;
+  align-items: center;
+  text-align: center;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  max-width: 200px;
+  padding: 15px 20px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  position: relative;
+  overflow: hidden;
+}
+
+.social-link::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.social-link:hover::before {
+  left: 100%;
+}
+
+.social-link:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.social-link svg {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+}
+
+.social-link:hover svg {
+  transform: scale(1.1);
+}
+
+.social-link span {
+  font-weight: 500;
+  font-size: 0.95em;
+}
+
+/* Platform-specific hover colors */
+.social-link.facebook:hover {
+  background: rgba(24, 119, 242, 0.2);
+  border-color: rgba(24, 119, 242, 0.4);
+}
+
+.social-link.instagram:hover {
+  background: rgba(225, 48, 108, 0.2);
+  border-color: rgba(225, 48, 108, 0.4);
+}
+
+.social-link.youtube:hover {
+  background: rgba(255, 0, 0, 0.2);
+  border-color: rgba(255, 0, 0, 0.4);
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  background: linear-gradient(135deg, #0f1f3a 0%, #0a1425 100%);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  position: relative;
+}
+
+.footer-bottom::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 30px 30px, 50px 50px;
+  pointer-events: none;
+}
+
+.footer-bottom-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 30px 40px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.copyright-text {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.9em;
+  margin: 0 0 15px 0;
+  line-height: 1.6;
+}
+
+.legal-links {
+  margin: 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.legal-link {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  font-size: 0.9em;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  padding: 5px 10px;
+  border-radius: 4px;
+  position: relative;
+}
+
+.legal-link:hover {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-1px);
+}
+
+.separator {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.9em;
+  font-weight: 300;
+}
+
+.development-credit {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.85em;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.dev-link {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.dev-link:hover {
+  color: #ffffff;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+/* Tablet Responsive Design */
+@media only screen and (max-width: 1200px) and (min-width: 769px) {
+  .main-footer {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 50px 30px;
+    min-height: auto;
+  }
+  
+  .brand-section {
+    grid-column: 1 / -1;
+    margin-bottom: 30px;
+    padding: 30px;
+  }
+  
+  .nav-section {
+    grid-column: 1;
+    padding: 25px;
+  }
+  
+  .contact-section {
+    grid-column: 2;
+    padding: 25px;
+  }
+  
+  .service-section {
+    grid-column: 1;
+    margin-top: 20px;
+    padding: 25px;
+  }
+  
+  .social-section {
+    grid-column: 2;
+    margin-top: 20px;
+    padding: 25px;
+  }
+  
+  .social-links {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .social-link {
+    max-width: 100%;
+    width: 100%;
+  }
+  
+  .footer-logo {
+    width: 60%;
+    max-width: 180px;
+  }
+  
+  .brand-name {
+    font-size: 1.3em;
+  }
+  
+  .brand-description {
+    font-size: 0.9em;
+    max-width: 300px;
+  }
+}
+
+/* Medium Tablet Design */
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+  .main-footer {
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    padding: 45px 25px;
+  }
+  
+  .brand-section {
+    padding: 25px;
+  }
+  
+  .nav-section,
+  .contact-section,
+  .service-section,
+  .social-section {
+    padding: 22px;
+  }
+  
+  .footer-logo {
+    width: 55%;
+    max-width: 170px;
+  }
+  
+  .brand-name {
+    font-size: 1.25em;
+  }
+  
+  .brand-description {
+    font-size: 0.88em;
+    max-width: 290px;
+  }
+  
+  .section-header h3 {
+    font-size: 1.15em;
+  }
+  
+  .contact-details strong {
+    font-size: 0.85em;
+  }
+  
+  .contact-details a {
+    font-size: 0.85em;
+  }
+  
+  .nav-link {
+    font-size: 0.88em;
+    padding: 9px 11px;
+  }
+  
+  .social-link {
+    padding: 13px 17px;
+  }
+  
+  .social-link svg {
+    width: 22px;
+    height: 22px;
+  }
+  
+  .social-link span {
+    font-size: 0.9em;
+  }
+}
+
+/* Mobile Responsive Design */
+@media only screen and (max-width: 768px) {
+  .main-footer {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 35px 20px;
+    min-height: auto;
+  }
+  
+  .footer-section {
+    grid-column: 1;
+  }
+  
+  .brand-section {
+    padding: 25px 20px;
+    text-align: center;
+  }
+  
+  .nav-section,
+  .contact-section,
+  .service-section,
+  .social-section {
+    padding: 20px 18px;
+  }
+  
+  .footer-logo {
+    width: 50%;
+    max-width: 160px;
+  }
+  
+  .brand-name {
+    font-size: 1.2em;
+    margin: 12px 0 8px 0;
+  }
+  
+  .brand-description {
+    font-size: 0.85em;
+    max-width: 280px;
+    margin: 0 auto;
+  }
+  
+  .section-header {
+    margin-bottom: 20px;
+  }
+  
+  .section-header h3 {
+    font-size: 1.1em;
+    font-weight: 500;
+  }
+  
+  .contact-item {
+    padding: 10px;
+    gap: 10px;
+    margin-bottom: 8px;
+  }
+  
+  .contact-icon {
+    font-size: 1em;
+    min-width: 18px;
+  }
+  
+  .contact-details strong {
+    font-size: 0.8em;
+    margin-bottom: 4px;
+  }
+  
+  .contact-details a {
+    font-size: 0.8em;
+    line-height: 1.3;
+  }
+  
+  .nav-links {
+    gap: 8px;
+  }
+  
+  .nav-link {
+    font-size: 0.85em;
+    padding: 10px 12px;
+  }
+  
+  .social-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .social-link {
+    max-width: 180px;
+    width: 100%;
+    padding: 12px 16px;
+  }
+  
+  .social-link svg {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .social-link span {
+    font-size: 0.85em;
+  }
+  
+  .footer-bottom-content {
+    padding: 20px 18px;
+  }
+  
+  .copyright-text {
+    font-size: 0.8em;
+    margin-bottom: 10px;
+  }
+  
+  .legal-links {
+    margin: 10px 0;
+    gap: 10px;
+  }
+  
+  .legal-link {
+    font-size: 0.8em;
+    padding: 4px 8px;
+  }
+  
+  .development-credit {
+    font-size: 0.75em;
+    line-height: 1.4;
+  }
+}
+
+/* Small Mobile Design */
+@media only screen and (max-width: 480px) {
+  .main-footer {
+    padding: 25px 15px;
+    gap: 15px;
+  }
+  
+  .brand-section {
+    padding: 20px 15px;
+  }
+  
+  .nav-section,
+  .contact-section,
+  .service-section,
+  .social-section {
+    padding: 18px 15px;
+  }
+  
+  .footer-logo {
+    width: 60%;
+    max-width: 140px;
+  }
+  
+  .brand-name {
+    font-size: 1.1em;
+    margin: 10px 0 6px 0;
+  }
+  
+  .brand-description {
+    font-size: 0.8em;
+    max-width: 250px;
+  }
+  
+  .section-header {
+    margin-bottom: 15px;
+  }
+  
+  .section-header h3 {
+    font-size: 1em;
+    font-weight: 500;
+  }
+  
+  .contact-item {
+    padding: 8px;
+    gap: 8px;
+    margin-bottom: 6px;
+  }
+  
+  .contact-icon {
+    font-size: 0.9em;
+    min-width: 16px;
+  }
+  
+  .contact-details strong {
+    font-size: 0.75em;
+    margin-bottom: 3px;
+  }
+  
+  .contact-details a {
+    font-size: 0.75em;
+    line-height: 1.2;
+  }
+  
+  .nav-links {
+    gap: 6px;
+  }
+  
+  .nav-link {
+    font-size: 0.8em;
+    padding: 8px 10px;
+  }
+  
+  .social-links {
+    gap: 8px;
+  }
+  
+  .social-link {
+    max-width: 160px;
+    padding: 10px 14px;
+  }
+  
+  .social-link svg {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .social-link span {
+    font-size: 0.8em;
+  }
+  
+  .footer-bottom-content {
+    padding: 18px 15px;
+  }
+  
+  .copyright-text {
+    font-size: 0.75em;
+    margin-bottom: 8px;
+  }
+  
+  .legal-links {
+    margin: 8px 0;
+    gap: 8px;
+  }
+  
+  .legal-link {
+    font-size: 0.75em;
+    padding: 3px 6px;
+  }
+  
+  .development-credit {
+    font-size: 0.7em;
+    line-height: 1.3;
+  }
+}

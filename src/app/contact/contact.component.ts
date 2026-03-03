@@ -2,10 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from "@angular/router";
 import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { HttpClient } from '@angular/common/http';
 import contact_mk from './contact_mk.json'
 import contact_en from './contact_en.json'
 import contact_sr from './contact_sr.json'
 import contact_al from './contact_al.json'
+
+const SEND_CONTACT_URL = '/send-contact.php';
 
 @Component({
   selector: 'app-contact',
@@ -15,7 +18,7 @@ import contact_al from './contact_al.json'
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
-  contactConstant: any;
+  contactConstant: any = contact_en;
   contactForm!: FormGroup;
   isSubmitting = false;
   submitMessage = '';
@@ -24,7 +27,8 @@ export class ContactComponent implements OnInit {
 
   constructor(
     private _activatedRoute: ActivatedRoute,
-    private fb: FormBuilder
+    private fb: FormBuilder,
+    private http: HttpClient
   ){}
 
   ngOnInit(): void {
@@ -63,37 +67,37 @@ export class ContactComponent implements OnInit {
     if (this.contactForm.valid) {
       this.isSubmitting = true;
       this.submitMessage = '';
-      
       const formData = this.contactForm.value;
-      
-      // Create email content based on language
-      const emailContent = this.createEmailContent(formData);
-      
-      // Create mailto link
-      const mailtoLink = `mailto:favoritelectro@favoritelectronics.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(emailContent)}`;
-      
-      // Simulate form submission delay for better UX
-      setTimeout(() => {
-        // Open default email client
-        window.location.href = mailtoLink;
-        
-        // Show success message
-        this.submitSuccess = true;
-        this.submitMessage = this.getSuccessMessage();
-        
-        // Reset form after a delay
-        setTimeout(() => {
-          this.contactForm.reset();
+
+      this.http.post<{ success: boolean; error?: string }>(SEND_CONTACT_URL, formData, {
+        responseType: 'json',
+        headers: { 'Content-Type': 'application/json' }
+      }).subscribe({
+        next: (res) => {
+          this.isSubmitting = false;
+          if (res && res.success) {
+            this.submitSuccess = true;
+            this.submitMessage = this.getSuccessMessage();
+            this.contactForm.reset();
+            setTimeout(() => {
+              this.submitSuccess = false;
+              this.submitMessage = '';
+            }, 5000);
+          } else {
+            this.submitSuccess = false;
+            this.submitMessage = (res && res.error) ? res.error : this.getErrorMessage('form');
+          }
+        },
+        error: () => {
+          this.isSubmitting = false;
           this.submitSuccess = false;
-          this.submitMessage = '';
-        }, 4000);
-        
-        this.isSubmitting = false;
-      }, 1000);
+          this.submitMessage = this.getErrorMessage('form');
+        }
+      });
     } else {
       this.markFormGroupTouched();
       this.submitSuccess = false;
-      this.submitMessage = this.getErrorMessage('form');
+      this.submitMessage = '';
     }
   }
 
@@ -160,6 +164,9 @@ ${formData.message}
   }
 
   getErrorMessage(fieldName: string): string {
+    if (fieldName === 'form') {
+      return this.getLocalizedMessage('formError');
+    }
     const control = this.contactForm.get(fieldName);
     if (control?.errors && control.touched) {
       if (control.errors['required']) {
@@ -196,7 +203,8 @@ ${formData.message}
         maxLength: `Maximum length is ${value} characters`,
         invalidName: 'Please enter a valid name (letters only)',
         invalidPhone: 'Please enter a valid phone number',
-        invalidFormat: 'Please enter a valid format'
+        invalidFormat: 'Please enter a valid format',
+        formError: 'Something went wrong. Please try again or email us directly.'
       },
       'mk': {
         required: 'Ова поле е задолжително',
@@ -205,7 +213,8 @@ ${formData.message}
         maxLength: `Максимална должина е ${value} карактери`,
         invalidName: 'Внесете валидно име (само букви)',
         invalidPhone: 'Внесете валиден телефонски број',
-        invalidFormat: 'Внесете валиден формат'
+        invalidFormat: 'Внесете валиден формат',
+        formError: 'Нешто тргна наопаку. Обидете се повторно или пишете ни на е-пошта.'
       },
       'sr': {
         required: 'Ово поље је обавезно',
@@ -214,7 +223,8 @@ ${formData.message}
         maxLength: `Максимална дужина је ${value} карактера`,
         invalidName: 'Унесите валидно име (само слова)',
         invalidPhone: 'Унесите валидан телефонски број',
-        invalidFormat: 'Унесите валидан формат'
+        invalidFormat: 'Унесите валидан формат',
+        formError: 'Nešto nije u redu. Pokušajte ponovo ili nam pišite direktno.'
       },
       'al': {
         required: 'Kjo fushë është e detyrueshme',
@@ -223,7 +233,8 @@ ${formData.message}
         maxLength: `Gjatësia maksimale është ${value} karaktere`,
         invalidName: 'Ju lutemi vendosni një emër të vlefshëm (vetëm shkronja)',
         invalidPhone: 'Ju lutemi vendosni një numër telefoni të vlefshëm',
-        invalidFormat: 'Ju lutemi vendosni një format të vlefshëm'
+        invalidFormat: 'Ju lutemi vendosni një format të vlefshëm',
+        formError: 'Diçka shkoi keq. Ju lutemi provoni përsëri ose na dërgoni email direkt.'
       }
     };
 

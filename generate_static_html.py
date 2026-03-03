@@ -76,8 +76,8 @@ class StaticHTMLGenerator:
   <meta name="theme-color" content="#1976d2">
   <meta name="msapplication-TileColor" content="#1976d2">
   
-  <!-- Facebook App ID (replace with your actual Facebook App ID) -->
-  <meta property="fb:app_id" content="YOUR_FACEBOOK_APP_ID">
+  <!-- Facebook App ID (optional - remove if not using Facebook SDK) -->
+  <!-- <meta property="fb:app_id" content="YOUR_FACEBOOK_APP_ID"> -->
   
   <!-- Structured Data (JSON-LD) -->
   <script type="application/ld+json">
@@ -212,25 +212,14 @@ class StaticHTMLGenerator:
 <head>
 {meta_tags}
 </head>
-    <body>
-      <script>
-        // Redirect users to Angular app immediately
-        setTimeout(() => {{
-          window.location = "{product_url}?from_static=true";
-        }}, 100);
-      </script>
-      <noscript>
-        <!-- Fallback for users with JavaScript disabled -->
-        <meta http-equiv="refresh" content="0; url={product_url}?from_static=true">
-      </noscript>
-      
-      <!-- Fallback content for search engines -->
-      <div style="display: none;">
-        <h1>{product['name']}</h1>
-        <p>{product['description'][0] if product['description'] else ''}</p>
-        <img src="{self.get_primary_image(product)}" alt="{product['name']}">
-      </div>
-    </body>
+        <body>
+          <!-- Content for search engines and bots -->
+          <div>
+            <h1>{product['name']}</h1>
+            <p>{product['description'][0] if product['description'] else ''}</p>
+            <img src="{self.get_primary_image(product)}" alt="{product['name']}" style="max-width: 100%; height: auto;">
+          </div>
+        </body>
 </html>"""
         
         return html_content

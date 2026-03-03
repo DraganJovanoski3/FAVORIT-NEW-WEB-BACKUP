@@ -1,0 +1,144 @@
+<div class="admin-panel">
+  <header class="admin-header">
+    <h1>{{ t.title }}</h1>
+    <button type="button" class="btn-logout" (click)="signOut()">{{ t.signOut }}</button>
+  </header>
+
+  <div class="search-section">
+    <div class="search-tabs">
+      <button type="button" [class.active]="searchType === 'serial'" (click)="searchType = 'serial'">{{ t.searchBySerial }}</button>
+      <button type="button" [class.active]="searchType === 'email'" (click)="searchType = 'email'">{{ t.searchByEmail }}</button>
+    </div>
+    <div class="search-row">
+      <input
+        type="text"
+        [(ngModel)]="searchValue"
+        [placeholder]="searchType === 'serial' ? t.serialNumber : t.email"
+        (keyup.enter)="onSearch()"
+        class="search-input"
+      />
+      <button type="button" class="btn-search" (click)="onSearch()" [disabled]="loading">{{ t.search }}</button>
+      <button type="button" class="btn-all" (click)="loadAll()" [disabled]="loading">{{ t.showAll }}</button>
+    </div>
+
+    <div class="filters-toggle">
+      <button type="button" class="btn-filters-toggle" (click)="toggleFilters()">
+        {{ t.filters }} {{ showFilters ? '▼' : '▶' }}
+      </button>
+    </div>
+
+    <div class="filters-panel" *ngIf="showFilters">
+      <div class="filters-grid">
+        <div class="filter-group">
+          <label class="filter-label">{{ t.filterByName }}</label>
+          <input type="text" [(ngModel)]="filterName" class="filter-input" [placeholder]="t.filterByName" />
+        </div>
+
+        <div class="filter-group filter-group-model">
+          <label class="filter-label">{{ t.filterByDeviceModel }}</label>
+          <input
+            type="text"
+            [(ngModel)]="filterDeviceModel"
+            class="filter-input filter-input-model"
+            [placeholder]="t.deviceModelPlaceholder"
+            list="device-model-datalist"
+            autocomplete="off"
+          />
+          <datalist id="device-model-datalist">
+            <option *ngFor="let m of modelOptions" [value]="m"></option>
+          </datalist>
+          <p class="models-list-caption" *ngIf="modelOptions.length">{{ t.modelsListTitle }} ({{ filteredModelList.length }})</p>
+          <div class="models-list" *ngIf="modelOptions.length && !loadingModels">
+            <button
+              type="button"
+              *ngFor="let m of filteredModelList"
+              class="model-chip"
+              [class.selected]="filterDeviceModel === m"
+              (click)="selectModel(m)"
+            >{{ m }}</button>
+          </div>
+          <p class="models-loading" *ngIf="loadingModels">{{ t.loading }}</p>
+        </div>
+
+        <div class="filter-group">
+          <label class="filter-label">{{ t.filterByCity }}</label>
+          <input type="text" [(ngModel)]="filterCity" class="filter-input" [placeholder]="t.filterByCity" />
+        </div>
+
+        <div class="filter-group">
+          <label class="filter-label">{{ t.filterByCityOfPurchase }}</label>
+          <input type="text" [(ngModel)]="filterCityOfPurchase" class="filter-input" [placeholder]="t.filterByCityOfPurchase" />
+        </div>
+
+        <div class="filter-group filter-group-date">
+          <label class="filter-label">{{ t.purchaseDateFrom }}</label>
+          <input type="date" [(ngModel)]="filterPurchaseDateFrom" class="filter-input" />
+        </div>
+        <div class="filter-group filter-group-date">
+          <label class="filter-label">{{ t.purchaseDateTo }}</label>
+          <input type="date" [(ngModel)]="filterPurchaseDateTo" class="filter-input" />
+        </div>
+        <div class="filter-group filter-group-date">
+          <label class="filter-label">{{ t.registeredFrom }}</label>
+          <input type="date" [(ngModel)]="filterRegisteredFrom" class="filter-input" />
+        </div>
+        <div class="filter-group filter-group-date">
+          <label class="filter-label">{{ t.registeredTo }}</label>
+          <input type="date" [(ngModel)]="filterRegisteredTo" class="filter-input" />
+        </div>
+      </div>
+      <div class="filters-actions">
+        <button type="button" class="btn-apply" (click)="applyFilters()" [disabled]="loading">{{ t.applyFilters }}</button>
+        <button type="button" class="btn-clear" (click)="clearFilters()">{{ t.clearFilters }}</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="results-section" *ngIf="searched">
+    <p class="loading" *ngIf="loading">{{ t.loading }}</p>
+    <p class="no-results" *ngIf="!loading && results.length === 0">{{ t.noResults }}</p>
+    <div class="results-list" *ngIf="!loading && results.length > 0">
+      <div class="result-card" *ngFor="let r of results">
+        <div class="row">
+          <strong>{{ t.name }}:</strong> {{ r.first_name || r.customer_name || '' }} {{ r.last_name || '' }}
+        </div>
+        <div class="row" *ngIf="r.address || r.city">
+          <strong>{{ t.address }}:</strong> {{ r.address }}, {{ r.city }} {{ r.postal_code }}
+        </div>
+        <div class="row">
+          <strong>{{ t.phone }}:</strong> {{ r.phone }}
+        </div>
+        <div class="row">
+          <strong>{{ t.email }}:</strong> {{ r.email }}
+        </div>
+        <div class="row" *ngIf="r.device_type">
+          <strong>{{ t.deviceType }}:</strong> {{ getDeviceTypeLabel(r.device_type) }}
+        </div>
+        <div class="row">
+          <strong>{{ t.deviceModel }}:</strong> {{ r.device_model || r.product_name }}
+        </div>
+        <div class="row">
+          <strong>{{ t.serialNumber }}:</strong> {{ r.serial_number }}
+        </div>
+        <div class="row">
+          <strong>{{ t.purchaseDate }}:</strong> {{ formatDate(r.purchase_date) }}
+        </div>
+        <div class="row" *ngIf="r.place_of_purchase || r.purchase_place">
+          <strong>{{ t.placeOfPurchase }}:</strong> {{ r.place_of_purchase || r.purchase_place }}
+        </div>
+        <div class="row" *ngIf="r.city_of_purchase">
+          <strong>{{ t.cityOfPurchase }}:</strong> {{ r.city_of_purchase }}
+        </div>
+        <div class="row" *ngIf="r.fiscal_receipt_number">
+          <strong>{{ t.fiscalReceipt }}:</strong> {{ r.fiscal_receipt_number }}
+        </div>
+        <div class="row" *ngIf="r.receipt_image_url">
+          <strong>{{ t.receiptImage }}:</strong> <a [href]="r.receipt_image_url" target="_blank" rel="noopener">{{ t.view }}</a>
+        </div>
+        <div class="row muted">
+          <strong>{{ t.registered }}:</strong> {{ formatDateTime(r.created_at) }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -41,7 +41,8 @@
       "builtInStoveTops":"Вградни Плочи",
       "builtInCookingAppliences":"Вградни Апарати за Готвење",
       "builtInFridges":"Вградни Фрижидери",
-      "builtInStoves":"Вградни Шпорети"
+      "builtInStoves":"Вградни Рерни",
+      "builtInStovesAndTops":"Вградни Шпорети"
   },
   "homeAppliances":{
       "boilers":"Бојлери",
