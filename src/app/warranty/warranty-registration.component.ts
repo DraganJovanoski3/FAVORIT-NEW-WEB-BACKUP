@@ -59,7 +59,7 @@ export class WarrantyRegistrationComponent implements OnInit {
       address: ['', Validators.required],
       city: ['', Validators.required],
       postal_code: ['', Validators.required],
-      phone: ['', [Validators.required, Validators.pattern(/^[\+]?[0-9\s\-\(\)]{8,}$/)]],
+      phone: ['', [Validators.required, Validators.pattern(/^[0-9]{3}-[0-9]{3}-[0-9]{3,}$/)]],
       email: ['', [Validators.required, Validators.email]],
       device_type: ['home-appliances', Validators.required],
       device_model: ['', Validators.required],
@@ -125,7 +125,24 @@ export class WarrantyRegistrationComponent implements OnInit {
     });
   }
 
+  /** Format phone as XXX-XXX-XXX (e.g. 070-123-456) as user types. */
+  private formatPhoneInput(value: string): string {
+    const digits = (value || '').replace(/\D/g, '').slice(0, 12);
+    if (digits.length <= 3) return digits;
+    if (digits.length <= 6) return digits.slice(0, 3) + '-' + digits.slice(3);
+    return digits.slice(0, 3) + '-' + digits.slice(3, 6) + '-' + digits.slice(6);
+  }
+
   ngOnInit(): void {
+    const phoneControl = this.form.get('phone');
+    if (phoneControl) {
+      phoneControl.valueChanges.subscribe(val => {
+        const formatted = this.formatPhoneInput(val || '');
+        if (formatted !== val) {
+          phoneControl.patchValue(formatted, { emitEvent: false });
+        }
+      });
+    }
     this.route.queryParamMap.subscribe(params => {
       const lang = params.get('lang') || 'en';
       this.currentLang = ['mk', 'en', 'sr', 'al'].includes(lang) ? lang : 'en';

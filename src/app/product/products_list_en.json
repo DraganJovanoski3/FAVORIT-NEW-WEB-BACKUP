@@ -356,8 +356,8 @@
       "This refrigerator measures 185cm (H) x 60cm (W) x 62cm (D) with a 341-liter gross volume and 324-liter net volume. It features No Frost system, internal display control panel, digital radiator and freezer control, SR error warning indicator, super cooling mode, and economy mode. Additionally, it includes a bottle holder, one compressor, and adjustable storage options. The energy class is F with an annual energy consumption of 306 kWh and operates at a noise level of 41 dB. Gas type is P 600 A, and it comes in a stylish white/inox color."   
     ],
     "pictures": [
-      "assets/Home appliances/COMBINED REFRIGERATOR NF 379N – NO FROST without dispensary/FAVORIT-NF-373-I-01-1024x576.png",
-      "assets/Home appliances/COMBINED REFRIGERATOR NF 379N – NO FROST without dispensary/FAVORIT-NF-373-01-1024x576.png"
+      "assets/Home appliances/COMBINED REFRIGERATOR NF 379N – NO FROST without dispensary/FAVORIT-NF-373-01-1024x576.png",
+      "assets/Home appliances/COMBINED REFRIGERATOR NF 379N – NO FROST without dispensary/FAVORIT-NF-373-02-1024x576.png"
     ],
     "specificationsDoc": "assets/PDF-Specifications/Upatstvo_NF-379N-i-NF-379N-I.pdf",
     "specifications": {
@@ -444,7 +444,7 @@
       "assets/Home appliances/Dishwasher F45 – Y15N/F45-Y15-S-05-1024x576.png",
       "assets/Home appliances/Dishwasher F45 – Y15N/F45-Y15-S-06-1024x576.png"
     ],
-    "specificationsDoc": "assets/Product Spec/1.-F45-Y15-F45-Y15-S-upatstva-MAK-AL-SIR-EN.pdf",
+    "specificationsDoc": "assets/home appliances/Dishwasher F45 – Y15N/Upatstvo za mas za sadovi F45-Y15N i F45-Y15N S.pdf",
     "specifications": {
       "DIMENSIONS": "H/W/D 85/44,8/59,8",
       "MAXIMUM CAPACITY": "10 SETS OF DISHES",
@@ -482,7 +482,7 @@
       "assets/Home appliances/Dishwasher F45 – Y15N/F45-Y15-S-05-1024x576.png",
       "assets/Home appliances/Dishwasher F45 – Y15N/F45-Y15-S-06-1024x576.png"
     ],
-    "specificationsDoc": "assets/Product Spec/1.-F45-Y15-F45-Y15-S-upatstva-MAK-AL-SIR-EN.pdf",
+    "specificationsDoc": "assets/home appliances/Dishwasher F45 – Y15N/Upatstvo za mas za sadovi F45-Y15N i F45-Y15N S.pdf",
     "specifications": {
       "DIMENSIONS": "H/W/D 85/44,8/59,8",
       "MAXIMUM CAPACITY": "10 SETS OF DISHES",
@@ -669,7 +669,7 @@
       "assets/Home appliances/Electric Freestanding Cooker EC 640 WWF/5-4.jpg",
       "assets/Home appliances/Electric Freestanding Cooker EC 640 WWF/6-3.jpg"
     ],
-    "specificationsDoc": "assets/PDF-Specifications/EC-640-WWFT (1).pdf",
+    "specificationsDoc": "assets/Home appliances/Electric Freestanding Cooker EC 640 WWF/Electric Freestanding Cooker EC 640 WWF.pdf",
     "specifications": {
       "dimensions": "85cm/60cm/60cm",
       "oven dimensions": "33x45x43cm",
@@ -765,6 +765,31 @@
       "upper heating element": "1000 W"
     }
   },
+   {
+    "id": 26,
+    "name": "Electric Cooker EC 540 WWFT",
+    "description": [
+      "This product has dimensions of 85x50x60 cm (H/W/D) and an oven volume of 55 liters. It includes a stove lid, an enameled plate, and comes with 3 control switch positions.",
+      "The oven features heating plates of 2x145mm and 2x180mm, along with a bottom and top heater, each with a power of 1000 Watts. The energy class of this appliance is A."
+    ],
+    "pictures": [
+      "assets/Home appliances/Electric Independent Cooker EC 540 WWFT/Elektricen-sporet-EC-540-WWFT-44-1024x576.png"
+    ],
+    "specificationsDoc": "assets/PDF-Specifications/Upatstvo-EC-540-WWFT-EC-540-SFT.pdf",
+    "specifications": {
+      "dimensions (HxWxD)": "85x50x60",
+      "oven volume": "55 L",
+      "stove lid": "√",
+      "heating plates": "2x145mm - 2x180mm",
+      "plate": "Enameled",
+      "control switch positions": 3,
+      "oven rack": "√",
+      "oven tray": "√",
+      "energy class": "A",
+      "bottom heater": "1000 W",
+      "top heater": "1000 W"
+    }
+},
   {
     "id": 27,
     "name": "ELECTRIC FREESTANDING COOKER EC 640 SF",
@@ -780,7 +805,7 @@
       "assets/Home appliances/ELECTRIC INDEPENDENT COOKER EC 640 SF/5-5.jpg",
       "assets/Home appliances/ELECTRIC INDEPENDENT COOKER EC 640 SF/6-4.jpg"
     ],
-    "specificationsDoc": "assets/PDF-Specifications/EC-640-SF.pdf",
+    "specificationsDoc": "assets/Home appliances/ELECTRIC INDEPENDENT COOKER EC 640 SF/ELECTRIC INDEPENDENT COOKER EC 640 SF.pdf",
     "specifications": {
       "dimensions hwd": "85cm/60cm/60 cm",
       "dimensions inside the oven hwd": "33cm/47cm/43cm",
@@ -808,7 +833,7 @@
     "pictures": [
       "assets/Home appliances/GLASS-CERAMIC INDEPENDENT COOKER CC 500 SF/FAVORIT-CC-500-SF-10-1024x576.png"
     ],
-    "specificationsDoc": "assets/Product Spec/CC-500-WWF-CC-500-SF.pdf",
+    "specificationsDoc": "assets/Home appliances/GLASS-CERAMIC INDEPENDENT COOKER CC 500 SF/GLASS-CERAMIC INDEPENDENT COOKER CC 500 SF.pdf",
     "specifications": {
       "dimensions hwd": "85 CM/50 CM/60 CM",
       "glass ceramic hob with 4 cooking zones": "2X145MM, 2X180MM",
@@ -836,7 +861,7 @@
     "pictures": [
       "assets/Home appliances/GLASS-CERAMIC INDEPENDENT COOKER CC 500 WWF/FAVORIT-CC-500-WWF-10-1024x576.png"
     ],
-    "specificationsDoc": "assets/Product Spec/CC-500-WWF-CC-500-SF.pdf",
+    "specificationsDoc": "assets/Home appliances/GLASS-CERAMIC INDEPENDENT COOKER CC 500 WWF/GLASS-CERAMIC INDEPENDENT COOKER CC 500 WWF.pdf",
     "specifications": {
       "dimensions hwd": "85 CM/50 CM/60 CM",
       "glass ceramic hob with 4 cooking zones": "2X145MM, 2X180MM",
@@ -871,7 +896,7 @@
       "assets/Home appliances/GLASS-CERAMIC INDEPENDENT COOKER CC 600 IF/4-11.png",
       "assets/Home appliances/GLASS-CERAMIC INDEPENDENT COOKER CC 600 IF/5-6.png"
     ],
-    "specificationsDoc": "assets/PDF-Specifications/CC-600-IF.pdf",
+    "specificationsDoc": "assets/Home appliances/GLASS-CERAMIC INDEPENDENT COOKER CC 600 WWF/GLASS-CERAMIC INDEPENDENT COOKER CC 600 WWF.pdf",
     "specifications": {
       "dimensions hwd": "85cm/60cm/60cm",
       "dimensions inside the oven hwd": "33cm/45cm/43cm",
@@ -902,7 +927,7 @@
     "pictures": [
       "assets/Home appliances/GLASS-CERAMIC INDEPENDENT COOKER CC 600 SF/FAVORIT-CC-600-SF-10-1024x576.png"
     ],
-    "specificationsDoc": "assets/PDF-Specifications/CC-600-SF.pdf",
+    "specificationsDoc": "assets/Home appliances/GLASS-CERAMIC INDEPENDENT COOKER CC 600 SF/GLASS-CERAMIC INDEPENDENT COOKER CC 600 SF.pdf",
     "specifications": {
       "dimensions hwd": "85cm/60cm/60cm",
       "dimensions inside the oven hwd": "33cm/45cm/43cm",
@@ -940,7 +965,7 @@
       "assets/Home appliances/GLASS-CERAMIC INDEPENDENT COOKER CC 600 WWF/4-10.png",
       "assets/Home appliances/GLASS-CERAMIC INDEPENDENT COOKER CC 600 WWF/5-6.png"
     ],
-    "specificationsDoc": "assets/PDF-Specifications/CC-600-WWF.pdf",
+    "specificationsDoc": "assets/Home appliances/GLASS-CERAMIC INDEPENDENT COOKER CC 600 WWF/GLASS-CERAMIC INDEPENDENT COOKER CC 600 WWF.pdf",
     "specifications": {
       "dimensions hwd": "85cm/60cm/60cm",
       "dimensions inside the oven hwd": "33cm/45cm/43cm",
@@ -1131,7 +1156,7 @@
   },
   {
     "id": 40,
-    "name": "REFRIGERATOR WITHOUT CHAMBER L2653E",
+    "name": "REFRIGERATOR WITHOUT CHAMBER L 2653E",
     "description": [
       "This product has dimensions of 82.1 cm height, 48 cm width, and 50 cm depth. The gross volume is 91 liters and the net volume is 89 liters. It belongs to energy class F and comes in white color. Features include an interchangeable door, regulating legs, and fixed door handles. The electric energy consumption is 113 kWh per year, and the noise level is 43 dB."
     ],
@@ -1155,7 +1180,7 @@
   },
   {
     "id": 41,
-    "name": "TWO CHAMBER REFRIGERATOR RF 263E",
+    "name": "TWO CHAMBER REFRIGERATOR F 263E",
     "description": [
       "This product has dimensions of 82.1 cm height, 48 cm width, and 50 cm depth. The gross volume is 91 liters and the net volume is 89 liters. It belongs to energy class F and comes in white color. Features include an interchangeable door, regulating legs, and fixed door handles. The electric energy consumption is 113 kWh per year, and the noise level is 43 dB."
     ],
@@ -1565,7 +1590,7 @@
     "pictures": [
       "assets/Home appliances/WATER HEATER TE50A20/TE50A20-1024x576.png"
     ],
-    "specificationsDoc": "assets/PDF-Specifications/TE80B20 TE80A20.pdf",
+    "specificationsDoc": "assets/Home appliances/WATER HEATER TE50B20/UPATSTVO MK, Alb, Srb, Eng.pdf",
     "specifications": {
       "capacity": "50 L",
       "CONTROL TYPE MECHANICAL": "√ ON THE FRONT OF THE BOILER",
@@ -1598,7 +1623,7 @@
     "pictures": [
       "assets/Home appliances/WATER HEATER TE50B20/TE50B20-1024x576.png"
     ],
-    "specificationsDoc": "assets/PDF-Specifications/TE80B20 TE80A20.pdf",
+    "specificationsDoc": "assets/Home appliances/WATER HEATER TE50B20/UPATSTVO MK, Alb, Srb, Eng.pdf",
     "specifications": {
       "capacity": "80 L",
       "CONTROL TYPE MECHANICAL": "√ ON THE FRONT OF THE BOILER",
@@ -1631,7 +1656,7 @@
     "pictures": [
       "assets/Home appliances/WATER HEATER TE80A20/1-BOLJER-04-scaled-1-1024x576.png"
     ],
-    "specificationsDoc": "assets/PDF-Specifications/TE80B20 TE80A20.pdf",
+    "specificationsDoc": "assets/Home appliances/WATER HEATER TE50B20/UPATSTVO MK, Alb, Srb, Eng.pdf",
     "specifications": {
       "capacity": "50 L",
       "CONTROL TYPE MECHANICAL": "√ ON THE FRONT OF THE BOILER",
@@ -1664,7 +1689,7 @@
     "pictures": [
       "assets/Home appliances/WATER HEATER TE80B20/1-BOLJER-04-scaled-1-1024x576.png"
     ],
-    "specificationsDoc": "assets/PDF-Specifications/TE80B20 TE80A20.pdf",
+    "specificationsDoc": "assets/Home appliances/WATER HEATER TE50B20/UPATSTVO MK, Alb, Srb, Eng.pdf",
     "specifications": {
       "capacity": "80 L",
       "CONTROL TYPE MECHANICAL": "√ ON THE FRONT OF THE BOILER",
@@ -2133,9 +2158,9 @@
     "specificationsDoc": "assets/Product Spec/MKD-EN-SRB-ALB-user-manual-12000BTU-FF-18000BTU-FF-min.pdf",
     "specifications": {
       "Cooling Capacity (kW)": "3.5(0.8-4.1)",
-      "Cooling Capacity (BTU)": "11942",
+      "Cooling Capacity (BTU)": "12001",
       "Heating Capacity (kW)": "3.8(1.0-4.2)",
-      "Heating Capacity (BTU)": "12966",
+      "Heating Capacity (BTU)": "12042",
       "SEER Cooling": "6.19",
       "SEER energy class": "A++",
       "SCOP Heating-average": "4.03",
@@ -2197,9 +2222,9 @@
     "specificationsDoc": "assets/Product Spec/MKD-EN-SRB-ALB-user-manual-12000BTU-FF-18000BTU-FF-min.pdf",
     "specifications": {
       "Cooling Capacity (kW)": "5.1(1.3-5.3)",
-      "Cooling Capacity (BTU)": "17401",
+      "Cooling Capacity (BTU)": "18001",
       "Heating Capacity (kW)": "5.4(1.3-5.5)",
-      "Heating Capacity (BTU)": "18424",
+      "Heating Capacity (BTU)": "18042",
       "SEER Cooling": "6.6",
       "SCOP Heating-average": "4.1",
       "SEER energy class": "A++",
@@ -2394,7 +2419,7 @@
     "pictures": [
       "assets/Small domestic appliances/IRON PL-501/PEGLA-PL-501-01-1024x576.png"
   ],
-  "specificationsDoc": "assets/PDF-Specifications/Пегла-FAVORIT-PL-501.pdf",
+    "specificationsDoc": "assets/Small domestic appliances/IRON PL-501/PL-501 Upatstvo za upotreba MK, Alb, Srb, Eng.pdf",
     "specifications": {
       "power": "2800 W",
       "water tank": "280 ml",
@@ -2421,7 +2446,7 @@
     "pictures": [
       "assets/Small domestic appliances/IRON PL-619/PEGLA-PL-619-01-1024x576.png"
   ],
-  "specificationsDoc": "assets/PDF-Specifications/Пегла-FAVORIT-PL-501.pdf",
+    "specificationsDoc": "assets/Small domestic appliances/IRON PL-619/PL-619 Upatstvo za upotreba MK, Alb, Srb, Eng.pdf",
     "specifications": {
       "power": "2200 W",
       "water tank": "280 ml",
@@ -2591,7 +2616,7 @@
     "name": "Toaster S1604",
     "description": ["Discover the Toaster S1604, a sleek and efficient appliance designed to make your breakfast routine easier than ever. With its 750W power, non-stick grill plates, and heat-resistant handle, this toaster ensures a hassle-free toasting experience. Its easy-to-open design, indicator lights for power and readiness, automatic thermostat, and overheat protection feature add convenience and safety. Plus, its ability to be placed in an upright position saves counter space. The Toaster S1604 is the ideal choice for those who value simplicity, efficiency, and style in their kitchen appliances."],
     "pictures": ["assets/Small domestic appliances/Toaster S1604/thumbnail TOSTER-NOV-44-1-1024x575.png"],
-    "specificationsDoc": "",
+    "specificationsDoc": "assets/Small domestic appliances/Toaster S1604/toster S1604 FAVORIT 'MKD' upsatstvo.pdf",
     "specifications": {
       "POWER": "750 W",
       "NON-STICK GRILL PLATES, EASY TO CLEAN": "√",
@@ -3098,7 +3123,7 @@
   },
   {
     "id": 137,
-    "name": "REFRIGERATOR WITHOUT CHAMBER L2653E S",
+    "name": "REFRIGERATOR WITHOUT CHAMBER L 2653E S",
     "description": [
       "This product has dimensions of 82.1 cm height, 48 cm width, and 50 cm depth. The gross volume is 91 liters and the net volume is 89 liters. It belongs to energy class F and comes in white color. Features include an interchangeable door, regulating legs, and fixed door handles. The electric energy consumption is 113 kWh per year, and the noise level is 43 dB."
     ],
@@ -3266,7 +3291,7 @@
     "pictures": [
       "assets/Small domestic appliances/IRON PL-607/viber image 2024-03-25 13-19-07-518-1.png"
   ],
-  "specificationsDoc": "assets/PDF-Specifications-Irons/PL-607 English.pdf",
+  "specificationsDoc": "assets/Small domestic appliances/IRON PL-607/SW-607 Upatstvo za upotreba MK, Alb, Srb, Eng.pdf",
   "specifications": {
       "power": "2600W",
       "water tank": "210ml",
@@ -3401,8 +3426,8 @@
           "DVB-T2/S2": "√",
           "Speakers": "2X10W",
           "Stand Color": "Black",
-          "Dimensions with Stand (WxHxD)": "1668MM X 318MM X 1041MM",
-          "Dimensions without Stand (WxHxD)": "1668MM X 163MM X 1116MM",
+          "Dimensions with Stand (WxHxD)": "1668MM X 318MM X 1116MM",
+          "Dimensions without Stand (WxHxD)": "1668MM X 163MM X 1041MM",
           "Weight (Gross/Net)": "40.2 / 30.3 kg"
         }
       },
@@ -3502,7 +3527,7 @@
           "assets/TV/LED TV 32U20B-20D/1. FAVORIT TV 32U20B-20D-2.png",
           "assets/TV/LED TV 32U20B-20D/1. PHOTO -FAVORIT TV 32U20B-20D.jpg"
         ],
-        "specificationsDoc": "assets/TV/LED TV 32U20B-20D/UPATSTVO ZA MODELITE 32U20B-20D;.pdf",
+        "specificationsDoc": "assets/TV/LED TV 32U20B-20D/UPATSTVO ZA MODELITE 32U20B-20D.pdf",
         "specifications": {
           "Diagonal": "32\"",
           "Screen": "LED",
@@ -3769,7 +3794,7 @@
       "Metal telescopic tube": "√",
       "Speed control": "√",
       "Full dust bag indicator": "√",
-      "Washable HEPA filter": "√",
+      "Washable spunge filter": "√",
       "2.5L dust container": "√",
       "Easy-empty dust container": "√",
       "5-meter cable": "√",
@@ -3793,7 +3818,7 @@
       "Metal telescopic tube": "√",
       "Speed control": "√",
       "Full dust bag indicator": "√",
-      "Washable HEPA filter": "√",
+      "Washable spunge filter": "√",
       "2.5L dust container": "√",
       "Easy-empty dust container": "√",
       "5-meter cable": "√",
@@ -3880,7 +3905,7 @@
         },
         {
           "id": 162,
-          "name": "Built-in dishwasher BI60-I14FN",
+          "name": "Built-in dishwasher BI60-I14N",
           "description": [],
           "pictures": [
             "assets/Built In Appliances/Built-in dishwasher BI60 – I14 (fully integrated)/BI60-I14N.jpg",
@@ -3969,7 +3994,7 @@
             "assets/Home appliances/Dishwasher DW 45FS5P-9/DW 45FS5P-9.png",
             "assets/Home appliances/Dishwasher DW 45FS5P-9/DW 45FS5P-9-OTVORENA.png"
           ],
-          "specificationsDoc": "assets/Home appliances/Dishwasher DW 45FS5P-9/1. DW 45FS5P-9 & DW 45FS5P-09-S Macedonian language.pdf",
+          "specificationsDoc": "assets/Home appliances/Dishwasher DW 45FS5P-9/DW 45FS5P-9 & DW 45FS5P-09-S MK, Alb, Srb, Eng.pdf",
           "specifications": {
             "Dimensions": "H/W/D 845/448/600 mm",
             "MAXIMUM CAPACITY": "9 place settings",
@@ -4003,7 +4028,7 @@
             "assets/Home appliances/Dishwasher DW 45FS5P-9 S/DW 45FS5P-9 S.png",
             "assets/Home appliances/Dishwasher DW 45FS5P-9 S/DW 45FS5P-9 S -otvorena.png"
           ],
-          "specificationsDoc": "assets/Home appliances/Dishwasher DW 45FS5P-9 S/1. DW 45FS5P-9 & DW 45FS5P-09-S Macedonian language.pdf",
+          "specificationsDoc": "assets/Home appliances/Dishwasher DW 45FS5P-9/DW 45FS5P-9 & DW 45FS5P-09-S MK, Alb, Srb, Eng.pdf",
           "specifications": {
             "Dimensions": "H/W/D 845/448/600 mm",
             "MAXIMUM CAPACITY": "9 place settings",
@@ -4039,8 +4064,8 @@
             "assets/Built In Appliances/Built-in dishwasher DW 45BI7P-9/DW 45BI7P-9.png",
             "assets/Built In Appliances/Built-in dishwasher DW 45BI7P-9/DW 45BI7P-9-OTVORENA.png"
           ],
-          "specificationsDoc": "assets/Built In Appliances/Built-in dishwasher DW 45BI7P-9/4. DW 45BI7P-9 user manual - English language.pdf",
-          "specificationsDocExtra": "assets/Built In Appliances/Built-in dishwasher DW 45BI7P-9/4. DW 45BI7P-9 Installation - English language.pdf",
+          "specificationsDoc": "assets/Built In Appliances/Built-in dishwasher DW 45BI7P-9/DW 45BI7P-9 user manual - MK, Alb, Srb, Eng.pdf",
+          "specificationsDocExtra": "assets/Built In Appliances/Built-in dishwasher DW 45BI7P-9/DW 45BI7P-9 Installation - MK, Alb, Srb, Eng.pdf",
           "specifications": {
             "Dimensions H/W/D": "815/448/558 mm",
             "maximum capacity": "9 place settings",
@@ -4073,8 +4098,8 @@
             "assets/Built In Appliances/Built-in dishwasher DW 60BI8P-13/DW 60BI8P-13.png",
             "assets/Built In Appliances/Built-in dishwasher DW 60BI8P-13/DW 60BI8P-13 -OTVORENA.png"
           ],
-          "specificationsDoc": "assets/Built In Appliances/Built-in dishwasher DW 60BI8P-13/1. DW 60BI8P-13 user manual -Macedonian language.pdf",
-          "specificationsDocExtra": "assets/Built In Appliances/Built-in dishwasher DW 60BI8P-13/1. DW 60BI8P-13 installation Macedonian language.pdf",
+          "specificationsDoc": "assets/Built In Appliances/Built-in dishwasher DW 60BI8P-13/DW 60BI8P-13 user manual MK, Alb, Srb, Eng.pdf",
+          "specificationsDocExtra": "assets/Built In Appliances/Built-in dishwasher DW 60BI8P-13/DW 60BI8P-13 installation MK, Alb, Srb, Eng.pdf",
           "specifications": {
             "Dimensions H/W/D": "815/596/558 mm",
             "maximum capacity": "13 place settings",
@@ -4138,7 +4163,7 @@
             "assets/Home appliances/Dishwasher DW 60FS5P-13 S/DW 60FS5P-13 S.png",
             "assets/Home appliances/Dishwasher DW 60FS5P-13 S/DW 60FS5P-13 S-otvorena.png"
           ],
-          "specificationsDoc": "assets/Home appliances/Dishwasher DW 60FS5P-13 S/4. DW 60FS5P & DW 60FS5P S -13 English language.pdf",
+          "specificationsDoc": "assets/Home appliances/Dishwasher DW 60FS5P-13/DW 60FS5P & DW 60FS5P S -13 MK, Alb, Srb, Eng.pdf",
           "specifications": {
             "Dimensions": "H/W/D 845/600/600 mm",
             "maximum capacity": "13 place settings",
@@ -4151,7 +4176,8 @@
             "noise level during operation": "49 dB",
             "delayed start": "1-24 hours",
             "DRY +": "√",
-            "energy consumption per 100 cycles": "93 kWh",
+            "energy consumption": "93 kWh/100 cycles",
+            "water consumption": "10 L water",
             "flood protection": "√",
             "hidden heater": "√",
             "heater protection": "√",
@@ -4165,6 +4191,44 @@
           }
         },
         {
+          "id": 170,
+          "name": "Dishwasher DW 60FS6P3R-15",
+          "description": [],
+          "pictures": [
+            "assets/Home appliances/Dishwasher DW 60FS6P3R-15/DW 60FS6P3R-15.png",
+            "assets/Home appliances/Dishwasher DW 60FS6P3R-15/DW 60FS6P3R-15-otvorena.png"
+          ],
+          "specificationsDoc": "assets/Home appliances/Dishwasher DW 60FS6P3R-15/DW60FS6P3R-15 & DW60FS6P3R-15 X MK, Alb, Srb, Eng.pdf",
+          "specifications": {
+            "Dimensions": "H/W/D 845/600/600 mm",
+            "Maximum capacity": "15 place settings",
+            "Programs": "6",
+            "3rd rack": "√",
+            "3 washing levels with 3 spray arms": "√",
+            "LED display": "√",
+            "Automatic door opening after completion": "√",
+            "Quick program": "√",
+            "Half load (1/2) button": "√",
+            "Energy class": "D",
+            "Drying class": "A",
+            "Noise level during operation": "49 dB",
+            "DRY +": "√",
+            "Delayed start": "1-24 hours",
+            "ENERGY CONSUMPTION": "86 kWh/100 cycles",
+            "WATER CONSUMPTION": "11 L water",
+            "Flood protection": "√",
+            "Hidden heater": "√",
+            "Heater protection": "√",
+            "Metal filter": "√",
+            "COLOR": "WHITE",
+            "ON/OFF BUTTON": "√",
+            "START/PAUSE BUTTON": "√",
+            "WASHING FUNCTION INDICATOR": "√",
+            "SALT SHORTAGE INDICATOR": "√",
+            "RINSE AID SHORTAGE INDICATOR": "√"
+          }
+        },
+        {
           "id": 171,
           "name": "Dishwasher DW 60FS6P3R-15 X",
           "description": [],
@@ -4172,7 +4236,7 @@
               "assets/Home appliances/Dishwasher DW 60FS6P3R-15 X/DW 60FS6P3R-15 X.png",
               "assets/Home appliances/Dishwasher DW 60FS6P3R-15 X/DW 60FS6P3R-15 X- otvorena.png"
           ],
-          "specificationsDoc": "assets/Home appliances/Dishwasher DW 60FS6P3R-15/1. DW60FS6P3R-15 & DW60FS6P3R-15 X Macedonia languagen.pdf",
+          "specificationsDoc": "assets/Home appliances/Dishwasher DW 60FS6P3R-15/DW60FS6P3R-15 & DW60FS6P3R-15 X MK, Alb, Srb, Eng.pdf",
           "specifications": {
             "Dimensions": "H/W/D 845/600/600 mm",
             "maximum capacity": "15 place settings",
@@ -4213,7 +4277,7 @@
             "DIMENSIONS (H/W/D)": "850/595/495 mm",
             "MAXIMUM SPIN SPEED (RPM)": "1200",
             "MAXIMUM CAPACITY": "7 kg",
-            "STAINLESS STEEL DRUM": "50 L",
+            "STAINLESS STEEL DRUM": "49 Л",
             "INVERTER MOTOR": "√ (10 YEARS WARRANTY)",
             "DIGITAL LED DISPLAY": "√",
             "DELAYED START": "3-24 h",
@@ -4224,8 +4288,8 @@
             "DRUM CLEAN PROGRAM": "√",
             "STEAM ASSIST PROGRAM": "√",
             "CHILD LOCK": "√",
-            "ENERGY CONSUMPTION": "40 kWh/cycle",
-            "WATER CONSUMPTION": "44 L/cycle",
+            "ENERGY CONSUMPTION": "40 kWh/100 cycles",
+            "WATER CONSUMPTION": "45 L/cycle",
             "NOISE LEVEL DURING WASHING": "62 dB",
             "NOISE LEVEL DURING SPIN": "76 dB",
             "SUPER QUICK PROGRAM": "15 minutes at 30°",
@@ -4235,7 +4299,7 @@
         },
         {
           "id": 173,
-          "name": "Washing Machine WM801400-63 BLDC",
+          "name": "Washing Machine WM801400-063 BLDC",
           "description": [],
           "pictures": [
             "assets/Home appliances/WASHING MACHINE WM801400-63 BLDC/WM801400-063 BLDC (1).png",
@@ -4259,7 +4323,7 @@
             "FOAM PROTECTION": "√",
             "ERROR DETECTION SYSTEM": "√",
             "CHILD LOCK": "√",
-            "ENERGY CONSUMPTION": "42 kWh/cycle",
+            "ENERGY CONSUMPTION": "42 kWh/100 cycles",
             "WATER CONSUMPTION": "48 L/cycle",
             "NOISE LEVEL DURING WASHING": "62 dB",
             "NOISE LEVEL DURING SPIN": "76 dB",
@@ -4299,14 +4363,14 @@
             "STEAM ASSIST PROGRAM": "√",
             "CHILD LOCK": "√",
             "ERROR DETECTION SYSTEM": "√",
-            "ENERGY CONSUMPTION": "44 kWh/cycle",
+            "ENERGY CONSUMPTION": "44 kWh/100 cycles",
             "WATER CONSUMPTION": "50 L/cycle",
             "NOISE LEVEL DURING WASHING": "62 dB",
             "NOISE LEVEL DURING SPIN": "76 dB",
             "SUPER QUICK PROGRAM": "15 minutes at 30°",
             "SPIN SPEED CONTROL BUTTON": "√",
             "COTTON PRE-WASH PROGRAM": "√",
-            "GROSS/NET WEIGHT": "67/64 kg"
+            "GROSS/NET WEIGHT": "66/63 kg"
           }
         },
         {
@@ -4582,7 +4646,7 @@
           "name": "Built-in Refrigerator BIBMF 249",
           "description": [],
           "pictures": [
-            "assets/Built In Appliances/Built-in refrigerator BIBMF 249/BIBMF 249 Exterior.jpg",
+            "assets/Built In Appliances/Built-in refrigerator BIBMF 249/BIBMF 249 Exterior.png",
             "assets/Built In Appliances/Built-in refrigerator BIBMF 249/BIBMF 249 Interior.png"
           ],
           "specificationsDoc": "assets/Built In Appliances/Built-in refrigerator BIBMF 249/Upatsvo BIBMF 249.pdf",

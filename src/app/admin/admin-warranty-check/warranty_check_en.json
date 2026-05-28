@@ -3,6 +3,7 @@
   "signOut": "Sign out",
   "searchBySerial": "By serial number",
   "searchByEmail": "By email",
+  "searchByPhone": "By phone",
   "serialNumber": "Serial number",
   "email": "Email",
   "search": "Search",
@@ -34,6 +35,17 @@
   "applyFilters": "Apply filters",
   "deviceModelPlaceholder": "Type or select a model",
   "modelsListTitle": "Select model",
+  "edit": "Edit",
+  "editSubmission": "Edit warranty submission",
+  "cancel": "Cancel",
+  "save": "Save",
+  "saving": "Saving...",
+  "editSaved": "Changes saved.",
+  "editError": "Failed to save. Try again.",
+  "firstName": "First name",
+  "lastName": "Last name",
+  "postalCode": "Postal code",
+  "selectDeviceType": "Select device type",
   "deviceTypes": {
     "home-appliances": "Home Appliances",
     "refrigerator": "Refrigerator",
@@ -45,5 +57,7 @@
     "air_conditioner": "Air Conditioner",
     "small_appliance": "Small Appliance",
     "other": "Other"
-  }
+  },
+  "downloadCsv": "Download CSV (spreadsheet)",
+  "downloadingCsv": "Downloading..."
 }

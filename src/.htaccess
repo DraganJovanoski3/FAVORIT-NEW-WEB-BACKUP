@@ -25,6 +25,8 @@ RewriteRule ^(.*)$ /index.html [L]
 # Cache static assets
 <IfModule mod_expires.c>
   ExpiresActive on
+  ExpiresByType text/html "access plus 0 seconds"
+  ExpiresByType application/json "access plus 0 seconds"
   ExpiresByType text/css "access plus 1 year"
   ExpiresByType application/javascript "access plus 1 year"
   ExpiresByType image/png "access plus 1 year"
@@ -32,4 +34,17 @@ RewriteRule ^(.*)$ /index.html [L]
   ExpiresByType image/jpeg "access plus 1 year"
   ExpiresByType image/gif "access plus 1 year"
   ExpiresByType image/svg+xml "access plus 1 year"
+</IfModule>
+
+# Always revalidate HTML and JSON to avoid stale product data across devices.
+<IfModule mod_headers.c>
+  <FilesMatch "^(index\.html)$">
+    Header set Cache-Control "no-cache, no-store, must-revalidate"
+    Header set Pragma "no-cache"
+    Header set Expires "0"
+  </FilesMatch>
+
+  <FilesMatch "\.(html|json)$">
+    Header set Cache-Control "no-cache, must-revalidate, max-age=0"
+  </FilesMatch>
 </IfModule>

@@ -3,6 +3,7 @@
   "signOut": "Dilni",
   "searchBySerial": "Sipas numrit serial",
   "searchByEmail": "Sipas emailit",
+  "searchByPhone": "Sipas telefonit",
   "serialNumber": "Numri serial",
   "email": "Email",
   "search": "Kërko",
@@ -34,6 +35,17 @@
   "applyFilters": "Apliko filtrat",
   "deviceModelPlaceholder": "Shkruani ose zgjidhni një model",
   "modelsListTitle": "Zgjidhni modelin",
+  "edit": "Ndrysho",
+  "editSubmission": "Ndrysho regjistrimin e garancisë",
+  "cancel": "Anulo",
+  "save": "Ruaj",
+  "saving": "Duke ruajtur...",
+  "editSaved": "Ndryshimet u ruajtën.",
+  "editError": "Ruajtja dështoi. Provoni përsëri.",
+  "firstName": "Emri",
+  "lastName": "Mbiemri",
+  "postalCode": "Kodi postar",
+  "selectDeviceType": "Zgjidhni llojin e pajisjes",
   "deviceTypes": {
     "home-appliances": "Aplikacionet e shtëpisë",
     "refrigerator": "Frigorifer",
@@ -45,5 +57,7 @@
     "air_conditioner": "Kondicioner",
     "small_appliance": "Aplikacion i vogël",
     "other": "Tjetër"
-  }
+  },
+  "downloadCsv": "Shkarko CSV (fletëllogaritje)",
+  "downloadingCsv": "Duke shkarkuar..."
 }

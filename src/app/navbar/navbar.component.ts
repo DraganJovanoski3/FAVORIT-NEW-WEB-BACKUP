@@ -313,8 +313,6 @@ export class NavbarComponent implements OnInit, OnDestroy {
       { id: 154, name: productTranslations['154'] || 'WASHING MACHINE N-7122T BLDC', picture: 'assets/Home appliances/WASHING MACHINE N-7122T BLDC/5. FAVORIT N-7122T BLDC.png', subcategory: washingLabel, category: 'home-appliances' },
       { id: 53, name: productTranslations['53'] || 'WASHING MACHINE W – 8122N BLDC', picture: 'assets/Home appliances/WASHING MACHINE W – 8122N BLDC/W-8122-BLDC-11-1024x576.png', subcategory: washingLabel, category: 'home-appliances' },
       { id: 155, name: productTranslations['155'] || 'WASHING MACHINE C-8143 BLDC', picture: 'assets/Home appliances/WASHING MACHINE C-8143 BLDC/8. FAVORIT C-8143 BLDC.png', subcategory: washingLabel, category: 'home-appliances' },
-      // { id: 56, name: productTranslations['56'] || 'WASHING MACHINE W-9122N BLDC', picture: 'assets/Home appliances/WASHING MACHINE W-9122N BLDC/W-9122N-BLDC-16-1024x576.png', subcategory: washingLabel, category: 'home-appliances' },
-      // { id: 55, name: productTranslations['55'] || 'WASHING MACHINE W - 9142ТN BLDC', picture: 'assets/Home appliances/WASHING MACHINE W - 9142ТN BLDC/W9142T-BLDC-1024x576.png', subcategory: washingLabel, category: 'home-appliances' },
       { id: 160, name: productTranslations['160'] || 'WASHING MACHINE A-9143 BLDC', picture: 'assets/Home appliances/WASHING MACHINE A-9143 BLDC/10. FAVORIT A-9143 BLDC.png', subcategory: washingLabel, category: 'home-appliances' },
       // DRYERS
       { id: 19, name: productTranslations['19'] || 'Dryer W-71 C', picture: 'assets/Home appliances/Dryer L – 71 C/W-71 C.png', subcategory: dryerLabel, category: 'home-appliances' },
@@ -342,7 +340,17 @@ export class NavbarComponent implements OnInit, OnDestroy {
       { id: 35, name: productTranslations['35'] || 'HCF 300', picture: 'assets/Home appliances/HCF 300/300-ZATVOREN-1024x576.png', subcategory: horizontalFreezerLabel, category: 'home-appliances' },
       { id: 36, name: productTranslations['36'] || 'HCF 400', picture: 'assets/Home appliances/HCF 400/400-ZATVOREN-1024x576.png', subcategory: horizontalFreezerLabel, category: 'home-appliances' },
       { id: 137, name: productTranslations['137'] || 'REFRIGERATOR WITHOUT CHAMBER L2653E S', picture: 'assets/Home appliances/REFRIGERATOR WITHOUT CHAMBER L2653N/FAVORIT-L-2653-S-01-1024x576.png', subcategory: fridgeLabel, category: 'home-appliances' },
+      { id: 175, name: productTranslations['175'] || 'REFRIGERATOR RTT 90', picture: 'assets/Home appliances/REFRIGERATOR RTT 90/RTT 90 Exterior.png', subcategory: fridgeLabel, category: 'home-appliances' },
+      { id: 176, name: productTranslations['176'] || 'REFRIGERATOR WITHOUT CHAMBER LU 242', picture: 'assets/Home appliances/REFRIGERATOR WITHOUT CHAMBER LU 242/LU 242 Exterior.png', subcategory: fridgeLabel, category: 'home-appliances' },
+      { id: 178, name: productTranslations['178'] || 'TWO CHAMBER REFRIGERATOR RTMF 206', picture: 'assets/Home appliances/TWO CHAMBER REFRIGERATOR RTMF 206/RTMF 206 Exterior.png', subcategory: fridgeLabel, category: 'home-appliances' },
+      { id: 179, name: productTranslations['179'] || 'TWO CHAMBER REFRIGERATOR RTMF 206 S', picture: 'assets/Home appliances/TWO CHAMBER REFRIGERATOR RTMF 206 S/RTMF 206 S Exterior.png', subcategory: fridgeLabel, category: 'home-appliances' },
+      { id: 180, name: productTranslations['180'] || 'COMBINED REFRIGERATOR CBMF 262', picture: 'assets/Home appliances/TWO CHAMBER REFRIGERATOR CBMF 262/CBMF 262 Exterior.png', subcategory: fridgeLabel, category: 'home-appliances' },
+      { id: 181, name: productTranslations['181'] || 'COMBINED REFRIGERATOR CBMF 262 S', picture: 'assets/Home appliances/TWO CHAMBER REFRIGERATOR CBMF 262 S/CBMF 262 S Exterior.png', subcategory: fridgeLabel, category: 'home-appliances' },
+      { id: 182, name: productTranslations['182'] || 'COMBINED REFRIGERATOR CBMF 315', picture: 'assets/Home appliances/COMBINED REFRIGERATOR CBMF 315/CBMF 315 Exterior.png', subcategory: fridgeLabel, category: 'home-appliances' },
+      { id: 183, name: productTranslations['183'] || 'COMBINED REFRIGERATOR CBMF 315 X', picture: 'assets/Home appliances/COMBINED REFRIGERATOR CBMF 315 X/CBMF 315 X Exterior.png', subcategory: fridgeLabel, category: 'home-appliances' },
+      { id: 184, name: productTranslations['184'] || 'COMBINED REFRIGERATOR NFCBMF 253 X', picture: 'assets/Home appliances/COMBINED REFRIGERATOR NFCBMF 253 X/NFCBMF 253 X Exterior.png', subcategory: fridgeLabel, category: 'home-appliances' },
       { id: 138, name: productTranslations['138'] || 'TWO CHAMBER REFRIGERATOR RF 263E S', picture: 'assets/Home appliances/TWO CHAMBER REFRIGERATOR RF 263N/FAVORIT-RF-263-S-01-1-1024x576.png', subcategory: verticalFreezerLabel, category: 'home-appliances' },
+      { id: 177, name: productTranslations['177'] || 'VERTICAL FREEZER FU 168', picture: 'assets/Home appliances/VERTICAL FREEZER FU 168/FU 168 Exterior.png', subcategory: verticalFreezerLabel, category: 'home-appliances' },
       { id: 139, name: productTranslations['139'] || 'COMBINED REFRIGERATOR CF 278E S', picture: 'assets/Home appliances/COMBINED REFRIGERATOR CF 278N/FAVORIT-CF-278-S-01-1024x576.png', subcategory: fridgeLabel, category: 'home-appliances' },
       { id: 140, name: productTranslations['140'] || 'COMBINED REFRIGERATOR CF 374E I', picture: 'assets/Home appliances/COMBINED REFRIGERATOR CF 374N/FAVORIT-CF-374-I-01-1024x576.png', subcategory: fridgeLabel, category: 'home-appliances' },
       { id: 141, name: productTranslations['141'] || 'COMBINED REFRIGERATOR NF 379E I', picture: 'assets/Home appliances/COMBINED REFRIGERATOR NF 379N – NO FROST without dispensary/FAVORIT-NF-373-I-01-1024x576.png', subcategory: fridgeLabel, category: 'home-appliances' },
@@ -356,9 +364,7 @@ export class NavbarComponent implements OnInit, OnDestroy {
       { id: 18, name: productTranslations['18'] || 'Dishwasher F60 - Y14N', picture: 'assets/Home appliances/Dishwasher F60 – Y14N/F60-Y14-04-1024x576.png', subcategory: dishwashersLabel, category: 'home-appliances' },
       { id: 135, name: productTranslations['135'] || 'Dishwasher F60 - Y14N S', picture: 'assets/Home appliances/Dishwasher F60 – Y14N S/F60-Y14_S-04.png', subcategory: dishwashersLabel, category: 'home-appliances' },
       { id: 15, name: productTranslations['15'] || 'Dishwasher E60-A1FN', picture: 'assets/Home appliances/Dishwasher E60-A1FN/RABOTEN-16.9-31-1024x576.png', subcategory: dishwashersLabel, category: 'home-appliances' },
-      { id: 136, name: productTranslations['136'] || 'Dishwasher E60-A1FN X', picture: 'assets/Home appliances/Dishwasher E60-A1FN X/RABOTEN-16.9-33-1024x576.png', subcategory: dishwashersLabel, category: 'home-appliances' },
-      // { id: 14, name: productTranslations['14'] || 'Dishwasher E60 - A22', picture: 'assets/Home appliances/Dishwasher E60 - A22/E60-A22-04-1024x576.png', subcategory: dishwashersLabel, category: 'home-appliances' },
-      // { id: 16, name: productTranslations['16'] || 'DISHWASHER E60-A24N BLDC', picture: 'assets/Home appliances/DISHWASHER E60-A24N BLDC with inverter motor/E60-A24-BLDC-04-1-1024x576.png', subcategory: dishwashersLabel, category: 'home-appliances' }
+      { id: 136, name: productTranslations['136'] || 'Dishwasher E60-A1FN X', picture: 'assets/Home appliances/Dishwasher E60-A1FN X/RABOTEN-16.9-33-1024x576.png', subcategory: dishwashersLabel, category: 'home-appliances' }
     );
 
     // Add stoves and mini stoves
@@ -409,7 +415,8 @@ export class NavbarComponent implements OnInit, OnDestroy {
       { id: 74, name: productTranslations['74'] || 'Built-in refrigerator UCF 2764N', picture: 'assets/Built In Appliances/Built-in refrigerator UCF 2764N/FAVORIT-UCF-2760-01-1024x576.png', subcategory: builtInFridgesLabel, category: 'built-in-appliances' },
       { id: 150, name: productTranslations['150'] || 'Built-in refrigerator UF2795N', picture: 'assets/Built In Appliances/Built-in refrigerator UF2795N/Built-in refrigerator UF2795N.png', subcategory: builtInFridgesLabel, category: 'built-in-appliances' },
       { id: 75, name: productTranslations['75'] || 'Built-in refrigerator URF 263N', picture: 'assets/Built In Appliances/Built-in refrigerator URF 263N/Vgraden-frizider-URF-263N-43-1024x576.png', subcategory: builtInFridgesLabel, category: 'built-in-appliances' },
-      { id: 76, name: productTranslations['76'] || 'Built-in refrigerator URF 1600N', picture: 'assets/Built In Appliances/Built-in refrigerator URF 1600N/Vgraden-frizider-URF-1600N-43-1024x576.png', subcategory: builtInFridgesLabel, category: 'built-in-appliances' }
+      { id: 76, name: productTranslations['76'] || 'Built-in refrigerator URF 1600N', picture: 'assets/Built In Appliances/Built-in refrigerator URF 1600N/Vgraden-frizider-URF-1600N-43-1024x576.png', subcategory: builtInFridgesLabel, category: 'built-in-appliances' },
+      { id: 185, name: productTranslations['185'] || 'Built-in refrigerator BIBMF 249', picture: 'assets/Built In Appliances/Built-in refrigerator BIBMF 249/BIBMF 249 Exterior.jpg', subcategory: builtInFridgesLabel, category: 'built-in-appliances' }
     );
 
     // Add built-in dishwashers

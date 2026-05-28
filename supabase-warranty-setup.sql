@@ -53,6 +53,17 @@ create policy "Allow authenticated read"
   to authenticated
   using (true);
 
+-- 4b) Only the super admin email can UPDATE (replace with your email)
+create policy "Allow admin update warranty"
+  on public.warranty_submissions for update
+  to authenticated
+  using (
+    exists (select 1 from public.profiles where id = auth.uid() and email = 'draganjovanoski54@gmail.com')
+  )
+  with check (
+    exists (select 1 from public.profiles where id = auth.uid() and email = 'draganjovanoski54@gmail.com')
+  );
+
 -- 5) Profiles table for admin role
 create table if not exists public.profiles (
   id uuid primary key references auth.users(id) on delete cascade,

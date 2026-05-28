@@ -359,10 +359,8 @@
       "Ovaj frižider ima dimenzije 185cm (V) x 60cm (Š) x 62cm (D), sa bruto zapreminom od 341 litara i neto zapreminom od 324 litara. Opremljen je sistemom No Frost, internim kontrolnim panelom, digitalnom kontrolom radijatora i zamrzivača, indikatorom greške SR, režimom super hlađenja i ekonomskim režimom. Dodatno, sadrži držač za boce, jedan kompresor i opcije za podesivo skladištenje. Energetski razred je F sa godišnjom potrošnjom električne energije od 306 kWh i radi na nivou buke od 41 dB. Tip gasa je P 600 A, a dolazi u stylish belo/inoks izdanju."
     ],
     "pictures": [
-      "assets/Home appliances/COMBINED REFRIGERATOR NF 379N – NO FROST without dispensary/FAVORIT-NF-373-I-01-1024x576.png",
       "assets/Home appliances/COMBINED REFRIGERATOR NF 379N – NO FROST without dispensary/FAVORIT-NF-373-01-1024x576.png",
-      "assets/Home appliances/COMBINED REFRIGERATOR NF 379N – NO FROST without dispensary/FAVORIT-NF-373-02-1024x576.png",
-      "assets/Home appliances/COMBINED REFRIGERATOR NF 379N – NO FROST without dispensary/FAVORIT-NF-373-I-02-1024x576.png"
+      "assets/Home appliances/COMBINED REFRIGERATOR NF 379N – NO FROST without dispensary/FAVORIT-NF-373-02-1024x576.png"
     ],
     "specificationsDoc": "assets/PDF-Specifications/Upatstvo_NF-379N-i-NF-379N-I.pdf",
     "specifications": {
@@ -449,7 +447,7 @@
       "assets/Home appliances/Dishwasher F45 – Y15N/F45-Y15-S-05-1024x576.png",
       "assets/Home appliances/Dishwasher F45 – Y15N/F45-Y15-S-06-1024x576.png"
     ],
-    "specificationsDoc": "assets/Product Spec/1.-F45-Y15-F45-Y15-S-upatstva-MAK-AL-SIR-EN.pdf",
+    "specificationsDoc": "assets/home appliances/Dishwasher F45 – Y15N/Upatstvo za mas za sadovi F45-Y15N i F45-Y15N S.pdf",
     "specifications": {
       "DIMENZIJE": "V/Š/D 85/44,8/59,8",
       "MAKSIMALNI KAPACITET": "10 KOMPLETA POSUĐA",
@@ -488,7 +486,7 @@
       "assets/Home appliances/Dishwasher F45 – Y15N/F45-Y15-S-05-1024x576.png",
       "assets/Home appliances/Dishwasher F45 – Y15N/F45-Y15-S-06-1024x576.png"
     ],
-    "specificationsDoc": "assets/Product Spec/1.-F45-Y15-F45-Y15-S-upatstva-MAK-AL-SIR-EN.pdf",
+    "specificationsDoc": "assets/home appliances/Dishwasher F45 – Y15N/Upatstvo za mas za sadovi F45-Y15N i F45-Y15N S.pdf",
     "specifications": {
       "DIMENZIJE": "V/Š/D 85/44,8/59,8",
       "MAKSIMALNI KAPACITET": "10 KOMPLETA POSUĐA",
@@ -675,7 +673,7 @@
       "assets/Home appliances/Electric Freestanding Cooker EC 640 WWF/5-4.jpg",
       "assets/Home appliances/Electric Freestanding Cooker EC 640 WWF/6-3.jpg"
     ],
-    "specificationsDoc": "assets/PDF-Specifications/EC-640-WWFT.pdf",
+    "specificationsDoc": "assets/Home appliances/Electric Freestanding Cooker EC 640 WWF/Electric Freestanding Cooker EC 640 WWF.pdf",
     "specifications": {
       "dimenzije": "85cm/60cm/60cm",
       "dimenzije rerne": "33x45x43cm",
@@ -744,6 +742,31 @@
       "gornji grejač": "1000 W"
     }
   },
+    {
+    "id": 26,
+    "name": "Električni nezavisni šporet EC 540 WWFT",
+    "description": [
+      "Ovaj proizvod ima dimenzije 85x50x60 cm (V/Š/D) i zapreminu rerne od 55 litara. Uključuje poklopac za šporet, emajliranu ploču i dolazi sa 3 pozicije za kontrolu prekidača.",
+      "Rerna uključuje grejna tela sa ringlama od 2x145mm i 2x180mm, zajedno sa donjim i gornjim grejačem svaki sa snagom od 1000 vati. Energetska klasa ovog aparata je A."
+    ],
+    "pictures": [
+      "assets/Home appliances/Electric Independent Cooker EC 540 WWFT/Elektricen-sporet-EC-540-WWFT-44-1024x576.png"
+    ],
+    "specificationsDoc": "assets/PDF-Specifications/Upatstvo-EC-540-WWFT-EC-540-SFT.pdf",
+    "specifications": {
+      "DIMENZIJE: V/Š/D": "85x50x60",
+      "ZAPREMINA RERNE": "55 L",
+      "POKLOPAC ZA ŠPORET":  "√",
+      "Grejna tela": "2x145mm - 2x180mm",
+      "Ploča": "Emajlirana",
+      "Pozicije za kontrolu prekidača": 3,
+      "Rack za rernu":  "√",
+      "Tepsija":  "√",
+      "ENERGETSKA KLASA": "A",
+      "DONJI GREJAČ": "1000 W",
+      "GORNJI GREJAČ": "1000 W"
+    }
+  },
   {
     "id": 27,
     "name": "Električni nezavisni šporet EC 640 SF",
@@ -759,7 +782,7 @@
       "assets/Home appliances/ELECTRIC INDEPENDENT COOKER EC 640 SF/5-5.jpg",
       "assets/Home appliances/ELECTRIC INDEPENDENT COOKER EC 640 SF/6-4.jpg"
     ],
-    "specificationsDoc": "assets/PDF-Specifications/EC-640-SF.pdf",
+    "specificationsDoc": "assets/Home appliances/ELECTRIC INDEPENDENT COOKER EC 640 SF/ELECTRIC INDEPENDENT COOKER EC 640 SF.pdf",
     "specifications": {
       "dimenzije visina širina dubina": "85cm/60cm/60 cm",
       "dimenzije unutrašnjosti rerne visina širina dubina": "33cm/47cm/43cm",
@@ -786,7 +809,7 @@
     "pictures": [
       "assets/Home appliances/GLASS-CERAMIC INDEPENDENT COOKER CC 500 SF/FAVORIT-CC-500-SF-10-1024x576.png"
     ],
-    "specificationsDoc": "assets/Product Spec/CC-500-WWF-CC-500-SF.pdf",
+    "specificationsDoc": "assets/Home appliances/GLASS-CERAMIC INDEPENDENT COOKER CC 500 SF/GLASS-CERAMIC INDEPENDENT COOKER CC 500 SF.pdf",
     "specifications": {
       "dimenzije visina širina dubina": "85 CM/50 CM/60 CM",
       "staklokeramička ploča sa 4 kuvne zone": "2X145MM, 2X180MM",
@@ -814,7 +837,7 @@
     "pictures": [
       "assets/Home appliances/GLASS-CERAMIC INDEPENDENT COOKER CC 500 WWF/FAVORIT-CC-500-WWF-10-1024x576.png"
     ],
-    "specificationsDoc": "assets/Product Spec/CC-500-WWF-CC-500-SF.pdf",
+    "specificationsDoc": "assets/Home appliances/GLASS-CERAMIC INDEPENDENT COOKER CC 500 WWF/GLASS-CERAMIC INDEPENDENT COOKER CC 500 WWF.pdf",
     "specifications": {
       "dimenzije visina širina dubina": "85 CM/50 CM/60 CM",
       "staklo-keramička ploča sa 4 kuvne zone": "2X145MM, 2X180MM",
@@ -849,7 +872,7 @@
       "assets/Home appliances/GLASS-CERAMIC INDEPENDENT COOKER CC 600 IF/4-11.png",
       "assets/Home appliances/GLASS-CERAMIC INDEPENDENT COOKER CC 600 IF/5-6.png"
     ],
-    "specificationsDoc": "assets/PDF-Specifications/CC-600-IF.pdf",
+    "specificationsDoc": "assets/Home appliances/GLASS-CERAMIC INDEPENDENT COOKER CC 600 WWF/GLASS-CERAMIC INDEPENDENT COOKER CC 600 WWF.pdf",
     "specifications": {
       "dimenzije visina širina dubina": "85cm/60cm/60cm",
       "dimenzije unutar rerne visina širina dubina": "33cm/45cm/43cm",
@@ -880,7 +903,7 @@
     "pictures": [
       "assets/Home appliances/GLASS-CERAMIC INDEPENDENT COOKER CC 600 SF/FAVORIT-CC-600-SF-10-1024x576.png"
     ],
-    "specificationsDoc": "assets/PDF-Specifications/CC-600-SF.pdf",
+    "specificationsDoc": "assets/Home appliances/GLASS-CERAMIC INDEPENDENT COOKER CC 600 SF/GLASS-CERAMIC INDEPENDENT COOKER CC 600 SF.pdf",
     "specifications": {
       "dimenzije visina širina dubina": "85cm/60cm/60cm",
       "dimenzije unutar rerne visina širina dubina": "33cm/45cm/43cm",
@@ -918,7 +941,7 @@
       "assets/Home appliances/GLASS-CERAMIC INDEPENDENT COOKER CC 600 WWF/4-10.png",
       "assets/Home appliances/GLASS-CERAMIC INDEPENDENT COOKER CC 600 WWF/5-6.png"
     ],
-    "specificationsDoc": "assets/PDF-Specifications/CC-600-WWF.pdf",
+    "specificationsDoc": "assets/Home appliances/GLASS-CERAMIC INDEPENDENT COOKER CC 600 WWF/GLASS-CERAMIC INDEPENDENT COOKER CC 600 WWF.pdf",
     "specifications": {
       "dimenzije visina širina dubina": "85cm/60cm/60cm",
       "dimenzije unutar rerne visina širina dubina": "33cm/45cm/43cm",
@@ -1111,7 +1134,7 @@
   },
   {
     "id": 40,
-    "name": "Frižider bez komore L2653E",
+    "name": "Frižider bez komore L 2653E",
     "description": [
       "Ovaj proizvod ima dimenzije 82.1 cm visine, 48 cm širine i 50 cm dubine. Bruto zapremina je 91 litara, a neto zapremina je 89 litara. Pripada energetskoj klasi F i dolazi u beloj boji. Karakteristike uključuju zamenska vrata, regulacione nogare i fiksne drške na vratima. Potrošnja električne energije je 113 kWh godišnje, a nivo buke je 43 dB."
     ],
@@ -1137,7 +1160,7 @@
   },
   {
     "id": 41,
-    "name": "DVOKOMORNI FRIŽIDER RF 263N",
+    "name": "DVOKOMORNI FRIŽIDER F 263N",
     "description": [
       "Ovaj proizvod ima dimenzije 82.1 cm visine, 48 cm širine i 50 cm dubine. Bruto zapremina je 91 litara, a neto zapremina je 89 litara. Pripada energetskoj klasi F i dolazi u beloj boji. Karakteristike uključuju zamenska vrata, podešavajuće nogare i fiksne drške na vratima. Potrošnja električne energije iznosi 113 kWh godišnje, a nivo buke je 43 dB."
     ],
@@ -1543,7 +1566,7 @@
       "pictures": [
         "assets/Home appliances/WATER HEATER TE50A20/TE50A20-1024x576.png"
       ],
-      "specificationsDoc": "assets/PDF-Specifications/TE80B20 TE80A20.pdf",
+      "specificationsDoc": "assets/Home appliances/WATER HEATER TE50B20/UPATSTVO MK, Alb, Srb, Eng.pdf",
       "specifications": {
         "kapacitet": "50 L",
         "VRSTA KONTROLE MEHANIČKA": "√ NA PREDNJOJ STRANI BOJLERA",
@@ -1576,7 +1599,7 @@
       "pictures": [
         "assets/Home appliances/WATER HEATER TE50B20/TE50B20-1024x576.png"
       ],
-      "specificationsDoc": "assets/PDF-Specifications/TE80B20 TE80A20.pdf",
+        "specificationsDoc": "assets/Home appliances/WATER HEATER TE50B20/UPATSTVO MK, Alb, Srb, Eng.pdf",
       "specifications": {
         "kapacitet": "80 L",
         "VRSTA KONTROLE MEHANIČKA": "√ NA PREDNJOJ STRANI BOJLERA",
@@ -1609,7 +1632,7 @@
       "pictures": [
         "assets/Home appliances/WATER HEATER TE80A20/1-BOLJER-04-scaled-1-1024x576.png"
       ],
-      "specificationsDoc": "assets/PDF-Specifications/TE80B20 TE80A20.pdf",
+    "specificationsDoc": "assets/Home appliances/WATER HEATER TE50B20/UPATSTVO MK, Alb, Srb, Eng.pdf",
       "specifications": {
         "kapacitet": "50 L",
         "VRSTA KONTROLE MEHANIČKA": "√ NA PREDNJOJ STRANI BOJLERA",
@@ -1642,7 +1665,7 @@
       "pictures": [
         "assets/Home appliances/WATER HEATER TE80B20/1-BOLJER-01-800x450-1-500x375-1.png"
       ],
-      "specificationsDoc": "assets/PDF-Specifications/TE80B20 TE80A20.pdf",
+      "specificationsDoc": "assets/Home appliances/WATER HEATER TE50B20/UPATSTVO MK, Alb, Srb, Eng.pdf",
       "specifications": {
         "kapacitet": "80 L",
         "VRSTA KONTROLE MEHANIČKA": "√ NA PREDNJOJ STRANI BOJLERA",
@@ -2111,9 +2134,9 @@
     "specificationsDoc": "assets/Product Spec/MKD-EN-SRB-ALB-user-manual-12000BTU-FF-18000BTU-FF-min.pdf",
     "specifications": {
       "Kapacitet hlađenja (kW)": "3.5(0.8-4.1)",
-      "Kapacitet hlađenja (BTU)": "11942",
+      "Kapacitet hlađenja (BTU)": "12001",
       "Kapacitet grejanja (kW)": "3.8(1.0-4.2)",
-      "Kapacitet grejanja (BTU)": "12966",
+      "Kapacitet grejanja (BTU)": "12042",
       "SEER hlađenje": "6.19",
       "SEER energetska klasa": "A++",
       "SCOP grejanje-prosečno": "4.03",
@@ -2173,9 +2196,9 @@
     "specificationsDoc": "assets/Product Spec/MKD-EN-SRB-ALB-user-manual-12000BTU-FF-18000BTU-FF-min.pdf",
     "specifications": {
       "Kapacitet hlađenja (KW)": "5.1(1.3-5.3)",
-      "Kapacitet hlađenja (BTU)": "17401",
+      "Kapacitet hlađenja (BTU)": "18001",
       "Kapacitet grejanja (KW)": "5.4(1.3-5.5)",
-      "Kapacitet grejanja (BTU)": "18424",
+      "Kapacitet grejanja (BTU)": "18042",
       "SEER za hlađenje": "6.6",
       "SCOP za grejanje-prosečno": "4.1",
       "Energetska klasa SEER": "A++",
@@ -2366,7 +2389,7 @@
     "pictures": [
       "assets/Small domestic appliances/IRON PL-501/PEGLA-PL-501-01-1024x576.png"
     ],
-    "specificationsDoc": "assets/PDF-Specifications/Uputstvo-za-Pegla-PL-501.pdf",
+    "specificationsDoc": "assets/Small domestic appliances/IRON PL-501/PL-501 Upatstvo za upotreba MK, Alb, Srb, Eng.pdf",
     "specifications": {
       "snaga": "2800 W",
       "rezervoar za vodu": "280 ml",
@@ -2393,7 +2416,7 @@
     "pictures": [
       "assets/Small domestic appliances/IRON PL-619/PEGLA-PL-619-01-1024x576.png"
     ],
-    "specificationsDoc": "assets/PDF-Specifications/Udhëzime për-Pegla-PL-501.pdf",
+    "specificationsDoc": "assets/Small domestic appliances/IRON PL-619/PL-619 Upatstvo za upotreba MK, Alb, Srb, Eng.pdf",
     "specifications": {
       "fuqia": "2200 W",
       "rezervuar uji": "280 ml",
@@ -2563,7 +2586,7 @@
       "Otkrijte TOSTER S1604, elegantan i efikasan uređaj dizajniran da olakša vašu rutinu doručka. Sa snagom od 750W, neprijanjajućim pločama za roštilj i ručkom otpornom na toplotu, ovaj toster osigurava bezbrižno iskustvo tostiranja. Njegov dizajn koji se lako otvara, indikatori za napajanje i spremnost, automatski termostat i zaštita od pregrevanja dodaju praktičnost i sigurnost. Takođe, mogućnost postavljanja u uspravan položaj štedi prostor na radnoj površini. Toster S1604 je idealan izbor za one koji cene jednostavnost, efikasnost i stil u kuhinjskim aparatima."
     ],
     "pictures": ["assets/Small domestic appliances/Toaster S1604/thumbnail TOSTER-NOV-44-1-1024x575.png"],
-    "specificationsDoc": "",
+    "specificationsDoc": "assets/Small domestic appliances/Toaster S1604/toster S1604 IM SRB ' uputstvo.pdf",
     "specifications": {
       "SNAGA": "750 W",
       "NEPRIJANJAJUĆE PLOČE ZA ROŠTILJ, LAKO SE ČISTI": "√",
@@ -3067,7 +3090,7 @@
   },
   {
     "id": 137,
-    "name": "FRIŽIDER BEZ KOMORE L2653E S",
+    "name": "FRIŽIDER BEZ KOMORE L 2653E S",
     "description": [
       "Ovaj proizvod ima dimenzije visine 82.1 cm, širine 48 cm i dubine 50 cm. Bruto zapremina je 91 litara, a neto zapremina 89 litara. Pripada energetskoj klasi F i dolazi u beloj boji. Funkcije uključuju zamjenjiva vrata, podešavanje nogu i fiksne ručke vrata. Potrošnja električne energije iznosi 113 kWh godišnje, a nivo buke je 43 dB."
     ],
@@ -3223,7 +3246,7 @@
     "pictures": [
       "assets/Small domestic appliances/IRON PL-607/viber image 2024-03-25 13-19-07-518-1.png"
     ],
-    "specificationsDoc": "assets/PDF-Specifications-irons/PL-607 Serbian.pdf",
+    "specificationsDoc": "assets/Small domestic appliances/IRON PL-607/SW-607 Upatstvo za upotreba MK, Alb, Srb, Eng.pdf",
     "specifications": {
       "snaga": "2600W",
       "rezervoar za vodu": "210ml",
@@ -3358,8 +3381,8 @@
           "DVB-T2/S2": "√",
           "Zvučnici": "2X10W",
           "Boja stalka": "Crna",
-          "Dimenzije sa stalkom (ŠxVxD)": "1668MM X 318MM X 1041MM",
-          "Dimenzije bez stalka (ŠxVxD)": "1668MM X 163MM X 1116MM",
+          "Dimenzije sa stalkom (ŠxVxD)": "1668MM X 318MM X 1116MM",
+          "Dimenzije bez stalka (ŠxVxD)": "1668MM X 163MM X 1041MM",
           "Težina (Bruto/Netto)": "40.2 / 30.3 kg"
         }
       },
@@ -3459,7 +3482,7 @@
             "assets/TV/LED TV 32U20B-20D/1. FAVORIT TV 32U20B-20D-2.png",
             "assets/TV/LED TV 32U20B-20D/1. PHOTO -FAVORIT TV 32U20B-20D.jpg"
           ],
-          "specificationsDoc": "assets/TV/LED TV 32U20B-20D/UPATSTVO ZA MODELITE 32U20B-20D;.pdf",
+          "specificationsDoc": "assets/TV/LED TV 32U20B-20D/UPATSTVO ZA MODELITE 32U20B-20D.pdf",
           "specifications": {
             "Dijagonala": "32\"",
             "Ekran": "LED",
@@ -3726,7 +3749,7 @@
       "Metalna teleskopska cev": "√",
       "Kontrola brzine": "√",
       "Indikator pune kese za prašinu": "√",
-      "HEPA filter koji se pere": "√",
+      "Sunder filter koji se pere": "√",
       "Kapacitet posude za prašinu 2,5 litara": "√",
       "Lako pražnjenje posude za prašinu": "√",
       "Kabl od 5 metara": "√",
@@ -3750,7 +3773,7 @@
       "Metalna teleskopska cev": "√",
       "Kontrola brzine": "√",
       "Indikator pune kese za prašinu": "√",
-      "HEPA filter koji se pere": "√",
+      "Sunder filter koji se pere": "√",
       "Kapacitet posude za prašinu 2,5 litara": "√",
       "Lako pražnjenje posude za prašinu": "√",
       "Kabl od 5 metara": "√",
@@ -3837,7 +3860,7 @@
         },
         {
           "id": 162,
-          "name": "Ugradna mašina za sudove BI60-I14FN",
+          "name": "Ugradna mašina za sudove BI60-I14N",
           "description": [],
           "pictures": [
             "assets/Built In Appliances/Built-in dishwasher BI60 – I14 (fully integrated)/BI60-I14N.jpg",
@@ -3926,7 +3949,7 @@
             "assets/Home appliances/Dishwasher DW 45FS5P-9/DW 45FS5P-9.png",
             "assets/Home appliances/Dishwasher DW 45FS5P-9/DW 45FS5P-9-OTVORENA.png"
           ],
-          "specificationsDoc": "assets/Home appliances/Dishwasher DW 45FS5P-9/1. DW 45FS5P-9 & DW 45FS5P-09-S Macedonian language.pdf",
+          "specificationsDoc": "assets/Home appliances/Dishwasher DW 45FS5P-9/DW 45FS5P-9 & DW 45FS5P-09-S MK, Alb, Srb, Eng.pdf",
           "specifications": {
             "Dimenzije": "V/Š/D 845/448/600 mm",
             "MAKSIMALNI KAPACITET": "9 kompleta posuđa",
@@ -3960,7 +3983,7 @@
             "assets/Home appliances/Dishwasher DW 45FS5P-9 S/DW 45FS5P-9 S.png",
             "assets/Home appliances/Dishwasher DW 45FS5P-9 S/DW 45FS5P-9 S -otvorena.png"
           ],
-          "specificationsDoc": "assets/Home appliances/Dishwasher DW 45FS5P-9 S/1. DW 45FS5P-9 & DW 45FS5P-09-S Macedonian language.pdf",
+          "specificationsDoc": "assets/Home appliances/Dishwasher DW 45FS5P-9/DW 45FS5P-9 & DW 45FS5P-09-S MK, Alb, Srb, Eng.pdf",
           "specifications": {
             "Dimenzije": "V/Š/D 845/448/600 mm",
             "MAKSIMALNI KAPACITET": "9 kompleta posuđa",
@@ -3996,8 +4019,8 @@
             "assets/Built In Appliances/Built-in dishwasher DW 45BI7P-9/DW 45BI7P-9.png",
             "assets/Built In Appliances/Built-in dishwasher DW 45BI7P-9/DW 45BI7P-9-OTVORENA.png"
           ],
-          "specificationsDoc": "assets/Built In Appliances/Built-in dishwasher DW 45BI7P-9/3. DW 45BI7P-9 user manual Serbian language.pdf",
-          "specificationsDocExtra": "assets/Built In Appliances/Built-in dishwasher DW 45BI7P-9/3. DW 45BI7P-9 Installation Serbian language.pdf",
+          "specificationsDoc": "assets/Built In Appliances/Built-in dishwasher DW 45BI7P-9/DW 45BI7P-9 user manual - MK, Alb, Srb, Eng.pdf",
+          "specificationsDocExtra": "assets/Built In Appliances/Built-in dishwasher DW 45BI7P-9/DW 45BI7P-9 Installation - MK, Alb, Srb, Eng.pdf",
           "specifications": {
             "Dimenzije V/Š/D": "815/448/558 mm",
             "maksimalni kapacitet": "9 kompleta posuđa",
@@ -4030,8 +4053,8 @@
             "assets/Built In Appliances/Built-in dishwasher DW 60BI8P-13/DW 60BI8P-13.png",
             "assets/Built In Appliances/Built-in dishwasher DW 60BI8P-13/DW 60BI8P-13 -OTVORENA.png"
           ],
-          "specificationsDoc": "assets/Built In Appliances/Built-in dishwasher DW 60BI8P-13/1. DW 60BI8P-13 user manual -Macedonian language.pdf",
-          "specificationsDocExtra": "assets/Built In Appliances/Built-in dishwasher DW 60BI8P-13/1. DW 60BI8P-13 installation Macedonian language.pdf",
+          "specificationsDoc": "assets/Built In Appliances/Built-in dishwasher DW 60BI8P-13/DW 60BI8P-13 user manual MK, Alb, Srb, Eng.pdf",
+          "specificationsDocExtra": "assets/Built In Appliances/Built-in dishwasher DW 60BI8P-13/DW 60BI8P-13 installation MK, Alb, Srb, Eng.pdf",
           "specifications": {
             "Dimenzije V/Š/D": "815/596/558 mm",
             "maksimalni kapacitet": "13 kompleta posuđa",
@@ -4061,7 +4084,7 @@
             "assets/Home appliances/Dishwasher DW 60FS5P-13/DW 60FS5P-13.png",
             "assets/Home appliances/Dishwasher DW 60FS5P-13/DW 60FS5P-13-OTVORENA.png"
           ],
-          "specificationsDoc": "assets/Home appliances/Dishwasher DW 60FS5P-13/3. DW 60FS5P & DW 60FS5P S -13 Serbian language.pdf",
+          "specificationsDoc": "assets/Home appliances/Dishwasher DW 60FS5P-13/DW 60FS5P & DW 60FS5P S -13 MK, Alb, Srb, Eng.pdf",
           "specifications": {
             "Dimenzije": "V/Š/D 845/600/600 mm",
             "maksimalni kapacitet": "13 kompleta posuđa",
@@ -4095,7 +4118,7 @@
               "assets/Home appliances/Dishwasher DW 60FS5P-13 S/DW 60FS5P-13 S.png",
               "assets/Home appliances/Dishwasher DW 60FS5P-13 S/DW 60FS5P-13 S-otvorena.png"
           ],
-          "specificationsDoc": "assets/Home appliances/Dishwasher DW 60FS5P-13 S/3. DW 60FS5P & DW 60FS5P S -13 Serbian language.pdf",
+          "specificationsDoc": "assets/Home appliances/Dishwasher DW 60FS5P-13/DW 60FS5P & DW 60FS5P S -13 MK, Alb, Srb, Eng.pdf",
           "specifications": {
             "Dimenzije": "V/Š/D 845/600/600 mm",
             "maksimalni kapacitet": "13 kompleta posuđa",
@@ -4108,7 +4131,8 @@
             "buka pri radu": "49 dB",
             "odloženi start": "1-24 sata",
             "DRY +": "√",
-            "energetska potrošnja na 100 ciklusa": "93 kWh",
+            "energetska potrošnja": "93 kWh/100 ciklusa",
+            "potrošnja vode": "10 L vode",
             "zaštita od poplave": "√",
             "skriveni grejač": "√",
             "zaštita grejača": "√",
@@ -4122,14 +4146,52 @@
           }
         },
         {
-          "id": 171,
+          "id": 170,
           "name": "Mašina za pranje sudova DW 60FS6P3R-15",
+          "description": [],
+          "pictures": [
+            "assets/Home appliances/Dishwasher DW 60FS6P3R-15/DW 60FS6P3R-15.png",
+            "assets/Home appliances/Dishwasher DW 60FS6P3R-15/DW 60FS6P3R-15-otvorena.png"
+          ],
+          "specificationsDoc": "assets/Home appliances/Dishwasher DW 60FS6P3R-15/DW60FS6P3R-15 & DW60FS6P3R-15 X MK, Alb, Srb, Eng.pdf",
+          "specifications": {
+            "Dimenzije": "V/Š/D 845/600/600 mm",
+            "maksimalni kapacitet": "15 kompleta sudova",
+            "programi": "6",
+            "3. korpa": "√",
+            "3 nivoa pranja sa 3 prskalice": "√",
+            "LED displej": "√",
+            "Automatsko otvaranje vrata po završetku": "√",
+            "brzi program": "√",
+            "dugme za polovično (1/2) punjenje": "√",
+            "energetska klasa": "D",
+            "klasa sušenja": "A",
+            "buka pri radu": "49 dB",
+            "DRY +": "√",
+            "odloženi start": "1-24 sata",
+            "POTROŠNJA ENERGIJE": "86 kWh/100 ciklusa",
+            "POTROŠNJA VODE": "11 L vode",
+            "zaštita od poplave": "√",
+            "skriveni grejač": "√",
+            "zaštita grejača": "√",
+            "metalni filter": "√",
+            "BOJA": "BELA",
+            "ON/OFF DUGME": "√",
+            "START/PAUZA DUGME": "√",
+            "INDIKATOR FUNKCIJE PRANJA": "√",
+            "INDIKATOR NEDOSTATKA SOLI": "√",
+            "INDIKATOR NEDOSTATKA SJAJA": "√"
+          }
+        },
+        {
+          "id": 171,
+          "name": "Mašina za pranje sudova DW 60FS6P3R-15 X",
           "description": [],
           "pictures": [
               "assets/Home appliances/Dishwasher DW 60FS6P3R-15 X/DW 60FS6P3R-15 X.png",
               "assets/Home appliances/Dishwasher DW 60FS6P3R-15 X/DW 60FS6P3R-15 X- otvorena.png"
           ],
-          "specificationsDoc": "assets/Home appliances/Dishwasher DW 60FS6P3R-15/1. DW60FS6P3R-15 & DW60FS6P3R-15 X Macedonia languagen.pdf",
+          "specificationsDoc": "assets/Home appliances/Dishwasher DW 60FS6P3R-15/DW60FS6P3R-15 & DW60FS6P3R-15 X MK, Alb, Srb, Eng.pdf",
           "specifications": {
             "Dimenzije": "V/Š/D 845/600/600 mm",
             "maksimalni kapacitet": "15 kompleta posuđa",
@@ -4171,7 +4233,7 @@
             "DIMENZIJE (V/Š/D)": "850/595/495 mm",
             "MAKSIMALNA BRZINA CENTRIFUGE (RPM)": "1200",
             "MAKSIMALNI KAPACITET": "7 kg",
-            "INOX BUBANJ": "50 L",
+            "INOX BUBANJ": "49 L",
             "INVERTER MOTOR": "√ (10 GODINA GARANCIJE)",
             "DIGITALNI LED DISPLEJ": "√",
             "ODLOŽENI START": "3-24 h",
@@ -4182,8 +4244,8 @@
             "DRUM CLEAN PROGRAM": "√",
             "STEAM ASSIST PROGRAM": "√",
             "DEČIJA ZAŠTITA": "√",
-            "POTROŠNJA ENERGIJE": "40 kWh/ciklus",
-            "POTROŠNJA VODE": "44 L/ciklus",
+            "POTROŠNJA ENERGIJE": "45 kWh/100 ciklusa",
+            "POTROŠNJA VODE": "45 L/ciklus",
             "NIVO BUKE PRI PRANJU": "62 dB",
             "NIVO BUKE PRI CENTRIFUGI": "76 dB",
             "SUPER BRZI PROGRAM": "15 minuta na 30°",
@@ -4193,7 +4255,7 @@
         },
         {
           "id": 173,
-          "name": "Mašina za pranje veša WM801400-63 BLDC",
+          "name": "Mašina za pranje veša WM801400-063 BLDC",
           "description": [],
           "pictures": [
             "assets/Home appliances/WASHING MACHINE WM801400-63 BLDC/WM801400-063 BLDC (1).png",
@@ -4217,7 +4279,7 @@
             "ZAŠTITA OD PENE": "√",
             "SISTEM ZA OTKRIVANJE GREŠAKA": "√",
             "DEČIJA ZAŠTITA": "√",
-            "POTROŠNJA ENERGIJE": "42 kWh/ciklus",
+            "POTROŠNJA ENERGIJE": "42 kWh/100 ciklusa",
             "POTROŠNJA VODE": "48 L/ciklus",
             "NIVO BUKE PRI PRANJU": "62 dB",
             "NIVO BUKE PRI CENTRIFUGI": "76 dB",
@@ -4257,14 +4319,14 @@
             "STEAM ASSIST PROGRAM": "√",
             "DEČIJA ZAŠTITA": "√",
             "SISTEM ZA OTKRIVANJE GREŠAKA": "√",
-            "POTROŠNJA ENERGIJE": "44 kWh/ciklus",
+            "POTROŠNJA ENERGIJE": "44 kWh/100 ciklusa",
             "POTROŠNJA VODE": "50 L/ciklus",
             "NIVO BUKE PRI PRANJU": "62 dB",
             "NIVO BUKE PRI CENTRIFUGI": "76 dB",
             "SUPER BRZI PROGRAM": "15 minuta na 30°",
             "DUGME ZA KONTROLU BRZINE": "√",
             "PROGRAM SA PRETPRANJEM PAMUKA": "√",
-            "BRUTO/NETO TEŽINA": "67/64 kg"
+            "BRUTO/NETO TEŽINA": "66/63 kg"
           }
         },
         {
@@ -4325,7 +4387,7 @@
           "description": [],
           "pictures": [
             "assets/Home appliances/VERTICAL FREEZER FU 168/FU 168 Exterior.png",
-            "assets/Home appliances/VERTICAL FREEZER FU 168/FU 168 Interior.jpg"
+            "assets/Home appliances/VERTICAL FREEZER FU 168/FU 168 Interior.png"
           ],
           "specificationsDoc": "assets/Home appliances/VERTICAL FREEZER FU 168/Upatsvo FU 168.pdf",
           "specifications": {
@@ -4540,7 +4602,7 @@
           "name": "Ugradni Frižider BIBMF 249",
           "description": [],
           "pictures": [
-            "assets/Built In Appliances/Built-in refrigerator BIBMF 249/BIBMF 249 Exterior.jpg",
+            "assets/Built In Appliances/Built-in refrigerator BIBMF 249/BIBMF 249 Exterior.png",
             "assets/Built In Appliances/Built-in refrigerator BIBMF 249/BIBMF 249 Interior.png"
           ],
           "specificationsDoc": "assets/Built In Appliances/Built-in refrigerator BIBMF 249/Upatsvo BIBMF 249.pdf",
@@ -4563,6 +4625,4 @@
             "GAS": "P600"
           }
         }
-
-        
 ]

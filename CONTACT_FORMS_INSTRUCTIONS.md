@@ -148,7 +148,7 @@ So the contact and service centre forms will work only if you deploy the content
 ### Testing after deploy (favoritelectronics.com)
 
 - **Contact form:** Open [https://favoritelectronics.com/browser/contact](https://favoritelectronics.com/browser/contact), fill and submit. Check inbox of **favoritelectro@favoritelectronics.com**.
-- **Service centre form:** Open [https://favoritelectronics.com/browser/service-centers](https://favoritelectronics.com/browser/service-centers), fill and submit. Check inbox of **servis@centrounion.com.mk**.
+- **Service centre form:** Open [https://favoritelectronics.com/browser/service-centers](https://favoritelectronics.com/browser/service-centers), fill and submit. Emails go to **servis@centrounion.com.mk**.
 
 If the request fails (e.g. 404), confirm the PHP files are in the document root and that your server executes `.php` files.
 

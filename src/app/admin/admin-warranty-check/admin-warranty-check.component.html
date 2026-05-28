@@ -8,17 +8,19 @@
     <div class="search-tabs">
       <button type="button" [class.active]="searchType === 'serial'" (click)="searchType = 'serial'">{{ t.searchBySerial }}</button>
       <button type="button" [class.active]="searchType === 'email'" (click)="searchType = 'email'">{{ t.searchByEmail }}</button>
+      <button type="button" [class.active]="searchType === 'phone'" (click)="searchType = 'phone'">{{ t.searchByPhone }}</button>
     </div>
     <div class="search-row">
       <input
         type="text"
         [(ngModel)]="searchValue"
-        [placeholder]="searchType === 'serial' ? t.serialNumber : t.email"
+        [placeholder]="searchType === 'serial' ? t.serialNumber : (searchType === 'phone' ? t.phone : t.email)"
         (keyup.enter)="onSearch()"
         class="search-input"
       />
-      <button type="button" class="btn-search" (click)="onSearch()" [disabled]="loading">{{ t.search }}</button>
-      <button type="button" class="btn-all" (click)="loadAll()" [disabled]="loading">{{ t.showAll }}</button>
+      <button type="button" class="btn-search" (click)="onSearch()" [disabled]="loading || downloadingCsv">{{ t.search }}</button>
+      <button type="button" class="btn-all" (click)="loadAll()" [disabled]="loading || downloadingCsv">{{ t.showAll }}</button>
+      <button type="button" class="btn-csv" (click)="downloadCsv()" [disabled]="loading || downloadingCsv">{{ downloadingCsv ? (t.downloadingCsv || 'Downloading...') : (t.downloadCsv || 'Download CSV') }}</button>
     </div>
 
     <div class="filters-toggle">
@@ -99,6 +101,10 @@
     <p class="no-results" *ngIf="!loading && results.length === 0">{{ t.noResults }}</p>
     <div class="results-list" *ngIf="!loading && results.length > 0">
       <div class="result-card" *ngFor="let r of results">
+        <div class="result-card-header">
+          <span class="result-card-title">{{ r.first_name || r.customer_name || '' }} {{ r.last_name || '' }} – {{ r.serial_number }}</span>
+          <button type="button" class="btn-edit" *ngIf="r.id && canEditWarranty" (click)="openEdit(r)" [title]="t.edit">{{ t.edit }}</button>
+        </div>
         <div class="row">
           <strong>{{ t.name }}:</strong> {{ r.first_name || r.customer_name || '' }} {{ r.last_name || '' }}
         </div>
@@ -138,6 +144,90 @@
         <div class="row muted">
           <strong>{{ t.registered }}:</strong> {{ formatDateTime(r.created_at) }}
         </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Edit submission modal -->
+  <div class="modal-backdrop" *ngIf="editingSubmission" (click)="closeEdit()"></div>
+  <div class="modal edit-modal" *ngIf="editingSubmission" role="dialog" aria-labelledby="edit-modal-title">
+    <div class="modal-content" (click)="$event.stopPropagation()">
+      <div class="modal-header">
+        <h2 id="edit-modal-title">{{ t.editSubmission }}</h2>
+        <button type="button" class="modal-close" (click)="closeEdit()" [attr.aria-label]="t.cancel">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p class="edit-message success" *ngIf="editSuccess">{{ editMessage }}</p>
+        <p class="edit-message error" *ngIf="!editSuccess && editMessage">{{ editMessage }}</p>
+        <div class="edit-form-grid">
+          <div class="edit-field">
+            <label>{{ t.firstName }}</label>
+            <input type="text" [(ngModel)]="editForm.first_name" />
+          </div>
+          <div class="edit-field">
+            <label>{{ t.lastName }}</label>
+            <input type="text" [(ngModel)]="editForm.last_name" />
+          </div>
+          <div class="edit-field edit-field-full">
+            <label>{{ t.address }}</label>
+            <input type="text" [(ngModel)]="editForm.address" />
+          </div>
+          <div class="edit-field">
+            <label>{{ t.city }}</label>
+            <input type="text" [(ngModel)]="editForm.city" />
+          </div>
+          <div class="edit-field">
+            <label>{{ t.postalCode }}</label>
+            <input type="text" [(ngModel)]="editForm.postal_code" />
+          </div>
+          <div class="edit-field">
+            <label>{{ t.phone }}</label>
+            <input type="tel" [(ngModel)]="editForm.phone" />
+          </div>
+          <div class="edit-field edit-field-full">
+            <label>{{ t.email }}</label>
+            <input type="email" [(ngModel)]="editForm.email" />
+          </div>
+          <div class="edit-field">
+            <label>{{ t.deviceType }}</label>
+            <select [(ngModel)]="editForm.device_type">
+              <option value="">{{ t.selectDeviceType }}</option>
+              <option *ngFor="let key of deviceTypeOptions" [value]="key">{{ t.deviceTypes[key] || key }}</option>
+            </select>
+          </div>
+          <div class="edit-field">
+            <label>{{ t.deviceModel }}</label>
+            <input type="text" [(ngModel)]="editForm.device_model" />
+          </div>
+          <div class="edit-field">
+            <label>{{ t.serialNumber }}</label>
+            <input type="text" [(ngModel)]="editForm.serial_number" />
+          </div>
+          <div class="edit-field">
+            <label>{{ t.purchaseDate }}</label>
+            <input type="date" [(ngModel)]="editForm.purchase_date" />
+          </div>
+          <div class="edit-field">
+            <label>{{ t.placeOfPurchase }}</label>
+            <input type="text" [(ngModel)]="editForm.place_of_purchase" />
+          </div>
+          <div class="edit-field">
+            <label>{{ t.cityOfPurchase }}</label>
+            <input type="text" [(ngModel)]="editForm.city_of_purchase" />
+          </div>
+          <div class="edit-field edit-field-full">
+            <label>{{ t.fiscalReceipt }}</label>
+            <input type="text" [(ngModel)]="editForm.fiscal_receipt_number" />
+          </div>
+          <div class="edit-field edit-field-full" *ngIf="editForm.receipt_image_url">
+            <label>{{ t.receiptImage }}</label>
+            <input type="url" [(ngModel)]="editForm.receipt_image_url" placeholder="URL" />
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn-cancel" (click)="closeEdit()">{{ t.cancel }}</button>
+        <button type="button" class="btn-save" (click)="saveEdit()" [disabled]="savingEdit">{{ savingEdit ? t.saving : t.save }}</button>
       </div>
     </div>
   </div>

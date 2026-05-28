@@ -3,6 +3,7 @@
   "signOut": "Одјава",
   "searchBySerial": "По сериски број",
   "searchByEmail": "По е-пошта",
+  "searchByPhone": "По телефон",
   "serialNumber": "Сериски број",
   "email": "Е-пошта",
   "search": "Пребарај",
@@ -34,6 +35,17 @@
   "applyFilters": "Примени филтри",
   "deviceModelPlaceholder": "Внеси или избери модел",
   "modelsListTitle": "Избери модел",
+  "edit": "Измени",
+  "editSubmission": "Измени пријава за гаранција",
+  "cancel": "Откажи",
+  "save": "Зачувај",
+  "saving": "Се зачувува...",
+  "editSaved": "Промените се зачувани.",
+  "editError": "Неуспешно зачувување. Обидете се повторно.",
+  "firstName": "Име",
+  "lastName": "Презиме",
+  "postalCode": "Поштенски број",
+  "selectDeviceType": "Изберете вид на уред",
   "deviceTypes": {
     "home-appliances": "Бела техника",
     "refrigerator": "Фрижидер",
@@ -45,5 +57,7 @@
     "air_conditioner": "Клима уред",
     "small_appliance": "Мала направа",
     "other": "Друго"
-  }
+  },
+  "downloadCsv": "Преземи CSV (табела)",
+  "downloadingCsv": "Се презема..."
 }

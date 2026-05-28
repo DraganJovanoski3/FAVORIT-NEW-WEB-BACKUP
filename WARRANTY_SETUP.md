@@ -90,9 +90,11 @@ update public.profiles set role = 'admin' where email = 'your-admin@example.com'
 |-----|-------------|
 | `/warranty-register` | Public form – customers submit warranty data |
 | `/admin/login` | Admin sign in |
-| `/admin/warranty-check` | Admin panel – search by serial or email, view all |
+| `/admin/warranty-check` | Admin panel – search by serial or email, view all, **edit submissions** |
 
-Footer link “Warranty Registration” points to `/warranty-register`. Admin panel is only for logged-in users with `role = 'admin'` in `profiles`.
+Footer link “Warranty Registration” points to `/warranty-register`. Admin panel is only for logged-in users with `role = 'admin'` in `profiles`. On the warranty-check page, admins can click **Edit** on any submission to change customer data; changes are saved to the database.
+
+**Existing projects:** If you already ran `supabase-warranty-setup.sql` before the admin-edit feature was added, run **`supabase-warranty-allow-admin-update.sql`** in the SQL Editor once to allow admins to update warranty submissions.
 
 ## 6. Build & run
 

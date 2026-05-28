@@ -509,6 +509,14 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
             backgroundColorproduct:'linear-gradient(#ffa87d 0%,#ffffff 90%,#ffffff 100%)'
           },
           {
+            id: 192,
+            name: this.productTranslations['192'] ||'Electric Stove EC 60-4 W',
+            picture: '',
+            pictureHover: '',
+            subcategory: stovesLabel,
+            backgroundColorproduct:'linear-gradient(#ffa87d 0%,#ffffff 90%,#ffffff 100%)'
+          },
+          {
             id: 7,
             name: this.productTranslations['7'] ||'Combined Cooker К 622 WWFT',
             picture: 'assets/Home appliances/COMBINED FREESTANDING COOKERS К 622 WWFT/FAVORIT-K-622-WWFT-10-1-1024x576.png',  
@@ -517,9 +525,25 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
             backgroundColorproduct: 'linear-gradient(#ffa87d 0%,#ffffff 90%,#ffffff 100%)'
           },
           {
+            id: 193,
+            name: this.productTranslations['193'] ||'Electric Stove EC 60-4 WF',
+            picture: '',
+            pictureHover: '',
+            subcategory: stovesLabel,
+            backgroundColorproduct: 'linear-gradient(#ffa87d 0%,#ffffff 90%,#ffffff 100%)'
+          },
+          {
             id: 23,
             name: this.productTranslations['23'] ||'Electric Cooker EC 640 WWF',
             picture: 'assets/Home appliances/Electric Freestanding Cooker EC 640 WWF/FAVORIT-EC-640-WWF-10-1024x576.png',  
+            pictureHover: '',
+            subcategory: stovesLabel,
+            backgroundColorproduct: 'linear-gradient(#ffa87d 0%,#ffffff 90%,#ffffff 100%)'
+          },
+          {
+            id: 194,
+            name: this.productTranslations{'194'} ||'Electric Stove CC 60-22 W',
+            picture: '',
             pictureHover: '',
             subcategory: stovesLabel,
             backgroundColorproduct: 'linear-gradient(#ffa87d 0%,#ffffff 90%,#ffffff 100%)'
@@ -533,6 +557,14 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
             backgroundColorproduct: 'linear-gradient(#ffa87d 0%,#ffffff 90%,#ffffff 100%)'
           },
           {
+            id: 195,
+            name: this.productTranslations['195'] ||'Electric Stove EC 60-4 SF',
+            picture: '',
+            pictureHover: '',
+            subcategory: stovesLabel,
+            backgroundColorproduct: 'linear-gradient(#ffa87d 0%,#ffffff 90%,#ffffff 100%)'
+          },
+          {
             id: 9,
             name: this.productTranslations['9'] ||'COMBINED COOKER K 622 SF',
             picture: 'assets/Home appliances/COMBINED INDEPENDENT COOKER К 622 SF/FAVORIT-K-622-SF-10-1024x576.png',  
@@ -541,17 +573,42 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
             backgroundColorproduct: 'linear-gradient(#ffa87d 0%,#ffffff 90%,#ffffff 100%)'
           },
           {
-            id: 26,
-            name: this.productTranslations['26'] ||'Electric Independent Cooker EC 540 WWFT',
-            picture: 'assets/Home appliances/Electric Independent Cooker EC 540 WWFT/Elektricen-sporet-EC-540-WWFT-44-1024x576.png',  pictureHover: 'assets/',
+            id: 196,
+            name: this.productTranslations['196'] ||'Electric Stove CC 60-22 SF',
+            picture: '',
+            pictureHover: '',
             subcategory: stovesLabel,
             backgroundColorproduct: 'linear-gradient(#ffa87d 0%,#ffffff 90%,#ffffff 100%)'
           },
-          // KEEP
+          {
+            id: 26,
+            name: this.productTranslations['26'] ||'Electric Independent Cooker EC 540 WWFT',
+            picture: 'assets/Home appliances/Electric Independent Cooker EC 540 WWFT/Elektricen-sporet-EC-540-WWFT-44-1024x576.png',  
+            pictureHover: 'assets/',
+            subcategory: stovesLabel,
+            backgroundColorproduct: 'linear-gradient(#ffa87d 0%,#ffffff 90%,#ffffff 100%)'
+          },
+          {
+            id: 197,
+            name: this.productTranslations['197'] ||'Electric Stove EC 50-4 W',
+            picture: '',
+            pictureHover: '',
+            subcategory: stovesLabel,
+            backgroundColorproduct: 'linear-gradient(#ffa87d 0%,#ffffff 90%,#ffffff 100%)'
+          },
           {
             id: 25,
             name: this.productTranslations['25'] ||'Electric Independent Cooker EC 540 SF',
-            picture: 'assets/Home appliances/Electric Independent Cooker EC 540 SF/Elektricen-sporet-EC-540-SF-43-1024x576.png',  pictureHover: 'assets/',
+            picture: 'assets/Home appliances/Electric Independent Cooker EC 540 SF/Elektricen-sporet-EC-540-SF-43-1024x576.png',  
+            pictureHover: 'assets/',
+            subcategory: stovesLabel,
+            backgroundColorproduct: 'linear-gradient(#ffa87d 0%,#ffffff 90%,#ffffff 100%)'
+          },
+          {
+            id: 198,
+            name: this.productTranslations['198'] ||'Electric Stove EC 50-4 W',
+            picture: '',
+            pictureHover: '',
             subcategory: stovesLabel,
             backgroundColorproduct: 'linear-gradient(#ffa87d 0%,#ffffff 90%,#ffffff 100%)'
           },
@@ -645,52 +702,10 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
         this.products = [
           // DISHWASHERS
           {
-            id: 170,
-            name: this.productTranslations['170'] ||'Dishwasher DW 60FS6P3R-15',
-            picture: 'assets/Home appliances/Dishwasher DW 60FS6P3R-15/DW 60FS6P3R-15.png',
-            pictureHover: 'assets/Home appliances/Dishwasher DW 60FS6P3R-15/DW 60FS6P3R-15-otvorena.png',
-            subcategory: dishwashersLabel, 
-            backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
-          },
-          {
-            id: 171,
-            name: this.productTranslations['171'] ||'Dishwasher DW 60FS6P3R-15 X',
-            picture: 'assets/Home appliances/Dishwasher DW 60FS6P3R-15 X/DW 60FS6P3R-15 X.png',
-            pictureHover: 'assets/Home appliances/Dishwasher DW 60FS6P3R-15 X/DW 60FS6P3R-15 X- otvorena.png',
-            subcategory: dishwashersLabel, 
-            backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
-          },
-          {
-            // KEEP
-            id: 15,
-            name: this.productTranslations['15'] ||'Dishwasher E60-A1FN',
-            picture: 'assets/Home appliances/Dishwasher E60-A1FN/RABOTEN-16.9-31-1024x576.png',  
-            pictureHover: 'assets/Home appliances/Dishwasher E60-A1FN/RABOTEN-16.9-34-1024x576.png',
-            subcategory: dishwashersLabel, 
-            backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
-          },
-          {
-            // KEEP
-            id: 136,
-            name: this.productTranslations['136'] ||'Dishwasher E60-A1FN X',
-            picture: 'assets/Home appliances/Dishwasher E60-A1FN X/RABOTEN-16.9-33-1024x576.png',  
-            pictureHover: 'assets/Home appliances/Dishwasher E60-A1FN X/RABOTEN-16.9-30-1024x576.png',
-            subcategory: dishwashersLabel, 
-            backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
-          },
-          {
             id: 164,
             name: this.productTranslations['164'] ||'Dishwasher DW 45FS5P-9',
             picture: 'assets/Home appliances/Dishwasher DW 45FS5P-9/DW 45FS5P-9.png',  
             pictureHover: 'assets/Home appliances/Dishwasher DW 45FS5P-9/DW 45FS5P-9-OTVORENA.png',
-            subcategory: dishwashersLabel, 
-            backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
-          },
-          {
-            id: 165,
-            name: this.productTranslations['165'] ||'Dishwasher DW 45FS5P-9 S',
-            picture: 'assets/Home appliances/Dishwasher DW 45FS5P-9 S/DW 45FS5P-9 S.png',  
-            pictureHover: 'assets/Home appliances/Dishwasher DW 45FS5P-9 S/DW 45FS5P-9 S -otvorena.png',
             subcategory: dishwashersLabel, 
             backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
           },
@@ -700,6 +715,14 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
             name: this.productTranslations['142'] ||'Dishwasher F45 – Y15N',
             picture: 'assets/Home appliances/Dishwasher F45 – Y15N/F45-Y15-S-04-1024x576.png',  
             pictureHover: 'assets/Home appliances/Dishwasher F45 – Y15N/F45-Y15-S-05-1024x576.png',
+            subcategory: dishwashersLabel, 
+            backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
+          },
+          {
+            id: 165,
+            name: this.productTranslations['165'] ||'Dishwasher DW 45FS5P-9 S',
+            picture: 'assets/Home appliances/Dishwasher DW 45FS5P-9 S/DW 45FS5P-9 S.png',  
+            pictureHover: 'assets/Home appliances/Dishwasher DW 45FS5P-9 S/DW 45FS5P-9 S -otvorena.png',
             subcategory: dishwashersLabel, 
             backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
           },
@@ -721,14 +744,6 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
             backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
           },
           {
-            id: 169,
-            name: this.productTranslations['169'] ||'Dishwasher DW 60FS5P-13 S',
-            picture: 'assets/Home appliances/Dishwasher DW 60FS5P-13 S/DW 60FS5P-13 S.png',
-            pictureHover: 'assets/Home appliances/Dishwasher DW 60FS5P-13 S/DW 60FS5P-13 S-otvorena.png',
-            subcategory: dishwashersLabel, 
-            backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
-          },
-          {
             // KEEP
             id: 18,
             name: this.productTranslations['18'] ||'Dishwasher F60 – Y14N',
@@ -738,11 +753,53 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
             backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
           },
           {
+            id: 169,
+            name: this.productTranslations['169'] ||'Dishwasher DW 60FS5P-13 S',
+            picture: 'assets/Home appliances/Dishwasher DW 60FS5P-13 S/DW 60FS5P-13 S.png',
+            pictureHover: 'assets/Home appliances/Dishwasher DW 60FS5P-13 S/DW 60FS5P-13 S-otvorena.png',
+            subcategory: dishwashersLabel, 
+            backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
+          },
+          {
             // KEEP
             id: 135,
             name: this.productTranslations['135'] ||'Dishwasher F60 – Y14N S',
             picture: 'assets/Home appliances/Dishwasher F60 – Y14N S/F60-Y14_S-04.png',  
             pictureHover: 'assets/Home appliances/Dishwasher F60 – Y14N S/F60-Y14_S-05.png',
+            subcategory: dishwashersLabel, 
+            backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
+          },
+          {
+            id: 170,
+            name: this.productTranslations['170'] ||'Dishwasher DW 60FS6P3R-15',
+            picture: 'assets/Home appliances/Dishwasher DW 60FS6P3R-15/DW 60FS6P3R-15.png',
+            pictureHover: 'assets/Home appliances/Dishwasher DW 60FS6P3R-15/DW 60FS6P3R-15-otvorena.png',
+            subcategory: dishwashersLabel, 
+            backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
+          },
+          {
+            // KEEP
+            id: 15,
+            name: this.productTranslations['15'] ||'Dishwasher E60-A1FN',
+            picture: 'assets/Home appliances/Dishwasher E60-A1FN/RABOTEN-16.9-31-1024x576.png',  
+            pictureHover: 'assets/Home appliances/Dishwasher E60-A1FN/RABOTEN-16.9-34-1024x576.png',
+            subcategory: dishwashersLabel, 
+            backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
+          },
+          {
+            id: 171,
+            name: this.productTranslations['171'] ||'Dishwasher DW 60FS6P3R-15 X',
+            picture: 'assets/Home appliances/Dishwasher DW 60FS6P3R-15 X/DW 60FS6P3R-15 X.png',
+            pictureHover: 'assets/Home appliances/Dishwasher DW 60FS6P3R-15 X/DW 60FS6P3R-15 X- otvorena.png',
+            subcategory: dishwashersLabel, 
+            backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
+          },
+          {
+            // KEEP
+            id: 136,
+            name: this.productTranslations['136'] ||'Dishwasher E60-A1FN X',
+            picture: 'assets/Home appliances/Dishwasher E60-A1FN X/RABOTEN-16.9-33-1024x576.png',  
+            pictureHover: 'assets/Home appliances/Dishwasher E60-A1FN X/RABOTEN-16.9-30-1024x576.png',
             subcategory: dishwashersLabel, 
             backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
           },
@@ -838,7 +895,7 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
             id: 177,
             name: this.productTranslations['177'] ||'VERTICAL FREEZER FU 168',
             picture: 'assets/Home appliances/VERTICAL FREEZER FU 168/FU 168 Exterior.png',
-            pictureHover: 'assets/Home appliances/VERTICAL FREEZER FU 168/FU 168 Interior.jpg',
+            pictureHover: 'assets/Home appliances/VERTICAL FREEZER FU 168/FU 168 Interior.png',
             subcategory: verticalFreezerLabel, 
             backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
           },
@@ -848,15 +905,6 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
             name: this.productTranslations['43'] ||'VERTICAL FREEZER F2451N',
             picture: 'assets/Home appliances/VERTICAL FREEZER F 2451N/FAVORIT-F-2451-01-1024x576.png',  
             pictureHover: 'assets/Home appliances/VERTICAL FREEZER F 2451N/FAVORIT-F-2451-02-1024x576.png',
-            subcategory: verticalFreezerLabel, 
-            backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
-          },
-          {
-            // KEEP
-            id: 41,
-            name: this.productTranslations['41'] ||'VERTICAL FREEZER F2451E',
-            picture: 'assets/Home appliances/TWO CHAMBER REFRIGERATOR RF 263N/FAVORIT-RF-263-01-3-1024x576.png',  
-            pictureHover: 'assets/Home appliances/TWO CHAMBER REFRIGERATOR RF 263N/FAVORIT-RF-263-02-1024x576.png',
             subcategory: verticalFreezerLabel, 
             backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
           },
@@ -873,6 +921,15 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
             name: this.productTranslations['179'] ||'TWO CHAMBER REFRIGERATOR RTMF 206 S',
             picture: 'assets/Home appliances/TWO CHAMBER REFRIGERATOR RTMF 206 S/RTMF 206 S Exterior.png',  
             pictureHover: 'assets/Home appliances/TWO CHAMBER REFRIGERATOR RTMF 206 S/RTMF 206 S Interior.png',
+            subcategory: verticalFreezerLabel, 
+            backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
+          },
+          {
+            // KEEP
+            id: 41,
+            name: this.productTranslations['41'] ||'VERTICAL FREEZER RF 263E',
+            picture: 'assets/Home appliances/TWO CHAMBER REFRIGERATOR RF 263N/FAVORIT-RF-263-01-3-1024x576.png',  
+            pictureHover: 'assets/Home appliances/TWO CHAMBER REFRIGERATOR RF 263N/FAVORIT-RF-263-02-1024x576.png',
             subcategory: verticalFreezerLabel, 
             backgroundColorproduct: 'linear-gradient(#84daff 0%, #ffffff 90%, #ffffff 100%)'
           },
@@ -1051,10 +1108,26 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
           //   backgroundColorproduct: 'linear-gradient(#9f9f9f 0%, #ffffff 90%, #ffffff 100%)'
           // },
           {
+            id: 63,
+            name: this.productTranslations['63'] ||'Built-in dishwasher BI45-I1EN',
+            picture: 'assets/Built In Appliances/Built-in dishwasher BI45-I1E (fully integrated)/BI-45-I1E-08-1024x576.png',
+            pictureHover: 'assets/Built In Appliances/Built-in dishwasher BI45-I1E (fully integrated)/BI-45-I1E-07-1024x576.png',
+            subcategory: fullyBuiltInDishwashersLabel,
+            backgroundColorproduct: 'linear-gradient(#9f9f9f 0%, #ffffff 90%, #ffffff 100%)'
+          },
+          {
             id: 167,
             name: this.productTranslations['167'] ||'Built-in dishwasher DW 60BI8P-13',
             picture: 'assets/Built In Appliances/Built-in dishwasher DW 60BI8P-13/DW 60BI8P-13.png',
             pictureHover: 'assets/Built In Appliances/Built-in dishwasher DW 60BI8P-13/DW 60BI8P-13 -OTVORENA.png',
+            subcategory: fullyBuiltInDishwashersLabel,
+            backgroundColorproduct: 'linear-gradient(#9f9f9f 0%, #ffffff 90%, #ffffff 100%)'
+          },
+                    {
+            id: 162,
+            name: this.productTranslations['162'] ||'Built-in dishwasher BI60-I14FN',
+            picture: 'assets/Built In Appliances/Built-in dishwasher BI60 – I14 (fully integrated)/BI60-I14N.jpg',
+            pictureHover: 'assets/Built In Appliances/Built-in dishwasher BI60 – I14 (fully integrated)/BI60-I14N-OPEND.png',
             subcategory: fullyBuiltInDishwashersLabel,
             backgroundColorproduct: 'linear-gradient(#9f9f9f 0%, #ffffff 90%, #ffffff 100%)'
           },
@@ -1063,15 +1136,6 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
             name: this.productTranslations['65'] ||'Built-in dishwasher BI60 – I14N',
             picture: 'assets/Built In Appliances/Built-in dishwasher FAVORIT BI60-I1FN/BI60-I1FN.jpg',  
             pictureHover: 'assets/Built In Appliances/Built-in dishwasher FAVORIT BI60-I1FN/BI60-I1FN-OPEN DOOR.png',
-            subcategory: fullyBuiltInDishwashersLabel,
-            backgroundColorproduct: 'linear-gradient(#9f9f9f 0%, #ffffff 90%, #ffffff 100%)'
-
-          },
-          {
-            id: 162,
-            name: this.productTranslations['162'] ||'Built-in dishwasher BI60-I14FN',
-            picture: 'assets/Built In Appliances/Built-in dishwasher BI60 – I14 (fully integrated)/BI60-I14N.jpg',
-            pictureHover: 'assets/Built In Appliances/Built-in dishwasher BI60 – I14 (fully integrated)/BI60-I14N-OPEND.png',
             subcategory: fullyBuiltInDishwashersLabel,
             backgroundColorproduct: 'linear-gradient(#9f9f9f 0%, #ffffff 90%, #ffffff 100%)'
           }
@@ -1222,7 +1286,7 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
           {
             id: 185,
             name: this.productTranslations['185'] ||'Built-in refrigerator BIBMF 249',
-            picture: 'assets/Built In Appliances/Built-in refrigerator BIBMF 249/BIBMF 249 Exterior.jpg',
+            picture: 'assets/Built In Appliances/Built-in refrigerator BIBMF 249/BIBMF 249 Exterior.png',
             pictureHover: 'assets/Built In Appliances/Built-in refrigerator BIBMF 249/BIBMF 249 Interior.png',
             subcategory: builtInFridgesLabel,
             backgroundColorproduct: 'linear-gradient(#9f9f9f 0%, #ffffff 90%, #ffffff 100%)'

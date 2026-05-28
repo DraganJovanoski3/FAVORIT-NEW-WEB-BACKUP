@@ -10,7 +10,7 @@ When a customer submits the warranty registration form:
 
 1. Data is saved to Supabase (unchanged).
 2. If `warrantyConfirmationApiUrl` is set in the Angular environment, the app calls this endpoint with the submission data.
-3. This script sends an email **to the customer** from `warranty_confirmation@favoritelectronics.com` saying the warranty extension is in effect (if details are correct) and listing what they entered as a reminder.
+3. This script sends an email **to the customer** from `no_reply@favoritelectronics.com` saying the warranty extension is in effect (if details are correct) and listing what they entered as a reminder.
 
 ## Setup
 
@@ -48,7 +48,7 @@ In **production** set the API URL:
 
 ### 3. Emails not arriving (e.g. Gmail)? Use SMTP
 
-PHP `mail()` often does not deliver to Gmail/Outlook. To fix: copy **config.smtp.example.php** to **config.smtp.php** in the same folder, edit it with your WebMail SMTP (host e.g. mail.favoritelectronics.com, port 587, username warranty_confirmation@favoritelectronics.com, password), then upload both the script and config.smtp.php. The script will then send via SMTP.
+PHP `mail()` often does not deliver to Gmail/Outlook. To fix: copy **config.smtp.example.php** to **config.smtp.php** in the same folder, set the password for **no_reply@favoritelectronics.com** (host: mail.favoritelectronics.com, SMTP port: 465, SSL), then upload both the script and config.smtp.php. The script will then send via SMTP.
 - **If using SMTP**: If `mail()` does not work or you want to use your WebMail account, replace the `mail()` call with your host’s SMTP or a library like **PHPMailer** and use the same “from” address and credentials you use in WebMail.
 
 ### 4. CORS (if API is on another domain)

@@ -105,6 +105,17 @@ export class SupabaseService {
     return (data || []) as WarrantySubmission[];
   }
 
+  async searchWarrantyByPhone(phone: string): Promise<WarrantySubmission[]> {
+    if (!this.supabase) return [];
+    const { data, error } = await this.supabase
+      .from('warranty_submissions')
+      .select('*')
+      .ilike('phone', `%${phone}%`)
+      .order('created_at', { ascending: false });
+    if (error) return [];
+    return (data || []) as WarrantySubmission[];
+  }
+
   async getAllWarrantySubmissions(limit = 100): Promise<WarrantySubmission[]> {
     if (!this.supabase) return [];
     const { data, error } = await this.supabase
@@ -114,6 +125,60 @@ export class SupabaseService {
       .limit(limit);
     if (error) return [];
     return (data || []) as WarrantySubmission[];
+  }
+
+  /** Fetch all warranty submissions in pages for exports/reports. */
+  async getAllWarrantySubmissionsPaged(pageSize = 1000): Promise<WarrantySubmission[]> {
+    if (!this.supabase) return [];
+    const safePageSize = Math.max(1, Math.min(pageSize, 1000));
+    const allRows: WarrantySubmission[] = [];
+    let from = 0;
+
+    while (true) {
+      const to = from + safePageSize - 1;
+      const { data, error } = await this.supabase
+        .from('warranty_submissions')
+        .select('*')
+        .order('created_at', { ascending: false })
+        .range(from, to);
+
+      if (error) break;
+      const rows = (data || []) as WarrantySubmission[];
+      allRows.push(...rows);
+      if (rows.length < safePageSize) break;
+      from += safePageSize;
+    }
+
+    return allRows;
+  }
+
+  /**
+   * Update an existing warranty submission by id.
+   * Requires Supabase RLS to allow UPDATE for the authenticated admin (e.g. policy on profiles.role = 'admin').
+   */
+  async updateWarrantySubmission(id: string, data: Partial<WarrantySubmission>): Promise<{ success: boolean; error?: string }> {
+    if (!this.supabase) return { success: false, error: 'Supabase is not configured.' };
+    if (!id?.trim()) return { success: false, error: 'Submission id is required.' };
+    const payload: Record<string, unknown> = {};
+    const allowed = [
+      'first_name', 'last_name', 'address', 'city', 'postal_code', 'phone', 'email',
+      'device_type', 'device_model', 'serial_number', 'purchase_date', 'place_of_purchase',
+      'city_of_purchase', 'fiscal_receipt_number', 'receipt_image_url'
+    ] as const;
+    for (const key of allowed) {
+      if (key in data) payload[key] = (data as any)[key];
+    }
+    if (Object.keys(payload).length === 0) return { success: true };
+    try {
+      const { error } = await this.supabase
+        .from('warranty_submissions')
+        .update(payload)
+        .eq('id', id);
+      if (error) return { success: false, error: error.message };
+      return { success: true };
+    } catch (e: any) {
+      return { success: false, error: e?.message || String(e) };
+    }
   }
 
   /** Distinct device_model values from warranty submissions (for admin filter list) */
@@ -136,6 +201,7 @@ export class SupabaseService {
   async searchWarrantyWithFilters(filters: {
     serial?: string;
     email?: string;
+    phone?: string;
     name?: string;
     device_model?: string;
     city?: string;
@@ -154,6 +220,7 @@ export class SupabaseService {
     const f = filters;
     if (f.serial?.trim()) query = query.ilike('serial_number', `%${f.serial.trim()}%`);
     if (f.email?.trim()) query = query.ilike('email', `%${f.email.trim()}%`);
+    if (f.phone?.trim()) query = query.ilike('phone', `%${f.phone.trim()}%`);
     if (f.device_model?.trim()) query = query.ilike('device_model', `%${f.device_model.trim()}%`);
     if (f.city?.trim()) query = query.ilike('city', `%${f.city.trim()}%`);
     if (f.city_of_purchase?.trim()) query = query.ilike('city_of_purchase', `%${f.city_of_purchase.trim()}%`);
@@ -198,6 +265,12 @@ export class SupabaseService {
   getSession() {
     if (!this.supabase) return Promise.resolve({ data: { session: null }, error: null });
     return this.supabase.auth.getSession();
+  }
+
+  /** Current user email (from session). Used to show Edit only to super admin. */
+  async getCurrentUserEmail(): Promise<string | null> {
+    const { data } = await this.getSession();
+    return data?.session?.user?.email ?? null;
   }
 
   // Check if current user is admin (via profiles table)

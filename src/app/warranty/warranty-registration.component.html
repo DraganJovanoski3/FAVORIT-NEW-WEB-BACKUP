@@ -71,7 +71,7 @@
           <div class="warranty-row warranty-row-2">
             <div class="warranty-field">
               <label for="phone">{{ t?.contactPhone || 'Contact Phone' }} <span class="req">*</span></label>
-              <input id="phone" type="tel" formControlName="phone" />
+              <input id="phone" type="tel" formControlName="phone" placeholder="070-000-000" maxlength="12" inputmode="numeric" autocomplete="tel" />
               <span class="warranty-err" *ngIf="isFieldInvalid('phone')">{{ t?.invalidPhone || 'Invalid phone' }}</span>
             </div>
             <div class="warranty-field">

@@ -1,7 +1,7 @@
 <?php
 /**
  * Service centre contact form handler for cPanel deployment.
- * Sends form data to servis@centrounion.com.mk
+ * Sends form submissions to servis@centrounion.com.mk (Centro Union receive the emails there).
  * Place this file in your site root (e.g. public_html) next to the .htaccess.
  */
 
@@ -56,7 +56,7 @@ $helperPath = __DIR__ . '/api/smtp-helper.php';
 if (file_exists($helperPath)) {
     require_once $helperPath;
     if (function_exists('send_mail_smtp')) {
-        $sent = send_mail_smtp($to, $subj, $body, 'warranty_confirmation@favoritelectronics.com', 'Favorit Electronics - Service', $email);
+        $sent = send_mail_smtp($to, $subj, $body, 'no_reply@favoritelectronics.com', 'Favorit Electronics - Service', $email);
     }
 }
 if (!$sent) {

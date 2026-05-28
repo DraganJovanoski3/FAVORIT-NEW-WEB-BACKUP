@@ -34,6 +34,6 @@
     "saturday": "E shtunë",
     "sunday": "E diel",
     "closed": "E mbyllur",
-    "workingHours": "08:00 - 17:00",
-    "saturdayHours": "08:00 - 14:00"
+    "workingHours": "08:00 - 16:00",
+    "saturdayHours": "E mbyllur"
 }

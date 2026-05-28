@@ -56,7 +56,7 @@ $helperPath = __DIR__ . '/api/smtp-helper.php';
 if (file_exists($helperPath)) {
     require_once $helperPath;
     if (function_exists('send_mail_smtp')) {
-        $sent = send_mail_smtp($to, $subj, $body, 'warranty_confirmation@favoritelectronics.com', 'Favorit Electronics - Contact', $email);
+        $sent = send_mail_smtp($to, $subj, $body, 'no_reply@favoritelectronics.com', 'Favorit Electronics - Contact', $email);
     }
 }
 if (!$sent) {

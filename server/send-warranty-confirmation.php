@@ -4,7 +4,7 @@
  * Upload this file to your server (e.g. in /api/ or /server/) and set
  * environment.warrantyConfirmationApiUrl in the Angular app to this URL.
  *
- * Sends a confirmation email to the customer from warranty_confirmation@favoritelectronics.com
+ * Sends a confirmation email to the customer from no_reply@favoritelectronics.com
  * stating that the warranty extension is in effect (if details are correct) and listing
  * the submitted data as a reminder.
  *
@@ -46,7 +46,7 @@ if (!filter_var($to, FILTER_VALIDATE_EMAIL)) {
   exit;
 }
 
-$fromEmail = 'warranty_confirmation@favoritelectronics.com';
+$fromEmail = 'no_reply@favoritelectronics.com';
 $fromName = 'Favorit Electronics - Warranty';
 
 $lang = isset($data['lang']) && in_array($data['lang'], ['en', 'mk', 'sr', 'al'], true) ? $data['lang'] : 'en';
