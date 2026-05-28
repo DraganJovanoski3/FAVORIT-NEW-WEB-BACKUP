@@ -196,26 +196,21 @@ body {
 .spec-table td {
   padding: 12px;
   border-bottom: 1px solid #204880;
+  text-align: left;
   text-transform: uppercase;
 }
-
-/* Left column (labels) */
-.spec-table td:first-child {
-  text-align: left;
-}
-
-/* Right column (values like "6") */
-.spec-table td:last-child {
+.spec-table table tbody tr td:last-child {
   text-align: right;
-  white-space: nowrap;
 }
 
 .spec-table th {
   background: #204880;
+  font-weight: bold;
   color: white;
-  font-weight: 400;
-  text-align: left;
+   text-transform: uppercase;
+   font-weight: 400;
 }
+
 /* Related Products Section */
 .related-products {
   margin-top: 50px;

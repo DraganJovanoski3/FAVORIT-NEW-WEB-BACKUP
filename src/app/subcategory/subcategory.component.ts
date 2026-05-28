@@ -542,7 +542,7 @@ export class SubcategoryComponent implements OnInit, OnDestroy {
           },
           {
             id: 194,
-            name: this.productTranslations{'194'} ||'Electric Stove CC 60-22 W',
+            name: this.productTranslations['194'] ||'Electric Stove CC 60-22 W',
             picture: '',
             pictureHover: '',
             subcategory: stovesLabel,
